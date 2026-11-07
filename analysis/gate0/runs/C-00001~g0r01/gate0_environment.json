@@ -1,0 +1,37 @@
+{
+  "environment": {
+    "kind": "link_churn",
+    "seed": 3405039684281530209,
+    "candidate_id": "C-00001",
+    "replicate": 1,
+    "node": "corea",
+    "iface": "eth1",
+    "delay_s": 22,
+    "down_s": 8,
+    "n_transit_links": 8,
+    "touched_by_repair": false
+  },
+  "events": [
+    {
+      "action": "down",
+      "node": "corea",
+      "iface": "eth1",
+      "at_s": 22.05,
+      "status": "OK",
+      "rc": 0,
+      "stderr": ""
+    },
+    {
+      "action": "up",
+      "node": "corea",
+      "iface": "eth1",
+      "at_s": 32.58,
+      "status": "OK",
+      "rc": 0,
+      "stderr": ""
+    }
+  ],
+  "completed": true,
+  "link_restored": true,
+  "phase": "post_convergence"
+}

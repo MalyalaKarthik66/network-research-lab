@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "rc": 0,
+  "stdout": "1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000\n    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00\n    inet 127.0.0.1/8 scope host lo\n       valid_lft forever preferred_lft forever\n    inet 10.255.0.9/32 scope global lo\n       valid_lft forever preferred_lft forever\n    inet6 ::1/128 scope host \n       valid_lft forever preferred_lft forever\n2: eth0@if179: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default \n    link/ether 7e:54:e3:34:9a:86 brd ff:ff:ff:ff:ff:ff link-netnsid 0\n    inet 172.20.20.15/24 brd 172.20.20.255 scope global eth0\n       valid_lft forever preferred_lft forever\n    inet6 3fff:172:20:20::f/64 scope global nodad \n       valid_lft forever preferred_lft forever\n    inet6 fe80::7c54:e3ff:fe34:9a86/64 scope link \n       valid_lft forever preferred_lft forever\n157: eth1@if158: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9500 qdisc noqueue state UP group default \n    link/ether aa:c1:ab:c3:68:fe brd ff:ff:ff:ff:ff:ff link-netnsid 1\n    altname clab-o-a84f1bdfb70835e8\n    inet 10.25.10.2/30 scope global eth1\n       valid_lft forever preferred_lft forever\n    inet6 fe80::a8c1:abff:fec3:68fe/64 scope link \n       valid_lft forever preferred_lft forever\n175: eth2@if176: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9500 qdisc noqueue state UP group default \n    link/ether aa:c1:ab:82:f4:56 brd ff:ff:ff:ff:ff:ff link-netnsid 2\n    altname clab-o-f5b89ee5bf145dbe\n    inet 10.25.13.1/30 scope global eth2\n       valid_lft forever preferred_lft forever\n    inet6 fe80::a8c1:abff:fe82:f456/64 scope link \n       valid_lft forever preferred_lft forever\n",
+  "stderr": "",
+  "argv": [
+    "docker",
+    "exec",
+    "clab-nrlv4-t15-distb2",
+    "sh",
+    "-c",
+    "ip addr show"
+  ],
+  "seconds": 0.27,
+  "error": null
+}

@@ -1,0 +1,20 @@
+--- I-00112
++++ C-00829
+@@ -528,7 +528,7 @@
+ interface eth2
+  description link to dista accA
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 14
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -555,7 +555,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.200.0.2/30
++    address 10.22.1.1/30
+     alias link to dista accA
+ 
+ 

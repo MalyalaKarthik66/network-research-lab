@@ -1,0 +1,45 @@
+{
+  "status": "OK",
+  "rc": 0,
+  "stdout": "{\n  \"neighbors\":{\n    \"10.255.0.4\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/-\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/-\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":92999,\n        \"deadTimeMsecs\":37000,\n        \"routerDeadIntervalTimerDueMsec\":37000,\n        \"upTime\":\"1m32s\",\n        \"deadTime\":\"37.000s\",\n        \"address\":\"10.15.3.2\",\n        \"ifaceAddress\":\"10.15.3.2\",\n        \"ifaceName\":\"eth2:10.15.3.1\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ]\n  }\n}\n",
+  "stderr": "% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.\n",
+  "argv": [
+    "docker",
+    "exec",
+    "clab-nrlv4-t05-wan1",
+    "vtysh",
+    "-c",
+    "show ip ospf neighbor json"
+  ],
+  "seconds": 0.22,
+  "error": null,
+  "command": "show ip ospf neighbor json",
+  "json": {
+    "neighbors": {
+      "10.255.0.4": [
+        {
+          "priority": 1,
+          "state": "Full/-",
+          "nbrPriority": 1,
+          "nbrState": "Full/-",
+          "converged": "Full",
+          "role": "DROther",
+          "upTimeInMsec": 92999,
+          "deadTimeMsecs": 37000,
+          "routerDeadIntervalTimerDueMsec": 37000,
+          "upTime": "1m32s",
+          "deadTime": "37.000s",
+          "address": "10.15.3.2",
+          "ifaceAddress": "10.15.3.2",
+          "ifaceName": "eth2:10.15.3.1",
+          "retransmitCounter": 0,
+          "linkStateRetransmissionListCounter": 0,
+          "requestCounter": 0,
+          "linkStateRequestListCounter": 0,
+          "dbSummaryCounter": 0,
+          "databaseSummaryListCounter": 0
+        }
+      ]
+    }
+  }
+}

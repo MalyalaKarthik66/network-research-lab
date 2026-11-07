@@ -1,0 +1,20 @@
+--- I-00155
++++ C-01146
+@@ -196,7 +196,7 @@
+  ip ospf cost 10
+ !
+ interface eth2
+- description link to pe1 peA1
++ description link to pe1 peA1 (reviewed NET-1042)
+ !
+ interface eth3
+  description link to pe2 peA2
+@@ -235,7 +235,7 @@
+ auto eth2
+ iface eth2
+     address 10.26.1.1/30
+-    alias link to pe1 peA1
++    alias link to pe1 peA1 (reviewed NET-1042)
+ 
+ auto eth3
+ iface eth3

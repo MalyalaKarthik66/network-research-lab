@@ -1,0 +1,20 @@
+--- I-00010
++++ C-00112
+@@ -562,7 +562,7 @@
+ interface eth2
+  description link to g5 r1d
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 200
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -633,7 +633,7 @@
+ interface eth1
+  description link to g4 r1d
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 200
+  ip ospf network point-to-point
+ !
+ interface eth2

@@ -1,0 +1,923 @@
+{
+ "name": "t18_grid12-golden--F0002",
+ "links": [
+  {
+   "a_node": "hosta",
+   "a_iface": "eth1",
+   "b_node": "edgea",
+   "b_iface": "eth1",
+   "subnet": "10.10.0.0/24",
+   "label": "siteA-lan"
+  },
+  {
+   "a_node": "edgeb",
+   "a_iface": "eth1",
+   "b_node": "hostb",
+   "b_iface": "eth1",
+   "subnet": "10.20.0.0/24",
+   "label": "siteB-lan1"
+  },
+  {
+   "a_node": "edgeb",
+   "a_iface": "eth2",
+   "b_node": "hostc",
+   "b_iface": "eth1",
+   "subnet": "10.21.0.0/24",
+   "label": "siteB-lan2"
+  },
+  {
+   "a_node": "edgea",
+   "a_iface": "eth2",
+   "b_node": "g1",
+   "b_iface": "eth1",
+   "subnet": "10.28.1.0/30",
+   "label": "accA"
+  },
+  {
+   "a_node": "g1",
+   "a_iface": "eth2",
+   "b_node": "g2",
+   "b_iface": "eth1",
+   "subnet": "10.28.2.0/30",
+   "label": "r1a"
+  },
+  {
+   "a_node": "g2",
+   "a_iface": "eth2",
+   "b_node": "g3",
+   "b_iface": "eth1",
+   "subnet": "10.28.3.0/30",
+   "label": "r1b"
+  },
+  {
+   "a_node": "g3",
+   "a_iface": "eth2",
+   "b_node": "g4",
+   "b_iface": "eth1",
+   "subnet": "10.28.4.0/30",
+   "label": "r1c"
+  },
+  {
+   "a_node": "g4",
+   "a_iface": "eth2",
+   "b_node": "g5",
+   "b_iface": "eth1",
+   "subnet": "10.28.5.0/30",
+   "label": "r1d"
+  },
+  {
+   "a_node": "g6",
+   "a_iface": "eth1",
+   "b_node": "g7",
+   "b_iface": "eth1",
+   "subnet": "10.28.6.0/30",
+   "label": "r2a"
+  },
+  {
+   "a_node": "g7",
+   "a_iface": "eth2",
+   "b_node": "g8",
+   "b_iface": "eth1",
+   "subnet": "10.28.7.0/30",
+   "label": "r2b"
+  },
+  {
+   "a_node": "g8",
+   "a_iface": "eth2",
+   "b_node": "g9",
+   "b_iface": "eth1",
+   "subnet": "10.28.8.0/30",
+   "label": "r2c"
+  },
+  {
+   "a_node": "g9",
+   "a_iface": "eth2",
+   "b_node": "g10",
+   "b_iface": "eth1",
+   "subnet": "10.28.9.0/30",
+   "label": "r2d"
+  },
+  {
+   "a_node": "g1",
+   "a_iface": "eth3",
+   "b_node": "g6",
+   "b_iface": "eth2",
+   "subnet": "10.28.10.0/30",
+   "label": "rung1"
+  },
+  {
+   "a_node": "g3",
+   "a_iface": "eth3",
+   "b_node": "g8",
+   "b_iface": "eth3",
+   "subnet": "10.28.11.0/30",
+   "label": "rung2"
+  },
+  {
+   "a_node": "g5",
+   "a_iface": "eth2",
+   "b_node": "g10",
+   "b_iface": "eth2",
+   "subnet": "10.28.12.0/30",
+   "label": "rung3"
+  },
+  {
+   "a_node": "g5",
+   "a_iface": "eth3",
+   "b_node": "edgeb",
+   "b_iface": "eth3",
+   "subnet": "10.28.13.0/30",
+   "label": "accB"
+  },
+  {
+   "a_node": "g10",
+   "a_iface": "eth3",
+   "b_node": "edgeb",
+   "b_iface": "eth4",
+   "subnet": "10.28.14.0/30",
+   "label": "accB2"
+  }
+ ],
+ "devices": {
+  "edgea": {
+   "hostname": "edgea",
+   "kind": "frr",
+   "host_gateway": null,
+   "ospf": {
+    "router_id": "10.255.0.1",
+    "redistribute": [],
+    "distribute_list_in": null
+   },
+   "ifaces": [
+    {
+     "name": "lo",
+     "addresses": [
+      "10.255.0.1/32"
+     ],
+     "alias": "router-id and management",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": null,
+     "ospf_passive": true,
+     "ospf_network": null
+    },
+    {
+     "name": "eth1",
+     "addresses": [
+      "10.10.0.1/24"
+     ],
+     "alias": "link to hosta siteA-lan",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 10,
+     "ospf_passive": true,
+     "ospf_network": null
+    },
+    {
+     "name": "eth2",
+     "addresses": [
+      "10.200.0.2/30"
+     ],
+     "alias": "link to g1 accA",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 10,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    }
+   ],
+   "statics": [],
+   "access_lists": {},
+   "prefix_lists": {},
+   "route_maps": {}
+  },
+  "g1": {
+   "hostname": "g1",
+   "kind": "frr",
+   "host_gateway": null,
+   "ospf": {
+    "router_id": "10.255.0.2",
+    "redistribute": [],
+    "distribute_list_in": null
+   },
+   "ifaces": [
+    {
+     "name": "lo",
+     "addresses": [
+      "10.255.0.2/32"
+     ],
+     "alias": "router-id and management",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": null,
+     "ospf_passive": true,
+     "ospf_network": null
+    },
+    {
+     "name": "eth1",
+     "addresses": [
+      "10.28.1.2/30"
+     ],
+     "alias": "link to edgea accA",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 10,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    },
+    {
+     "name": "eth2",
+     "addresses": [
+      "10.28.2.1/30"
+     ],
+     "alias": "link to g2 r1a",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 10,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    },
+    {
+     "name": "eth3",
+     "addresses": [
+      "10.28.10.1/30"
+     ],
+     "alias": "link to g6 rung1",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 30,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    }
+   ],
+   "statics": [],
+   "access_lists": {},
+   "prefix_lists": {},
+   "route_maps": {}
+  },
+  "g2": {
+   "hostname": "g2",
+   "kind": "frr",
+   "host_gateway": null,
+   "ospf": {
+    "router_id": "10.255.0.3",
+    "redistribute": [],
+    "distribute_list_in": null
+   },
+   "ifaces": [
+    {
+     "name": "lo",
+     "addresses": [
+      "10.255.0.3/32"
+     ],
+     "alias": "router-id and management",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": null,
+     "ospf_passive": true,
+     "ospf_network": null
+    },
+    {
+     "name": "eth1",
+     "addresses": [
+      "10.28.2.2/30"
+     ],
+     "alias": "link to g1 r1a",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 10,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    },
+    {
+     "name": "eth2",
+     "addresses": [
+      "10.28.3.1/30"
+     ],
+     "alias": "link to g3 r1b",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 10,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    }
+   ],
+   "statics": [],
+   "access_lists": {},
+   "prefix_lists": {},
+   "route_maps": {}
+  },
+  "g3": {
+   "hostname": "g3",
+   "kind": "frr",
+   "host_gateway": null,
+   "ospf": {
+    "router_id": "10.255.0.4",
+    "redistribute": [],
+    "distribute_list_in": null
+   },
+   "ifaces": [
+    {
+     "name": "lo",
+     "addresses": [
+      "10.255.0.4/32"
+     ],
+     "alias": "router-id and management",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": null,
+     "ospf_passive": true,
+     "ospf_network": null
+    },
+    {
+     "name": "eth1",
+     "addresses": [
+      "10.28.3.2/30"
+     ],
+     "alias": "link to g2 r1b",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 10,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    },
+    {
+     "name": "eth2",
+     "addresses": [
+      "10.28.4.1/30"
+     ],
+     "alias": "link to g4 r1c",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 10,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    },
+    {
+     "name": "eth3",
+     "addresses": [
+      "10.28.11.1/30"
+     ],
+     "alias": "link to g8 rung2",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 30,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    }
+   ],
+   "statics": [],
+   "access_lists": {},
+   "prefix_lists": {},
+   "route_maps": {}
+  },
+  "g4": {
+   "hostname": "g4",
+   "kind": "frr",
+   "host_gateway": null,
+   "ospf": {
+    "router_id": "10.255.0.5",
+    "redistribute": [],
+    "distribute_list_in": null
+   },
+   "ifaces": [
+    {
+     "name": "lo",
+     "addresses": [
+      "10.255.0.5/32"
+     ],
+     "alias": "router-id and management",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": null,
+     "ospf_passive": true,
+     "ospf_network": null
+    },
+    {
+     "name": "eth1",
+     "addresses": [
+      "10.28.4.2/30"
+     ],
+     "alias": "link to g3 r1c",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 10,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    },
+    {
+     "name": "eth2",
+     "addresses": [
+      "10.28.5.1/30"
+     ],
+     "alias": "link to g5 r1d",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 10,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    }
+   ],
+   "statics": [],
+   "access_lists": {},
+   "prefix_lists": {},
+   "route_maps": {}
+  },
+  "g5": {
+   "hostname": "g5",
+   "kind": "frr",
+   "host_gateway": null,
+   "ospf": {
+    "router_id": "10.255.0.6",
+    "redistribute": [],
+    "distribute_list_in": null
+   },
+   "ifaces": [
+    {
+     "name": "lo",
+     "addresses": [
+      "10.255.0.6/32"
+     ],
+     "alias": "router-id and management",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": null,
+     "ospf_passive": true,
+     "ospf_network": null
+    },
+    {
+     "name": "eth1",
+     "addresses": [
+      "10.28.5.2/30"
+     ],
+     "alias": "link to g4 r1d",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 10,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    },
+    {
+     "name": "eth2",
+     "addresses": [
+      "10.28.12.1/30"
+     ],
+     "alias": "link to g10 rung3",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 30,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    },
+    {
+     "name": "eth3",
+     "addresses": [
+      "10.28.13.1/30"
+     ],
+     "alias": "link to edgeb accB",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 10,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    }
+   ],
+   "statics": [],
+   "access_lists": {},
+   "prefix_lists": {},
+   "route_maps": {}
+  },
+  "g6": {
+   "hostname": "g6",
+   "kind": "frr",
+   "host_gateway": null,
+   "ospf": {
+    "router_id": "10.255.0.7",
+    "redistribute": [],
+    "distribute_list_in": null
+   },
+   "ifaces": [
+    {
+     "name": "lo",
+     "addresses": [
+      "10.255.0.7/32"
+     ],
+     "alias": "router-id and management",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": null,
+     "ospf_passive": true,
+     "ospf_network": null
+    },
+    {
+     "name": "eth1",
+     "addresses": [
+      "10.28.6.1/30"
+     ],
+     "alias": "link to g7 r2a",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 20,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    },
+    {
+     "name": "eth2",
+     "addresses": [
+      "10.28.10.2/30"
+     ],
+     "alias": "link to g1 rung1",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 30,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    }
+   ],
+   "statics": [],
+   "access_lists": {},
+   "prefix_lists": {},
+   "route_maps": {}
+  },
+  "g7": {
+   "hostname": "g7",
+   "kind": "frr",
+   "host_gateway": null,
+   "ospf": {
+    "router_id": "10.255.0.8",
+    "redistribute": [],
+    "distribute_list_in": null
+   },
+   "ifaces": [
+    {
+     "name": "lo",
+     "addresses": [
+      "10.255.0.8/32"
+     ],
+     "alias": "router-id and management",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": null,
+     "ospf_passive": true,
+     "ospf_network": null
+    },
+    {
+     "name": "eth1",
+     "addresses": [
+      "10.28.6.2/30"
+     ],
+     "alias": "link to g6 r2a",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 20,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    },
+    {
+     "name": "eth2",
+     "addresses": [
+      "10.28.7.1/30"
+     ],
+     "alias": "link to g8 r2b",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 20,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    }
+   ],
+   "statics": [],
+   "access_lists": {},
+   "prefix_lists": {},
+   "route_maps": {}
+  },
+  "g8": {
+   "hostname": "g8",
+   "kind": "frr",
+   "host_gateway": null,
+   "ospf": {
+    "router_id": "10.255.0.9",
+    "redistribute": [],
+    "distribute_list_in": null
+   },
+   "ifaces": [
+    {
+     "name": "lo",
+     "addresses": [
+      "10.255.0.9/32"
+     ],
+     "alias": "router-id and management",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": null,
+     "ospf_passive": true,
+     "ospf_network": null
+    },
+    {
+     "name": "eth1",
+     "addresses": [
+      "10.28.7.2/30"
+     ],
+     "alias": "link to g7 r2b",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 20,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    },
+    {
+     "name": "eth2",
+     "addresses": [
+      "10.28.8.1/30"
+     ],
+     "alias": "link to g9 r2c",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 20,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    },
+    {
+     "name": "eth3",
+     "addresses": [
+      "10.28.11.2/30"
+     ],
+     "alias": "link to g3 rung2",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 30,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    }
+   ],
+   "statics": [],
+   "access_lists": {},
+   "prefix_lists": {},
+   "route_maps": {}
+  },
+  "g9": {
+   "hostname": "g9",
+   "kind": "frr",
+   "host_gateway": null,
+   "ospf": {
+    "router_id": "10.255.0.10",
+    "redistribute": [],
+    "distribute_list_in": null
+   },
+   "ifaces": [
+    {
+     "name": "lo",
+     "addresses": [
+      "10.255.0.10/32"
+     ],
+     "alias": "router-id and management",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": null,
+     "ospf_passive": true,
+     "ospf_network": null
+    },
+    {
+     "name": "eth1",
+     "addresses": [
+      "10.28.8.2/30"
+     ],
+     "alias": "link to g8 r2c",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 20,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    },
+    {
+     "name": "eth2",
+     "addresses": [
+      "10.28.9.1/30"
+     ],
+     "alias": "link to g10 r2d",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 20,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    }
+   ],
+   "statics": [],
+   "access_lists": {},
+   "prefix_lists": {},
+   "route_maps": {}
+  },
+  "g10": {
+   "hostname": "g10",
+   "kind": "frr",
+   "host_gateway": null,
+   "ospf": {
+    "router_id": "10.255.0.11",
+    "redistribute": [],
+    "distribute_list_in": null
+   },
+   "ifaces": [
+    {
+     "name": "lo",
+     "addresses": [
+      "10.255.0.11/32"
+     ],
+     "alias": "router-id and management",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": null,
+     "ospf_passive": true,
+     "ospf_network": null
+    },
+    {
+     "name": "eth1",
+     "addresses": [
+      "10.28.9.2/30"
+     ],
+     "alias": "link to g9 r2d",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 20,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    },
+    {
+     "name": "eth2",
+     "addresses": [
+      "10.28.12.2/30"
+     ],
+     "alias": "link to g5 rung3",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 30,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    },
+    {
+     "name": "eth3",
+     "addresses": [
+      "10.28.14.1/30"
+     ],
+     "alias": "link to edgeb accB2",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 40,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    }
+   ],
+   "statics": [],
+   "access_lists": {},
+   "prefix_lists": {},
+   "route_maps": {}
+  },
+  "edgeb": {
+   "hostname": "edgeb",
+   "kind": "frr",
+   "host_gateway": null,
+   "ospf": {
+    "router_id": "10.255.0.12",
+    "redistribute": [],
+    "distribute_list_in": null
+   },
+   "ifaces": [
+    {
+     "name": "lo",
+     "addresses": [
+      "10.255.0.12/32"
+     ],
+     "alias": "router-id and management",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": null,
+     "ospf_passive": true,
+     "ospf_network": null
+    },
+    {
+     "name": "eth1",
+     "addresses": [
+      "10.20.0.1/24"
+     ],
+     "alias": "link to hostb siteB-lan1",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 10,
+     "ospf_passive": true,
+     "ospf_network": null
+    },
+    {
+     "name": "eth2",
+     "addresses": [
+      "10.21.0.1/24"
+     ],
+     "alias": "link to hostc siteB-lan2",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 10,
+     "ospf_passive": true,
+     "ospf_network": null
+    },
+    {
+     "name": "eth3",
+     "addresses": [
+      "10.28.13.2/30"
+     ],
+     "alias": "link to g5 accB",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 10,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    },
+    {
+     "name": "eth4",
+     "addresses": [
+      "10.28.14.2/30"
+     ],
+     "alias": "link to g10 accB2",
+     "up": true,
+     "ospf_area": "0.0.0.0",
+     "ospf_cost": 40,
+     "ospf_passive": false,
+     "ospf_network": "point-to-point"
+    }
+   ],
+   "statics": [],
+   "access_lists": {},
+   "prefix_lists": {},
+   "route_maps": {}
+  },
+  "hosta": {
+   "hostname": "hosta",
+   "kind": "host",
+   "host_gateway": "10.10.0.1",
+   "ospf": null,
+   "ifaces": [
+    {
+     "name": "eth1",
+     "addresses": [
+      "10.10.0.10/24"
+     ],
+     "alias": "link to edgea",
+     "up": true,
+     "ospf_area": null,
+     "ospf_cost": null,
+     "ospf_passive": false,
+     "ospf_network": null
+    }
+   ],
+   "statics": [],
+   "access_lists": {},
+   "prefix_lists": {},
+   "route_maps": {}
+  },
+  "hostb": {
+   "hostname": "hostb",
+   "kind": "host",
+   "host_gateway": "10.20.0.1",
+   "ospf": null,
+   "ifaces": [
+    {
+     "name": "eth1",
+     "addresses": [
+      "10.20.0.10/24"
+     ],
+     "alias": "link to edgeb",
+     "up": true,
+     "ospf_area": null,
+     "ospf_cost": null,
+     "ospf_passive": false,
+     "ospf_network": null
+    }
+   ],
+   "statics": [],
+   "access_lists": {},
+   "prefix_lists": {},
+   "route_maps": {}
+  },
+  "hostc": {
+   "hostname": "hostc",
+   "kind": "host",
+   "host_gateway": "10.21.0.1",
+   "ospf": null,
+   "ifaces": [
+    {
+     "name": "eth1",
+     "addresses": [
+      "10.21.0.10/24"
+     ],
+     "alias": "link to edgeb",
+     "up": true,
+     "ospf_area": null,
+     "ospf_cost": null,
+     "ospf_passive": false,
+     "ospf_network": null
+    }
+   ],
+   "statics": [],
+   "access_lists": {},
+   "prefix_lists": {},
+   "route_maps": {}
+  }
+ }
+}

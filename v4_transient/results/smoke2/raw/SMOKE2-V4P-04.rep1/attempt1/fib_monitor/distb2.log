@@ -1,0 +1,15 @@
+[2026-09-15T10:15:20.224564] Deleted 10.10.0.0/24 nhid 27 via 10.25.10.1 dev eth1 proto ospf metric 20 
+[2026-09-15T10:15:20.224672] Deleted 10.25.1.0/30 nhid 27 via 10.25.10.1 dev eth1 proto ospf metric 20 
+[2026-09-15T10:15:20.224695] Deleted 10.25.2.0/30 nhid 27 via 10.25.10.1 dev eth1 proto ospf metric 20 
+[2026-09-15T10:15:20.224714] Deleted 10.25.3.0/30 nhid 27 via 10.25.10.1 dev eth1 proto ospf metric 20 
+[2026-09-15T10:15:20.224730] Deleted 10.25.4.0/30 nhid 27 via 10.25.10.1 dev eth1 proto ospf metric 20 
+[2026-09-15T10:15:20.224747] Deleted 10.25.5.0/30 nhid 27 via 10.25.10.1 dev eth1 proto ospf metric 20 
+[2026-09-15T10:15:20.224765] Deleted 10.25.6.0/30 nhid 27 via 10.25.10.1 dev eth1 proto ospf metric 20 
+[2026-09-15T10:15:20.224784] Deleted 10.25.7.0/30 nhid 27 via 10.25.10.1 dev eth1 proto ospf metric 20 
+[2026-09-15T10:15:20.224805] Deleted 10.25.8.0/30 nhid 27 via 10.25.10.1 dev eth1 proto ospf metric 20 
+[2026-09-15T10:15:20.224824] Deleted 10.255.0.1 nhid 27 via 10.25.10.1 dev eth1 proto ospf metric 20 
+[2026-09-15T10:15:20.224841] Deleted 10.255.0.2 nhid 27 via 10.25.10.1 dev eth1 proto ospf metric 20 
+[2026-09-15T10:15:20.224857] Deleted 10.255.0.3 nhid 27 via 10.25.10.1 dev eth1 proto ospf metric 20 
+[2026-09-15T10:15:20.224872] Deleted 10.255.0.4 nhid 27 via 10.25.10.1 dev eth1 proto ospf metric 20 
+[2026-09-15T10:15:20.224888] Deleted 10.255.0.5 nhid 27 via 10.25.10.1 dev eth1 proto ospf metric 20 
+[2026-09-15T10:15:20.224903] Deleted 10.255.0.6 nhid 27 via 10.25.10.1 dev eth1 proto ospf metric 20 

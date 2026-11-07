@@ -1,0 +1,529 @@
+[
+  {
+    "t_before": 1789392796.2411213,
+    "t_after": 1789392798.602651,
+    "states": {
+      "corea": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "coreb": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-"
+      ],
+      "wan1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "wan2": [
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789392798.6026652,
+    "t_after": 1789392799.4666767,
+    "states": {
+      "corea": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "coreb": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-"
+      ],
+      "wan1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "wan2": [
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789392800.602905,
+    "t_after": 1789392801.4272277,
+    "states": {
+      "corea": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "coreb": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-"
+      ],
+      "wan1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "wan2": [
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789392802.6030972,
+    "t_after": 1789392803.5229404,
+    "states": {
+      "corea": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "coreb": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-"
+      ],
+      "wan1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "wan2": [
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789392804.6031806,
+    "t_after": 1789392805.6685753,
+    "states": {
+      "corea": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "coreb": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-"
+      ],
+      "wan1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "wan2": [
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789392806.6033423,
+    "t_after": 1789392807.478762,
+    "states": {
+      "corea": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "coreb": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-"
+      ],
+      "wan1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "wan2": [
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789392808.6034334,
+    "t_after": 1789392809.4652812,
+    "states": {
+      "corea": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "coreb": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-"
+      ],
+      "wan1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "wan2": [
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789392810.603514,
+    "t_after": 1789392811.9026015,
+    "states": {
+      "corea": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "coreb": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-"
+      ],
+      "wan1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "wan2": [
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789392812.6036973,
+    "t_after": 1789392813.5648732,
+    "states": {
+      "corea": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "coreb": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-"
+      ],
+      "wan1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "wan2": [
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789392814.603817,
+    "t_after": 1789392815.8842833,
+    "states": {
+      "corea": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "coreb": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-"
+      ],
+      "wan1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "wan2": [
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789392816.604087,
+    "t_after": 1789392817.9527402,
+    "states": {
+      "corea": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "coreb": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-"
+      ],
+      "wan1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "wan2": [
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789392818.6043484,
+    "t_after": 1789392819.6170409,
+    "states": {
+      "corea": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "coreb": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-"
+      ],
+      "wan1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "wan2": [
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789392820.6044576,
+    "t_after": 1789392821.503701,
+    "states": {
+      "corea": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "coreb": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-"
+      ],
+      "wan1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "wan2": [
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789392822.6045797,
+    "t_after": 1789392823.5171163,
+    "states": {
+      "corea": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "coreb": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-"
+      ],
+      "wan1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "wan2": [
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789392824.6048312,
+    "t_after": 1789392825.5863662,
+    "states": {
+      "corea": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "coreb": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-"
+      ],
+      "wan1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "wan2": [
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789392826.6049337,
+    "t_after": 1789392827.6484082,
+    "states": {
+      "corea": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "coreb": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-"
+      ],
+      "wan1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "wan2": [
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789392828.7624643,
+    "t_after": 1789392829.825331,
+    "states": {
+      "corea": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "coreb": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-"
+      ],
+      "wan1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "wan2": [
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  }
+]

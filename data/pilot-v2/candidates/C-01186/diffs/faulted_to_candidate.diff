@@ -1,0 +1,19 @@
+--- I-00161
++++ C-01186
+@@ -39,7 +39,7 @@
+ interface eth1
+  description link to edgea accA
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 12
+  ip ospf network point-to-point
+ !
+ interface eth2
+@@ -222,7 +222,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+- shutdown
+ !
+ router ospf
+  ospf router-id 10.255.0.1

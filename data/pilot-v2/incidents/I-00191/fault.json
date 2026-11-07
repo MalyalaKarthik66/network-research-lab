@@ -1,0 +1,17 @@
+{
+  "incident_id": "I-00191",
+  "topology": "t20_leafspine12",
+  "fault_id": "F0001",
+  "fault_family": "iface_down",
+  "fault_description": "[t20_leafspine12] edgea eth2 shut (accA)",
+  "fault_params": {
+    "node": "edgea",
+    "iface": "eth2",
+    "peer": "l1",
+    "peer_iface": "eth1",
+    "link": "accA",
+    "good_cost": 10,
+    "topology": "t20_leafspine12"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

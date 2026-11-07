@@ -1,0 +1,220 @@
+{
+  "status": "OK",
+  "rc": 0,
+  "stdout": "{\n  \"eth0\":{\n    \"administrativeStatus\":\"up\",\n    \"operationalStatus\":\"up\",\n    \"linkDetection\":true,\n    \"linkUps\":1,\n    \"linkDowns\":0,\n    \"lastLinkUp\":\"2026/09/12 09:37:00.98\",\n    \"vrfName\":\"default\",\n    \"mplsEnabled\":false,\n    \"linkDown\":false,\n    \"linkDownV6\":false,\n    \"mcForwardingV4\":false,\n    \"mcForwardingV6\":false,\n    \"pseudoInterface\":false,\n    \"index\":2,\n    \"metric\":0,\n    \"mtu\":1500,\n    \"speed\":10000,\n    \"flags\":\"<UP,BROADCAST,RUNNING,MULTICAST>\",\n    \"type\":\"Ethernet\",\n    \"hardwareAddress\":\"e6:0f:bb:2d:c9:8d\",\n    \"ipAddresses\":[\n      {\n        \"address\":\"172.20.20.2/24\",\n        \"secondary\":false,\n        \"unnumbered\":false\n      },\n      {\n        \"address\":\"3fff:172:20:20::2/64\",\n        \"secondary\":false,\n        \"unnumbered\":false\n      },\n      {\n        \"address\":\"fe80::e40f:bbff:fe2d:c98d/64\",\n        \"secondary\":false,\n        \"unnumbered\":false\n      }\n    ],\n    \"interfaceType\":\"VETH\",\n    \"interfaceSlaveType\":\"None\",\n    \"lacpBypass\":false,\n    \"evpnMh\":{\n    },\n    \"protodown\":\"off\",\n    \"parentIfindex\":3079\n  },\n  \"eth1\":{\n    \"administrativeStatus\":\"up\",\n    \"operationalStatus\":\"up\",\n    \"linkDetection\":true,\n    \"linkUps\":2,\n    \"linkDowns\":2,\n    \"lastLinkUp\":\"2026/09/12 09:37:01.24\",\n    \"lastLinkDown\":\"2026/09/12 09:37:00.24\",\n    \"vrfName\":\"default\",\n    \"description\":\"link to hosta siteA-lan\",\n    \"mplsEnabled\":false,\n    \"linkDown\":false,\n    \"linkDownV6\":false,\n    \"mcForwardingV4\":false,\n    \"mcForwardingV6\":false,\n    \"pseudoInterface\":false,\n    \"index\":3087,\n    \"metric\":0,\n    \"mtu\":9500,\n    \"speed\":10000,\n    \"flags\":\"<UP,BROADCAST,RUNNING,MULTICAST>\",\n    \"type\":\"Ethernet\",\n    \"hardwareAddress\":\"aa:c1:ab:65:2e:e9\",\n    \"ipAddresses\":[\n      {\n        \"address\":\"10.10.0.1/24\",\n        \"secondary\":false,\n        \"unnumbered\":false\n      },\n      {\n        \"address\":\"fe80::a8c1:abff:fe65:2ee9/64\",\n        \"secondary\":false,\n        \"unnumbered\":false\n      }\n    ],\n    \"interfaceType\":\"VETH\",\n    \"interfaceSlaveType\":\"None\",\n    \"lacpBypass\":false,\n    \"evpnMh\":{\n    },\n    \"protodown\":\"off\"\n  },\n  \"eth2\":{\n    \"administrativeStatus\":\"up\",\n    \"operationalStatus\":\"up\",\n    \"linkDetection\":true,\n    \"linkUps\":2,\n    \"linkDowns\":1,\n    \"lastLinkUp\":\"2026/09/12 09:37:00.48\",\n    \"lastLinkDown\":\"2026/09/12 09:37:00.47\",\n    \"vrfName\":\"default\",\n    \"description\":\"link to l1 A1 (reviewed NET-1042)\",\n    \"mplsEnabled\":false,\n    \"linkDown\":false,\n    \"linkDownV6\":false,\n    \"mcForwardingV4\":false,\n    \"mcForwardingV6\":false,\n    \"pseudoInterface\":false,\n    \"index\":3088,\n    \"metric\":0,\n    \"mtu\":9500,\n    \"speed\":10000,\n    \"flags\":\"<UP,BROADCAST,RUNNING,MULTICAST>\",\n    \"type\":\"Ethernet\",\n    \"hardwareAddress\":\"aa:c1:ab:07:af:af\",\n    \"ipAddresses\":[\n      {\n        \"address\":\"10.200.0.2/30\",\n        \"secondary\":false,\n        \"unnumbered\":false\n      },\n      {\n        \"address\":\"fe80::a8c1:abff:fe07:afaf/64\",\n        \"secondary\":false,\n        \"unnumbered\":false\n      }\n    ],\n    \"interfaceType\":\"VETH\",\n    \"interfaceSlaveType\":\"None\",\n    \"lacpBypass\":false,\n    \"evpnMh\":{\n    },\n    \"protodown\":\"off\"\n  },\n  \"eth3\":{\n    \"administrativeStatus\":\"up\",\n    \"operationalStatus\":\"up\",\n    \"linkDetection\":true,\n    \"linkUps\":2,\n    \"linkDowns\":2,\n    \"lastLinkUp\":\"2026/09/12 09:37:01.53\",\n    \"lastLinkDown\":\"2026/09/12 09:37:00.98\",\n    \"vrfName\":\"default\",\n    \"description\":\"link to r1 A2\",\n    \"mplsEnabled\":false,\n    \"linkDown\":false,\n    \"linkDownV6\":false,\n    \"mcForwardingV4\":false,\n    \"mcForwardingV6\":false,\n    \"pseudoInterface\":false,\n    \"index\":3102,\n    \"metric\":0,\n    \"mtu\":9500,\n    \"speed\":10000,\n    \"flags\":\"<UP,BROADCAST,RUNNING,MULTICAST>\",\n    \"type\":\"Ethernet\",\n    \"hardwareAddress\":\"aa:c1:ab:5f:c6:b9\",\n    \"ipAddresses\":[\n      {\n        \"address\":\"10.24.5.1/30\",\n        \"secondary\":false,\n        \"unnumbered\":false\n      },\n      {\n        \"address\":\"fe80::a8c1:abff:fe5f:c6b9/64\",\n        \"secondary\":false,\n        \"unnumbered\":false\n      }\n    ],\n    \"interfaceType\":\"VETH\",\n    \"interfaceSlaveType\":\"None\",\n    \"lacpBypass\":false,\n    \"evpnMh\":{\n    },\n    \"protodown\":\"off\"\n  },\n  \"lo\":{\n    \"administrativeStatus\":\"up\",\n    \"operationalStatus\":\"up\",\n    \"linkDetection\":true,\n    \"linkUps\":0,\n    \"linkDowns\":0,\n    \"vrfName\":\"default\",\n    \"description\":\"router-id and management\",\n    \"mplsEnabled\":false,\n    \"linkDown\":false,\n    \"linkDownV6\":false,\n    \"mcForwardingV4\":false,\n    \"mcForwardingV6\":false,\n    \"pseudoInterface\":false,\n    \"index\":1,\n    \"metric\":0,\n    \"mtu\":65536,\n    \"speed\":0,\n    \"flags\":\"<UP,LOOPBACK,RUNNING>\",\n    \"type\":\"Loopback\",\n    \"ipAddresses\":[\n      {\n        \"address\":\"10.255.0.1/32\",\n        \"secondary\":false,\n        \"unnumbered\":false\n      }\n    ],\n    \"interfaceType\":\"Other\",\n    \"interfaceSlaveType\":\"None\",\n    \"lacpBypass\":false,\n    \"evpnMh\":{\n    },\n    \"protodown\":\"off\"\n  }\n}\n",
+  "stderr": "% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.\n",
+  "argv": [
+    "docker",
+    "exec",
+    "clab-nrlv2-c-00982-edgea",
+    "vtysh",
+    "-c",
+    "show interface json"
+  ],
+  "seconds": 0.05,
+  "error": null,
+  "command": "show interface json",
+  "json": {
+    "eth0": {
+      "administrativeStatus": "up",
+      "operationalStatus": "up",
+      "linkDetection": true,
+      "linkUps": 1,
+      "linkDowns": 0,
+      "lastLinkUp": "2026/09/12 09:37:00.98",
+      "vrfName": "default",
+      "mplsEnabled": false,
+      "linkDown": false,
+      "linkDownV6": false,
+      "mcForwardingV4": false,
+      "mcForwardingV6": false,
+      "pseudoInterface": false,
+      "index": 2,
+      "metric": 0,
+      "mtu": 1500,
+      "speed": 10000,
+      "flags": "<UP,BROADCAST,RUNNING,MULTICAST>",
+      "type": "Ethernet",
+      "hardwareAddress": "e6:0f:bb:2d:c9:8d",
+      "ipAddresses": [
+        {
+          "address": "172.20.20.2/24",
+          "secondary": false,
+          "unnumbered": false
+        },
+        {
+          "address": "3fff:172:20:20::2/64",
+          "secondary": false,
+          "unnumbered": false
+        },
+        {
+          "address": "fe80::e40f:bbff:fe2d:c98d/64",
+          "secondary": false,
+          "unnumbered": false
+        }
+      ],
+      "interfaceType": "VETH",
+      "interfaceSlaveType": "None",
+      "lacpBypass": false,
+      "evpnMh": {},
+      "protodown": "off",
+      "parentIfindex": 3079
+    },
+    "eth1": {
+      "administrativeStatus": "up",
+      "operationalStatus": "up",
+      "linkDetection": true,
+      "linkUps": 2,
+      "linkDowns": 2,
+      "lastLinkUp": "2026/09/12 09:37:01.24",
+      "lastLinkDown": "2026/09/12 09:37:00.24",
+      "vrfName": "default",
+      "description": "link to hosta siteA-lan",
+      "mplsEnabled": false,
+      "linkDown": false,
+      "linkDownV6": false,
+      "mcForwardingV4": false,
+      "mcForwardingV6": false,
+      "pseudoInterface": false,
+      "index": 3087,
+      "metric": 0,
+      "mtu": 9500,
+      "speed": 10000,
+      "flags": "<UP,BROADCAST,RUNNING,MULTICAST>",
+      "type": "Ethernet",
+      "hardwareAddress": "aa:c1:ab:65:2e:e9",
+      "ipAddresses": [
+        {
+          "address": "10.10.0.1/24",
+          "secondary": false,
+          "unnumbered": false
+        },
+        {
+          "address": "fe80::a8c1:abff:fe65:2ee9/64",
+          "secondary": false,
+          "unnumbered": false
+        }
+      ],
+      "interfaceType": "VETH",
+      "interfaceSlaveType": "None",
+      "lacpBypass": false,
+      "evpnMh": {},
+      "protodown": "off"
+    },
+    "eth2": {
+      "administrativeStatus": "up",
+      "operationalStatus": "up",
+      "linkDetection": true,
+      "linkUps": 2,
+      "linkDowns": 1,
+      "lastLinkUp": "2026/09/12 09:37:00.48",
+      "lastLinkDown": "2026/09/12 09:37:00.47",
+      "vrfName": "default",
+      "description": "link to l1 A1 (reviewed NET-1042)",
+      "mplsEnabled": false,
+      "linkDown": false,
+      "linkDownV6": false,
+      "mcForwardingV4": false,
+      "mcForwardingV6": false,
+      "pseudoInterface": false,
+      "index": 3088,
+      "metric": 0,
+      "mtu": 9500,
+      "speed": 10000,
+      "flags": "<UP,BROADCAST,RUNNING,MULTICAST>",
+      "type": "Ethernet",
+      "hardwareAddress": "aa:c1:ab:07:af:af",
+      "ipAddresses": [
+        {
+          "address": "10.200.0.2/30",
+          "secondary": false,
+          "unnumbered": false
+        },
+        {
+          "address": "fe80::a8c1:abff:fe07:afaf/64",
+          "secondary": false,
+          "unnumbered": false
+        }
+      ],
+      "interfaceType": "VETH",
+      "interfaceSlaveType": "None",
+      "lacpBypass": false,
+      "evpnMh": {},
+      "protodown": "off"
+    },
+    "eth3": {
+      "administrativeStatus": "up",
+      "operationalStatus": "up",
+      "linkDetection": true,
+      "linkUps": 2,
+      "linkDowns": 2,
+      "lastLinkUp": "2026/09/12 09:37:01.53",
+      "lastLinkDown": "2026/09/12 09:37:00.98",
+      "vrfName": "default",
+      "description": "link to r1 A2",
+      "mplsEnabled": false,
+      "linkDown": false,
+      "linkDownV6": false,
+      "mcForwardingV4": false,
+      "mcForwardingV6": false,
+      "pseudoInterface": false,
+      "index": 3102,
+      "metric": 0,
+      "mtu": 9500,
+      "speed": 10000,
+      "flags": "<UP,BROADCAST,RUNNING,MULTICAST>",
+      "type": "Ethernet",
+      "hardwareAddress": "aa:c1:ab:5f:c6:b9",
+      "ipAddresses": [
+        {
+          "address": "10.24.5.1/30",
+          "secondary": false,
+          "unnumbered": false
+        },
+        {
+          "address": "fe80::a8c1:abff:fe5f:c6b9/64",
+          "secondary": false,
+          "unnumbered": false
+        }
+      ],
+      "interfaceType": "VETH",
+      "interfaceSlaveType": "None",
+      "lacpBypass": false,
+      "evpnMh": {},
+      "protodown": "off"
+    },
+    "lo": {
+      "administrativeStatus": "up",
+      "operationalStatus": "up",
+      "linkDetection": true,
+      "linkUps": 0,
+      "linkDowns": 0,
+      "vrfName": "default",
+      "description": "router-id and management",
+      "mplsEnabled": false,
+      "linkDown": false,
+      "linkDownV6": false,
+      "mcForwardingV4": false,
+      "mcForwardingV6": false,
+      "pseudoInterface": false,
+      "index": 1,
+      "metric": 0,
+      "mtu": 65536,
+      "speed": 0,
+      "flags": "<UP,LOOPBACK,RUNNING>",
+      "type": "Loopback",
+      "ipAddresses": [
+        {
+          "address": "10.255.0.1/32",
+          "secondary": false,
+          "unnumbered": false
+        }
+      ],
+      "interfaceType": "Other",
+      "interfaceSlaveType": "None",
+      "lacpBypass": false,
+      "evpnMh": {},
+      "protodown": "off"
+    }
+  }
+}

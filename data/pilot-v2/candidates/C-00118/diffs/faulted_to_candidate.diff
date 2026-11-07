@@ -1,0 +1,11 @@
+--- I-00017
++++ C-00118
+@@ -220,7 +220,7 @@
+ interface eth2
+  description link to corea siteA
+  ip ospf area 0.0.0.0
+- ip ospf cost 65535
++ ip ospf cost 17
+  ip ospf network point-to-point
+ !
+ router ospf

@@ -1,0 +1,29 @@
+--- golden
++++ C-0025
+@@ -485,7 +485,7 @@
+  ip ospf network point-to-point
+ !
+ interface eth2
+- description link to coreb wan-siteB
++ description link to coreb wan-siteB (reviewed, see ticket NET-1042)
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+@@ -493,6 +493,7 @@
+ router ospf
+  ospf router-id 10.255.0.4
+  passive-interface lo
++ passive-interface eth2
+ !
+ line vty
+ !
+@@ -514,6 +515,6 @@
+ auto eth2
+ iface eth2
+     address 10.0.4.1/30
+-    alias link to coreb wan-siteB
+-
+-
++    alias link to coreb wan-siteB (reviewed, see ticket NET-1042)
++
++

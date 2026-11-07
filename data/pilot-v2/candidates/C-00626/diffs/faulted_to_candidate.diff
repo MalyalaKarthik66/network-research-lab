@@ -1,0 +1,11 @@
+--- I-00084
++++ C-00626
+@@ -320,7 +320,7 @@
+ interface eth4
+  description link to edgea wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 200
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ router ospf

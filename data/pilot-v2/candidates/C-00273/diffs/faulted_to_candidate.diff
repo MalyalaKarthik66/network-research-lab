@@ -1,0 +1,20 @@
+--- I-00037
++++ C-00273
+@@ -218,7 +218,7 @@
+  ip ospf cost 10
+ !
+ interface eth2
+- description link to corea siteA
++ description link to corea siteA (partially reverted)
+  ip ospf area 0.0.0.0
+  ip ospf cost 65535
+  ip ospf network point-to-point
+@@ -248,7 +248,7 @@
+ auto eth2
+ iface eth2
+     address 10.14.1.1/30
+-    alias link to corea siteA
++    alias link to corea siteA (partially reverted)
+ 
+ 
+ ===== edgeb/daemons =====

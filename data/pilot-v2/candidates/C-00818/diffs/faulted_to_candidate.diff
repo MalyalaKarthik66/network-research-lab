@@ -1,0 +1,11 @@
+--- I-00110
++++ C-00818
+@@ -459,7 +459,7 @@
+ interface eth1
+  description link to fw1 fw-pair
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ interface eth2

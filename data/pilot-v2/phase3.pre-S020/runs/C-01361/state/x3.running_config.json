@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "rc": 0,
+  "stdout": "Building configuration...\n\nCurrent configuration:\n!\nfrr version 8.4.1_git\nfrr defaults traditional\nhostname x3\ndomainname localdomain\nlog syslog informational\nno ipv6 forwarding\n!\ninterface eth1\n description link to x2 X3\n ip ospf area 0.0.0.0\n ip ospf cost 40\n ip ospf network point-to-point\nexit\n!\ninterface eth2\n description link to x4 X4\n ip ospf area 0.0.0.0\n ip ospf cost 40\n ip ospf network point-to-point\nexit\n!\ninterface lo\n description router-id and management\n ip ospf area 0.0.0.0\n ip ospf passive\nexit\n!\nrouter ospf\n ospf router-id 10.255.0.15\nexit\n!\nend\n",
+  "stderr": "% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.\n",
+  "argv": [
+    "docker",
+    "exec",
+    "clab-nrlv2-c-01361-x3",
+    "vtysh",
+    "-c",
+    "show running-config"
+  ],
+  "seconds": 0.05,
+  "error": null,
+  "command": "show running-config"
+}

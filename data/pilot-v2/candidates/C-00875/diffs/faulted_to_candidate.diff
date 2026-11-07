@@ -1,0 +1,20 @@
+--- I-00119
++++ C-00875
+@@ -39,7 +39,7 @@
+ interface eth1
+  description link to dista aggA
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 13
+  ip ospf network point-to-point
+ !
+ interface eth2
+@@ -47,8 +47,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+-!
+-ip route 10.20.0.0/24 10.22.2.1
+ !
+ router ospf
+  ospf router-id 10.255.0.3

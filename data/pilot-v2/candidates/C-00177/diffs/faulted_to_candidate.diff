@@ -1,0 +1,28 @@
+--- I-00024
++++ C-00177
+@@ -57,7 +57,7 @@
+ interface eth4
+  description link to coreb wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 100
++ ip ospf cost 2
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -156,7 +156,7 @@
+ interface eth4
+  description link to corea wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 100
++ ip ospf cost 2
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -249,7 +249,6 @@
+  ospf router-id 10.255.0.1
+  passive-interface lo
+  passive-interface eth1
+- passive-interface eth2
+ !
+ line vty
+ !

@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "rc": 0,
+  "stdout": "",
+  "stderr": "00:17:46 INFO Parsing & checking topology file=topology.clab.yml\n00:17:46 INFO Parsing & checking topology file=topology.clab.yml\n00:17:46 INFO Destroying lab name=nrlv2-c-01361\n00:17:47 INFO Removed container name=clab-nrlv2-c-01361-hostb\n00:17:47 INFO Removed container name=clab-nrlv2-c-01361-hosta\n00:17:47 INFO Removed container name=clab-nrlv2-c-01361-x3\n00:17:47 INFO Removed container name=clab-nrlv2-c-01361-x2\n00:17:47 INFO Removed container name=clab-nrlv2-c-01361-a2\n00:17:47 INFO Removed container name=clab-nrlv2-c-01361-aggb\n00:17:47 INFO Removed container name=clab-nrlv2-c-01361-x4\n00:17:48 INFO Removed container name=clab-nrlv2-c-01361-b1\n00:17:48 INFO Removed container name=clab-nrlv2-c-01361-b2\n00:17:48 INFO Removed container name=clab-nrlv2-c-01361-edgea\n00:17:48 INFO Removed container name=clab-nrlv2-c-01361-b3\n00:17:48 INFO Removed container name=clab-nrlv2-c-01361-coreb\n00:17:48 INFO Removed container name=clab-nrlv2-c-01361-corea\n00:17:48 INFO Removed container name=clab-nrlv2-c-01361-x1\n00:17:48 INFO Removed container name=clab-nrlv2-c-01361-edgeb\n00:17:48 INFO Removed container name=clab-nrlv2-c-01361-a1\n00:17:48 INFO Removed container name=clab-nrlv2-c-01361-hostc\n00:17:48 INFO Removed container name=clab-nrlv2-c-01361-agga\n00:17:48 INFO Removed container name=clab-nrlv2-c-01361-a3\n00:17:48 INFO Removing host entries path=/etc/hosts\n00:17:48 INFO Removing SSH config path=/etc/ssh/ssh_config.d/clab-nrlv2-c-01361.conf\n",
+  "argv": [
+    "containerlab",
+    "destroy",
+    "-t",
+    "topology.clab.yml",
+    "--cleanup"
+  ],
+  "seconds": 2.92,
+  "error": null,
+  "lab": "nrlv2-c-01361"
+}

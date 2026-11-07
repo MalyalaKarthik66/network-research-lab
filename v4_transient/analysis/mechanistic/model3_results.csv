@@ -1,0 +1,7 @@
+candidate_id,topology,mechanism,n_operations,n_intermediate_states,cycle_state_count,max_cycle_flow_fraction,max_cycle_flow_count,max_cycle_length,total_cycle_flow_state_exposure,max_no_path_flow_count,hybrid_cycle_state_count,hybrid_max_cycle_flow_count,hybrid_max_cycle_flow_fraction
+V4C-04,t05_ring6,drain,6,6,0,0.0,0,0,0,0,2,4,0.0625
+EX-V4-01,t14_ladder8,drain,6,6,0,0.0,0,0,0,0,3,15,0.14705882352941177
+EX-V4-02,t15_campus12,drain,6,6,0,0.0,0,0,0,0,4,23,0.11386138613861387
+EX-V4-03,t13_bowtie7,paired-cost,4,4,0,0.0,0,0,0,0,4,39,0.47560975609756095
+EX-V4-04,t14_ladder8,paired-cost,4,4,0,0.0,0,0,0,0,4,46,0.45098039215686275
+EX-V4-05,t15_campus12,paired-cost,4,4,0,0.0,0,0,0,0,4,116,0.5742574257425742

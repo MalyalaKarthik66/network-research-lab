@@ -1,0 +1,11 @@
+--- I-00102
++++ C-00753
+@@ -72,7 +72,7 @@
+ 
+ auto eth1
+ iface eth1
+-    address 10.21.1.2/30
++    address 10.200.0.1/30
+     alias link to edgea siteA
+ 
+ auto eth2

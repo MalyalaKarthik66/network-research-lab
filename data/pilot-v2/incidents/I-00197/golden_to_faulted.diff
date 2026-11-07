@@ -1,0 +1,11 @@
+--- golden-t20_leafspine12
++++ I-00197
+@@ -198,7 +198,7 @@
+ interface eth2
+  description link to l1 accA
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 65535
+  ip ospf network point-to-point
+ !
+ interface eth3

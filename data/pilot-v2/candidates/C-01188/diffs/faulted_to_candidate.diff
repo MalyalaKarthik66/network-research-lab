@@ -1,0 +1,19 @@
+--- I-00161
++++ C-01188
+@@ -222,7 +222,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+- shutdown
+ !
+ router ospf
+  ospf router-id 10.255.0.1
+@@ -1043,7 +1042,7 @@
+ interface eth1
+  description link to agga mgmtA
+  ip ospf area 0.0.0.0
+- ip ospf cost 80
++ ip ospf cost 1
+  ip ospf network point-to-point
+ !
+ interface eth2

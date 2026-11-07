@@ -1,0 +1,10 @@
+--- golden
++++ I-05
+@@ -493,6 +493,7 @@
+ router ospf
+  ospf router-id 10.255.0.4
+  passive-interface lo
++ passive-interface eth2
+ !
+ line vty
+ !

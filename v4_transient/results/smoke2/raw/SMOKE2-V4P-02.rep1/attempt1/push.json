@@ -1,0 +1,16 @@
+[
+  {
+    "node": "b1",
+    "commands": [
+      "interface eth1",
+      "shutdown",
+      "exit"
+    ],
+    "t_start": 1789466829.588136,
+    "t_end": 1789466830.0883994,
+    "status": "OK",
+    "rc": 0,
+    "stdout": "",
+    "stderr": "% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.\n"
+  }
+]

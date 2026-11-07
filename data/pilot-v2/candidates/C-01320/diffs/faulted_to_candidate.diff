@@ -1,0 +1,20 @@
+--- I-00179
++++ C-01320
+@@ -213,7 +213,7 @@
+  ip ospf area 0.0.0.0
+ !
+ interface eth1
+- description link to edgea accA
++ description link to edgea accA (partially reverted)
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+@@ -251,7 +251,7 @@
+ auto eth1
+ iface eth1
+     address 10.28.1.2/30
+-    alias link to edgea accA
++    alias link to edgea accA (partially reverted)
+ 
+ auto eth2
+ iface eth2

@@ -1,0 +1,58 @@
+{
+  "phase": 2,
+  "run_utc": "2026-08-26T12:07:00Z",
+  "generator_version": "pilot-v1",
+  "suite_version": "1.0.0",
+  "network": "nrl-pilot-v1",
+  "pybatfish_version": "2025.07.07.2423",
+  "python_version": "3.10.11",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "spike_verdict": "GO",
+  "snapshot_digest": "f8a1b1d9a607e003fa0e0d0b19d7b8211f1ef62d067aa5bad654a3574e61d0c3",
+  "artifact_digest": "95533a7dfe2f0ad2751c4f760ffe88a69ead4607c2f3832a32c505dabca4ae24",
+  "spike_overridden": false,
+  "candidates_requested": 3,
+  "candidates_processed": 3,
+  "candidates_errored": [],
+  "differential_flow": {
+    "src": "10.10.0.10",
+    "dst": "10.20.0.0/23"
+  },
+  "spec_property_ids": [
+    "P01",
+    "P02",
+    "P05",
+    "P07",
+    "P08"
+  ],
+  "oracle_only_property_ids": [
+    "P03",
+    "P04",
+    "P06",
+    "P09",
+    "P10",
+    "P11",
+    "P12"
+  ],
+  "raw_questions": [
+    "initIssues",
+    "fileParseStatus",
+    "parseWarning",
+    "undefinedReferences",
+    "unusedStructures",
+    "definedStructures",
+    "nodeProperties",
+    "interfaceProperties",
+    "ipOwners",
+    "layer3Edges",
+    "ospfSessionCompatibility",
+    "ospfInterfaceConfiguration",
+    "ospfProcessConfiguration",
+    "routes",
+    "detectLoops",
+    "multipathConsistency",
+    "subnetMultipathConsistency"
+  ],
+  "wall_seconds": 0.5,
+  "note": "No label, risk score or research target is computed in Phase 2. See docs/HARM-DEFINITION.md."
+}

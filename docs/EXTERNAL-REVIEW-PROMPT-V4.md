@@ -1,0 +1,17 @@
+# External review prompt — v4 (paste as is)
+
+Act as a hostile IEEE/ACM networking and ML reviewer. Do not assume that more data improves R², and do not be encouraging unless the evidence earns it.
+
+1. Project: Batfish (static model-based verifier) + Containerlab/FRR 8.4.1 emulation + ML, asking what harm survives a change that passes a reachability specification.
+2. v2 (binary harm | PASS) was abandoned: the label was deterministic (0/40 flips under randomised link churn) and recoverable from generator class (AUC 0.975).
+3. v3 target: blast radius r = (broken + rerouted flows) / golden flows; 151 candidates, 12 synthetic OSPF topologies, 2 mechanisms (OSPF cost, static blackhole), all Batfish SPEC-PASS.
+4. v3 learned results (leave-one-topology-out): R² 0.848 with oracle-only Batfish verdicts, 0.744 without; mechanism transfer R² −5.27; calibration passes only under a post-result amendment.
+5. P06 problem: a zero-parameter lookup on mechanism × one Batfish path property (P06) reaches R² 0.794; the model without oracle verdicts is below it (ΔR² −0.050, CI [−0.168, +0.062]).
+6. Decisive finding: walking Batfish's own main RIB reproduces the emulator's forwarding path for 26,738/26,738 flows, so r is computed exactly by Batfish in ~8 s. The ML predicts a quantity the verifier already gives for free.
+7. Proposed pivot: predict what a converged-state verifier cannot compute. Primary: transient traffic disruption while a Batfish-PASS change converges (measured in Containerlab). Fallback: traffic/SLA impact of PASS reroutes. Floor: a deterministic specification-completeness paper at Batfish-only scale.
+8. Gate before any scale-out: 20 changes × 5 replicates pilot. Kill criteria: disruption not above noise floor; explained ≥ 90% by an analytic baseline (r_exact × SPF/timer constants); replicates pure noise; results differ across host machines.
+9. Proposed v4 corpus if the pilot passes: 48 topologies in 6 families (incl. ECMP leaf-spine and Topology Zoo WAN graphs), 5 mechanisms, 1,440 changes × 3 replicates, leave-one-family-out validation, conformal/CQR intervals, strongest non-learned baseline mandatory.
+10. Distributed compute idea: friends' Windows laptops as GitLab CI self-managed runners in WSL2, content-addressed result bundles, admission test per worker, one lab per worker to limit timing confounds.
+11. Corpus links (SWECHA; we concluded its volunteer compute is an ASR record-lock loop, not a generic job scheduler — check this): https://code.swecha.org/corpus , https://code.swecha.org/corpus/corpus-client-cli , https://code.swecha.org/corpus/corpus-client-cli.git
+12. Questions: (a) Is the pivot to transient disruption scientifically sound, or will emulator timing (software FIB, no hardware) make any result non-transferable? (b) Is there prior work predicting transient convergence impact of configuration changes with learned models (beyond RFC 5715/6976/8333, consistent updates, CrystalNet, Rela, Gandalf)? (c) Will additional topologies, mechanisms or replicates plausibly change conclusions, and which matters most? (d) Is laptop heterogeneity fatal for a timing target? (e) Is the specification-completeness floor publishable anywhere credible? (f) What are we missing?
+13. Answer each question with named prior work, a concrete failure mode, and what experiment would settle it. Say "inconclusive" when a literature search finds nothing, rather than declaring novelty.

@@ -1,0 +1,25 @@
+--- I-00158
++++ C-01160
+@@ -39,16 +39,14 @@
+ interface eth1
+  description link to edgea aggA
+  ip ospf area 0.0.0.0
++ ip ospf cost 12
++ ip ospf network point-to-point
++!
++interface eth2
++ description link to p1 aggA2
++ ip ospf area 0.0.0.0
+  ip ospf cost 60
+  ip ospf network point-to-point
+-!
+-interface eth2
+- description link to p1 aggA2
+- ip ospf area 0.0.0.0
+- ip ospf cost 60
+- ip ospf network point-to-point
+-!
+-ip route 10.20.0.0/24 blackhole
+ !
+ router ospf
+  ospf router-id 10.255.0.13

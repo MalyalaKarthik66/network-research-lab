@@ -1,0 +1,14 @@
+{
+  "incident_id": "I-00119",
+  "topology": "t12_campus8",
+  "fault_id": "F0009",
+  "fault_family": "static_wrong_nexthop",
+  "fault_description": "[t12_campus8] agga sends 10.20.0.0/24 to 10.22.2.1, off the shortest path",
+  "fault_params": {
+    "node": "agga",
+    "prefix": "10.20.0.0/24",
+    "nexthop": "10.22.2.1",
+    "topology": "t12_campus8"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "NONZERO",
+  "rc": 1,
+  "stdout": "",
+  "stderr": "% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.\nzebra is not running\n",
+  "argv": [
+    "docker",
+    "exec",
+    "clab-nrlv2-c-00982-l2",
+    "vtysh",
+    "-c",
+    "show interface json"
+  ],
+  "seconds": 0.05,
+  "error": null,
+  "command": "show interface json"
+}

@@ -1,0 +1,20 @@
+--- I-00008
++++ C-00084
+@@ -116,7 +116,7 @@
+ interface eth1
+  description link to edgeb aggB
+  ip ospf area 0.0.0.0
+- ip ospf cost 60
++ ip ospf cost 1200
+  ip ospf network point-to-point
+ !
+ interface eth2
+@@ -314,7 +314,7 @@
+ interface eth5
+  description link to aggb aggB
+  ip ospf area 0.0.0.0
+- ip ospf cost 60
++ ip ospf cost 1200
+  ip ospf network point-to-point
+ !
+ router ospf

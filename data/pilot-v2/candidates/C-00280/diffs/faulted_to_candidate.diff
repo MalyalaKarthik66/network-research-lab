@@ -1,0 +1,10 @@
+--- I-00038
++++ C-00280
+@@ -55,6 +55,7 @@
+  ip ospf network point-to-point
+ !
+ ip route 10.20.0.0/24 blackhole
++ip route 10.20.0.0/15 10.14.5.2
+ !
+ router ospf
+  ospf router-id 10.255.0.2

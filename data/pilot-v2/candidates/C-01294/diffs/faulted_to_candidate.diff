@@ -1,0 +1,25 @@
+--- I-00175
++++ C-01294
+@@ -43,11 +43,12 @@
+ !
+ interface eth2
+  description link to g1 accA
++ ip ospf area 0.0.0.0
++ ip ospf cost 10
+ !
+ router ospf
+  ospf router-id 10.255.0.1
+  passive-interface lo
+- passive-interface eth1
+ !
+ line vty
+ !
+@@ -135,8 +136,6 @@
+ router ospf
+  ospf router-id 10.255.0.12
+  passive-interface lo
+- passive-interface eth1
+- passive-interface eth2
+ !
+ line vty
+ !

@@ -1,0 +1,33 @@
+[1/16] SMOKE3-V4P-05.rep1 t05_ring6 shutdown attempt 1
+      -> OK wall 116.09s obs 23.685110092163086 
+[2/16] SMOKE3-V4P-06.rep1 t15_campus12 shutdown attempt 1
+      -> OK wall 162.14s obs 23.794016361236572 
+[3/16] SMOKE3-V4P-02.rep1 t13_bowtie7 shutdown attempt 1
+      -> OK wall 121.69s obs 20.754011631011963 
+[4/16] SMOKE3-V4P-03.rep1 t14_ladder8 shutdown attempt 1
+      -> OK wall 141.33s obs 23.524723768234253 
+[5/16] SMOKE3-V4P-01.rep1 t05_ring6 shutdown attempt 1
+      -> OK wall 117.78s obs 20.535728454589844 
+[6/16] SMOKE3-V4P-04.rep1 t15_campus12 shutdown attempt 1
+      -> OK wall 189.65s obs 26.123324394226074 
+[7/16] SMOKE3-V4N-01.rep1 t05_ring6 noop attempt 1
+      -> OK wall 123.86s obs 22.37579846382141 
+[8/16] SMOKE3-V4N-09.rep1 t15_campus12 noop attempt 1
+      -> OK wall 156.43s obs 20.017998695373535 
+[9/16] SMOKE3-V4C-05.rep1 t05_ring6 bh attempt 1
+      -> OK wall 121.7s obs 22.932201385498047 
+[10/16] SMOKE3-V4C-10.rep1 t13_bowtie7 bh attempt 1
+      -> OK wall 131.03s obs 22.700767278671265 
+[11/16] SMOKE3-V4C-11.rep1 t14_ladder8 cost-hi attempt 1
+      -> OK wall 132.96s obs 24.66691493988037 
+[12/16] SMOKE3-V4C-18.rep1 t15_campus12 drain-hi attempt 1
+      -> OK wall 186.99s obs 26.60326910018921 
+[13/16] SMOKE3-V4C-02.rep1 t05_ring6 cost-mid attempt 1
+      -> OK wall 117.44s obs 21.820541620254517 
+[14/16] SMOKE3-V4C-07.rep1 t13_bowtie7 cost-mid attempt 1
+      -> OK wall 138.06s obs 24.030496835708618 
+[15/16] SMOKE3-V4C-12.rep1 t14_ladder8 cost-mid attempt 1
+      -> OK wall 143.21s obs 25.11784029006958 
+[16/16] SMOKE3-V4C-17.rep1 t15_campus12 cost-mid attempt 1
+      -> OK wall 159.92s obs 20.953927278518677 
+runner exit True

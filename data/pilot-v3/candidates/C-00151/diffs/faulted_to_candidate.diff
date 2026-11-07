@@ -1,0 +1,20 @@
+--- I-00012
++++ C-00151
+@@ -745,7 +745,7 @@
+ interface eth1
+  description link to s2 sl2
+  ip ospf area 0.0.0.0
+- ip ospf cost 21
++ ip ospf cost 420
+  ip ospf network point-to-point
+ !
+ interface eth2
+@@ -1027,7 +1027,7 @@
+ interface eth4
+  description link to l5 sl2
+  ip ospf area 0.0.0.0
+- ip ospf cost 21
++ ip ospf cost 420
+  ip ospf network point-to-point
+ !
+ router ospf

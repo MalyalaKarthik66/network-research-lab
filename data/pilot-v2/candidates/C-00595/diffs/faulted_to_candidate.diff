@@ -1,0 +1,11 @@
+--- I-00080
++++ C-00595
+@@ -302,7 +302,7 @@
+ interface eth3
+  description link to coreb siteB
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ ip route 10.20.0.10/32 10.18.7.1

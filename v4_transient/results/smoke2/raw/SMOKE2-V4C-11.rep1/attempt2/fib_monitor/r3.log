@@ -1,0 +1,7 @@
+[2026-09-15T10:49:50.622416] 10.10.0.0/24 nhid 27 via 10.24.7.1 dev eth1 proto ospf metric 20 
+[2026-09-15T10:49:50.622492] 10.24.1.0/30 nhid 27 via 10.24.7.1 dev eth1 proto ospf metric 20 
+[2026-09-15T10:49:50.622508] 10.24.2.0/30 nhid 27 via 10.24.7.1 dev eth1 proto ospf metric 20 
+[2026-09-15T10:49:50.622520] 10.24.9.0/30 nhid 27 via 10.24.7.1 dev eth1 proto ospf metric 20 
+[2026-09-15T10:49:50.622530] 10.255.0.1 nhid 27 via 10.24.7.1 dev eth1 proto ospf metric 20 
+[2026-09-15T10:49:50.622538] 10.255.0.2 nhid 27 via 10.24.7.1 dev eth1 proto ospf metric 20 
+[2026-09-15T10:49:50.622546] 10.255.0.3 nhid 27 via 10.24.7.1 dev eth1 proto ospf metric 20 

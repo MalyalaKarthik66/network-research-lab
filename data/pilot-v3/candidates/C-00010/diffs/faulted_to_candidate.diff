@@ -1,0 +1,11 @@
+--- I-00001
++++ C-00010
+@@ -158,6 +158,8 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 100
+  ip ospf network point-to-point
++!
++ip route 10.255.0.8/32 blackhole
+ !
+ router ospf
+  ospf router-id 10.255.0.5

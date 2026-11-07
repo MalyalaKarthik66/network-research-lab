@@ -1,0 +1,20 @@
+--- I-00006
++++ C-00058
+@@ -143,7 +143,7 @@
+ interface eth4
+  description link to r3 B2
+  ip ospf area 0.0.0.0
+- ip ospf cost 30
++ ip ospf cost 600
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -685,7 +685,7 @@
+ interface eth2
+  description link to edgeb B2
+  ip ospf area 0.0.0.0
+- ip ospf cost 30
++ ip ospf cost 600
+  ip ospf network point-to-point
+ !
+ router ospf

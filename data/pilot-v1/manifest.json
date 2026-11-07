@@ -1,0 +1,375 @@
+{
+  "pilot": "pilot-v1",
+  "generator_version": "pilot-v1",
+  "n_incidents": 10,
+  "n_candidates": 50,
+  "suite_version": "1.0.0",
+  "spec_properties": [
+    "P01",
+    "P02",
+    "P05",
+    "P07",
+    "P08"
+  ],
+  "oracle_only_properties": [
+    "P03",
+    "P04",
+    "P06",
+    "P09",
+    "P10",
+    "P11",
+    "P12"
+  ],
+  "candidates": [
+    {
+      "candidate_id": "C-0001",
+      "incident_id": "I-01",
+      "fault_family": "iface_down",
+      "repair_id": "R-exact_revert",
+      "path": "candidates/C-0001"
+    },
+    {
+      "candidate_id": "C-0002",
+      "incident_id": "I-01",
+      "fault_family": "iface_down",
+      "repair_id": "R-cost_reroute",
+      "path": "candidates/C-0002"
+    },
+    {
+      "candidate_id": "C-0003",
+      "incident_id": "I-01",
+      "fault_family": "iface_down",
+      "repair_id": "R-static_specific",
+      "path": "candidates/C-0003"
+    },
+    {
+      "candidate_id": "C-0004",
+      "incident_id": "I-01",
+      "fault_family": "iface_down",
+      "repair_id": "R-static_broad",
+      "path": "candidates/C-0004"
+    },
+    {
+      "candidate_id": "C-0005",
+      "incident_id": "I-01",
+      "fault_family": "iface_down",
+      "repair_id": "R-cosmetic",
+      "path": "candidates/C-0005"
+    },
+    {
+      "candidate_id": "C-0006",
+      "incident_id": "I-02",
+      "fault_family": "iface_down",
+      "repair_id": "R-exact_revert",
+      "path": "candidates/C-0006"
+    },
+    {
+      "candidate_id": "C-0007",
+      "incident_id": "I-02",
+      "fault_family": "iface_down",
+      "repair_id": "R-cost_reroute",
+      "path": "candidates/C-0007"
+    },
+    {
+      "candidate_id": "C-0008",
+      "incident_id": "I-02",
+      "fault_family": "iface_down",
+      "repair_id": "R-static_specific",
+      "path": "candidates/C-0008"
+    },
+    {
+      "candidate_id": "C-0009",
+      "incident_id": "I-02",
+      "fault_family": "iface_down",
+      "repair_id": "R-static_broad",
+      "path": "candidates/C-0009"
+    },
+    {
+      "candidate_id": "C-0010",
+      "incident_id": "I-02",
+      "fault_family": "iface_down",
+      "repair_id": "R-cosmetic",
+      "path": "candidates/C-0010"
+    },
+    {
+      "candidate_id": "C-0011",
+      "incident_id": "I-03",
+      "fault_family": "iface_wrong_addr",
+      "repair_id": "R-exact_revert",
+      "path": "candidates/C-0011"
+    },
+    {
+      "candidate_id": "C-0012",
+      "incident_id": "I-03",
+      "fault_family": "iface_wrong_addr",
+      "repair_id": "R-peer_align",
+      "path": "candidates/C-0012"
+    },
+    {
+      "candidate_id": "C-0013",
+      "incident_id": "I-03",
+      "fault_family": "iface_wrong_addr",
+      "repair_id": "R-static_broad",
+      "path": "candidates/C-0013"
+    },
+    {
+      "candidate_id": "C-0014",
+      "incident_id": "I-03",
+      "fault_family": "iface_wrong_addr",
+      "repair_id": "R-wrong_device",
+      "path": "candidates/C-0014"
+    },
+    {
+      "candidate_id": "C-0015",
+      "incident_id": "I-03",
+      "fault_family": "iface_wrong_addr",
+      "repair_id": "R-cosmetic",
+      "path": "candidates/C-0015"
+    },
+    {
+      "candidate_id": "C-0016",
+      "incident_id": "I-04",
+      "fault_family": "ospf_area_mismatch",
+      "repair_id": "R-exact_revert",
+      "path": "candidates/C-0016"
+    },
+    {
+      "candidate_id": "C-0017",
+      "incident_id": "I-04",
+      "fault_family": "ospf_area_mismatch",
+      "repair_id": "R-peer_align",
+      "path": "candidates/C-0017"
+    },
+    {
+      "candidate_id": "C-0018",
+      "incident_id": "I-04",
+      "fault_family": "ospf_area_mismatch",
+      "repair_id": "R-static_broad",
+      "path": "candidates/C-0018"
+    },
+    {
+      "candidate_id": "C-0019",
+      "incident_id": "I-04",
+      "fault_family": "ospf_area_mismatch",
+      "repair_id": "R-wrong_device",
+      "path": "candidates/C-0019"
+    },
+    {
+      "candidate_id": "C-0020",
+      "incident_id": "I-04",
+      "fault_family": "ospf_area_mismatch",
+      "repair_id": "R-cosmetic",
+      "path": "candidates/C-0020"
+    },
+    {
+      "candidate_id": "C-0021",
+      "incident_id": "I-05",
+      "fault_family": "ospf_passive_transit",
+      "repair_id": "R-exact_revert",
+      "path": "candidates/C-0021"
+    },
+    {
+      "candidate_id": "C-0022",
+      "incident_id": "I-05",
+      "fault_family": "ospf_passive_transit",
+      "repair_id": "R-static_broad",
+      "path": "candidates/C-0022"
+    },
+    {
+      "candidate_id": "C-0023",
+      "incident_id": "I-05",
+      "fault_family": "ospf_passive_transit",
+      "repair_id": "R-cost_reroute",
+      "path": "candidates/C-0023"
+    },
+    {
+      "candidate_id": "C-0024",
+      "incident_id": "I-05",
+      "fault_family": "ospf_passive_transit",
+      "repair_id": "R-wrong_device",
+      "path": "candidates/C-0024"
+    },
+    {
+      "candidate_id": "C-0025",
+      "incident_id": "I-05",
+      "fault_family": "ospf_passive_transit",
+      "repair_id": "R-cosmetic",
+      "path": "candidates/C-0025"
+    },
+    {
+      "candidate_id": "C-0026",
+      "incident_id": "I-06",
+      "fault_family": "ospf_iface_removed",
+      "repair_id": "R-exact_revert",
+      "path": "candidates/C-0026"
+    },
+    {
+      "candidate_id": "C-0027",
+      "incident_id": "I-06",
+      "fault_family": "ospf_iface_removed",
+      "repair_id": "R-overbroad_ospf",
+      "path": "candidates/C-0027"
+    },
+    {
+      "candidate_id": "C-0028",
+      "incident_id": "I-06",
+      "fault_family": "ospf_iface_removed",
+      "repair_id": "R-static_specific",
+      "path": "candidates/C-0028"
+    },
+    {
+      "candidate_id": "C-0029",
+      "incident_id": "I-06",
+      "fault_family": "ospf_iface_removed",
+      "repair_id": "R-wrong_device",
+      "path": "candidates/C-0029"
+    },
+    {
+      "candidate_id": "C-0030",
+      "incident_id": "I-06",
+      "fault_family": "ospf_iface_removed",
+      "repair_id": "R-cosmetic",
+      "path": "candidates/C-0030"
+    },
+    {
+      "candidate_id": "C-0031",
+      "incident_id": "I-07",
+      "fault_family": "ospf_cost_inversion",
+      "repair_id": "R-exact_revert",
+      "path": "candidates/C-0031"
+    },
+    {
+      "candidate_id": "C-0032",
+      "incident_id": "I-07",
+      "fault_family": "ospf_cost_inversion",
+      "repair_id": "R-partial_revert",
+      "path": "candidates/C-0032"
+    },
+    {
+      "candidate_id": "C-0033",
+      "incident_id": "I-07",
+      "fault_family": "ospf_cost_inversion",
+      "repair_id": "R-static_specific",
+      "path": "candidates/C-0033"
+    },
+    {
+      "candidate_id": "C-0034",
+      "incident_id": "I-07",
+      "fault_family": "ospf_cost_inversion",
+      "repair_id": "R-wrong_device",
+      "path": "candidates/C-0034"
+    },
+    {
+      "candidate_id": "C-0035",
+      "incident_id": "I-07",
+      "fault_family": "ospf_cost_inversion",
+      "repair_id": "R-cosmetic",
+      "path": "candidates/C-0035"
+    },
+    {
+      "candidate_id": "C-0036",
+      "incident_id": "I-08",
+      "fault_family": "static_blackhole",
+      "repair_id": "R-exact_revert",
+      "path": "candidates/C-0036"
+    },
+    {
+      "candidate_id": "C-0037",
+      "incident_id": "I-08",
+      "fault_family": "static_blackhole",
+      "repair_id": "R-static_override",
+      "path": "candidates/C-0037"
+    },
+    {
+      "candidate_id": "C-0038",
+      "incident_id": "I-08",
+      "fault_family": "static_blackhole",
+      "repair_id": "R-static_specific",
+      "path": "candidates/C-0038"
+    },
+    {
+      "candidate_id": "C-0039",
+      "incident_id": "I-08",
+      "fault_family": "static_blackhole",
+      "repair_id": "R-wrong_device",
+      "path": "candidates/C-0039"
+    },
+    {
+      "candidate_id": "C-0040",
+      "incident_id": "I-08",
+      "fault_family": "static_blackhole",
+      "repair_id": "R-cosmetic",
+      "path": "candidates/C-0040"
+    },
+    {
+      "candidate_id": "C-0041",
+      "incident_id": "I-09",
+      "fault_family": "static_wrong_nexthop",
+      "repair_id": "R-exact_revert",
+      "path": "candidates/C-0041"
+    },
+    {
+      "candidate_id": "C-0042",
+      "incident_id": "I-09",
+      "fault_family": "static_wrong_nexthop",
+      "repair_id": "R-static_override",
+      "path": "candidates/C-0042"
+    },
+    {
+      "candidate_id": "C-0043",
+      "incident_id": "I-09",
+      "fault_family": "static_wrong_nexthop",
+      "repair_id": "R-cost_reroute",
+      "path": "candidates/C-0043"
+    },
+    {
+      "candidate_id": "C-0044",
+      "incident_id": "I-09",
+      "fault_family": "static_wrong_nexthop",
+      "repair_id": "R-wrong_device",
+      "path": "candidates/C-0044"
+    },
+    {
+      "candidate_id": "C-0045",
+      "incident_id": "I-09",
+      "fault_family": "static_wrong_nexthop",
+      "repair_id": "R-cosmetic",
+      "path": "candidates/C-0045"
+    },
+    {
+      "candidate_id": "C-0046",
+      "incident_id": "I-10",
+      "fault_family": "static_route_loop",
+      "repair_id": "R-exact_revert",
+      "path": "candidates/C-0046"
+    },
+    {
+      "candidate_id": "C-0047",
+      "incident_id": "I-10",
+      "fault_family": "static_route_loop",
+      "repair_id": "R-static_specific",
+      "path": "candidates/C-0047"
+    },
+    {
+      "candidate_id": "C-0048",
+      "incident_id": "I-10",
+      "fault_family": "static_route_loop",
+      "repair_id": "R-cost_reroute",
+      "path": "candidates/C-0048"
+    },
+    {
+      "candidate_id": "C-0049",
+      "incident_id": "I-10",
+      "fault_family": "static_route_loop",
+      "repair_id": "R-wrong_device",
+      "path": "candidates/C-0049"
+    },
+    {
+      "candidate_id": "C-0050",
+      "incident_id": "I-10",
+      "fault_family": "static_route_loop",
+      "repair_id": "R-cosmetic",
+      "path": "candidates/C-0050"
+    }
+  ]
+}

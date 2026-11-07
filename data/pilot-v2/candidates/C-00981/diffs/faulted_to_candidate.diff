@@ -1,0 +1,19 @@
+--- I-00132
++++ C-00981
+@@ -52,6 +52,7 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 30
+  ip ospf network point-to-point
++ shutdown
+ !
+ router ospf
+  ospf router-id 10.255.0.1
+@@ -77,7 +78,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.200.0.2/30
++    address 10.24.1.1/30
+     alias link to l1 A1
+ 
+ auto eth3

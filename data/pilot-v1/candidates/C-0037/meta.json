@@ -1,0 +1,103 @@
+{
+  "candidate_id": "C-0037",
+  "incident_id": "I-08",
+  "generator_version": "pilot-v1",
+  "nrl_version": "1.0.0",
+  "suite_version": "1.0.0",
+  "seed": 20260825,
+  "provenance": {
+    "_warning": "BANNED from the feature matrix. In a synthetic pilot these fields predict the label by construction. See docs/LEAKAGE.md.",
+    "fault_id": "F08",
+    "fault_family": "static_blackhole",
+    "fault_description": "corea blackholes 10.21.0.0/24; admin distance 1 beats OSPF's 110",
+    "repair_id": "R-static_override",
+    "repair_description": "add a more specific static to beat the bad one"
+  },
+  "artifact": {
+    "root": "artifact",
+    "clab_topology": "artifact/topology.clab.yml",
+    "batfish_snapshot": "batfish-snapshot",
+    "before_state": "../../incidents/I-08/artifact",
+    "routers": [
+      "corea",
+      "coreb",
+      "edgea",
+      "edgeb",
+      "wan1",
+      "wan2"
+    ],
+    "hosts": [
+      "hosta",
+      "hostb",
+      "hostc"
+    ],
+    "frr_image": "frrouting/frr:v8.4.1",
+    "host_image": "alpine:3.19",
+    "sha256": {
+      "artifact/devices/corea/interfaces": "1404925a368426ec3c827694f0613b5ac037cfbc445ca0e27f041bd51a1cba46",
+      "artifact/devices/corea/frr.conf": "813150e3eae4ce38f5f358ce0c8b694eb1400a2ffe8770bd1ab2bd8b6021677b",
+      "artifact/devices/corea/daemons": "07969082a3c3659f84f7b55b3e9fde25e168d2466c9fe2fad2b21fc93e8b61c7",
+      "artifact/devices/coreb/interfaces": "c3336b6220ff84fa136ba44475df945b5cb49685208898e213de95bc835d7359",
+      "artifact/devices/coreb/frr.conf": "771656bb7c12c7f691f4cbd5fcb200c5b0ecce7f817fce2e7fdf8563b74ac9c4",
+      "artifact/devices/coreb/daemons": "07969082a3c3659f84f7b55b3e9fde25e168d2466c9fe2fad2b21fc93e8b61c7",
+      "artifact/devices/edgea/interfaces": "27e3daf412ca316beffcbd3096d341fc5a1448167a04176e05c9e54dbe976054",
+      "artifact/devices/edgea/frr.conf": "69d6da3fec532f3cca45ec09368d7cb006a68e10edede8f21539e9477d968fc8",
+      "artifact/devices/edgea/daemons": "07969082a3c3659f84f7b55b3e9fde25e168d2466c9fe2fad2b21fc93e8b61c7",
+      "artifact/devices/edgeb/interfaces": "4876f6f248c1d9074eaa4d7773bb8c1f8518245f49e278f87d71473d94ddb4e8",
+      "artifact/devices/edgeb/frr.conf": "af3d49773e6ec5ae9f51ebb4d3082725a49561fce8095a2f3a55f7f51a12670f",
+      "artifact/devices/edgeb/daemons": "07969082a3c3659f84f7b55b3e9fde25e168d2466c9fe2fad2b21fc93e8b61c7",
+      "artifact/devices/hosta/setup.sh": "4bd9a37c7e202155212832fc6220d3a52a475522333ff619eb6aa8df3bb58fe9",
+      "artifact/devices/hostb/setup.sh": "0e2874e83f0276116400b331fae012296b95eb5bcae91002dcc6d96838308a1d",
+      "artifact/devices/hostc/setup.sh": "a1645924515419efe5d45ce272c13a92e3673d2afee94f05b711d55131bda62e",
+      "artifact/devices/wan1/interfaces": "918f13b94cc9d074e9bf9d258af1c239a0cea6bc82e74c3d73a85615dd11f5bf",
+      "artifact/devices/wan1/frr.conf": "d1daa19a1b768fa917d8dd44320a738e999da706c151d07b5bdae6c6869d9a57",
+      "artifact/devices/wan1/daemons": "07969082a3c3659f84f7b55b3e9fde25e168d2466c9fe2fad2b21fc93e8b61c7",
+      "artifact/devices/wan2/interfaces": "ea377bf20a0ba3b5c94be123c3379c883727840fbaa5ec774eb5da5d59fcd5f4",
+      "artifact/devices/wan2/frr.conf": "8b31ad70d0a18ae44463925be2263556a098b9314db97c96292d5c711509871d",
+      "artifact/devices/wan2/daemons": "07969082a3c3659f84f7b55b3e9fde25e168d2466c9fe2fad2b21fc93e8b61c7",
+      "artifact/bin/apply-interfaces.sh": "568baed5527893eb705220e3c651792888f409057bad62ea6347a0b2bb6eec92",
+      "artifact/topology.clab.yml": "21c68a6d48d3cd72309554db30c315fc8c57efbb4714f91ff379424e3b4a8a2a",
+      "batfish-snapshot/configs/corea.cfg": "5520a79f99750896c2b92dfeecdc354b3db87f731320eb48086576efe6677ada",
+      "batfish-snapshot/configs/coreb.cfg": "a7e699b0d218ffd4adc33f8af03353d0da89db664faaae74fabfa29b2dbe031e",
+      "batfish-snapshot/configs/edgea.cfg": "94fff3b016fc59ff81cddd0700c1c8f03c6187e29cefa28ac1076a22dc61bde2",
+      "batfish-snapshot/configs/edgeb.cfg": "dec29d90245862a95b7468bb6dac980244507ff7c6f0d6c110c517f458828a89",
+      "batfish-snapshot/configs/wan1.cfg": "c49155044f1c28887ba7cf5670f5cc6e099c796c4bf33694400f89510048fa7c",
+      "batfish-snapshot/configs/wan2.cfg": "05dcd988a4b8244b32237c711194155ae6c663cd035382bcf11d2b275fec4a09",
+      "batfish-snapshot/batfish/layer1_topology.json": "816ac015b3a72ba0679349d35e0d82f616c7becd812fb413d5dc255f162d4531"
+    }
+  },
+  "change_stats": {
+    "lines_added": 1,
+    "lines_removed": 0,
+    "lines_changed_total": 1,
+    "devices_touched": 1,
+    "devices_touched_list": [
+      "corea"
+    ],
+    "touches_ospf": false,
+    "touches_static": true,
+    "touches_interface": false,
+    "touches_access_list": false,
+    "touches_prefix_list": false,
+    "touches_route_map": false,
+    "touches_shutdown": false,
+    "touches_address": false,
+    "touches_cost": false,
+    "touches_area": false,
+    "touches_passive": false,
+    "touches_description_only": false
+  },
+  "spec_coverage": {
+    "spec_n_properties": 5,
+    "spec_n_reachability_pairs": 3,
+    "oracle_n_properties": 12,
+    "spec_fraction_of_oracle": 0.4167,
+    "changed_devices_on_spec_path": 1,
+    "changed_devices_fraction_of_network": 0.1667,
+    "change_touches_backup_path_device": true,
+    "spec_covers_changed_devices": true
+  },
+  "phase2_batfish": null,
+  "phase3_containerlab": null,
+  "label": null
+}

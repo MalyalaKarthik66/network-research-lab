@@ -1,0 +1,11 @@
+--- I-00168
++++ C-01238
+@@ -51,7 +51,7 @@
+ interface eth3
+  description link to mgmt mgmtA
+  ip ospf area 0.0.0.0
+- ip ospf cost 80
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ ip route 10.20.0.0/24 blackhole

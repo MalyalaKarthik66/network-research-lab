@@ -1,0 +1,11 @@
+--- I-00155
++++ C-01148
+@@ -724,6 +724,8 @@
+  ip ospf cost 50
+  ip ospf network point-to-point
+ !
++ip route 192.0.2.0/24 blackhole
++!
+ router ospf
+  ospf router-id 10.255.0.9
+  passive-interface lo

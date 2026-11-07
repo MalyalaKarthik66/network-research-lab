@@ -1,0 +1,12 @@
+--- I-00189
++++ C-01395
+@@ -47,8 +47,7 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+-!
+-ip route 10.20.0.0/24 10.29.2.1
++ shutdown
+ !
+ router ospf
+  ospf router-id 10.255.0.3

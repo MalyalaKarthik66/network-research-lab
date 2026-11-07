@@ -1,0 +1,2 @@
+model,n_test,mae,rmse,r2,note
+shortcut_random_forest,16,4.9117684260899424e-05,7.691985533858055e-05,-0.4053826900323152,all valid population rows are below the noise floor

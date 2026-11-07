@@ -1,0 +1,5287 @@
+{
+  "population": {
+    "audit": {
+      "n_joined": 301,
+      "n_spec_pass": 301,
+      "n_spec_fail": 0,
+      "population_verdict": "PASS",
+      "label_map": {
+        "HARMFUL": 1,
+        "SAFE": 0,
+        "NO_CONVERGENCE": 1
+      },
+      "outcome_counts": {
+        "SAFE": 219,
+        "HARMFUL": 79,
+        "EXECUTION_FAILED": 2,
+        "NO_CONVERGENCE": 1
+      },
+      "n_excluded": 2,
+      "excluded_rate": 0.0066,
+      "excluded_by_outcome": {
+        "EXECUTION_FAILED": 2
+      },
+      "excluded_rate_by_topology": {
+        "t01_chain4": 0.0,
+        "t02_wan6": 0.0,
+        "t03_dual8": 0.0,
+        "t04_star5": 0.0,
+        "t05_ring6": 0.0,
+        "t06_mesh6": 0.0,
+        "t07_tier7": 0.0,
+        "t08_chain8": 0.0,
+        "t09_twin6": 0.0,
+        "t10_deep9": 0.0455,
+        "t11_branch6": 0.0,
+        "t12_campus8": 0.0,
+        "t13_bowtie7": 0.0,
+        "t14_ladder8": 0.0,
+        "t15_campus12": 0.0,
+        "t16_pop14": 0.0,
+        "t17_metro13": 0.0,
+        "t18_grid12": 0.0,
+        "t19_dualcore16": 0.0,
+        "t20_leafspine12": 0.1111
+      },
+      "n_modelling": 299,
+      "n_harmful": 80,
+      "n_safe": 219,
+      "base_rate": 0.2676,
+      "manski_bounds": {
+        "p_min": 0.2658,
+        "p_max": 0.2724,
+        "width_points": 0.66,
+        "n": 301,
+        "n_undecidable": 2,
+        "note": "p_min assumes every undecidable outcome was safe, p_max that every one was harmful. Report both."
+      }
+    },
+    "sensitivity_audit": {
+      "n_joined": 301,
+      "n_spec_pass": 301,
+      "n_spec_fail": 0,
+      "population_verdict": "PASS",
+      "label_map": {
+        "HARMFUL": 1,
+        "SAFE": 0
+      },
+      "outcome_counts": {
+        "SAFE": 219,
+        "HARMFUL": 79,
+        "EXECUTION_FAILED": 2,
+        "NO_CONVERGENCE": 1
+      },
+      "n_excluded": 3,
+      "excluded_rate": 0.01,
+      "excluded_by_outcome": {
+        "EXECUTION_FAILED": 2,
+        "NO_CONVERGENCE": 1
+      },
+      "excluded_rate_by_topology": {
+        "t01_chain4": 0.0,
+        "t02_wan6": 0.0,
+        "t03_dual8": 0.0,
+        "t04_star5": 0.0,
+        "t05_ring6": 0.0,
+        "t06_mesh6": 0.0,
+        "t07_tier7": 0.0,
+        "t08_chain8": 0.0,
+        "t09_twin6": 0.0,
+        "t10_deep9": 0.0455,
+        "t11_branch6": 0.0,
+        "t12_campus8": 0.0,
+        "t13_bowtie7": 0.0,
+        "t14_ladder8": 0.125,
+        "t15_campus12": 0.0,
+        "t16_pop14": 0.0,
+        "t17_metro13": 0.0,
+        "t18_grid12": 0.0,
+        "t19_dualcore16": 0.0,
+        "t20_leafspine12": 0.1111
+      },
+      "n_modelling": 298,
+      "n_harmful": 79,
+      "n_safe": 219,
+      "base_rate": 0.2651,
+      "manski_bounds": {
+        "p_min": 0.2625,
+        "p_max": 0.2724,
+        "width_points": 1.0,
+        "n": 301,
+        "n_undecidable": 3,
+        "note": "p_min assumes every undecidable outcome was safe, p_max that every one was harmful. Report both."
+      }
+    },
+    "p_harm_given_pass": 0.2676,
+    "wilson95": [
+      0.2206,
+      0.3205
+    ],
+    "clustered_bootstrap95": [
+      0.2159,
+      0.3225
+    ]
+  },
+  "harm_by_topology": [
+    {
+      "topology": "t01_chain4",
+      "harmful": 10,
+      "n": 24,
+      "rate": 0.4167,
+      "wilson95": [
+        0.2447,
+        0.6117
+      ]
+    },
+    {
+      "topology": "t02_wan6",
+      "harmful": 6,
+      "n": 25,
+      "rate": 0.24,
+      "wilson95": [
+        0.115,
+        0.4343
+      ]
+    },
+    {
+      "topology": "t03_dual8",
+      "harmful": 5,
+      "n": 21,
+      "rate": 0.2381,
+      "wilson95": [
+        0.1063,
+        0.4509
+      ]
+    },
+    {
+      "topology": "t04_star5",
+      "harmful": 6,
+      "n": 22,
+      "rate": 0.2727,
+      "wilson95": [
+        0.1315,
+        0.4815
+      ]
+    },
+    {
+      "topology": "t05_ring6",
+      "harmful": 2,
+      "n": 23,
+      "rate": 0.087,
+      "wilson95": [
+        0.0242,
+        0.268
+      ]
+    },
+    {
+      "topology": "t06_mesh6",
+      "harmful": 3,
+      "n": 23,
+      "rate": 0.1304,
+      "wilson95": [
+        0.0454,
+        0.3213
+      ]
+    },
+    {
+      "topology": "t07_tier7",
+      "harmful": 9,
+      "n": 21,
+      "rate": 0.4286,
+      "wilson95": [
+        0.2447,
+        0.6345
+      ]
+    },
+    {
+      "topology": "t08_chain8",
+      "harmful": 7,
+      "n": 24,
+      "rate": 0.2917,
+      "wilson95": [
+        0.1491,
+        0.4917
+      ]
+    },
+    {
+      "topology": "t09_twin6",
+      "harmful": 9,
+      "n": 22,
+      "rate": 0.4091,
+      "wilson95": [
+        0.2326,
+        0.6127
+      ]
+    },
+    {
+      "topology": "t10_deep9",
+      "harmful": 5,
+      "n": 21,
+      "rate": 0.2381,
+      "wilson95": [
+        0.1063,
+        0.4509
+      ]
+    },
+    {
+      "topology": "t11_branch6",
+      "harmful": 5,
+      "n": 8,
+      "rate": 0.625,
+      "wilson95": [
+        0.3057,
+        0.8632
+      ]
+    },
+    {
+      "topology": "t12_campus8",
+      "harmful": 1,
+      "n": 9,
+      "rate": 0.1111,
+      "wilson95": [
+        0.0199,
+        0.435
+      ]
+    },
+    {
+      "topology": "t13_bowtie7",
+      "harmful": 2,
+      "n": 8,
+      "rate": 0.25,
+      "wilson95": [
+        0.0715,
+        0.5907
+      ]
+    },
+    {
+      "topology": "t14_ladder8",
+      "harmful": 2,
+      "n": 8,
+      "rate": 0.25,
+      "wilson95": [
+        0.0715,
+        0.5907
+      ]
+    },
+    {
+      "topology": "t15_campus12",
+      "harmful": 4,
+      "n": 9,
+      "rate": 0.4444,
+      "wilson95": [
+        0.1888,
+        0.7333
+      ]
+    },
+    {
+      "topology": "t16_pop14",
+      "harmful": 1,
+      "n": 5,
+      "rate": 0.2,
+      "wilson95": [
+        0.0362,
+        0.6245
+      ]
+    },
+    {
+      "topology": "t17_metro13",
+      "harmful": 1,
+      "n": 6,
+      "rate": 0.1667,
+      "wilson95": [
+        0.0301,
+        0.5635
+      ]
+    },
+    {
+      "topology": "t18_grid12",
+      "harmful": 1,
+      "n": 5,
+      "rate": 0.2,
+      "wilson95": [
+        0.0362,
+        0.6245
+      ]
+    },
+    {
+      "topology": "t19_dualcore16",
+      "harmful": 1,
+      "n": 7,
+      "rate": 0.1429,
+      "wilson95": [
+        0.0257,
+        0.5131
+      ]
+    },
+    {
+      "topology": "t20_leafspine12",
+      "harmful": 0,
+      "n": 8,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.3244
+      ]
+    }
+  ],
+  "harm_by_fault_family": [
+    {
+      "fault family": "iface_down",
+      "harmful": 3,
+      "n": 28,
+      "rate": 0.1071,
+      "wilson95": [
+        0.0371,
+        0.272
+      ]
+    },
+    {
+      "fault family": "iface_wrong_addr",
+      "harmful": 19,
+      "n": 32,
+      "rate": 0.5938,
+      "wilson95": [
+        0.4226,
+        0.7448
+      ]
+    },
+    {
+      "fault family": "ospf_area_mismatch",
+      "harmful": 5,
+      "n": 31,
+      "rate": 0.1613,
+      "wilson95": [
+        0.0709,
+        0.3263
+      ]
+    },
+    {
+      "fault family": "ospf_cost_excessive",
+      "harmful": 10,
+      "n": 35,
+      "rate": 0.2857,
+      "wilson95": [
+        0.1633,
+        0.4505
+      ]
+    },
+    {
+      "fault family": "ospf_cost_inversion",
+      "harmful": 14,
+      "n": 31,
+      "rate": 0.4516,
+      "wilson95": [
+        0.2916,
+        0.6223
+      ]
+    },
+    {
+      "fault family": "ospf_iface_removed",
+      "harmful": 7,
+      "n": 26,
+      "rate": 0.2692,
+      "wilson95": [
+        0.137,
+        0.4608
+      ]
+    },
+    {
+      "fault family": "ospf_passive_transit",
+      "harmful": 6,
+      "n": 30,
+      "rate": 0.2,
+      "wilson95": [
+        0.0951,
+        0.3731
+      ]
+    },
+    {
+      "fault family": "static_blackhole",
+      "harmful": 8,
+      "n": 27,
+      "rate": 0.2963,
+      "wilson95": [
+        0.1585,
+        0.4848
+      ]
+    },
+    {
+      "fault family": "static_route_loop",
+      "harmful": 4,
+      "n": 30,
+      "rate": 0.1333,
+      "wilson95": [
+        0.0531,
+        0.2968
+      ]
+    },
+    {
+      "fault family": "static_wrong_nexthop",
+      "harmful": 4,
+      "n": 29,
+      "rate": 0.1379,
+      "wilson95": [
+        0.055,
+        0.3056
+      ]
+    }
+  ],
+  "gate_recoverability_pass_population": {
+    "A": {
+      "worst_auc": 0.9612,
+      "n_features": 24,
+      "n_live": 17,
+      "per_class": {
+        "correct": 0.8507,
+        "incomplete": 0.9612,
+        "regressive": 0.8055
+      }
+    },
+    "A+": {
+      "worst_auc": 0.9661,
+      "n_features": 52,
+      "n_live": 42,
+      "per_class": {
+        "correct": 0.9542,
+        "incomplete": 0.9661,
+        "regressive": 0.9101
+      }
+    },
+    "B": {
+      "worst_auc": 0.977,
+      "n_features": 68,
+      "n_live": 52,
+      "per_class": {
+        "correct": 0.957,
+        "incomplete": 0.977,
+        "regressive": 0.9057
+      }
+    },
+    "C": {
+      "worst_auc": 0.9747,
+      "n_features": 75,
+      "n_live": 55,
+      "per_class": {
+        "correct": 0.9587,
+        "incomplete": 0.9747,
+        "regressive": 0.9057
+      }
+    },
+    "chg_only": {
+      "worst_auc": 0.9441,
+      "n_features": 16,
+      "n_live": 13,
+      "per_class": {
+        "correct": 0.8594,
+        "incomplete": 0.9441,
+        "regressive": 0.8421
+      }
+    },
+    "cov_only": {
+      "worst_auc": 0.6147,
+      "n_features": 8,
+      "n_live": 4,
+      "per_class": {
+        "correct": 0.6022,
+        "incomplete": 0.5555,
+        "regressive": 0.6147
+      }
+    },
+    "g_only": {
+      "worst_auc": 0.8701,
+      "n_features": 28,
+      "n_live": 25,
+      "per_class": {
+        "correct": 0.8701,
+        "incomplete": 0.8282,
+        "regressive": 0.8113
+      }
+    },
+    "B_only": {
+      "worst_auc": 0.7649,
+      "n_features": 16,
+      "n_live": 10,
+      "per_class": {
+        "correct": 0.6704,
+        "incomplete": 0.7649,
+        "regressive": 0.4722
+      }
+    },
+    "C_only": {
+      "worst_auc": 0.5872,
+      "n_features": 7,
+      "n_live": 3,
+      "per_class": {
+        "correct": 0.5527,
+        "incomplete": 0.5872,
+        "regressive": 0.4794
+      }
+    },
+    "B+C_only": {
+      "worst_auc": 0.7787,
+      "n_features": 23,
+      "n_live": 13,
+      "per_class": {
+        "correct": 0.6953,
+        "incomplete": 0.7787,
+        "regressive": 0.4694
+      }
+    },
+    "no_chg": {
+      "worst_auc": 0.9258,
+      "n_features": 59,
+      "n_live": 42,
+      "per_class": {
+        "correct": 0.9038,
+        "incomplete": 0.9258,
+        "regressive": 0.8128
+      }
+    },
+    "no_g": {
+      "worst_auc": 0.982,
+      "n_features": 47,
+      "n_live": 30,
+      "per_class": {
+        "correct": 0.8613,
+        "incomplete": 0.982,
+        "regressive": 0.809
+      }
+    },
+    "no_chg_no_g": {
+      "worst_auc": 0.8219,
+      "n_features": 31,
+      "n_live": 17,
+      "per_class": {
+        "correct": 0.7197,
+        "incomplete": 0.8219,
+        "regressive": 0.641
+      }
+    }
+  },
+  "gate_fault_family_recoverability": {
+    "worst_auc": 0.9975,
+    "n_features": 75,
+    "n_live": 55,
+    "per_class": {
+      "iface_down": 0.996,
+      "iface_wrong_addr": 0.9115,
+      "ospf_area_mismatch": 0.9753,
+      "ospf_cost_excessive": 0.8715,
+      "ospf_cost_inversion": 0.8137,
+      "ospf_iface_removed": 0.9016,
+      "ospf_passive_transit": 0.9975,
+      "static_blackhole": 0.8512,
+      "static_route_loop": 0.8704,
+      "static_wrong_nexthop": 0.8223
+    }
+  },
+  "shortcut_ceiling": {
+    "auc_roc": 0.8535,
+    "auc_pr": 0.555,
+    "by_class": {
+      "correct": {
+        "harmful": 0,
+        "n": 153,
+        "harm_rate": 0.0
+      },
+      "incomplete": {
+        "harmful": 41,
+        "n": 73,
+        "harm_rate": 0.5616
+      },
+      "regressive": {
+        "harmful": 39,
+        "n": 73,
+        "harm_rate": 0.5342
+      }
+    },
+    "note": "score = empirical harm rate of the row's repair_class. This is an ORACLE: repair_class is banned from X. It is the ceiling a model reaches by recovering the operator rather than the risk."
+  },
+  "baselines": {
+    "base_rate": {
+      "auc_pr": 0.2676,
+      "brier": 0.195971,
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.0947,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0421,
+        "improvement_vs_random": 0.1807,
+        "mean_within_incident_auc": 0.5,
+        "n_incidents_scorable": 45
+      }
+    },
+    "spec_widening_rule": {
+      "auc_pr": 0.8137,
+      "auc_roc": 0.879,
+      "tp": 61,
+      "fp": 1,
+      "fn": 19,
+      "tn": 218,
+      "precision": 0.9839,
+      "recall": 0.7625,
+      "balanced_accuracy": 0.879,
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.0526,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0,
+        "improvement_vs_random": 0.2228,
+        "mean_within_incident_auc": 0.8944,
+        "n_incidents_scorable": 45
+      },
+      "ci95_auc_pr": [
+        0.7308,
+        0.8889
+      ]
+    }
+  },
+  "models": {
+    "A/gbt": {
+      "label": "A/gbt",
+      "n_rows": 299,
+      "effective_n": 157,
+      "auc_pr_fold_mean": 0.6672,
+      "auc_pr_fold_sd": 0.0486,
+      "auc_roc_fold_mean": 0.877,
+      "auc_roc_fold_sd": 0.0293,
+      "ece_fold_mean": 0.0679,
+      "pooled_auc_pr": 0.591,
+      "pooled_auc_pr_ci95": [
+        0.4922,
+        0.7064
+      ],
+      "pooled_auc_roc": 0.8583,
+      "pooled_auc_roc_ci95": [
+        0.8175,
+        0.8981
+      ],
+      "permutation_p": 0.0005,
+      "brier_murphy": {
+        "brier": 0.131641,
+        "reliability": 0.095257,
+        "resolution": 0.159588,
+        "uncertainty": 0.195971,
+        "identity_check": 0.131641
+      },
+      "ece_pooled": 0.0138,
+      "spiegelhalter": {
+        "z": 1.0052,
+        "p_value": 0.3148
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 75,
+          "predicted_mean": 0.0042,
+          "observed_rate": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0487
+        },
+        {
+          "bin": 2,
+          "n": 75,
+          "predicted_mean": 0.0467,
+          "observed_rate": 0.0667,
+          "ci_low": 0.0288,
+          "ci_high": 0.1468
+        },
+        {
+          "bin": 3,
+          "n": 74,
+          "predicted_mean": 0.377,
+          "observed_rate": 0.3919,
+          "ci_low": 0.2886,
+          "ci_high": 0.5058
+        },
+        {
+          "bin": 4,
+          "n": 75,
+          "predicted_mean": 0.6294,
+          "observed_rate": 0.6133,
+          "ci_low": 0.5002,
+          "ci_high": 0.7154
+        }
+      ],
+      "calibrator_choices": [
+        "beta",
+        "beta",
+        "beta",
+        "beta",
+        "beta"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": 1.1615,
+          "sd": 0.2956
+        },
+        "b": {
+          "mean": 0.1914,
+          "sd": 0.3779
+        },
+        "intercept": {
+          "mean": 0.6726,
+          "sd": 0.3847
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.35082,
+            "platt": 0.357436
+          },
+          "auc_roc": 0.8246,
+          "auc_pr": 0.5867,
+          "brier": 0.146347,
+          "ece": 0.0335
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.355584,
+            "platt": 0.358518
+          },
+          "auc_roc": 0.9003,
+          "auc_pr": 0.7159,
+          "brier": 0.10918,
+          "ece": 0.0522
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.474404,
+            "platt": 0.474443
+          },
+          "auc_roc": 0.9031,
+          "auc_pr": 0.6367,
+          "brier": 0.107139,
+          "ece": 0.0901
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.348912,
+            "platt": 0.349721
+          },
+          "auc_roc": 0.8912,
+          "auc_pr": 0.6932,
+          "brier": 0.12749,
+          "ece": 0.0363
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.32342,
+            "platt": 0.338662
+          },
+          "auc_roc": 0.8656,
+          "auc_pr": 0.7037,
+          "brier": 0.164015,
+          "ece": 0.1276
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.0737,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0211,
+        "improvement_vs_random": 0.2018,
+        "mean_within_incident_auc": 0.9333,
+        "n_incidents_scorable": 45
+      }
+    },
+    "A/logreg": {
+      "label": "A/logreg",
+      "n_rows": 299,
+      "effective_n": 157,
+      "auc_pr_fold_mean": 0.748,
+      "auc_pr_fold_sd": 0.0677,
+      "auc_roc_fold_mean": 0.8815,
+      "auc_roc_fold_sd": 0.0416,
+      "ece_fold_mean": 0.1077,
+      "pooled_auc_pr": 0.7027,
+      "pooled_auc_pr_ci95": [
+        0.6037,
+        0.7918
+      ],
+      "pooled_auc_roc": 0.8708,
+      "pooled_auc_roc_ci95": [
+        0.8268,
+        0.912
+      ],
+      "permutation_p": 0.0005,
+      "brier_murphy": {
+        "brier": 0.130898,
+        "reliability": 0.109047,
+        "resolution": 0.17412,
+        "uncertainty": 0.195971,
+        "identity_check": 0.130898
+      },
+      "ece_pooled": 0.0535,
+      "spiegelhalter": {
+        "z": 1.1733,
+        "p_value": 0.2407
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 75,
+          "predicted_mean": 0.0274,
+          "observed_rate": 0.0133,
+          "ci_low": 0.0024,
+          "ci_high": 0.0717
+        },
+        {
+          "bin": 2,
+          "n": 75,
+          "predicted_mean": 0.0768,
+          "observed_rate": 0.0667,
+          "ci_low": 0.0288,
+          "ci_high": 0.1468
+        },
+        {
+          "bin": 3,
+          "n": 76,
+          "predicted_mean": 0.2487,
+          "observed_rate": 0.3947,
+          "ci_low": 0.2925,
+          "ci_high": 0.5071
+        },
+        {
+          "bin": 4,
+          "n": 73,
+          "predicted_mean": 0.645,
+          "observed_rate": 0.6027,
+          "ci_low": 0.4881,
+          "ci_high": 0.7071
+        }
+      ],
+      "calibrator_choices": [
+        "beta",
+        "beta",
+        "beta",
+        "beta",
+        "beta"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": 0.9264,
+          "sd": 0.5432
+        },
+        "b": {
+          "mean": 0.8384,
+          "sd": 0.3951
+        },
+        "intercept": {
+          "mean": -0.1811,
+          "sd": 0.7482
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.293923,
+            "platt": 0.299328
+          },
+          "auc_roc": 0.8437,
+          "auc_pr": 0.6233,
+          "brier": 0.132029,
+          "ece": 0.1011
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.395158,
+            "platt": 0.395169
+          },
+          "auc_roc": 0.8937,
+          "auc_pr": 0.7934,
+          "brier": 0.109931,
+          "ece": 0.0731
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.395375,
+            "platt": 0.395398
+          },
+          "auc_roc": 0.9449,
+          "auc_pr": 0.8123,
+          "brier": 0.082829,
+          "ece": 0.0977
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.388715,
+            "platt": 0.3944
+          },
+          "auc_roc": 0.8967,
+          "auc_pr": 0.7787,
+          "brier": 0.13601,
+          "ece": 0.1153
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.391115,
+            "platt": 0.391417
+          },
+          "auc_roc": 0.8284,
+          "auc_pr": 0.7322,
+          "brier": 0.186351,
+          "ece": 0.1511
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.0947,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0421,
+        "improvement_vs_random": 0.1807,
+        "mean_within_incident_auc": 0.8889,
+        "n_incidents_scorable": 45
+      }
+    },
+    "A/rf": {
+      "label": "A/rf",
+      "n_rows": 299,
+      "effective_n": 157,
+      "auc_pr_fold_mean": 0.6779,
+      "auc_pr_fold_sd": 0.0289,
+      "auc_roc_fold_mean": 0.8801,
+      "auc_roc_fold_sd": 0.0374,
+      "ece_fold_mean": 0.0852,
+      "pooled_auc_pr": 0.6073,
+      "pooled_auc_pr_ci95": [
+        0.5157,
+        0.7102
+      ],
+      "pooled_auc_roc": 0.8566,
+      "pooled_auc_roc_ci95": [
+        0.8154,
+        0.897
+      ],
+      "permutation_p": 0.0005,
+      "brier_murphy": {
+        "brier": 0.13527,
+        "reliability": 0.113419,
+        "resolution": 0.17412,
+        "uncertainty": 0.195971,
+        "identity_check": 0.13527
+      },
+      "ece_pooled": 0.0394,
+      "spiegelhalter": {
+        "z": 3.438,
+        "p_value": 0.0006
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 75,
+          "predicted_mean": 0.0003,
+          "observed_rate": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0487
+        },
+        {
+          "bin": 2,
+          "n": 76,
+          "predicted_mean": 0.0255,
+          "observed_rate": 0.0921,
+          "ci_low": 0.0453,
+          "ci_high": 0.1781
+        },
+        {
+          "bin": 3,
+          "n": 73,
+          "predicted_mean": 0.3119,
+          "observed_rate": 0.3699,
+          "ci_low": 0.2682,
+          "ci_high": 0.4845
+        },
+        {
+          "bin": 4,
+          "n": 75,
+          "predicted_mean": 0.6462,
+          "observed_rate": 0.6133,
+          "ci_low": 0.5002,
+          "ci_high": 0.7154
+        }
+      ],
+      "calibrator_choices": [
+        "beta",
+        "beta",
+        "beta",
+        "beta",
+        "beta"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": 2.6154,
+          "sd": 1.7682
+        },
+        "b": {
+          "mean": -0.0294,
+          "sd": 1.1312
+        },
+        "intercept": {
+          "mean": 1.9702,
+          "sd": 1.7551
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.244317,
+            "platt": 0.248858
+          },
+          "auc_roc": 0.8595,
+          "auc_pr": 0.6521,
+          "brier": 0.134539,
+          "ece": 0.1062
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.353937,
+            "platt": 0.354101
+          },
+          "auc_roc": 0.9053,
+          "auc_pr": 0.6789,
+          "brier": 0.110145,
+          "ece": 0.0252
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.4167,
+            "platt": 0.420996
+          },
+          "auc_roc": 0.9265,
+          "auc_pr": 0.7049,
+          "brier": 0.097893,
+          "ece": 0.0819
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.327594,
+            "platt": 0.327596
+          },
+          "auc_roc": 0.8899,
+          "auc_pr": 0.714,
+          "brier": 0.120049,
+          "ece": 0.0423
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.327532,
+            "platt": 0.340379
+          },
+          "auc_roc": 0.8194,
+          "auc_pr": 0.6396,
+          "brier": 0.204848,
+          "ece": 0.1702
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.0947,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0421,
+        "improvement_vs_random": 0.1807,
+        "mean_within_incident_auc": 0.8889,
+        "n_incidents_scorable": 45
+      }
+    },
+    "A/stump": {
+      "label": "A/stump",
+      "n_rows": 299,
+      "effective_n": 157,
+      "auc_pr_fold_mean": 0.3778,
+      "auc_pr_fold_sd": 0.107,
+      "auc_roc_fold_mean": 0.643,
+      "auc_roc_fold_sd": 0.0876,
+      "ece_fold_mean": 0.0835,
+      "pooled_auc_pr": 0.4114,
+      "pooled_auc_pr_ci95": [
+        0.3256,
+        0.5205
+      ],
+      "pooled_auc_roc": 0.6683,
+      "pooled_auc_roc_ci95": [
+        0.5918,
+        0.7459
+      ],
+      "permutation_p": 0.0005,
+      "brier_murphy": {
+        "brier": 0.185552,
+        "reliability": 0.015006,
+        "resolution": 0.025424,
+        "uncertainty": 0.195971,
+        "identity_check": 0.185552
+      },
+      "ece_pooled": 0.0591,
+      "spiegelhalter": {
+        "z": 2.7102,
+        "p_value": 0.0067
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 80,
+          "predicted_mean": 0.099,
+          "observed_rate": 0.1875,
+          "ci_low": 0.1171,
+          "ci_high": 0.2866
+        },
+        {
+          "bin": 2,
+          "n": 94,
+          "predicted_mean": 0.1724,
+          "observed_rate": 0.1383,
+          "ci_low": 0.0826,
+          "ci_high": 0.2224
+        },
+        {
+          "bin": 3,
+          "n": 60,
+          "predicted_mean": 0.1967,
+          "observed_rate": 0.2833,
+          "ci_low": 0.1851,
+          "ci_high": 0.4077
+        },
+        {
+          "bin": 4,
+          "n": 65,
+          "predicted_mean": 0.505,
+          "observed_rate": 0.5385,
+          "ci_low": 0.4185,
+          "ci_high": 0.6541
+        }
+      ],
+      "calibrator_choices": [
+        "platt",
+        "platt",
+        "platt",
+        "beta",
+        "beta"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": 1.4142,
+          "sd": 0.3196
+        },
+        "b": {
+          "mean": 1.9781,
+          "sd": 1.7667
+        },
+        "intercept": {
+          "mean": 0.1883,
+          "sd": 0.4592
+        },
+        "slope": {
+          "mean": 1.2286,
+          "sd": 0.2014
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "platt",
+          "calibrator_log_loss": {
+            "platt": 0.47099,
+            "beta": 0.47099
+          },
+          "auc_roc": 0.7262,
+          "auc_pr": 0.4386,
+          "brier": 0.15956,
+          "ece": 0.0166
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "platt",
+          "calibrator_log_loss": {
+            "platt": 0.52112,
+            "beta": 0.52112
+          },
+          "auc_roc": 0.7276,
+          "auc_pr": 0.4569,
+          "brier": 0.14644,
+          "ece": 0.0386
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "platt",
+          "calibrator_log_loss": {
+            "platt": 0.49243,
+            "beta": 0.49243
+          },
+          "auc_roc": 0.5888,
+          "auc_pr": 0.2186,
+          "brier": 0.163385,
+          "ece": 0.0923
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.472584,
+            "platt": 0.472605
+          },
+          "auc_roc": 0.5,
+          "auc_pr": 0.2833,
+          "brier": 0.21056,
+          "ece": 0.0866
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.415626,
+            "platt": 0.415626
+          },
+          "auc_roc": 0.6726,
+          "auc_pr": 0.4918,
+          "brier": 0.238862,
+          "ece": 0.1833
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.1053,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0526,
+        "improvement_vs_random": 0.1702,
+        "mean_within_incident_auc": 0.6167,
+        "n_incidents_scorable": 45
+      }
+    },
+    "A+/gbt": {
+      "label": "A+/gbt",
+      "n_rows": 299,
+      "effective_n": 279,
+      "auc_pr_fold_mean": 0.8765,
+      "auc_pr_fold_sd": 0.0435,
+      "auc_roc_fold_mean": 0.9474,
+      "auc_roc_fold_sd": 0.0215,
+      "ece_fold_mean": 0.0854,
+      "pooled_auc_pr": 0.8345,
+      "pooled_auc_pr_ci95": [
+        0.7527,
+        0.9068
+      ],
+      "pooled_auc_roc": 0.9246,
+      "pooled_auc_roc_ci95": [
+        0.8861,
+        0.9578
+      ],
+      "permutation_p": 0.0005,
+      "brier_murphy": {
+        "brier": 0.091461,
+        "reliability": 0.084215,
+        "resolution": 0.188725,
+        "uncertainty": 0.195971,
+        "identity_check": 0.091461
+      },
+      "ece_pooled": 0.0455,
+      "spiegelhalter": {
+        "z": -0.8772,
+        "p_value": 0.3804
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 75,
+          "predicted_mean": 0.004,
+          "observed_rate": 0.0267,
+          "ci_low": 0.0073,
+          "ci_high": 0.0921
+        },
+        {
+          "bin": 2,
+          "n": 75,
+          "predicted_mean": 0.0579,
+          "observed_rate": 0.04,
+          "ci_low": 0.0137,
+          "ci_high": 0.1111
+        },
+        {
+          "bin": 3,
+          "n": 74,
+          "predicted_mean": 0.2859,
+          "observed_rate": 0.1892,
+          "ci_low": 0.1162,
+          "ci_high": 0.2929
+        },
+        {
+          "bin": 4,
+          "n": 75,
+          "predicted_mean": 0.7678,
+          "observed_rate": 0.8133,
+          "ci_low": 0.7107,
+          "ci_high": 0.8854
+        }
+      ],
+      "calibrator_choices": [
+        "beta",
+        "beta",
+        "beta",
+        "beta",
+        "beta"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": 2.1514,
+          "sd": 2.8145
+        },
+        "b": {
+          "mean": 0.4299,
+          "sd": 1.1996
+        },
+        "intercept": {
+          "mean": 1.0687,
+          "sd": 2.817
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.193955,
+            "platt": 0.257393
+          },
+          "auc_roc": 0.9357,
+          "auc_pr": 0.8266,
+          "brier": 0.113873,
+          "ece": 0.0711
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.307297,
+            "platt": 0.310021
+          },
+          "auc_roc": 0.9635,
+          "auc_pr": 0.9318,
+          "brier": 0.089522,
+          "ece": 0.1304
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.40632,
+            "platt": 0.40743
+          },
+          "auc_roc": 0.9755,
+          "auc_pr": 0.8237,
+          "brier": 0.074278,
+          "ece": 0.0963
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.331286,
+            "platt": 0.347971
+          },
+          "auc_roc": 0.9138,
+          "auc_pr": 0.8981,
+          "brier": 0.078002,
+          "ece": 0.0365
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.269132,
+            "platt": 0.286356
+          },
+          "auc_roc": 0.9484,
+          "auc_pr": 0.9021,
+          "brier": 0.101379,
+          "ece": 0.0928
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.0632,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0105,
+        "improvement_vs_random": 0.2123,
+        "mean_within_incident_auc": 0.9556,
+        "n_incidents_scorable": 45
+      }
+    },
+    "A+/logreg": {
+      "label": "A+/logreg",
+      "n_rows": 299,
+      "effective_n": 279,
+      "auc_pr_fold_mean": 0.8155,
+      "auc_pr_fold_sd": 0.0833,
+      "auc_roc_fold_mean": 0.911,
+      "auc_roc_fold_sd": 0.0412,
+      "ece_fold_mean": 0.0906,
+      "pooled_auc_pr": 0.7643,
+      "pooled_auc_pr_ci95": [
+        0.6674,
+        0.8457
+      ],
+      "pooled_auc_roc": 0.8988,
+      "pooled_auc_roc_ci95": [
+        0.8573,
+        0.9331
+      ],
+      "permutation_p": 0.0005,
+      "brier_murphy": {
+        "brier": 0.114774,
+        "reliability": 0.107528,
+        "resolution": 0.188725,
+        "uncertainty": 0.195971,
+        "identity_check": 0.114774
+      },
+      "ece_pooled": 0.0437,
+      "spiegelhalter": {
+        "z": 1.2422,
+        "p_value": 0.2142
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 75,
+          "predicted_mean": 0.0048,
+          "observed_rate": 0.0133,
+          "ci_low": 0.0024,
+          "ci_high": 0.0717
+        },
+        {
+          "bin": 2,
+          "n": 75,
+          "predicted_mean": 0.0529,
+          "observed_rate": 0.0267,
+          "ci_low": 0.0073,
+          "ci_high": 0.0921
+        },
+        {
+          "bin": 3,
+          "n": 74,
+          "predicted_mean": 0.2353,
+          "observed_rate": 0.3649,
+          "ci_low": 0.2644,
+          "ci_high": 0.4787
+        },
+        {
+          "bin": 4,
+          "n": 75,
+          "predicted_mean": 0.6783,
+          "observed_rate": 0.6667,
+          "ci_low": 0.5542,
+          "ci_high": 0.7629
+        }
+      ],
+      "calibrator_choices": [
+        "beta",
+        "beta",
+        "beta",
+        "beta",
+        "beta"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": 1.2752,
+          "sd": 0.747
+        },
+        "b": {
+          "mean": 0.5022,
+          "sd": 0.5361
+        },
+        "intercept": {
+          "mean": 0.2857,
+          "sd": 0.8212
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.272276,
+            "platt": 0.291953
+          },
+          "auc_roc": 0.8944,
+          "auc_pr": 0.7633,
+          "brier": 0.107932,
+          "ece": 0.0551
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.326494,
+            "platt": 0.328126
+          },
+          "auc_roc": 0.9252,
+          "auc_pr": 0.8514,
+          "brier": 0.102409,
+          "ece": 0.0576
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.29625,
+            "platt": 0.30148
+          },
+          "auc_roc": 0.9347,
+          "auc_pr": 0.8451,
+          "brier": 0.073596,
+          "ece": 0.0846
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.350952,
+            "platt": 0.360208
+          },
+          "auc_roc": 0.9603,
+          "auc_pr": 0.9306,
+          "brier": 0.096573,
+          "ece": 0.0949
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.365799,
+            "platt": 0.373472
+          },
+          "auc_roc": 0.8403,
+          "auc_pr": 0.6869,
+          "brier": 0.184721,
+          "ece": 0.1609
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.0842,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0316,
+        "improvement_vs_random": 0.1912,
+        "mean_within_incident_auc": 0.9111,
+        "n_incidents_scorable": 45
+      }
+    },
+    "A+/rf": {
+      "label": "A+/rf",
+      "n_rows": 299,
+      "effective_n": 279,
+      "auc_pr_fold_mean": 0.8993,
+      "auc_pr_fold_sd": 0.0324,
+      "auc_roc_fold_mean": 0.9568,
+      "auc_roc_fold_sd": 0.0162,
+      "ece_fold_mean": 0.0718,
+      "pooled_auc_pr": 0.8565,
+      "pooled_auc_pr_ci95": [
+        0.7788,
+        0.9283
+      ],
+      "pooled_auc_roc": 0.9414,
+      "pooled_auc_roc_ci95": [
+        0.9106,
+        0.9688
+      ],
+      "permutation_p": 0.0005,
+      "brier_murphy": {
+        "brier": 0.077107,
+        "reliability": 0.06986,
+        "resolution": 0.188725,
+        "uncertainty": 0.195971,
+        "identity_check": 0.077107
+      },
+      "ece_pooled": 0.0236,
+      "spiegelhalter": {
+        "z": -0.1296,
+        "p_value": 0.8969
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 75,
+          "predicted_mean": 0.002,
+          "observed_rate": 0.0133,
+          "ci_low": 0.0024,
+          "ci_high": 0.0717
+        },
+        {
+          "bin": 2,
+          "n": 75,
+          "predicted_mean": 0.0347,
+          "observed_rate": 0.04,
+          "ci_low": 0.0137,
+          "ci_high": 0.1111
+        },
+        {
+          "bin": 3,
+          "n": 74,
+          "predicted_mean": 0.189,
+          "observed_rate": 0.1622,
+          "ci_low": 0.0953,
+          "ci_high": 0.2624
+        },
+        {
+          "bin": 4,
+          "n": 75,
+          "predicted_mean": 0.8021,
+          "observed_rate": 0.8533,
+          "ci_low": 0.7562,
+          "ci_high": 0.9161
+        }
+      ],
+      "calibrator_choices": [
+        "beta",
+        "beta",
+        "beta",
+        "beta",
+        "beta"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": 2.7469,
+          "sd": 3.266
+        },
+        "b": {
+          "mean": 1.9369,
+          "sd": 2.0774
+        },
+        "intercept": {
+          "mean": 0.7108,
+          "sd": 3.6853
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.171875,
+            "platt": 0.18143
+          },
+          "auc_roc": 0.9595,
+          "auc_pr": 0.9113,
+          "brier": 0.081056,
+          "ece": 0.0709
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.26663,
+            "platt": 0.267549
+          },
+          "auc_roc": 0.9734,
+          "auc_pr": 0.9354,
+          "brier": 0.064082,
+          "ece": 0.0619
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.288338,
+            "platt": 0.289765
+          },
+          "auc_roc": 0.9694,
+          "auc_pr": 0.8412,
+          "brier": 0.070756,
+          "ece": 0.0675
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.320084,
+            "platt": 0.334892
+          },
+          "auc_roc": 0.9275,
+          "auc_pr": 0.8907,
+          "brier": 0.072008,
+          "ece": 0.0727
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.243332,
+            "platt": 0.243395
+          },
+          "auc_roc": 0.9544,
+          "auc_pr": 0.9181,
+          "brier": 0.095257,
+          "ece": 0.086
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.0526,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0,
+        "improvement_vs_random": 0.2228,
+        "mean_within_incident_auc": 0.9778,
+        "n_incidents_scorable": 45
+      }
+    },
+    "A+/stump": {
+      "label": "A+/stump",
+      "n_rows": 299,
+      "effective_n": 279,
+      "auc_pr_fold_mean": 0.3916,
+      "auc_pr_fold_sd": 0.0628,
+      "auc_roc_fold_mean": 0.6294,
+      "auc_roc_fold_sd": 0.0707,
+      "ece_fold_mean": 0.1006,
+      "pooled_auc_pr": 0.4379,
+      "pooled_auc_pr_ci95": [
+        0.3395,
+        0.5437
+      ],
+      "pooled_auc_roc": 0.5812,
+      "pooled_auc_roc_ci95": [
+        0.5018,
+        0.6643
+      ],
+      "permutation_p": 0.0005,
+      "brier_murphy": {
+        "brier": 0.187635,
+        "reliability": 0.019527,
+        "resolution": 0.027863,
+        "uncertainty": 0.195971,
+        "identity_check": 0.187635
+      },
+      "ece_pooled": 0.1035,
+      "spiegelhalter": {
+        "z": 1.6054,
+        "p_value": 0.1084
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 101,
+          "predicted_mean": 0.1495,
+          "observed_rate": 0.2574,
+          "ci_low": 0.1822,
+          "ci_high": 0.3505
+        },
+        {
+          "bin": 2,
+          "n": 54,
+          "predicted_mean": 0.2131,
+          "observed_rate": 0.2222,
+          "ci_low": 0.132,
+          "ci_high": 0.3494
+        },
+        {
+          "bin": 3,
+          "n": 95,
+          "predicted_mean": 0.287,
+          "observed_rate": 0.1474,
+          "ci_low": 0.0899,
+          "ci_high": 0.2323
+        },
+        {
+          "bin": 4,
+          "n": 49,
+          "predicted_mean": 0.4429,
+          "observed_rate": 0.5714,
+          "ci_low": 0.4327,
+          "ci_high": 0.6998
+        }
+      ],
+      "calibrator_choices": [
+        "beta",
+        "beta",
+        "beta",
+        "platt",
+        "beta"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": 0.6663,
+          "sd": 0.325
+        },
+        "b": {
+          "mean": 0.4558,
+          "sd": 0.5015
+        },
+        "intercept": {
+          "mean": -0.3234,
+          "sd": 0.0492
+        },
+        "slope": {
+          "mean": 0.8272,
+          "sd": 0.0
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.486174,
+            "platt": 0.486175
+          },
+          "auc_roc": 0.6,
+          "auc_pr": 0.4105,
+          "brier": 0.163822,
+          "ece": 0.0087
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.522883,
+            "platt": 0.522885
+          },
+          "auc_roc": 0.6071,
+          "auc_pr": 0.4073,
+          "brier": 0.154974,
+          "ece": 0.0351
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.646501,
+            "platt": 0.646501
+          },
+          "auc_roc": 0.7378,
+          "auc_pr": 0.3231,
+          "brier": 0.172505,
+          "ece": 0.2027
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "platt",
+          "calibrator_log_loss": {
+            "platt": 0.472582,
+            "beta": 0.472584
+          },
+          "auc_roc": 0.5294,
+          "auc_pr": 0.3255,
+          "brier": 0.199811,
+          "ece": 0.0733
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.415626,
+            "platt": 0.415626
+          },
+          "auc_roc": 0.6726,
+          "auc_pr": 0.4918,
+          "brier": 0.238862,
+          "ece": 0.1833
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.1053,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0526,
+        "improvement_vs_random": 0.1702,
+        "mean_within_incident_auc": 0.6111,
+        "n_incidents_scorable": 45
+      }
+    },
+    "B/gbt": {
+      "label": "B/gbt",
+      "n_rows": 299,
+      "effective_n": 279,
+      "auc_pr_fold_mean": 0.8659,
+      "auc_pr_fold_sd": 0.0346,
+      "auc_roc_fold_mean": 0.9448,
+      "auc_roc_fold_sd": 0.0137,
+      "ece_fold_mean": 0.0839,
+      "pooled_auc_pr": 0.8175,
+      "pooled_auc_pr_ci95": [
+        0.7305,
+        0.8986
+      ],
+      "pooled_auc_roc": 0.9226,
+      "pooled_auc_roc_ci95": [
+        0.8846,
+        0.9571
+      ],
+      "permutation_p": 0.0005,
+      "brier_murphy": {
+        "brier": 0.090667,
+        "reliability": 0.083141,
+        "resolution": 0.188446,
+        "uncertainty": 0.195971,
+        "identity_check": 0.090667
+      },
+      "ece_pooled": 0.0274,
+      "spiegelhalter": {
+        "z": -0.261,
+        "p_value": 0.7941
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 75,
+          "predicted_mean": 0.0037,
+          "observed_rate": 0.0267,
+          "ci_low": 0.0073,
+          "ci_high": 0.0921
+        },
+        {
+          "bin": 2,
+          "n": 75,
+          "predicted_mean": 0.0532,
+          "observed_rate": 0.04,
+          "ci_low": 0.0137,
+          "ci_high": 0.1111
+        },
+        {
+          "bin": 3,
+          "n": 74,
+          "predicted_mean": 0.2537,
+          "observed_rate": 0.2027,
+          "ci_low": 0.1269,
+          "ci_high": 0.3079
+        },
+        {
+          "bin": 4,
+          "n": 75,
+          "predicted_mean": 0.7774,
+          "observed_rate": 0.8,
+          "ci_low": 0.6959,
+          "ci_high": 0.8749
+        }
+      ],
+      "calibrator_choices": [
+        "beta",
+        "beta",
+        "beta",
+        "beta",
+        "beta"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": 2.0898,
+          "sd": 2.7011
+        },
+        "b": {
+          "mean": 0.7022,
+          "sd": 1.5135
+        },
+        "intercept": {
+          "mean": 0.7773,
+          "sd": 2.9444
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.191798,
+            "platt": 0.253741
+          },
+          "auc_roc": 0.9373,
+          "auc_pr": 0.8286,
+          "brier": 0.111862,
+          "ece": 0.0683
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.280485,
+            "platt": 0.294452
+          },
+          "auc_roc": 0.9518,
+          "auc_pr": 0.8997,
+          "brier": 0.090535,
+          "ece": 0.115
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.371654,
+            "platt": 0.378878
+          },
+          "auc_roc": 0.9673,
+          "auc_pr": 0.8218,
+          "brier": 0.071408,
+          "ece": 0.0949
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.330445,
+            "platt": 0.344208
+          },
+          "auc_roc": 0.9275,
+          "auc_pr": 0.9032,
+          "brier": 0.080498,
+          "ece": 0.0418
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.261552,
+            "platt": 0.286337
+          },
+          "auc_roc": 0.94,
+          "auc_pr": 0.8761,
+          "brier": 0.098935,
+          "ece": 0.0993
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.0632,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0105,
+        "improvement_vs_random": 0.2123,
+        "mean_within_incident_auc": 0.9556,
+        "n_incidents_scorable": 45
+      }
+    },
+    "B/logreg": {
+      "label": "B/logreg",
+      "n_rows": 299,
+      "effective_n": 279,
+      "auc_pr_fold_mean": 0.7979,
+      "auc_pr_fold_sd": 0.1088,
+      "auc_roc_fold_mean": 0.9064,
+      "auc_roc_fold_sd": 0.052,
+      "ece_fold_mean": 0.0921,
+      "pooled_auc_pr": 0.7562,
+      "pooled_auc_pr_ci95": [
+        0.6569,
+        0.8386
+      ],
+      "pooled_auc_roc": 0.893,
+      "pooled_auc_roc_ci95": [
+        0.8497,
+        0.9283
+      ],
+      "permutation_p": 0.0005,
+      "brier_murphy": {
+        "brier": 0.119817,
+        "reliability": 0.112571,
+        "resolution": 0.188725,
+        "uncertainty": 0.195971,
+        "identity_check": 0.119817
+      },
+      "ece_pooled": 0.0503,
+      "spiegelhalter": {
+        "z": 1.6342,
+        "p_value": 0.1022
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 75,
+          "predicted_mean": 0.0045,
+          "observed_rate": 0.0133,
+          "ci_low": 0.0024,
+          "ci_high": 0.0717
+        },
+        {
+          "bin": 2,
+          "n": 75,
+          "predicted_mean": 0.0526,
+          "observed_rate": 0.0267,
+          "ci_low": 0.0073,
+          "ci_high": 0.0921
+        },
+        {
+          "bin": 3,
+          "n": 74,
+          "predicted_mean": 0.2351,
+          "observed_rate": 0.3784,
+          "ci_low": 0.2765,
+          "ci_high": 0.4923
+        },
+        {
+          "bin": 4,
+          "n": 75,
+          "predicted_mean": 0.6778,
+          "observed_rate": 0.6533,
+          "ci_low": 0.5405,
+          "ci_high": 0.7512
+        }
+      ],
+      "calibrator_choices": [
+        "beta",
+        "beta",
+        "beta",
+        "beta",
+        "beta"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": 1.2254,
+          "sd": 0.6161
+        },
+        "b": {
+          "mean": 0.3787,
+          "sd": 0.5723
+        },
+        "intercept": {
+          "mean": 0.3824,
+          "sd": 0.8392
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.288706,
+            "platt": 0.307511
+          },
+          "auc_roc": 0.9183,
+          "auc_pr": 0.7947,
+          "brier": 0.101048,
+          "ece": 0.0441
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.325362,
+            "platt": 0.329764
+          },
+          "auc_roc": 0.9203,
+          "auc_pr": 0.8365,
+          "brier": 0.105388,
+          "ece": 0.0599
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.302812,
+            "platt": 0.310678
+          },
+          "auc_roc": 0.9327,
+          "auc_pr": 0.8442,
+          "brier": 0.074285,
+          "ece": 0.0847
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.345543,
+            "platt": 0.35574
+          },
+          "auc_roc": 0.9549,
+          "auc_pr": 0.9186,
+          "brier": 0.103839,
+          "ece": 0.1027
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.35929,
+            "platt": 0.373627
+          },
+          "auc_roc": 0.8056,
+          "auc_pr": 0.5956,
+          "brier": 0.203717,
+          "ece": 0.1693
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.1053,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0526,
+        "improvement_vs_random": 0.1702,
+        "mean_within_incident_auc": 0.8667,
+        "n_incidents_scorable": 45
+      }
+    },
+    "B/rf": {
+      "label": "B/rf",
+      "n_rows": 299,
+      "effective_n": 279,
+      "auc_pr_fold_mean": 0.8844,
+      "auc_pr_fold_sd": 0.045,
+      "auc_roc_fold_mean": 0.9471,
+      "auc_roc_fold_sd": 0.0166,
+      "ece_fold_mean": 0.0743,
+      "pooled_auc_pr": 0.8336,
+      "pooled_auc_pr_ci95": [
+        0.7483,
+        0.917
+      ],
+      "pooled_auc_roc": 0.932,
+      "pooled_auc_roc_ci95": [
+        0.8961,
+        0.963
+      ],
+      "permutation_p": 0.0005,
+      "brier_murphy": {
+        "brier": 0.079808,
+        "reliability": 0.072562,
+        "resolution": 0.188725,
+        "uncertainty": 0.195971,
+        "identity_check": 0.079808
+      },
+      "ece_pooled": 0.0214,
+      "spiegelhalter": {
+        "z": 0.2353,
+        "p_value": 0.814
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 75,
+          "predicted_mean": 0.0036,
+          "observed_rate": 0.0133,
+          "ci_low": 0.0024,
+          "ci_high": 0.0717
+        },
+        {
+          "bin": 2,
+          "n": 75,
+          "predicted_mean": 0.0359,
+          "observed_rate": 0.0533,
+          "ci_low": 0.0209,
+          "ci_high": 0.1293
+        },
+        {
+          "bin": 3,
+          "n": 74,
+          "predicted_mean": 0.1869,
+          "observed_rate": 0.1622,
+          "ci_low": 0.0953,
+          "ci_high": 0.2624
+        },
+        {
+          "bin": 4,
+          "n": 75,
+          "predicted_mean": 0.8065,
+          "observed_rate": 0.84,
+          "ci_low": 0.7408,
+          "ci_high": 0.906
+        }
+      ],
+      "calibrator_choices": [
+        "beta",
+        "beta",
+        "beta",
+        "beta",
+        "beta"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": 2.5022,
+          "sd": 3.2624
+        },
+        "b": {
+          "mean": 2.4167,
+          "sd": 2.4744
+        },
+        "intercept": {
+          "mean": 0.2,
+          "sd": 3.9475
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.177672,
+            "platt": 0.187478
+          },
+          "auc_roc": 0.9357,
+          "auc_pr": 0.8749,
+          "brier": 0.085745,
+          "ece": 0.0671
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.276504,
+            "platt": 0.277001
+          },
+          "auc_roc": 0.9751,
+          "auc_pr": 0.9394,
+          "brier": 0.060598,
+          "ece": 0.0712
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.276286,
+            "platt": 0.284574
+          },
+          "auc_roc": 0.951,
+          "auc_pr": 0.8058,
+          "brier": 0.079837,
+          "ece": 0.0818
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.322707,
+            "platt": 0.337826
+          },
+          "auc_roc": 0.9261,
+          "auc_pr": 0.8889,
+          "brier": 0.072402,
+          "ece": 0.071
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.245349,
+            "platt": 0.245362
+          },
+          "auc_roc": 0.9474,
+          "auc_pr": 0.913,
+          "brier": 0.097979,
+          "ece": 0.0802
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.0632,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0105,
+        "improvement_vs_random": 0.2123,
+        "mean_within_incident_auc": 0.9556,
+        "n_incidents_scorable": 45
+      }
+    },
+    "B/stump": {
+      "label": "B/stump",
+      "n_rows": 299,
+      "effective_n": 279,
+      "auc_pr_fold_mean": 0.3916,
+      "auc_pr_fold_sd": 0.0628,
+      "auc_roc_fold_mean": 0.6294,
+      "auc_roc_fold_sd": 0.0707,
+      "ece_fold_mean": 0.1006,
+      "pooled_auc_pr": 0.4379,
+      "pooled_auc_pr_ci95": [
+        0.3395,
+        0.5437
+      ],
+      "pooled_auc_roc": 0.5812,
+      "pooled_auc_roc_ci95": [
+        0.5018,
+        0.6643
+      ],
+      "permutation_p": 0.0005,
+      "brier_murphy": {
+        "brier": 0.187635,
+        "reliability": 0.019527,
+        "resolution": 0.027863,
+        "uncertainty": 0.195971,
+        "identity_check": 0.187635
+      },
+      "ece_pooled": 0.1035,
+      "spiegelhalter": {
+        "z": 1.6054,
+        "p_value": 0.1084
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 101,
+          "predicted_mean": 0.1495,
+          "observed_rate": 0.2574,
+          "ci_low": 0.1822,
+          "ci_high": 0.3505
+        },
+        {
+          "bin": 2,
+          "n": 54,
+          "predicted_mean": 0.2131,
+          "observed_rate": 0.2222,
+          "ci_low": 0.132,
+          "ci_high": 0.3494
+        },
+        {
+          "bin": 3,
+          "n": 95,
+          "predicted_mean": 0.287,
+          "observed_rate": 0.1474,
+          "ci_low": 0.0899,
+          "ci_high": 0.2323
+        },
+        {
+          "bin": 4,
+          "n": 49,
+          "predicted_mean": 0.4429,
+          "observed_rate": 0.5714,
+          "ci_low": 0.4327,
+          "ci_high": 0.6998
+        }
+      ],
+      "calibrator_choices": [
+        "beta",
+        "beta",
+        "beta",
+        "platt",
+        "beta"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": 0.6663,
+          "sd": 0.325
+        },
+        "b": {
+          "mean": 0.4558,
+          "sd": 0.5015
+        },
+        "intercept": {
+          "mean": -0.3234,
+          "sd": 0.0492
+        },
+        "slope": {
+          "mean": 0.8272,
+          "sd": 0.0
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.486174,
+            "platt": 0.486175
+          },
+          "auc_roc": 0.6,
+          "auc_pr": 0.4105,
+          "brier": 0.163822,
+          "ece": 0.0087
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.522883,
+            "platt": 0.522885
+          },
+          "auc_roc": 0.6071,
+          "auc_pr": 0.4073,
+          "brier": 0.154974,
+          "ece": 0.0351
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.646501,
+            "platt": 0.646501
+          },
+          "auc_roc": 0.7378,
+          "auc_pr": 0.3231,
+          "brier": 0.172505,
+          "ece": 0.2027
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "platt",
+          "calibrator_log_loss": {
+            "platt": 0.472582,
+            "beta": 0.472584
+          },
+          "auc_roc": 0.5294,
+          "auc_pr": 0.3255,
+          "brier": 0.199811,
+          "ece": 0.0733
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.415626,
+            "platt": 0.415626
+          },
+          "auc_roc": 0.6726,
+          "auc_pr": 0.4918,
+          "brier": 0.238862,
+          "ece": 0.1833
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.1053,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0526,
+        "improvement_vs_random": 0.1702,
+        "mean_within_incident_auc": 0.6111,
+        "n_incidents_scorable": 45
+      }
+    },
+    "C/gbt": {
+      "label": "C/gbt",
+      "n_rows": 299,
+      "effective_n": 283,
+      "auc_pr_fold_mean": 0.8949,
+      "auc_pr_fold_sd": 0.052,
+      "auc_roc_fold_mean": 0.9492,
+      "auc_roc_fold_sd": 0.0249,
+      "ece_fold_mean": 0.0772,
+      "pooled_auc_pr": 0.8953,
+      "pooled_auc_pr_ci95": [
+        0.8319,
+        0.9479
+      ],
+      "pooled_auc_roc": 0.9332,
+      "pooled_auc_roc_ci95": [
+        0.8871,
+        0.9695
+      ],
+      "permutation_p": 0.0005,
+      "brier_murphy": {
+        "brier": 0.066829,
+        "reliability": 0.059583,
+        "resolution": 0.188725,
+        "uncertainty": 0.195971,
+        "identity_check": 0.066829
+      },
+      "ece_pooled": 0.0365,
+      "spiegelhalter": {
+        "z": -0.951,
+        "p_value": 0.3416
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 75,
+          "predicted_mean": 0.0135,
+          "observed_rate": 0.04,
+          "ci_low": 0.0137,
+          "ci_high": 0.1111
+        },
+        {
+          "bin": 2,
+          "n": 75,
+          "predicted_mean": 0.0686,
+          "observed_rate": 0.0267,
+          "ci_low": 0.0073,
+          "ci_high": 0.0921
+        },
+        {
+          "bin": 3,
+          "n": 74,
+          "predicted_mean": 0.1801,
+          "observed_rate": 0.1216,
+          "ci_low": 0.0653,
+          "ci_high": 0.2153
+        },
+        {
+          "bin": 4,
+          "n": 75,
+          "predicted_mean": 0.8606,
+          "observed_rate": 0.88,
+          "ci_low": 0.7874,
+          "ci_high": 0.9356
+        }
+      ],
+      "calibrator_choices": [
+        "beta",
+        "beta",
+        "beta",
+        "beta",
+        "beta"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": 0.85,
+          "sd": 1.1266
+        },
+        "b": {
+          "mean": 1.6761,
+          "sd": 1.2619
+        },
+        "intercept": {
+          "mean": -0.8376,
+          "sd": 1.3198
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.170542,
+            "platt": 0.18925
+          },
+          "auc_roc": 0.9405,
+          "auc_pr": 0.9033,
+          "brier": 0.072744,
+          "ece": 0.0889
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.254552,
+            "platt": 0.271579
+          },
+          "auc_roc": 0.9169,
+          "auc_pr": 0.8655,
+          "brier": 0.077524,
+          "ece": 0.0496
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.371654,
+            "platt": 0.378878
+          },
+          "auc_roc": 0.9673,
+          "auc_pr": 0.8218,
+          "brier": 0.071408,
+          "ece": 0.0949
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.320546,
+            "platt": 0.350442
+          },
+          "auc_roc": 0.9343,
+          "auc_pr": 0.9046,
+          "brier": 0.062362,
+          "ece": 0.0687
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.283427,
+            "platt": 0.28658
+          },
+          "auc_roc": 0.9871,
+          "auc_pr": 0.9793,
+          "brier": 0.052453,
+          "ece": 0.0839
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.0526,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0,
+        "improvement_vs_random": 0.2228,
+        "mean_within_incident_auc": 0.9778,
+        "n_incidents_scorable": 45
+      }
+    },
+    "C/logreg": {
+      "label": "C/logreg",
+      "n_rows": 299,
+      "effective_n": 283,
+      "auc_pr_fold_mean": 0.9287,
+      "auc_pr_fold_sd": 0.0836,
+      "auc_roc_fold_mean": 0.9731,
+      "auc_roc_fold_sd": 0.0211,
+      "ece_fold_mean": 0.0514,
+      "pooled_auc_pr": 0.92,
+      "pooled_auc_pr_ci95": [
+        0.8549,
+        0.9711
+      ],
+      "pooled_auc_roc": 0.9497,
+      "pooled_auc_roc_ci95": [
+        0.9058,
+        0.9829
+      ],
+      "permutation_p": 0.0005,
+      "brier_murphy": {
+        "brier": 0.051245,
+        "reliability": 0.051245,
+        "resolution": 0.195971,
+        "uncertainty": 0.195971,
+        "identity_check": 0.051245
+      },
+      "ece_pooled": 0.0382,
+      "spiegelhalter": {
+        "z": -1.0239,
+        "p_value": 0.3059
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 75,
+          "predicted_mean": 0.0031,
+          "observed_rate": 0.0133,
+          "ci_low": 0.0024,
+          "ci_high": 0.0717
+        },
+        {
+          "bin": 2,
+          "n": 75,
+          "predicted_mean": 0.0365,
+          "observed_rate": 0.0667,
+          "ci_low": 0.0288,
+          "ci_high": 0.1468
+        },
+        {
+          "bin": 3,
+          "n": 74,
+          "predicted_mean": 0.1536,
+          "observed_rate": 0.0811,
+          "ci_low": 0.0377,
+          "ci_high": 0.1658
+        },
+        {
+          "bin": 4,
+          "n": 75,
+          "predicted_mean": 0.8664,
+          "observed_rate": 0.9067,
+          "ci_low": 0.8197,
+          "ci_high": 0.9541
+        }
+      ],
+      "calibrator_choices": [
+        "beta",
+        "beta",
+        "beta",
+        "beta",
+        "beta"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": 1.4296,
+          "sd": 1.3558
+        },
+        "b": {
+          "mean": 0.844,
+          "sd": 0.4942
+        },
+        "intercept": {
+          "mean": 0.3703,
+          "sd": 0.9554
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.082865,
+            "platt": 0.091968
+          },
+          "auc_roc": 0.9381,
+          "auc_pr": 0.7661,
+          "brier": 0.10351,
+          "ece": 0.0761
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.316112,
+            "platt": 0.317604
+          },
+          "auc_roc": 0.9801,
+          "auc_pr": 0.9499,
+          "brier": 0.052427,
+          "ece": 0.0706
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.271256,
+            "platt": 0.290383
+          },
+          "auc_roc": 1.0,
+          "auc_pr": 1.0,
+          "brier": 0.017394,
+          "ece": 0.0393
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.250669,
+            "platt": 0.255542
+          },
+          "auc_roc": 0.9631,
+          "auc_pr": 0.9471,
+          "brier": 0.042264,
+          "ece": 0.0484
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.232486,
+            "platt": 0.232808
+          },
+          "auc_roc": 0.9841,
+          "auc_pr": 0.9802,
+          "brier": 0.043514,
+          "ece": 0.0224
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.0632,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0105,
+        "improvement_vs_random": 0.2123,
+        "mean_within_incident_auc": 0.9778,
+        "n_incidents_scorable": 45
+      }
+    },
+    "C/rf": {
+      "label": "C/rf",
+      "n_rows": 299,
+      "effective_n": 283,
+      "auc_pr_fold_mean": 0.9537,
+      "auc_pr_fold_sd": 0.0181,
+      "auc_roc_fold_mean": 0.9677,
+      "auc_roc_fold_sd": 0.0332,
+      "ece_fold_mean": 0.0485,
+      "pooled_auc_pr": 0.9412,
+      "pooled_auc_pr_ci95": [
+        0.8993,
+        0.9738
+      ],
+      "pooled_auc_roc": 0.9642,
+      "pooled_auc_roc_ci95": [
+        0.9352,
+        0.9868
+      ],
+      "permutation_p": 0.0005,
+      "brier_murphy": {
+        "brier": 0.052546,
+        "reliability": 0.052546,
+        "resolution": 0.195971,
+        "uncertainty": 0.195971,
+        "identity_check": 0.052546
+      },
+      "ece_pooled": 0.0106,
+      "spiegelhalter": {
+        "z": 0.3672,
+        "p_value": 0.7134
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 75,
+          "predicted_mean": 0.0009,
+          "observed_rate": 0.0133,
+          "ci_low": 0.0024,
+          "ci_high": 0.0717
+        },
+        {
+          "bin": 2,
+          "n": 75,
+          "predicted_mean": 0.0291,
+          "observed_rate": 0.0267,
+          "ci_low": 0.0073,
+          "ci_high": 0.0921
+        },
+        {
+          "bin": 3,
+          "n": 74,
+          "predicted_mean": 0.1431,
+          "observed_rate": 0.1351,
+          "ci_low": 0.0751,
+          "ci_high": 0.2312
+        },
+        {
+          "bin": 4,
+          "n": 75,
+          "predicted_mean": 0.913,
+          "observed_rate": 0.8933,
+          "ci_low": 0.8034,
+          "ci_high": 0.945
+        }
+      ],
+      "calibrator_choices": [
+        "beta",
+        "beta",
+        "beta",
+        "beta",
+        "beta"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": 2.229,
+          "sd": 2.5803
+        },
+        "b": {
+          "mean": 4.8071,
+          "sd": 3.4633
+        },
+        "intercept": {
+          "mean": -0.9066,
+          "sd": 3.5499
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.081441,
+            "platt": 0.081637
+          },
+          "auc_roc": 0.9841,
+          "auc_pr": 0.9533,
+          "brier": 0.077241,
+          "ece": 0.0669
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.19696,
+            "platt": 0.209207
+          },
+          "auc_roc": 0.9867,
+          "auc_pr": 0.9673,
+          "brier": 0.04108,
+          "ece": 0.0252
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.247605,
+            "platt": 0.249595
+          },
+          "auc_roc": 0.9878,
+          "auc_pr": 0.9567,
+          "brier": 0.042508,
+          "ece": 0.0622
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.252483,
+            "platt": 0.301973
+          },
+          "auc_roc": 0.9015,
+          "auc_pr": 0.9199,
+          "brier": 0.044642,
+          "ece": 0.0539
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.153233,
+            "platt": 0.156972
+          },
+          "auc_roc": 0.9782,
+          "auc_pr": 0.9712,
+          "brier": 0.057281,
+          "ece": 0.0344
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.0632,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0105,
+        "improvement_vs_random": 0.2123,
+        "mean_within_incident_auc": 0.9778,
+        "n_incidents_scorable": 45
+      }
+    },
+    "C/stump": {
+      "label": "C/stump",
+      "n_rows": 299,
+      "effective_n": 283,
+      "auc_pr_fold_mean": 0.5541,
+      "auc_pr_fold_sd": 0.1236,
+      "auc_roc_fold_mean": 0.7015,
+      "auc_roc_fold_sd": 0.0644,
+      "ece_fold_mean": 0.0652,
+      "pooled_auc_pr": 0.6234,
+      "pooled_auc_pr_ci95": [
+        0.5185,
+        0.7254
+      ],
+      "pooled_auc_roc": 0.6985,
+      "pooled_auc_roc_ci95": [
+        0.6147,
+        0.778
+      ],
+      "permutation_p": 0.0005,
+      "brier_murphy": {
+        "brier": 0.134538,
+        "reliability": 0.010227,
+        "resolution": 0.071659,
+        "uncertainty": 0.195971,
+        "identity_check": 0.134538
+      },
+      "ece_pooled": 0.0643,
+      "spiegelhalter": {
+        "z": -0.4618,
+        "p_value": 0.6442
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 103,
+          "predicted_mean": 0.1376,
+          "observed_rate": 0.1845,
+          "ci_low": 0.1214,
+          "ci_high": 0.2702
+        },
+        {
+          "bin": 2,
+          "n": 52,
+          "predicted_mean": 0.1833,
+          "observed_rate": 0.1731,
+          "ci_low": 0.0938,
+          "ci_high": 0.2973
+        },
+        {
+          "bin": 3,
+          "n": 109,
+          "predicted_mean": 0.2741,
+          "observed_rate": 0.156,
+          "ci_low": 0.0997,
+          "ci_high": 0.2356
+        },
+        {
+          "bin": 4,
+          "n": 35,
+          "predicted_mean": 0.9714,
+          "observed_rate": 1.0,
+          "ci_low": 0.9011,
+          "ci_high": 1.0
+        }
+      ],
+      "calibrator_choices": [
+        "platt",
+        "beta",
+        "platt",
+        "beta",
+        "platt"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": 0.6395,
+          "sd": 0.0513
+        },
+        "b": {
+          "mean": 0.7531,
+          "sd": 0.0428
+        },
+        "intercept": {
+          "mean": -0.3232,
+          "sd": 0.1272
+        },
+        "slope": {
+          "mean": 0.6686,
+          "sd": 0.4166
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "platt",
+          "calibrator_log_loss": {
+            "platt": 0.322528,
+            "beta": 0.322529
+          },
+          "auc_roc": 0.6667,
+          "auc_pr": 0.5088,
+          "brier": 0.145555,
+          "ece": 0.0593
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.470732,
+            "platt": 0.470733
+          },
+          "auc_roc": 0.6429,
+          "auc_pr": 0.4612,
+          "brier": 0.142823,
+          "ece": 0.0213
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "platt",
+          "calibrator_log_loss": {
+            "platt": 0.636514,
+            "beta": 0.636514
+          },
+          "auc_roc": 0.65,
+          "auc_pr": 0.4186,
+          "brier": 0.150659,
+          "ece": 0.2147
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.446636,
+            "platt": 0.446637
+          },
+          "auc_roc": 0.7353,
+          "auc_pr": 0.6206,
+          "brier": 0.12413,
+          "ece": 0.0089
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "platt",
+          "calibrator_log_loss": {
+            "platt": 0.404502,
+            "beta": 0.404505
+          },
+          "auc_roc": 0.8125,
+          "auc_pr": 0.7614,
+          "brier": 0.11292,
+          "ece": 0.0219
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.0526,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0,
+        "improvement_vs_random": 0.2228,
+        "mean_within_incident_auc": 0.7167,
+        "n_incidents_scorable": 45
+      }
+    }
+  },
+  "ablations": {
+    "A+": {
+      "label": "abl/A+",
+      "n_rows": 299,
+      "effective_n": 279,
+      "auc_pr_fold_mean": 0.8765,
+      "auc_pr_fold_sd": 0.0435,
+      "auc_roc_fold_mean": 0.9474,
+      "auc_roc_fold_sd": 0.0215,
+      "ece_fold_mean": 0.0854,
+      "pooled_auc_pr": 0.8345,
+      "pooled_auc_pr_ci95": [
+        0.7527,
+        0.9068
+      ],
+      "pooled_auc_roc": 0.9246,
+      "pooled_auc_roc_ci95": [
+        0.8861,
+        0.9578
+      ],
+      "permutation_p": 0.0005,
+      "brier_murphy": {
+        "brier": 0.091461,
+        "reliability": 0.084215,
+        "resolution": 0.188725,
+        "uncertainty": 0.195971,
+        "identity_check": 0.091461
+      },
+      "ece_pooled": 0.0455,
+      "spiegelhalter": {
+        "z": -0.8772,
+        "p_value": 0.3804
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 75,
+          "predicted_mean": 0.004,
+          "observed_rate": 0.0267,
+          "ci_low": 0.0073,
+          "ci_high": 0.0921
+        },
+        {
+          "bin": 2,
+          "n": 75,
+          "predicted_mean": 0.0579,
+          "observed_rate": 0.04,
+          "ci_low": 0.0137,
+          "ci_high": 0.1111
+        },
+        {
+          "bin": 3,
+          "n": 74,
+          "predicted_mean": 0.2859,
+          "observed_rate": 0.1892,
+          "ci_low": 0.1162,
+          "ci_high": 0.2929
+        },
+        {
+          "bin": 4,
+          "n": 75,
+          "predicted_mean": 0.7678,
+          "observed_rate": 0.8133,
+          "ci_low": 0.7107,
+          "ci_high": 0.8854
+        }
+      ],
+      "calibrator_choices": [
+        "beta",
+        "beta",
+        "beta",
+        "beta",
+        "beta"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": 2.1514,
+          "sd": 2.8145
+        },
+        "b": {
+          "mean": 0.4299,
+          "sd": 1.1996
+        },
+        "intercept": {
+          "mean": 1.0687,
+          "sd": 2.817
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.193955,
+            "platt": 0.257393
+          },
+          "auc_roc": 0.9357,
+          "auc_pr": 0.8266,
+          "brier": 0.113873,
+          "ece": 0.0711
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.307297,
+            "platt": 0.310021
+          },
+          "auc_roc": 0.9635,
+          "auc_pr": 0.9318,
+          "brier": 0.089522,
+          "ece": 0.1304
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.40632,
+            "platt": 0.40743
+          },
+          "auc_roc": 0.9755,
+          "auc_pr": 0.8237,
+          "brier": 0.074278,
+          "ece": 0.0963
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.331286,
+            "platt": 0.347971
+          },
+          "auc_roc": 0.9138,
+          "auc_pr": 0.8981,
+          "brier": 0.078002,
+          "ece": 0.0365
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.269132,
+            "platt": 0.286356
+          },
+          "auc_roc": 0.9484,
+          "auc_pr": 0.9021,
+          "brier": 0.101379,
+          "ece": 0.0928
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.0632,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0105,
+        "improvement_vs_random": 0.2123,
+        "mean_within_incident_auc": 0.9556,
+        "n_incidents_scorable": 45
+      },
+      "repair_class_worst_auc": 0.9661
+    },
+    "C": {
+      "label": "abl/C",
+      "n_rows": 299,
+      "effective_n": 283,
+      "auc_pr_fold_mean": 0.8949,
+      "auc_pr_fold_sd": 0.052,
+      "auc_roc_fold_mean": 0.9492,
+      "auc_roc_fold_sd": 0.0249,
+      "ece_fold_mean": 0.0772,
+      "pooled_auc_pr": 0.8953,
+      "pooled_auc_pr_ci95": [
+        0.8319,
+        0.9479
+      ],
+      "pooled_auc_roc": 0.9332,
+      "pooled_auc_roc_ci95": [
+        0.8871,
+        0.9695
+      ],
+      "permutation_p": 0.0005,
+      "brier_murphy": {
+        "brier": 0.066829,
+        "reliability": 0.059583,
+        "resolution": 0.188725,
+        "uncertainty": 0.195971,
+        "identity_check": 0.066829
+      },
+      "ece_pooled": 0.0365,
+      "spiegelhalter": {
+        "z": -0.951,
+        "p_value": 0.3416
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 75,
+          "predicted_mean": 0.0135,
+          "observed_rate": 0.04,
+          "ci_low": 0.0137,
+          "ci_high": 0.1111
+        },
+        {
+          "bin": 2,
+          "n": 75,
+          "predicted_mean": 0.0686,
+          "observed_rate": 0.0267,
+          "ci_low": 0.0073,
+          "ci_high": 0.0921
+        },
+        {
+          "bin": 3,
+          "n": 74,
+          "predicted_mean": 0.1801,
+          "observed_rate": 0.1216,
+          "ci_low": 0.0653,
+          "ci_high": 0.2153
+        },
+        {
+          "bin": 4,
+          "n": 75,
+          "predicted_mean": 0.8606,
+          "observed_rate": 0.88,
+          "ci_low": 0.7874,
+          "ci_high": 0.9356
+        }
+      ],
+      "calibrator_choices": [
+        "beta",
+        "beta",
+        "beta",
+        "beta",
+        "beta"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": 0.85,
+          "sd": 1.1266
+        },
+        "b": {
+          "mean": 1.6761,
+          "sd": 1.2619
+        },
+        "intercept": {
+          "mean": -0.8376,
+          "sd": 1.3198
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.170542,
+            "platt": 0.18925
+          },
+          "auc_roc": 0.9405,
+          "auc_pr": 0.9033,
+          "brier": 0.072744,
+          "ece": 0.0889
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.254552,
+            "platt": 0.271579
+          },
+          "auc_roc": 0.9169,
+          "auc_pr": 0.8655,
+          "brier": 0.077524,
+          "ece": 0.0496
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.371654,
+            "platt": 0.378878
+          },
+          "auc_roc": 0.9673,
+          "auc_pr": 0.8218,
+          "brier": 0.071408,
+          "ece": 0.0949
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.320546,
+            "platt": 0.350442
+          },
+          "auc_roc": 0.9343,
+          "auc_pr": 0.9046,
+          "brier": 0.062362,
+          "ece": 0.0687
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.283427,
+            "platt": 0.28658
+          },
+          "auc_roc": 0.9871,
+          "auc_pr": 0.9793,
+          "brier": 0.052453,
+          "ece": 0.0839
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.0526,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0,
+        "improvement_vs_random": 0.2228,
+        "mean_within_incident_auc": 0.9778,
+        "n_incidents_scorable": 45
+      },
+      "repair_class_worst_auc": 0.9747
+    },
+    "B_only": {
+      "label": "abl/B_only",
+      "n_rows": 299,
+      "effective_n": 70,
+      "auc_pr_fold_mean": 0.3573,
+      "auc_pr_fold_sd": 0.1391,
+      "auc_roc_fold_mean": 0.6014,
+      "auc_roc_fold_sd": 0.09,
+      "ece_fold_mean": 0.1135,
+      "pooled_auc_pr": 0.2906,
+      "pooled_auc_pr_ci95": [
+        0.2258,
+        0.3824
+      ],
+      "pooled_auc_roc": 0.5628,
+      "pooled_auc_roc_ci95": [
+        0.4935,
+        0.6304
+      ],
+      "permutation_p": 0.31934,
+      "brier_murphy": {
+        "brier": 0.201899,
+        "reliability": 0.073076,
+        "resolution": 0.067149,
+        "uncertainty": 0.195971,
+        "identity_check": 0.201899
+      },
+      "ece_pooled": 0.059,
+      "spiegelhalter": {
+        "z": 2.6059,
+        "p_value": 0.0092
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 76,
+          "predicted_mean": 0.0997,
+          "observed_rate": 0.1711,
+          "ci_low": 0.1028,
+          "ci_high": 0.271
+        },
+        {
+          "bin": 2,
+          "n": 74,
+          "predicted_mean": 0.1992,
+          "observed_rate": 0.2568,
+          "ci_low": 0.171,
+          "ci_high": 0.3665
+        },
+        {
+          "bin": 3,
+          "n": 77,
+          "predicted_mean": 0.3092,
+          "observed_rate": 0.3377,
+          "ci_low": 0.242,
+          "ci_high": 0.4488
+        },
+        {
+          "bin": 4,
+          "n": 72,
+          "predicted_mean": 0.3855,
+          "observed_rate": 0.3056,
+          "ci_low": 0.2113,
+          "ci_high": 0.4195
+        }
+      ],
+      "calibrator_choices": [
+        "beta",
+        "beta",
+        "beta",
+        "beta",
+        "beta"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": 1.5609,
+          "sd": 2.7293
+        },
+        "b": {
+          "mean": -1.9899,
+          "sd": 7.5786
+        },
+        "intercept": {
+          "mean": 1.6346,
+          "sd": 6.2896
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.53162,
+            "platt": 0.537724
+          },
+          "auc_roc": 0.6095,
+          "auc_pr": 0.3233,
+          "brier": 0.188413,
+          "ece": 0.0317
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.583823,
+            "platt": 0.587969
+          },
+          "auc_roc": 0.6561,
+          "auc_pr": 0.3546,
+          "brier": 0.180886,
+          "ece": 0.0814
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.567758,
+            "platt": 0.570887
+          },
+          "auc_roc": 0.4255,
+          "auc_pr": 0.1476,
+          "brier": 0.184476,
+          "ece": 0.1205
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.502018,
+            "platt": 0.520566
+          },
+          "auc_roc": 0.6505,
+          "auc_pr": 0.3774,
+          "brier": 0.205789,
+          "ece": 0.108
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.429598,
+            "platt": 0.468472
+          },
+          "auc_roc": 0.6652,
+          "auc_pr": 0.5837,
+          "brier": 0.24373,
+          "ece": 0.226
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.1368,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0842,
+        "improvement_vs_random": 0.1386,
+        "mean_within_incident_auc": 0.4889,
+        "n_incidents_scorable": 45
+      },
+      "repair_class_worst_auc": 0.7649
+    },
+    "C_only": {
+      "label": "abl/C_only",
+      "n_rows": 299,
+      "effective_n": 3,
+      "auc_pr_fold_mean": 0.5043,
+      "auc_pr_fold_sd": 0.1968,
+      "auc_roc_fold_mean": 0.6715,
+      "auc_roc_fold_sd": 0.1041,
+      "ece_fold_mean": 0.0581,
+      "pooled_auc_pr": 0.6032,
+      "pooled_auc_pr_ci95": [
+        0.4974,
+        0.7099
+      ],
+      "pooled_auc_roc": 0.6943,
+      "pooled_auc_roc_ci95": [
+        0.6112,
+        0.7725
+      ],
+      "permutation_p": 0.0005,
+      "brier_murphy": {
+        "brier": 0.13891,
+        "reliability": 0.007307,
+        "resolution": 0.064368,
+        "uncertainty": 0.195971,
+        "identity_check": 0.13891
+      },
+      "ece_pooled": 0.0573,
+      "spiegelhalter": {
+        "z": -0.1896,
+        "p_value": 0.8497
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 103,
+          "predicted_mean": 0.1376,
+          "observed_rate": 0.1845,
+          "ci_low": 0.1214,
+          "ci_high": 0.2702
+        },
+        {
+          "bin": 2,
+          "n": 52,
+          "predicted_mean": 0.1833,
+          "observed_rate": 0.1731,
+          "ci_low": 0.0938,
+          "ci_high": 0.2973
+        },
+        {
+          "bin": 3,
+          "n": 112,
+          "predicted_mean": 0.2837,
+          "observed_rate": 0.1786,
+          "ci_low": 0.1187,
+          "ci_high": 0.2598
+        },
+        {
+          "bin": 4,
+          "n": 32,
+          "predicted_mean": 0.9999,
+          "observed_rate": 1.0,
+          "ci_low": 0.8928,
+          "ci_high": 1.0
+        }
+      ],
+      "calibrator_choices": [
+        "beta",
+        "beta",
+        "platt",
+        "platt",
+        "platt"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": 0.9724,
+          "sd": 0.2049
+        },
+        "b": {
+          "mean": 2.0224,
+          "sd": 0.2321
+        },
+        "intercept": {
+          "mean": 0.4583,
+          "sd": 0.8425
+        },
+        "slope": {
+          "mean": 1.2879,
+          "sd": 0.7017
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.32253,
+            "platt": 0.322542
+          },
+          "auc_roc": 0.6667,
+          "auc_pr": 0.5088,
+          "brier": 0.14556,
+          "ece": 0.0593
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.470733,
+            "platt": 0.47074
+          },
+          "auc_roc": 0.6429,
+          "auc_pr": 0.4612,
+          "brier": 0.142823,
+          "ece": 0.0213
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "platt",
+          "calibrator_log_loss": {
+            "platt": 0.646504,
+            "beta": 0.646504
+          },
+          "auc_roc": 0.5,
+          "auc_pr": 0.1695,
+          "brier": 0.172808,
+          "ece": 0.179
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "platt",
+          "calibrator_log_loss": {
+            "platt": 0.446635,
+            "beta": 0.446638
+          },
+          "auc_roc": 0.7353,
+          "auc_pr": 0.6206,
+          "brier": 0.12413,
+          "ece": 0.0089
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "platt",
+          "calibrator_log_loss": {
+            "platt": 0.404506,
+            "beta": 0.404507
+          },
+          "auc_roc": 0.8125,
+          "auc_pr": 0.7614,
+          "brier": 0.11292,
+          "ece": 0.0219
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.0632,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0105,
+        "improvement_vs_random": 0.2123,
+        "mean_within_incident_auc": 0.6833,
+        "n_incidents_scorable": 45
+      },
+      "repair_class_worst_auc": 0.5872
+    },
+    "B+C_only": {
+      "label": "abl/B+C_only",
+      "n_rows": 299,
+      "effective_n": 92,
+      "auc_pr_fold_mean": 0.5369,
+      "auc_pr_fold_sd": 0.2309,
+      "auc_roc_fold_mean": 0.6181,
+      "auc_roc_fold_sd": 0.1389,
+      "ece_fold_mean": 0.1116,
+      "pooled_auc_pr": 0.6173,
+      "pooled_auc_pr_ci95": [
+        0.5083,
+        0.7234
+      ],
+      "pooled_auc_roc": 0.6809,
+      "pooled_auc_roc_ci95": [
+        0.5945,
+        0.7628
+      ],
+      "permutation_p": 0.0005,
+      "brier_murphy": {
+        "brier": 0.154707,
+        "reliability": 0.058573,
+        "resolution": 0.099837,
+        "uncertainty": 0.195971,
+        "identity_check": 0.154707
+      },
+      "ece_pooled": 0.0708,
+      "spiegelhalter": {
+        "z": 1.7346,
+        "p_value": 0.0828
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 75,
+          "predicted_mean": 0.1123,
+          "observed_rate": 0.1733,
+          "ci_low": 0.1042,
+          "ci_high": 0.2743
+        },
+        {
+          "bin": 2,
+          "n": 77,
+          "predicted_mean": 0.1566,
+          "observed_rate": 0.1948,
+          "ci_low": 0.1218,
+          "ci_high": 0.2969
+        },
+        {
+          "bin": 3,
+          "n": 76,
+          "predicted_mean": 0.2223,
+          "observed_rate": 0.1842,
+          "ci_low": 0.113,
+          "ci_high": 0.2858
+        },
+        {
+          "bin": 4,
+          "n": 71,
+          "predicted_mean": 0.6868,
+          "observed_rate": 0.5352,
+          "ci_low": 0.4204,
+          "ci_high": 0.6464
+        }
+      ],
+      "calibrator_choices": [
+        "beta",
+        "beta",
+        "beta",
+        "beta",
+        "beta"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": -0.0094,
+          "sd": 0.8773
+        },
+        "b": {
+          "mean": 3.6187,
+          "sd": 2.9132
+        },
+        "intercept": {
+          "mean": -2.3538,
+          "sd": 1.8513
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.292466,
+            "platt": 0.292736
+          },
+          "auc_roc": 0.6119,
+          "auc_pr": 0.5569,
+          "brier": 0.181747,
+          "ece": 0.1677
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.470794,
+            "platt": 0.503187
+          },
+          "auc_roc": 0.5257,
+          "auc_pr": 0.4688,
+          "brier": 0.152979,
+          "ece": 0.1323
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.567758,
+            "platt": 0.570887
+          },
+          "auc_roc": 0.4255,
+          "auc_pr": 0.1476,
+          "brier": 0.184476,
+          "ece": 0.1205
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.426196,
+            "platt": 0.443506
+          },
+          "auc_roc": 0.699,
+          "auc_pr": 0.6703,
+          "brier": 0.146578,
+          "ece": 0.1038
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.408778,
+            "platt": 0.411175
+          },
+          "auc_roc": 0.8284,
+          "auc_pr": 0.8407,
+          "brier": 0.113626,
+          "ece": 0.0336
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.0842,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0316,
+        "improvement_vs_random": 0.1912,
+        "mean_within_incident_auc": 0.6889,
+        "n_incidents_scorable": 45
+      },
+      "repair_class_worst_auc": 0.7787
+    },
+    "no_chg": {
+      "label": "abl/no_chg",
+      "n_rows": 299,
+      "effective_n": 257,
+      "auc_pr_fold_mean": 0.8375,
+      "auc_pr_fold_sd": 0.0945,
+      "auc_roc_fold_mean": 0.8968,
+      "auc_roc_fold_sd": 0.0663,
+      "ece_fold_mean": 0.1044,
+      "pooled_auc_pr": 0.8206,
+      "pooled_auc_pr_ci95": [
+        0.7415,
+        0.8889
+      ],
+      "pooled_auc_roc": 0.8814,
+      "pooled_auc_roc_ci95": [
+        0.8293,
+        0.9266
+      ],
+      "permutation_p": 0.0005,
+      "brier_murphy": {
+        "brier": 0.10324,
+        "reliability": 0.083842,
+        "resolution": 0.176573,
+        "uncertainty": 0.195971,
+        "identity_check": 0.10324
+      },
+      "ece_pooled": 0.024,
+      "spiegelhalter": {
+        "z": 0.1579,
+        "p_value": 0.8745
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 75,
+          "predicted_mean": 0.0375,
+          "observed_rate": 0.04,
+          "ci_low": 0.0137,
+          "ci_high": 0.1111
+        },
+        {
+          "bin": 2,
+          "n": 76,
+          "predicted_mean": 0.0888,
+          "observed_rate": 0.1053,
+          "ci_low": 0.0543,
+          "ci_high": 0.1942
+        },
+        {
+          "bin": 3,
+          "n": 73,
+          "predicted_mean": 0.2129,
+          "observed_rate": 0.1781,
+          "ci_low": 0.1071,
+          "ci_high": 0.2812
+        },
+        {
+          "bin": 4,
+          "n": 75,
+          "predicted_mean": 0.7894,
+          "observed_rate": 0.7467,
+          "ci_low": 0.6379,
+          "ci_high": 0.8314
+        }
+      ],
+      "calibrator_choices": [
+        "beta",
+        "beta",
+        "beta",
+        "beta",
+        "beta"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": 0.4467,
+          "sd": 0.2927
+        },
+        "b": {
+          "mean": 1.2731,
+          "sd": 0.6211
+        },
+        "intercept": {
+          "mean": -0.9607,
+          "sd": 1.2981
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.278476,
+            "platt": 0.286954
+          },
+          "auc_roc": 0.8016,
+          "auc_pr": 0.731,
+          "brier": 0.135591,
+          "ece": 0.095
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.401136,
+            "platt": 0.408488
+          },
+          "auc_roc": 0.8505,
+          "auc_pr": 0.7583,
+          "brier": 0.1535,
+          "ece": 0.1252
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.463174,
+            "platt": 0.465264
+          },
+          "auc_roc": 0.8918,
+          "auc_pr": 0.798,
+          "brier": 0.09487,
+          "ece": 0.1049
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.376574,
+            "platt": 0.402506
+          },
+          "auc_roc": 0.9699,
+          "auc_pr": 0.9437,
+          "brier": 0.070489,
+          "ece": 0.1049
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.305734,
+            "platt": 0.309539
+          },
+          "auc_roc": 0.9702,
+          "auc_pr": 0.9567,
+          "brier": 0.069151,
+          "ece": 0.0919
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.0737,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0211,
+        "improvement_vs_random": 0.2018,
+        "mean_within_incident_auc": 0.9056,
+        "n_incidents_scorable": 45
+      },
+      "repair_class_worst_auc": 0.9258
+    },
+    "no_g": {
+      "label": "abl/no_g",
+      "n_rows": 299,
+      "effective_n": 223,
+      "auc_pr_fold_mean": 0.803,
+      "auc_pr_fold_sd": 0.1529,
+      "auc_roc_fold_mean": 0.9205,
+      "auc_roc_fold_sd": 0.0296,
+      "ece_fold_mean": 0.0686,
+      "pooled_auc_pr": 0.8308,
+      "pooled_auc_pr_ci95": [
+        0.7507,
+        0.8995
+      ],
+      "pooled_auc_roc": 0.9112,
+      "pooled_auc_roc_ci95": [
+        0.8694,
+        0.9489
+      ],
+      "permutation_p": 0.0005,
+      "brier_murphy": {
+        "brier": 0.096995,
+        "reliability": 0.083617,
+        "resolution": 0.182593,
+        "uncertainty": 0.195971,
+        "identity_check": 0.096995
+      },
+      "ece_pooled": 0.02,
+      "spiegelhalter": {
+        "z": 0.6739,
+        "p_value": 0.5004
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 76,
+          "predicted_mean": 0.0147,
+          "observed_rate": 0.0263,
+          "ci_low": 0.0072,
+          "ci_high": 0.091
+        },
+        {
+          "bin": 2,
+          "n": 74,
+          "predicted_mean": 0.0578,
+          "observed_rate": 0.0405,
+          "ci_low": 0.0139,
+          "ci_high": 0.1125
+        },
+        {
+          "bin": 3,
+          "n": 74,
+          "predicted_mean": 0.2117,
+          "observed_rate": 0.2432,
+          "ci_low": 0.1598,
+          "ci_high": 0.3521
+        },
+        {
+          "bin": 4,
+          "n": 75,
+          "predicted_mean": 0.7797,
+          "observed_rate": 0.76,
+          "ci_low": 0.6522,
+          "ci_high": 0.8425
+        }
+      ],
+      "calibrator_choices": [
+        "beta",
+        "beta",
+        "beta",
+        "beta",
+        "beta"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": 0.8398,
+          "sd": 0.6693
+        },
+        "b": {
+          "mean": 1.2762,
+          "sd": 0.8932
+        },
+        "intercept": {
+          "mean": -0.5165,
+          "sd": 0.6343
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.150507,
+            "platt": 0.151756
+          },
+          "auc_roc": 0.9167,
+          "auc_pr": 0.8286,
+          "brier": 0.116067,
+          "ece": 0.0959
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.296355,
+            "platt": 0.30963
+          },
+          "auc_roc": 0.9601,
+          "auc_pr": 0.9116,
+          "brier": 0.072157,
+          "ece": 0.0493
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.463013,
+            "platt": 0.46506
+          },
+          "auc_roc": 0.8816,
+          "auc_pr": 0.505,
+          "brier": 0.107204,
+          "ece": 0.0669
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.353218,
+            "platt": 0.363059
+          },
+          "auc_roc": 0.8967,
+          "auc_pr": 0.8515,
+          "brier": 0.098716,
+          "ece": 0.0716
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.334568,
+            "platt": 0.334697
+          },
+          "auc_roc": 0.9474,
+          "auc_pr": 0.9181,
+          "brier": 0.091282,
+          "ece": 0.0595
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.0632,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0105,
+        "improvement_vs_random": 0.2123,
+        "mean_within_incident_auc": 0.9556,
+        "n_incidents_scorable": 45
+      },
+      "repair_class_worst_auc": 0.982
+    },
+    "no_chg_no_g": {
+      "label": "abl/no_chg_no_g",
+      "n_rows": 299,
+      "effective_n": 122,
+      "auc_pr_fold_mean": 0.5872,
+      "auc_pr_fold_sd": 0.1733,
+      "auc_roc_fold_mean": 0.6762,
+      "auc_roc_fold_sd": 0.0913,
+      "ece_fold_mean": 0.116,
+      "pooled_auc_pr": 0.6271,
+      "pooled_auc_pr_ci95": [
+        0.5113,
+        0.7375
+      ],
+      "pooled_auc_roc": 0.7102,
+      "pooled_auc_roc_ci95": [
+        0.6281,
+        0.7889
+      ],
+      "permutation_p": 0.0005,
+      "brier_murphy": {
+        "brier": 0.147874,
+        "reliability": 0.076994,
+        "resolution": 0.125091,
+        "uncertainty": 0.195971,
+        "identity_check": 0.147874
+      },
+      "ece_pooled": 0.0531,
+      "spiegelhalter": {
+        "z": 1.5777,
+        "p_value": 0.1146
+      },
+      "reliability_table": [
+        {
+          "bin": 1,
+          "n": 75,
+          "predicted_mean": 0.0864,
+          "observed_rate": 0.16,
+          "ci_low": 0.094,
+          "ci_high": 0.2592
+        },
+        {
+          "bin": 2,
+          "n": 79,
+          "predicted_mean": 0.1666,
+          "observed_rate": 0.1646,
+          "ci_low": 0.0988,
+          "ci_high": 0.2615
+        },
+        {
+          "bin": 3,
+          "n": 70,
+          "predicted_mean": 0.2114,
+          "observed_rate": 0.2,
+          "ci_low": 0.123,
+          "ci_high": 0.3082
+        },
+        {
+          "bin": 4,
+          "n": 75,
+          "predicted_mean": 0.672,
+          "observed_rate": 0.5467,
+          "ci_low": 0.4345,
+          "ci_high": 0.6543
+        }
+      ],
+      "calibrator_choices": [
+        "beta",
+        "beta",
+        "beta",
+        "beta",
+        "beta"
+      ],
+      "calibrator_param_spread": {
+        "a": {
+          "mean": -0.2507,
+          "sd": 1.2212
+        },
+        "b": {
+          "mean": 4.4337,
+          "sd": 6.5553
+        },
+        "intercept": {
+          "mean": -3.0341,
+          "sd": 3.6099
+        }
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "n_test": 57,
+          "n_fit": 177,
+          "n_cal": 65,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.29421,
+            "platt": 0.318062
+          },
+          "auc_roc": 0.6238,
+          "auc_pr": 0.5461,
+          "brier": 0.21604,
+          "ece": 0.2014
+        },
+        {
+          "fold": 1,
+          "n_test": 57,
+          "n_fit": 185,
+          "n_cal": 57,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.476028,
+            "platt": 0.497586
+          },
+          "auc_roc": 0.5465,
+          "auc_pr": 0.48,
+          "brier": 0.145849,
+          "ece": 0.1006
+        },
+        {
+          "fold": 2,
+          "n_test": 59,
+          "n_fit": 174,
+          "n_cal": 66,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.56348,
+            "platt": 0.565435
+          },
+          "auc_roc": 0.6684,
+          "auc_pr": 0.3481,
+          "brier": 0.146651,
+          "ece": 0.1229
+        },
+        {
+          "fold": 3,
+          "n_test": 60,
+          "n_fit": 175,
+          "n_cal": 64,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.446073,
+            "platt": 0.461226
+          },
+          "auc_roc": 0.7264,
+          "auc_pr": 0.7325,
+          "brier": 0.121834,
+          "ece": 0.0988
+        },
+        {
+          "fold": 4,
+          "n_test": 66,
+          "n_fit": 177,
+          "n_cal": 56,
+          "calibrator": "beta",
+          "calibrator_log_loss": {
+            "beta": 0.402186,
+            "platt": 0.404074
+          },
+          "auc_roc": 0.816,
+          "auc_pr": 0.8295,
+          "brier": 0.115518,
+          "ece": 0.0561
+        }
+      ],
+      "selection": {
+        "n_incidents_with_2plus": 95,
+        "top1_selected_harm_rate": 0.1053,
+        "random_choice_harm_rate": 0.2754,
+        "oracle_best_harm_rate": 0.0526,
+        "regret_vs_oracle": 0.0526,
+        "improvement_vs_random": 0.1702,
+        "mean_within_incident_auc": 0.7889,
+        "n_incidents_scorable": 45
+      },
+      "repair_class_worst_auc": 0.8219
+    }
+  },
+  "autonomy_risk_curve": [
+    {
+      "threshold": 1e-06,
+      "coverage": 0.0201,
+      "n_auto_applied": 6,
+      "realised_harm_rate": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.3903
+    },
+    {
+      "threshold": 6.1e-05,
+      "coverage": 0.0635,
+      "n_auto_applied": 19,
+      "realised_harm_rate": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.1682
+    },
+    {
+      "threshold": 0.000803,
+      "coverage": 0.1037,
+      "n_auto_applied": 31,
+      "realised_harm_rate": 0.0323,
+      "ci_low": 0.0057,
+      "ci_high": 0.1619
+    },
+    {
+      "threshold": 0.01961,
+      "coverage": 0.1438,
+      "n_auto_applied": 43,
+      "realised_harm_rate": 0.0698,
+      "ci_low": 0.024,
+      "ci_high": 0.1861
+    },
+    {
+      "threshold": 0.028422,
+      "coverage": 0.1839,
+      "n_auto_applied": 55,
+      "realised_harm_rate": 0.0545,
+      "ci_low": 0.0187,
+      "ci_high": 0.1485
+    },
+    {
+      "threshold": 0.030744,
+      "coverage": 0.2241,
+      "n_auto_applied": 67,
+      "realised_harm_rate": 0.0448,
+      "ci_low": 0.0153,
+      "ci_high": 0.1236
+    },
+    {
+      "threshold": 0.03708,
+      "coverage": 0.2642,
+      "n_auto_applied": 79,
+      "realised_harm_rate": 0.038,
+      "ci_low": 0.013,
+      "ci_high": 0.1058
+    },
+    {
+      "threshold": 0.045594,
+      "coverage": 0.3077,
+      "n_auto_applied": 92,
+      "realised_harm_rate": 0.0326,
+      "ci_low": 0.0112,
+      "ci_high": 0.0915
+    },
+    {
+      "threshold": 0.052978,
+      "coverage": 0.3478,
+      "n_auto_applied": 104,
+      "realised_harm_rate": 0.0288,
+      "ci_low": 0.0099,
+      "ci_high": 0.0814
+    },
+    {
+      "threshold": 0.068451,
+      "coverage": 0.388,
+      "n_auto_applied": 116,
+      "realised_harm_rate": 0.0259,
+      "ci_low": 0.0088,
+      "ci_high": 0.0733
+    },
+    {
+      "threshold": 0.089655,
+      "coverage": 0.4281,
+      "n_auto_applied": 128,
+      "realised_harm_rate": 0.0312,
+      "ci_low": 0.0122,
+      "ci_high": 0.0776
+    },
+    {
+      "threshold": 0.104597,
+      "coverage": 0.4682,
+      "n_auto_applied": 140,
+      "realised_harm_rate": 0.0357,
+      "ci_low": 0.0153,
+      "ci_high": 0.0809
+    },
+    {
+      "threshold": 0.106701,
+      "coverage": 0.5151,
+      "n_auto_applied": 154,
+      "realised_harm_rate": 0.0325,
+      "ci_low": 0.0139,
+      "ci_high": 0.0737
+    },
+    {
+      "threshold": 0.108806,
+      "coverage": 0.5518,
+      "n_auto_applied": 165,
+      "realised_harm_rate": 0.0364,
+      "ci_low": 0.0168,
+      "ci_high": 0.0771
+    },
+    {
+      "threshold": 0.110947,
+      "coverage": 0.592,
+      "n_auto_applied": 177,
+      "realised_harm_rate": 0.0452,
+      "ci_low": 0.0231,
+      "ci_high": 0.0866
+    },
+    {
+      "threshold": 0.137061,
+      "coverage": 0.6321,
+      "n_auto_applied": 189,
+      "realised_harm_rate": 0.0423,
+      "ci_low": 0.0216,
+      "ci_high": 0.0813
+    },
+    {
+      "threshold": 0.200197,
+      "coverage": 0.6722,
+      "n_auto_applied": 201,
+      "realised_harm_rate": 0.0448,
+      "ci_low": 0.0237,
+      "ci_high": 0.0829
+    },
+    {
+      "threshold": 0.323807,
+      "coverage": 0.7124,
+      "n_auto_applied": 213,
+      "realised_harm_rate": 0.0516,
+      "ci_low": 0.0291,
+      "ci_high": 0.0901
+    },
+    {
+      "threshold": 0.471703,
+      "coverage": 0.7525,
+      "n_auto_applied": 225,
+      "realised_harm_rate": 0.0667,
+      "ci_low": 0.0408,
+      "ci_high": 0.1071
+    },
+    {
+      "threshold": 0.671059,
+      "coverage": 0.796,
+      "n_auto_applied": 238,
+      "realised_harm_rate": 0.0966,
+      "ci_low": 0.0653,
+      "ci_high": 0.1408
+    },
+    {
+      "threshold": 0.858377,
+      "coverage": 0.8361,
+      "n_auto_applied": 250,
+      "realised_harm_rate": 0.132,
+      "ci_low": 0.0956,
+      "ci_high": 0.1796
+    },
+    {
+      "threshold": 0.93934,
+      "coverage": 0.8763,
+      "n_auto_applied": 262,
+      "realised_harm_rate": 0.1718,
+      "ci_low": 0.1309,
+      "ci_high": 0.2221
+    },
+    {
+      "threshold": 0.982337,
+      "coverage": 0.9164,
+      "n_auto_applied": 274,
+      "realised_harm_rate": 0.2044,
+      "ci_low": 0.1609,
+      "ci_high": 0.2561
+    },
+    {
+      "threshold": 0.997671,
+      "coverage": 0.9565,
+      "n_auto_applied": 286,
+      "realised_harm_rate": 0.2343,
+      "ci_low": 0.1889,
+      "ci_high": 0.2867
+    },
+    {
+      "threshold": 1.0,
+      "coverage": 1.0,
+      "n_auto_applied": 299,
+      "realised_harm_rate": 0.2676,
+      "ci_low": 0.2206,
+      "ci_high": 0.3205
+    }
+  ],
+  "primary_gbt": {
+    "label": "C/gbt",
+    "n_rows": 299,
+    "effective_n": 283,
+    "auc_pr_fold_mean": 0.8949,
+    "auc_pr_fold_sd": 0.052,
+    "auc_roc_fold_mean": 0.9492,
+    "auc_roc_fold_sd": 0.0249,
+    "ece_fold_mean": 0.0772,
+    "pooled_auc_pr": 0.8953,
+    "pooled_auc_pr_ci95": [
+      0.8319,
+      0.9479
+    ],
+    "pooled_auc_roc": 0.9332,
+    "pooled_auc_roc_ci95": [
+      0.8871,
+      0.9695
+    ],
+    "permutation_p": 0.0005,
+    "brier_murphy": {
+      "brier": 0.066829,
+      "reliability": 0.059583,
+      "resolution": 0.188725,
+      "uncertainty": 0.195971,
+      "identity_check": 0.066829
+    },
+    "ece_pooled": 0.0365,
+    "spiegelhalter": {
+      "z": -0.951,
+      "p_value": 0.3416
+    },
+    "reliability_table": [
+      {
+        "bin": 1,
+        "n": 75,
+        "predicted_mean": 0.0135,
+        "observed_rate": 0.04,
+        "ci_low": 0.0137,
+        "ci_high": 0.1111
+      },
+      {
+        "bin": 2,
+        "n": 75,
+        "predicted_mean": 0.0686,
+        "observed_rate": 0.0267,
+        "ci_low": 0.0073,
+        "ci_high": 0.0921
+      },
+      {
+        "bin": 3,
+        "n": 74,
+        "predicted_mean": 0.1801,
+        "observed_rate": 0.1216,
+        "ci_low": 0.0653,
+        "ci_high": 0.2153
+      },
+      {
+        "bin": 4,
+        "n": 75,
+        "predicted_mean": 0.8606,
+        "observed_rate": 0.88,
+        "ci_low": 0.7874,
+        "ci_high": 0.9356
+      }
+    ],
+    "calibrator_choices": [
+      "beta",
+      "beta",
+      "beta",
+      "beta",
+      "beta"
+    ],
+    "calibrator_param_spread": {
+      "a": {
+        "mean": 0.85,
+        "sd": 1.1266
+      },
+      "b": {
+        "mean": 1.6761,
+        "sd": 1.2619
+      },
+      "intercept": {
+        "mean": -0.8376,
+        "sd": 1.3198
+      }
+    },
+    "per_fold": [
+      {
+        "fold": 0,
+        "n_test": 57,
+        "n_fit": 177,
+        "n_cal": 65,
+        "calibrator": "beta",
+        "calibrator_log_loss": {
+          "beta": 0.170542,
+          "platt": 0.18925
+        },
+        "auc_roc": 0.9405,
+        "auc_pr": 0.9033,
+        "brier": 0.072744,
+        "ece": 0.0889
+      },
+      {
+        "fold": 1,
+        "n_test": 57,
+        "n_fit": 185,
+        "n_cal": 57,
+        "calibrator": "beta",
+        "calibrator_log_loss": {
+          "beta": 0.254552,
+          "platt": 0.271579
+        },
+        "auc_roc": 0.9169,
+        "auc_pr": 0.8655,
+        "brier": 0.077524,
+        "ece": 0.0496
+      },
+      {
+        "fold": 2,
+        "n_test": 59,
+        "n_fit": 174,
+        "n_cal": 66,
+        "calibrator": "beta",
+        "calibrator_log_loss": {
+          "beta": 0.371654,
+          "platt": 0.378878
+        },
+        "auc_roc": 0.9673,
+        "auc_pr": 0.8218,
+        "brier": 0.071408,
+        "ece": 0.0949
+      },
+      {
+        "fold": 3,
+        "n_test": 60,
+        "n_fit": 175,
+        "n_cal": 64,
+        "calibrator": "beta",
+        "calibrator_log_loss": {
+          "beta": 0.320546,
+          "platt": 0.350442
+        },
+        "auc_roc": 0.9343,
+        "auc_pr": 0.9046,
+        "brier": 0.062362,
+        "ece": 0.0687
+      },
+      {
+        "fold": 4,
+        "n_test": 66,
+        "n_fit": 177,
+        "n_cal": 56,
+        "calibrator": "beta",
+        "calibrator_log_loss": {
+          "beta": 0.283427,
+          "platt": 0.28658
+        },
+        "auc_roc": 0.9871,
+        "auc_pr": 0.9793,
+        "brier": 0.052453,
+        "ece": 0.0839
+      }
+    ],
+    "selection": {
+      "n_incidents_with_2plus": 95,
+      "top1_selected_harm_rate": 0.0526,
+      "random_choice_harm_rate": 0.2754,
+      "oracle_best_harm_rate": 0.0526,
+      "regret_vs_oracle": 0.0,
+      "improvement_vs_random": 0.2228,
+      "mean_within_incident_auc": 0.9778,
+      "n_incidents_scorable": 45
+    }
+  },
+  "conformal": {
+    "attempted": false,
+    "n_incidents": 173,
+    "required": 200,
+    "reason": "120/40/40 grouped split unavailable"
+  },
+  "learning_curve": [
+    {
+      "n": 50,
+      "reps": 5,
+      "auc_pr_mean": 0.247,
+      "auc_pr_sd": 0.0681,
+      "ece_mean": 0.0955
+    },
+    {
+      "n": 100,
+      "reps": 5,
+      "auc_pr_mean": 0.4095,
+      "auc_pr_sd": 0.0553,
+      "ece_mean": 0.1228
+    },
+    {
+      "n": 200,
+      "reps": 5,
+      "auc_pr_mean": 0.6342,
+      "auc_pr_sd": 0.0776,
+      "ece_mean": 0.0591
+    }
+  ],
+  "meta": {
+    "generated_utc": "2026-09-11T13:18:26Z",
+    "status": "INTERIM / EXPLORATORY -- not the confirmatory analysis",
+    "analysis_plan": "docs/ANALYSIS-PLAN.md (frozen 2026-09-02), unmodified",
+    "pilot": "C:\\Users\\karth\\network-research-lab\\data\\pilot-v2",
+    "wall_seconds": 118.9,
+    "gate_threshold": 0.85
+  }
+}

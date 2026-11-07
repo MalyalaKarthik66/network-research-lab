@@ -1,0 +1,20 @@
+--- I-00085
++++ C-00631
+@@ -223,7 +223,7 @@
+ interface eth3
+  description link to edgeb wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 200
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -316,7 +316,7 @@
+ interface eth4
+  description link to edgea wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 200
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ router ospf

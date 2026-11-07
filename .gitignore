@@ -1,0 +1,30 @@
+# --- environment -----------------------------------------------------------
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.log
+*.zip
+
+# Batfish writes its own state into the container volume, not here, but if you
+# ever bind-mount it, keep it out of Git:
+batfish-data/
+
+# --- dataset: what is and is not tracked -----------------------------------
+# TRACKED, because they are the frozen artifact and the results:
+#   data/*/pilot.lock.json      -- sha256 of every in-scope file; the integrity record
+#   data/*/manifest.json, properties.yml
+#   data/*/reference/, incidents/, candidates/   (~3 MB, deterministic)
+#   data/*/phase2/*.csv, phase3/*.csv, phase4/   -- the measured results
+#
+# NOT TRACKED, because they are bulk per-run evidence (~41 MB for pilot-v1
+# alone) and are reproducible from the tracked artifact plus the pinned images.
+# They stay on disk; Git is version control, not the archive.
+data/*/phase2/raw/
+data/*/phase3/runs/
+
+.venv-wsl/
+
+# v3: bulk per-run evidence, same rule as pilot-v2
+data/pilot-v3/phase2/raw/
+data/pilot-v3/phase3/runs/

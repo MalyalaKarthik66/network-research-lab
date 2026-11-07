@@ -1,0 +1,38 @@
+--- I-00059
++++ C-00435
+@@ -54,8 +54,6 @@
+  ip ospf cost 30
+  ip ospf network point-to-point
+ !
+-ip route 10.20.0.0/24 10.16.1.1
+-!
+ router ospf
+  ospf router-id 10.255.0.2
+  passive-interface lo
+@@ -135,7 +133,7 @@
+ interface eth2
+  description link to wan2 wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 30
++ ip ospf cost 2
+  ip ospf network point-to-point
+ !
+ interface eth3
+@@ -304,7 +302,7 @@
+ interface eth3
+  description link to coreb siteB
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 1
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -489,7 +487,7 @@
+ interface eth2
+  description link to coreb wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 30
++ ip ospf cost 2
+  ip ospf network point-to-point
+ !
+ router ospf

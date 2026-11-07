@@ -1,0 +1,19 @@
+--- I-00092
++++ C-00681
+@@ -401,7 +401,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.200.0.2/30
++    address 10.20.1.1/30
+     alias link to agga siteA
+ 
+ 
+@@ -458,6 +458,7 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
++ shutdown
+ !
+ router ospf
+  ospf router-id 10.255.0.8

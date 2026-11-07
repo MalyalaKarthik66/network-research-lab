@@ -1,0 +1,80 @@
+# golden property suite -- FROZEN, version 1.0.0
+# in_spec: true  -> asked of Batfish in Phase 2 (the specification)
+# in_spec: false -> measured in Containerlab in Phase 3 only
+#                   (the declared blind spots)
+suite_version: "1.0.0"
+properties:
+  - pid: P01
+    kind: "reachability"
+    in_spec: true
+    src: "10.10.0.10"
+    dst: "10.20.0.10"
+    app: "ICMP"
+    text: "hosta can ping hostb"
+  - pid: P02
+    kind: "reachability"
+    in_spec: true
+    src: "10.10.0.10"
+    dst: "10.20.0.10"
+    app: "HTTPS"
+    text: "hosta can reach hostb on TCP/443"
+  - pid: P05
+    kind: "reachability"
+    in_spec: true
+    src: "10.20.0.10"
+    dst: "10.10.0.10"
+    app: "ICMP"
+    text: "hostb can ping hosta (return path)"
+  - pid: P07
+    kind: "no_loops"
+    in_spec: true
+    text: "no forwarding loops anywhere"
+  - pid: P08
+    kind: "ospf_adjacencies"
+    in_spec: true
+    expected: 6
+    text: "all six OSPF adjacencies are established"
+  - pid: P03
+    kind: "reachability"
+    in_spec: false
+    src: "10.10.0.10"
+    dst: "10.21.0.10"
+    app: "ICMP"
+    text: "hosta can ping hostc (second site-B LAN)"
+  - pid: P04
+    kind: "reachability"
+    in_spec: false
+    src: "10.10.0.10"
+    dst: "10.21.0.10"
+    app: "HTTPS"
+    text: "hosta can reach hostc on TCP/443"
+  - pid: P06
+    kind: "path_contains"
+    in_spec: false
+    src: "10.10.0.10"
+    dst: "10.20.0.10"
+    must_traverse: ['wan1', 'wan2']
+    text: "hosta->hostb uses the primary WAN, not the backup"
+  - pid: P09
+    kind: "route_present"
+    in_spec: false
+    prefix: "10.20.0.0/24"
+    nodes: "all_routers"
+    text: "every router has a route to 10.20.0.0/24"
+  - pid: P10
+    kind: "route_present"
+    in_spec: false
+    prefix: "10.21.0.0/24"
+    nodes: "all_routers"
+    text: "every router has a route to 10.21.0.0/24"
+  - pid: P11
+    kind: "reachability"
+    in_spec: false
+    src: "10.255.0.1"
+    dst: "10.255.0.6"
+    app: "ICMP"
+    text: "edgea loopback can reach edgeb loopback"
+  - pid: P12
+    kind: "no_iface_down"
+    in_spec: false
+    text: "no interface is administratively down"

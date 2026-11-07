@@ -1,0 +1,11 @@
+--- I-00185
++++ C-01366
+@@ -1100,7 +1100,7 @@
+ interface eth2
+  description link to x3 X3
+  ip ospf area 0.0.0.0
+- ip ospf cost 40
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ router ospf

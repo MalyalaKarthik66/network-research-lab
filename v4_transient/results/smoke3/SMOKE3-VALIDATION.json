@@ -1,0 +1,1680 @@
+{
+  "summary": {
+    "checks": 153,
+    "passed": 153,
+    "failed": [],
+    "engineering_floor": 0.0006944444444444445,
+    "hard_stop": {
+      "SMOKE3-V4P-05.rep1": {
+        "amendment": "A4",
+        "valid": true,
+        "T1": 0.0049310694444444445,
+        "floor": 0.0006944444444444445,
+        "above": true
+      },
+      "SMOKE3-V4P-06.rep1": {
+        "amendment": "A4",
+        "valid": true,
+        "T1": 0.005303800000000006,
+        "floor": 0.0006944444444444445,
+        "above": true
+      },
+      "SMOKE3-V4P-02.rep1": {
+        "amendment": null,
+        "valid": true,
+        "T1": 0.004982411111111116,
+        "floor": 0.0006944444444444445,
+        "above": true
+      },
+      "SMOKE3-V4P-03.rep1": {
+        "amendment": null,
+        "valid": true,
+        "T1": 0.005236881818181801,
+        "floor": 0.0006944444444444445,
+        "above": true
+      }
+    },
+    "population_median_wall_s": 135.51,
+    "population_wall_s_by_topology": {
+      "t05_ring6": [
+        121.7,
+        117.44
+      ],
+      "t13_bowtie7": [
+        131.03,
+        138.06
+      ],
+      "t14_ladder8": [
+        132.96,
+        143.21
+      ],
+      "t15_campus12": [
+        186.99,
+        159.92
+      ]
+    },
+    "interpretation": "ENGINEERING VALIDATION ONLY -- smoke 3 values are not evidence for any pilot gate"
+  },
+  "results": [
+    {
+      "group": "batfish",
+      "check": "SMOKE3-V4P-05.rep1: admitted by the Batfish gate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4P-05.rep1: has a final attempt with status OK",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4P-05.rep1: any earlier attempt failed before the change was applied",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4P-05.rep1: code hashed at run time equals the committed code on disk",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4P-05.rep1: runner exec mode A5-parallel-docker-exec-outside-observation-window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4P-05.rep1: teardown OK and no cleanup error",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "validity",
+      "check": "SMOKE3-V4P-05.rep1: all 13 run-validity checks pass (\u00a712, A3)",
+      "pass": true,
+      "detail": [
+        [],
+        {
+          "replay_mismatch_routers": [],
+          "intermediate_mismatches": [],
+          "nhg_silent_changes": []
+        }
+      ]
+    },
+    {
+      "group": "replay",
+      "check": "SMOKE3-V4P-05.rep1: replay checked against in-transient FIB polls (>= 1 unambiguous poll, 0 mismatches)",
+      "pass": true,
+      "detail": [
+        "35",
+        "1",
+        "0"
+      ]
+    },
+    {
+      "group": "link-state",
+      "check": "SMOKE3-V4P-05.rep1: administrative-down event of corea:eth2 captured",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "link-state",
+      "check": "SMOKE3-V4P-05.rep1: carrier-loss event of peer wan1:eth1 captured",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "batfish",
+      "check": "SMOKE3-V4P-06.rep1: admitted by the Batfish gate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4P-06.rep1: has a final attempt with status OK",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4P-06.rep1: any earlier attempt failed before the change was applied",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4P-06.rep1: code hashed at run time equals the committed code on disk",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4P-06.rep1: runner exec mode A5-parallel-docker-exec-outside-observation-window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4P-06.rep1: teardown OK and no cleanup error",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "validity",
+      "check": "SMOKE3-V4P-06.rep1: all 13 run-validity checks pass (\u00a712, A3)",
+      "pass": true,
+      "detail": [
+        [],
+        {
+          "replay_mismatch_routers": [],
+          "intermediate_mismatches": [],
+          "nhg_silent_changes": []
+        }
+      ]
+    },
+    {
+      "group": "replay",
+      "check": "SMOKE3-V4P-06.rep1: replay checked against in-transient FIB polls (>= 1 unambiguous poll, 0 mismatches)",
+      "pass": true,
+      "detail": [
+        "47",
+        "1",
+        "0"
+      ]
+    },
+    {
+      "group": "link-state",
+      "check": "SMOKE3-V4P-06.rep1: administrative-down event of coreb:eth2 captured",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "link-state",
+      "check": "SMOKE3-V4P-06.rep1: carrier-loss event of peer distb1:eth1 captured",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "batfish",
+      "check": "SMOKE3-V4P-02.rep1: admitted by the Batfish gate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4P-02.rep1: has a final attempt with status OK",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4P-02.rep1: any earlier attempt failed before the change was applied",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4P-02.rep1: code hashed at run time equals the committed code on disk",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4P-02.rep1: runner exec mode A5-parallel-docker-exec-outside-observation-window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4P-02.rep1: teardown OK and no cleanup error",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "validity",
+      "check": "SMOKE3-V4P-02.rep1: all 13 run-validity checks pass (\u00a712, A3)",
+      "pass": true,
+      "detail": [
+        [],
+        {
+          "replay_mismatch_routers": [],
+          "intermediate_mismatches": [],
+          "nhg_silent_changes": []
+        }
+      ]
+    },
+    {
+      "group": "replay",
+      "check": "SMOKE3-V4P-02.rep1: replay checked against in-transient FIB polls (>= 1 unambiguous poll, 0 mismatches)",
+      "pass": true,
+      "detail": [
+        "34",
+        "1",
+        "0"
+      ]
+    },
+    {
+      "group": "link-state",
+      "check": "SMOKE3-V4P-02.rep1: administrative-down event of b1:eth1 captured",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "link-state",
+      "check": "SMOKE3-V4P-02.rep1: carrier-loss event of peer mid:eth3 captured",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "batfish",
+      "check": "SMOKE3-V4P-03.rep1: admitted by the Batfish gate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4P-03.rep1: has a final attempt with status OK",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4P-03.rep1: any earlier attempt failed before the change was applied",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4P-03.rep1: code hashed at run time equals the committed code on disk",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4P-03.rep1: runner exec mode A5-parallel-docker-exec-outside-observation-window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4P-03.rep1: teardown OK and no cleanup error",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "validity",
+      "check": "SMOKE3-V4P-03.rep1: all 13 run-validity checks pass (\u00a712, A3)",
+      "pass": true,
+      "detail": [
+        [],
+        {
+          "replay_mismatch_routers": [],
+          "intermediate_mismatches": [],
+          "nhg_silent_changes": []
+        }
+      ]
+    },
+    {
+      "group": "replay",
+      "check": "SMOKE3-V4P-03.rep1: replay checked against in-transient FIB polls (>= 1 unambiguous poll, 0 mismatches)",
+      "pass": true,
+      "detail": [
+        "39",
+        "1",
+        "0"
+      ]
+    },
+    {
+      "group": "link-state",
+      "check": "SMOKE3-V4P-03.rep1: administrative-down event of l2:eth2 captured",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "link-state",
+      "check": "SMOKE3-V4P-03.rep1: carrier-loss event of peer l3:eth1 captured",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "batfish",
+      "check": "SMOKE3-V4P-01.rep1: admitted by the Batfish gate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4P-01.rep1: has a final attempt with status OK",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4P-01.rep1: any earlier attempt failed before the change was applied",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4P-01.rep1: code hashed at run time equals the committed code on disk",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4P-01.rep1: runner exec mode A5-parallel-docker-exec-outside-observation-window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4P-01.rep1: teardown OK and no cleanup error",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "validity",
+      "check": "SMOKE3-V4P-01.rep1: all 13 run-validity checks pass (\u00a712, A3)",
+      "pass": true,
+      "detail": [
+        [],
+        {
+          "replay_mismatch_routers": [],
+          "intermediate_mismatches": [],
+          "nhg_silent_changes": []
+        }
+      ]
+    },
+    {
+      "group": "replay",
+      "check": "SMOKE3-V4P-01.rep1: replay checked against in-transient FIB polls (>= 1 unambiguous poll, 0 mismatches)",
+      "pass": true,
+      "detail": [
+        "30",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "group": "link-state",
+      "check": "SMOKE3-V4P-01.rep1: administrative-down event of coreb:eth2 captured",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "link-state",
+      "check": "SMOKE3-V4P-01.rep1: carrier-loss event of peer edgeb:eth3 captured",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "batfish",
+      "check": "SMOKE3-V4P-04.rep1: admitted by the Batfish gate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4P-04.rep1: has a final attempt with status OK",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4P-04.rep1: any earlier attempt failed before the change was applied",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4P-04.rep1: code hashed at run time equals the committed code on disk",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4P-04.rep1: runner exec mode A5-parallel-docker-exec-outside-observation-window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4P-04.rep1: teardown OK and no cleanup error",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "validity",
+      "check": "SMOKE3-V4P-04.rep1: all 13 run-validity checks pass (\u00a712, A3)",
+      "pass": true,
+      "detail": [
+        [],
+        {
+          "replay_mismatch_routers": [],
+          "intermediate_mismatches": [],
+          "nhg_silent_changes": []
+        }
+      ]
+    },
+    {
+      "group": "replay",
+      "check": "SMOKE3-V4P-04.rep1: replay checked against in-transient FIB polls (>= 1 unambiguous poll, 0 mismatches)",
+      "pass": true,
+      "detail": [
+        "48",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "group": "link-state",
+      "check": "SMOKE3-V4P-04.rep1: administrative-down event of corea:eth3 captured",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "link-state",
+      "check": "SMOKE3-V4P-04.rep1: carrier-loss event of peer coreb:eth1 captured",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "batfish",
+      "check": "SMOKE3-V4N-01.rep1: admitted by the Batfish gate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4N-01.rep1: has a final attempt with status OK",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4N-01.rep1: any earlier attempt failed before the change was applied",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4N-01.rep1: code hashed at run time equals the committed code on disk",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4N-01.rep1: runner exec mode A5-parallel-docker-exec-outside-observation-window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4N-01.rep1: teardown OK and no cleanup error",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "validity",
+      "check": "SMOKE3-V4N-01.rep1: all 13 run-validity checks pass (\u00a712, A3)",
+      "pass": true,
+      "detail": [
+        [],
+        {
+          "replay_mismatch_routers": [],
+          "intermediate_mismatches": [],
+          "nhg_silent_changes": []
+        }
+      ]
+    },
+    {
+      "group": "replay",
+      "check": "SMOKE3-V4N-01.rep1: replay checked against in-transient FIB polls (>= 1 unambiguous poll, 0 mismatches)",
+      "pass": true,
+      "detail": [
+        "30",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "group": "null",
+      "check": "SMOKE3-V4N-01.rep1: no-op control produces no FIB state change and no link event (instrument null)",
+      "pass": true,
+      "detail": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "group": "batfish",
+      "check": "SMOKE3-V4N-09.rep1: admitted by the Batfish gate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4N-09.rep1: has a final attempt with status OK",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4N-09.rep1: any earlier attempt failed before the change was applied",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4N-09.rep1: code hashed at run time equals the committed code on disk",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4N-09.rep1: runner exec mode A5-parallel-docker-exec-outside-observation-window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4N-09.rep1: teardown OK and no cleanup error",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "validity",
+      "check": "SMOKE3-V4N-09.rep1: all 13 run-validity checks pass (\u00a712, A3)",
+      "pass": true,
+      "detail": [
+        [],
+        {
+          "replay_mismatch_routers": [],
+          "intermediate_mismatches": [],
+          "nhg_silent_changes": []
+        }
+      ]
+    },
+    {
+      "group": "replay",
+      "check": "SMOKE3-V4N-09.rep1: replay checked against in-transient FIB polls (>= 1 unambiguous poll, 0 mismatches)",
+      "pass": true,
+      "detail": [
+        "36",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "group": "null",
+      "check": "SMOKE3-V4N-09.rep1: no-op control produces no FIB state change and no link event (instrument null)",
+      "pass": true,
+      "detail": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "group": "batfish",
+      "check": "SMOKE3-V4C-05.rep1: admitted by the Batfish gate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-05.rep1: has a final attempt with status OK",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-05.rep1: any earlier attempt failed before the change was applied",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4C-05.rep1: code hashed at run time equals the committed code on disk",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4C-05.rep1: runner exec mode A5-parallel-docker-exec-outside-observation-window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-05.rep1: teardown OK and no cleanup error",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "validity",
+      "check": "SMOKE3-V4C-05.rep1: all 13 run-validity checks pass (\u00a712, A3)",
+      "pass": true,
+      "detail": [
+        [],
+        {
+          "replay_mismatch_routers": [],
+          "intermediate_mismatches": [],
+          "nhg_silent_changes": []
+        }
+      ]
+    },
+    {
+      "group": "replay",
+      "check": "SMOKE3-V4C-05.rep1: replay checked against in-transient FIB polls (>= 1 unambiguous poll, 0 mismatches)",
+      "pass": true,
+      "detail": [
+        "36",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "group": "batfish",
+      "check": "SMOKE3-V4C-10.rep1: admitted by the Batfish gate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-10.rep1: has a final attempt with status OK",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-10.rep1: any earlier attempt failed before the change was applied",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4C-10.rep1: code hashed at run time equals the committed code on disk",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4C-10.rep1: runner exec mode A5-parallel-docker-exec-outside-observation-window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-10.rep1: teardown OK and no cleanup error",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "validity",
+      "check": "SMOKE3-V4C-10.rep1: all 13 run-validity checks pass (\u00a712, A3)",
+      "pass": true,
+      "detail": [
+        [],
+        {
+          "replay_mismatch_routers": [],
+          "intermediate_mismatches": [],
+          "nhg_silent_changes": []
+        }
+      ]
+    },
+    {
+      "group": "replay",
+      "check": "SMOKE3-V4C-10.rep1: replay checked against in-transient FIB polls (>= 1 unambiguous poll, 0 mismatches)",
+      "pass": true,
+      "detail": [
+        "35",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "group": "batfish",
+      "check": "SMOKE3-V4C-11.rep1: admitted by the Batfish gate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-11.rep1: has a final attempt with status OK",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-11.rep1: any earlier attempt failed before the change was applied",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4C-11.rep1: code hashed at run time equals the committed code on disk",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4C-11.rep1: runner exec mode A5-parallel-docker-exec-outside-observation-window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-11.rep1: teardown OK and no cleanup error",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "validity",
+      "check": "SMOKE3-V4C-11.rep1: all 13 run-validity checks pass (\u00a712, A3)",
+      "pass": true,
+      "detail": [
+        [],
+        {
+          "replay_mismatch_routers": [],
+          "intermediate_mismatches": [],
+          "nhg_silent_changes": []
+        }
+      ]
+    },
+    {
+      "group": "replay",
+      "check": "SMOKE3-V4C-11.rep1: replay checked against in-transient FIB polls (>= 1 unambiguous poll, 0 mismatches)",
+      "pass": true,
+      "detail": [
+        "40",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "group": "batfish",
+      "check": "SMOKE3-V4C-18.rep1: admitted by the Batfish gate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-18.rep1: has a final attempt with status OK",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-18.rep1: any earlier attempt failed before the change was applied",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4C-18.rep1: code hashed at run time equals the committed code on disk",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4C-18.rep1: runner exec mode A5-parallel-docker-exec-outside-observation-window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-18.rep1: teardown OK and no cleanup error",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "validity",
+      "check": "SMOKE3-V4C-18.rep1: all 13 run-validity checks pass (\u00a712, A3)",
+      "pass": true,
+      "detail": [
+        [],
+        {
+          "replay_mismatch_routers": [],
+          "intermediate_mismatches": [],
+          "nhg_silent_changes": []
+        }
+      ]
+    },
+    {
+      "group": "replay",
+      "check": "SMOKE3-V4C-18.rep1: replay checked against in-transient FIB polls (>= 1 unambiguous poll, 0 mismatches)",
+      "pass": true,
+      "detail": [
+        "47",
+        "1",
+        "0"
+      ]
+    },
+    {
+      "group": "batfish",
+      "check": "SMOKE3-V4C-02.rep1: admitted by the Batfish gate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-02.rep1: has a final attempt with status OK",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-02.rep1: any earlier attempt failed before the change was applied",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4C-02.rep1: code hashed at run time equals the committed code on disk",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4C-02.rep1: runner exec mode A5-parallel-docker-exec-outside-observation-window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-02.rep1: teardown OK and no cleanup error",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "validity",
+      "check": "SMOKE3-V4C-02.rep1: all 13 run-validity checks pass (\u00a712, A3)",
+      "pass": true,
+      "detail": [
+        [],
+        {
+          "replay_mismatch_routers": [],
+          "intermediate_mismatches": [],
+          "nhg_silent_changes": []
+        }
+      ]
+    },
+    {
+      "group": "replay",
+      "check": "SMOKE3-V4C-02.rep1: replay checked against in-transient FIB polls (>= 1 unambiguous poll, 0 mismatches)",
+      "pass": true,
+      "detail": [
+        "30",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "group": "batfish",
+      "check": "SMOKE3-V4C-07.rep1: admitted by the Batfish gate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-07.rep1: has a final attempt with status OK",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-07.rep1: any earlier attempt failed before the change was applied",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4C-07.rep1: code hashed at run time equals the committed code on disk",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4C-07.rep1: runner exec mode A5-parallel-docker-exec-outside-observation-window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-07.rep1: teardown OK and no cleanup error",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "validity",
+      "check": "SMOKE3-V4C-07.rep1: all 13 run-validity checks pass (\u00a712, A3)",
+      "pass": true,
+      "detail": [
+        [],
+        {
+          "replay_mismatch_routers": [],
+          "intermediate_mismatches": [],
+          "nhg_silent_changes": []
+        }
+      ]
+    },
+    {
+      "group": "replay",
+      "check": "SMOKE3-V4C-07.rep1: replay checked against in-transient FIB polls (>= 1 unambiguous poll, 0 mismatches)",
+      "pass": true,
+      "detail": [
+        "35",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "group": "batfish",
+      "check": "SMOKE3-V4C-12.rep1: admitted by the Batfish gate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-12.rep1: has a final attempt with status OK",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-12.rep1: any earlier attempt failed before the change was applied",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4C-12.rep1: code hashed at run time equals the committed code on disk",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4C-12.rep1: runner exec mode A5-parallel-docker-exec-outside-observation-window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-12.rep1: teardown OK and no cleanup error",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "validity",
+      "check": "SMOKE3-V4C-12.rep1: all 13 run-validity checks pass (\u00a712, A3)",
+      "pass": true,
+      "detail": [
+        [],
+        {
+          "replay_mismatch_routers": [],
+          "intermediate_mismatches": [],
+          "nhg_silent_changes": []
+        }
+      ]
+    },
+    {
+      "group": "replay",
+      "check": "SMOKE3-V4C-12.rep1: replay checked against in-transient FIB polls (>= 1 unambiguous poll, 0 mismatches)",
+      "pass": true,
+      "detail": [
+        "40",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "group": "batfish",
+      "check": "SMOKE3-V4C-17.rep1: admitted by the Batfish gate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-17.rep1: has a final attempt with status OK",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-17.rep1: any earlier attempt failed before the change was applied",
+      "pass": true,
+      "detail": [
+        "OK"
+      ]
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4C-17.rep1: code hashed at run time equals the committed code on disk",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "group": "provenance",
+      "check": "SMOKE3-V4C-17.rep1: runner exec mode A5-parallel-docker-exec-outside-observation-window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "execution",
+      "check": "SMOKE3-V4C-17.rep1: teardown OK and no cleanup error",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "validity",
+      "check": "SMOKE3-V4C-17.rep1: all 13 run-validity checks pass (\u00a712, A3)",
+      "pass": true,
+      "detail": [
+        [],
+        {
+          "replay_mismatch_routers": [],
+          "intermediate_mismatches": [],
+          "nhg_silent_changes": []
+        }
+      ]
+    },
+    {
+      "group": "replay",
+      "check": "SMOKE3-V4C-17.rep1: replay checked against in-transient FIB polls (>= 1 unambiguous poll, 0 mismatches)",
+      "pass": true,
+      "detail": [
+        "36",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "group": "floor",
+      "check": "every smoke-3 no-op run valid (2/2)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "hard-stop",
+      "check": "SMOKE3-V4P-05.rep1 (t05_ring6, A4 replacement): valid and T1 0.00493107 > engineering floor 0.000694444",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "hard-stop",
+      "check": "SMOKE3-V4P-06.rep1 (t15_campus12, A4 replacement): valid and T1 0.0053038 > engineering floor 0.000694444",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "hard-stop",
+      "check": "SMOKE3-V4P-02.rep1 (t13_bowtie7): valid and T1 0.00498241 > engineering floor 0.000694444",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "hard-stop",
+      "check": "SMOKE3-V4P-03.rep1 (t14_ladder8): valid and T1 0.00523688 > engineering floor 0.000694444",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "prediction",
+      "check": "SMOKE3-V4P-01.rep1 (control_positive_retired, shutdown): T1 = 0 and peak broken_total 0.500000 = r_broken_exact 0.500000 (r_rerouted_exact = 0)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "prediction",
+      "check": "SMOKE3-V4P-04.rep1 (control_positive_retired, shutdown): T1 = 0 and peak broken_total 0.533333 = r_broken_exact 0.533333 (r_rerouted_exact = 0)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "prediction",
+      "check": "SMOKE3-V4C-05.rep1 (population, blackhole): T1 = 0 and peak broken_total 0.097222 = r_broken_exact 0.097222 (r_rerouted_exact = 0)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "prediction",
+      "check": "SMOKE3-V4C-10.rep1 (population, blackhole): T1 = 0 and peak broken_total 0.077778 = r_broken_exact 0.077778 (r_rerouted_exact = 0)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "runtime",
+      "check": "median wall_s of the 8 population final attempts (135.51) <= frozen D6 threshold 180 s",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "scope",
+      "check": "20x5 pilot has NOT started (no results/pilot, no pilot ledger)",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "smoke2_vs_smoke3_same_scenarios": {
+    "SMOKE3-V4P-05.rep1": {
+      "smoke2_run": null,
+      "T1": {
+        "smoke2": null,
+        "smoke3": 0.0049310694444444445
+      },
+      "T2": {
+        "smoke2": null,
+        "smoke3": 0.4444444444444444
+      },
+      "valid": {
+        "smoke2": null,
+        "smoke3": "True"
+      },
+      "phases": {
+        "smoke2": null,
+        "smoke3": {
+          "wall_s": 116.09,
+          "convergence_s": 55.33,
+          "pre_change_overhead_s": 12.04,
+          "baseline_plus_observation_s": 33.78,
+          "post_window_s": 14.94
+        }
+      }
+    },
+    "SMOKE3-V4P-06.rep1": {
+      "smoke2_run": null,
+      "T1": {
+        "smoke2": null,
+        "smoke3": 0.005303800000000006
+      },
+      "T2": {
+        "smoke2": null,
+        "smoke3": 0.44761904761904764
+      },
+      "valid": {
+        "smoke2": null,
+        "smoke3": "True"
+      },
+      "phases": {
+        "smoke2": null,
+        "smoke3": {
+          "wall_s": 162.14,
+          "convergence_s": 96.47,
+          "pre_change_overhead_s": 13.5,
+          "baseline_plus_observation_s": 33.86,
+          "post_window_s": 18.31
+        }
+      }
+    },
+    "SMOKE3-V4P-02.rep1": {
+      "smoke2_run": "SMOKE2-V4P-02.rep1",
+      "T1": {
+        "smoke2": 0.004965444444444435,
+        "smoke3": 0.004982411111111116
+      },
+      "T2": {
+        "smoke2": 0.4444444444444444,
+        "smoke3": 0.4444444444444444
+      },
+      "valid": {
+        "smoke2": "True",
+        "smoke3": "True"
+      },
+      "phases": {
+        "smoke2": {
+          "wall_s": 262.47,
+          "convergence_s": 84.13,
+          "pre_change_overhead_s": 54.17,
+          "baseline_plus_observation_s": 33.06,
+          "post_window_s": 91.11
+        },
+        "smoke3": {
+          "wall_s": 121.69,
+          "convergence_s": 63.11,
+          "pre_change_overhead_s": 11.5,
+          "baseline_plus_observation_s": 30.92,
+          "post_window_s": 16.16
+        }
+      }
+    },
+    "SMOKE3-V4P-03.rep1": {
+      "smoke2_run": "SMOKE2-V4P-03.rep1",
+      "T1": {
+        "smoke2": 0.005733881818181807,
+        "smoke3": 0.005236881818181801
+      },
+      "T2": {
+        "smoke2": 0.45454545454545453,
+        "smoke3": 0.45454545454545453
+      },
+      "valid": {
+        "smoke2": "True",
+        "smoke3": "True"
+      },
+      "phases": {
+        "smoke2": {
+          "wall_s": 239.54,
+          "convergence_s": 98.72,
+          "pre_change_overhead_s": 54.48,
+          "baseline_plus_observation_s": 34.87,
+          "post_window_s": 51.47
+        },
+        "smoke3": {
+          "wall_s": 141.33,
+          "convergence_s": 73.16,
+          "pre_change_overhead_s": 12.05,
+          "baseline_plus_observation_s": 33.59,
+          "post_window_s": 22.53
+        }
+      }
+    },
+    "SMOKE3-V4P-01.rep1": {
+      "smoke2_run": "SMOKE2-V4P-01.rep1",
+      "T1": {
+        "smoke2": 0.0,
+        "smoke3": 0.0
+      },
+      "T2": {
+        "smoke2": 0.0,
+        "smoke3": 0.0
+      },
+      "valid": {
+        "smoke2": "True",
+        "smoke3": "True"
+      },
+      "phases": {
+        "smoke2": {
+          "wall_s": 204.35,
+          "convergence_s": 82.03,
+          "pre_change_overhead_s": 37.44,
+          "baseline_plus_observation_s": 33.98,
+          "post_window_s": 50.9
+        },
+        "smoke3": {
+          "wall_s": 117.78,
+          "convergence_s": 59.01,
+          "pre_change_overhead_s": 10.37,
+          "baseline_plus_observation_s": 30.59,
+          "post_window_s": 17.81
+        }
+      }
+    },
+    "SMOKE3-V4P-04.rep1": {
+      "smoke2_run": "SMOKE2-V4P-04.rep1",
+      "T1": {
+        "smoke2": 0.0,
+        "smoke3": 0.0
+      },
+      "T2": {
+        "smoke2": 0.0,
+        "smoke3": 0.0
+      },
+      "valid": {
+        "smoke2": "True",
+        "smoke3": "True"
+      },
+      "phases": {
+        "smoke2": {
+          "wall_s": 219.36,
+          "convergence_s": 81.37,
+          "pre_change_overhead_s": 42.71,
+          "baseline_plus_observation_s": 33.96,
+          "post_window_s": 61.32
+        },
+        "smoke3": {
+          "wall_s": 189.65,
+          "convergence_s": 107.85,
+          "pre_change_overhead_s": 15.38,
+          "baseline_plus_observation_s": 36.21,
+          "post_window_s": 30.21
+        }
+      }
+    },
+    "SMOKE3-V4N-01.rep1": {
+      "smoke2_run": "SMOKE2-V4N-01.rep1",
+      "T1": {
+        "smoke2": 0.0,
+        "smoke3": 0.0
+      },
+      "T2": {
+        "smoke2": 0.0,
+        "smoke3": 0.0
+      },
+      "valid": {
+        "smoke2": "True",
+        "smoke3": "True"
+      },
+      "phases": {
+        "smoke2": {
+          "wall_s": 141.59,
+          "convergence_s": 45.09,
+          "pre_change_overhead_s": 27.25,
+          "baseline_plus_observation_s": 31.83,
+          "post_window_s": 37.42
+        },
+        "smoke3": {
+          "wall_s": 123.86,
+          "convergence_s": 64.08,
+          "pre_change_overhead_s": 13.05,
+          "baseline_plus_observation_s": 32.49,
+          "post_window_s": 14.24
+        }
+      }
+    },
+    "SMOKE3-V4N-09.rep1": {
+      "smoke2_run": null,
+      "T1": {
+        "smoke2": null,
+        "smoke3": 0.0
+      },
+      "T2": {
+        "smoke2": null,
+        "smoke3": 0.0
+      },
+      "valid": {
+        "smoke2": null,
+        "smoke3": "True"
+      },
+      "phases": {
+        "smoke2": null,
+        "smoke3": {
+          "wall_s": 156.43,
+          "convergence_s": 86.72,
+          "pre_change_overhead_s": 14.74,
+          "baseline_plus_observation_s": 30.17,
+          "post_window_s": 24.8
+        }
+      }
+    },
+    "SMOKE3-V4C-05.rep1": {
+      "smoke2_run": "SMOKE2-V4C-05.rep1",
+      "T1": {
+        "smoke2": 0.0,
+        "smoke3": 0.0
+      },
+      "T2": {
+        "smoke2": 0.0,
+        "smoke3": 0.0
+      },
+      "valid": {
+        "smoke2": "True",
+        "smoke3": "True"
+      },
+      "phases": {
+        "smoke2": {
+          "wall_s": 151.02,
+          "convergence_s": 54.28,
+          "pre_change_overhead_s": 25.67,
+          "baseline_plus_observation_s": 36.29,
+          "post_window_s": 34.78
+        },
+        "smoke3": {
+          "wall_s": 121.7,
+          "convergence_s": 60.84,
+          "pre_change_overhead_s": 10.88,
+          "baseline_plus_observation_s": 33.01,
+          "post_window_s": 16.97
+        }
+      }
+    },
+    "SMOKE3-V4C-10.rep1": {
+      "smoke2_run": "SMOKE2-V4C-10.rep1",
+      "T1": {
+        "smoke2": 0.0,
+        "smoke3": 0.0
+      },
+      "T2": {
+        "smoke2": 0.0,
+        "smoke3": 0.0
+      },
+      "valid": {
+        "smoke2": "True",
+        "smoke3": "True"
+      },
+      "phases": {
+        "smoke2": {
+          "wall_s": 236.5,
+          "convergence_s": 63.26,
+          "pre_change_overhead_s": 26.9,
+          "baseline_plus_observation_s": 37.87,
+          "post_window_s": 108.47
+        },
+        "smoke3": {
+          "wall_s": 131.03,
+          "convergence_s": 68.02,
+          "pre_change_overhead_s": 12.19,
+          "baseline_plus_observation_s": 32.76,
+          "post_window_s": 18.06
+        }
+      }
+    },
+    "SMOKE3-V4C-11.rep1": {
+      "smoke2_run": "SMOKE2-V4C-11.rep1",
+      "T1": {
+        "smoke2": 0.00012140909090909703,
+        "smoke3": 0.00018489090909089666
+      },
+      "T2": {
+        "smoke2": 0.21818181818181817,
+        "smoke3": 0.21818181818181817
+      },
+      "valid": {
+        "smoke2": "True",
+        "smoke3": "True"
+      },
+      "phases": {
+        "smoke2": {
+          "wall_s": 227.51,
+          "convergence_s": 67.31,
+          "pre_change_overhead_s": 45.74,
+          "baseline_plus_observation_s": 31.81,
+          "post_window_s": 82.65
+        },
+        "smoke3": {
+          "wall_s": 132.96,
+          "convergence_s": 66.32,
+          "pre_change_overhead_s": 10.61,
+          "baseline_plus_observation_s": 34.87,
+          "post_window_s": 21.15
+        }
+      }
+    },
+    "SMOKE3-V4C-18.rep1": {
+      "smoke2_run": "SMOKE2-V4C-18.rep1",
+      "T1": {
+        "smoke2": 0.00021307142857142768,
+        "smoke3": 3.075238095238026e-05
+      },
+      "T2": {
+        "smoke2": 0.19047619047619047,
+        "smoke3": 0.17142857142857143
+      },
+      "valid": {
+        "smoke2": "True",
+        "smoke3": "True"
+      },
+      "phases": {
+        "smoke2": {
+          "wall_s": 420.56,
+          "convergence_s": 120.6,
+          "pre_change_overhead_s": 92.37,
+          "baseline_plus_observation_s": 40.33,
+          "post_window_s": 167.26
+        },
+        "smoke3": {
+          "wall_s": 186.99,
+          "convergence_s": 110.6,
+          "pre_change_overhead_s": 13.78,
+          "baseline_plus_observation_s": 36.79,
+          "post_window_s": 25.82
+        }
+      }
+    },
+    "SMOKE3-V4C-02.rep1": {
+      "smoke2_run": null,
+      "T1": {
+        "smoke2": null,
+        "smoke3": 3.194444444444401e-05
+      },
+      "T2": {
+        "smoke2": null,
+        "smoke3": 0.05555555555555555
+      },
+      "valid": {
+        "smoke2": null,
+        "smoke3": "True"
+      },
+      "phases": {
+        "smoke2": null,
+        "smoke3": {
+          "wall_s": 117.44,
+          "convergence_s": 61.31,
+          "pre_change_overhead_s": 10.45,
+          "baseline_plus_observation_s": 31.89,
+          "post_window_s": 13.79
+        }
+      }
+    },
+    "SMOKE3-V4C-07.rep1": {
+      "smoke2_run": null,
+      "T1": {
+        "smoke2": null,
+        "smoke3": 0.0
+      },
+      "T2": {
+        "smoke2": null,
+        "smoke3": 0.0
+      },
+      "valid": {
+        "smoke2": null,
+        "smoke3": "True"
+      },
+      "phases": {
+        "smoke2": null,
+        "smoke3": {
+          "wall_s": 138.06,
+          "convergence_s": 72.35,
+          "pre_change_overhead_s": 11.25,
+          "baseline_plus_observation_s": 34.2,
+          "post_window_s": 20.26
+        }
+      }
+    },
+    "SMOKE3-V4C-12.rep1": {
+      "smoke2_run": null,
+      "T1": {
+        "smoke2": null,
+        "smoke3": 2.7709090909092376e-05
+      },
+      "T2": {
+        "smoke2": null,
+        "smoke3": 0.07272727272727272
+      },
+      "valid": {
+        "smoke2": null,
+        "smoke3": "True"
+      },
+      "phases": {
+        "smoke2": null,
+        "smoke3": {
+          "wall_s": 143.21,
+          "convergence_s": 73.84,
+          "pre_change_overhead_s": 13.73,
+          "baseline_plus_observation_s": 35.19,
+          "post_window_s": 20.45
+        }
+      }
+    },
+    "SMOKE3-V4C-17.rep1": {
+      "smoke2_run": null,
+      "T1": {
+        "smoke2": null,
+        "smoke3": 3.576190476190219e-05
+      },
+      "T2": {
+        "smoke2": null,
+        "smoke3": 0.09523809523809523
+      },
+      "valid": {
+        "smoke2": null,
+        "smoke3": "True"
+      },
+      "phases": {
+        "smoke2": null,
+        "smoke3": {
+          "wall_s": 159.92,
+          "convergence_s": 83.83,
+          "pre_change_overhead_s": 14.85,
+          "baseline_plus_observation_s": 31.05,
+          "post_window_s": 30.19
+        }
+      }
+    }
+  }
+}

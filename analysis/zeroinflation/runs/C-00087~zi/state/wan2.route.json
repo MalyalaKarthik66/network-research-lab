@@ -1,0 +1,598 @@
+{
+  "status": "OK",
+  "rc": 0,
+  "stdout": "{\n  \"0.0.0.0/0\":[\n    {\n      \"prefix\":\"0.0.0.0/0\",\n      \"prefixLen\":0,\n      \"protocol\":\"kernel\",\n      \"vrfId\":0,\n      \"vrfName\":\"default\",\n      \"selected\":true,\n      \"destSelected\":true,\n      \"distance\":0,\n      \"metric\":0,\n      \"installed\":true,\n      \"table\":254,\n      \"internalStatus\":16,\n      \"internalFlags\":8,\n      \"internalNextHopNum\":1,\n      \"internalNextHopActiveNum\":1,\n      \"nexthopGroupId\":7,\n      \"installedNexthopGroupId\":7,\n      \"uptime\":\"00:00:51\",\n      \"nexthops\":[\n        {\n          \"flags\":3,\n          \"fib\":true,\n          \"ip\":\"172.20.20.1\",\n          \"afi\":\"ipv4\",\n          \"interfaceIndex\":2,\n          \"interfaceName\":\"eth0\",\n          \"active\":true\n        }\n      ]\n    }\n  ],\n  \"10.12.1.0/30\":[\n    {\n      \"prefix\":\"10.12.1.0/30\",\n      \"prefixLen\":30,\n      \"protocol\":\"ospf\",\n      \"vrfId\":0,\n      \"vrfName\":\"default\",\n      \"selected\":true,\n      \"destSelected\":true,\n      \"distance\":110,\n      \"metric\":30,\n      \"installed\":true,\n      \"table\":254,\n      \"internalStatus\":16,\n      \"internalFlags\":8,\n      \"internalNextHopNum\":1,\n      \"internalNextHopActiveNum\":1,\n      \"nexthopGroupId\":27,\n      \"installedNexthopGroupId\":27,\n      \"uptime\":\"00:00:26\",\n      \"nexthops\":[\n        {\n          \"flags\":3,\n          \"fib\":true,\n          \"ip\":\"10.12.3.1\",\n          \"afi\":\"ipv4\",\n          \"interfaceIndex\":2268,\n          \"interfaceName\":\"eth1\",\n          \"active\":true,\n          \"weight\":1\n        }\n      ]\n    }\n  ],\n  \"10.12.2.0/30\":[\n    {\n      \"prefix\":\"10.12.2.0/30\",\n      \"prefixLen\":30,\n      \"protocol\":\"ospf\",\n      \"vrfId\":0,\n      \"vrfName\":\"default\",\n      \"selected\":true,\n      \"destSelected\":true,\n      \"distance\":110,\n      \"metric\":20,\n      \"installed\":true,\n      \"table\":254,\n      \"internalStatus\":16,\n      \"internalFlags\":8,\n      \"internalNextHopNum\":1,\n      \"internalNextHopActiveNum\":1,\n      \"nexthopGroupId\":27,\n      \"installedNexthopGroupId\":27,\n      \"uptime\":\"00:00:36\",\n      \"nexthops\":[\n        {\n          \"flags\":3,\n          \"fib\":true,\n          \"ip\":\"10.12.3.1\",\n          \"afi\":\"ipv4\",\n          \"interfaceIndex\":2268,\n          \"interfaceName\":\"eth1\",\n          \"active\":true,\n          \"weight\":1\n        }\n      ]\n    }\n  ],\n  \"10.12.3.0/30\":[\n    {\n      \"prefix\":\"10.12.3.0/30\",\n      \"prefixLen\":30,\n      \"protocol\":\"ospf\",\n      \"vrfId\":0,\n      \"vrfName\":\"default\",\n      \"distance\":110,\n      \"metric\":10,\n      \"table\":254,\n      \"internalStatus\":0,\n      \"internalFlags\":0,\n      \"internalNextHopNum\":1,\n      \"internalNextHopActiveNum\":1,\n      \"nexthopGroupId\":19,\n      \"uptime\":\"00:00:51\",\n      \"nexthops\":[\n        {\n          \"flags\":1,\n          \"directlyConnected\":true,\n          \"interfaceIndex\":2268,\n          \"interfaceName\":\"eth1\",\n          \"active\":true,\n          \"weight\":1\n        }\n      ]\n    },\n    {\n      \"prefix\":\"10.12.3.0/30\",\n      \"prefixLen\":30,\n      \"protocol\":\"connected\",\n      \"vrfId\":0,\n      \"vrfName\":\"default\",\n      \"selected\":true,\n      \"destSelected\":true,\n      \"distance\":0,\n      \"metric\":0,\n      \"installed\":true,\n      \"table\":254,\n      \"internalStatus\":16,\n      \"internalFlags\":8,\n      \"internalNextHopNum\":1,\n      \"internalNextHopActiveNum\":1,\n      \"nexthopGroupId\":20,\n      \"installedNexthopGroupId\":20,\n      \"uptime\":\"00:00:51\",\n      \"nexthops\":[\n        {\n          \"flags\":3,\n          \"fib\":true,\n          \"directlyConnected\":true,\n          \"interfaceIndex\":2268,\n          \"interfaceName\":\"eth1\",\n          \"active\":true\n        }\n      ]\n    }\n  ],\n  \"10.12.4.0/30\":[\n    {\n      \"prefix\":\"10.12.4.0/30\",\n      \"prefixLen\":30,\n      \"protocol\":\"ospf\",\n      \"vrfId\":0,\n      \"vrfName\":\"default\",\n      \"distance\":110,\n      \"metric\":10,\n      \"table\":254,\n      \"internalStatus\":0,\n      \"internalFlags\":0,\n      \"internalNextHopNum\":1,\n      \"internalNextHopActiveNum\":1,\n      \"nexthopGroupId\":16,\n      \"uptime\":\"00:00:51\",\n      \"nexthops\":[\n        {\n          \"flags\":1,\n          \"directlyConnected\":true,\n          \"interfaceIndex\":2254,\n          \"interfaceName\":\"eth2\",\n          \"active\":true,\n          \"weight\":1\n        }\n      ]\n    },\n    {\n      \"prefix\":\"10.12.4.0/30\",\n      \"prefixLen\":30,\n      \"protocol\":\"connected\",\n      \"vrfId\":0,\n      \"vrfName\":\"default\",\n      \"selected\":true,\n      \"destSelected\":true,\n      \"distance\":0,\n      \"metric\":0,\n      \"installed\":true,\n      \"table\":254,\n      \"internalStatus\":16,\n      \"internalFlags\":8,\n      \"internalNextHopNum\":1,\n      \"internalNextHopActiveNum\":1,\n      \"nexthopGroupId\":14,\n      \"installedNexthopGroupId\":14,\n      \"uptime\":\"00:00:51\",\n      \"nexthops\":[\n        {\n          \"flags\":3,\n          \"fib\":true,\n          \"directlyConnected\":true,\n          \"interfaceIndex\":2254,\n          \"interfaceName\":\"eth2\",\n          \"active\":true\n        }\n      ]\n    }\n  ],\n  \"10.12.5.0/30\":[\n    {\n      \"prefix\":\"10.12.5.0/30\",\n      \"prefixLen\":30,\n      \"protocol\":\"ospf\",\n      \"vrfId\":0,\n      \"vrfName\":\"default\",\n      \"selected\":true,\n      \"destSelected\":true,\n      \"distance\":110,\n      \"metric\":20,\n      \"installed\":true,\n      \"table\":254,\n      \"internalStatus\":16,\n      \"internalFlags\":8,\n      \"internalNextHopNum\":1,\n      \"internalNextHopActiveNum\":1,\n      \"nexthopGroupId\":29,\n      \"installedNexthopGroupId\":29,\n      \"uptime\":\"00:00:31\",\n      \"nexthops\":[\n        {\n          \"flags\":3,\n          \"fib\":true,\n          \"ip\":\"10.12.4.2\",\n          \"afi\":\"ipv4\",\n          \"interfaceIndex\":2254,\n          \"interfaceName\":\"eth2\",\n          \"active\":true,\n          \"weight\":1\n        }\n      ]\n    }\n  ],\n  \"10.12.6.0/30\":[\n    {\n      \"prefix\":\"10.12.6.0/30\",\n      \"prefixLen\":30,\n      \"protocol\":\"ospf\",\n      \"vrfId\":0,\n      \"vrfName\":\"default\",\n      \"selected\":true,\n      \"destSelected\":true,\n      \"distance\":110,\n      \"metric\":110,\n      \"installed\":true,\n      \"table\":254,\n      \"internalStatus\":16,\n      \"internalFlags\":8,\n      \"internalNextHopNum\":1,\n      \"internalNextHopActiveNum\":1,\n      \"nexthopGroupId\":29,\n      \"installedNexthopGroupId\":29,\n      \"uptime\":\"00:00:31\",\n      \"nexthops\":[\n        {\n          \"flags\":3,\n          \"fib\":true,\n          \"ip\":\"10.12.4.2\",\n          \"afi\":\"ipv4\",\n          \"interfaceIndex\":2254,\n          \"interfaceName\":\"eth2\",\n          \"active\":true,\n          \"weight\":1\n        }\n      ]\n    }\n  ],\n  \"10.20.0.0/24\":[\n    {\n      \"prefix\":\"10.20.0.0/24\",\n      \"prefixLen\":24,\n      \"protocol\":\"ospf\",\n      \"vrfId\":0,\n      \"vrfName\":\"default\",\n      \"selected\":true,\n      \"destSelected\":true,\n      \"distance\":110,\n      \"metric\":30,\n      \"installed\":true,\n      \"table\":254,\n      \"internalStatus\":16,\n      \"internalFlags\":8,\n      \"internalNextHopNum\":1,\n      \"internalNextHopActiveNum\":1,\n      \"nexthopGroupId\":29,\n      \"installedNexthopGroupId\":29,\n      \"uptime\":\"00:00:31\",\n      \"nexthops\":[\n        {\n          \"flags\":3,\n          \"fib\":true,\n          \"ip\":\"10.12.4.2\",\n          \"afi\":\"ipv4\",\n          \"interfaceIndex\":2254,\n          \"interfaceName\":\"eth2\",\n          \"active\":true,\n          \"weight\":1\n        }\n      ]\n    }\n  ],\n  \"10.21.0.0/24\":[\n    {\n      \"prefix\":\"10.21.0.0/24\",\n      \"prefixLen\":24,\n      \"protocol\":\"ospf\",\n      \"vrfId\":0,\n      \"vrfName\":\"default\",\n      \"selected\":true,\n      \"destSelected\":true,\n      \"distance\":110,\n      \"metric\":30,\n      \"installed\":true,\n      \"table\":254,\n      \"internalStatus\":16,\n      \"internalFlags\":8,\n      \"internalNextHopNum\":1,\n      \"internalNextHopActiveNum\":1,\n      \"nexthopGroupId\":29,\n      \"installedNexthopGroupId\":29,\n      \"uptime\":\"00:00:31\",\n      \"nexthops\":[\n        {\n          \"flags\":3,\n          \"fib\":true,\n          \"ip\":\"10.12.4.2\",\n          \"afi\":\"ipv4\",\n          \"interfaceIndex\":2254,\n          \"interfaceName\":\"eth2\",\n          \"active\":true,\n          \"weight\":1\n        }\n      ]\n    }\n  ],\n  \"10.255.0.2/32\":[\n    {\n      \"prefix\":\"10.255.0.2/32\",\n      \"prefixLen\":32,\n      \"protocol\":\"ospf\",\n      \"vrfId\":0,\n      \"vrfName\":\"default\",\n      \"selected\":true,\n      \"destSelected\":true,\n      \"distance\":110,\n      \"metric\":20,\n      \"installed\":true,\n      \"table\":254,\n      \"internalStatus\":16,\n      \"internalFlags\":8,\n      \"internalNextHopNum\":1,\n      \"internalNextHopActiveNum\":1,\n      \"nexthopGroupId\":27,\n      \"installedNexthopGroupId\":27,\n      \"uptime\":\"00:00:26\",\n      \"nexthops\":[\n        {\n          \"flags\":3,\n          \"fib\":true,\n          \"ip\":\"10.12.3.1\",\n          \"afi\":\"ipv4\",\n          \"interfaceIndex\":2268,\n          \"interfaceName\":\"eth1\",\n          \"active\":true,\n          \"weight\":1\n        }\n      ]\n    }\n  ],\n  \"10.255.0.3/32\":[\n    {\n      \"prefix\":\"10.255.0.3/32\",\n      \"prefixLen\":32,\n      \"protocol\":\"ospf\",\n      \"vrfId\":0,\n      \"vrfName\":\"default\",\n      \"selected\":true,\n      \"destSelected\":true,\n      \"distance\":110,\n      \"metric\":10,\n      \"installed\":true,\n      \"table\":254,\n      \"internalStatus\":16,\n      \"internalFlags\":8,\n      \"internalNextHopNum\":1,\n      \"internalNextHopActiveNum\":1,\n      \"nexthopGroupId\":27,\n      \"installedNexthopGroupId\":27,\n      \"uptime\":\"00:00:36\",\n      \"nexthops\":[\n        {\n          \"flags\":3,\n          \"fib\":true,\n          \"ip\":\"10.12.3.1\",\n          \"afi\":\"ipv4\",\n          \"interfaceIndex\":2268,\n          \"interfaceName\":\"eth1\",\n          \"active\":true,\n          \"weight\":1\n        }\n      ]\n    }\n  ],\n  \"10.255.0.4/32\":[\n    {\n      \"prefix\":\"10.255.0.4/32\",\n      \"prefixLen\":32,\n      \"protocol\":\"ospf\",\n      \"vrfId\":0,\n      \"vrfName\":\"default\",\n      \"distance\":110,\n      \"metric\":0,\n      \"table\":254,\n      \"internalStatus\":0,\n      \"internalFlags\":0,\n      \"internalNextHopNum\":1,\n      \"internalNextHopActiveNum\":1,\n      \"nexthopGroupId\":11,\n      \"uptime\":\"00:00:51\",\n      \"nexthops\":[\n        {\n          \"flags\":1,\n          \"directlyConnected\":true,\n          \"interfaceIndex\":1,\n          \"interfaceName\":\"lo\",\n          \"active\":true,\n          \"weight\":1\n        }\n      ]\n    },\n    {\n      \"prefix\":\"10.255.0.4/32\",\n      \"prefixLen\":32,\n      \"protocol\":\"connected\",\n      \"vrfId\":0,\n      \"vrfName\":\"default\",\n      \"selected\":true,\n      \"destSelected\":true,\n      \"distance\":0,\n      \"metric\":0,\n      \"installed\":true,\n      \"table\":254,\n      \"internalStatus\":16,\n      \"internalFlags\":8,\n      \"internalNextHopNum\":1,\n      \"internalNextHopActiveNum\":1,\n      \"nexthopGroupId\":12,\n      \"installedNexthopGroupId\":12,\n      \"uptime\":\"00:00:51\",\n      \"nexthops\":[\n        {\n          \"flags\":3,\n          \"fib\":true,\n          \"directlyConnected\":true,\n          \"interfaceIndex\":1,\n          \"interfaceName\":\"lo\",\n          \"active\":true\n        }\n      ]\n    }\n  ],\n  \"10.255.0.5/32\":[\n    {\n      \"prefix\":\"10.255.0.5/32\",\n      \"prefixLen\":32,\n      \"protocol\":\"ospf\",\n      \"vrfId\":0,\n      \"vrfName\":\"default\",\n      \"selected\":true,\n      \"destSelected\":true,\n      \"distance\":110,\n      \"metric\":10,\n      \"installed\":true,\n      \"table\":254,\n      \"internalStatus\":16,\n      \"internalFlags\":8,\n      \"internalNextHopNum\":1,\n      \"internalNextHopActiveNum\":1,\n      \"nexthopGroupId\":29,\n      \"installedNexthopGroupId\":29,\n      \"uptime\":\"00:00:31\",\n      \"nexthops\":[\n        {\n          \"flags\":3,\n          \"fib\":true,\n          \"ip\":\"10.12.4.2\",\n          \"afi\":\"ipv4\",\n          \"interfaceIndex\":2254,\n          \"interfaceName\":\"eth2\",\n          \"active\":true,\n          \"weight\":1\n        }\n      ]\n    }\n  ],\n  \"10.255.0.6/32\":[\n    {\n      \"prefix\":\"10.255.0.6/32\",\n      \"prefixLen\":32,\n      \"protocol\":\"ospf\",\n      \"vrfId\":0,\n      \"vrfName\":\"default\",\n      \"selected\":true,\n      \"destSelected\":true,\n      \"distance\":110,\n      \"metric\":20,\n      \"installed\":true,\n      \"table\":254,\n      \"internalStatus\":16,\n      \"internalFlags\":8,\n      \"internalNextHopNum\":1,\n      \"internalNextHopActiveNum\":1,\n      \"nexthopGroupId\":29,\n      \"installedNexthopGroupId\":29,\n      \"uptime\":\"00:00:31\",\n      \"nexthops\":[\n        {\n          \"flags\":3,\n          \"fib\":true,\n          \"ip\":\"10.12.4.2\",\n          \"afi\":\"ipv4\",\n          \"interfaceIndex\":2254,\n          \"interfaceName\":\"eth2\",\n          \"active\":true,\n          \"weight\":1\n        }\n      ]\n    }\n  ],\n  \"172.20.20.0/24\":[\n    {\n      \"prefix\":\"172.20.20.0/24\",\n      \"prefixLen\":24,\n      \"protocol\":\"connected\",\n      \"vrfId\":0,\n      \"vrfName\":\"default\",\n      \"selected\":true,\n      \"destSelected\":true,\n      \"distance\":0,\n      \"metric\":0,\n      \"installed\":true,\n      \"table\":254,\n      \"internalStatus\":16,\n      \"internalFlags\":8,\n      \"internalNextHopNum\":1,\n      \"internalNextHopActiveNum\":1,\n      \"nexthopGroupId\":5,\n      \"installedNexthopGroupId\":5,\n      \"uptime\":\"00:00:52\",\n      \"nexthops\":[\n        {\n          \"flags\":3,\n          \"fib\":true,\n          \"directlyConnected\":true,\n          \"interfaceIndex\":2,\n          \"interfaceName\":\"eth0\",\n          \"active\":true\n        }\n      ]\n    }\n  ]\n}\n",
+  "stderr": "% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.\n",
+  "argv": [
+    "docker",
+    "exec",
+    "clab-nrlv2-c-00087-wan2",
+    "vtysh",
+    "-c",
+    "show ip route json"
+  ],
+  "seconds": 0.05,
+  "error": null,
+  "command": "show ip route json",
+  "json": {
+    "0.0.0.0/0": [
+      {
+        "prefix": "0.0.0.0/0",
+        "prefixLen": 0,
+        "protocol": "kernel",
+        "vrfId": 0,
+        "vrfName": "default",
+        "selected": true,
+        "destSelected": true,
+        "distance": 0,
+        "metric": 0,
+        "installed": true,
+        "table": 254,
+        "internalStatus": 16,
+        "internalFlags": 8,
+        "internalNextHopNum": 1,
+        "internalNextHopActiveNum": 1,
+        "nexthopGroupId": 7,
+        "installedNexthopGroupId": 7,
+        "uptime": "00:00:51",
+        "nexthops": [
+          {
+            "flags": 3,
+            "fib": true,
+            "ip": "172.20.20.1",
+            "afi": "ipv4",
+            "interfaceIndex": 2,
+            "interfaceName": "eth0",
+            "active": true
+          }
+        ]
+      }
+    ],
+    "10.12.1.0/30": [
+      {
+        "prefix": "10.12.1.0/30",
+        "prefixLen": 30,
+        "protocol": "ospf",
+        "vrfId": 0,
+        "vrfName": "default",
+        "selected": true,
+        "destSelected": true,
+        "distance": 110,
+        "metric": 30,
+        "installed": true,
+        "table": 254,
+        "internalStatus": 16,
+        "internalFlags": 8,
+        "internalNextHopNum": 1,
+        "internalNextHopActiveNum": 1,
+        "nexthopGroupId": 27,
+        "installedNexthopGroupId": 27,
+        "uptime": "00:00:26",
+        "nexthops": [
+          {
+            "flags": 3,
+            "fib": true,
+            "ip": "10.12.3.1",
+            "afi": "ipv4",
+            "interfaceIndex": 2268,
+            "interfaceName": "eth1",
+            "active": true,
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "10.12.2.0/30": [
+      {
+        "prefix": "10.12.2.0/30",
+        "prefixLen": 30,
+        "protocol": "ospf",
+        "vrfId": 0,
+        "vrfName": "default",
+        "selected": true,
+        "destSelected": true,
+        "distance": 110,
+        "metric": 20,
+        "installed": true,
+        "table": 254,
+        "internalStatus": 16,
+        "internalFlags": 8,
+        "internalNextHopNum": 1,
+        "internalNextHopActiveNum": 1,
+        "nexthopGroupId": 27,
+        "installedNexthopGroupId": 27,
+        "uptime": "00:00:36",
+        "nexthops": [
+          {
+            "flags": 3,
+            "fib": true,
+            "ip": "10.12.3.1",
+            "afi": "ipv4",
+            "interfaceIndex": 2268,
+            "interfaceName": "eth1",
+            "active": true,
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "10.12.3.0/30": [
+      {
+        "prefix": "10.12.3.0/30",
+        "prefixLen": 30,
+        "protocol": "ospf",
+        "vrfId": 0,
+        "vrfName": "default",
+        "distance": 110,
+        "metric": 10,
+        "table": 254,
+        "internalStatus": 0,
+        "internalFlags": 0,
+        "internalNextHopNum": 1,
+        "internalNextHopActiveNum": 1,
+        "nexthopGroupId": 19,
+        "uptime": "00:00:51",
+        "nexthops": [
+          {
+            "flags": 1,
+            "directlyConnected": true,
+            "interfaceIndex": 2268,
+            "interfaceName": "eth1",
+            "active": true,
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "prefix": "10.12.3.0/30",
+        "prefixLen": 30,
+        "protocol": "connected",
+        "vrfId": 0,
+        "vrfName": "default",
+        "selected": true,
+        "destSelected": true,
+        "distance": 0,
+        "metric": 0,
+        "installed": true,
+        "table": 254,
+        "internalStatus": 16,
+        "internalFlags": 8,
+        "internalNextHopNum": 1,
+        "internalNextHopActiveNum": 1,
+        "nexthopGroupId": 20,
+        "installedNexthopGroupId": 20,
+        "uptime": "00:00:51",
+        "nexthops": [
+          {
+            "flags": 3,
+            "fib": true,
+            "directlyConnected": true,
+            "interfaceIndex": 2268,
+            "interfaceName": "eth1",
+            "active": true
+          }
+        ]
+      }
+    ],
+    "10.12.4.0/30": [
+      {
+        "prefix": "10.12.4.0/30",
+        "prefixLen": 30,
+        "protocol": "ospf",
+        "vrfId": 0,
+        "vrfName": "default",
+        "distance": 110,
+        "metric": 10,
+        "table": 254,
+        "internalStatus": 0,
+        "internalFlags": 0,
+        "internalNextHopNum": 1,
+        "internalNextHopActiveNum": 1,
+        "nexthopGroupId": 16,
+        "uptime": "00:00:51",
+        "nexthops": [
+          {
+            "flags": 1,
+            "directlyConnected": true,
+            "interfaceIndex": 2254,
+            "interfaceName": "eth2",
+            "active": true,
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "prefix": "10.12.4.0/30",
+        "prefixLen": 30,
+        "protocol": "connected",
+        "vrfId": 0,
+        "vrfName": "default",
+        "selected": true,
+        "destSelected": true,
+        "distance": 0,
+        "metric": 0,
+        "installed": true,
+        "table": 254,
+        "internalStatus": 16,
+        "internalFlags": 8,
+        "internalNextHopNum": 1,
+        "internalNextHopActiveNum": 1,
+        "nexthopGroupId": 14,
+        "installedNexthopGroupId": 14,
+        "uptime": "00:00:51",
+        "nexthops": [
+          {
+            "flags": 3,
+            "fib": true,
+            "directlyConnected": true,
+            "interfaceIndex": 2254,
+            "interfaceName": "eth2",
+            "active": true
+          }
+        ]
+      }
+    ],
+    "10.12.5.0/30": [
+      {
+        "prefix": "10.12.5.0/30",
+        "prefixLen": 30,
+        "protocol": "ospf",
+        "vrfId": 0,
+        "vrfName": "default",
+        "selected": true,
+        "destSelected": true,
+        "distance": 110,
+        "metric": 20,
+        "installed": true,
+        "table": 254,
+        "internalStatus": 16,
+        "internalFlags": 8,
+        "internalNextHopNum": 1,
+        "internalNextHopActiveNum": 1,
+        "nexthopGroupId": 29,
+        "installedNexthopGroupId": 29,
+        "uptime": "00:00:31",
+        "nexthops": [
+          {
+            "flags": 3,
+            "fib": true,
+            "ip": "10.12.4.2",
+            "afi": "ipv4",
+            "interfaceIndex": 2254,
+            "interfaceName": "eth2",
+            "active": true,
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "10.12.6.0/30": [
+      {
+        "prefix": "10.12.6.0/30",
+        "prefixLen": 30,
+        "protocol": "ospf",
+        "vrfId": 0,
+        "vrfName": "default",
+        "selected": true,
+        "destSelected": true,
+        "distance": 110,
+        "metric": 110,
+        "installed": true,
+        "table": 254,
+        "internalStatus": 16,
+        "internalFlags": 8,
+        "internalNextHopNum": 1,
+        "internalNextHopActiveNum": 1,
+        "nexthopGroupId": 29,
+        "installedNexthopGroupId": 29,
+        "uptime": "00:00:31",
+        "nexthops": [
+          {
+            "flags": 3,
+            "fib": true,
+            "ip": "10.12.4.2",
+            "afi": "ipv4",
+            "interfaceIndex": 2254,
+            "interfaceName": "eth2",
+            "active": true,
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "10.20.0.0/24": [
+      {
+        "prefix": "10.20.0.0/24",
+        "prefixLen": 24,
+        "protocol": "ospf",
+        "vrfId": 0,
+        "vrfName": "default",
+        "selected": true,
+        "destSelected": true,
+        "distance": 110,
+        "metric": 30,
+        "installed": true,
+        "table": 254,
+        "internalStatus": 16,
+        "internalFlags": 8,
+        "internalNextHopNum": 1,
+        "internalNextHopActiveNum": 1,
+        "nexthopGroupId": 29,
+        "installedNexthopGroupId": 29,
+        "uptime": "00:00:31",
+        "nexthops": [
+          {
+            "flags": 3,
+            "fib": true,
+            "ip": "10.12.4.2",
+            "afi": "ipv4",
+            "interfaceIndex": 2254,
+            "interfaceName": "eth2",
+            "active": true,
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "10.21.0.0/24": [
+      {
+        "prefix": "10.21.0.0/24",
+        "prefixLen": 24,
+        "protocol": "ospf",
+        "vrfId": 0,
+        "vrfName": "default",
+        "selected": true,
+        "destSelected": true,
+        "distance": 110,
+        "metric": 30,
+        "installed": true,
+        "table": 254,
+        "internalStatus": 16,
+        "internalFlags": 8,
+        "internalNextHopNum": 1,
+        "internalNextHopActiveNum": 1,
+        "nexthopGroupId": 29,
+        "installedNexthopGroupId": 29,
+        "uptime": "00:00:31",
+        "nexthops": [
+          {
+            "flags": 3,
+            "fib": true,
+            "ip": "10.12.4.2",
+            "afi": "ipv4",
+            "interfaceIndex": 2254,
+            "interfaceName": "eth2",
+            "active": true,
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "10.255.0.2/32": [
+      {
+        "prefix": "10.255.0.2/32",
+        "prefixLen": 32,
+        "protocol": "ospf",
+        "vrfId": 0,
+        "vrfName": "default",
+        "selected": true,
+        "destSelected": true,
+        "distance": 110,
+        "metric": 20,
+        "installed": true,
+        "table": 254,
+        "internalStatus": 16,
+        "internalFlags": 8,
+        "internalNextHopNum": 1,
+        "internalNextHopActiveNum": 1,
+        "nexthopGroupId": 27,
+        "installedNexthopGroupId": 27,
+        "uptime": "00:00:26",
+        "nexthops": [
+          {
+            "flags": 3,
+            "fib": true,
+            "ip": "10.12.3.1",
+            "afi": "ipv4",
+            "interfaceIndex": 2268,
+            "interfaceName": "eth1",
+            "active": true,
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "10.255.0.3/32": [
+      {
+        "prefix": "10.255.0.3/32",
+        "prefixLen": 32,
+        "protocol": "ospf",
+        "vrfId": 0,
+        "vrfName": "default",
+        "selected": true,
+        "destSelected": true,
+        "distance": 110,
+        "metric": 10,
+        "installed": true,
+        "table": 254,
+        "internalStatus": 16,
+        "internalFlags": 8,
+        "internalNextHopNum": 1,
+        "internalNextHopActiveNum": 1,
+        "nexthopGroupId": 27,
+        "installedNexthopGroupId": 27,
+        "uptime": "00:00:36",
+        "nexthops": [
+          {
+            "flags": 3,
+            "fib": true,
+            "ip": "10.12.3.1",
+            "afi": "ipv4",
+            "interfaceIndex": 2268,
+            "interfaceName": "eth1",
+            "active": true,
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "10.255.0.4/32": [
+      {
+        "prefix": "10.255.0.4/32",
+        "prefixLen": 32,
+        "protocol": "ospf",
+        "vrfId": 0,
+        "vrfName": "default",
+        "distance": 110,
+        "metric": 0,
+        "table": 254,
+        "internalStatus": 0,
+        "internalFlags": 0,
+        "internalNextHopNum": 1,
+        "internalNextHopActiveNum": 1,
+        "nexthopGroupId": 11,
+        "uptime": "00:00:51",
+        "nexthops": [
+          {
+            "flags": 1,
+            "directlyConnected": true,
+            "interfaceIndex": 1,
+            "interfaceName": "lo",
+            "active": true,
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "prefix": "10.255.0.4/32",
+        "prefixLen": 32,
+        "protocol": "connected",
+        "vrfId": 0,
+        "vrfName": "default",
+        "selected": true,
+        "destSelected": true,
+        "distance": 0,
+        "metric": 0,
+        "installed": true,
+        "table": 254,
+        "internalStatus": 16,
+        "internalFlags": 8,
+        "internalNextHopNum": 1,
+        "internalNextHopActiveNum": 1,
+        "nexthopGroupId": 12,
+        "installedNexthopGroupId": 12,
+        "uptime": "00:00:51",
+        "nexthops": [
+          {
+            "flags": 3,
+            "fib": true,
+            "directlyConnected": true,
+            "interfaceIndex": 1,
+            "interfaceName": "lo",
+            "active": true
+          }
+        ]
+      }
+    ],
+    "10.255.0.5/32": [
+      {
+        "prefix": "10.255.0.5/32",
+        "prefixLen": 32,
+        "protocol": "ospf",
+        "vrfId": 0,
+        "vrfName": "default",
+        "selected": true,
+        "destSelected": true,
+        "distance": 110,
+        "metric": 10,
+        "installed": true,
+        "table": 254,
+        "internalStatus": 16,
+        "internalFlags": 8,
+        "internalNextHopNum": 1,
+        "internalNextHopActiveNum": 1,
+        "nexthopGroupId": 29,
+        "installedNexthopGroupId": 29,
+        "uptime": "00:00:31",
+        "nexthops": [
+          {
+            "flags": 3,
+            "fib": true,
+            "ip": "10.12.4.2",
+            "afi": "ipv4",
+            "interfaceIndex": 2254,
+            "interfaceName": "eth2",
+            "active": true,
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "10.255.0.6/32": [
+      {
+        "prefix": "10.255.0.6/32",
+        "prefixLen": 32,
+        "protocol": "ospf",
+        "vrfId": 0,
+        "vrfName": "default",
+        "selected": true,
+        "destSelected": true,
+        "distance": 110,
+        "metric": 20,
+        "installed": true,
+        "table": 254,
+        "internalStatus": 16,
+        "internalFlags": 8,
+        "internalNextHopNum": 1,
+        "internalNextHopActiveNum": 1,
+        "nexthopGroupId": 29,
+        "installedNexthopGroupId": 29,
+        "uptime": "00:00:31",
+        "nexthops": [
+          {
+            "flags": 3,
+            "fib": true,
+            "ip": "10.12.4.2",
+            "afi": "ipv4",
+            "interfaceIndex": 2254,
+            "interfaceName": "eth2",
+            "active": true,
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "172.20.20.0/24": [
+      {
+        "prefix": "172.20.20.0/24",
+        "prefixLen": 24,
+        "protocol": "connected",
+        "vrfId": 0,
+        "vrfName": "default",
+        "selected": true,
+        "destSelected": true,
+        "distance": 0,
+        "metric": 0,
+        "installed": true,
+        "table": 254,
+        "internalStatus": 16,
+        "internalFlags": 8,
+        "internalNextHopNum": 1,
+        "internalNextHopActiveNum": 1,
+        "nexthopGroupId": 5,
+        "installedNexthopGroupId": 5,
+        "uptime": "00:00:52",
+        "nexthops": [
+          {
+            "flags": 3,
+            "fib": true,
+            "directlyConnected": true,
+            "interfaceIndex": 2,
+            "interfaceName": "eth0",
+            "active": true
+          }
+        ]
+      }
+    ]
+  }
+}

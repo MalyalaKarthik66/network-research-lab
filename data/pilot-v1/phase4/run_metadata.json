@@ -1,0 +1,148 @@
+{
+  "phase": 4,
+  "run_utc": "2026-08-25T18:14:19Z",
+  "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+  "numpy": "2.2.6",
+  "pandas": "2.3.3",
+  "sklearn": "not used -- models implemented in numpy",
+  "harm_definition_version": "1.1.0",
+  "artifact_digest": "95533a7dfe2f0ad2751c4f760ffe88a69ead4607c2f3832a32c505dabca4ae24",
+  "n_all_candidates": 50,
+  "n_modelling_population": 24,
+  "grouping": "leave-one-incident-out (mandatory, see docs/LEAKAGE.md)",
+  "spec_widening_rule": {
+    "rule": "any oracle-only property FAILs in Batfish",
+    "tp": 7,
+    "fp": 0,
+    "fn": 5,
+    "tn": 12,
+    "precision": 1.0,
+    "recall": 0.5833333333333334,
+    "balanced_accuracy": 0.7916666666666667,
+    "caught": 7,
+    "missed": 5
+  },
+  "class_composition_safe_by_operator": {
+    "0": {
+      "R-cosmetic": 0,
+      "R-exact_revert": 10,
+      "R-overbroad_ospf": 0,
+      "R-partial_revert": 1,
+      "R-peer_align": 0,
+      "R-static_broad": 0,
+      "R-static_override": 1,
+      "R-static_specific": 0,
+      "R-wrong_device": 0
+    },
+    "1": {
+      "R-cosmetic": 3,
+      "R-exact_revert": 0,
+      "R-overbroad_ospf": 1,
+      "R-partial_revert": 0,
+      "R-peer_align": 2,
+      "R-static_broad": 1,
+      "R-static_override": 0,
+      "R-static_specific": 2,
+      "R-wrong_device": 3
+    }
+  },
+  "autonomy_risk_points": [
+    [
+      0.041666666666666664,
+      1.0
+    ],
+    [
+      0.08333333333333333,
+      0.5
+    ],
+    [
+      0.125,
+      0.3333333333333333
+    ],
+    [
+      0.16666666666666666,
+      0.25
+    ],
+    [
+      0.20833333333333334,
+      0.2
+    ],
+    [
+      0.25,
+      0.16666666666666666
+    ],
+    [
+      0.2916666666666667,
+      0.14285714285714285
+    ],
+    [
+      0.375,
+      0.2222222222222222
+    ],
+    [
+      0.4166666666666667,
+      0.2
+    ],
+    [
+      0.4583333333333333,
+      0.18181818181818182
+    ],
+    [
+      0.5,
+      0.25
+    ],
+    [
+      0.5416666666666666,
+      0.3076923076923077
+    ],
+    [
+      0.5833333333333334,
+      0.35714285714285715
+    ],
+    [
+      0.625,
+      0.4
+    ],
+    [
+      0.6666666666666666,
+      0.375
+    ],
+    [
+      0.7083333333333334,
+      0.4117647058823529
+    ],
+    [
+      0.75,
+      0.3888888888888889
+    ],
+    [
+      0.7916666666666666,
+      0.42105263157894735
+    ],
+    [
+      0.8333333333333334,
+      0.45
+    ],
+    [
+      0.875,
+      0.47619047619047616
+    ],
+    [
+      0.9166666666666666,
+      0.5
+    ],
+    [
+      0.9583333333333334,
+      0.5217391304347826
+    ],
+    [
+      1.0,
+      0.5
+    ],
+    [
+      1.0,
+      0.5
+    ]
+  ],
+  "note": "Provenance columns are used for ANALYSIS and ABLATION only, never as model input; the leakage gate in nrl/phase4.feature_columns enforces this."
+}

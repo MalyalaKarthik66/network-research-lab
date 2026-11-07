@@ -1,0 +1,15 @@
+{
+  "incident_id": "I-00120",
+  "topology": "t12_campus8",
+  "fault_id": "F0010",
+  "fault_family": "static_route_loop",
+  "fault_description": "[t12_campus8] edgeb installs 10.20.0.10/32 pointing back upstream at distb",
+  "fault_params": {
+    "node": "edgeb",
+    "prefix": "10.20.0.10/32",
+    "nexthop": "10.22.7.1",
+    "loop_with": "distb",
+    "topology": "t12_campus8"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

@@ -1,0 +1,17 @@
+{
+  "generated_utc": "2026-09-12T11:23:48Z",
+  "n": 30,
+  "exact": 18,
+  "by_kind": {
+    "cost": {
+      "exact": 9,
+      "n": 15
+    },
+    "shutdown": {
+      "exact": 9,
+      "n": 15
+    }
+  },
+  "dirty_reverts": [],
+  "wall_seconds": 4863.6
+}

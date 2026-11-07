@@ -1,0 +1,19 @@
+--- I-00117
++++ C-00863
+@@ -41,6 +41,7 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
++ shutdown
+ !
+ interface eth2
+  description link to corea coreA
+@@ -528,7 +529,7 @@
+ interface eth2
+  description link to dista accA
+  ip ospf area 0.0.0.0
+- ip ospf cost 65535
++ ip ospf cost 10
+  ip ospf network point-to-point
+ !
+ router ospf

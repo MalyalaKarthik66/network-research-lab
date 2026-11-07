@@ -1,0 +1,13 @@
+{
+  "incident_id": "I-05",
+  "fault_id": "F05",
+  "fault_family": "ospf_passive_transit",
+  "fault_description": "wan2 eth2 marked passive; adjacency to coreb dies silently",
+  "fault_params": {
+    "node": "wan2",
+    "iface": "eth2",
+    "peer": "coreb",
+    "peer_iface": "eth1"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

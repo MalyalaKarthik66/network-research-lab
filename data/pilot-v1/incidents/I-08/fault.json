@@ -1,0 +1,12 @@
+{
+  "incident_id": "I-08",
+  "fault_id": "F08",
+  "fault_family": "static_blackhole",
+  "fault_description": "corea blackholes 10.21.0.0/24; admin distance 1 beats OSPF's 110",
+  "fault_params": {
+    "node": "corea",
+    "prefix": "10.21.0.0/24",
+    "nexthop": "blackhole"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

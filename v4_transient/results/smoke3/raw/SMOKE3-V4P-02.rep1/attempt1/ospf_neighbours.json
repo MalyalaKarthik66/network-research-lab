@@ -1,0 +1,321 @@
+[
+  {
+    "t_before": 1789474944.645238,
+    "t_after": 1789474949.2773783,
+    "states": {
+      "a1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "a2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-",
+        "Full/-"
+      ],
+      "mid": [
+        "Full/-",
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789474949.2774136,
+    "t_after": 1789474953.7425215,
+    "states": {
+      "a1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "a2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-",
+        "Full/-"
+      ],
+      "mid": [
+        "Full/-",
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789474953.7425416,
+    "t_after": 1789474957.1611266,
+    "states": {
+      "a1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "a2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b1": [
+        "Full/-"
+      ],
+      "b2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-",
+        "Full/-"
+      ],
+      "mid": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789474957.1611488,
+    "t_after": 1789474960.4193451,
+    "states": {
+      "a1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "a2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b1": [
+        "Full/-"
+      ],
+      "b2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-",
+        "Full/-"
+      ],
+      "mid": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789474960.4193668,
+    "t_after": 1789474963.493835,
+    "states": {
+      "a1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "a2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b1": [
+        "Full/-"
+      ],
+      "b2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-",
+        "Full/-"
+      ],
+      "mid": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789474963.4938645,
+    "t_after": 1789474966.5144722,
+    "states": {
+      "a1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "a2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b1": [
+        "Full/-"
+      ],
+      "b2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-",
+        "Full/-"
+      ],
+      "mid": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789474966.5144973,
+    "t_after": 1789474969.975841,
+    "states": {
+      "a1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "a2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b1": [
+        "Full/-"
+      ],
+      "b2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-",
+        "Full/-"
+      ],
+      "mid": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789474969.9758666,
+    "t_after": 1789474973.2602675,
+    "states": {
+      "a1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "a2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b1": [
+        "Full/-"
+      ],
+      "b2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-",
+        "Full/-"
+      ],
+      "mid": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789474973.2602885,
+    "t_after": 1789474976.2082636,
+    "states": {
+      "a1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "a2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b1": [
+        "Full/-"
+      ],
+      "b2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-",
+        "Full/-"
+      ],
+      "mid": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  }
+]

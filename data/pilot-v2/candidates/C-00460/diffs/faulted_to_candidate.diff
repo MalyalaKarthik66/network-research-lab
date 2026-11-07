@@ -1,0 +1,38 @@
+--- I-00062
++++ C-00460
+@@ -51,7 +51,7 @@
+ interface eth3
+  description link to aggb wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 100
++ ip ospf cost 2
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -139,7 +139,7 @@
+ interface eth3
+  description link to agga wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 100
++ ip ospf cost 2
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -292,7 +292,7 @@
+ interface eth1
+  description link to corea wan-primary
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 1
+  ip ospf network point-to-point
+ !
+ interface eth2
+@@ -401,7 +401,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.200.0.2/30
++    address 10.17.1.1/30
+     alias link to agga siteA
+ 
+ 

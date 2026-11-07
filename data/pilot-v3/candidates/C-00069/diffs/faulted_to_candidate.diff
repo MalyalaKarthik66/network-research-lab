@@ -1,0 +1,20 @@
+--- I-00007
++++ C-00069
+@@ -51,7 +51,7 @@
+ interface eth3
+  description link to dista2 dA1b
+  ip ospf area 0.0.0.0
+- ip ospf cost 30
++ ip ospf cost 600
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -611,7 +611,7 @@
+ interface eth1
+  description link to acca1 dA1b
+  ip ospf area 0.0.0.0
+- ip ospf cost 30
++ ip ospf cost 600
+  ip ospf network point-to-point
+ !
+ interface eth2

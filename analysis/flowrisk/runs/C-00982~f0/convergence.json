@@ -1,0 +1,481 @@
+{
+  "status": "OK",
+  "converged": true,
+  "seconds": 50.2,
+  "polls": 9,
+  "min_settle_s": 45,
+  "history": [
+    {
+      "t": 0.8,
+      "route_counts": {
+        "edgea": 6,
+        "edgeb": 7,
+        "l1": 6,
+        "l2": null,
+        "l3": 5,
+        "r1": 6,
+        "r2": 6,
+        "r3": 5
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 1,
+      "neighbor_states": {
+        "edgea": [],
+        "edgeb": [
+          "Init/-",
+          "Init/-"
+        ],
+        "l1": [],
+        "l2": [],
+        "l3": [],
+        "r1": [
+          "Init/-",
+          "Init/-",
+          "Init/-"
+        ],
+        "r2": [],
+        "r3": [
+          "Init/-"
+        ]
+      },
+      "transitional": [
+        "edgeb:Init/-",
+        "edgeb:Init/-",
+        "r1:Init/-",
+        "r1:Init/-",
+        "r1:Init/-",
+        "r3:Init/-"
+      ],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": false,
+        "loss_pct": 100.0,
+        "rtt_avg_ms": null,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 7.6,
+      "route_counts": {
+        "edgea": 6,
+        "edgeb": 7,
+        "l1": 6,
+        "l2": null,
+        "l3": 5,
+        "r1": 6,
+        "r2": 6,
+        "r3": 5
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 2,
+      "neighbor_states": {
+        "edgea": [],
+        "edgeb": [
+          "Init/-",
+          "Init/-"
+        ],
+        "l1": [],
+        "l2": [],
+        "l3": [],
+        "r1": [
+          "Init/-",
+          "Init/-",
+          "Init/-"
+        ],
+        "r2": [],
+        "r3": [
+          "Init/-"
+        ]
+      },
+      "transitional": [
+        "edgeb:Init/-",
+        "edgeb:Init/-",
+        "r1:Init/-",
+        "r1:Init/-",
+        "r1:Init/-",
+        "r3:Init/-"
+      ],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": false,
+        "loss_pct": 100.0,
+        "rtt_avg_ms": null,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 14.4,
+      "route_counts": {
+        "edgea": 6,
+        "edgeb": 7,
+        "l1": 6,
+        "l2": null,
+        "l3": 5,
+        "r1": 6,
+        "r2": 6,
+        "r3": 5
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 3,
+      "neighbor_states": {
+        "edgea": [
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "l1": [
+          "Full/-"
+        ],
+        "l2": [],
+        "l3": [
+          "Full/-"
+        ],
+        "r1": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "r2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "r3": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": false,
+        "loss_pct": 100.0,
+        "rtt_avg_ms": null,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 21.2,
+      "route_counts": {
+        "edgea": 23,
+        "edgeb": 23,
+        "l1": 23,
+        "l2": null,
+        "l3": 23,
+        "r1": 23,
+        "r2": 23,
+        "r3": 23
+      },
+      "rib_changed": true,
+      "rib_stable_polls": 1,
+      "neighbor_states": {
+        "edgea": [
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "l1": [
+          "Full/-"
+        ],
+        "l2": [],
+        "l3": [
+          "Full/-"
+        ],
+        "r1": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "r2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "r3": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.097,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 27.0,
+      "route_counts": {
+        "edgea": 23,
+        "edgeb": 23,
+        "l1": 23,
+        "l2": null,
+        "l3": 23,
+        "r1": 23,
+        "r2": 23,
+        "r3": 23
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 2,
+      "neighbor_states": {
+        "edgea": [
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "l1": [
+          "Full/-"
+        ],
+        "l2": [],
+        "l3": [
+          "Full/-"
+        ],
+        "r1": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "r2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "r3": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.07,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 32.8,
+      "route_counts": {
+        "edgea": 23,
+        "edgeb": 23,
+        "l1": 23,
+        "l2": null,
+        "l3": 23,
+        "r1": 23,
+        "r2": 23,
+        "r3": 23
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 3,
+      "neighbor_states": {
+        "edgea": [
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "l1": [
+          "Full/-"
+        ],
+        "l2": [],
+        "l3": [
+          "Full/-"
+        ],
+        "r1": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "r2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "r3": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.07,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 38.6,
+      "route_counts": {
+        "edgea": 23,
+        "edgeb": 23,
+        "l1": 23,
+        "l2": null,
+        "l3": 23,
+        "r1": 23,
+        "r2": 23,
+        "r3": 23
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 4,
+      "neighbor_states": {
+        "edgea": [
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "l1": [
+          "Full/-"
+        ],
+        "l2": [],
+        "l3": [
+          "Full/-"
+        ],
+        "r1": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "r2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "r3": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.069,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 44.4,
+      "route_counts": {
+        "edgea": 23,
+        "edgeb": 23,
+        "l1": 23,
+        "l2": null,
+        "l3": 23,
+        "r1": 23,
+        "r2": 23,
+        "r3": 23
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 5,
+      "neighbor_states": {
+        "edgea": [
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "l1": [
+          "Full/-"
+        ],
+        "l2": [],
+        "l3": [
+          "Full/-"
+        ],
+        "r1": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "r2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "r3": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.089,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 50.2,
+      "route_counts": {
+        "edgea": 23,
+        "edgeb": 23,
+        "l1": 23,
+        "l2": null,
+        "l3": 23,
+        "r1": 23,
+        "r2": 23,
+        "r3": 23
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 6,
+      "neighbor_states": {
+        "edgea": [
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "l1": [
+          "Full/-"
+        ],
+        "l2": [],
+        "l3": [
+          "Full/-"
+        ],
+        "r1": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "r2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "r3": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.069,
+        "status": "OK"
+      }
+    }
+  ],
+  "error": null
+}

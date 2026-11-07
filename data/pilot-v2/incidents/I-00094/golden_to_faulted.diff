@@ -1,0 +1,10 @@
+--- golden-t10_deep9
++++ I-00094
+@@ -381,6 +381,7 @@
+  ospf router-id 10.255.0.1
+  passive-interface lo
+  passive-interface eth1
++ passive-interface eth2
+ !
+ line vty
+ !

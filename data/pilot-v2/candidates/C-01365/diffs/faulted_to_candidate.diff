@@ -1,0 +1,20 @@
+--- I-00185
++++ C-01365
+@@ -834,7 +834,7 @@
+  ip ospf cost 10
+ !
+ interface eth2
+- description link to agga accA
++ description link to agga accA (reviewed NET-1042)
+ !
+ router ospf
+  ospf router-id 10.255.0.1
+@@ -861,7 +861,7 @@
+ auto eth2
+ iface eth2
+     address 10.29.1.1/30
+-    alias link to agga accA
++    alias link to agga accA (reviewed NET-1042)
+ 
+ 
+ ===== edgeb/daemons =====

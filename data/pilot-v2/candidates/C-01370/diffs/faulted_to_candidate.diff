@@ -1,0 +1,20 @@
+--- I-00186
++++ C-01370
+@@ -836,7 +836,7 @@
+ interface eth2
+  description link to agga accA
+  ip ospf area 0.0.0.0
+- ip ospf cost 500
++ ip ospf cost 10
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -1097,7 +1097,7 @@
+ interface eth1
+  description link to x1 X2
+  ip ospf area 0.0.0.0
+- ip ospf cost 40
++ ip ospf cost 1
+  ip ospf network point-to-point
+ !
+ interface eth2

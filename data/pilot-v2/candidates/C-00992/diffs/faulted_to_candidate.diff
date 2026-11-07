@@ -1,0 +1,19 @@
+--- I-00134
++++ C-00992
+@@ -57,7 +57,6 @@
+  ospf router-id 10.255.0.1
+  passive-interface lo
+  passive-interface eth1
+- passive-interface eth2
+ !
+ line vty
+ !
+@@ -251,7 +250,7 @@
+ interface eth1
+  description link to edgea A1
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 11
+  ip ospf network point-to-point
+ !
+ interface eth2

@@ -1,0 +1,16 @@
+[
+  {
+    "node": "corea",
+    "commands": [
+      "interface eth2",
+      "shutdown",
+      "exit"
+    ],
+    "t_start": 1789474667.6732497,
+    "t_end": 1789474668.1104143,
+    "status": "OK",
+    "rc": 0,
+    "stdout": "",
+    "stderr": "% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.\n"
+  }
+]

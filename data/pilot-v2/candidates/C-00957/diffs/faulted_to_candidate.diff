@@ -1,0 +1,11 @@
+--- I-00129
++++ C-00957
+@@ -560,7 +560,7 @@
+ interface eth1
+  description link to a1 M1
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ interface eth2

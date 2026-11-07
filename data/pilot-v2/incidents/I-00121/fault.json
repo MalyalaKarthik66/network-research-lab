@@ -1,0 +1,17 @@
+{
+  "incident_id": "I-00121",
+  "topology": "t13_bowtie7",
+  "fault_id": "F0001",
+  "fault_family": "iface_down",
+  "fault_description": "[t13_bowtie7] edgea eth2 shut (A1)",
+  "fault_params": {
+    "node": "edgea",
+    "iface": "eth2",
+    "peer": "a1",
+    "peer_iface": "eth1",
+    "link": "A1",
+    "good_cost": 10,
+    "topology": "t13_bowtie7"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

@@ -1,0 +1,19 @@
+--- I-00138
++++ C-01019
+@@ -53,8 +53,6 @@
+  ip ospf cost 30
+  ip ospf network point-to-point
+ !
+-ip route 10.20.0.0/24 blackhole
+-!
+ router ospf
+  ospf router-id 10.255.0.1
+  passive-interface lo
+@@ -683,6 +681,7 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 30
+  ip ospf network point-to-point
++ shutdown
+ !
+ interface eth2
+  description link to edgeb B2

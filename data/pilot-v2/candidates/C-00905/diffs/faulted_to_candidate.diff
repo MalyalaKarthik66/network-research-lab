@@ -1,0 +1,19 @@
+--- I-00122
++++ C-00905
+@@ -365,6 +365,7 @@
+  ospf router-id 10.255.0.1
+  passive-interface lo
+  passive-interface eth1
++ passive-interface eth3
+ !
+ line vty
+ !
+@@ -385,7 +386,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.200.0.2/30
++    address 10.23.1.1/30
+     alias link to a1 A1
+ 
+ auto eth3

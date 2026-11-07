@@ -1,0 +1,15 @@
+{
+  "incident_id": "I-00040",
+  "topology": "t04_star5",
+  "fault_id": "F0010",
+  "fault_family": "static_route_loop",
+  "fault_description": "[t04_star5] edgeb installs 10.20.0.10/32 pointing back upstream at coreb",
+  "fault_params": {
+    "node": "edgeb",
+    "prefix": "10.20.0.10/32",
+    "nexthop": "10.14.4.1",
+    "loop_with": "coreb",
+    "topology": "t04_star5"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

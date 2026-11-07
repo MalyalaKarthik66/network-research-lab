@@ -1,0 +1,10 @@
+--- golden-t14_ladder8
++++ I-00134
+@@ -57,6 +57,7 @@
+  ospf router-id 10.255.0.1
+  passive-interface lo
+  passive-interface eth1
++ passive-interface eth2
+ !
+ line vty
+ !

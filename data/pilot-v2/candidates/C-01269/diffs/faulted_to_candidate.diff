@@ -1,0 +1,20 @@
+--- I-00172
++++ C-01269
+@@ -71,7 +71,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.200.0.2/30
++    address 10.28.1.1/30
+     alias link to g1 accA
+ 
+ 
+@@ -315,7 +315,7 @@
+ interface eth3
+  description link to edgeb accB2
+  ip ospf area 0.0.0.0
+- ip ospf cost 40
++ ip ospf cost 1
+  ip ospf network point-to-point
+ !
+ router ospf

@@ -1,0 +1,6 @@
+[2026-09-14T13:35:15.725264] 10.10.0.0/24 nhid 29 via 10.15.3.2 dev eth2 proto ospf metric 20 
+[2026-09-14T13:35:15.725327] 10.15.1.0/30 nhid 29 via 10.15.3.2 dev eth2 proto ospf metric 20 
+[2026-09-14T13:35:15.725335] 10.15.5.0/30 nhid 29 via 10.15.3.2 dev eth2 proto ospf metric 20 
+[2026-09-14T13:35:15.725341] 10.255.0.1 nhid 29 via 10.15.3.2 dev eth2 proto ospf metric 20 
+[2026-09-14T13:35:15.725346] 10.255.0.2 nhid 29 via 10.15.3.2 dev eth2 proto ospf metric 20 
+[2026-09-14T13:35:15.725352] 10.255.0.6 nhid 29 via 10.15.3.2 dev eth2 proto ospf metric 20 

@@ -1,0 +1,4 @@
+[2026-09-15T10:03:25.941037] Deleted 10.15.4.0/30 nhid 33 via 10.15.2.2 dev eth2 proto ospf metric 20 
+[2026-09-15T10:03:25.941136] Deleted 10.20.0.0/24 nhid 33 via 10.15.2.2 dev eth2 proto ospf metric 20 
+[2026-09-15T10:03:25.941154] Deleted 10.21.0.0/24 nhid 33 via 10.15.2.2 dev eth2 proto ospf metric 20 
+[2026-09-15T10:03:25.941167] Deleted 10.255.0.5 nhid 33 via 10.15.2.2 dev eth2 proto ospf metric 20 

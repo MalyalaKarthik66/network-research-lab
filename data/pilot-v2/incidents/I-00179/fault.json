@@ -1,0 +1,14 @@
+{
+  "incident_id": "I-00179",
+  "topology": "t18_grid12",
+  "fault_id": "F0009",
+  "fault_family": "static_wrong_nexthop",
+  "fault_description": "[t18_grid12] g1 sends 10.20.0.0/24 to 10.28.1.1, off the shortest path",
+  "fault_params": {
+    "node": "g1",
+    "prefix": "10.20.0.0/24",
+    "nexthop": "10.28.1.1",
+    "topology": "t18_grid12"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

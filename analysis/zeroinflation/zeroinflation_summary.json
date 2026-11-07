@@ -1,0 +1,63 @@
+{
+  "generated_utc": "2026-09-12T09:46:54Z",
+  "note": "rescored offline after fixing _lpm: FRR lists every candidate route per prefix and only one is installed; entries[0] followed a route the router was not using, and blackhole nexthops read as OK. No labs re-run; same measurements, corrected function.",
+  "n_candidates": 30,
+  "by_class": {
+    "correct": {
+      "n": 12,
+      "n_zero": 12,
+      "p_zero": 1.0,
+      "nonzero_values": [],
+      "n_distinct_nonzero": 0
+    },
+    "incomplete": {
+      "n": 12,
+      "n_zero": 3,
+      "p_zero": 0.25,
+      "nonzero_values": [
+        0.181818,
+        0.305556,
+        0.347222,
+        0.363636,
+        0.388889,
+        0.428571,
+        0.47619,
+        0.5,
+        0.509091
+      ],
+      "n_distinct_nonzero": 9
+    },
+    "regressive": {
+      "n": 6,
+      "n_zero": 1,
+      "p_zero": 0.1667,
+      "nonzero_values": [
+        0.018182,
+        0.027778,
+        0.069444,
+        0.071429,
+        0.089286
+      ],
+      "n_distinct_nonzero": 5
+    }
+  },
+  "overall_zero_fraction": 0.5333,
+  "distinct_r_values": [
+    0.0,
+    0.018182,
+    0.027778,
+    0.069444,
+    0.071429,
+    0.089286,
+    0.181818,
+    0.305556,
+    0.347222,
+    0.363636,
+    0.388889,
+    0.428571,
+    0.47619,
+    0.5,
+    0.509091
+  ],
+  "sampled_vs_allpaths_zero_disagreement": []
+}

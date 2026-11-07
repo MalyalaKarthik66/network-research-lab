@@ -1,0 +1,11 @@
+--- I-00011
++++ C-00079
+@@ -488,7 +488,7 @@
+ interface eth2
+  description link to coreb wanB
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ router ospf

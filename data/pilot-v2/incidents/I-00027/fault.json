@@ -1,0 +1,22 @@
+{
+  "incident_id": "I-00027",
+  "topology": "t03_dual8",
+  "fault_id": "F0007",
+  "fault_family": "ospf_cost_excessive",
+  "fault_description": "[t03_dual8] edgea eth2 cost 10 -> 65535",
+  "fault_params": {
+    "pairs": [
+      [
+        "edgea",
+        "eth2"
+      ]
+    ],
+    "node": "edgea",
+    "iface": "eth2",
+    "bad_cost": 65535,
+    "good_cost": 10,
+    "link": "siteA",
+    "topology": "t03_dual8"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

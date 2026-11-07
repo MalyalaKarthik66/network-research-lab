@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "rc": 0,
+  "stdout": "",
+  "stderr": "22:53:56 INFO Parsing & checking topology file=topology.clab.yml\n22:53:56 INFO Parsing & checking topology file=topology.clab.yml\n22:53:56 INFO Destroying lab name=nrlv2-golden-t01_chain4\n22:53:56 INFO Removed container name=clab-nrlv2-golden-t01_chain4-hostc\n22:53:57 INFO Removed container name=clab-nrlv2-golden-t01_chain4-hostb\n22:53:57 INFO Removed container name=clab-nrlv2-golden-t01_chain4-corea\n22:53:57 INFO Removed container name=clab-nrlv2-golden-t01_chain4-hosta\n22:53:57 INFO Removed container name=clab-nrlv2-golden-t01_chain4-edgea\n22:53:57 INFO Removed container name=clab-nrlv2-golden-t01_chain4-coreb\n22:53:57 INFO Removed container name=clab-nrlv2-golden-t01_chain4-edgeb\n22:53:57 INFO Removing host entries path=/etc/hosts\n22:53:57 INFO Removing SSH config path=/etc/ssh/ssh_config.d/clab-nrlv2-golden-t01_chain4.conf\n",
+  "argv": [
+    "containerlab",
+    "destroy",
+    "-t",
+    "topology.clab.yml",
+    "--cleanup"
+  ],
+  "seconds": 1.53,
+  "error": null,
+  "lab": "nrlv2-golden-t01_chain4"
+}

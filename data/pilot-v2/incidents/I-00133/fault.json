@@ -1,0 +1,19 @@
+{
+  "incident_id": "I-00133",
+  "topology": "t14_ladder8",
+  "fault_id": "F0003",
+  "fault_family": "ospf_area_mismatch",
+  "fault_description": "[t14_ladder8] edgea eth2 moved to area 0.0.0.1",
+  "fault_params": {
+    "node": "edgea",
+    "iface": "eth2",
+    "bad_area": "0.0.0.1",
+    "good_area": "0.0.0.0",
+    "peer": "l1",
+    "peer_iface": "eth1",
+    "link": "A1",
+    "good_cost": 10,
+    "topology": "t14_ladder8"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

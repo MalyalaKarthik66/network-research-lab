@@ -1,0 +1,89 @@
+{
+  "schema_version": "v4-pilot-decisions-1",
+  "status": "UNFROZEN — REQUIRES DECISION BEFORE PILOT",
+  "decided_by": null,
+  "decided_utc": null,
+  "decisions": {
+    "D1_noise_floor": {
+      "status": "UNFROZEN — REQUIRES DECISION BEFORE PILOT",
+      "prereg_section": "§6",
+      "rationale": null,
+      "floor_statistic": null,
+      "k_sd": null,
+      "per_change_comparator": null,
+      "metrics": null,
+      "probe_metric": null,
+      "probe_combination": null,
+      "all_noop_zero_handling": null,
+      "minimum_resolution_floor": null,
+      "probe_minimum_resolution_floor": null,
+      "minimum_resolution_floor_scope": null
+    },
+    "D2_G1_measurable": {
+      "status": "UNFROZEN — REQUIRES DECISION BEFORE PILOT",
+      "prereg_section": "§7",
+      "rationale": null,
+      "kill_if_share_above_floor_below": null,
+      "denominator": null
+    },
+    "D3_G3_repeatable": {
+      "status": "UNFROZEN — REQUIRES DECISION BEFORE PILOT",
+      "prereg_section": "§8",
+      "rationale": null,
+      "kill_if_within_share_above": null,
+      "zero_within_share_clause": null,
+      "zero_total_variance_handling": null
+    },
+    "D4_G4_host_invariance": {
+      "status": "UNFROZEN — REQUIRES DECISION BEFORE PILOT",
+      "prereg_section": "§9",
+      "rationale": null,
+      "metric": null,
+      "tolerance": null,
+      "n_changes_on_second_host": null,
+      "second_host_available_for_this_pilot": null,
+      "untested_handling": null,
+      "proxy_statistics": null,
+      "proxy_kill_if_abs_rho_above": null,
+      "proxy_kill_requires_p_below": null,
+      "proxy_fail_handling": null,
+      "proxy_pass_counts_as_tested": null
+    },
+    "D5_G2_analytic_reducibility": {
+      "status": "UNFROZEN — REQUIRES DECISION BEFORE PILOT",
+      "prereg_section": "§10",
+      "rationale": null,
+      "unit": null,
+      "aggregator": null,
+      "named_baseline": null,
+      "cross_validation": null,
+      "kill_if_r2_at_least": null,
+      "ci_rule": null
+    },
+    "D6_G5_cost": {
+      "status": "UNFROZEN — REQUIRES DECISION BEFORE PILOT",
+      "prereg_section": "§11",
+      "rationale": null,
+      "kill_if_median_wall_s_above": null
+    },
+    "D7_min_valid_replicates": {
+      "status": "UNFROZEN — REQUIRES DECISION BEFORE PILOT",
+      "prereg_section": "§12",
+      "rationale": null,
+      "min_valid_replicates_per_change": null
+    },
+    "D8_validity_guard": {
+      "status": "UNFROZEN — REQUIRES DECISION BEFORE PILOT",
+      "prereg_section": "§12",
+      "rationale": null,
+      "min_valid_population_run_share": null
+    },
+    "D9_positive_control_sensitivity": {
+      "status": "UNFROZEN — REQUIRES DECISION BEFORE PILOT",
+      "prereg_section": "§16",
+      "rationale": null,
+      "min_positive_controls_above_floor": null,
+      "invalid_positive_control_handling": null
+    }
+  }
+}

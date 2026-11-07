@@ -1,0 +1,11 @@
+--- I-00044
++++ C-00328
+@@ -482,7 +482,7 @@
+ interface eth1
+  description link to corea ringB
+  ip ospf area 0.0.0.0
+- ip ospf cost 40
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ interface eth2

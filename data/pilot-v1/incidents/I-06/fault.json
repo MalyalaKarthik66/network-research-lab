@@ -1,0 +1,13 @@
+{
+  "incident_id": "I-06",
+  "fault_id": "F06",
+  "fault_family": "ospf_iface_removed",
+  "fault_description": "coreb eth1 dropped out of OSPF entirely",
+  "fault_params": {
+    "node": "coreb",
+    "iface": "eth1",
+    "peer": "wan2",
+    "peer_iface": "eth2"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

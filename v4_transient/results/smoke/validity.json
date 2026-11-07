@@ -1,0 +1,128 @@
+{
+  "runs": {
+    "SMOKE-V4C-01.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "pre_change_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "replay_mismatch_routers": []
+    },
+    "SMOKE-V4C-01.rep2": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "pre_change_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "replay_mismatch_routers": []
+    },
+    "SMOKE-V4C-03.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "pre_change_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "replay_mismatch_routers": []
+    },
+    "SMOKE-V4C-03.rep2": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "pre_change_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "replay_mismatch_routers": []
+    },
+    "SMOKE-FAILINJ-V4C-01.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "STAGING_FAILED",
+          "error": "['golden-t05_ring6/artifact/bin/apply-interfaces.sh']",
+          "cleanup_errors": null,
+          "injected_failure": {
+            "kind": "staging",
+            "corrupted_lock_key": "golden-t05_ring6/artifact/bin/apply-interfaces.sh"
+          }
+        },
+        {
+          "attempt": "attempt2",
+          "status": "STAGING_FAILED",
+          "error": "['golden-t05_ring6/artifact/bin/apply-interfaces.sh']",
+          "cleanup_errors": null,
+          "injected_failure": {
+            "kind": "staging",
+            "corrupted_lock_key": "golden-t05_ring6/artifact/bin/apply-interfaces.sh"
+          }
+        }
+      ],
+      "used": null,
+      "measurable": false,
+      "status": "STAGING_FAILED"
+    }
+  },
+  "summary": {
+    "planned": 5,
+    "with_record": 5,
+    "measurable_and_valid": 4
+  }
+}

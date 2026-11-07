@@ -1,0 +1,11 @@
+--- I-00031
++++ C-00231
+@@ -139,7 +139,7 @@
+ interface eth3
+  description link to corea wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 100
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ router ospf

@@ -1,0 +1,20 @@
+--- I-00028
++++ C-00203
+@@ -59,8 +59,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 100
+  ip ospf network point-to-point
+-!
+-ip route 10.20.0.0/24 blackhole
+ !
+ router ospf
+  ospf router-id 10.255.0.2
+@@ -433,7 +431,7 @@
+ !
+ interface eth2
+  description link to wan2 wan-primary
+- ip ospf area 0.0.0.0
++ ip ospf area 0.0.0.9
+  ip ospf cost 10
+  ip ospf network point-to-point
+ !

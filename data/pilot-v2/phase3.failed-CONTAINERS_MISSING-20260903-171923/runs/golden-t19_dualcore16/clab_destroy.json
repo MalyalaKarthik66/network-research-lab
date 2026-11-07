@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "rc": 0,
+  "stdout": "",
+  "stderr": "22:21:06 INFO Parsing & checking topology file=topology.clab.yml\n22:21:06 INFO Parsing & checking topology file=topology.clab.yml\n22:21:06 INFO Destroying lab name=nrlv2-golden-t19_dualcore16\n22:21:06 INFO Removed container name=clab-nrlv2-golden-t19_dualcore16-x1\n22:21:07 INFO Removed container name=clab-nrlv2-golden-t19_dualcore16-a3\n22:21:07 INFO Removed container name=clab-nrlv2-golden-t19_dualcore16-b1\n22:21:07 INFO Removed container name=clab-nrlv2-golden-t19_dualcore16-b3\n22:21:08 INFO Removed container name=clab-nrlv2-golden-t19_dualcore16-hosta\n22:21:08 INFO Removed container name=clab-nrlv2-golden-t19_dualcore16-a1\n22:21:08 INFO Removed container name=clab-nrlv2-golden-t19_dualcore16-x4\n22:21:08 INFO Removed container name=clab-nrlv2-golden-t19_dualcore16-corea\n22:21:08 INFO Removed container name=clab-nrlv2-golden-t19_dualcore16-edgea\n22:21:08 INFO Removed container name=clab-nrlv2-golden-t19_dualcore16-coreb\n22:21:08 INFO Removed container name=clab-nrlv2-golden-t19_dualcore16-hostc\n22:21:08 INFO Removed container name=clab-nrlv2-golden-t19_dualcore16-a2\n22:21:08 INFO Removed container name=clab-nrlv2-golden-t19_dualcore16-x3\n22:21:08 INFO Removed container name=clab-nrlv2-golden-t19_dualcore16-x2\n22:21:08 INFO Removed container name=clab-nrlv2-golden-t19_dualcore16-aggb\n22:21:08 INFO Removed container name=clab-nrlv2-golden-t19_dualcore16-edgeb\n22:21:08 INFO Removed container name=clab-nrlv2-golden-t19_dualcore16-b2\n22:21:08 INFO Removed container name=clab-nrlv2-golden-t19_dualcore16-agga\n22:21:08 INFO Removed container name=clab-nrlv2-golden-t19_dualcore16-hostb\n22:21:08 INFO Removing host entries path=/etc/hosts\n22:21:08 INFO Removing SSH config path=/etc/ssh/ssh_config.d/clab-nrlv2-golden-t19_dualcore16.conf\n",
+  "argv": [
+    "containerlab",
+    "destroy",
+    "-t",
+    "topology.clab.yml",
+    "--cleanup"
+  ],
+  "seconds": 2.86,
+  "error": null,
+  "lab": "nrl-golden-t19_dualcore16"
+}

@@ -1,0 +1,19 @@
+--- I-00164
++++ C-01211
+@@ -142,6 +142,8 @@
+  ip ospf cost 80
+  ip ospf network point-to-point
+ !
++ip route 10.21.0.0/24 blackhole
++!
+ router ospf
+  ospf router-id 10.255.0.11
+  passive-interface lo
+@@ -227,7 +229,6 @@
+  ospf router-id 10.255.0.1
+  passive-interface lo
+  passive-interface eth1
+- passive-interface eth2
+ !
+ line vty
+ !

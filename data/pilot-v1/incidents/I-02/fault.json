@@ -1,0 +1,13 @@
+{
+  "incident_id": "I-02",
+  "fault_id": "F02",
+  "fault_family": "iface_down",
+  "fault_description": "site-B core-to-edge interface shut on coreb (no alternate path)",
+  "fault_params": {
+    "node": "coreb",
+    "iface": "eth2",
+    "peer": "edgeb",
+    "peer_iface": "eth1"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

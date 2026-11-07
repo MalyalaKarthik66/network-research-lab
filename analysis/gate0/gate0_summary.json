@@ -1,0 +1,29 @@
+{
+  "generated_utc": "2026-09-11T20:03:22Z",
+  "status": "GATE 0 -- viability experiment",
+  "pilot": "/mnt/c/Users/karth/network-research-lab/data/pilot-v2",
+  "out": "/mnt/c/Users/karth/network-research-lab/analysis/gate0",
+  "candidates": 40,
+  "replicates_requested": 1,
+  "labs_attempted": 40,
+  "outcome_counts": {
+    "SAFE": 25,
+    "HARMFUL": 15
+  },
+  "run_status_counts": {
+    "OK": 40
+  },
+  "churn_completed": {
+    "True": 40
+  },
+  "candidates_scored": 40,
+  "candidates_intermediate": 0,
+  "fraction_intermediate": 0.0,
+  "gate_threshold": 0.25,
+  "gate_band": [
+    0.1,
+    0.9
+  ],
+  "verdict": "NO-GO",
+  "wall_seconds": 5936.0
+}

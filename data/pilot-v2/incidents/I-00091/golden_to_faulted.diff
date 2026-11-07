@@ -1,0 +1,10 @@
+--- golden-t10_deep9
++++ I-00091
+@@ -376,6 +376,7 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
++ shutdown
+ !
+ router ospf
+  ospf router-id 10.255.0.1

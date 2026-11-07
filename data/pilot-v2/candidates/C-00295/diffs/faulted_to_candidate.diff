@@ -1,0 +1,14 @@
+--- I-00041
++++ C-00295
+@@ -220,9 +220,8 @@
+ interface eth2
+  description link to corea siteA
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
+- ip ospf network point-to-point
+- shutdown
++ ip ospf cost 16
++ ip ospf network point-to-point
+ !
+ router ospf
+  ospf router-id 10.255.0.1

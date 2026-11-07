@@ -1,0 +1,19 @@
+# Phase 1 Python dependencies.
+# Install into a virtual environment, never into system Python:
+#   py -3.11 -m venv .venv
+#   .venv\Scripts\activate
+#   pip install -r batfish\requirements.txt
+#
+# Pin these exact versions once Module 1 passes, and record the versions in
+# notes/lab-notebook.md. A silent pybatfish upgrade six months from now is a
+# very expensive way to lose a day.
+
+pybatfish>=2024.1.1
+pandas>=2.0
+tabulate>=0.9
+jupyterlab>=4.0
+
+# Phase 4 (added 2026-09-02 with the scikit-learn move -- see docs/FINAL-PLAN.md
+# section 4.7. The numpy-only models were right at n=24 and are not at n~=860
+# with calibration, hierarchical conformal and clustered bootstrap.)
+scikit-learn>=1.3

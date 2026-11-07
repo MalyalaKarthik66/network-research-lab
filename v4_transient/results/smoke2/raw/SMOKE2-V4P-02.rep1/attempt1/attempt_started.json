@@ -1,0 +1,16 @@
+{
+  "run_id": "SMOKE2-V4P-02.rep1",
+  "attempt": 1,
+  "started_utc": "2026-09-15T10:04:40Z",
+  "code_sha256": {
+    "v4lib/__init__.py": "fb5998d26b6037dbf0ec31b88ebedb48686a4be77c2bd6ebbc62a9a9c07f616f",
+    "v4lib/analytic.py": "94dcd67a7238842dcac3810b9f2713cdf4cb80922be1df1590ccc3b406eea2fb",
+    "v4lib/decisions.py": "f5304d0e7a4da4aa48d10413b2e925cdbb3c3eec8eaf3a23fa2b788c15ad8d19",
+    "v4lib/fib.py": "6c3988b1b8a79b7d5797ae571e0361d7bbf60590121688557eca63408b789ee6",
+    "v4lib/freeze.py": "0aabe2e3bffc55ae65647d3a6f62ecbe7e644e1473f185cfd9581c07901cdc55",
+    "v4lib/gates.py": "588895381e5441d205e2bdc7571c7fae40e283651b1a3c94d125dcaeccca0b16",
+    "v4lib/labops.py": "11709e2aaf3daf082fb54e8f2e89af06fb1ca4678bdf3c458f71d17a909672db",
+    "v4lib/targets.py": "01481550614d29a73fb4ac9604d59bcebbe95f27ef09d06a07f810798eac85e6",
+    "pilot/run_pilot.py": "3ea2a0f18fd41378491e4961ef8c6b482dca9bbbff0c8915c488136b8c3c3858"
+  }
+}

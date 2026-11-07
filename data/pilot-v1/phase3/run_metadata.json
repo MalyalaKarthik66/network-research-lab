@@ -1,0 +1,25 @@
+{
+  "phase": 3,
+  "run_utc": "2026-08-25T17:50:44Z",
+  "generator_version": "pilot-v1",
+  "suite_version": "1.0.0",
+  "harm_definition_version": "1.1.0",
+  "artifact_digest": "95533a7dfe2f0ad2751c4f760ffe88a69ead4607c2f3832a32c505dabca4ae24",
+  "snapshot_digest": "f8a1b1d9a607e003fa0e0d0b19d7b8211f1ef62d067aa5bad654a3574e61d0c3",
+  "image_digests": {
+    "frrouting/frr:v8.4.1": "frrouting/frr@sha256:0f8c174d95add7916101077d4716822552c758b8ff3d2dcb55104f6534202e3e",
+    "alpine:3.19": "alpine@sha256:6baf43584bcb78f2e5847d1de515f23499913ac9f12bdf834811a3145eb11ca1"
+  },
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "workdir": "/root/nrl-run",
+  "labs_requested": 61,
+  "labs_completed": 61,
+  "labs_failed": [],
+  "convergence_timeout_s": 180,
+  "convergence_min_settle_s": 45,
+  "convergence_poll_s": 5,
+  "convergence_stable_polls": 3,
+  "ping_count": 5,
+  "wall_seconds": 5453.8,
+  "note": "Measurement only. `label` is null; outcome_harm_v1 is a mechanical application of docs/HARM-DEFINITION.md v1.0.0 and is recomputable from containerlab_deltas.csv."
+}

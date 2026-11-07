@@ -1,0 +1,20 @@
+--- I-00068
++++ C-00501
+@@ -39,7 +39,7 @@
+ interface eth1
+  description link to edgea siteA
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 18
+  ip ospf network point-to-point
+ !
+ interface eth2
+@@ -53,8 +53,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 100
+  ip ospf network point-to-point
+-!
+-ip route 10.20.0.0/24 blackhole
+ !
+ router ospf
+  ospf router-id 10.255.0.2

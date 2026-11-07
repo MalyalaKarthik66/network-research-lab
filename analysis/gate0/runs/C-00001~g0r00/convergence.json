@@ -1,0 +1,782 @@
+{
+  "status": "OK",
+  "converged": true,
+  "seconds": 58.2,
+  "polls": 11,
+  "min_settle_s": 45,
+  "history": [
+    {
+      "t": 0.3,
+      "route_counts": {
+        "corea": 13,
+        "coreb": 13,
+        "edgea": 13,
+        "edgeb": 13
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 1,
+      "neighbor_states": {
+        "corea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.06,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 5.8,
+      "route_counts": {
+        "corea": 13,
+        "coreb": 13,
+        "edgea": 13,
+        "edgeb": 13
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 2,
+      "neighbor_states": {
+        "corea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.065,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 13.4,
+      "route_counts": {
+        "corea": 13,
+        "coreb": 13,
+        "edgea": 13,
+        "edgeb": 13
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 3,
+      "neighbor_states": {
+        "corea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.062,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 18.8,
+      "route_counts": {
+        "corea": 13,
+        "coreb": 13,
+        "edgea": 13,
+        "edgeb": 13
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 4,
+      "neighbor_states": {
+        "corea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.091,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 24.2,
+      "route_counts": {
+        "corea": 12,
+        "coreb": 12,
+        "edgea": 12,
+        "edgeb": 12
+      },
+      "rib_changed": true,
+      "rib_stable_polls": 1,
+      "neighbor_states": {
+        "corea": [
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.048,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 29.6,
+      "route_counts": {
+        "corea": 12,
+        "coreb": 12,
+        "edgea": 12,
+        "edgeb": 12
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 2,
+      "neighbor_states": {
+        "corea": [
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.054,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 35.0,
+      "route_counts": {
+        "corea": 13,
+        "coreb": 12,
+        "edgea": 13,
+        "edgeb": 12
+      },
+      "rib_changed": true,
+      "rib_stable_polls": 1,
+      "neighbor_states": {
+        "corea": [
+          "Full/-",
+          "Loading/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Loading/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [
+        "corea:Loading/-",
+        "edgea:Loading/-"
+      ],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.132,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 42.0,
+      "route_counts": {
+        "corea": 13,
+        "coreb": 13,
+        "edgea": 13,
+        "edgeb": 13
+      },
+      "rib_changed": true,
+      "rib_stable_polls": 1,
+      "neighbor_states": {
+        "corea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.05,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 47.3,
+      "route_counts": {
+        "corea": 13,
+        "coreb": 13,
+        "edgea": 13,
+        "edgeb": 13
+      },
+      "rib_changed": true,
+      "rib_stable_polls": 1,
+      "neighbor_states": {
+        "corea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.066,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 52.7,
+      "route_counts": {
+        "corea": 13,
+        "coreb": 13,
+        "edgea": 13,
+        "edgeb": 13
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 2,
+      "neighbor_states": {
+        "corea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.056,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 58.2,
+      "route_counts": {
+        "corea": 13,
+        "coreb": 13,
+        "edgea": 13,
+        "edgeb": 13
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 3,
+      "neighbor_states": {
+        "corea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.14,
+        "status": "OK"
+      }
+    }
+  ],
+  "error": null,
+  "phase1": {
+    "status": "OK",
+    "converged": true,
+    "seconds": 46.7,
+    "polls": 9,
+    "min_settle_s": 45,
+    "history": [
+      {
+        "t": 0.4,
+        "route_counts": {
+          "corea": 5,
+          "coreb": 5,
+          "edgea": 6,
+          "edgeb": 7
+        },
+        "rib_changed": false,
+        "rib_stable_polls": 1,
+        "neighbor_states": {
+          "corea": [],
+          "coreb": [
+            "Init/-",
+            "Init/-"
+          ],
+          "edgea": [
+            "Init/-",
+            "Init/-"
+          ],
+          "edgeb": []
+        },
+        "transitional": [
+          "coreb:Init/-",
+          "coreb:Init/-",
+          "edgea:Init/-",
+          "edgea:Init/-"
+        ],
+        "probe": {
+          "src": "10.10.0.10",
+          "dst": "10.20.0.10",
+          "reachable": false,
+          "loss_pct": 100.0,
+          "rtt_avg_ms": null,
+          "status": "OK"
+        }
+      },
+      {
+        "t": 6.8,
+        "route_counts": {
+          "corea": 5,
+          "coreb": 5,
+          "edgea": 6,
+          "edgeb": 7
+        },
+        "rib_changed": false,
+        "rib_stable_polls": 2,
+        "neighbor_states": {
+          "corea": [],
+          "coreb": [
+            "Init/-",
+            "Init/-"
+          ],
+          "edgea": [
+            "Init/-",
+            "Init/-"
+          ],
+          "edgeb": []
+        },
+        "transitional": [
+          "coreb:Init/-",
+          "coreb:Init/-",
+          "edgea:Init/-",
+          "edgea:Init/-"
+        ],
+        "probe": {
+          "src": "10.10.0.10",
+          "dst": "10.20.0.10",
+          "reachable": false,
+          "loss_pct": 100.0,
+          "rtt_avg_ms": null,
+          "status": "OK"
+        }
+      },
+      {
+        "t": 13.2,
+        "route_counts": {
+          "corea": 5,
+          "coreb": 5,
+          "edgea": 6,
+          "edgeb": 7
+        },
+        "rib_changed": false,
+        "rib_stable_polls": 3,
+        "neighbor_states": {
+          "corea": [
+            "Full/-",
+            "Full/-"
+          ],
+          "coreb": [
+            "Full/-",
+            "Full/-"
+          ],
+          "edgea": [
+            "Full/-",
+            "Loading/-"
+          ],
+          "edgeb": [
+            "Full/-",
+            "Loading/-"
+          ]
+        },
+        "transitional": [
+          "edgea:Loading/-",
+          "edgeb:Loading/-"
+        ],
+        "probe": {
+          "src": "10.10.0.10",
+          "dst": "10.20.0.10",
+          "reachable": false,
+          "loss_pct": 100.0,
+          "rtt_avg_ms": null,
+          "status": "OK"
+        }
+      },
+      {
+        "t": 19.6,
+        "route_counts": {
+          "corea": 8,
+          "coreb": 13,
+          "edgea": 12,
+          "edgeb": 7
+        },
+        "rib_changed": true,
+        "rib_stable_polls": 1,
+        "neighbor_states": {
+          "corea": [
+            "Full/-",
+            "Full/-"
+          ],
+          "coreb": [
+            "Full/-",
+            "Full/-"
+          ],
+          "edgea": [
+            "Full/-",
+            "Full/-"
+          ],
+          "edgeb": [
+            "Full/-",
+            "Full/-"
+          ]
+        },
+        "transitional": [],
+        "probe": {
+          "src": "10.10.0.10",
+          "dst": "10.20.0.10",
+          "reachable": true,
+          "loss_pct": 0.0,
+          "rtt_avg_ms": 0.127,
+          "status": "OK"
+        }
+      },
+      {
+        "t": 25.0,
+        "route_counts": {
+          "corea": 13,
+          "coreb": 13,
+          "edgea": 13,
+          "edgeb": 13
+        },
+        "rib_changed": true,
+        "rib_stable_polls": 1,
+        "neighbor_states": {
+          "corea": [
+            "Full/-",
+            "Full/-"
+          ],
+          "coreb": [
+            "Full/-",
+            "Full/-"
+          ],
+          "edgea": [
+            "Full/-",
+            "Full/-"
+          ],
+          "edgeb": [
+            "Full/-",
+            "Full/-"
+          ]
+        },
+        "transitional": [],
+        "probe": {
+          "src": "10.10.0.10",
+          "dst": "10.20.0.10",
+          "reachable": true,
+          "loss_pct": 0.0,
+          "rtt_avg_ms": 0.063,
+          "status": "OK"
+        }
+      },
+      {
+        "t": 30.4,
+        "route_counts": {
+          "corea": 13,
+          "coreb": 13,
+          "edgea": 13,
+          "edgeb": 13
+        },
+        "rib_changed": false,
+        "rib_stable_polls": 2,
+        "neighbor_states": {
+          "corea": [
+            "Full/-",
+            "Full/-"
+          ],
+          "coreb": [
+            "Full/-",
+            "Full/-"
+          ],
+          "edgea": [
+            "Full/-",
+            "Full/-"
+          ],
+          "edgeb": [
+            "Full/-",
+            "Full/-"
+          ]
+        },
+        "transitional": [],
+        "probe": {
+          "src": "10.10.0.10",
+          "dst": "10.20.0.10",
+          "reachable": true,
+          "loss_pct": 0.0,
+          "rtt_avg_ms": 0.07,
+          "status": "OK"
+        }
+      },
+      {
+        "t": 35.8,
+        "route_counts": {
+          "corea": 13,
+          "coreb": 13,
+          "edgea": 13,
+          "edgeb": 13
+        },
+        "rib_changed": false,
+        "rib_stable_polls": 3,
+        "neighbor_states": {
+          "corea": [
+            "Full/-",
+            "Full/-"
+          ],
+          "coreb": [
+            "Full/-",
+            "Full/-"
+          ],
+          "edgea": [
+            "Full/-",
+            "Full/-"
+          ],
+          "edgeb": [
+            "Full/-",
+            "Full/-"
+          ]
+        },
+        "transitional": [],
+        "probe": {
+          "src": "10.10.0.10",
+          "dst": "10.20.0.10",
+          "reachable": true,
+          "loss_pct": 0.0,
+          "rtt_avg_ms": 0.06,
+          "status": "OK"
+        }
+      },
+      {
+        "t": 41.3,
+        "route_counts": {
+          "corea": 13,
+          "coreb": 13,
+          "edgea": 13,
+          "edgeb": 13
+        },
+        "rib_changed": false,
+        "rib_stable_polls": 4,
+        "neighbor_states": {
+          "corea": [
+            "Full/-",
+            "Full/-"
+          ],
+          "coreb": [
+            "Full/-",
+            "Full/-"
+          ],
+          "edgea": [
+            "Full/-",
+            "Full/-"
+          ],
+          "edgeb": [
+            "Full/-",
+            "Full/-"
+          ]
+        },
+        "transitional": [],
+        "probe": {
+          "src": "10.10.0.10",
+          "dst": "10.20.0.10",
+          "reachable": true,
+          "loss_pct": 0.0,
+          "rtt_avg_ms": 0.104,
+          "status": "OK"
+        }
+      },
+      {
+        "t": 46.7,
+        "route_counts": {
+          "corea": 13,
+          "coreb": 13,
+          "edgea": 13,
+          "edgeb": 13
+        },
+        "rib_changed": false,
+        "rib_stable_polls": 5,
+        "neighbor_states": {
+          "corea": [
+            "Full/-",
+            "Full/-"
+          ],
+          "coreb": [
+            "Full/-",
+            "Full/-"
+          ],
+          "edgea": [
+            "Full/-",
+            "Full/-"
+          ],
+          "edgeb": [
+            "Full/-",
+            "Full/-"
+          ]
+        },
+        "transitional": [],
+        "probe": {
+          "src": "10.10.0.10",
+          "dst": "10.20.0.10",
+          "reachable": true,
+          "loss_pct": 0.0,
+          "rtt_avg_ms": 0.088,
+          "status": "OK"
+        }
+      }
+    ],
+    "error": null
+  },
+  "seconds_phase1": 46.7,
+  "converged_phase1": true
+}

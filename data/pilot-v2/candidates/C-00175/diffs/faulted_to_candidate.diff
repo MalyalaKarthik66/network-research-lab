@@ -1,0 +1,19 @@
+--- I-00024
++++ C-00175
+@@ -249,7 +249,6 @@
+  ospf router-id 10.255.0.1
+  passive-interface lo
+  passive-interface eth1
+- passive-interface eth2
+ !
+ line vty
+ !
+@@ -327,6 +326,8 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
++!
++ip route 10.21.0.0/24 blackhole
+ !
+ router ospf
+  ospf router-id 10.255.0.8

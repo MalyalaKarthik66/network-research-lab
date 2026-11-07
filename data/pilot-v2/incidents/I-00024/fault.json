@@ -1,0 +1,17 @@
+{
+  "incident_id": "I-00024",
+  "topology": "t03_dual8",
+  "fault_id": "F0004",
+  "fault_family": "ospf_passive_transit",
+  "fault_description": "[t03_dual8] edgea eth2 marked passive (siteA)",
+  "fault_params": {
+    "node": "edgea",
+    "iface": "eth2",
+    "peer": "corea",
+    "peer_iface": "eth1",
+    "link": "siteA",
+    "good_cost": 10,
+    "topology": "t03_dual8"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

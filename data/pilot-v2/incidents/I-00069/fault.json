@@ -1,0 +1,14 @@
+{
+  "incident_id": "I-00069",
+  "topology": "t07_tier7",
+  "fault_id": "F0009",
+  "fault_family": "static_wrong_nexthop",
+  "fault_description": "[t07_tier7] agga sends 10.20.0.0/24 to 10.17.1.1, off the shortest path",
+  "fault_params": {
+    "node": "agga",
+    "prefix": "10.20.0.0/24",
+    "nexthop": "10.17.1.1",
+    "topology": "t07_tier7"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

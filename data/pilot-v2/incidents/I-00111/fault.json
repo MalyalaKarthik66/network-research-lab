@@ -1,0 +1,17 @@
+{
+  "incident_id": "I-00111",
+  "topology": "t12_campus8",
+  "fault_id": "F0001",
+  "fault_family": "iface_down",
+  "fault_description": "[t12_campus8] edgea eth2 shut (accA)",
+  "fault_params": {
+    "node": "edgea",
+    "iface": "eth2",
+    "peer": "dista",
+    "peer_iface": "eth1",
+    "link": "accA",
+    "good_cost": 10,
+    "topology": "t12_campus8"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

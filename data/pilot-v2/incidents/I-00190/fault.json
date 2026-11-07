@@ -1,0 +1,15 @@
+{
+  "incident_id": "I-00190",
+  "topology": "t19_dualcore16",
+  "fault_id": "F0010",
+  "fault_family": "static_route_loop",
+  "fault_description": "[t19_dualcore16] edgeb installs 10.20.0.10/32 pointing back upstream at aggb",
+  "fault_params": {
+    "node": "edgeb",
+    "prefix": "10.20.0.10/32",
+    "nexthop": "10.29.11.1",
+    "loop_with": "aggb",
+    "topology": "t19_dualcore16"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

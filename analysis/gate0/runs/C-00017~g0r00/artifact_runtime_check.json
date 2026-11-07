@@ -1,0 +1,15 @@
+{
+  "running_config": {
+    "status": "OK",
+    "routers_checked": 4,
+    "problems": []
+  },
+  "addresses": {
+    "status": "OK",
+    "problems": []
+  },
+  "ospf_binding": {
+    "status": "OK",
+    "problems": []
+  }
+}

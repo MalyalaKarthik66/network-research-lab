@@ -1,0 +1,20 @@
+--- I-00001
++++ C-00002
+@@ -51,7 +51,7 @@
+ interface eth3
+  description link to wan3 wanA2
+  ip ospf area 0.0.0.0
+- ip ospf cost 20
++ ip ospf cost 400
+  ip ospf network point-to-point
+ !
+ interface eth4
+@@ -580,7 +580,7 @@
+ interface eth1
+  description link to corea wanA2
+  ip ospf area 0.0.0.0
+- ip ospf cost 20
++ ip ospf cost 400
+  ip ospf network point-to-point
+ !
+ interface eth2

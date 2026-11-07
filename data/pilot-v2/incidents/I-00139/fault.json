@@ -1,0 +1,14 @@
+{
+  "incident_id": "I-00139",
+  "topology": "t14_ladder8",
+  "fault_id": "F0009",
+  "fault_family": "static_wrong_nexthop",
+  "fault_description": "[t14_ladder8] edgea sends 10.20.0.0/24 to 10.24.5.2, off the shortest path",
+  "fault_params": {
+    "node": "edgea",
+    "prefix": "10.20.0.0/24",
+    "nexthop": "10.24.5.2",
+    "topology": "t14_ladder8"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

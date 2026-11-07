@@ -1,0 +1,12 @@
+[1/5] SMOKE-V4C-01.rep1 t05_ring6 cost-hi attempt 1
+      -> OK wall 131.17s obs 21.78320860862732 
+[2/5] SMOKE-V4C-01.rep2 t05_ring6 cost-hi attempt 1
+      -> OK wall 103.95s obs 21.196563720703125 
+[3/5] SMOKE-V4C-03.rep1 t05_ring6 drain-hi attempt 1
+      -> OK wall 105.97s obs 23.20201063156128 
+[4/5] SMOKE-V4C-03.rep2 t05_ring6 drain-hi attempt 1
+      -> OK wall 104.21s obs 23.474101305007935 
+[5/5] SMOKE-FAILINJ-V4C-01.rep1 t05_ring6 cost-hi attempt 1
+      -> STAGING_FAILED wall 0.48s obs None ['golden-t05_ring6/artifact/bin/apply-interfaces.sh']
+[5/5] SMOKE-FAILINJ-V4C-01.rep1 t05_ring6 cost-hi attempt 2
+      -> STAGING_FAILED wall 0.45s obs None ['golden-t05_ring6/artifact/bin/apply-interfaces.sh']

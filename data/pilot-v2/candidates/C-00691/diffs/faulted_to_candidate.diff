@@ -1,0 +1,13 @@
+--- I-00093
++++ C-00691
+@@ -373,8 +373,8 @@
+ !
+ interface eth2
+  description link to agga siteA
+- ip ospf area 0.0.0.1
+- ip ospf cost 10
++ ip ospf area 0.0.0.0
++ ip ospf cost 1
+  ip ospf network point-to-point
+ !
+ router ospf

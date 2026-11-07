@@ -1,0 +1,1006 @@
+{
+  "run_id": "C-00394~g0r00",
+  "lab": "nrlv2-c-00394",
+  "kind": "gate0_replicate",
+  "attempt": 1,
+  "started_utc": "2026-09-11T19:27:21Z",
+  "status": "OK",
+  "error": null,
+  "staging": {
+    "status": "OK",
+    "files_verified": 23,
+    "problems": [],
+    "staged_to": "/root/nrl-gate0/C-00394~g0r00",
+    "error": null
+  },
+  "containers": {
+    "status": "OK",
+    "missing": [],
+    "expected": 9,
+    "found": 9,
+    "error": null
+  },
+  "convergence": {
+    "status": "OK",
+    "converged": true,
+    "seconds": 61.1,
+    "polls": 10,
+    "min_settle_s": 45,
+    "error": null,
+    "phase1": {
+      "status": "OK",
+      "converged": true,
+      "seconds": 45.8,
+      "polls": 8,
+      "min_settle_s": 45,
+      "history": [
+        {
+          "t": 0.5,
+          "route_counts": {
+            "corea": 6,
+            "coreb": 6,
+            "edgea": 5,
+            "edgeb": 6,
+            "wan1": 5,
+            "wan2": 5
+          },
+          "rib_changed": false,
+          "rib_stable_polls": 1,
+          "neighbor_states": {
+            "corea": [],
+            "coreb": [
+              "Init/-"
+            ],
+            "edgea": [
+              "Init/-"
+            ],
+            "edgeb": [],
+            "wan1": [
+              "Init/-",
+              "Init/-"
+            ],
+            "wan2": [
+              "Init/-",
+              "Init/-"
+            ]
+          },
+          "transitional": [
+            "coreb:Init/-",
+            "edgea:Init/-",
+            "wan1:Init/-",
+            "wan1:Init/-",
+            "wan2:Init/-",
+            "wan2:Init/-"
+          ],
+          "probe": {
+            "src": "10.10.0.10",
+            "dst": "10.20.0.10",
+            "reachable": false,
+            "loss_pct": 100.0,
+            "rtt_avg_ms": null,
+            "status": "OK"
+          }
+        },
+        {
+          "t": 7.1,
+          "route_counts": {
+            "corea": 6,
+            "coreb": 6,
+            "edgea": 5,
+            "edgeb": 6,
+            "wan1": 5,
+            "wan2": 5
+          },
+          "rib_changed": false,
+          "rib_stable_polls": 2,
+          "neighbor_states": {
+            "corea": [],
+            "coreb": [
+              "Init/-"
+            ],
+            "edgea": [
+              "Init/-"
+            ],
+            "edgeb": [],
+            "wan1": [
+              "Init/-",
+              "Init/-"
+            ],
+            "wan2": [
+              "Init/-",
+              "Init/-"
+            ]
+          },
+          "transitional": [
+            "coreb:Init/-",
+            "edgea:Init/-",
+            "wan1:Init/-",
+            "wan1:Init/-",
+            "wan2:Init/-",
+            "wan2:Init/-"
+          ],
+          "probe": {
+            "src": "10.10.0.10",
+            "dst": "10.20.0.10",
+            "reachable": false,
+            "loss_pct": 100.0,
+            "rtt_avg_ms": null,
+            "status": "OK"
+          }
+        },
+        {
+          "t": 13.6,
+          "route_counts": {
+            "corea": 6,
+            "coreb": 6,
+            "edgea": 5,
+            "edgeb": 6,
+            "wan1": 5,
+            "wan2": 5
+          },
+          "rib_changed": false,
+          "rib_stable_polls": 3,
+          "neighbor_states": {
+            "corea": [
+              "Full/-",
+              "Full/-",
+              "Full/-"
+            ],
+            "coreb": [
+              "Full/-",
+              "Loading/-",
+              "Full/-"
+            ],
+            "edgea": [
+              "Full/-"
+            ],
+            "edgeb": [
+              "Full/-"
+            ],
+            "wan1": [
+              "Full/-",
+              "Full/-"
+            ],
+            "wan2": [
+              "Full/-",
+              "Loading/-"
+            ]
+          },
+          "transitional": [
+            "coreb:Loading/-",
+            "wan2:Loading/-"
+          ],
+          "probe": {
+            "src": "10.10.0.10",
+            "dst": "10.20.0.10",
+            "reachable": false,
+            "loss_pct": 100.0,
+            "rtt_avg_ms": null,
+            "status": "OK"
+          }
+        },
+        {
+          "t": 20.2,
+          "route_counts": {
+            "corea": 17,
+            "coreb": 17,
+            "edgea": 17,
+            "edgeb": 17,
+            "wan1": 17,
+            "wan2": 17
+          },
+          "rib_changed": true,
+          "rib_stable_polls": 1,
+          "neighbor_states": {
+            "corea": [
+              "Full/-",
+              "Full/-",
+              "Full/-"
+            ],
+            "coreb": [
+              "Full/-",
+              "Full/-",
+              "Full/-"
+            ],
+            "edgea": [
+              "Full/-"
+            ],
+            "edgeb": [
+              "Full/-"
+            ],
+            "wan1": [
+              "Full/-",
+              "Full/-"
+            ],
+            "wan2": [
+              "Full/-",
+              "Full/-"
+            ]
+          },
+          "transitional": [],
+          "probe": {
+            "src": "10.10.0.10",
+            "dst": "10.20.0.10",
+            "reachable": true,
+            "loss_pct": 0.0,
+            "rtt_avg_ms": 0.082,
+            "status": "OK"
+          }
+        },
+        {
+          "t": 25.8,
+          "route_counts": {
+            "corea": 17,
+            "coreb": 17,
+            "edgea": 17,
+            "edgeb": 17,
+            "wan1": 17,
+            "wan2": 17
+          },
+          "rib_changed": false,
+          "rib_stable_polls": 2,
+          "neighbor_states": {
+            "corea": [
+              "Full/-",
+              "Full/-",
+              "Full/-"
+            ],
+            "coreb": [
+              "Full/-",
+              "Full/-",
+              "Full/-"
+            ],
+            "edgea": [
+              "Full/-"
+            ],
+            "edgeb": [
+              "Full/-"
+            ],
+            "wan1": [
+              "Full/-",
+              "Full/-"
+            ],
+            "wan2": [
+              "Full/-",
+              "Full/-"
+            ]
+          },
+          "transitional": [],
+          "probe": {
+            "src": "10.10.0.10",
+            "dst": "10.20.0.10",
+            "reachable": true,
+            "loss_pct": 0.0,
+            "rtt_avg_ms": 0.063,
+            "status": "OK"
+          }
+        },
+        {
+          "t": 34.7,
+          "route_counts": {
+            "corea": 17,
+            "coreb": 17,
+            "edgea": 17,
+            "edgeb": 17,
+            "wan1": 17,
+            "wan2": 17
+          },
+          "rib_changed": false,
+          "rib_stable_polls": 3,
+          "neighbor_states": {
+            "corea": [
+              "Full/-",
+              "Full/-",
+              "Full/-"
+            ],
+            "coreb": [
+              "Full/-",
+              "Full/-",
+              "Full/-"
+            ],
+            "edgea": [
+              "Full/-"
+            ],
+            "edgeb": [
+              "Full/-"
+            ],
+            "wan1": [
+              "Full/-",
+              "Full/-"
+            ],
+            "wan2": [
+              "Full/-",
+              "Full/-"
+            ]
+          },
+          "transitional": [],
+          "probe": {
+            "src": "10.10.0.10",
+            "dst": "10.20.0.10",
+            "reachable": true,
+            "loss_pct": 0.0,
+            "rtt_avg_ms": 0.072,
+            "status": "OK"
+          }
+        },
+        {
+          "t": 40.2,
+          "route_counts": {
+            "corea": 17,
+            "coreb": 17,
+            "edgea": 17,
+            "edgeb": 17,
+            "wan1": 17,
+            "wan2": 17
+          },
+          "rib_changed": false,
+          "rib_stable_polls": 4,
+          "neighbor_states": {
+            "corea": [
+              "Full/-",
+              "Full/-",
+              "Full/-"
+            ],
+            "coreb": [
+              "Full/-",
+              "Full/-",
+              "Full/-"
+            ],
+            "edgea": [
+              "Full/-"
+            ],
+            "edgeb": [
+              "Full/-"
+            ],
+            "wan1": [
+              "Full/-",
+              "Full/-"
+            ],
+            "wan2": [
+              "Full/-",
+              "Full/-"
+            ]
+          },
+          "transitional": [],
+          "probe": {
+            "src": "10.10.0.10",
+            "dst": "10.20.0.10",
+            "reachable": true,
+            "loss_pct": 0.0,
+            "rtt_avg_ms": 0.089,
+            "status": "OK"
+          }
+        },
+        {
+          "t": 45.8,
+          "route_counts": {
+            "corea": 17,
+            "coreb": 17,
+            "edgea": 17,
+            "edgeb": 17,
+            "wan1": 17,
+            "wan2": 17
+          },
+          "rib_changed": false,
+          "rib_stable_polls": 5,
+          "neighbor_states": {
+            "corea": [
+              "Full/-",
+              "Full/-",
+              "Full/-"
+            ],
+            "coreb": [
+              "Full/-",
+              "Full/-",
+              "Full/-"
+            ],
+            "edgea": [
+              "Full/-"
+            ],
+            "edgeb": [
+              "Full/-"
+            ],
+            "wan1": [
+              "Full/-",
+              "Full/-"
+            ],
+            "wan2": [
+              "Full/-",
+              "Full/-"
+            ]
+          },
+          "transitional": [],
+          "probe": {
+            "src": "10.10.0.10",
+            "dst": "10.20.0.10",
+            "reachable": true,
+            "loss_pct": 0.0,
+            "rtt_avg_ms": 0.066,
+            "status": "OK"
+          }
+        }
+      ],
+      "error": null
+    },
+    "seconds_phase1": 45.8,
+    "converged_phase1": true
+  },
+  "transient": {
+    "harm_definition": "1.2.0-signals",
+    "seconds_to_converge": 61.1,
+    "converged": true,
+    "polls": 10,
+    "rib_changes_total": 18,
+    "rib_changes_max_router": 3,
+    "adjacency_flaps_after_full": 1,
+    "probe_polls": 10,
+    "probe_unreachable_polls": 4,
+    "transient_outage_after_reachable": true,
+    "flapped": true
+  },
+  "artifact_runtime_check": {
+    "running_config": {
+      "status": "OK",
+      "routers_checked": 6,
+      "problems": []
+    },
+    "addresses": {
+      "status": "OK",
+      "problems": []
+    },
+    "ospf_binding": {
+      "status": "OK",
+      "problems": []
+    }
+  },
+  "measurements": [
+    {
+      "property_id": "P01",
+      "kind": "reachability",
+      "in_spec": true,
+      "text": "hosta can ping hostb",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "ping": {
+          "kind": "ping",
+          "node": "hosta",
+          "dst": "10.20.0.10",
+          "src": null,
+          "raw": "PING 10.20.0.10 (10.20.0.10): 56 data bytes\n64 bytes from 10.20.0.10: seq=0 ttl=59 time=0.060 ms\n64 bytes from 10.20.0.10: seq=1 ttl=59 time=0.097 ms\n64 bytes from 10.20.0.10: seq=2 ttl=59 time=0.134 ms\n64 bytes from 10.20.0.10: seq=3 ttl=59 time=0.188 ms\n64 bytes from 10.20.0.10: seq=4 ttl=59 time=0.138 ms\n\n--- 10.20.0.10 ping statistics ---\n5 packets transmitted, 5 packets received, 0% packet loss\nround-trip min/avg/max = 0.060/0.123/0.188 ms\n",
+          "seconds": 4.03,
+          "status": "OK",
+          "error": null,
+          "sent": 5,
+          "received": 5,
+          "loss_pct": 0.0,
+          "rtt_min_ms": 0.06,
+          "rtt_avg_ms": 0.123,
+          "rtt_max_ms": 0.188
+        }
+      },
+      "extra": {
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.123,
+        "app": "ICMP"
+      },
+      "seconds": 4.03
+    },
+    {
+      "property_id": "P02",
+      "kind": "reachability",
+      "in_spec": true,
+      "text": "hosta can reach hostb on TCP/443",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "ping": {
+          "kind": "ping",
+          "node": "hosta",
+          "dst": "10.20.0.10",
+          "src": null,
+          "raw": "PING 10.20.0.10 (10.20.0.10): 56 data bytes\n64 bytes from 10.20.0.10: seq=0 ttl=59 time=0.065 ms\n64 bytes from 10.20.0.10: seq=1 ttl=59 time=0.129 ms\n64 bytes from 10.20.0.10: seq=2 ttl=59 time=0.081 ms\n64 bytes from 10.20.0.10: seq=3 ttl=59 time=0.161 ms\n64 bytes from 10.20.0.10: seq=4 ttl=59 time=0.252 ms\n\n--- 10.20.0.10 ping statistics ---\n5 packets transmitted, 5 packets received, 0% packet loss\nround-trip min/avg/max = 0.065/0.137/0.252 ms\n",
+          "seconds": 4.03,
+          "status": "OK",
+          "error": null,
+          "sent": 5,
+          "received": 5,
+          "loss_pct": 0.0,
+          "rtt_min_ms": 0.065,
+          "rtt_avg_ms": 0.137,
+          "rtt_max_ms": 0.252
+        },
+        "tcp": {
+          "kind": "tcp",
+          "node": "hosta",
+          "dst": "10.20.0.10",
+          "port": 443,
+          "raw": "rc=0\n",
+          "seconds": 0.02,
+          "status": "OK",
+          "error": null,
+          "connected": true
+        }
+      },
+      "extra": {
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.137,
+        "app": "HTTPS"
+      },
+      "seconds": 4.05
+    },
+    {
+      "property_id": "P05",
+      "kind": "reachability",
+      "in_spec": true,
+      "text": "hostb can ping hosta (return path)",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "ping": {
+          "kind": "ping",
+          "node": "hostb",
+          "dst": "10.10.0.10",
+          "src": null,
+          "raw": "PING 10.10.0.10 (10.10.0.10): 56 data bytes\n64 bytes from 10.10.0.10: seq=0 ttl=59 time=0.061 ms\n64 bytes from 10.10.0.10: seq=1 ttl=59 time=0.207 ms\n64 bytes from 10.10.0.10: seq=2 ttl=59 time=0.146 ms\n64 bytes from 10.10.0.10: seq=3 ttl=59 time=0.068 ms\n64 bytes from 10.10.0.10: seq=4 ttl=59 time=0.183 ms\n\n--- 10.10.0.10 ping statistics ---\n5 packets transmitted, 5 packets received, 0% packet loss\nround-trip min/avg/max = 0.061/0.133/0.207 ms\n",
+          "seconds": 4.03,
+          "status": "OK",
+          "error": null,
+          "sent": 5,
+          "received": 5,
+          "loss_pct": 0.0,
+          "rtt_min_ms": 0.061,
+          "rtt_avg_ms": 0.133,
+          "rtt_max_ms": 0.207
+        }
+      },
+      "extra": {
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.133,
+        "app": "ICMP"
+      },
+      "seconds": 4.03
+    },
+    {
+      "property_id": "P07",
+      "kind": "no_loops",
+      "in_spec": true,
+      "text": "no forwarding loops anywhere",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "traceroutes": {
+          "10.20.0.10": {
+            "kind": "traceroute",
+            "node": "hosta",
+            "dst": "10.20.0.10",
+            "raw": "traceroute to 10.20.0.10 (10.20.0.10), 12 hops max, 46 byte packets\n 1  10.10.0.1  0.010 ms  0.009 ms  0.003 ms\n 2  10.16.1.2  0.001 ms  0.002 ms  0.002 ms\n 3  10.16.2.2  0.001 ms  0.002 ms  0.001 ms\n 4  10.16.4.2  0.001 ms  0.002 ms  0.001 ms\n 5  10.16.6.2  0.001 ms  0.001 ms  0.002 ms\n 6  10.20.0.10  0.001 ms  0.002 ms  0.001 ms\n",
+            "seconds": 0.02,
+            "status": "OK",
+            "error": null,
+            "hops": [
+              {
+                "n": 1,
+                "ip": "10.10.0.1"
+              },
+              {
+                "n": 2,
+                "ip": "10.16.1.2"
+              },
+              {
+                "n": 3,
+                "ip": "10.16.2.2"
+              },
+              {
+                "n": 4,
+                "ip": "10.16.4.2"
+              },
+              {
+                "n": 5,
+                "ip": "10.16.6.2"
+              },
+              {
+                "n": 6,
+                "ip": "10.20.0.10"
+              }
+            ],
+            "loop_suspected": false,
+            "max_hops_reached": false
+          },
+          "10.21.0.10": {
+            "kind": "traceroute",
+            "node": "hosta",
+            "dst": "10.21.0.10",
+            "raw": "traceroute to 10.21.0.10 (10.21.0.10), 12 hops max, 46 byte packets\n 1  10.10.0.1  0.005 ms  0.002 ms  0.001 ms\n 2  10.16.1.2  0.001 ms  0.002 ms  0.001 ms\n 3  10.16.2.2  0.001 ms  0.001 ms  0.000 ms\n 4  10.16.4.2  0.001 ms  0.002 ms  0.001 ms\n 5  10.16.6.2  0.001 ms  0.001 ms  0.001 ms\n 6  10.21.0.10  0.001 ms  0.001 ms  0.001 ms\n",
+            "seconds": 0.02,
+            "status": "OK",
+            "error": null,
+            "hops": [
+              {
+                "n": 1,
+                "ip": "10.10.0.1"
+              },
+              {
+                "n": 2,
+                "ip": "10.16.1.2"
+              },
+              {
+                "n": 3,
+                "ip": "10.16.2.2"
+              },
+              {
+                "n": 4,
+                "ip": "10.16.4.2"
+              },
+              {
+                "n": 5,
+                "ip": "10.16.6.2"
+              },
+              {
+                "n": 6,
+                "ip": "10.21.0.10"
+              }
+            ],
+            "loop_suspected": false,
+            "max_hops_reached": false
+          }
+        }
+      },
+      "extra": {
+        "loop_suspected": false,
+        "destinations_unreached_not_looping": []
+      },
+      "seconds": 0.04
+    },
+    {
+      "property_id": "P08",
+      "kind": "ospf_adjacencies",
+      "in_spec": true,
+      "text": "all six OSPF adjacencies are established",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "adjacencies": {
+          "per_router": {
+            "corea": {
+              "status": "OK",
+              "full": 3
+            },
+            "coreb": {
+              "status": "OK",
+              "full": 3
+            },
+            "edgea": {
+              "status": "OK",
+              "full": 1
+            },
+            "edgeb": {
+              "status": "OK",
+              "full": 1
+            },
+            "wan1": {
+              "status": "OK",
+              "full": 2
+            },
+            "wan2": {
+              "status": "OK",
+              "full": 2
+            }
+          },
+          "full_adjacency_pairs": 6
+        }
+      },
+      "extra": {
+        "full_adjacency_pairs": 6,
+        "expected": 6
+      },
+      "seconds": 0.0
+    },
+    {
+      "property_id": "P03",
+      "kind": "reachability",
+      "in_spec": false,
+      "text": "hosta can ping hostc (second site-B LAN)",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "ping": {
+          "kind": "ping",
+          "node": "hosta",
+          "dst": "10.21.0.10",
+          "src": null,
+          "raw": "PING 10.21.0.10 (10.21.0.10): 56 data bytes\n64 bytes from 10.21.0.10: seq=0 ttl=59 time=0.087 ms\n64 bytes from 10.21.0.10: seq=1 ttl=59 time=0.137 ms\n64 bytes from 10.21.0.10: seq=2 ttl=59 time=0.064 ms\n64 bytes from 10.21.0.10: seq=3 ttl=59 time=0.082 ms\n64 bytes from 10.21.0.10: seq=4 ttl=59 time=0.088 ms\n\n--- 10.21.0.10 ping statistics ---\n5 packets transmitted, 5 packets received, 0% packet loss\nround-trip min/avg/max = 0.064/0.091/0.137 ms\n",
+          "seconds": 4.02,
+          "status": "OK",
+          "error": null,
+          "sent": 5,
+          "received": 5,
+          "loss_pct": 0.0,
+          "rtt_min_ms": 0.064,
+          "rtt_avg_ms": 0.091,
+          "rtt_max_ms": 0.137
+        }
+      },
+      "extra": {
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.091,
+        "app": "ICMP"
+      },
+      "seconds": 4.02
+    },
+    {
+      "property_id": "P04",
+      "kind": "reachability",
+      "in_spec": false,
+      "text": "hosta can reach hostc on TCP/443",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "ping": {
+          "kind": "ping",
+          "node": "hosta",
+          "dst": "10.21.0.10",
+          "src": null,
+          "raw": "PING 10.21.0.10 (10.21.0.10): 56 data bytes\n64 bytes from 10.21.0.10: seq=0 ttl=59 time=0.079 ms\n64 bytes from 10.21.0.10: seq=1 ttl=59 time=0.145 ms\n64 bytes from 10.21.0.10: seq=2 ttl=59 time=0.206 ms\n64 bytes from 10.21.0.10: seq=3 ttl=59 time=0.068 ms\n64 bytes from 10.21.0.10: seq=4 ttl=59 time=0.172 ms\n\n--- 10.21.0.10 ping statistics ---\n5 packets transmitted, 5 packets received, 0% packet loss\nround-trip min/avg/max = 0.068/0.134/0.206 ms\n",
+          "seconds": 7.36,
+          "status": "OK",
+          "error": null,
+          "sent": 5,
+          "received": 5,
+          "loss_pct": 0.0,
+          "rtt_min_ms": 0.068,
+          "rtt_avg_ms": 0.134,
+          "rtt_max_ms": 0.206
+        },
+        "tcp": {
+          "kind": "tcp",
+          "node": "hosta",
+          "dst": "10.21.0.10",
+          "port": 443,
+          "raw": "rc=0\n",
+          "seconds": 0.02,
+          "status": "OK",
+          "error": null,
+          "connected": true
+        }
+      },
+      "extra": {
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.134,
+        "app": "HTTPS"
+      },
+      "seconds": 7.38
+    },
+    {
+      "property_id": "P06",
+      "kind": "path_contains",
+      "in_spec": false,
+      "text": "hosta->hostb uses the primary WAN, not the backup",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "traceroute": {
+          "kind": "traceroute",
+          "node": "hosta",
+          "dst": "10.20.0.10",
+          "raw": "traceroute to 10.20.0.10 (10.20.0.10), 12 hops max, 46 byte packets\n 1  10.10.0.1  0.010 ms  0.009 ms  0.003 ms\n 2  10.16.1.2  0.001 ms  0.002 ms  0.002 ms\n 3  10.16.2.2  0.001 ms  0.002 ms  0.001 ms\n 4  10.16.4.2  0.001 ms  0.002 ms  0.001 ms\n 5  10.16.6.2  0.001 ms  0.001 ms  0.002 ms\n 6  10.20.0.10  0.001 ms  0.002 ms  0.001 ms\n",
+          "seconds": 0.02,
+          "status": "OK",
+          "error": null,
+          "hops": [
+            {
+              "n": 1,
+              "ip": "10.10.0.1"
+            },
+            {
+              "n": 2,
+              "ip": "10.16.1.2"
+            },
+            {
+              "n": 3,
+              "ip": "10.16.2.2"
+            },
+            {
+              "n": 4,
+              "ip": "10.16.4.2"
+            },
+            {
+              "n": 5,
+              "ip": "10.16.6.2"
+            },
+            {
+              "n": 6,
+              "ip": "10.20.0.10"
+            }
+          ],
+          "loop_suspected": false,
+          "max_hops_reached": false
+        }
+      },
+      "extra": {
+        "observed_path": [
+          "edgea",
+          "corea",
+          "wan1",
+          "coreb",
+          "edgeb"
+        ],
+        "must_traverse": [
+          "corea",
+          "wan1",
+          "coreb"
+        ]
+      },
+      "seconds": 0.0
+    },
+    {
+      "property_id": "P09",
+      "kind": "route_present",
+      "in_spec": false,
+      "text": "every router has a route to 10.20.0.0/24",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "present": {
+          "corea": true,
+          "coreb": true,
+          "edgea": true,
+          "edgeb": true,
+          "wan1": true,
+          "wan2": true
+        }
+      },
+      "extra": {
+        "nodes_missing_route": [],
+        "prefix": "10.20.0.0/24"
+      },
+      "seconds": 0.0
+    },
+    {
+      "property_id": "P10",
+      "kind": "route_present",
+      "in_spec": false,
+      "text": "every router has a route to 10.21.0.0/24",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "present": {
+          "corea": true,
+          "coreb": true,
+          "edgea": true,
+          "edgeb": true,
+          "wan1": true,
+          "wan2": true
+        }
+      },
+      "extra": {
+        "nodes_missing_route": [],
+        "prefix": "10.21.0.0/24"
+      },
+      "seconds": 0.0
+    },
+    {
+      "property_id": "P11",
+      "kind": "reachability",
+      "in_spec": false,
+      "text": "edgea loopback can reach edgeb loopback",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "ping": {
+          "kind": "ping",
+          "node": "edgea",
+          "dst": "10.255.0.6",
+          "src": "10.255.0.1",
+          "raw": "PING 10.255.0.6 (10.255.0.6) from 10.255.0.1: 56 data bytes\n64 bytes from 10.255.0.6: seq=0 ttl=61 time=0.055 ms\n64 bytes from 10.255.0.6: seq=1 ttl=61 time=0.115 ms\n64 bytes from 10.255.0.6: seq=2 ttl=61 time=0.085 ms\n64 bytes from 10.255.0.6: seq=3 ttl=61 time=0.091 ms\n64 bytes from 10.255.0.6: seq=4 ttl=61 time=0.154 ms\n\n--- 10.255.0.6 ping statistics ---\n5 packets transmitted, 5 packets received, 0% packet loss\nround-trip min/avg/max = 0.055/0.100/0.154 ms\n",
+          "seconds": 4.03,
+          "status": "OK",
+          "error": null,
+          "sent": 5,
+          "received": 5,
+          "loss_pct": 0.0,
+          "rtt_min_ms": 0.055,
+          "rtt_avg_ms": 0.1,
+          "rtt_max_ms": 0.154
+        }
+      },
+      "extra": {
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.1,
+        "app": "ICMP"
+      },
+      "seconds": 4.03
+    },
+    {
+      "property_id": "P12",
+      "kind": "no_iface_down",
+      "in_spec": false,
+      "text": "no interface is administratively down",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {},
+      "extra": {
+        "down_interfaces": [],
+        "ignored_non_artifact_interfaces": [
+          "corea:eth0",
+          "coreb:eth0",
+          "edgea:eth0",
+          "edgeb:eth0",
+          "wan1:eth0",
+          "wan2:eth0"
+        ]
+      },
+      "seconds": 0.0
+    }
+  ],
+  "ospf_full_adjacency_pairs": 6,
+  "interfaces_down": [],
+  "non_artifact_interfaces_ignored": [
+    "corea:eth0",
+    "coreb:eth0",
+    "edgea:eth0",
+    "edgeb:eth0",
+    "wan1:eth0",
+    "wan2:eth0"
+  ],
+  "route_counts": {
+    "corea": 17,
+    "coreb": 17,
+    "edgea": 17,
+    "edgeb": 17,
+    "wan1": 17,
+    "wan2": 17
+  },
+  "teardown_ok": true,
+  "wall_seconds": 145.2,
+  "finished_utc": "2026-09-11T19:29:46Z",
+  "gate0": {
+    "environment": {
+      "kind": "link_churn",
+      "seed": 11898567624787740470,
+      "candidate_id": "C-00394",
+      "replicate": 0,
+      "node": "edgeb",
+      "iface": "eth3",
+      "delay_s": 13,
+      "down_s": 8,
+      "n_transit_links": 12,
+      "touched_by_repair": false
+    },
+    "events": [
+      {
+        "action": "down",
+        "node": "edgeb",
+        "iface": "eth3",
+        "at_s": 13.04,
+        "status": "OK",
+        "rc": 0,
+        "stderr": ""
+      },
+      {
+        "action": "up",
+        "node": "edgeb",
+        "iface": "eth3",
+        "at_s": 24.39,
+        "status": "OK",
+        "rc": 0,
+        "stderr": ""
+      }
+    ],
+    "completed": true,
+    "link_restored": true,
+    "phase": "post_convergence"
+  }
+}

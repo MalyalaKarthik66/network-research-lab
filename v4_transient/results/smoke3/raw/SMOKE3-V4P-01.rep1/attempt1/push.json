@@ -1,0 +1,16 @@
+[
+  {
+    "node": "coreb",
+    "commands": [
+      "interface eth2",
+      "shutdown",
+      "exit"
+    ],
+    "t_start": 1789475214.2119634,
+    "t_end": 1789475214.6345072,
+    "status": "OK",
+    "rc": 0,
+    "stdout": "",
+    "stderr": "% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.\n"
+  }
+]

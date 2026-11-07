@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "rc": 0,
+  "stdout": "{\n  \"neighbors\":{\n    \"10.255.0.7\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/-\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/-\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":43961,\n        \"deadTimeMsecs\":36277,\n        \"routerDeadIntervalTimerDueMsec\":36277,\n        \"upTime\":\"43.961s\",\n        \"deadTime\":\"36.277s\",\n        \"address\":\"10.24.7.1\",\n        \"ifaceAddress\":\"10.24.7.1\",\n        \"ifaceName\":\"eth1:10.24.7.2\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"10.255.0.5\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/-\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/-\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":37830,\n        \"deadTimeMsecs\":37191,\n        \"routerDeadIntervalTimerDueMsec\":37191,\n        \"upTime\":\"37.830s\",\n        \"deadTime\":\"37.191s\",\n        \"address\":\"10.24.8.2\",\n        \"ifaceAddress\":\"10.24.8.2\",\n        \"ifaceName\":\"eth2:10.24.8.1\",\n        \"retransmitCounter\":1,\n        \"linkStateRetransmissionListCounter\":1,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ]\n  }\n}\n",
+  "stderr": "% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.\n",
+  "argv": [
+    "docker",
+    "exec",
+    "clab-nrlv2-c-00985-r3",
+    "vtysh",
+    "-c",
+    "show ip ospf neighbor json"
+  ],
+  "seconds": 0.05,
+  "error": null,
+  "command": "show ip ospf neighbor json",
+  "json": {
+    "neighbors": {
+      "10.255.0.7": [
+        {
+          "priority": 1,
+          "state": "Full/-",
+          "nbrPriority": 1,
+          "nbrState": "Full/-",
+          "converged": "Full",
+          "role": "DROther",
+          "upTimeInMsec": 43961,
+          "deadTimeMsecs": 36277,
+          "routerDeadIntervalTimerDueMsec": 36277,
+          "upTime": "43.961s",
+          "deadTime": "36.277s",
+          "address": "10.24.7.1",
+          "ifaceAddress": "10.24.7.1",
+          "ifaceName": "eth1:10.24.7.2",
+          "retransmitCounter": 0,
+          "linkStateRetransmissionListCounter": 0,
+          "requestCounter": 0,
+          "linkStateRequestListCounter": 0,
+          "dbSummaryCounter": 0,
+          "databaseSummaryListCounter": 0
+        }
+      ],
+      "10.255.0.5": [
+        {
+          "priority": 1,
+          "state": "Full/-",
+          "nbrPriority": 1,
+          "nbrState": "Full/-",
+          "converged": "Full",
+          "role": "DROther",
+          "upTimeInMsec": 37830,
+          "deadTimeMsecs": 37191,
+          "routerDeadIntervalTimerDueMsec": 37191,
+          "upTime": "37.830s",
+          "deadTime": "37.191s",
+          "address": "10.24.8.2",
+          "ifaceAddress": "10.24.8.2",
+          "ifaceName": "eth2:10.24.8.1",
+          "retransmitCounter": 1,
+          "linkStateRetransmissionListCounter": 1,
+          "requestCounter": 0,
+          "linkStateRequestListCounter": 0,
+          "dbSummaryCounter": 0,
+          "databaseSummaryListCounter": 0
+        }
+      ]
+    }
+  }
+}

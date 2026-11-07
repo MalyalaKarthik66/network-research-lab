@@ -1,0 +1,20 @@
+--- I-00063
++++ C-00467
+@@ -297,7 +297,7 @@
+ !
+ interface eth2
+  description link to aggb aggB
+- ip ospf area 0.0.0.0
++ ip ospf area 0.0.0.9
+  ip ospf cost 10
+  ip ospf network point-to-point
+ !
+@@ -373,7 +373,7 @@
+ !
+ interface eth2
+  description link to agga siteA
+- ip ospf area 0.0.0.1
++ ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+ !

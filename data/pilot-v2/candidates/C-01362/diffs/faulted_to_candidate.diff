@@ -1,0 +1,20 @@
+--- I-00185
++++ C-01362
+@@ -827,6 +827,7 @@
+ interface lo
+  description router-id and management
+  ip ospf area 0.0.0.0
++ ip ospf cost 2
+ !
+ interface eth1
+  description link to hosta siteA-lan
+@@ -835,6 +836,9 @@
+ !
+ interface eth2
+  description link to agga accA
++ ip ospf area 0.0.0.0
++ ip ospf cost 10
++ ip ospf network point-to-point
+ !
+ router ospf
+  ospf router-id 10.255.0.1

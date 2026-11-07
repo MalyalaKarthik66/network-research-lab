@@ -1,0 +1,11 @@
+--- golden-t04_star5
++++ I-00037
+@@ -220,7 +220,7 @@
+ interface eth2
+  description link to corea siteA
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 65535
+  ip ospf network point-to-point
+ !
+ router ospf

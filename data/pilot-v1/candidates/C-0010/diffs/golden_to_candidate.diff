@@ -1,0 +1,27 @@
+--- golden
++++ C-0010
+@@ -131,10 +131,11 @@
+  ip ospf network point-to-point
+ !
+ interface eth2
+- description link to edgeb siteB-core
+- ip ospf area 0.0.0.0
+- ip ospf cost 10
+- ip ospf network point-to-point
++ description link to edgeb siteB-core (reviewed, see ticket NET-1042)
++ ip ospf area 0.0.0.0
++ ip ospf cost 10
++ ip ospf network point-to-point
++ shutdown
+ !
+ interface eth3
+  description link to corea wan-backup
+@@ -166,7 +167,7 @@
+ auto eth2
+ iface eth2
+     address 10.0.5.1/30
+-    alias link to edgeb siteB-core
++    alias link to edgeb siteB-core (reviewed, see ticket NET-1042)
+ 
+ auto eth3
+ iface eth3

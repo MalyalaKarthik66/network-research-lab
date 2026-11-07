@@ -1,0 +1,463 @@
+{
+  "status": "OK",
+  "converged": true,
+  "seconds": 48.4,
+  "polls": 9,
+  "min_settle_s": 45,
+  "history": [
+    {
+      "t": 0.6,
+      "route_counts": {
+        "corea": 6,
+        "coreb": 6,
+        "edgea": 6,
+        "edgeb": 7,
+        "wan1": 5,
+        "wan2": 5
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 1,
+      "neighbor_states": {
+        "corea": [
+          "Init/-"
+        ],
+        "coreb": [
+          "Init/-",
+          "Init/-",
+          "Init/-"
+        ],
+        "edgea": [
+          "Init/-",
+          "Init/-"
+        ],
+        "edgeb": [],
+        "wan1": [
+          "Init/-"
+        ],
+        "wan2": []
+      },
+      "transitional": [
+        "corea:Init/-",
+        "coreb:Init/-",
+        "coreb:Init/-",
+        "coreb:Init/-",
+        "edgea:Init/-",
+        "edgea:Init/-",
+        "wan1:Init/-"
+      ],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": false,
+        "loss_pct": 100.0,
+        "rtt_avg_ms": null,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 7.2,
+      "route_counts": {
+        "corea": 6,
+        "coreb": 6,
+        "edgea": 6,
+        "edgeb": 7,
+        "wan1": 5,
+        "wan2": 5
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 2,
+      "neighbor_states": {
+        "corea": [
+          "Init/-"
+        ],
+        "coreb": [
+          "Init/-",
+          "Init/-",
+          "Init/-"
+        ],
+        "edgea": [
+          "Init/-",
+          "Init/-"
+        ],
+        "edgeb": [],
+        "wan1": [
+          "Init/-"
+        ],
+        "wan2": []
+      },
+      "transitional": [
+        "corea:Init/-",
+        "coreb:Init/-",
+        "coreb:Init/-",
+        "coreb:Init/-",
+        "edgea:Init/-",
+        "edgea:Init/-",
+        "wan1:Init/-"
+      ],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": false,
+        "loss_pct": 100.0,
+        "rtt_avg_ms": null,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 13.8,
+      "route_counts": {
+        "corea": 6,
+        "coreb": 6,
+        "edgea": 6,
+        "edgeb": 7,
+        "wan1": 5,
+        "wan2": 5
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 3,
+      "neighbor_states": {
+        "corea": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Loading/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Loading/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Loading/-"
+        ],
+        "wan1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan2": [
+          "Full/-",
+          "Loading/-"
+        ]
+      },
+      "transitional": [
+        "coreb:Loading/-",
+        "edgea:Loading/-",
+        "edgeb:Loading/-",
+        "wan2:Loading/-"
+      ],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": false,
+        "loss_pct": 100.0,
+        "rtt_avg_ms": null,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 20.4,
+      "route_counts": {
+        "corea": 18,
+        "coreb": 18,
+        "edgea": 18,
+        "edgeb": 18,
+        "wan1": 18,
+        "wan2": 18
+      },
+      "rib_changed": true,
+      "rib_stable_polls": 1,
+      "neighbor_states": {
+        "corea": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan2": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.141,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 26.0,
+      "route_counts": {
+        "corea": 18,
+        "coreb": 18,
+        "edgea": 18,
+        "edgeb": 18,
+        "wan1": 18,
+        "wan2": 18
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 2,
+      "neighbor_states": {
+        "corea": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan2": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.125,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 31.6,
+      "route_counts": {
+        "corea": 18,
+        "coreb": 18,
+        "edgea": 18,
+        "edgeb": 18,
+        "wan1": 18,
+        "wan2": 18
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 3,
+      "neighbor_states": {
+        "corea": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan2": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.107,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 37.2,
+      "route_counts": {
+        "corea": 18,
+        "coreb": 18,
+        "edgea": 18,
+        "edgeb": 18,
+        "wan1": 18,
+        "wan2": 18
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 4,
+      "neighbor_states": {
+        "corea": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan2": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.109,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 42.8,
+      "route_counts": {
+        "corea": 18,
+        "coreb": 18,
+        "edgea": 18,
+        "edgeb": 18,
+        "wan1": 18,
+        "wan2": 18
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 5,
+      "neighbor_states": {
+        "corea": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan2": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.209,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 48.4,
+      "route_counts": {
+        "corea": 18,
+        "coreb": 18,
+        "edgea": 18,
+        "edgeb": 18,
+        "wan1": 18,
+        "wan2": 18
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 6,
+      "neighbor_states": {
+        "corea": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan2": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.208,
+        "status": "OK"
+      }
+    }
+  ],
+  "error": null
+}

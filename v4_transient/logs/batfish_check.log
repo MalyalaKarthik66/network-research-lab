@@ -1,0 +1,36 @@
+V4C-01 t05_ring6     cost-hi   SPEC PASS r_batfish 0.4444444444444444 r_exact 0.444444 match
+V4C-02 t05_ring6     cost-mid  SPEC PASS r_batfish 0.1111111111111111 r_exact 0.111111 match
+V4C-03 t05_ring6     drain-hi  SPEC PASS r_batfish 0.3333333333333333 r_exact 0.333333 match
+V4C-04 t05_ring6     drain-lo  SPEC PASS r_batfish 0.1111111111111111 r_exact 0.111111 match
+V4C-05 t05_ring6     bh        SPEC PASS r_batfish 0.09722222222222222 r_exact 0.097222 match
+V4N-01 t05_ring6     noop      SPEC PASS r_batfish 0.0 r_exact 0.000000 match
+V4N-02 t05_ring6     noop      SPEC PASS r_batfish 0.0 r_exact 0.000000 match
+V4N-03 t05_ring6     noop      SPEC PASS r_batfish 0.0 r_exact 0.000000 match
+V4P-01 t05_ring6     shutdown  SPEC FAIL r_batfish 0.5 r_exact 0.500000 match
+V4C-06 t13_bowtie7   cost-hi   SPEC PASS r_batfish 0.4444444444444444 r_exact 0.444444 match
+V4C-07 t13_bowtie7   cost-mid  SPEC PASS r_batfish 0.13333333333333333 r_exact 0.133333 match
+V4C-08 t13_bowtie7   drain-hi  SPEC PASS r_batfish 0.3333333333333333 r_exact 0.333333 match
+V4C-09 t13_bowtie7   drain-lo  SPEC PASS r_batfish 0.05555555555555555 r_exact 0.055556 match
+V4C-10 t13_bowtie7   bh        SPEC PASS r_batfish 0.07777777777777778 r_exact 0.077778 match
+V4N-04 t13_bowtie7   noop      SPEC PASS r_batfish 0.0 r_exact 0.000000 match
+V4N-05 t13_bowtie7   noop      SPEC PASS r_batfish 0.0 r_exact 0.000000 match
+V4N-06 t13_bowtie7   noop      SPEC PASS r_batfish 0.0 r_exact 0.000000 match
+V4P-02 t13_bowtie7   shutdown  SPEC FAIL r_batfish 0.4444444444444444 r_exact 0.444444 match
+V4C-11 t14_ladder8   cost-hi   SPEC PASS r_batfish 0.45454545454545453 r_exact 0.454545 match
+V4C-12 t14_ladder8   cost-mid  SPEC PASS r_batfish 0.18181818181818182 r_exact 0.181818 match
+V4C-13 t14_ladder8   drain-hi  SPEC PASS r_batfish 0.4 r_exact 0.400000 match
+V4C-14 t14_ladder8   drain-lo  SPEC PASS r_batfish 0.03636363636363636 r_exact 0.036364 match
+V4C-15 t14_ladder8   bh        SPEC PASS r_batfish 0.07272727272727272 r_exact 0.072727 match
+V4N-07 t14_ladder8   noop      SPEC PASS r_batfish 0.0 r_exact 0.000000 match
+V4N-08 t14_ladder8   noop      SPEC PASS r_batfish 0.0 r_exact 0.000000 match
+V4P-03 t14_ladder8   shutdown  SPEC FAIL r_batfish 0.45454545454545453 r_exact 0.454545 match
+V4C-16 t15_campus12  cost-hi   SPEC PASS r_batfish 0.44761904761904764 r_exact 0.447619 match
+V4C-17 t15_campus12  cost-mid  SPEC PASS r_batfish 0.19047619047619047 r_exact 0.190476 match
+V4C-18 t15_campus12  drain-hi  SPEC PASS r_batfish 0.3523809523809524 r_exact 0.352381 match
+V4C-19 t15_campus12  drain-lo  SPEC PASS r_batfish 0.01904761904761905 r_exact 0.019048 match
+V4C-20 t15_campus12  bh        SPEC PASS r_batfish 0.06190476190476191 r_exact 0.061905 match
+V4N-09 t15_campus12  noop      SPEC PASS r_batfish 0.0 r_exact 0.000000 match
+V4N-10 t15_campus12  noop      SPEC PASS r_batfish 0.0 r_exact 0.000000 match
+V4P-04 t15_campus12  shutdown  SPEC FAIL r_batfish 0.5333333333333333 r_exact 0.533333 match
+
+verdict OK; problems: []

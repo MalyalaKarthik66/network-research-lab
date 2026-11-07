@@ -1,0 +1,37 @@
+--- I-00011
++++ C-00076
+@@ -51,7 +51,7 @@
+ interface eth3
+  description link to coreb wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 100
++ ip ospf cost 2
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -139,7 +139,7 @@
+ interface eth3
+  description link to corea wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 100
++ ip ospf cost 2
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -222,7 +222,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+- shutdown
+ !
+ router ospf
+  ospf router-id 10.255.0.1
+@@ -411,7 +410,7 @@
+ interface eth2
+  description link to wan2 wan-primary
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 1
+  ip ospf network point-to-point
+ !
+ router ospf

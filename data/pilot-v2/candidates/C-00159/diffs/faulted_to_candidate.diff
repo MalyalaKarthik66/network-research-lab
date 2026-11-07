@@ -1,0 +1,29 @@
+--- I-00022
++++ C-00159
+@@ -39,7 +39,7 @@
+ interface eth1
+  description link to edgea siteA
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 13
+  ip ospf network point-to-point
+ !
+ interface eth2
+@@ -242,7 +242,7 @@
+ interface eth2
+  description link to corea siteA
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 13
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -269,7 +269,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.200.0.2/30
++    address 10.13.1.1/30
+     alias link to corea siteA
+ 
+ 

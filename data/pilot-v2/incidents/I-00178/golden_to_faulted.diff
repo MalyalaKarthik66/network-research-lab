@@ -1,0 +1,11 @@
+--- golden-t18_grid12
++++ I-00178
+@@ -46,6 +46,8 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
++!
++ip route 10.20.0.0/24 blackhole
+ !
+ router ospf
+  ospf router-id 10.255.0.1

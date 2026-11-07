@@ -1,0 +1,20 @@
+--- I-00016
++++ C-00112
+@@ -142,6 +142,8 @@
+  ip ospf cost 100
+  ip ospf network point-to-point
+ !
++ip route 10.21.0.0/24 blackhole
++!
+ router ospf
+  ospf router-id 10.255.0.5
+  passive-interface lo
+@@ -220,7 +222,7 @@
+ interface eth2
+  description link to corea siteA
+  ip ospf area 0.0.0.0
+- ip ospf cost 500
++ ip ospf cost 10
+  ip ospf network point-to-point
+ !
+ router ospf

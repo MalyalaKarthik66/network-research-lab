@@ -1,0 +1,14 @@
+{
+  "incident_id": "I-00098",
+  "topology": "t10_deep9",
+  "fault_id": "F0008",
+  "fault_family": "static_blackhole",
+  "fault_description": "[t10_deep9] agga blackholes 10.20.0.0/24",
+  "fault_params": {
+    "node": "agga",
+    "prefix": "10.20.0.0/24",
+    "nexthop": "blackhole",
+    "topology": "t10_deep9"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

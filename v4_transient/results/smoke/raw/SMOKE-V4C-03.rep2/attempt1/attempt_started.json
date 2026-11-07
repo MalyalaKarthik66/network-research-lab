@@ -1,0 +1,13 @@
+{
+  "run_id": "SMOKE-V4C-03.rep2",
+  "attempt": 1,
+  "started_utc": "2026-09-14T13:37:38Z",
+  "code_sha256": {
+    "v4lib/__init__.py": "82a1046d5fd5afa633a160f050379be71ec747b3c9b93b77282f55099195270f",
+    "v4lib/analytic.py": "94dcd67a7238842dcac3810b9f2713cdf4cb80922be1df1590ccc3b406eea2fb",
+    "v4lib/fib.py": "b873070892b2a669e6d35fc92f40e95e8ef2879a60b7bdff4ce0db0fee5ac6e7",
+    "v4lib/labops.py": "743602f30f6ab7819fe4989c51a45a735a982f561ea16d6449e65551ede4e40b",
+    "v4lib/targets.py": "efdda0547715e4703b034215479f941af37ea94b66ed733ad6c8a0244a7d485d",
+    "pilot/run_pilot.py": "d88165b956ff18be28835555fc8f9da36ccd40e834aac1ae805224e279e9471c"
+  }
+}

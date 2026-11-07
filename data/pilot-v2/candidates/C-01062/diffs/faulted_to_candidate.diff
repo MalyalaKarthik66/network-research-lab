@@ -1,0 +1,11 @@
+--- I-00143
++++ C-01062
+@@ -45,7 +45,7 @@
+ interface eth2
+  description link to dista1 dA1
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ interface eth3

@@ -1,0 +1,11 @@
+--- I-00150
++++ C-01105
+@@ -960,7 +960,7 @@
+  ip ospf cost 40
+  ip ospf network point-to-point
+ !
+-ip route 10.20.0.10/32 10.25.12.1
++ip route 10.21.0.0/24 blackhole
+ !
+ router ospf
+  ospf router-id 10.255.0.11

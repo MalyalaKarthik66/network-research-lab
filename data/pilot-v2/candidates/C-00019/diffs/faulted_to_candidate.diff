@@ -1,0 +1,13 @@
+--- I-00003
++++ C-00019
+@@ -197,8 +197,8 @@
+ !
+ interface eth2
+  description link to corea siteA
+- ip ospf area 0.0.0.1
+- ip ospf cost 10
++ ip ospf area 0.0.0.0
++ ip ospf cost 13
+  ip ospf network point-to-point
+ !
+ interface eth3

@@ -1,0 +1,35 @@
+--- I-00054
++++ C-00402
+@@ -127,13 +127,13 @@
+ interface eth1
+  description link to wan1 wan-primary
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 1
+  ip ospf network point-to-point
+ !
+ interface eth2
+  description link to wan2 wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 30
++ ip ospf cost 2
+  ip ospf network point-to-point
+ !
+ interface eth3
+@@ -227,7 +227,6 @@
+  ospf router-id 10.255.0.1
+  passive-interface lo
+  passive-interface eth1
+- passive-interface eth2
+ !
+ line vty
+ !
+@@ -488,7 +487,7 @@
+ interface eth2
+  description link to coreb wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 30
++ ip ospf cost 2
+  ip ospf network point-to-point
+ !
+ router ospf

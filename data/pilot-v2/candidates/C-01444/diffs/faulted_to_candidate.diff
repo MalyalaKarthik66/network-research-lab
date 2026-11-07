@@ -1,0 +1,20 @@
+--- I-00196
++++ C-01444
+@@ -38,7 +38,7 @@
+ !
+ interface eth1
+  description link to edgea aggA
+- ip ospf area 0.0.0.0
++ ip ospf area 0.0.0.9
+  ip ospf cost 50
+  ip ospf network point-to-point
+ !
+@@ -198,7 +198,7 @@
+ interface eth2
+  description link to l1 accA
+  ip ospf area 0.0.0.0
+- ip ospf cost 500
++ ip ospf cost 10
+  ip ospf network point-to-point
+ !
+ interface eth3

@@ -1,0 +1,252 @@
+{
+  "status": "OK",
+  "converged": true,
+  "seconds": 68.0,
+  "polls": 5,
+  "min_settle_s": 45,
+  "history": [
+    {
+      "t": 6.9,
+      "route_counts": {
+        "a1": 5,
+        "a2": 5,
+        "b1": 5,
+        "b2": 5,
+        "edgea": 6,
+        "edgeb": 7,
+        "mid": 7
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 1,
+      "neighbor_states": {
+        "a1": [
+          "Init/-"
+        ],
+        "a2": [
+          "Init/-"
+        ],
+        "b1": [
+          "Init/-",
+          "Init/-"
+        ],
+        "b2": [
+          "Init/-",
+          "Init/-"
+        ],
+        "edgea": [
+          "Init/-",
+          "Init/-"
+        ],
+        "edgeb": [],
+        "mid": [
+          "Init/-"
+        ]
+      },
+      "transitional": [
+        "a1:Init/-",
+        "a2:Init/-",
+        "b1:Init/-",
+        "b1:Init/-",
+        "b2:Init/-",
+        "b2:Init/-",
+        "edgea:Init/-",
+        "edgea:Init/-",
+        "mid:Init/-"
+      ],
+      "probe": null
+    },
+    {
+      "t": 22.6,
+      "route_counts": {
+        "a1": 5,
+        "a2": 5,
+        "b1": 14,
+        "b2": 13,
+        "edgea": 10,
+        "edgeb": 14,
+        "mid": 13
+      },
+      "rib_changed": true,
+      "rib_stable_polls": 1,
+      "neighbor_states": {
+        "a1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "a2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "b1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "b2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "mid": [
+          "Full/-",
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": null
+    },
+    {
+      "t": 37.2,
+      "route_counts": {
+        "a1": 20,
+        "a2": 20,
+        "b1": 20,
+        "b2": 20,
+        "edgea": 20,
+        "edgeb": 20,
+        "mid": 20
+      },
+      "rib_changed": true,
+      "rib_stable_polls": 1,
+      "neighbor_states": {
+        "a1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "a2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "b1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "b2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "mid": [
+          "Full/-",
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": null
+    },
+    {
+      "t": 51.9,
+      "route_counts": {
+        "a1": 20,
+        "a2": 20,
+        "b1": 20,
+        "b2": 20,
+        "edgea": 20,
+        "edgeb": 20,
+        "mid": 20
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 2,
+      "neighbor_states": {
+        "a1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "a2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "b1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "b2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "mid": [
+          "Full/-",
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": null
+    },
+    {
+      "t": 68.0,
+      "route_counts": {
+        "a1": 20,
+        "a2": 20,
+        "b1": 20,
+        "b2": 20,
+        "edgea": 20,
+        "edgeb": 20,
+        "mid": 20
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 3,
+      "neighbor_states": {
+        "a1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "a2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "b1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "b2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "mid": [
+          "Full/-",
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": null
+    }
+  ],
+  "error": null
+}

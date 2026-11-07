@@ -1,0 +1,11 @@
+--- I-00022
++++ C-00164
+@@ -244,6 +244,8 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
++!
++ip route 10.20.0.0/25 10.13.9.2
+ !
+ router ospf
+  ospf router-id 10.255.0.1

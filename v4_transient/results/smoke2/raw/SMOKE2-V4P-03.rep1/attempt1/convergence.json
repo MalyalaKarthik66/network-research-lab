@@ -1,0 +1,288 @@
+{
+  "status": "OK",
+  "converged": true,
+  "seconds": 98.7,
+  "polls": 5,
+  "min_settle_s": 45,
+  "history": [
+    {
+      "t": 17.6,
+      "route_counts": {
+        "edgea": 6,
+        "edgeb": 7,
+        "l1": 6,
+        "l2": 6,
+        "l3": 5,
+        "r1": 6,
+        "r2": 6,
+        "r3": 5
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 1,
+      "neighbor_states": {
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "l1": [
+          "Full/-",
+          "Full/-",
+          "Loading/-"
+        ],
+        "l2": [
+          "Full/-",
+          "Full/-",
+          "Loading/-"
+        ],
+        "l3": [
+          "Full/-",
+          "Full/-"
+        ],
+        "r1": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "r2": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "r3": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [
+        "l1:Loading/-",
+        "l2:Loading/-"
+      ],
+      "probe": null
+    },
+    {
+      "t": 35.8,
+      "route_counts": {
+        "edgea": 23,
+        "edgeb": 23,
+        "l1": 23,
+        "l2": 23,
+        "l3": 23,
+        "r1": 23,
+        "r2": 23,
+        "r3": 23
+      },
+      "rib_changed": true,
+      "rib_stable_polls": 1,
+      "neighbor_states": {
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "l1": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "l2": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "l3": [
+          "Full/-",
+          "Full/-"
+        ],
+        "r1": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "r2": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "r3": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": null
+    },
+    {
+      "t": 57.6,
+      "route_counts": {
+        "edgea": 23,
+        "edgeb": 23,
+        "l1": 23,
+        "l2": 23,
+        "l3": 23,
+        "r1": 23,
+        "r2": 23,
+        "r3": 23
+      },
+      "rib_changed": true,
+      "rib_stable_polls": 1,
+      "neighbor_states": {
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "l1": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "l2": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "l3": [
+          "Full/-",
+          "Full/-"
+        ],
+        "r1": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "r2": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "r3": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": null
+    },
+    {
+      "t": 79.1,
+      "route_counts": {
+        "edgea": 23,
+        "edgeb": 23,
+        "l1": 23,
+        "l2": 23,
+        "l3": 23,
+        "r1": 23,
+        "r2": 23,
+        "r3": 23
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 2,
+      "neighbor_states": {
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "l1": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "l2": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "l3": [
+          "Full/-",
+          "Full/-"
+        ],
+        "r1": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "r2": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "r3": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": null
+    },
+    {
+      "t": 98.7,
+      "route_counts": {
+        "edgea": 23,
+        "edgeb": 23,
+        "l1": 23,
+        "l2": 23,
+        "l3": 23,
+        "r1": 23,
+        "r2": 23,
+        "r3": 23
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 3,
+      "neighbor_states": {
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "l1": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "l2": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "l3": [
+          "Full/-",
+          "Full/-"
+        ],
+        "r1": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "r2": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "r3": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": null
+    }
+  ],
+  "error": null
+}

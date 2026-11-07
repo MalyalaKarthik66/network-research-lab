@@ -1,0 +1,15 @@
+{
+  "incident_id": "I-00160",
+  "topology": "t16_pop14",
+  "fault_id": "F0010",
+  "fault_family": "static_route_loop",
+  "fault_description": "[t16_pop14] edgeb installs 10.20.0.10/32 pointing back upstream at pe3",
+  "fault_params": {
+    "node": "edgeb",
+    "prefix": "10.20.0.10/32",
+    "nexthop": "10.26.5.1",
+    "loop_with": "pe3",
+    "topology": "t16_pop14"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

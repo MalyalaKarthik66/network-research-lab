@@ -1,0 +1,20 @@
+--- I-00010
++++ C-00065
+@@ -291,7 +291,7 @@
+ interface eth3
+  description link to coreb siteB
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 18
+  ip ospf network point-to-point
+ !
+ interface eth4
+@@ -299,8 +299,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 100
+  ip ospf network point-to-point
+-!
+-ip route 10.20.0.10/32 10.11.3.1
+ !
+ router ospf
+  ospf router-id 10.255.0.4

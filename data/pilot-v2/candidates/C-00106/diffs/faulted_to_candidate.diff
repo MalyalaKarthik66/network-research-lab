@@ -1,0 +1,21 @@
+--- I-00015
++++ C-00106
+@@ -39,7 +39,7 @@
+ interface eth1
+  description link to edgea siteA
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 12
+  ip ospf network point-to-point
+ !
+ interface eth2
+@@ -219,6 +219,9 @@
+ !
+ interface eth2
+  description link to corea siteA
++ ip ospf area 0.0.0.0
++ ip ospf cost 12
++ ip ospf network point-to-point
+ !
+ router ospf
+  ospf router-id 10.255.0.1

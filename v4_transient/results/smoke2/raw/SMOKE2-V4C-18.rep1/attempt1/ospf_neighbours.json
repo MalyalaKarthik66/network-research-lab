@@ -1,0 +1,238 @@
+[
+  {
+    "t_before": 1789469707.3955152,
+    "t_after": 1789469721.042867,
+    "states": {
+      "acca1": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "acca2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "accb1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "accb2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "corea": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "coreb": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "dista1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "dista2": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "distb1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "distb2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789469721.0428915,
+    "t_after": 1789469737.1788316,
+    "states": {
+      "acca1": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "acca2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "accb1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "accb2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "corea": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "coreb": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "dista1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "dista2": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "distb1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "distb2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789469737.1788545,
+    "t_after": 1789469747.663852,
+    "states": {
+      "acca1": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "acca2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "accb1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "accb2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "corea": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "coreb": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "dista1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "dista2": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "distb1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "distb2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789469747.6638777,
+    "t_after": 1789469760.3603861,
+    "states": {
+      "acca1": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "acca2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "accb1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "accb2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "corea": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "coreb": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "dista1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "dista2": [
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ],
+      "distb1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "distb2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  }
+]

@@ -1,0 +1,19 @@
+--- I-00128
++++ C-00946
+@@ -35,6 +35,7 @@
+ interface lo
+  description router-id and management
+  ip ospf area 0.0.0.0
++ ip ospf cost 1
+ !
+ interface eth1
+  description link to edgea A1
+@@ -47,8 +48,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+-!
+-ip route 10.20.0.0/24 blackhole
+ !
+ router ospf
+  ospf router-id 10.255.0.2

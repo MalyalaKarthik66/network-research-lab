@@ -1,0 +1,10 @@
+--- golden-t01_chain4
++++ I-00004
+@@ -211,6 +211,7 @@
+  ospf router-id 10.255.0.1
+  passive-interface lo
+  passive-interface eth1
++ passive-interface eth2
+ !
+ line vty
+ !

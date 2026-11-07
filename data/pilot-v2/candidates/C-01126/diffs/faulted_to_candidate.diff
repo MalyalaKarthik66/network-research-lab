@@ -1,0 +1,13 @@
+--- I-00153
++++ C-01126
+@@ -197,8 +197,8 @@
+ !
+ interface eth2
+  description link to pe1 peA1
+- ip ospf area 0.0.0.1
+- ip ospf cost 10
++ ip ospf area 0.0.0.0
++ ip ospf cost 18
+  ip ospf network point-to-point
+ !
+ interface eth3

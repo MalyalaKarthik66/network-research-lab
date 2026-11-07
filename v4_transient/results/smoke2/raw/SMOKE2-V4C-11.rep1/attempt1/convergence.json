@@ -1,0 +1,71 @@
+{
+  "status": "OK",
+  "converged": false,
+  "seconds": 1317.0,
+  "polls": 1,
+  "min_settle_s": 45,
+  "history": [
+    {
+      "t": 1312.0,
+      "route_counts": {
+        "edgea": 6,
+        "edgeb": 7,
+        "l1": 6,
+        "l2": 6,
+        "l3": 5,
+        "r1": 6,
+        "r2": 6,
+        "r3": 5
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 1,
+      "neighbor_states": {
+        "edgea": [
+          "Loading/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ],
+        "l1": [
+          "Loading/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "l2": [
+          "Full/-",
+          "Loading/-",
+          "Loading/-"
+        ],
+        "l3": [
+          "Loading/-",
+          "Full/-"
+        ],
+        "r1": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "r2": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "r3": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [
+        "edgea:Loading/-",
+        "l1:Loading/-",
+        "l2:Loading/-",
+        "l2:Loading/-",
+        "l3:Loading/-"
+      ],
+      "probe": null
+    }
+  ],
+  "error": "not converged within 180s: neighbours still transitional: ['edgea:Loading/-', 'l1:Loading/-', 'l2:Loading/-', 'l3:Loading/-']; RIB changed within the last 3 polls"
+}

@@ -1,0 +1,11 @@
+--- golden-t01_chain4
++++ I-00010
+@@ -300,6 +300,8 @@
+  ip ospf cost 100
+  ip ospf network point-to-point
+ !
++ip route 10.20.0.10/32 10.11.3.1
++!
+ router ospf
+  ospf router-id 10.255.0.4
+  passive-interface lo

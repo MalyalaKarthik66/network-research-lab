@@ -1,0 +1,17 @@
+{
+  "incident_id": "I-03",
+  "fault_id": "F03",
+  "fault_family": "iface_wrong_addr",
+  "fault_description": "wan2 eth1 renumbered off the shared /30; peer not updated",
+  "fault_params": {
+    "node": "wan2",
+    "iface": "eth1",
+    "bad": "10.0.7.2/30",
+    "good": "10.0.3.2/30",
+    "peer": "wan1",
+    "peer_iface": "eth2",
+    "peer_good": "10.0.3.1/30",
+    "peer_align": "10.0.7.1/30"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

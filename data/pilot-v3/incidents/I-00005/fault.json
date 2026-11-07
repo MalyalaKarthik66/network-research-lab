@@ -1,0 +1,8 @@
+{
+  "incident_id": "I-00005",
+  "topology": "t13_bowtie7",
+  "fault_id": null,
+  "fault_family": null,
+  "fault_description": "NONE. The v3 arm applies changes to a healthy network; there is no fault. This entry exists so the Phase 2/3 drivers have the before-state directory they expect, and it holds the golden scenario unmodified.",
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

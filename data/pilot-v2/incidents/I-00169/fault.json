@@ -1,0 +1,14 @@
+{
+  "incident_id": "I-00169",
+  "topology": "t17_metro13",
+  "fault_id": "F0009",
+  "fault_family": "static_wrong_nexthop",
+  "fault_description": "[t17_metro13] agga sends 10.20.0.0/24 to 10.27.1.1, off the shortest path",
+  "fault_params": {
+    "node": "agga",
+    "prefix": "10.20.0.0/24",
+    "nexthop": "10.27.1.1",
+    "topology": "t17_metro13"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

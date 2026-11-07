@@ -1,0 +1,15 @@
+{
+  "incident_id": "I-00180",
+  "topology": "t18_grid12",
+  "fault_id": "F0010",
+  "fault_family": "static_route_loop",
+  "fault_description": "[t18_grid12] edgeb installs 10.20.0.10/32 pointing back upstream at g5",
+  "fault_params": {
+    "node": "edgeb",
+    "prefix": "10.20.0.10/32",
+    "nexthop": "10.28.13.1",
+    "loop_with": "g5",
+    "topology": "t18_grid12"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

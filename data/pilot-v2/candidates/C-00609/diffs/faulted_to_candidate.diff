@@ -1,0 +1,20 @@
+--- I-00082
++++ C-00609
+@@ -229,6 +229,8 @@
+  ip ospf cost 200
+  ip ospf network point-to-point
+ !
++ip route 10.21.0.0/24 blackhole
++!
+ router ospf
+  ospf router-id 10.255.0.1
+  passive-interface lo
+@@ -253,7 +255,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.200.0.2/30
++    address 10.19.1.1/30
+     alias link to corea siteA
+ 
+ auto eth3

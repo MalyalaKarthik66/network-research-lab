@@ -1,0 +1,14 @@
+{
+  "incident_id": "I-00198",
+  "topology": "t20_leafspine12",
+  "fault_id": "F0008",
+  "fault_family": "static_blackhole",
+  "fault_description": "[t20_leafspine12] agga blackholes 10.20.0.0/24",
+  "fault_params": {
+    "node": "agga",
+    "prefix": "10.20.0.0/24",
+    "nexthop": "blackhole",
+    "topology": "t20_leafspine12"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

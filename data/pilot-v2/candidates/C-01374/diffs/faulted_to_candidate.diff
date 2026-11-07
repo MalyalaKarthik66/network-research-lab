@@ -1,0 +1,11 @@
+--- I-00186
++++ C-01374
+@@ -1174,7 +1174,7 @@
+ interface eth1
+  description link to x2 X3
+  ip ospf area 0.0.0.0
+- ip ospf cost 40
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ interface eth2

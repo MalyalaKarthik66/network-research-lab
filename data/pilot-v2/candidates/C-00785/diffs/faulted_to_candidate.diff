@@ -1,0 +1,38 @@
+--- I-00106
++++ C-00785
+@@ -51,7 +51,7 @@
+ interface eth3
+  description link to coreb wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 120
++ ip ospf cost 2
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -139,7 +139,7 @@
+ interface eth3
+  description link to corea wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 120
++ ip ospf cost 2
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -220,7 +220,7 @@
+ interface eth2
+  description link to corea siteA
+  ip ospf area 0.0.0.0
+- ip ospf cost 500
++ ip ospf cost 10
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -302,7 +302,7 @@
+ interface eth3
+  description link to coreb siteB
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 1
+  ip ospf network point-to-point
+ !
+ router ospf

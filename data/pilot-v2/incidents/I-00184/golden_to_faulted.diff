@@ -1,0 +1,10 @@
+--- golden-t19_dualcore16
++++ I-00184
+@@ -843,6 +843,7 @@
+  ospf router-id 10.255.0.1
+  passive-interface lo
+  passive-interface eth1
++ passive-interface eth2
+ !
+ line vty
+ !

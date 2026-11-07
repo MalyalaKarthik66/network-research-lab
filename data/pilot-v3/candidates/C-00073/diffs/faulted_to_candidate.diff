@@ -1,0 +1,20 @@
+--- I-00007
++++ C-00073
+@@ -452,7 +452,7 @@
+ interface eth2
+  description link to distb1 cB1
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 200
+  ip ospf network point-to-point
+ !
+ interface eth3
+@@ -699,7 +699,7 @@
+ interface eth1
+  description link to coreb cB1
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 200
+  ip ospf network point-to-point
+ !
+ interface eth2

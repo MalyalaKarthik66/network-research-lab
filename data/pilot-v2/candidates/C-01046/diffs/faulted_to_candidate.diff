@@ -1,0 +1,20 @@
+--- I-00142
++++ C-01046
+@@ -858,7 +858,7 @@
+ interface eth2
+  description link to acca1 accA1
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 17
+  ip ospf network point-to-point
+ !
+ interface eth3
+@@ -891,7 +891,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.200.0.2/30
++    address 10.25.1.1/30
+     alias link to acca1 accA1
+ 
+ auto eth3

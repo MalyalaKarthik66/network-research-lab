@@ -1,0 +1,11 @@
+--- I-00117
++++ C-00862
+@@ -528,7 +528,7 @@
+ interface eth2
+  description link to dista accA
+  ip ospf area 0.0.0.0
+- ip ospf cost 65535
++ ip ospf cost 16
+  ip ospf network point-to-point
+ !
+ router ospf

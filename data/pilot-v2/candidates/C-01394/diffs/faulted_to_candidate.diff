@@ -1,0 +1,19 @@
+--- I-00189
++++ C-01394
+@@ -47,8 +47,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+-!
+-ip route 10.20.0.0/24 10.29.2.1
+ !
+ router ospf
+  ospf router-id 10.255.0.3
+@@ -378,6 +376,7 @@
+ router ospf
+  ospf router-id 10.255.0.11
+  passive-interface lo
++ passive-interface eth2
+ !
+ line vty
+ !

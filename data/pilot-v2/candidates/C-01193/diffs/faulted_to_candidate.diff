@@ -1,0 +1,20 @@
+--- I-00162
++++ C-01193
+@@ -220,7 +220,7 @@
+ interface eth2
+  description link to agga accA
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 18
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -247,7 +247,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.200.0.2/30
++    address 10.27.1.1/30
+     alias link to agga accA
+ 
+ 

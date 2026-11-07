@@ -1,0 +1,10 @@
+--- I-00029
++++ C-00214
+@@ -61,6 +61,7 @@
+  ip ospf network point-to-point
+ !
+ ip route 10.20.0.0/24 10.13.1.1
++ip route 10.20.0.0/25 10.13.9.2
+ !
+ router ospf
+  ospf router-id 10.255.0.2

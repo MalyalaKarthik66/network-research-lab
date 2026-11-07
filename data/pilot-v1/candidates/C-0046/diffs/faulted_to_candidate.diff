@@ -1,0 +1,11 @@
+--- I-10
++++ C-0046
+@@ -305,8 +305,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+ !
+-ip route 10.20.0.10/32 10.0.5.1
+-!
+ router ospf
+  ospf router-id 10.255.0.6
+  passive-interface lo

@@ -1,0 +1,20 @@
+--- I-00106
++++ C-00786
+@@ -220,7 +220,7 @@
+ interface eth2
+  description link to corea siteA
+  ip ospf area 0.0.0.0
+- ip ospf cost 500
++ ip ospf cost 10
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -305,6 +305,8 @@
+  ip ospf cost 10
+  ip ospf network point-to-point
+ !
++ip route 10.21.0.10/32 10.21.5.1
++!
+ router ospf
+  ospf router-id 10.255.0.6
+  passive-interface lo

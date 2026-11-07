@@ -1,0 +1,25 @@
+== T_BEFORE
+1789464025
+== SNAP0
+10.9.0.0/30 dev v0 proto kernel scope link src 10.9.0.1 
+10.255.0.1 nhid 8 via 10.9.0.2 dev v0 proto 196 metric 20 
+== SNAP1_AFTER_BLACKHOLE
+10.9.0.0/30 dev v0 proto kernel scope link src 10.9.0.1 
+blackhole 10.255.0.1 proto 196 metric 20 
+== SNAP2_AFTER_SHUTDOWN
+10.9.0.0/30 dev v0 proto kernel scope link src 10.9.0.1 
+blackhole 10.255.0.1 proto 196 metric 20 
+== ZEBRA
+Routing entry for 10.255.0.1/32
+  Known via "static", distance 1, metric 0, best
+  Last update 00:00:06 ago
+  * unreachable (blackhole), weight 1
+
+Routing entry for 10.255.0.1/32
+  Known via "static", distance 110, metric 0
+  Last update 00:00:16 ago
+    10.9.0.2, via v0, weight 1
+
+== MONITOR
+[2026-09-15T09:20:27.968336] blackhole 10.255.0.1 proto 196 metric 20 
+== END

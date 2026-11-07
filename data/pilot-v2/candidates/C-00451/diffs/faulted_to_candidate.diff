@@ -1,0 +1,19 @@
+--- I-00061
++++ C-00451
+@@ -224,6 +224,8 @@
+  ip ospf cost 10
+  ip ospf network point-to-point
+ !
++ip route 10.21.0.0/24 blackhole
++!
+ router ospf
+  ospf router-id 10.255.0.3
+  passive-interface lo
+@@ -376,7 +378,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+- shutdown
+ !
+ router ospf
+  ospf router-id 10.255.0.1

@@ -1,0 +1,152 @@
+{
+  "pilot": "/mnt/c/Users/karth/network-research-lab/data/pilot-v3",
+  "n_checked": 8,
+  "n_ok": 8,
+  "verdict": "MODELLED",
+  "results": [
+    {
+      "candidate_id": "C-00007",
+      "topology": "t03_dual8",
+      "node": "corea",
+      "prefix": "10.255.0.5/32",
+      "parse_failures": 0,
+      "init_issues": 0,
+      "protocols_for_prefix": [
+        "static"
+      ],
+      "next_hops": [
+        "discard"
+      ],
+      "static_present": true,
+      "is_discard": true,
+      "static_selected": true,
+      "ok": true
+    },
+    {
+      "candidate_id": "C-00017",
+      "topology": "t05_ring6",
+      "node": "corea",
+      "prefix": "10.255.0.4/32",
+      "parse_failures": 0,
+      "init_issues": 0,
+      "protocols_for_prefix": [
+        "static"
+      ],
+      "next_hops": [
+        "discard"
+      ],
+      "static_present": true,
+      "is_discard": true,
+      "static_selected": true,
+      "ok": true
+    },
+    {
+      "candidate_id": "C-00027",
+      "topology": "t06_mesh6",
+      "node": "corea",
+      "prefix": "10.255.0.5/32",
+      "parse_failures": 0,
+      "init_issues": 0,
+      "protocols_for_prefix": [
+        "static"
+      ],
+      "next_hops": [
+        "discard"
+      ],
+      "static_present": true,
+      "is_discard": true,
+      "static_selected": true,
+      "ok": true
+    },
+    {
+      "candidate_id": "C-00038",
+      "topology": "t09_twin6",
+      "node": "corea",
+      "prefix": "10.255.0.4/32",
+      "parse_failures": 0,
+      "init_issues": 0,
+      "protocols_for_prefix": [
+        "static"
+      ],
+      "next_hops": [
+        "discard"
+      ],
+      "static_present": true,
+      "is_discard": true,
+      "static_selected": true,
+      "ok": true
+    },
+    {
+      "candidate_id": "C-00048",
+      "topology": "t13_bowtie7",
+      "node": "a1",
+      "prefix": "10.255.0.5/32",
+      "parse_failures": 0,
+      "init_issues": 0,
+      "protocols_for_prefix": [
+        "static"
+      ],
+      "next_hops": [
+        "discard"
+      ],
+      "static_present": true,
+      "is_discard": true,
+      "static_selected": true,
+      "ok": true
+    },
+    {
+      "candidate_id": "C-00062",
+      "topology": "t14_ladder8",
+      "node": "edgea",
+      "prefix": "10.255.0.5/32",
+      "parse_failures": 0,
+      "init_issues": 0,
+      "protocols_for_prefix": [
+        "static"
+      ],
+      "next_hops": [
+        "discard"
+      ],
+      "static_present": true,
+      "is_discard": true,
+      "static_selected": true,
+      "ok": true
+    },
+    {
+      "candidate_id": "C-00075",
+      "topology": "t15_campus12",
+      "node": "coreb",
+      "prefix": "10.255.0.9/32",
+      "parse_failures": 0,
+      "init_issues": 0,
+      "protocols_for_prefix": [
+        "static"
+      ],
+      "next_hops": [
+        "discard"
+      ],
+      "static_present": true,
+      "is_discard": true,
+      "static_selected": true,
+      "ok": true
+    },
+    {
+      "candidate_id": "C-00089",
+      "topology": "t16_pop14",
+      "node": "edgea",
+      "prefix": "10.255.0.7/32",
+      "parse_failures": 0,
+      "init_issues": 0,
+      "protocols_for_prefix": [
+        "static"
+      ],
+      "next_hops": [
+        "discard"
+      ],
+      "static_present": true,
+      "is_discard": true,
+      "static_selected": true,
+      "ok": true
+    }
+  ]
+}

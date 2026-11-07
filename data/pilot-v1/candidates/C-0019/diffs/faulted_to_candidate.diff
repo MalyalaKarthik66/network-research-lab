@@ -1,0 +1,11 @@
+--- I-04
++++ C-0019
+@@ -50,7 +50,7 @@
+ !
+ interface eth3
+  description link to coreb wan-backup
+- ip ospf area 0.0.0.0
++ ip ospf area 0.0.0.1
+  ip ospf cost 100
+  ip ospf network point-to-point
+ !

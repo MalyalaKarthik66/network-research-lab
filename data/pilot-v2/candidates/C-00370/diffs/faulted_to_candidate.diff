@@ -1,0 +1,20 @@
+--- I-00050
++++ C-00370
+@@ -300,7 +300,7 @@
+  ip ospf cost 10
+ !
+ interface eth3
+- description link to coreb siteB
++ description link to coreb siteB (partially reverted)
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+@@ -338,7 +338,7 @@
+ auto eth3
+ iface eth3
+     address 10.15.4.2/30
+-    alias link to coreb siteB
++    alias link to coreb siteB (partially reverted)
+ 
+ 
+ ===== hosta/setup.sh =====

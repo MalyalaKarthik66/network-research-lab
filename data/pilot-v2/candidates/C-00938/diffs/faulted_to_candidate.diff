@@ -1,0 +1,19 @@
+--- I-00127
++++ C-00938
+@@ -118,6 +118,7 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 20
+  ip ospf network point-to-point
++ shutdown
+ !
+ interface eth2
+  description link to mid M2
+@@ -352,7 +353,7 @@
+ interface eth2
+  description link to a1 A1
+  ip ospf area 0.0.0.0
+- ip ospf cost 65535
++ ip ospf cost 10
+  ip ospf network point-to-point
+ !
+ interface eth3

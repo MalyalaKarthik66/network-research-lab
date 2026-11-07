@@ -1,0 +1,19 @@
+{
+  "target_A_exact_T1": {
+    "status": "NO",
+    "reason": "Exact transient disruption magnitude is not identifiable from predeployment configuration and topology alone because runtime ordering, SPF scheduling, FIB installation timing, and state duration are not observable before deployment. The evidence shows that structurally similar loop-capable states can produce very different T1 values."
+  },
+  "target_B_loop_susceptibility": {
+    "status": "PARTIALLY",
+    "reason": "A structural mixed-state loop is plausibly detectable from predeployment information, but the current mechanistic models do not yet provide a strong discriminative label between V4C-04 and the five exploratory cases. The label is therefore not sufficiently validated for a new experiment or ML target."
+  },
+  "ml_readiness": {
+    "decision": "NO",
+    "reason": "The target is not stable and not identifiable enough from the current predeployment information; the real effect depends on runtime timing. The dataset is too small and too narrow to support a meaningful ML study."
+  },
+  "project_direction": {
+    "decision": "D",
+    "reason": "The current V4 target is not viable as a predictive research program. The project should stop this formulation and only continue if the research question is reformulated around structural mixed-state loop analysis with a clearer, more defensible label."
+  },
+  "runtime_experiment_now": false
+}

@@ -1,0 +1,11 @@
+--- golden-t20_leafspine12
++++ I-00200
+@@ -305,6 +305,8 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 50
+  ip ospf network point-to-point
++!
++ip route 10.20.0.10/32 10.30.11.1
+ !
+ router ospf
+  ospf router-id 10.255.0.10

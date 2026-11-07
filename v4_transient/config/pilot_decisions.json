@@ -1,0 +1,89 @@
+{
+  "schema_version": "v4-pilot-decisions-1",
+  "status": "FROZEN",
+  "decided_by": "Claude (implementer), under explicit delegation from the project owner on 2026-09-14; values determined from docs/V4-PIVOT-AND-EXPANSION-PLAN.md and docs/PILOT-PREREGISTRATION.md; no smoke-test or pilot measurement consulted",
+  "decided_utc": "2026-09-14T17:05:48Z",
+  "decisions": {
+    "D1_noise_floor": {
+      "status": "FROZEN",
+      "prereg_section": "§6",
+      "rationale": "Pre-registration §6 option (a) plus a stricter lower bound. The pooled maximum over all 10 valid no-op runs is the most conservative empirical floor available: per-topology floors rest on 2-3 runs, and mean + k*sd assumes a symmetric noise distribution that 10 zero-inflated control values cannot support. The replicate median stops one spiky replicate from making a change count as measurable. T1 only, because probe loss is a secondary, descriptive instrument (§2). Lower bound = probe interval 0.05 s (§3) / 72 carried flows (the fewest of any pilot topology, t05_ring6, a design quantity from the manifest) = one flow broken for one probe interval, applied always: without it an idempotent no-op that installs no FIB change gives a floor of exactly 0, and any single-flow microsecond artefact would count as measurable. The plan leaves the floor undefined.",
+      "floor_statistic": "max_all_noop",
+      "k_sd": null,
+      "per_change_comparator": "replicate_median",
+      "metrics": "T1_only",
+      "probe_metric": null,
+      "probe_combination": null,
+      "all_noop_zero_handling": "minimum_resolution_floor",
+      "minimum_resolution_floor": 0.0006944444444444445,
+      "probe_minimum_resolution_floor": null,
+      "minimum_resolution_floor_scope": "lower_bound_always"
+    },
+    "D2_G1_measurable": {
+      "status": "FROZEN",
+      "prereg_section": "§7",
+      "rationale": "Kill below 30 % (plan proposal kept). 30 % is the complement of the project's frozen degeneracy rule (ANALYSIS-PLAN-V3 §8: more than 70 % of values at a single value is degenerate), so it is not a new number. The denominator is all 20 population changes, so infrastructure losses cannot shrink it; a change with too few valid replicates counts as not above and is never imputed.",
+      "kill_if_share_above_floor_below": 0.3,
+      "denominator": "all_population_changes"
+    },
+    "D3_G3_repeatable": {
+      "status": "FROZEN",
+      "prereg_section": "§8",
+      "rationale": "Stricter than the plan's 0.80. A within-change share of 0.80 is ICC(1) = 0.20, 'poor' under the conventional ICC guideline (Koo & Li 2016, J Chiropr Med 15:155-163): the reliability of a 5-replicate mean would be 0.56, and of the 3-replicate means planned for the corpus (plan §43) 0.43, capping any learned model below half the change-level variance. Killing above 0.50 (ICC below 0.50) keeps reliability at least 0.83 with 5 replicates and 0.75 with 3. 'Or = 0 with G2 failing' is read literally: a deterministic transient kills only if G2 also kills, because determinism is not the same as being computable before deployment, which is what G2 tests. Zero total variance kills: a target with no variation cannot be learned or ranked.",
+      "kill_if_within_share_above": 0.5,
+      "zero_within_share_clause": "kills_only_if_G2_kills",
+      "zero_total_variance_handling": "kill"
+    },
+    "D4_G4_host_invariance": {
+      "status": "FROZEN",
+      "prereg_section": "§9",
+      "rationale": "Cannot be tested in this pilot: there is one host. Metric for the required future two-host test: median over changes of the absolute difference of change-mean T1, divided by the pooled within-change sd (scale-free). Tolerance 1.0: with no host effect, the difference of two 5-replicate means has sd sqrt(2/5) = 0.63 within-sd and a median absolute value of about 0.43 within-sd, so a host effect as large as the replicate noise itself fails. Second host: all 20 population changes. An untested G4 caps the decision at GO-WITH-FIXES: an untested gate is not a pass (so no GO) and not evidence of failure (so no automatic NO-GO). The single-host drift proxy measures drift within one host, not invariance across hosts, so it is not accepted as a substitute; it is still reported descriptively (§15).",
+      "metric": "median_abs_diff_change_mean_T1_over_pooled_within_sd",
+      "tolerance": 1.0,
+      "n_changes_on_second_host": 20,
+      "second_host_available_for_this_pilot": false,
+      "untested_handling": "cap_at_GO_WITH_FIXES",
+      "proxy_statistics": null,
+      "proxy_kill_if_abs_rho_above": null,
+      "proxy_kill_requires_p_below": null,
+      "proxy_fail_handling": null,
+      "proxy_pass_counts_as_tested": null
+    },
+    "D5_G2_analytic_reducibility": {
+      "status": "FROZEN",
+      "prereg_section": "§10",
+      "rationale": "Stricter than the plan's 0.90. Pre-existing v3 evidence (plan §22): over a non-learned baseline at R2 0.794 the learned increment was +0.054 with a CI touching 0 at n = 151, and was judged not defensible. At an analytic R2 of 0.89 the residual left for any learned model on change means is at most 0.11 before replicate noise, too small for a corpus of the planned size to establish; 0.80 leaves at least 0.20. Kill on the point estimate, on change means (removes replicate noise), using the maximum over B2-B6 (the plan's 'strongest analytic baseline'): each choice makes the kill easier, never harder. Leave-one-topology-out (4 folds) is confirmed.",
+      "unit": "change_means",
+      "aggregator": "max_over_B2_B6",
+      "named_baseline": null,
+      "cross_validation": "leave_one_topology_out",
+      "kill_if_r2_at_least": 0.8,
+      "ci_rule": "point_estimate"
+    },
+    "D6_G5_cost": {
+      "status": "FROZEN",
+      "prereg_section": "§11",
+      "rationale": "Plan proposal kept. Plan §38/§43 size the recommended corpus at 120 s per lab: 187 CPU-hours, about 23 h on 10 dedicated workers. At 180 s the same corpus needs about 280 CPU-hours, about 35 h on 10 dedicated workers, the upper edge of the 30-40 h run size the plan (§1 item 5) and the project brief treat as the expensive computation. Beyond 180 s the corpus exceeds that size. The plan justifies no stricter value.",
+      "kill_if_median_wall_s_above": 180.0
+    },
+    "D7_min_valid_replicates": {
+      "status": "FROZEN",
+      "prereg_section": "§12",
+      "rationale": "At least 4 of 5 valid replicates. This keeps 3 degrees of freedom for each change's sd and a median that one outlier cannot move, while one isolated infrastructure failure does not by itself remove a change. 5 of 5 would let lab flakiness masquerade as a scientific result; 3 of 5 gives a median of only 3 values.",
+      "min_valid_replicates_per_change": 4
+    },
+    "D8_validity_guard": {
+      "status": "FROZEN",
+      "prereg_section": "§12",
+      "rationale": "At least 90 % of the 100 population runs valid after the one retry (the stricter candidate). v3 Phase 3 lost 0 of 186 labs after retry (plan §15), so losing more than 10 % indicates a protocol or instrument problem. Losses may also concentrate in the most disruptive changes (for example NOT_SETTLED), which would bias every gate.",
+      "min_valid_population_run_share": 0.9
+    },
+    "D9_positive_control_sensitivity": {
+      "status": "FROZEN",
+      "prereg_section": "§16",
+      "rationale": "All 4 positive controls must be valid and above the D1 floor; an invalid control counts as not above (the stricter candidate). Each positive control is a hard shutdown of the highest-betweenness link, the most disruptive event in the design. An instrument that misses it on any topology has a blind spot exactly where the study measures, and accepting 3 of 4 would tolerate that blind spot.",
+      "min_positive_controls_above_floor": 4,
+      "invalid_positive_control_handling": "counts_as_not_above"
+    }
+  }
+}

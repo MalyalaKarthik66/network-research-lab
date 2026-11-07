@@ -1,0 +1,12 @@
+--- I-00065
++++ C-00479
+@@ -373,6 +373,9 @@
+ !
+ interface eth2
+  description link to agga siteA
++ ip ospf area 0.0.0.0
++ ip ospf cost 19
++ ip ospf network point-to-point
+ !
+ router ospf
+  ospf router-id 10.255.0.1

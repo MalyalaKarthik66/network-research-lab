@@ -1,0 +1,18 @@
+--- I-00001
++++ C-00005
+@@ -128,6 +128,7 @@
+ router ospf
+  ospf router-id 10.255.0.3
+  passive-interface lo
++ passive-interface eth1
+ !
+ line vty
+ !
+@@ -200,7 +201,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+- shutdown
+ !
+ interface eth3
+  description link to edgeb wan-backup

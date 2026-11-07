@@ -1,0 +1,22 @@
+{
+  "incident_id": "I-00006",
+  "topology": "t01_chain4",
+  "fault_id": "F0006",
+  "fault_family": "ospf_cost_inversion",
+  "fault_description": "[t01_chain4] edgea eth2 cost 10 -> 500",
+  "fault_params": {
+    "pairs": [
+      [
+        "edgea",
+        "eth2"
+      ]
+    ],
+    "node": "edgea",
+    "iface": "eth2",
+    "bad_cost": 500,
+    "good_cost": 10,
+    "link": "siteA",
+    "topology": "t01_chain4"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

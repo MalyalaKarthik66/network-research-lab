@@ -1,0 +1,11 @@
+--- golden-t05_ring6
++++ I-00043
+@@ -219,7 +219,7 @@
+ !
+ interface eth2
+  description link to corea siteA
+- ip ospf area 0.0.0.0
++ ip ospf area 0.0.0.1
+  ip ospf cost 10
+  ip ospf network point-to-point
+ !

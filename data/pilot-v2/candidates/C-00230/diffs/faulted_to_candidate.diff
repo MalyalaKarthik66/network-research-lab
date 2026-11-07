@@ -1,0 +1,19 @@
+--- I-00031
++++ C-00230
+@@ -227,7 +227,6 @@
+ router ospf
+  ospf router-id 10.255.0.1
+  passive-interface lo
+- passive-interface eth1
+ !
+ line vty
+ !
+@@ -309,8 +308,6 @@
+ router ospf
+  ospf router-id 10.255.0.5
+  passive-interface lo
+- passive-interface eth1
+- passive-interface eth2
+ !
+ line vty
+ !

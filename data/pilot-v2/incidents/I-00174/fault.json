@@ -1,0 +1,17 @@
+{
+  "incident_id": "I-00174",
+  "topology": "t18_grid12",
+  "fault_id": "F0004",
+  "fault_family": "ospf_passive_transit",
+  "fault_description": "[t18_grid12] edgea eth2 marked passive (accA)",
+  "fault_params": {
+    "node": "edgea",
+    "iface": "eth2",
+    "peer": "g1",
+    "peer_iface": "eth1",
+    "link": "accA",
+    "good_cost": 10,
+    "topology": "t18_grid12"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

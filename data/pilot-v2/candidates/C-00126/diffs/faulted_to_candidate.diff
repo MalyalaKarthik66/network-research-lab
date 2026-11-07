@@ -1,0 +1,15 @@
+--- I-00018
++++ C-00126
+@@ -50,11 +50,9 @@
+ !
+ interface eth3
+  description link to coreb wan-backup
+- ip ospf area 0.0.0.0
++ ip ospf area 0.0.0.9
+  ip ospf cost 100
+  ip ospf network point-to-point
+-!
+-ip route 10.20.0.0/24 blackhole
+ !
+ router ospf
+  ospf router-id 10.255.0.2

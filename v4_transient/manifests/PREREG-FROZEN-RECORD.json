@@ -1,0 +1,26 @@
+{
+  "frozen_utc": "2026-09-15T12:12:45Z",
+  "prereg_file": "docs/PILOT-PREREGISTRATION.md",
+  "prereg_sha256": "b434c524323df4330ae3194c7c4cda6874f6bb629c8642fb36853f783234eb0a",
+  "decisions_file": "config/pilot_decisions.json",
+  "decisions_sha256": "579b0338f4275abb334b0ad6b2007b57edeb83c54c109619138f54f36f007cba",
+  "approval_file": "manifests/PREREG-APPROVAL.json",
+  "approval_sha256": "760f76782393bf52515e0679d1fa3fefc8dedd407474d02176593447a1673971",
+  "history": {
+    "draft_sha256_before_validated_smoke": "2090aa2f758083fe66891245708e4a99d4e8d7015b7053edcbf21a6a1cac1111",
+    "draft_sha256_after_section_20": "a07c770a40f507b964c7b9883584570505bc0f426284025a097ff031e58a3179",
+    "draft_record": "manifests/PREREG-DRAFT-RECORD.json (unchanged)"
+  },
+  "derivations": {
+    "D1_minimum_resolution_floor": {
+      "formula": "PROBE_INTERVAL_S / min over pilot population topologies of analytic carried-flow count",
+      "probe_interval_s": 0.05,
+      "min_carried_flows": 72,
+      "topology": "t05_ring6",
+      "value": 0.0006944444444444445
+    }
+  },
+  "smoke_evidence_snapshot_sha256": "ea689ce440c3188fb3eedf9ad7305d9996e979cf867f968ba9ccfde3ada3390a",
+  "pilot_results_exist_at_freeze": false,
+  "note": "D1-D9 frozen before any pilot run; no smoke-test or pilot outcome consulted. The pilot runner is approved but starts only with an explicit --confirm-pilot command."
+}

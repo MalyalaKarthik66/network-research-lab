@@ -1,0 +1,11 @@
+--- golden-t10_deep9
++++ I-00092
+@@ -401,7 +401,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.20.1.1/30
++    address 10.200.0.2/30
+     alias link to agga siteA
+ 
+ 

@@ -1,0 +1,19 @@
+--- I-00092
++++ C-00682
+@@ -299,6 +299,7 @@
+ router ospf
+  ospf router-id 10.255.0.6
+  passive-interface lo
++ passive-interface eth3
+ !
+ line vty
+ !
+@@ -401,7 +402,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.200.0.2/30
++    address 10.20.1.1/30
+     alias link to agga siteA
+ 
+ 

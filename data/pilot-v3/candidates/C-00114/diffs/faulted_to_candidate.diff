@@ -1,0 +1,20 @@
+--- I-00010
++++ C-00114
+@@ -44,7 +44,7 @@
+ interface eth2
+  description link to g1 accA
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 200
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -215,7 +215,7 @@
+ interface eth1
+  description link to edgea accA
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 200
+  ip ospf network point-to-point
+ !
+ interface eth2

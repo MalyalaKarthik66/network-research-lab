@@ -1,0 +1,1201 @@
+{
+  "features_live": [
+    "chg_lines_removed",
+    "chg_lines_changed_total",
+    "chg_devices_touched",
+    "chg_touches_ospf",
+    "chg_touches_static",
+    "chg_touches_cost",
+    "cov_spec_fraction_of_oracle",
+    "cov_changed_devices_on_spec_path",
+    "cov_changed_devices_fraction_of_network",
+    "cov_change_touches_off_spec_path_device",
+    "cov_spec_covers_changed_devices",
+    "g_n_routers",
+    "g_n_edges_before",
+    "g_n_edges_after",
+    "g_min_degree_after",
+    "g_touched_max_degree",
+    "g_touched_mean_degree",
+    "g_touched_max_betweenness",
+    "g_touched_sum_betweenness",
+    "g_touched_max_eigenvector",
+    "g_touched_on_spec_path",
+    "g_touched_hops_to_spec_path",
+    "g_n_bridges_before",
+    "g_n_bridges_after",
+    "g_touched_incident_to_bridge",
+    "g_spl_ingress_egress_before",
+    "g_spl_ingress_egress_after",
+    "g_d_spl_ingress_egress",
+    "g_n_shortest_paths_after",
+    "g_d_n_shortest_paths",
+    "g_weighted_diameter_before",
+    "g_weighted_diameter_after",
+    "undefined_reference_rows",
+    "nodes_parsed",
+    "interfaces_total",
+    "interfaces_active",
+    "ip_owner_rows",
+    "layer3_edge_rows",
+    "route_rows",
+    "ospf_session_rows",
+    "ospf_sessions_established",
+    "verdict_P06",
+    "verdict_P11"
+  ],
+  "stop_fix": {
+    "spec_disagreement": 0.0,
+    "mae_pred_vs_measured": 1.968211920529911e-05,
+    "mode_share": 0.09271523178807947
+  },
+  "leak": {
+    "banned_in_live": [],
+    "max_r2_with_predicted_severity": 0.7774136204269153,
+    "top": [
+      [
+        "verdict_P06",
+        0.7773981029331379,
+        0.7774136204269153
+      ],
+      [
+        "chg_touches_static",
+        0.31614756003386624,
+        0.3161482706575214
+      ],
+      [
+        "chg_touches_ospf",
+        0.31614756003386624,
+        0.3161482706575214
+      ],
+      [
+        "chg_touches_cost",
+        0.31614756003386624,
+        0.3161482706575214
+      ],
+      [
+        "chg_lines_removed",
+        0.31614756003386624,
+        0.3161482706575214
+      ],
+      [
+        "chg_lines_changed_total",
+        0.31614756003386624,
+        0.3161482706575214
+      ],
+      [
+        "chg_devices_touched",
+        0.31614756003386624,
+        0.3161482706575214
+      ],
+      [
+        "cov_changed_devices_on_spec_path",
+        0.3002690832273133,
+        0.30026705190098
+      ],
+      [
+        "cov_changed_devices_fraction_of_network",
+        0.13816549534924455,
+        0.1381595251776233
+      ],
+      [
+        "g_touched_sum_betweenness",
+        0.10712478007970445,
+        0.10711658858628358
+      ]
+    ]
+  },
+  "loto": {
+    "per_fold": {
+      "t03_dual8": 0.758077255120478,
+      "t05_ring6": 0.9812968285678818,
+      "t06_mesh6": 0.9650398556268014,
+      "t09_twin6": 0.8204592144216533,
+      "t13_bowtie7": 0.9577385943305271,
+      "t14_ladder8": 0.6030273802830466,
+      "t15_campus12": 0.7291302331393744,
+      "t16_pop14": 0.9279034458328321,
+      "t17_metro13": 0.9648150971560199,
+      "t18_grid12": 0.7301949482024439,
+      "t19_dualcore16": 0.9372852953196383,
+      "t20_leafspine12": 0.9051750308903647
+    },
+    "per_fold_mean": 0.8566785982409217,
+    "per_fold_sd": 0.12458677929113622,
+    "pooled": 0.8478958046132115,
+    "ci": [
+      0.7758010374952924,
+      0.9189215780217762
+    ],
+    "rf_pooled": 0.8446890425897864
+  },
+  "within_blackhole": {
+    "model": 0.2810231370896884,
+    "baseline": -0.02730874715827225,
+    "gain": 0.30833188424796065
+  },
+  "within_cost": {
+    "model": 0.7263511537292764,
+    "baseline": -0.004259518497877535,
+    "gain": 0.7306106722271539
+  },
+  "assoc_in_sample": {
+    "topology": 0.011216176724337834,
+    "repair_class": 0.25615977662180645,
+    "mechanism": 0.316147560033866,
+    "repair_id": 0.6462356521881691,
+    "quantile_index": 0.17797438810989286,
+    "generation_order(linear)": 0.0003052519359111688,
+    "chg_lines_removed": 0.31614756003386624,
+    "chg_lines_changed_total": 0.31614756003386624,
+    "chg_devices_touched": 0.31614756003386624,
+    "chg_touches_ospf": 0.31614756003386624,
+    "chg_touches_static": 0.31614756003386624,
+    "chg_touches_cost": 0.31614756003386624
+  },
+  "shortcut::identity+provenance+diff-shape (plan wording)": 0.49932206864645856,
+  "shortcut::identity+provenance only": 0.4996032098437595,
+  "shortcut::chg_ only (Copilot)": 0.3129409964742934,
+  "ablation": {
+    "A": {
+      "n_feat": 11,
+      "mech_auc": 1.0,
+      "loto_r2": 0.41024960520285014,
+      "within_bh": 0.1087934943639366,
+      "within_cost": 0.17145858843372308
+    },
+    "A+": {
+      "n_feat": 32,
+      "mech_auc": 1.0,
+      "loto_r2": 0.7410936696267425,
+      "within_bh": 0.27495292775720137,
+      "within_cost": 0.6503727497419838
+    },
+    "B": {
+      "n_feat": 41,
+      "mech_auc": 1.0,
+      "loto_r2": 0.7436116515807091,
+      "within_bh": 0.2810231370896884,
+      "within_cost": 0.6637694910881858
+    },
+    "C": {
+      "n_feat": 43,
+      "mech_auc": 1.0,
+      "loto_r2": 0.8478958046132115,
+      "within_bh": 0.2810231370896884,
+      "within_cost": 0.7263511537292764
+    }
+  },
+  "mechanism_only_r2": 0.31284787226417177,
+  "lomo_cost_to_blackhole": {
+    "r2": -5.268603383595966,
+    "mae": 0.054833499201931056
+  },
+  "lomo_blackhole_to_cost": {
+    "r2": -0.8991719026804936,
+    "mae": 0.15856201244690848
+  },
+  "grouped4": 0.79704720320869,
+  "random_cv_gap": -0.013256651197542269,
+  "frozen_calibrator_on_continuous_y": "ValueError: Unknown label type: continuous. Maybe you are trying to fit a classifier, which expects di",
+  "copilot_nested_rerun": {
+    "calibration_slope": 0.6907764961892648,
+    "calibration_intercept": 0.021026519562976905,
+    "bins_passing": 0,
+    "calibrators_selected": {
+      "platt": 0,
+      "beta": 5
+    },
+    "raw_test_log_loss": 0.3013690356235243,
+    "calibrated_test_log_loss": 0.31080079983263487
+  },
+  "frozen_port_per_fold_flows": [
+    {
+      "fold": 0,
+      "test": [
+        "t17_metro13",
+        "t18_grid12",
+        "t20_leafspine12"
+      ],
+      "cal_topos": [
+        "t06_mesh6",
+        "t09_twin6",
+        "t16_pop14"
+      ],
+      "n_fit": 78,
+      "n_cal": 33,
+      "n_test": 40,
+      "chosen": "beta",
+      "ll_platt": 0.3282581683990313,
+      "ll_beta": 0.32436941030263083,
+      "r2_raw": 0.3610106220402719,
+      "r2_cal": 0.32622008729237095,
+      "slope": 0.8347910263500328,
+      "intercept": -0.024085185252243155
+    },
+    {
+      "fold": 1,
+      "test": [
+        "t03_dual8",
+        "t05_ring6",
+        "t06_mesh6"
+      ],
+      "cal_topos": [
+        "t13_bowtie7",
+        "t14_ladder8",
+        "t20_leafspine12"
+      ],
+      "n_fit": 82,
+      "n_cal": 37,
+      "n_test": 32,
+      "chosen": "beta",
+      "ll_platt": 0.3221901891572272,
+      "ll_beta": 0.31345694548625397,
+      "r2_raw": 0.4335688263173334,
+      "r2_cal": 0.560242124022996,
+      "slope": 1.0481752491719485,
+      "intercept": -0.05355114890644102
+    },
+    {
+      "fold": 2,
+      "test": [
+        "t09_twin6",
+        "t16_pop14"
+      ],
+      "cal_topos": [
+        "t05_ring6",
+        "t13_bowtie7",
+        "t20_leafspine12"
+      ],
+      "n_fit": 94,
+      "n_cal": 34,
+      "n_test": 23,
+      "chosen": "beta",
+      "ll_platt": 0.3344819800702065,
+      "ll_beta": 0.3087709161026235,
+      "r2_raw": 0.24448334475521616,
+      "r2_cal": 0.2449083644089768,
+      "slope": 2.0370071258068476,
+      "intercept": -0.038875556245921296
+    },
+    {
+      "fold": 3,
+      "test": [
+        "t13_bowtie7",
+        "t15_campus12"
+      ],
+      "cal_topos": [
+        "t05_ring6",
+        "t09_twin6",
+        "t20_leafspine12"
+      ],
+      "n_fit": 91,
+      "n_cal": 33,
+      "n_test": 27,
+      "chosen": "beta",
+      "ll_platt": 0.33537143736470587,
+      "ll_beta": 0.3046855422819126,
+      "r2_raw": 0.6371816647237654,
+      "r2_cal": 0.6100403880032687,
+      "slope": 1.0681226985813974,
+      "intercept": -0.003676986772918916
+    },
+    {
+      "fold": 4,
+      "test": [
+        "t14_ladder8",
+        "t19_dualcore16"
+      ],
+      "cal_topos": [
+        "t06_mesh6",
+        "t15_campus12",
+        "t17_metro13"
+      ],
+      "n_fit": 84,
+      "n_cal": 38,
+      "n_test": 29,
+      "chosen": "beta",
+      "ll_platt": 0.33689212856413714,
+      "ll_beta": 0.31558963709624116,
+      "r2_raw": 0.5304273148871324,
+      "r2_cal": 0.5586430818833727,
+      "slope": 1.0704208176469538,
+      "intercept": 0.013155081521460537
+    }
+  ],
+  "frozen_port_per_fold_candidate": [
+    {
+      "fold": 0,
+      "test": [
+        "t17_metro13",
+        "t18_grid12",
+        "t20_leafspine12"
+      ],
+      "cal_topos": [
+        "t06_mesh6",
+        "t09_twin6",
+        "t16_pop14"
+      ],
+      "n_fit": 78,
+      "n_cal": 33,
+      "n_test": 40,
+      "chosen": "beta",
+      "ll_platt": 0.3135797166126055,
+      "ll_beta": 0.31043053632230483,
+      "r2_raw": 0.3610106220402719,
+      "r2_cal": 0.3547653821708896,
+      "slope": 1.0056665634572637,
+      "intercept": -0.05232374409399821
+    },
+    {
+      "fold": 1,
+      "test": [
+        "t03_dual8",
+        "t05_ring6",
+        "t06_mesh6"
+      ],
+      "cal_topos": [
+        "t13_bowtie7",
+        "t14_ladder8",
+        "t20_leafspine12"
+      ],
+      "n_fit": 82,
+      "n_cal": 37,
+      "n_test": 32,
+      "chosen": "beta",
+      "ll_platt": 0.3301756325064603,
+      "ll_beta": 0.3222301854195865,
+      "r2_raw": 0.4335688263173334,
+      "r2_cal": 0.5232937902234431,
+      "slope": 1.0060099953637707,
+      "intercept": -0.0534815977483482
+    },
+    {
+      "fold": 2,
+      "test": [
+        "t09_twin6",
+        "t16_pop14"
+      ],
+      "cal_topos": [
+        "t05_ring6",
+        "t13_bowtie7",
+        "t20_leafspine12"
+      ],
+      "n_fit": 94,
+      "n_cal": 34,
+      "n_test": 23,
+      "chosen": "beta",
+      "ll_platt": 0.3269370398063518,
+      "ll_beta": 0.30696366264576314,
+      "r2_raw": 0.24448334475521616,
+      "r2_cal": 0.2609794465913877,
+      "slope": 1.8767548799581555,
+      "intercept": -0.024898462401408465
+    },
+    {
+      "fold": 3,
+      "test": [
+        "t13_bowtie7",
+        "t15_campus12"
+      ],
+      "cal_topos": [
+        "t05_ring6",
+        "t09_twin6",
+        "t20_leafspine12"
+      ],
+      "n_fit": 91,
+      "n_cal": 33,
+      "n_test": 27,
+      "chosen": "beta",
+      "ll_platt": 0.3352078907925265,
+      "ll_beta": 0.3090277316876139,
+      "r2_raw": 0.6371816647237654,
+      "r2_cal": 0.6154012325495459,
+      "slope": 0.9976412917347621,
+      "intercept": -0.009676644332348149
+    },
+    {
+      "fold": 4,
+      "test": [
+        "t14_ladder8",
+        "t19_dualcore16"
+      ],
+      "cal_topos": [
+        "t06_mesh6",
+        "t15_campus12",
+        "t17_metro13"
+      ],
+      "n_fit": 84,
+      "n_cal": 38,
+      "n_test": 29,
+      "chosen": "beta",
+      "ll_platt": 0.3269563486479029,
+      "ll_beta": 0.30421324729981974,
+      "r2_raw": 0.5304273148871324,
+      "r2_cal": 0.5609431119461679,
+      "slope": 1.0412537777695188,
+      "intercept": 0.01581820301744476
+    }
+  ],
+  "calibration": {
+    "C1 raw LOTO (primary model, uncalibrated)": {
+      "slope": 0.9666014551110385,
+      "intercept": 0.0012392247143563056,
+      "slope_ok": true,
+      "intercept_ok": true,
+      "bins_CP_predmean_in_obs": 2,
+      "bins_CP_flowweighted": 2,
+      "bins_pm05_band": 4,
+      "bins_candidate_bootstrap": 4,
+      "bins_topology_bootstrap": 4,
+      "bins": [
+        {
+          "n_cand": 38,
+          "flows": 6914,
+          "pred_mean": 0.019484016263862366,
+          "pred_mean_flow_w": 0.01945976774906821,
+          "obs_flow": 0.02357535435348568,
+          "obs_cand": 0.024633157894736843,
+          "cp_lo": 0.02012878816922351,
+          "cp_hi": 0.02743128913791767,
+          "cand_lo": 0.017180999342105267,
+          "cand_hi": 0.0326072697368421,
+          "topo_lo": 0.014886438374403819,
+          "topo_hi": 0.03369648048780488
+        },
+        {
+          "n_cand": 38,
+          "flows": 6264,
+          "pred_mean": 0.05021412670112874,
+          "pred_mean_flow_w": 0.049350830798188174,
+          "obs_flow": 0.03751596424010217,
+          "obs_cand": 0.043026210526315785,
+          "cp_lo": 0.032946878547286514,
+          "cp_hi": 0.04252186099393434,
+          "cand_lo": 0.03313797368421052,
+          "cand_hi": 0.05506622236842105,
+          "topo_lo": 0.03107531321428572,
+          "topo_hi": 0.05527725170454545
+        },
+        {
+          "n_cand": 38,
+          "flows": 6936,
+          "pred_mean": 0.09483875535574318,
+          "pred_mean_flow_w": 0.09852173426328913,
+          "obs_flow": 0.09919261822376009,
+          "obs_cand": 0.09359515789473687,
+          "cp_lo": 0.09225532497428843,
+          "cp_hi": 0.10646886812580938,
+          "cand_lo": 0.07577219276315791,
+          "cand_hi": 0.11269774078947364,
+          "topo_lo": 0.07150190921052633,
+          "topo_hi": 0.11767397208333333
+        },
+        {
+          "n_cand": 37,
+          "flows": 6624,
+          "pred_mean": 0.31658309205300766,
+          "pred_mean_flow_w": 0.3202476929895096,
+          "obs_flow": 0.31023550724637683,
+          "obs_cand": 0.30879432432432435,
+          "cp_lo": 0.2991055777667405,
+          "cp_hi": 0.32153271853808096,
+          "cand_lo": 0.271590402027027,
+          "cand_hi": 0.34418505945945943,
+          "topo_lo": 0.27825165399234697,
+          "topo_hi": 0.3460150450222469
+        }
+      ]
+    },
+    "C2 Copilot nested 5-fold, raw": {
+      "slope": 0.932758359461378,
+      "intercept": 0.00644951498359212,
+      "slope_ok": true,
+      "intercept_ok": true,
+      "bins_CP_predmean_in_obs": 0,
+      "bins_CP_flowweighted": 0,
+      "bins_pm05_band": 4,
+      "bins_candidate_bootstrap": 3,
+      "bins_topology_bootstrap": 4,
+      "bins": [
+        {
+          "n_cand": 38,
+          "flows": 6048,
+          "pred_mean": 0.015855890150495187,
+          "pred_mean_flow_w": 0.01395908437225374,
+          "obs_flow": 0.02414021164021164,
+          "obs_cand": 0.026819052631578952,
+          "cp_lo": 0.02042023699437566,
+          "cp_hi": 0.02832828030315275,
+          "cand_lo": 0.01916279736842105,
+          "cand_hi": 0.03522035789473683,
+          "topo_lo": 0.015666966283524906,
+          "topo_hi": 0.037391154878048775
+        },
+        {
+          "n_cand": 38,
+          "flows": 7540,
+          "pred_mean": 0.048308106220875544,
+          "pred_mean_flow_w": 0.046701316763052884,
+          "obs_flow": 0.03938992042440318,
+          "obs_cand": 0.042175421052631584,
+          "cp_lo": 0.03511186143815267,
+          "cp_hi": 0.04402855670075467,
+          "cand_lo": 0.03186400526315789,
+          "cand_hi": 0.055018476973684206,
+          "topo_lo": 0.03013864995210728,
+          "topo_hi": 0.055392049999999984
+        },
+        {
+          "n_cand": 38,
+          "flows": 6302,
+          "pred_mean": 0.09213761639018558,
+          "pred_mean_flow_w": 0.09363093371204183,
+          "obs_flow": 0.10107902253252936,
+          "obs_cand": 0.09186578947368422,
+          "cp_lo": 0.09374337249379754,
+          "cp_hi": 0.10878616433801011,
+          "cand_lo": 0.07371583157894736,
+          "cand_hi": 0.11068784210526317,
+          "topo_lo": 0.06576292177083334,
+          "topo_hi": 0.12405371660256405
+        },
+        {
+          "n_cand": 37,
+          "flows": 6848,
+          "pred_mean": 0.3198621959145363,
+          "pred_mean_flow_w": 0.3167955080060819,
+          "obs_flow": 0.300963785046729,
+          "obs_cand": 0.3091992432432432,
+          "cp_lo": 0.2901137952553251,
+          "cp_hi": 0.3119834797451038,
+          "cand_lo": 0.27335045135135133,
+          "cand_hi": 0.3440605918918918,
+          "topo_lo": 0.2830440798636364,
+          "topo_hi": 0.34369892833333326
+        }
+      ]
+    },
+    "C2 Copilot nested 5-fold, calibrated (flows NLL)": {
+      "slope": 0.6907765338368204,
+      "intercept": 0.02102652384000001,
+      "slope_ok": false,
+      "intercept_ok": true,
+      "bins_CP_predmean_in_obs": 0,
+      "bins_CP_flowweighted": 0,
+      "bins_pm05_band": 3,
+      "bins_candidate_bootstrap": 0,
+      "bins_topology_bootstrap": 2,
+      "bins": [
+        {
+          "n_cand": 38,
+          "flows": 6138,
+          "pred_mean": 0.04002266803835597,
+          "pred_mean_flow_w": 0.038895281878142576,
+          "obs_flow": 0.023949169110459433,
+          "obs_cand": 0.02557634210526316,
+          "cp_lo": 0.020270407679907614,
+          "cp_hi": 0.028089304357474944,
+          "cand_lo": 0.0188141052631579,
+          "cand_hi": 0.032815341447368425,
+          "topo_lo": 0.015483650446428573,
+          "topo_hi": 0.03393550589939024
+        },
+        {
+          "n_cand": 38,
+          "flows": 7362,
+          "pred_mean": 0.055740183190961724,
+          "pred_mean_flow_w": 0.055536734528155364,
+          "obs_flow": 0.03613148600923662,
+          "obs_cand": 0.04227381578947368,
+          "cp_lo": 0.0319852577576196,
+          "cp_hi": 0.04065001403825655,
+          "cand_lo": 0.03156878289473684,
+          "cand_hi": 0.0548279519736842,
+          "topo_lo": 0.030543268626482215,
+          "topo_hi": 0.055942560156249994
+        },
+        {
+          "n_cand": 38,
+          "flows": 6266,
+          "pred_mean": 0.0743921314668698,
+          "pred_mean_flow_w": 0.07539157058237782,
+          "obs_flow": 0.1048515799553144,
+          "obs_cand": 0.09295665789473684,
+          "cp_lo": 0.09737142743970457,
+          "cp_hi": 0.1127017570848671,
+          "cand_lo": 0.07550606381578948,
+          "cand_hi": 0.11229605723684209,
+          "topo_lo": 0.06943714256756757,
+          "topo_hi": 0.1251693783727134
+        },
+        {
+          "n_cand": 37,
+          "flows": 6972,
+          "pred_mean": 0.3877959347981112,
+          "pred_mean_flow_w": 0.37105783619982163,
+          "obs_flow": 0.2970453241537579,
+          "obs_cand": 0.3092541351351352,
+          "cp_lo": 0.2863341202432594,
+          "cp_hi": 0.3079264891610472,
+          "cand_lo": 0.2722508918918919,
+          "cand_hi": 0.34353154527027024,
+          "topo_lo": 0.27118226650252525,
+          "topo_hi": 0.34933099071691176
+        }
+      ]
+    },
+    "C2 Copilot nested 5-fold, calibrated (candidate NLL)": {
+      "slope": 0.7066804985649383,
+      "intercept": 0.02049832592058005,
+      "slope_ok": false,
+      "intercept_ok": true,
+      "bins_CP_predmean_in_obs": 0,
+      "bins_CP_flowweighted": 0,
+      "bins_pm05_band": 3,
+      "bins_candidate_bootstrap": 1,
+      "bins_topology_bootstrap": 2,
+      "bins": [
+        {
+          "n_cand": 38,
+          "flows": 6666,
+          "pred_mean": 0.040101780010254065,
+          "pred_mean_flow_w": 0.039873421901410896,
+          "obs_flow": 0.021902190219021903,
+          "obs_cand": 0.02183536842105263,
+          "cp_lo": 0.018523968754414446,
+          "cp_hi": 0.02570710274447723,
+          "cand_lo": 0.015776643421052634,
+          "cand_hi": 0.028023834210526323,
+          "topo_lo": 0.013650869531249998,
+          "topo_hi": 0.02840222925304878
+        },
+        {
+          "n_cand": 38,
+          "flows": 6734,
+          "pred_mean": 0.05511014167629295,
+          "pred_mean_flow_w": 0.055243154410335775,
+          "obs_flow": 0.03771903771903772,
+          "obs_cand": 0.044727499999999996,
+          "cp_lo": 0.03329563771468957,
+          "cp_hi": 0.042548256369494254,
+          "cand_lo": 0.034113390131578936,
+          "cand_hi": 0.05599871842105263,
+          "topo_lo": 0.033163851973684225,
+          "topo_hi": 0.05773248399999999
+        },
+        {
+          "n_cand": 38,
+          "flows": 6490,
+          "pred_mean": 0.07358672576045519,
+          "pred_mean_flow_w": 0.0748868192881104,
+          "obs_flow": 0.10477657935285054,
+          "obs_cand": 0.09429739473684211,
+          "cp_lo": 0.097427187210774,
+          "cp_hi": 0.11248321236809451,
+          "cand_lo": 0.07551256644736842,
+          "cand_hi": 0.11290932697368423,
+          "topo_lo": 0.07087853235294117,
+          "topo_hi": 0.12075738786231888
+        },
+        {
+          "n_cand": 37,
+          "flows": 6848,
+          "pred_mean": 0.3795789950116228,
+          "pred_mean_flow_w": 0.36806859258608604,
+          "obs_flow": 0.300963785046729,
+          "obs_cand": 0.30919924324324327,
+          "cp_lo": 0.2901137952553251,
+          "cp_hi": 0.3119834797451038,
+          "cand_lo": 0.2715598844594595,
+          "cand_hi": 0.3439924594594595,
+          "topo_lo": 0.2830440798636364,
+          "topo_hi": 0.34369892833333326
+        }
+      ]
+    },
+    "C3 frozen-port nested_cv raw (flows)": {
+      "slope": 0.9276344265171118,
+      "intercept": -0.0007558247272792128,
+      "slope_ok": true,
+      "intercept_ok": true,
+      "bins_CP_predmean_in_obs": 0,
+      "bins_CP_flowweighted": 0,
+      "bins_pm05_band": 3,
+      "bins_candidate_bootstrap": 2,
+      "bins_topology_bootstrap": 2,
+      "bins": [
+        {
+          "n_cand": 38,
+          "flows": 7200,
+          "pred_mean": 0.011863580313976463,
+          "pred_mean_flow_w": 0.008535933084549138,
+          "obs_flow": 0.04694444444444444,
+          "obs_cand": 0.04401726315789475,
+          "cp_lo": 0.04217355237700167,
+          "cp_hi": 0.05208632216228153,
+          "cand_lo": 0.03334765657894737,
+          "cand_hi": 0.05673949013157893,
+          "topo_lo": 0.033717041347826084,
+          "topo_hi": 0.054459696749999995
+        },
+        {
+          "n_cand": 38,
+          "flows": 5658,
+          "pred_mean": 0.09500290552504624,
+          "pred_mean_flow_w": 0.09538102247706966,
+          "obs_flow": 0.06733828207847296,
+          "obs_cand": 0.0704342894736842,
+          "cp_lo": 0.06094438644322514,
+          "cp_hi": 0.07418260143409126,
+          "cand_lo": 0.04903848815789474,
+          "cand_hi": 0.0976177842105263,
+          "topo_lo": 0.04772035178571429,
+          "topo_hi": 0.09938286411764699
+        },
+        {
+          "n_cand": 38,
+          "flows": 7318,
+          "pred_mean": 0.1408286709744482,
+          "pred_mean_flow_w": 0.14012555677263275,
+          "obs_flow": 0.07993987428259088,
+          "obs_cand": 0.0895043157894737,
+          "cp_lo": 0.07382621749665869,
+          "cp_hi": 0.08639055562905834,
+          "cand_lo": 0.06018310460526315,
+          "cand_hi": 0.12379299407894738,
+          "topo_lo": 0.06299406640625,
+          "topo_hi": 0.13079994207589277
+        },
+        {
+          "n_cand": 37,
+          "flows": 6562,
+          "pred_mean": 0.260351585104726,
+          "pred_mean_flow_w": 0.2574432624144089,
+          "obs_flow": 0.27994513867723253,
+          "obs_cand": 0.2649388918918919,
+          "cp_lo": 0.2691056734250158,
+          "cp_hi": 0.2909804807557181,
+          "cand_lo": 0.2157554087837838,
+          "cand_hi": 0.31187452229729723,
+          "topo_lo": 0.22407250807692308,
+          "topo_hi": 0.30612896276315793
+        }
+      ]
+    },
+    "C3 frozen-port nested_cv calibrated (flows)": {
+      "slope": 0.9024402011313121,
+      "intercept": 0.00025176947790664085,
+      "slope_ok": true,
+      "intercept_ok": true,
+      "bins_CP_predmean_in_obs": 2,
+      "bins_CP_flowweighted": 2,
+      "bins_pm05_band": 4,
+      "bins_candidate_bootstrap": 4,
+      "bins_topology_bootstrap": 4,
+      "bins": [
+        {
+          "n_cand": 38,
+          "flows": 7316,
+          "pred_mean": 0.04730983595045324,
+          "pred_mean_flow_w": 0.044973329726545073,
+          "obs_flow": 0.047156916347731004,
+          "obs_cand": 0.04494097368421053,
+          "cp_lo": 0.04241257465535921,
+          "cp_hi": 0.05226612438826698,
+          "cand_lo": 0.03457016710526316,
+          "cand_hi": 0.05734611447368419,
+          "topo_lo": 0.034065410603448275,
+          "topo_hi": 0.05675900557491289
+        },
+        {
+          "n_cand": 38,
+          "flows": 5614,
+          "pred_mean": 0.08293058821226162,
+          "pred_mean_flow_w": 0.08207937309387633,
+          "obs_flow": 0.07196294976843605,
+          "obs_cand": 0.07553605263157895,
+          "cp_lo": 0.06533765825526264,
+          "cp_hi": 0.07903713566315278,
+          "cand_lo": 0.0537505269736842,
+          "cand_hi": 0.1046754717105263,
+          "topo_lo": 0.061429563109243704,
+          "topo_hi": 0.09075358650793651
+        },
+        {
+          "n_cand": 38,
+          "flows": 7556,
+          "pred_mean": 0.11708316644109508,
+          "pred_mean_flow_w": 0.11792509521857644,
+          "obs_flow": 0.09793541556379036,
+          "obs_cand": 0.09465586842105263,
+          "cp_lo": 0.09132348594378159,
+          "cp_hi": 0.10485931947680102,
+          "cand_lo": 0.0627245217105263,
+          "cand_hi": 0.13021294342105263,
+          "topo_lo": 0.056657836783216786,
+          "topo_hi": 0.161159591
+        },
+        {
+          "n_cand": 37,
+          "flows": 6252,
+          "pred_mean": 0.2705470652896689,
+          "pred_mean_flow_w": 0.2749970879630653,
+          "obs_flow": 0.26423544465770954,
+          "obs_cand": 0.25345978378378375,
+          "cp_lo": 0.253337891536943,
+          "cp_hi": 0.27535334862120925,
+          "cand_lo": 0.2025514635135135,
+          "cand_hi": 0.302293697972973,
+          "topo_lo": 0.20696038243174927,
+          "topo_hi": 0.3121362834677417
+        }
+      ]
+    },
+    "C3 frozen-port nested_cv raw (candidate)": {
+      "slope": 0.9276344265171118,
+      "intercept": -0.0007558247272792128,
+      "slope_ok": true,
+      "intercept_ok": true,
+      "bins_CP_predmean_in_obs": 0,
+      "bins_CP_flowweighted": 0,
+      "bins_pm05_band": 3,
+      "bins_candidate_bootstrap": 2,
+      "bins_topology_bootstrap": 2,
+      "bins": [
+        {
+          "n_cand": 38,
+          "flows": 7200,
+          "pred_mean": 0.011863580313976463,
+          "pred_mean_flow_w": 0.008535933084549138,
+          "obs_flow": 0.04694444444444444,
+          "obs_cand": 0.04401726315789475,
+          "cp_lo": 0.04217355237700167,
+          "cp_hi": 0.05208632216228153,
+          "cand_lo": 0.03334765657894737,
+          "cand_hi": 0.05673949013157893,
+          "topo_lo": 0.033717041347826084,
+          "topo_hi": 0.054459696749999995
+        },
+        {
+          "n_cand": 38,
+          "flows": 5658,
+          "pred_mean": 0.09500290552504624,
+          "pred_mean_flow_w": 0.09538102247706966,
+          "obs_flow": 0.06733828207847296,
+          "obs_cand": 0.0704342894736842,
+          "cp_lo": 0.06094438644322514,
+          "cp_hi": 0.07418260143409126,
+          "cand_lo": 0.04903848815789474,
+          "cand_hi": 0.0976177842105263,
+          "topo_lo": 0.04772035178571429,
+          "topo_hi": 0.09938286411764699
+        },
+        {
+          "n_cand": 38,
+          "flows": 7318,
+          "pred_mean": 0.1408286709744482,
+          "pred_mean_flow_w": 0.14012555677263275,
+          "obs_flow": 0.07993987428259088,
+          "obs_cand": 0.0895043157894737,
+          "cp_lo": 0.07382621749665869,
+          "cp_hi": 0.08639055562905834,
+          "cand_lo": 0.06018310460526315,
+          "cand_hi": 0.12379299407894738,
+          "topo_lo": 0.06299406640625,
+          "topo_hi": 0.13079994207589277
+        },
+        {
+          "n_cand": 37,
+          "flows": 6562,
+          "pred_mean": 0.260351585104726,
+          "pred_mean_flow_w": 0.2574432624144089,
+          "obs_flow": 0.27994513867723253,
+          "obs_cand": 0.2649388918918919,
+          "cp_lo": 0.2691056734250158,
+          "cp_hi": 0.2909804807557181,
+          "cand_lo": 0.2157554087837838,
+          "cand_hi": 0.31187452229729723,
+          "topo_lo": 0.22407250807692308,
+          "topo_hi": 0.30612896276315793
+        }
+      ]
+    },
+    "C3 frozen-port nested_cv calibrated (candidate)": {
+      "slope": 0.9225547960132894,
+      "intercept": -0.005838935120755336,
+      "slope_ok": true,
+      "intercept_ok": true,
+      "bins_CP_predmean_in_obs": 1,
+      "bins_CP_flowweighted": 0,
+      "bins_pm05_band": 4,
+      "bins_candidate_bootstrap": 4,
+      "bins_topology_bootstrap": 4,
+      "bins": [
+        {
+          "n_cand": 38,
+          "flows": 7664,
+          "pred_mean": 0.047400304865720236,
+          "pred_mean_flow_w": 0.045223425898328846,
+          "obs_flow": 0.05780271398747391,
+          "obs_cand": 0.04979910526315791,
+          "cp_lo": 0.05268169897234529,
+          "cp_hi": 0.06326315206681353,
+          "cand_lo": 0.0362146625,
+          "cand_hi": 0.06519564013157894,
+          "topo_lo": 0.0323540175925926,
+          "topo_hi": 0.06281404856792144
+        },
+        {
+          "n_cand": 38,
+          "flows": 5148,
+          "pred_mean": 0.08806721327387394,
+          "pred_mean_flow_w": 0.08886330663113064,
+          "obs_flow": 0.056332556332556336,
+          "obs_cand": 0.06844318421052631,
+          "cp_lo": 0.050190232527306776,
+          "cp_hi": 0.06298373405842114,
+          "cand_lo": 0.048877959868421056,
+          "cand_hi": 0.09492941842105262,
+          "topo_lo": 0.049053637096774204,
+          "topo_hi": 0.09188151282051281
+        },
+        {
+          "n_cand": 38,
+          "flows": 7674,
+          "pred_mean": 0.12352353791782472,
+          "pred_mean_flow_w": 0.12423929770580586,
+          "obs_flow": 0.0985144644253323,
+          "obs_cand": 0.0968906052631579,
+          "cp_lo": 0.09193515545665687,
+          "cp_hi": 0.10540046860172657,
+          "cand_lo": 0.06458127236842104,
+          "cand_hi": 0.13300722631578948,
+          "topo_lo": 0.05790383347505669,
+          "topo_hi": 0.16115361015625
+        },
+        {
+          "n_cand": 37,
+          "flows": 6252,
+          "pred_mean": 0.2740706008724618,
+          "pred_mean_flow_w": 0.2755017613955372,
+          "obs_flow": 0.26423544465770954,
+          "obs_cand": 0.2534597837837838,
+          "cp_lo": 0.253337891536943,
+          "cp_hi": 0.27535334862120925,
+          "cand_lo": 0.2044498878378378,
+          "cand_hi": 0.30246050202702707,
+          "topo_lo": 0.20696038243174927,
+          "topo_hi": 0.3121362834677417
+        }
+      ]
+    },
+    "C4 LOTO-nested raw (8-topology fit)": {
+      "slope": 0.8837921028430262,
+      "intercept": 0.0033408240368377495,
+      "slope_ok": true,
+      "intercept_ok": true,
+      "bins_CP_predmean_in_obs": 1,
+      "bins_CP_flowweighted": 1,
+      "bins_pm05_band": 4,
+      "bins_candidate_bootstrap": 2,
+      "bins_topology_bootstrap": 3,
+      "bins": [
+        {
+          "n_cand": 38,
+          "flows": 6128,
+          "pred_mean": 0.021705937000299793,
+          "pred_mean_flow_w": 0.020819333110524595,
+          "obs_flow": 0.04618146214099217,
+          "obs_cand": 0.04731115789473685,
+          "cp_lo": 0.04106222313912118,
+          "cp_hi": 0.0517380377841246,
+          "cand_lo": 0.031853121710526316,
+          "cand_hi": 0.06823178289473682,
+          "topo_lo": 0.030778913164251204,
+          "topo_hi": 0.062120704761904726
+        },
+        {
+          "n_cand": 38,
+          "flows": 5692,
+          "pred_mean": 0.06815537560127376,
+          "pred_mean_flow_w": 0.06900204203136803,
+          "obs_flow": 0.06412508784258608,
+          "obs_cand": 0.06008902631578947,
+          "cp_lo": 0.057897832301120083,
+          "cp_hi": 0.07080355842415635,
+          "cand_lo": 0.043545422368421044,
+          "cand_hi": 0.07778943947368422,
+          "topo_lo": 0.042937979163763074,
+          "topo_hi": 0.08424454845430102
+        },
+        {
+          "n_cand": 38,
+          "flows": 7354,
+          "pred_mean": 0.13015755737606907,
+          "pred_mean_flow_w": 0.1289781142543916,
+          "obs_flow": 0.08172423171063367,
+          "obs_cand": 0.08930684210526316,
+          "cp_lo": 0.07556189099271346,
+          "cp_hi": 0.08822046384026337,
+          "cand_lo": 0.061178782894736834,
+          "cand_hi": 0.12385710065789475,
+          "topo_lo": 0.05226396627906976,
+          "topo_hi": 0.1409070453947368
+        },
+        {
+          "n_cand": 37,
+          "flows": 7564,
+          "pred_mean": 0.29539360659845865,
+          "pred_mean_flow_w": 0.2824870909684761,
+          "obs_flow": 0.25013220518244317,
+          "obs_cand": 0.27238364864864867,
+          "cp_lo": 0.24040386612360698,
+          "cp_hi": 0.2600534400467735,
+          "cand_lo": 0.22461463175675672,
+          "cand_hi": 0.3173957905405405,
+          "topo_lo": 0.21043991800000003,
+          "topo_hi": 0.3433742932692308
+        }
+      ]
+    },
+    "C4 LOTO-nested calibrated": {
+      "slope": 0.8190969084751768,
+      "intercept": 0.0251300221632176,
+      "slope_ok": true,
+      "intercept_ok": true,
+      "bins_CP_predmean_in_obs": 1,
+      "bins_CP_flowweighted": 2,
+      "bins_pm05_band": 4,
+      "bins_candidate_bootstrap": 3,
+      "bins_topology_bootstrap": 3,
+      "bins": [
+        {
+          "n_cand": 38,
+          "flows": 6360,
+          "pred_mean": 0.027825590504918847,
+          "pred_mean_flow_w": 0.02559741831182269,
+          "obs_flow": 0.057232704402515724,
+          "obs_cand": 0.05125923684210527,
+          "cp_lo": 0.05164940829915003,
+          "cp_hi": 0.0632262035471295,
+          "cand_lo": 0.03966366776315789,
+          "cand_hi": 0.06501300065789473,
+          "topo_lo": 0.03907603695652174,
+          "topo_hi": 0.061601586956521744
+        },
+        {
+          "n_cand": 38,
+          "flows": 6456,
+          "pred_mean": 0.0504905097627337,
+          "pred_mean_flow_w": 0.04988274026719491,
+          "obs_flow": 0.047862453531598514,
+          "obs_cand": 0.057571500000000005,
+          "cp_lo": 0.04278297736491103,
+          "cp_hi": 0.05335516891846828,
+          "cand_lo": 0.038267141447368425,
+          "cand_hi": 0.0817211019736842,
+          "topo_lo": 0.035575404852941174,
+          "topo_hi": 0.08203284699812383
+        },
+        {
+          "n_cand": 38,
+          "flows": 7214,
+          "pred_mean": 0.08108082132373419,
+          "pred_mean_flow_w": 0.08338555871469872,
+          "obs_flow": 0.09232048794011644,
+          "obs_cand": 0.08400386842105263,
+          "cp_lo": 0.08573692260934979,
+          "cp_hi": 0.09923559321776923,
+          "cand_lo": 0.0580135125,
+          "cand_hi": 0.11260488749999999,
+          "topo_lo": 0.05744563514150944,
+          "topo_hi": 0.13131712307692303
+        },
+        {
+          "n_cand": 37,
+          "flows": 6708,
+          "pred_mean": 0.29026993634562237,
+          "pred_mean_flow_w": 0.27146315098127083,
+          "obs_flow": 0.26863446630888493,
+          "obs_cand": 0.27636072972972975,
+          "cp_lo": 0.25805515454636296,
+          "cp_hi": 0.2794152447602379,
+          "cand_lo": 0.22537778243243242,
+          "cand_hi": 0.32116139054054055,
+          "topo_lo": 0.2436773276190476,
+          "topo_hi": 0.31379635564516123
+        }
+      ]
+    },
+    "C0 analytic oracle predicted_severity": {
+      "slope": 1.0000368089925773,
+      "intercept": -1.8814384371901118e-06,
+      "slope_ok": true,
+      "intercept_ok": true,
+      "bins_CP_predmean_in_obs": 4,
+      "bins_CP_flowweighted": 4,
+      "bins_pm05_band": 4,
+      "bins_candidate_bootstrap": 4,
+      "bins_topology_bootstrap": 4,
+      "bins": [
+        {
+          "n_cand": 38,
+          "flows": 6708,
+          "pred_mean": 0.008971052631578947,
+          "pred_mean_flow_w": 0.009244305307096004,
+          "obs_flow": 0.009242695289206918,
+          "obs_cand": 0.008970026315789475,
+          "cp_lo": 0.007093455491043003,
+          "cp_hi": 0.011833258200512219,
+          "cand_lo": 0.0065132572368421056,
+          "cand_hi": 0.01156607039473684,
+          "topo_lo": 0.007035635953947368,
+          "topo_hi": 0.011069883937740692
+        },
+        {
+          "n_cand": 38,
+          "flows": 7056,
+          "pred_mean": 0.03873157894736843,
+          "pred_mean_flow_w": 0.03840796485260771,
+          "obs_flow": 0.03840702947845805,
+          "obs_cand": 0.038724921052631575,
+          "cp_lo": 0.034043781374169135,
+          "cp_hi": 0.04315675061837045,
+          "cand_lo": 0.03562649802631579,
+          "cand_hi": 0.04197987631578947,
+          "topo_lo": 0.037283803986866794,
+          "topo_hi": 0.040009450714285716
+        },
+        {
+          "n_cand": 38,
+          "flows": 6018,
+          "pred_mean": 0.09709210526315791,
+          "pred_mean_flow_w": 0.10052505815885676,
+          "obs_flow": 0.10053173811897641,
+          "obs_cand": 0.09710057894736841,
+          "cp_lo": 0.0930461955048771,
+          "cp_hi": 0.1084069717921495,
+          "cand_lo": 0.0890978144736842,
+          "cand_hi": 0.10584583289473684,
+          "topo_lo": 0.09035005536184211,
+          "topo_hi": 0.10347122183982685
+        },
+        {
+          "n_cand": 37,
+          "flows": 6956,
+          "pred_mean": 0.3256891891891892,
+          "pred_mean_flow_w": 0.316699166187464,
+          "obs_flow": 0.31670500287521564,
+          "obs_cand": 0.3256981621621622,
+          "cp_lo": 0.30577980351069156,
+          "cp_hi": 0.3277840303988861,
+          "cand_lo": 0.2988505851351352,
+          "cand_hi": 0.352120852027027,
+          "topo_lo": 0.3065514464583334,
+          "topo_hi": 0.3484775268518518
+        }
+      ]
+    }
+  }
+}

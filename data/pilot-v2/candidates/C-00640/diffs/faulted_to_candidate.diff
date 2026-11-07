@@ -1,0 +1,19 @@
+--- I-00087
++++ C-00640
+@@ -211,6 +211,7 @@
+ interface lo
+  description router-id and management
+  ip ospf area 0.0.0.0
++ ip ospf cost 1
+ !
+ interface eth1
+  description link to hosta siteA-lan
+@@ -220,7 +221,7 @@
+ interface eth2
+  description link to corea siteA
+  ip ospf area 0.0.0.0
+- ip ospf cost 65535
++ ip ospf cost 10
+  ip ospf network point-to-point
+ !
+ interface eth3

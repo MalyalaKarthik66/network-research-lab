@@ -1,0 +1,7 @@
+# V4 transient pilot. Small engineering evidence (smoke raw runs and their monitor/probe .log files) is TRACKED so
+# the instrument validation is auditable; the root rule '*.log' is overridden inside v4_transient.
+!*.log
+__pycache__/
+# the 20x5 pilot's bulk per-run evidence follows the v3 rule (hash-manifested, not in Git)
+results/pilot/raw/
+manifests/.*.candidate.json

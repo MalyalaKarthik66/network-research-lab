@@ -1,0 +1,11 @@
+--- I-00188
++++ C-01389
+@@ -366,7 +366,7 @@
+ interface eth2
+  description link to edgeb accB
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ interface eth3

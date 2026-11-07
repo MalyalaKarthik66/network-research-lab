@@ -1,0 +1,631 @@
+{
+  "summary": {
+    "checks": 89,
+    "passed": 89,
+    "failed": [],
+    "interpretation": "ENGINEERING VALIDATION ONLY -- smoke numbers are not evidence for any pilot gate"
+  },
+  "results": [
+    {
+      "group": "batfish",
+      "check": "Batfish check verdict OK",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "group": "batfish",
+      "check": "every smoke change admitted by the runner's Batfish gate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "batfish",
+      "check": "gate refuses a population change whose SPEC verdict is FAIL",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "ids",
+      "check": "run ids unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "ids",
+      "check": "every run references a manifest change",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "ids",
+      "check": "artifact lock digest == manifest digest == recomputed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "ids",
+      "check": "every locked artifact file matches its hash on disk",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "group": "ids",
+      "check": "SMOKE-V4C-01.rep1: has at least one attempt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "ids",
+      "check": "SMOKE-V4C-01.rep1: run.json links run_id/change_id/replicate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "ids",
+      "check": "SMOKE-V4C-01.rep1: code digest at run time equals current code",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "deploy",
+      "check": "SMOKE-V4C-01.rep1: non-root containerlab deploy OK",
+      "pass": true,
+      "detail": " command node=hostb command=\"sh /etc/nrl/setup.sh\" stdout=\"\"\n19:02:03 INFO Adding host entries path=/etc/hosts\n19:02:03 INFO Adding SSH config for nodes path=/etc/ssh/ssh_config.d/clab-nrlv4-t05.conf\n"
+    },
+    {
+      "group": "deploy",
+      "check": "SMOKE-V4C-01.rep1: converged before change",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "deploy",
+      "check": "SMOKE-V4C-01.rep1: push statuses OK",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "deploy",
+      "check": "SMOKE-V4C-01.rep1: teardown OK",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "deploy",
+      "check": "SMOKE-V4C-01.rep1: final status OK",
+      "pass": true,
+      "detail": [
+        "OK",
+        null
+      ]
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-01.rep1: initial FIB snapshot for every router",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-01.rep1: FIB monitor log file for every router",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-01.rep1: FIB monitor captured events (timestamped lines)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-01.rep1: 6 probe logs with replies",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-01.rep1: OSPF neighbour poller samples",
+      "pass": true,
+      "detail": 17
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-01.rep1: final FIB snapshot + full state capture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-01.rep1: container clock is UTC",
+      "pass": true,
+      "detail": "Mon Sep 14 13:33:11 UTC 2026"
+    },
+    {
+      "group": "timeseries",
+      "check": "SMOKE-V4C-01.rep1: time series csv with required columns and >= 2 rows",
+      "pass": true,
+      "detail": [
+        23,
+        [
+          "broken_excess",
+          "broken_or_undet_excess",
+          "broken_total",
+          "detour",
+          "rerouted_vs_golden",
+          "t_rel",
+          "undetermined"
+        ]
+      ]
+    },
+    {
+      "group": "targets",
+      "check": "SMOKE-V4C-01.rep1: T1/T2/T3/T1_upper computed as numbers",
+      "pass": true,
+      "detail": "OK"
+    },
+    {
+      "group": "targets",
+      "check": "SMOKE-V4C-01.rep1: all run-validity checks pass (\u00a712)",
+      "pass": true,
+      "detail": {
+        "pre_change_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "post_running_config_ok": true,
+        "settled": true
+      }
+    },
+    {
+      "group": "ids",
+      "check": "SMOKE-V4C-01.rep2: has at least one attempt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "ids",
+      "check": "SMOKE-V4C-01.rep2: run.json links run_id/change_id/replicate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "ids",
+      "check": "SMOKE-V4C-01.rep2: code digest at run time equals current code",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "deploy",
+      "check": "SMOKE-V4C-01.rep2: non-root containerlab deploy OK",
+      "pass": true,
+      "detail": "l/apply-interfaces.sh\"\n  stdout=\n  \u2502 nrl: addresses applied\n\n19:04:12 INFO Adding host entries path=/etc/hosts\n19:04:12 INFO Adding SSH config for nodes path=/etc/ssh/ssh_config.d/clab-nrlv4-t05.conf\n"
+    },
+    {
+      "group": "deploy",
+      "check": "SMOKE-V4C-01.rep2: converged before change",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "deploy",
+      "check": "SMOKE-V4C-01.rep2: push statuses OK",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "deploy",
+      "check": "SMOKE-V4C-01.rep2: teardown OK",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "deploy",
+      "check": "SMOKE-V4C-01.rep2: final status OK",
+      "pass": true,
+      "detail": [
+        "OK",
+        null
+      ]
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-01.rep2: initial FIB snapshot for every router",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-01.rep2: FIB monitor log file for every router",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-01.rep2: FIB monitor captured events (timestamped lines)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-01.rep2: 6 probe logs with replies",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-01.rep2: OSPF neighbour poller samples",
+      "pass": true,
+      "detail": 16
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-01.rep2: final FIB snapshot + full state capture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-01.rep2: container clock is UTC",
+      "pass": true,
+      "detail": "Mon Sep 14 13:35:01 UTC 2026"
+    },
+    {
+      "group": "timeseries",
+      "check": "SMOKE-V4C-01.rep2: time series csv with required columns and >= 2 rows",
+      "pass": true,
+      "detail": [
+        23,
+        [
+          "broken_excess",
+          "broken_or_undet_excess",
+          "broken_total",
+          "detour",
+          "rerouted_vs_golden",
+          "t_rel",
+          "undetermined"
+        ]
+      ]
+    },
+    {
+      "group": "targets",
+      "check": "SMOKE-V4C-01.rep2: T1/T2/T3/T1_upper computed as numbers",
+      "pass": true,
+      "detail": "OK"
+    },
+    {
+      "group": "targets",
+      "check": "SMOKE-V4C-01.rep2: all run-validity checks pass (\u00a712)",
+      "pass": true,
+      "detail": {
+        "pre_change_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "post_running_config_ok": true,
+        "settled": true
+      }
+    },
+    {
+      "group": "ids",
+      "check": "SMOKE-V4C-03.rep1: has at least one attempt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "ids",
+      "check": "SMOKE-V4C-03.rep1: run.json links run_id/change_id/replicate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "ids",
+      "check": "SMOKE-V4C-03.rep1: code digest at run time equals current code",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "deploy",
+      "check": "SMOKE-V4C-03.rep1: non-root containerlab deploy OK",
+      "pass": true,
+      "detail": "l/apply-interfaces.sh\"\n  stdout=\n  \u2502 nrl: addresses applied\n\n19:05:55 INFO Adding host entries path=/etc/hosts\n19:05:55 INFO Adding SSH config for nodes path=/etc/ssh/ssh_config.d/clab-nrlv4-t05.conf\n"
+    },
+    {
+      "group": "deploy",
+      "check": "SMOKE-V4C-03.rep1: converged before change",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "deploy",
+      "check": "SMOKE-V4C-03.rep1: push statuses OK",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "deploy",
+      "check": "SMOKE-V4C-03.rep1: teardown OK",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "deploy",
+      "check": "SMOKE-V4C-03.rep1: final status OK",
+      "pass": true,
+      "detail": [
+        "OK",
+        null
+      ]
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-03.rep1: initial FIB snapshot for every router",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-03.rep1: FIB monitor log file for every router",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-03.rep1: FIB monitor captured events (timestamped lines)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-03.rep1: 6 probe logs with replies",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-03.rep1: OSPF neighbour poller samples",
+      "pass": true,
+      "detail": 17
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-03.rep1: final FIB snapshot + full state capture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-03.rep1: container clock is UTC",
+      "pass": true,
+      "detail": "Mon Sep 14 13:36:43 UTC 2026"
+    },
+    {
+      "group": "timeseries",
+      "check": "SMOKE-V4C-03.rep1: time series csv with required columns and >= 2 rows",
+      "pass": true,
+      "detail": [
+        34,
+        [
+          "broken_excess",
+          "broken_or_undet_excess",
+          "broken_total",
+          "detour",
+          "rerouted_vs_golden",
+          "t_rel",
+          "undetermined"
+        ]
+      ]
+    },
+    {
+      "group": "targets",
+      "check": "SMOKE-V4C-03.rep1: T1/T2/T3/T1_upper computed as numbers",
+      "pass": true,
+      "detail": "OK"
+    },
+    {
+      "group": "targets",
+      "check": "SMOKE-V4C-03.rep1: all run-validity checks pass (\u00a712)",
+      "pass": true,
+      "detail": {
+        "pre_change_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "post_running_config_ok": true,
+        "settled": true
+      }
+    },
+    {
+      "group": "ids",
+      "check": "SMOKE-V4C-03.rep2: has at least one attempt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "ids",
+      "check": "SMOKE-V4C-03.rep2: run.json links run_id/change_id/replicate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "ids",
+      "check": "SMOKE-V4C-03.rep2: code digest at run time equals current code",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "deploy",
+      "check": "SMOKE-V4C-03.rep2: non-root containerlab deploy OK",
+      "pass": true,
+      "detail": "l/apply-interfaces.sh\"\n  stdout=\n  \u2502 nrl: addresses applied\n\n19:07:42 INFO Adding host entries path=/etc/hosts\n19:07:42 INFO Adding SSH config for nodes path=/etc/ssh/ssh_config.d/clab-nrlv4-t05.conf\n"
+    },
+    {
+      "group": "deploy",
+      "check": "SMOKE-V4C-03.rep2: converged before change",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "deploy",
+      "check": "SMOKE-V4C-03.rep2: push statuses OK",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "deploy",
+      "check": "SMOKE-V4C-03.rep2: teardown OK",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "deploy",
+      "check": "SMOKE-V4C-03.rep2: final status OK",
+      "pass": true,
+      "detail": [
+        "OK",
+        null
+      ]
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-03.rep2: initial FIB snapshot for every router",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-03.rep2: FIB monitor log file for every router",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-03.rep2: FIB monitor captured events (timestamped lines)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-03.rep2: 6 probe logs with replies",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-03.rep2: OSPF neighbour poller samples",
+      "pass": true,
+      "detail": 16
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-03.rep2: final FIB snapshot + full state capture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "telemetry",
+      "check": "SMOKE-V4C-03.rep2: container clock is UTC",
+      "pass": true,
+      "detail": "Mon Sep 14 13:38:30 UTC 2026"
+    },
+    {
+      "group": "timeseries",
+      "check": "SMOKE-V4C-03.rep2: time series csv with required columns and >= 2 rows",
+      "pass": true,
+      "detail": [
+        34,
+        [
+          "broken_excess",
+          "broken_or_undet_excess",
+          "broken_total",
+          "detour",
+          "rerouted_vs_golden",
+          "t_rel",
+          "undetermined"
+        ]
+      ]
+    },
+    {
+      "group": "targets",
+      "check": "SMOKE-V4C-03.rep2: T1/T2/T3/T1_upper computed as numbers",
+      "pass": true,
+      "detail": "OK"
+    },
+    {
+      "group": "targets",
+      "check": "SMOKE-V4C-03.rep2: all run-validity checks pass (\u00a712)",
+      "pass": true,
+      "detail": {
+        "pre_change_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "post_running_config_ok": true,
+        "settled": true
+      }
+    },
+    {
+      "group": "failures",
+      "check": "SMOKE-FAILINJ-V4C-01.rep1: exactly 2 attempts (one retry)",
+      "pass": true,
+      "detail": [
+        "attempt1",
+        "attempt2"
+      ]
+    },
+    {
+      "group": "failures",
+      "check": "SMOKE-FAILINJ-V4C-01.rep1: both attempts STAGING_FAILED with injected marker",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "failures",
+      "check": "SMOKE-FAILINJ-V4C-01.rep1: no lab deployed for injected failure",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "failures",
+      "check": "ledger records every attempt",
+      "pass": true,
+      "detail": 6
+    },
+    {
+      "group": "failures",
+      "check": "crashed first smoke attempt preserved and detected as INCOMPLETE",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "scope",
+      "check": "20x5 pilot has NOT started (no results/pilot)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "scope",
+      "check": "runner refuses the pilot in the current repository state",
+      "pass": true,
+      "detail": "manifests/PREREG-APPROVAL.json missing"
+    },
+    {
+      "group": "v2v3",
+      "check": "no tracked v2/v3 file modified (git diff HEAD)",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "group": "v2v3",
+      "check": "no untracked files added under data/, nrl/, pipeline/",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "group": "v2v3",
+      "check": "no file under data/ (incl. gitignored raw runs), nrl/, pipeline/ modified since V4 work began (__pycache__ bytecode excluded)",
+      "pass": true,
+      "detail": []
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+--- I-00189
++++ C-01398
+@@ -920,7 +920,7 @@
+ interface eth3
+  description link to aggb accB
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ router ospf

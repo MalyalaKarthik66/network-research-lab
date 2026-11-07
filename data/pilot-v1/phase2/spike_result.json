@@ -1,0 +1,144 @@
+{
+  "verdict": "GO",
+  "artifact_digest": "95533a7dfe2f0ad2751c4f760ffe88a69ead4607c2f3832a32c505dabca4ae24",
+  "snapshot_digest": "f8a1b1d9a607e003fa0e0d0b19d7b8211f1ef62d067aa5bad654a3574e61d0c3",
+  "checks": {
+    "parse": true,
+    "format": true,
+    "coverage": true,
+    "ospf": true,
+    "f10_observable": true,
+    "statics": true
+  },
+  "notes": [
+    "total parse warnings across all snapshots: 0"
+  ],
+  "coverage": {
+    "address": {
+      "checked": 231,
+      "mismatches": 0,
+      "unverifiable": 0,
+      "examples": []
+    },
+    "active": {
+      "checked": 231,
+      "mismatches": 0,
+      "unverifiable": 0,
+      "examples": []
+    },
+    "ospf_area": {
+      "checked": 230,
+      "mismatches": 0,
+      "unverifiable": 0,
+      "examples": []
+    },
+    "ospf_cost": {
+      "checked": 164,
+      "mismatches": 0,
+      "unverifiable": 0,
+      "examples": []
+    },
+    "ospf_passive": {
+      "checked": 230,
+      "mismatches": 0,
+      "unverifiable": 0,
+      "examples": []
+    },
+    "ospf_network": {
+      "checked": 131,
+      "mismatches": 0,
+      "unverifiable": 0,
+      "examples": []
+    },
+    "static_route": {
+      "checked": 3,
+      "mismatches": 0,
+      "unverifiable": 0,
+      "examples": []
+    },
+    "named_structure": {
+      "checked": 0,
+      "mismatches": 0,
+      "unverifiable": 0,
+      "examples": []
+    }
+  },
+  "batfish_schema_observed": {
+    "interfaceProperties": [
+      "Interface",
+      "Access_VLAN",
+      "Active",
+      "Admin_Up",
+      "All_Prefixes",
+      "Allowed_VLANs",
+      "Auto_State_VLAN",
+      "Bandwidth",
+      "Blacklisted",
+      "Channel_Group",
+      "Channel_Group_Members",
+      "DHCP_Relay_Addresses",
+      "Declared_Names",
+      "Description",
+      "Encapsulation_VLAN",
+      "HSRP_Groups",
+      "HSRP_Version",
+      "Inactive_Reason",
+      "Incoming_Filter_Name",
+      "MLAG_ID",
+      "MTU",
+      "Native_VLAN",
+      "Outgoing_Filter_Name",
+      "PBR_Policy_Name",
+      "Primary_Address",
+      "Primary_Network",
+      "Proxy_ARP",
+      "Rip_Enabled",
+      "Rip_Passive",
+      "Spanning_Tree_Portfast",
+      "Speed",
+      "Switchport",
+      "Switchport_Mode",
+      "Switchport_Trunk_Encapsulation",
+      "VRF",
+      "VRRP_Groups",
+      "Zone_Name"
+    ],
+    "ospfInterfaceConfiguration": [
+      "Interface",
+      "VRF",
+      "Process_ID",
+      "OSPF_Area_Name",
+      "OSPF_Enabled",
+      "OSPF_Passive",
+      "OSPF_Cost",
+      "OSPF_Network_Type",
+      "OSPF_Hello_Interval",
+      "OSPF_Dead_Interval"
+    ],
+    "definedStructures": [
+      "Structure_Type",
+      "Structure_Name",
+      "Source_Lines"
+    ]
+  },
+  "snapshots_checked": [
+    "golden",
+    "I-01",
+    "I-02",
+    "I-03",
+    "I-04",
+    "I-05",
+    "I-06",
+    "I-07",
+    "I-08",
+    "I-09",
+    "I-10"
+  ],
+  "total_parse_warnings": 0,
+  "formats_detected": [
+    "CUMULUS_CONCATENATED"
+  ],
+  "pybatfish_version": "2025.07.07.2423",
+  "run_utc": "2026-08-25T13:56:16Z",
+  "note": "run_phase2.py reads this and refuses unless verdict == GO."
+}

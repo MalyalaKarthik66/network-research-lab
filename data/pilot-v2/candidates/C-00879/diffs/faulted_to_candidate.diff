@@ -1,0 +1,11 @@
+--- I-00119
++++ C-00879
+@@ -48,7 +48,7 @@
+  ip ospf cost 10
+  ip ospf network point-to-point
+ !
+-ip route 10.20.0.0/24 10.22.2.1
++ip route 10.21.0.0/24 blackhole
+ !
+ router ospf
+  ospf router-id 10.255.0.3

@@ -1,0 +1,140 @@
+{
+  "total_candidates": 151,
+  "decidable_candidates": 151,
+  "excluded_candidates": 0,
+  "terminal_failures": 0,
+  "no_convergence": 0,
+  "undetermined_flow_candidates": 0,
+  "distinct_r_values": 91,
+  "zero_fraction": 0.09271523178807947,
+  "min": 0.0,
+  "max": 0.447619,
+  "mean": 0.11624544370860926,
+  "median": 0.058333,
+  "quantiles": {
+    "0.0": 0.0,
+    "0.25": 0.024405000000000003,
+    "0.5": 0.058333,
+    "0.75": 0.163962,
+    "1.0": 0.447619
+  },
+  "per_mechanism": {
+    "blackhole": {
+      "n": 72,
+      "distinct": 43,
+      "zero_fraction": 0.0,
+      "mean": 0.03897741666666667,
+      "min": 0.007353,
+      "max": 0.097222
+    },
+    "cost": {
+      "n": 79,
+      "distinct": 50,
+      "zero_fraction": 0.17721518987341772,
+      "mean": 0.18666693670886075,
+      "min": 0.0,
+      "max": 0.447619
+    }
+  },
+  "per_topology": {
+    "t03_dual8": {
+      "n": 12,
+      "distinct": 11,
+      "zero_fraction": 0.16666666666666666,
+      "mean": 0.11212124999999999,
+      "min": 0.0,
+      "max": 0.4
+    },
+    "t05_ring6": {
+      "n": 10,
+      "distinct": 9,
+      "zero_fraction": 0.2,
+      "mean": 0.08750000000000001,
+      "min": 0.0,
+      "max": 0.444444
+    },
+    "t06_mesh6": {
+      "n": 10,
+      "distinct": 9,
+      "zero_fraction": 0.2,
+      "mean": 0.08750000000000001,
+      "min": 0.0,
+      "max": 0.444444
+    },
+    "t09_twin6": {
+      "n": 11,
+      "distinct": 11,
+      "zero_fraction": 0.09090909090909091,
+      "mean": 0.12247472727272726,
+      "min": 0.0,
+      "max": 0.444444
+    },
+    "t13_bowtie7": {
+      "n": 12,
+      "distinct": 12,
+      "zero_fraction": 0.0,
+      "mean": 0.14537025,
+      "min": 0.011111,
+      "max": 0.422222
+    },
+    "t14_ladder8": {
+      "n": 13,
+      "distinct": 12,
+      "zero_fraction": 0.07692307692307693,
+      "mean": 0.120979,
+      "min": 0.0,
+      "max": 0.436364
+    },
+    "t15_campus12": {
+      "n": 15,
+      "distinct": 15,
+      "zero_fraction": 0.06666666666666667,
+      "mean": 0.12222226666666668,
+      "min": 0.0,
+      "max": 0.447619
+    },
+    "t16_pop14": {
+      "n": 12,
+      "distinct": 12,
+      "zero_fraction": 0.0,
+      "mean": 0.12071074999999999,
+      "min": 0.007353,
+      "max": 0.426471
+    },
+    "t17_metro13": {
+      "n": 13,
+      "distinct": 12,
+      "zero_fraction": 0.15384615384615385,
+      "mean": 0.11057684615384616,
+      "min": 0.0,
+      "max": 0.4
+    },
+    "t18_grid12": {
+      "n": 15,
+      "distinct": 15,
+      "zero_fraction": 0.06666666666666667,
+      "mean": 0.12000000000000004,
+      "min": 0.0,
+      "max": 0.409524
+    },
+    "t19_dualcore16": {
+      "n": 16,
+      "distinct": 15,
+      "zero_fraction": 0.125,
+      "mean": 0.1186039375,
+      "min": 0.0,
+      "max": 0.342105
+    },
+    "t20_leafspine12": {
+      "n": 12,
+      "distinct": 12,
+      "zero_fraction": 0.0,
+      "mean": 0.11468250000000003,
+      "min": 0.009524,
+      "max": 0.390476
+    }
+  },
+  "target_errors": [],
+  "source": "data/pilot-v3/phase3/runs/*/state/*.route.json",
+  "predicted_severity_used_as_feature": false
+}

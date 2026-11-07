@@ -1,0 +1,11 @@
+--- I-00146
++++ C-01079
+@@ -625,6 +625,8 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 20
+  ip ospf network point-to-point
++!
++ip route 192.0.2.0/24 blackhole
+ !
+ router ospf
+  ospf router-id 10.255.0.4

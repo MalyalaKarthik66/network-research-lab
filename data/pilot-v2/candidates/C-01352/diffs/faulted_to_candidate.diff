@@ -1,0 +1,11 @@
+--- I-00183
++++ C-01352
+@@ -1026,7 +1026,7 @@
+ interface eth2
+  description link to x2 X2
+  ip ospf area 0.0.0.0
+- ip ospf cost 40
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ router ospf

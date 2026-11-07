@@ -1,0 +1,10 @@
+--- golden-t13_bowtie7
++++ I-00124
+@@ -365,6 +365,7 @@
+  ospf router-id 10.255.0.1
+  passive-interface lo
+  passive-interface eth1
++ passive-interface eth2
+ !
+ line vty
+ !

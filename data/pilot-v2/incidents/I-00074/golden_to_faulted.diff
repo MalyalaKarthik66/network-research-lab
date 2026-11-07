@@ -1,0 +1,10 @@
+--- golden-t08_chain8
++++ I-00074
+@@ -227,6 +227,7 @@
+  ospf router-id 10.255.0.1
+  passive-interface lo
+  passive-interface eth1
++ passive-interface eth2
+ !
+ line vty
+ !

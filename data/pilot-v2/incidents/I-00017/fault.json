@@ -1,0 +1,22 @@
+{
+  "incident_id": "I-00017",
+  "topology": "t02_wan6",
+  "fault_id": "F0007",
+  "fault_family": "ospf_cost_excessive",
+  "fault_description": "[t02_wan6] edgea eth2 cost 10 -> 65535",
+  "fault_params": {
+    "pairs": [
+      [
+        "edgea",
+        "eth2"
+      ]
+    ],
+    "node": "edgea",
+    "iface": "eth2",
+    "bad_cost": 65535,
+    "good_cost": 10,
+    "link": "siteA",
+    "topology": "t02_wan6"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

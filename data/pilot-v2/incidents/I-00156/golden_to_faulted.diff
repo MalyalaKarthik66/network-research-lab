@@ -1,0 +1,11 @@
+--- golden-t16_pop14
++++ I-00156
+@@ -198,7 +198,7 @@
+ interface eth2
+  description link to pe1 peA1
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 500
+  ip ospf network point-to-point
+ !
+ interface eth3

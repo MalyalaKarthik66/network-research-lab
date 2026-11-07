@@ -1,0 +1,535 @@
+{
+  "run_id": "C-00003",
+  "lab": "nrlv2-c-00003",
+  "kind": "candidate",
+  "started_utc": "2026-09-03T17:40:37Z",
+  "status": "OK",
+  "error": null,
+  "staging": {
+    "status": "OK",
+    "files_verified": 17,
+    "problems": [],
+    "staged_to": "/root/nrl-run/C-00003",
+    "error": null
+  },
+  "containers": {
+    "status": "OK",
+    "missing": [],
+    "expected": 7,
+    "found": 7,
+    "error": null
+  },
+  "convergence": {
+    "status": "OK",
+    "converged": true,
+    "seconds": 46.6,
+    "polls": 9,
+    "min_settle_s": 45,
+    "error": null
+  },
+  "transient": {
+    "harm_definition": "1.2.0-signals",
+    "seconds_to_converge": 46.6,
+    "converged": true,
+    "polls": 9,
+    "rib_changes_total": 4,
+    "rib_changes_max_router": 1,
+    "adjacency_flaps_after_full": 0,
+    "probe_polls": 9,
+    "probe_unreachable_polls": 3,
+    "transient_outage_after_reachable": false,
+    "flapped": false
+  },
+  "artifact_runtime_check": {
+    "running_config": {
+      "status": "OK",
+      "routers_checked": 4,
+      "problems": []
+    },
+    "addresses": {
+      "status": "OK",
+      "problems": []
+    }
+  },
+  "measurements": [
+    {
+      "property_id": "P01",
+      "kind": "reachability",
+      "in_spec": true,
+      "text": "hosta can ping hostb",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "ping": {
+          "kind": "ping",
+          "node": "hosta",
+          "dst": "10.20.0.10",
+          "src": null,
+          "raw": "PING 10.20.0.10 (10.20.0.10): 56 data bytes\n64 bytes from 10.20.0.10: seq=0 ttl=60 time=0.064 ms\n64 bytes from 10.20.0.10: seq=1 ttl=60 time=0.141 ms\n64 bytes from 10.20.0.10: seq=2 ttl=60 time=0.271 ms\n64 bytes from 10.20.0.10: seq=3 ttl=60 time=0.162 ms\n64 bytes from 10.20.0.10: seq=4 ttl=60 time=0.162 ms\n\n--- 10.20.0.10 ping statistics ---\n5 packets transmitted, 5 packets received, 0% packet loss\nround-trip min/avg/max = 0.064/0.160/0.271 ms\n",
+          "seconds": 4.04,
+          "status": "OK",
+          "error": null,
+          "sent": 5,
+          "received": 5,
+          "loss_pct": 0.0,
+          "rtt_min_ms": 0.064,
+          "rtt_avg_ms": 0.16,
+          "rtt_max_ms": 0.271
+        }
+      },
+      "extra": {
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.16,
+        "app": "ICMP"
+      },
+      "seconds": 4.04
+    },
+    {
+      "property_id": "P02",
+      "kind": "reachability",
+      "in_spec": true,
+      "text": "hosta can reach hostb on TCP/443",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "ping": {
+          "kind": "ping",
+          "node": "hosta",
+          "dst": "10.20.0.10",
+          "src": null,
+          "raw": "PING 10.20.0.10 (10.20.0.10): 56 data bytes\n64 bytes from 10.20.0.10: seq=0 ttl=60 time=0.063 ms\n64 bytes from 10.20.0.10: seq=1 ttl=60 time=0.178 ms\n64 bytes from 10.20.0.10: seq=2 ttl=60 time=0.184 ms\n64 bytes from 10.20.0.10: seq=3 ttl=60 time=0.165 ms\n64 bytes from 10.20.0.10: seq=4 ttl=60 time=0.141 ms\n\n--- 10.20.0.10 ping statistics ---\n5 packets transmitted, 5 packets received, 0% packet loss\nround-trip min/avg/max = 0.063/0.146/0.184 ms\n",
+          "seconds": 4.03,
+          "status": "OK",
+          "error": null,
+          "sent": 5,
+          "received": 5,
+          "loss_pct": 0.0,
+          "rtt_min_ms": 0.063,
+          "rtt_avg_ms": 0.146,
+          "rtt_max_ms": 0.184
+        },
+        "tcp": {
+          "kind": "tcp",
+          "node": "hosta",
+          "dst": "10.20.0.10",
+          "port": 443,
+          "raw": "rc=0\n",
+          "seconds": 0.02,
+          "status": "OK",
+          "error": null,
+          "connected": true
+        }
+      },
+      "extra": {
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.146,
+        "app": "HTTPS"
+      },
+      "seconds": 4.05
+    },
+    {
+      "property_id": "P05",
+      "kind": "reachability",
+      "in_spec": true,
+      "text": "hostb can ping hosta (return path)",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "ping": {
+          "kind": "ping",
+          "node": "hostb",
+          "dst": "10.10.0.10",
+          "src": null,
+          "raw": "PING 10.10.0.10 (10.10.0.10): 56 data bytes\n64 bytes from 10.10.0.10: seq=0 ttl=60 time=0.063 ms\n64 bytes from 10.10.0.10: seq=1 ttl=60 time=0.181 ms\n64 bytes from 10.10.0.10: seq=2 ttl=60 time=0.173 ms\n64 bytes from 10.10.0.10: seq=3 ttl=60 time=0.251 ms\n64 bytes from 10.10.0.10: seq=4 ttl=60 time=0.159 ms\n\n--- 10.10.0.10 ping statistics ---\n5 packets transmitted, 5 packets received, 0% packet loss\nround-trip min/avg/max = 0.063/0.165/0.251 ms\n",
+          "seconds": 3.98,
+          "status": "OK",
+          "error": null,
+          "sent": 5,
+          "received": 5,
+          "loss_pct": 0.0,
+          "rtt_min_ms": 0.063,
+          "rtt_avg_ms": 0.165,
+          "rtt_max_ms": 0.251
+        }
+      },
+      "extra": {
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.165,
+        "app": "ICMP"
+      },
+      "seconds": 3.98
+    },
+    {
+      "property_id": "P07",
+      "kind": "no_loops",
+      "in_spec": true,
+      "text": "no forwarding loops anywhere",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "traceroutes": {
+          "10.20.0.10": {
+            "kind": "traceroute",
+            "node": "hosta",
+            "dst": "10.20.0.10",
+            "raw": "traceroute to 10.20.0.10 (10.20.0.10), 12 hops max, 46 byte packets\n 1  10.10.0.1  0.003 ms  0.001 ms  0.003 ms\n 2  10.11.1.2  0.002 ms  0.002 ms  0.002 ms\n 3  10.11.2.2  0.002 ms  0.002 ms  0.001 ms\n 4  10.11.3.2  0.000 ms  0.002 ms  0.001 ms\n 5  10.20.0.10  0.001 ms  0.001 ms  0.001 ms\n",
+            "seconds": 0.03,
+            "status": "OK",
+            "error": null,
+            "hops": [
+              {
+                "n": 1,
+                "ip": "10.10.0.1"
+              },
+              {
+                "n": 2,
+                "ip": "10.11.1.2"
+              },
+              {
+                "n": 3,
+                "ip": "10.11.2.2"
+              },
+              {
+                "n": 4,
+                "ip": "10.11.3.2"
+              },
+              {
+                "n": 5,
+                "ip": "10.20.0.10"
+              }
+            ],
+            "loop_suspected": false,
+            "max_hops_reached": false
+          },
+          "10.21.0.10": {
+            "kind": "traceroute",
+            "node": "hosta",
+            "dst": "10.21.0.10",
+            "raw": "traceroute to 10.21.0.10 (10.21.0.10), 12 hops max, 46 byte packets\n 1  10.10.0.1  0.003 ms  0.001 ms  0.001 ms\n 2  10.11.1.2  0.001 ms  0.002 ms  0.001 ms\n 3  10.11.2.2  0.000 ms  0.001 ms  0.003 ms\n 4  10.11.3.2  0.001 ms  0.003 ms  0.002 ms\n 5  10.21.0.10  0.001 ms  0.002 ms  0.003 ms\n",
+            "seconds": 0.02,
+            "status": "OK",
+            "error": null,
+            "hops": [
+              {
+                "n": 1,
+                "ip": "10.10.0.1"
+              },
+              {
+                "n": 2,
+                "ip": "10.11.1.2"
+              },
+              {
+                "n": 3,
+                "ip": "10.11.2.2"
+              },
+              {
+                "n": 4,
+                "ip": "10.11.3.2"
+              },
+              {
+                "n": 5,
+                "ip": "10.21.0.10"
+              }
+            ],
+            "loop_suspected": false,
+            "max_hops_reached": false
+          }
+        }
+      },
+      "extra": {
+        "loop_suspected": false,
+        "destinations_unreached_not_looping": []
+      },
+      "seconds": 0.05
+    },
+    {
+      "property_id": "P08",
+      "kind": "ospf_adjacencies",
+      "in_spec": true,
+      "text": "all six OSPF adjacencies are established",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "adjacencies": {
+          "per_router": {
+            "corea": {
+              "status": "OK",
+              "full": 2
+            },
+            "coreb": {
+              "status": "OK",
+              "full": 2
+            },
+            "edgea": {
+              "status": "OK",
+              "full": 2
+            },
+            "edgeb": {
+              "status": "OK",
+              "full": 2
+            }
+          },
+          "full_adjacency_pairs": 4
+        }
+      },
+      "extra": {
+        "full_adjacency_pairs": 4,
+        "expected": 4
+      },
+      "seconds": 0.0
+    },
+    {
+      "property_id": "P03",
+      "kind": "reachability",
+      "in_spec": false,
+      "text": "hosta can ping hostc (second site-B LAN)",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "ping": {
+          "kind": "ping",
+          "node": "hosta",
+          "dst": "10.21.0.10",
+          "src": null,
+          "raw": "PING 10.21.0.10 (10.21.0.10): 56 data bytes\n64 bytes from 10.21.0.10: seq=0 ttl=60 time=0.062 ms\n64 bytes from 10.21.0.10: seq=1 ttl=60 time=0.196 ms\n64 bytes from 10.21.0.10: seq=2 ttl=60 time=0.159 ms\n64 bytes from 10.21.0.10: seq=3 ttl=60 time=0.167 ms\n64 bytes from 10.21.0.10: seq=4 ttl=60 time=0.166 ms\n\n--- 10.21.0.10 ping statistics ---\n5 packets transmitted, 5 packets received, 0% packet loss\nround-trip min/avg/max = 0.062/0.150/0.196 ms\n",
+          "seconds": 4.03,
+          "status": "OK",
+          "error": null,
+          "sent": 5,
+          "received": 5,
+          "loss_pct": 0.0,
+          "rtt_min_ms": 0.062,
+          "rtt_avg_ms": 0.15,
+          "rtt_max_ms": 0.196
+        }
+      },
+      "extra": {
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.15,
+        "app": "ICMP"
+      },
+      "seconds": 4.03
+    },
+    {
+      "property_id": "P04",
+      "kind": "reachability",
+      "in_spec": false,
+      "text": "hosta can reach hostc on TCP/443",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "ping": {
+          "kind": "ping",
+          "node": "hosta",
+          "dst": "10.21.0.10",
+          "src": null,
+          "raw": "PING 10.21.0.10 (10.21.0.10): 56 data bytes\n64 bytes from 10.21.0.10: seq=0 ttl=60 time=0.062 ms\n64 bytes from 10.21.0.10: seq=1 ttl=60 time=0.185 ms\n64 bytes from 10.21.0.10: seq=2 ttl=60 time=0.126 ms\n64 bytes from 10.21.0.10: seq=3 ttl=60 time=0.138 ms\n64 bytes from 10.21.0.10: seq=4 ttl=60 time=0.183 ms\n\n--- 10.21.0.10 ping statistics ---\n5 packets transmitted, 5 packets received, 0% packet loss\nround-trip min/avg/max = 0.062/0.138/0.185 ms\n",
+          "seconds": 4.03,
+          "status": "OK",
+          "error": null,
+          "sent": 5,
+          "received": 5,
+          "loss_pct": 0.0,
+          "rtt_min_ms": 0.062,
+          "rtt_avg_ms": 0.138,
+          "rtt_max_ms": 0.185
+        },
+        "tcp": {
+          "kind": "tcp",
+          "node": "hosta",
+          "dst": "10.21.0.10",
+          "port": 443,
+          "raw": "rc=0\n",
+          "seconds": 0.02,
+          "status": "OK",
+          "error": null,
+          "connected": true
+        }
+      },
+      "extra": {
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.138,
+        "app": "HTTPS"
+      },
+      "seconds": 4.05
+    },
+    {
+      "property_id": "P06",
+      "kind": "path_contains",
+      "in_spec": false,
+      "text": "hosta->hostb uses the primary WAN, not the backup",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "traceroute": {
+          "kind": "traceroute",
+          "node": "hosta",
+          "dst": "10.20.0.10",
+          "raw": "traceroute to 10.20.0.10 (10.20.0.10), 12 hops max, 46 byte packets\n 1  10.10.0.1  0.003 ms  0.001 ms  0.003 ms\n 2  10.11.1.2  0.002 ms  0.002 ms  0.002 ms\n 3  10.11.2.2  0.002 ms  0.002 ms  0.001 ms\n 4  10.11.3.2  0.000 ms  0.002 ms  0.001 ms\n 5  10.20.0.10  0.001 ms  0.001 ms  0.001 ms\n",
+          "seconds": 0.03,
+          "status": "OK",
+          "error": null,
+          "hops": [
+            {
+              "n": 1,
+              "ip": "10.10.0.1"
+            },
+            {
+              "n": 2,
+              "ip": "10.11.1.2"
+            },
+            {
+              "n": 3,
+              "ip": "10.11.2.2"
+            },
+            {
+              "n": 4,
+              "ip": "10.11.3.2"
+            },
+            {
+              "n": 5,
+              "ip": "10.20.0.10"
+            }
+          ],
+          "loop_suspected": false,
+          "max_hops_reached": false
+        }
+      },
+      "extra": {
+        "observed_path": [
+          "edgea",
+          "corea",
+          "coreb",
+          "edgeb"
+        ],
+        "must_traverse": [
+          "corea",
+          "coreb"
+        ]
+      },
+      "seconds": 0.0
+    },
+    {
+      "property_id": "P09",
+      "kind": "route_present",
+      "in_spec": false,
+      "text": "every router has a route to 10.20.0.0/24",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "present": {
+          "corea": true,
+          "coreb": true,
+          "edgea": true,
+          "edgeb": true
+        }
+      },
+      "extra": {
+        "nodes_missing_route": [],
+        "prefix": "10.20.0.0/24"
+      },
+      "seconds": 0.0
+    },
+    {
+      "property_id": "P10",
+      "kind": "route_present",
+      "in_spec": false,
+      "text": "every router has a route to 10.21.0.0/24",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "present": {
+          "corea": true,
+          "coreb": true,
+          "edgea": true,
+          "edgeb": true
+        }
+      },
+      "extra": {
+        "nodes_missing_route": [],
+        "prefix": "10.21.0.0/24"
+      },
+      "seconds": 0.0
+    },
+    {
+      "property_id": "P11",
+      "kind": "reachability",
+      "in_spec": false,
+      "text": "edgea loopback can reach edgeb loopback",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "ping": {
+          "kind": "ping",
+          "node": "edgea",
+          "dst": "10.255.0.4",
+          "src": "10.255.0.1",
+          "raw": "PING 10.255.0.4 (10.255.0.4) from 10.255.0.1: 56 data bytes\n64 bytes from 10.255.0.4: seq=0 ttl=62 time=0.094 ms\n64 bytes from 10.255.0.4: seq=1 ttl=62 time=0.321 ms\n64 bytes from 10.255.0.4: seq=2 ttl=62 time=0.104 ms\n64 bytes from 10.255.0.4: seq=3 ttl=62 time=0.151 ms\n64 bytes from 10.255.0.4: seq=4 ttl=62 time=0.125 ms\n\n--- 10.255.0.4 ping statistics ---\n5 packets transmitted, 5 packets received, 0% packet loss\nround-trip min/avg/max = 0.094/0.159/0.321 ms\n",
+          "seconds": 4.03,
+          "status": "OK",
+          "error": null,
+          "sent": 5,
+          "received": 5,
+          "loss_pct": 0.0,
+          "rtt_min_ms": 0.094,
+          "rtt_avg_ms": 0.159,
+          "rtt_max_ms": 0.321
+        }
+      },
+      "extra": {
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.159,
+        "app": "ICMP"
+      },
+      "seconds": 4.03
+    },
+    {
+      "property_id": "P12",
+      "kind": "no_iface_down",
+      "in_spec": false,
+      "text": "no interface is administratively down",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {},
+      "extra": {
+        "down_interfaces": [],
+        "ignored_non_artifact_interfaces": [
+          "corea:eth0",
+          "coreb:eth0",
+          "edgea:eth0",
+          "edgeb:eth0"
+        ]
+      },
+      "seconds": 0.0
+    }
+  ],
+  "ospf_full_adjacency_pairs": 4,
+  "interfaces_down": [],
+  "non_artifact_interfaces_ignored": [
+    "corea:eth0",
+    "coreb:eth0",
+    "edgea:eth0",
+    "edgeb:eth0"
+  ],
+  "route_counts": {
+    "corea": 13,
+    "coreb": 13,
+    "edgea": 13,
+    "edgeb": 13
+  },
+  "teardown_ok": true,
+  "wall_seconds": 76.8,
+  "finished_utc": "2026-09-03T17:41:54Z"
+}

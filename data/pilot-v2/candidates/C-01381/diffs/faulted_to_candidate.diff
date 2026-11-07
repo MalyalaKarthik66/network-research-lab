@@ -1,0 +1,20 @@
+--- I-00187
++++ C-01381
+@@ -834,7 +834,7 @@
+  ip ospf cost 10
+ !
+ interface eth2
+- description link to agga accA
++ description link to agga accA (partially reverted)
+  ip ospf area 0.0.0.0
+  ip ospf cost 65535
+  ip ospf network point-to-point
+@@ -864,7 +864,7 @@
+ auto eth2
+ iface eth2
+     address 10.29.1.1/30
+-    alias link to agga accA
++    alias link to agga accA (partially reverted)
+ 
+ 
+ ===== edgeb/daemons =====

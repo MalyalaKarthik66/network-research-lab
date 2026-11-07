@@ -1,0 +1,20 @@
+--- I-00140
++++ C-01033
+@@ -137,7 +137,7 @@
+ interface eth3
+  description link to l3 B1
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 1
+  ip ospf network point-to-point
+ !
+ interface eth4
+@@ -145,8 +145,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 30
+  ip ospf network point-to-point
+-!
+-ip route 10.20.0.10/32 10.24.4.1
+ !
+ router ospf
+  ospf router-id 10.255.0.5

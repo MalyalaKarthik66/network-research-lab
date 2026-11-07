@@ -1,0 +1,17 @@
+{
+  "incident_id": "I-00164",
+  "topology": "t17_metro13",
+  "fault_id": "F0004",
+  "fault_family": "ospf_passive_transit",
+  "fault_description": "[t17_metro13] edgea eth2 marked passive (accA)",
+  "fault_params": {
+    "node": "edgea",
+    "iface": "eth2",
+    "peer": "agga",
+    "peer_iface": "eth1",
+    "link": "accA",
+    "good_cost": 10,
+    "topology": "t17_metro13"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

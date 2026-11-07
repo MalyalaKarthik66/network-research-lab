@@ -1,0 +1,349 @@
+run_id,kind,property_id,property_kind,in_spec,status,holds,error,seconds,extra_json
+C-00001,candidate,P01,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00001,candidate,P02,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00001,candidate,P05,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00001,candidate,P07,no_loops,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00001,candidate,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00001,candidate,P03,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00001,candidate,P04,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00001,candidate,P06,path_contains,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00001,candidate,P09,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00001,candidate,P10,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00001,candidate,P11,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00001,candidate,P12,no_iface_down,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00002,candidate,P01,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00002,candidate,P02,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00002,candidate,P05,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00002,candidate,P07,no_loops,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00002,candidate,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00002,candidate,P03,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00002,candidate,P04,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00002,candidate,P06,path_contains,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00002,candidate,P09,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00002,candidate,P10,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00002,candidate,P11,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00002,candidate,P12,no_iface_down,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00003,candidate,P01,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00003,candidate,P02,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00003,candidate,P05,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00003,candidate,P07,no_loops,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00003,candidate,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00003,candidate,P03,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00003,candidate,P04,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00003,candidate,P06,path_contains,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00003,candidate,P09,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00003,candidate,P10,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00003,candidate,P11,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00003,candidate,P12,no_iface_down,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00006,candidate,P01,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00006,candidate,P02,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00006,candidate,P05,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00006,candidate,P07,no_loops,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00006,candidate,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00006,candidate,P03,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00006,candidate,P04,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00006,candidate,P06,path_contains,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00006,candidate,P09,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00006,candidate,P10,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00006,candidate,P11,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00006,candidate,P12,no_iface_down,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00035,candidate,P01,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00035,candidate,P02,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00035,candidate,P05,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00035,candidate,P07,no_loops,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00035,candidate,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00035,candidate,P03,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00035,candidate,P04,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00035,candidate,P06,path_contains,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00035,candidate,P09,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00035,candidate,P10,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00035,candidate,P11,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00035,candidate,P12,no_iface_down,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00039,candidate,P01,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00039,candidate,P02,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00039,candidate,P05,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00039,candidate,P07,no_loops,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00039,candidate,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00039,candidate,P03,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00039,candidate,P04,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00039,candidate,P06,path_contains,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00039,candidate,P09,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00039,candidate,P10,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00039,candidate,P11,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00039,candidate,P12,no_iface_down,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00058,candidate,P01,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00058,candidate,P02,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00058,candidate,P05,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00058,candidate,P07,no_loops,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00058,candidate,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00058,candidate,P03,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00058,candidate,P04,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00058,candidate,P06,path_contains,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00058,candidate,P09,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00058,candidate,P10,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00058,candidate,P11,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00058,candidate,P12,no_iface_down,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00059,candidate,P01,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00059,candidate,P02,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00059,candidate,P05,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00059,candidate,P07,no_loops,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00059,candidate,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00059,candidate,P03,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00059,candidate,P04,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00059,candidate,P06,path_contains,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00059,candidate,P09,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00059,candidate,P10,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00059,candidate,P11,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00059,candidate,P12,no_iface_down,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00060,candidate,P01,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00060,candidate,P02,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00060,candidate,P05,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00060,candidate,P07,no_loops,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00060,candidate,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00060,candidate,P03,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00060,candidate,P04,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00060,candidate,P06,path_contains,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00060,candidate,P09,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00060,candidate,P10,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00060,candidate,P11,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-00060,candidate,P12,no_iface_down,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01329,candidate,P01,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01329,candidate,P02,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01329,candidate,P05,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01329,candidate,P07,no_loops,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01329,candidate,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01329,candidate,P03,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01329,candidate,P04,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01329,candidate,P06,path_contains,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01329,candidate,P09,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01329,candidate,P10,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01329,candidate,P11,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01329,candidate,P12,no_iface_down,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01330,candidate,P01,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01330,candidate,P02,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01330,candidate,P05,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01330,candidate,P07,no_loops,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01330,candidate,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01330,candidate,P03,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01330,candidate,P04,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01330,candidate,P06,path_contains,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01330,candidate,P09,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01330,candidate,P10,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01330,candidate,P11,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01330,candidate,P12,no_iface_down,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01331,candidate,P01,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01331,candidate,P02,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01331,candidate,P05,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01331,candidate,P07,no_loops,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01331,candidate,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01331,candidate,P03,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01331,candidate,P04,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01331,candidate,P06,path_contains,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01331,candidate,P09,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01331,candidate,P10,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01331,candidate,P11,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01331,candidate,P12,no_iface_down,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01333,candidate,P01,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01333,candidate,P02,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01333,candidate,P05,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01333,candidate,P07,no_loops,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01333,candidate,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01333,candidate,P03,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01333,candidate,P04,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01333,candidate,P06,path_contains,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01333,candidate,P09,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01333,candidate,P10,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01333,candidate,P11,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01333,candidate,P12,no_iface_down,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01334,candidate,P01,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01334,candidate,P02,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01334,candidate,P05,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01334,candidate,P07,no_loops,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01334,candidate,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01334,candidate,P03,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01334,candidate,P04,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01334,candidate,P06,path_contains,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01334,candidate,P09,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01334,candidate,P10,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01334,candidate,P11,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01334,candidate,P12,no_iface_down,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01361,candidate,P01,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01361,candidate,P02,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01361,candidate,P05,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01361,candidate,P07,no_loops,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01361,candidate,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01361,candidate,P03,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01361,candidate,P04,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01361,candidate,P06,path_contains,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01361,candidate,P09,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01361,candidate,P10,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01361,candidate,P11,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01361,candidate,P12,no_iface_down,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01362,candidate,P01,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01362,candidate,P02,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01362,candidate,P05,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01362,candidate,P07,no_loops,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01362,candidate,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01362,candidate,P03,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01362,candidate,P04,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01362,candidate,P06,path_contains,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01362,candidate,P09,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01362,candidate,P10,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01362,candidate,P11,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01362,candidate,P12,no_iface_down,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01391,candidate,P01,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01391,candidate,P02,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01391,candidate,P05,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01391,candidate,P07,no_loops,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01391,candidate,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01391,candidate,P03,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01391,candidate,P04,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01391,candidate,P06,path_contains,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01391,candidate,P09,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01391,candidate,P10,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01391,candidate,P11,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01391,candidate,P12,no_iface_down,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01392,candidate,P01,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01392,candidate,P02,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01392,candidate,P05,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01392,candidate,P07,no_loops,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01392,candidate,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01392,candidate,P03,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01392,candidate,P04,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01392,candidate,P06,path_contains,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01392,candidate,P09,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01392,candidate,P10,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01392,candidate,P11,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01392,candidate,P12,no_iface_down,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01393,candidate,P01,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01393,candidate,P02,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01393,candidate,P05,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01393,candidate,P07,no_loops,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01393,candidate,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01393,candidate,P03,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01393,candidate,P04,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01393,candidate,P06,path_contains,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01393,candidate,P09,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01393,candidate,P10,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01393,candidate,P11,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01393,candidate,P12,no_iface_down,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01396,candidate,P01,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01396,candidate,P02,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01396,candidate,P05,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01396,candidate,P07,no_loops,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01396,candidate,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01396,candidate,P03,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01396,candidate,P04,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01396,candidate,P06,path_contains,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01396,candidate,P09,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01396,candidate,P10,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01396,candidate,P11,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+C-01396,candidate,P12,no_iface_down,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00001,incident,P01,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00001,incident,P02,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00001,incident,P05,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00001,incident,P07,no_loops,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00001,incident,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00001,incident,P03,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00001,incident,P04,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00001,incident,P06,path_contains,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00001,incident,P09,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00001,incident,P10,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00001,incident,P11,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00001,incident,P12,no_iface_down,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00005,incident,P01,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00005,incident,P02,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00005,incident,P05,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00005,incident,P07,no_loops,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00005,incident,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00005,incident,P03,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00005,incident,P04,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00005,incident,P06,path_contains,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00005,incident,P09,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00005,incident,P10,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00005,incident,P11,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00005,incident,P12,no_iface_down,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00009,incident,P01,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00009,incident,P02,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00009,incident,P05,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00009,incident,P07,no_loops,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00009,incident,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00009,incident,P03,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00009,incident,P04,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00009,incident,P06,path_contains,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00009,incident,P09,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00009,incident,P10,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00009,incident,P11,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00009,incident,P12,no_iface_down,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00181,incident,P01,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00181,incident,P02,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00181,incident,P05,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00181,incident,P07,no_loops,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00181,incident,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00181,incident,P03,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00181,incident,P04,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00181,incident,P06,path_contains,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00181,incident,P09,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00181,incident,P10,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00181,incident,P11,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00181,incident,P12,no_iface_down,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00185,incident,P01,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00185,incident,P02,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00185,incident,P05,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00185,incident,P07,no_loops,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00185,incident,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00185,incident,P03,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00185,incident,P04,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00185,incident,P06,path_contains,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00185,incident,P09,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00185,incident,P10,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00185,incident,P11,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00185,incident,P12,no_iface_down,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00189,incident,P01,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00189,incident,P02,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00189,incident,P05,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00189,incident,P07,no_loops,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00189,incident,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00189,incident,P03,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00189,incident,P04,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00189,incident,P06,path_contains,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00189,incident,P09,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00189,incident,P10,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00189,incident,P11,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+I-00189,incident,P12,no_iface_down,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-r01,golden_replicate,P01,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-r01,golden_replicate,P02,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-r01,golden_replicate,P05,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-r01,golden_replicate,P07,no_loops,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-r01,golden_replicate,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-r01,golden_replicate,P03,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-r01,golden_replicate,P04,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-r01,golden_replicate,P06,path_contains,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-r01,golden_replicate,P09,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-r01,golden_replicate,P10,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-r01,golden_replicate,P11,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-r01,golden_replicate,P12,no_iface_down,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t01_chain4,golden,P01,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t01_chain4,golden,P02,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t01_chain4,golden,P05,reachability,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t01_chain4,golden,P07,no_loops,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t01_chain4,golden,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t01_chain4,golden,P03,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t01_chain4,golden,P04,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t01_chain4,golden,P06,path_contains,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t01_chain4,golden,P09,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t01_chain4,golden,P10,route_present,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t01_chain4,golden,P11,reachability,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t01_chain4,golden,P12,no_iface_down,False,ERROR,,"containers missing: ['corea', 'coreb', 'edgea', 'edgeb', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t19_dualcore16,golden,P01,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t19_dualcore16,golden,P02,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t19_dualcore16,golden,P05,reachability,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t19_dualcore16,golden,P07,no_loops,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t19_dualcore16,golden,P08,ospf_adjacencies,True,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t19_dualcore16,golden,P03,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t19_dualcore16,golden,P04,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t19_dualcore16,golden,P06,path_contains,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t19_dualcore16,golden,P09,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t19_dualcore16,golden,P10,route_present,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t19_dualcore16,golden,P11,reachability,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}
+golden-t19_dualcore16,golden,P12,no_iface_down,False,ERROR,,"containers missing: ['a1', 'a2', 'a3', 'agga', 'aggb', 'b1', 'b2', 'b3', 'corea', 'coreb', 'edgea', 'edgeb', 'x1', 'x2', 'x3', 'x4', 'hosta', 'hostb', 'hostc']",0.0,{}

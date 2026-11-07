@@ -1,0 +1,1006 @@
+{
+  "run_id": "C-00652~zi",
+  "lab": "nrlv2-c-00652",
+  "kind": "candidate",
+  "attempt": 1,
+  "started_utc": "2026-09-12T09:34:10Z",
+  "status": "OK",
+  "error": null,
+  "staging": {
+    "status": "OK",
+    "files_verified": 23,
+    "problems": [],
+    "staged_to": "/root/nrl-zi/C-00652~zi",
+    "error": null
+  },
+  "containers": {
+    "status": "OK",
+    "missing": [],
+    "expected": 9,
+    "found": 9,
+    "error": null
+  },
+  "convergence": {
+    "status": "OK",
+    "converged": true,
+    "seconds": 48.5,
+    "polls": 9,
+    "min_settle_s": 45,
+    "error": null
+  },
+  "transient": {
+    "harm_definition": "1.2.0-signals",
+    "seconds_to_converge": 48.5,
+    "converged": true,
+    "polls": 9,
+    "rib_changes_total": 7,
+    "rib_changes_max_router": 2,
+    "adjacency_flaps_after_full": 0,
+    "probe_polls": 9,
+    "probe_unreachable_polls": 3,
+    "transient_outage_after_reachable": false,
+    "flapped": false
+  },
+  "artifact_runtime_check": {
+    "running_config": {
+      "status": "OK",
+      "routers_checked": 6,
+      "problems": []
+    },
+    "addresses": {
+      "status": "OK",
+      "problems": []
+    },
+    "ospf_binding": {
+      "status": "OK",
+      "problems": []
+    }
+  },
+  "measurements": [
+    {
+      "property_id": "P01",
+      "kind": "reachability",
+      "in_spec": true,
+      "text": "hosta can ping hostb",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "ping": {
+          "kind": "ping",
+          "node": "hosta",
+          "dst": "10.20.0.10",
+          "src": null,
+          "raw": "PING 10.20.0.10 (10.20.0.10): 56 data bytes\n64 bytes from 10.20.0.10: seq=0 ttl=62 time=0.053 ms\n64 bytes from 10.20.0.10: seq=1 ttl=62 time=0.242 ms\n64 bytes from 10.20.0.10: seq=2 ttl=62 time=0.157 ms\n64 bytes from 10.20.0.10: seq=3 ttl=62 time=0.061 ms\n64 bytes from 10.20.0.10: seq=4 ttl=62 time=0.071 ms\n\n--- 10.20.0.10 ping statistics ---\n5 packets transmitted, 5 packets received, 0% packet loss\nround-trip min/avg/max = 0.053/0.116/0.242 ms\n",
+          "seconds": 4.02,
+          "status": "OK",
+          "error": null,
+          "sent": 5,
+          "received": 5,
+          "loss_pct": 0.0,
+          "rtt_min_ms": 0.053,
+          "rtt_avg_ms": 0.116,
+          "rtt_max_ms": 0.242
+        }
+      },
+      "extra": {
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.116,
+        "app": "ICMP"
+      },
+      "seconds": 4.02
+    },
+    {
+      "property_id": "P02",
+      "kind": "reachability",
+      "in_spec": true,
+      "text": "hosta can reach hostb on TCP/443",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "ping": {
+          "kind": "ping",
+          "node": "hosta",
+          "dst": "10.20.0.10",
+          "src": null,
+          "raw": "PING 10.20.0.10 (10.20.0.10): 56 data bytes\n64 bytes from 10.20.0.10: seq=0 ttl=62 time=0.073 ms\n64 bytes from 10.20.0.10: seq=1 ttl=62 time=0.170 ms\n64 bytes from 10.20.0.10: seq=2 ttl=62 time=0.130 ms\n64 bytes from 10.20.0.10: seq=3 ttl=62 time=0.061 ms\n64 bytes from 10.20.0.10: seq=4 ttl=62 time=0.157 ms\n\n--- 10.20.0.10 ping statistics ---\n5 packets transmitted, 5 packets received, 0% packet loss\nround-trip min/avg/max = 0.061/0.118/0.170 ms\n",
+          "seconds": 4.05,
+          "status": "OK",
+          "error": null,
+          "sent": 5,
+          "received": 5,
+          "loss_pct": 0.0,
+          "rtt_min_ms": 0.061,
+          "rtt_avg_ms": 0.118,
+          "rtt_max_ms": 0.17
+        },
+        "tcp": {
+          "kind": "tcp",
+          "node": "hosta",
+          "dst": "10.20.0.10",
+          "port": 443,
+          "raw": "rc=0\n",
+          "seconds": 0.02,
+          "status": "OK",
+          "error": null,
+          "connected": true
+        }
+      },
+      "extra": {
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.118,
+        "app": "HTTPS"
+      },
+      "seconds": 4.08
+    },
+    {
+      "property_id": "P05",
+      "kind": "reachability",
+      "in_spec": true,
+      "text": "hostb can ping hosta (return path)",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "ping": {
+          "kind": "ping",
+          "node": "hostb",
+          "dst": "10.10.0.10",
+          "src": null,
+          "raw": "PING 10.10.0.10 (10.10.0.10): 56 data bytes\n64 bytes from 10.10.0.10: seq=0 ttl=62 time=0.051 ms\n64 bytes from 10.10.0.10: seq=1 ttl=62 time=0.232 ms\n64 bytes from 10.10.0.10: seq=2 ttl=62 time=0.175 ms\n64 bytes from 10.10.0.10: seq=3 ttl=62 time=0.116 ms\n64 bytes from 10.10.0.10: seq=4 ttl=62 time=0.150 ms\n\n--- 10.10.0.10 ping statistics ---\n5 packets transmitted, 5 packets received, 0% packet loss\nround-trip min/avg/max = 0.051/0.144/0.232 ms\n",
+          "seconds": 4.03,
+          "status": "OK",
+          "error": null,
+          "sent": 5,
+          "received": 5,
+          "loss_pct": 0.0,
+          "rtt_min_ms": 0.051,
+          "rtt_avg_ms": 0.144,
+          "rtt_max_ms": 0.232
+        }
+      },
+      "extra": {
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.144,
+        "app": "ICMP"
+      },
+      "seconds": 4.03
+    },
+    {
+      "property_id": "P07",
+      "kind": "no_loops",
+      "in_spec": true,
+      "text": "no forwarding loops anywhere",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "traceroutes": {
+          "10.20.0.10": {
+            "kind": "traceroute",
+            "node": "hosta",
+            "dst": "10.20.0.10",
+            "raw": "traceroute to 10.20.0.10 (10.20.0.10), 12 hops max, 46 byte packets\n 1  10.10.0.1  0.003 ms  0.002 ms  0.003 ms\n 2  10.19.7.2  0.001 ms  0.003 ms  0.003 ms\n 3  10.20.0.10  0.001 ms  0.001 ms  0.003 ms\n",
+            "seconds": 0.02,
+            "status": "OK",
+            "error": null,
+            "hops": [
+              {
+                "n": 1,
+                "ip": "10.10.0.1"
+              },
+              {
+                "n": 2,
+                "ip": "10.19.7.2"
+              },
+              {
+                "n": 3,
+                "ip": "10.20.0.10"
+              }
+            ],
+            "loop_suspected": false,
+            "max_hops_reached": false
+          },
+          "10.21.0.10": {
+            "kind": "traceroute",
+            "node": "hosta",
+            "dst": "10.21.0.10",
+            "raw": "traceroute to 10.21.0.10 (10.21.0.10), 12 hops max, 46 byte packets\n 1  10.10.0.1  0.003 ms  0.001 ms  0.003 ms\n 2  10.19.7.2  0.001 ms  0.002 ms  0.002 ms\n 3  10.21.0.10  0.001 ms  0.002 ms  0.003 ms\n",
+            "seconds": 0.02,
+            "status": "OK",
+            "error": null,
+            "hops": [
+              {
+                "n": 1,
+                "ip": "10.10.0.1"
+              },
+              {
+                "n": 2,
+                "ip": "10.19.7.2"
+              },
+              {
+                "n": 3,
+                "ip": "10.21.0.10"
+              }
+            ],
+            "loop_suspected": false,
+            "max_hops_reached": false
+          }
+        }
+      },
+      "extra": {
+        "loop_suspected": false,
+        "destinations_unreached_not_looping": []
+      },
+      "seconds": 0.05
+    },
+    {
+      "property_id": "P08",
+      "kind": "ospf_adjacencies",
+      "in_spec": true,
+      "text": "all six OSPF adjacencies are established",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "adjacencies": {
+          "per_router": {
+            "corea": {
+              "status": "OK",
+              "full": 3
+            },
+            "coreb": {
+              "status": "OK",
+              "full": 3
+            },
+            "edgea": {
+              "status": "OK",
+              "full": 2
+            },
+            "edgeb": {
+              "status": "OK",
+              "full": 2
+            },
+            "wan1": {
+              "status": "OK",
+              "full": 2
+            },
+            "wan2": {
+              "status": "OK",
+              "full": 2
+            }
+          },
+          "full_adjacency_pairs": 7
+        }
+      },
+      "extra": {
+        "full_adjacency_pairs": 7,
+        "expected": 7
+      },
+      "seconds": 0.0
+    },
+    {
+      "property_id": "P03",
+      "kind": "reachability",
+      "in_spec": false,
+      "text": "hosta can ping hostc (second site-B LAN)",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "ping": {
+          "kind": "ping",
+          "node": "hosta",
+          "dst": "10.21.0.10",
+          "src": null,
+          "raw": "PING 10.21.0.10 (10.21.0.10): 56 data bytes\n64 bytes from 10.21.0.10: seq=0 ttl=62 time=0.053 ms\n64 bytes from 10.21.0.10: seq=1 ttl=62 time=0.128 ms\n64 bytes from 10.21.0.10: seq=2 ttl=62 time=0.178 ms\n64 bytes from 10.21.0.10: seq=3 ttl=62 time=0.145 ms\n64 bytes from 10.21.0.10: seq=4 ttl=62 time=0.062 ms\n\n--- 10.21.0.10 ping statistics ---\n5 packets transmitted, 5 packets received, 0% packet loss\nround-trip min/avg/max = 0.053/0.113/0.178 ms\n",
+          "seconds": 4.03,
+          "status": "OK",
+          "error": null,
+          "sent": 5,
+          "received": 5,
+          "loss_pct": 0.0,
+          "rtt_min_ms": 0.053,
+          "rtt_avg_ms": 0.113,
+          "rtt_max_ms": 0.178
+        }
+      },
+      "extra": {
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.113,
+        "app": "ICMP"
+      },
+      "seconds": 4.03
+    },
+    {
+      "property_id": "P04",
+      "kind": "reachability",
+      "in_spec": false,
+      "text": "hosta can reach hostc on TCP/443",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "ping": {
+          "kind": "ping",
+          "node": "hosta",
+          "dst": "10.21.0.10",
+          "src": null,
+          "raw": "PING 10.21.0.10 (10.21.0.10): 56 data bytes\n64 bytes from 10.21.0.10: seq=0 ttl=62 time=0.054 ms\n64 bytes from 10.21.0.10: seq=1 ttl=62 time=0.108 ms\n64 bytes from 10.21.0.10: seq=2 ttl=62 time=0.124 ms\n64 bytes from 10.21.0.10: seq=3 ttl=62 time=0.242 ms\n64 bytes from 10.21.0.10: seq=4 ttl=62 time=0.171 ms\n\n--- 10.21.0.10 ping statistics ---\n5 packets transmitted, 5 packets received, 0% packet loss\nround-trip min/avg/max = 0.054/0.139/0.242 ms\n",
+          "seconds": 4.03,
+          "status": "OK",
+          "error": null,
+          "sent": 5,
+          "received": 5,
+          "loss_pct": 0.0,
+          "rtt_min_ms": 0.054,
+          "rtt_avg_ms": 0.139,
+          "rtt_max_ms": 0.242
+        },
+        "tcp": {
+          "kind": "tcp",
+          "node": "hosta",
+          "dst": "10.21.0.10",
+          "port": 443,
+          "raw": "rc=0\n",
+          "seconds": 0.03,
+          "status": "OK",
+          "error": null,
+          "connected": true
+        }
+      },
+      "extra": {
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.139,
+        "app": "HTTPS"
+      },
+      "seconds": 4.05
+    },
+    {
+      "property_id": "P06",
+      "kind": "path_contains",
+      "in_spec": false,
+      "text": "hosta->hostb uses the primary WAN, not the backup",
+      "status": "OK",
+      "holds": false,
+      "error": null,
+      "evidence": {
+        "traceroute": {
+          "kind": "traceroute",
+          "node": "hosta",
+          "dst": "10.20.0.10",
+          "raw": "traceroute to 10.20.0.10 (10.20.0.10), 12 hops max, 46 byte packets\n 1  10.10.0.1  0.003 ms  0.002 ms  0.003 ms\n 2  10.19.7.2  0.001 ms  0.003 ms  0.003 ms\n 3  10.20.0.10  0.001 ms  0.001 ms  0.003 ms\n",
+          "seconds": 0.02,
+          "status": "OK",
+          "error": null,
+          "hops": [
+            {
+              "n": 1,
+              "ip": "10.10.0.1"
+            },
+            {
+              "n": 2,
+              "ip": "10.19.7.2"
+            },
+            {
+              "n": 3,
+              "ip": "10.20.0.10"
+            }
+          ],
+          "loop_suspected": false,
+          "max_hops_reached": false
+        }
+      },
+      "extra": {
+        "observed_path": [
+          "edgea",
+          "edgeb"
+        ],
+        "must_traverse": [
+          "corea",
+          "wan1",
+          "coreb"
+        ]
+      },
+      "seconds": 0.0
+    },
+    {
+      "property_id": "P09",
+      "kind": "route_present",
+      "in_spec": false,
+      "text": "every router has a route to 10.20.0.0/24",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "present": {
+          "corea": true,
+          "coreb": true,
+          "edgea": true,
+          "edgeb": true,
+          "wan1": true,
+          "wan2": true
+        }
+      },
+      "extra": {
+        "nodes_missing_route": [],
+        "prefix": "10.20.0.0/24"
+      },
+      "seconds": 0.0
+    },
+    {
+      "property_id": "P10",
+      "kind": "route_present",
+      "in_spec": false,
+      "text": "every router has a route to 10.21.0.0/24",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "present": {
+          "corea": true,
+          "coreb": true,
+          "edgea": true,
+          "edgeb": true,
+          "wan1": true,
+          "wan2": true
+        }
+      },
+      "extra": {
+        "nodes_missing_route": [],
+        "prefix": "10.21.0.0/24"
+      },
+      "seconds": 0.0
+    },
+    {
+      "property_id": "P11",
+      "kind": "reachability",
+      "in_spec": false,
+      "text": "edgea loopback can reach edgeb loopback",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {
+        "ping": {
+          "kind": "ping",
+          "node": "edgea",
+          "dst": "10.255.0.6",
+          "src": "10.255.0.1",
+          "raw": "PING 10.255.0.6 (10.255.0.6) from 10.255.0.1: 56 data bytes\n64 bytes from 10.255.0.6: seq=0 ttl=64 time=0.038 ms\n64 bytes from 10.255.0.6: seq=1 ttl=64 time=0.140 ms\n64 bytes from 10.255.0.6: seq=2 ttl=64 time=0.214 ms\n64 bytes from 10.255.0.6: seq=3 ttl=64 time=0.086 ms\n64 bytes from 10.255.0.6: seq=4 ttl=64 time=0.123 ms\n\n--- 10.255.0.6 ping statistics ---\n5 packets transmitted, 5 packets received, 0% packet loss\nround-trip min/avg/max = 0.038/0.120/0.214 ms\n",
+          "seconds": 4.03,
+          "status": "OK",
+          "error": null,
+          "sent": 5,
+          "received": 5,
+          "loss_pct": 0.0,
+          "rtt_min_ms": 0.038,
+          "rtt_avg_ms": 0.12,
+          "rtt_max_ms": 0.214
+        }
+      },
+      "extra": {
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.12,
+        "app": "ICMP"
+      },
+      "seconds": 4.03
+    },
+    {
+      "property_id": "P12",
+      "kind": "no_iface_down",
+      "in_spec": false,
+      "text": "no interface is administratively down",
+      "status": "OK",
+      "holds": true,
+      "error": null,
+      "evidence": {},
+      "extra": {
+        "down_interfaces": [],
+        "ignored_non_artifact_interfaces": [
+          "corea:eth0",
+          "coreb:eth0",
+          "edgea:eth0",
+          "edgeb:eth0",
+          "wan1:eth0",
+          "wan2:eth0"
+        ]
+      },
+      "seconds": 0.0
+    }
+  ],
+  "ospf_full_adjacency_pairs": 7,
+  "interfaces_down": [],
+  "non_artifact_interfaces_ignored": [
+    "corea:eth0",
+    "coreb:eth0",
+    "edgea:eth0",
+    "edgeb:eth0",
+    "wan1:eth0",
+    "wan2:eth0"
+  ],
+  "route_counts": {
+    "corea": 18,
+    "coreb": 18,
+    "edgea": 18,
+    "edgeb": 18,
+    "wan1": 18,
+    "wan2": 18
+  },
+  "teardown_ok": true,
+  "wall_seconds": 82.3,
+  "finished_utc": "2026-09-12T09:35:33Z",
+  "flowmatrix": {
+    "flows": {
+      "corea->wan1": {
+        "flow_id": "corea->wan1",
+        "src_name": "corea",
+        "dst_name": "wan1",
+        "src_addr": "10.255.0.2",
+        "dst_addr": "10.255.0.3",
+        "reachable": true,
+        "ttl": 64,
+        "probe_status": "OK",
+        "error": null
+      },
+      "corea->edgea": {
+        "flow_id": "corea->edgea",
+        "src_name": "corea",
+        "dst_name": "edgea",
+        "src_addr": "10.255.0.2",
+        "dst_addr": "10.255.0.1",
+        "reachable": true,
+        "ttl": 64,
+        "probe_status": "OK",
+        "error": null
+      },
+      "coreb->wan2": {
+        "flow_id": "coreb->wan2",
+        "src_name": "coreb",
+        "dst_name": "wan2",
+        "src_addr": "10.255.0.4",
+        "dst_addr": "10.255.0.5",
+        "reachable": true,
+        "ttl": 64,
+        "probe_status": "OK",
+        "error": null
+      },
+      "coreb->edgea": {
+        "flow_id": "coreb->edgea",
+        "src_name": "coreb",
+        "dst_name": "edgea",
+        "src_addr": "10.255.0.4",
+        "dst_addr": "10.255.0.1",
+        "reachable": true,
+        "ttl": 63,
+        "probe_status": "OK",
+        "error": null
+      },
+      "coreb->edgeb": {
+        "flow_id": "coreb->edgeb",
+        "src_name": "coreb",
+        "dst_name": "edgeb",
+        "src_addr": "10.255.0.4",
+        "dst_addr": "10.255.0.6",
+        "reachable": true,
+        "ttl": 64,
+        "probe_status": "OK",
+        "error": null
+      },
+      "coreb->corea": {
+        "flow_id": "coreb->corea",
+        "src_name": "coreb",
+        "dst_name": "corea",
+        "src_addr": "10.255.0.4",
+        "dst_addr": "10.255.0.2",
+        "reachable": true,
+        "ttl": 63,
+        "probe_status": "OK",
+        "error": null
+      },
+      "edgea->hosta": {
+        "flow_id": "edgea->hosta",
+        "src_name": "edgea",
+        "dst_name": "hosta",
+        "src_addr": "10.255.0.1",
+        "dst_addr": "10.10.0.10",
+        "reachable": true,
+        "ttl": 64,
+        "probe_status": "OK",
+        "error": null
+      },
+      "edgeb->hostb": {
+        "flow_id": "edgeb->hostb",
+        "src_name": "edgeb",
+        "dst_name": "hostb",
+        "src_addr": "10.255.0.6",
+        "dst_addr": "10.20.0.10",
+        "reachable": true,
+        "ttl": 64,
+        "probe_status": "OK",
+        "error": null
+      },
+      "edgeb->wan1": {
+        "flow_id": "edgeb->wan1",
+        "src_name": "edgeb",
+        "dst_name": "wan1",
+        "src_addr": "10.255.0.6",
+        "dst_addr": "10.255.0.3",
+        "reachable": true,
+        "ttl": 63,
+        "probe_status": "OK",
+        "error": null
+      },
+      "hosta->wan1": {
+        "flow_id": "hosta->wan1",
+        "src_name": "hosta",
+        "dst_name": "wan1",
+        "src_addr": "10.10.0.10",
+        "dst_addr": "10.255.0.3",
+        "reachable": true,
+        "ttl": 62,
+        "probe_status": "OK",
+        "error": null
+      },
+      "hosta->coreb": {
+        "flow_id": "hosta->coreb",
+        "src_name": "hosta",
+        "dst_name": "coreb",
+        "src_addr": "10.10.0.10",
+        "dst_addr": "10.255.0.4",
+        "reachable": true,
+        "ttl": 62,
+        "probe_status": "OK",
+        "error": null
+      },
+      "hosta->hostc": {
+        "flow_id": "hosta->hostc",
+        "src_name": "hosta",
+        "dst_name": "hostc",
+        "src_addr": "10.10.0.10",
+        "dst_addr": "10.21.0.10",
+        "reachable": true,
+        "ttl": 62,
+        "probe_status": "OK",
+        "error": null
+      },
+      "hosta->wan2": {
+        "flow_id": "hosta->wan2",
+        "src_name": "hosta",
+        "dst_name": "wan2",
+        "src_addr": "10.10.0.10",
+        "dst_addr": "10.255.0.5",
+        "reachable": true,
+        "ttl": 62,
+        "probe_status": "OK",
+        "error": null
+      },
+      "hostb->corea": {
+        "flow_id": "hostb->corea",
+        "src_name": "hostb",
+        "dst_name": "corea",
+        "src_addr": "10.20.0.10",
+        "dst_addr": "10.255.0.2",
+        "reachable": false,
+        "ttl": null,
+        "probe_status": "OK",
+        "error": null
+      },
+      "hostb->hostc": {
+        "flow_id": "hostb->hostc",
+        "src_name": "hostb",
+        "dst_name": "hostc",
+        "src_addr": "10.20.0.10",
+        "dst_addr": "10.21.0.10",
+        "reachable": true,
+        "ttl": 63,
+        "probe_status": "OK",
+        "error": null
+      },
+      "hostc->hostb": {
+        "flow_id": "hostc->hostb",
+        "src_name": "hostc",
+        "dst_name": "hostb",
+        "src_addr": "10.21.0.10",
+        "dst_addr": "10.20.0.10",
+        "reachable": true,
+        "ttl": 63,
+        "probe_status": "OK",
+        "error": null
+      },
+      "hostc->coreb": {
+        "flow_id": "hostc->coreb",
+        "src_name": "hostc",
+        "dst_name": "coreb",
+        "src_addr": "10.21.0.10",
+        "dst_addr": "10.255.0.4",
+        "reachable": true,
+        "ttl": 63,
+        "probe_status": "OK",
+        "error": null
+      },
+      "hostc->edgeb": {
+        "flow_id": "hostc->edgeb",
+        "src_name": "hostc",
+        "dst_name": "edgeb",
+        "src_addr": "10.21.0.10",
+        "dst_addr": "10.255.0.6",
+        "reachable": true,
+        "ttl": 64,
+        "probe_status": "OK",
+        "error": null
+      },
+      "hostc->wan1": {
+        "flow_id": "hostc->wan1",
+        "src_name": "hostc",
+        "dst_name": "wan1",
+        "src_addr": "10.21.0.10",
+        "dst_addr": "10.255.0.3",
+        "reachable": true,
+        "ttl": 62,
+        "probe_status": "OK",
+        "error": null
+      },
+      "wan1->corea": {
+        "flow_id": "wan1->corea",
+        "src_name": "wan1",
+        "dst_name": "corea",
+        "src_addr": "10.255.0.3",
+        "dst_addr": "10.255.0.2",
+        "reachable": true,
+        "ttl": 64,
+        "probe_status": "OK",
+        "error": null
+      },
+      "wan1->hostc": {
+        "flow_id": "wan1->hostc",
+        "src_name": "wan1",
+        "dst_name": "hostc",
+        "src_addr": "10.255.0.3",
+        "dst_addr": "10.21.0.10",
+        "reachable": true,
+        "ttl": 62,
+        "probe_status": "OK",
+        "error": null
+      },
+      "wan2->coreb": {
+        "flow_id": "wan2->coreb",
+        "src_name": "wan2",
+        "dst_name": "coreb",
+        "src_addr": "10.255.0.5",
+        "dst_addr": "10.255.0.4",
+        "reachable": true,
+        "ttl": 64,
+        "probe_status": "OK",
+        "error": null
+      },
+      "wan2->hostc": {
+        "flow_id": "wan2->hostc",
+        "src_name": "wan2",
+        "dst_name": "hostc",
+        "src_addr": "10.255.0.5",
+        "dst_addr": "10.21.0.10",
+        "reachable": true,
+        "ttl": 62,
+        "probe_status": "OK",
+        "error": null
+      },
+      "wan2->wan1": {
+        "flow_id": "wan2->wan1",
+        "src_name": "wan2",
+        "dst_name": "wan1",
+        "src_addr": "10.255.0.5",
+        "dst_addr": "10.255.0.3",
+        "reachable": true,
+        "ttl": 63,
+        "probe_status": "OK",
+        "error": null
+      }
+    },
+    "n_flows": 24,
+    "n_reachable": 23,
+    "n_unreachable": 1,
+    "n_error": 0,
+    "n_with_ttl": 23,
+    "paths": {
+      "corea->wan1": {
+        "path": [
+          "corea",
+          "wan1"
+        ],
+        "term": "OK",
+        "src_router": "corea"
+      },
+      "hosta->wan1": {
+        "path": [
+          "edgea",
+          "corea",
+          "wan1"
+        ],
+        "term": "OK",
+        "src_router": "edgea"
+      },
+      "hostc->hostb": {
+        "path": [
+          "edgeb"
+        ],
+        "term": "OK",
+        "src_router": "edgeb"
+      },
+      "coreb->wan2": {
+        "path": [
+          "coreb",
+          "wan2"
+        ],
+        "term": "OK",
+        "src_router": "coreb"
+      },
+      "wan2->coreb": {
+        "path": [
+          "wan2",
+          "coreb"
+        ],
+        "term": "OK",
+        "src_router": "wan2"
+      },
+      "wan1->corea": {
+        "path": [
+          "wan1",
+          "corea"
+        ],
+        "term": "OK",
+        "src_router": "wan1"
+      },
+      "edgeb->hostb": {
+        "path": [
+          "edgeb"
+        ],
+        "term": "OK",
+        "src_router": "edgeb"
+      },
+      "hosta->coreb": {
+        "path": [
+          "edgea",
+          "edgeb",
+          "coreb"
+        ],
+        "term": "OK",
+        "src_router": "edgea"
+      },
+      "coreb->edgea": {
+        "path": [
+          "coreb",
+          "edgeb",
+          "edgea"
+        ],
+        "term": "OK",
+        "src_router": "coreb"
+      },
+      "hostb->corea": {
+        "path": [
+          "edgeb",
+          "edgea",
+          "corea"
+        ],
+        "term": "OK",
+        "src_router": "edgeb"
+      },
+      "wan2->hostc": {
+        "path": [
+          "wan2",
+          "coreb",
+          "edgeb"
+        ],
+        "term": "OK",
+        "src_router": "wan2"
+      },
+      "coreb->edgeb": {
+        "path": [
+          "coreb",
+          "edgeb"
+        ],
+        "term": "OK",
+        "src_router": "coreb"
+      },
+      "corea->edgea": {
+        "path": [
+          "corea",
+          "edgea"
+        ],
+        "term": "OK",
+        "src_router": "corea"
+      },
+      "wan2->wan1": {
+        "path": [
+          "wan2",
+          "corea",
+          "wan1"
+        ],
+        "term": "OK",
+        "src_router": "wan2"
+      },
+      "hostc->coreb": {
+        "path": [
+          "edgeb",
+          "coreb"
+        ],
+        "term": "OK",
+        "src_router": "edgeb"
+      },
+      "hostc->edgeb": {
+        "path": [
+          "edgeb"
+        ],
+        "term": "OK",
+        "src_router": "edgeb"
+      },
+      "edgeb->wan1": {
+        "path": [
+          "edgeb",
+          "coreb",
+          "wan1"
+        ],
+        "term": "OK",
+        "src_router": "edgeb"
+      },
+      "hosta->hostc": {
+        "path": [
+          "edgea",
+          "edgeb"
+        ],
+        "term": "OK",
+        "src_router": "edgea"
+      },
+      "wan1->hostc": {
+        "path": [
+          "wan1",
+          "coreb",
+          "edgeb"
+        ],
+        "term": "OK",
+        "src_router": "wan1"
+      },
+      "hostb->hostc": {
+        "path": [
+          "edgeb"
+        ],
+        "term": "OK",
+        "src_router": "edgeb"
+      },
+      "edgea->hosta": {
+        "path": [
+          "edgea"
+        ],
+        "term": "OK",
+        "src_router": "edgea"
+      },
+      "coreb->corea": {
+        "path": [
+          "coreb",
+          "wan1",
+          "corea"
+        ],
+        "term": "OK",
+        "src_router": "coreb"
+      },
+      "hostc->wan1": {
+        "path": [
+          "edgeb",
+          "coreb",
+          "wan1"
+        ],
+        "term": "OK",
+        "src_router": "edgeb"
+      },
+      "hosta->wan2": {
+        "path": [
+          "edgea",
+          "corea",
+          "wan2"
+        ],
+        "term": "OK",
+        "src_router": "edgea"
+      }
+    }
+  }
+}

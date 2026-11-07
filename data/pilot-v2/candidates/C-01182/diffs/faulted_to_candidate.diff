@@ -1,0 +1,11 @@
+--- I-00160
++++ C-01182
+@@ -428,7 +428,7 @@
+ interface eth1
+  description link to pe1 pA1
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ interface eth2

@@ -1,0 +1,20 @@
+--- I-00032
++++ C-00236
+@@ -50,7 +50,7 @@
+ !
+ interface eth3
+  description link to coreb wan-backup
+- ip ospf area 0.0.0.0
++ ip ospf area 0.0.0.9
+  ip ospf cost 100
+  ip ospf network point-to-point
+ !
+@@ -247,7 +247,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.200.0.2/30
++    address 10.14.1.1/30
+     alias link to corea siteA
+ 
+ 

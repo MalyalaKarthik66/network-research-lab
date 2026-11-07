@@ -1,0 +1,14 @@
+{
+  "incident_id": "I-00059",
+  "topology": "t06_mesh6",
+  "fault_id": "F0009",
+  "fault_family": "static_wrong_nexthop",
+  "fault_description": "[t06_mesh6] corea sends 10.20.0.0/24 to 10.16.1.1, off the shortest path",
+  "fault_params": {
+    "node": "corea",
+    "prefix": "10.20.0.0/24",
+    "nexthop": "10.16.1.1",
+    "topology": "t06_mesh6"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

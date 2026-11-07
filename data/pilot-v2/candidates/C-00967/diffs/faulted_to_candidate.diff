@@ -1,0 +1,20 @@
+--- I-00130
++++ C-00967
+@@ -443,7 +443,7 @@
+  ip ospf cost 10
+ !
+ interface eth3
+- description link to b1 B1
++ description link to b1 B1 (partially reverted)
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+@@ -487,7 +487,7 @@
+ auto eth3
+ iface eth3
+     address 10.23.7.2/30
+-    alias link to b1 B1
++    alias link to b1 B1 (partially reverted)
+ 
+ auto eth4
+ iface eth4

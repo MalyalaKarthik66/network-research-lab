@@ -1,0 +1,6 @@
+[2026-09-15T10:03:25.927708] 27: eth2@if28: <BROADCAST,MULTICAST> mtu 9500 qdisc noqueue state DOWN group default 
+    link/ether aa:c1:ab:b0:88:e3 brd ff:ff:ff:ff:ff:ff link-netnsid 1
+    altname clab-o-7035f1d44c4f8ba2
+[2026-09-15T10:03:25.927905] Deleted fe80::/64 dev eth2 proto kernel metric 256 pref medium
+[2026-09-15T10:03:25.927934] Deleted local fe80::a8c1:abff:feb0:88e3 dev eth2 table local proto kernel metric 0 pref medium
+[2026-09-15T10:03:25.928006] Deleted multicast ff00::/8 dev eth2 table local proto kernel metric 256 pref medium

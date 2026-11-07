@@ -1,0 +1,18 @@
+--- I-00054
++++ C-00399
+@@ -211,6 +211,7 @@
+ interface lo
+  description router-id and management
+  ip ospf area 0.0.0.0
++ ip ospf cost 2
+ !
+ interface eth1
+  description link to hosta siteA-lan
+@@ -227,7 +228,6 @@
+  ospf router-id 10.255.0.1
+  passive-interface lo
+  passive-interface eth1
+- passive-interface eth2
+ !
+ line vty
+ !

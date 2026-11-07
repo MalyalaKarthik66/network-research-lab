@@ -1,0 +1,12 @@
+{
+  "incident_id": "I-09",
+  "fault_id": "F09",
+  "fault_family": "static_wrong_nexthop",
+  "fault_description": "coreb static for 10.20.0.0/24 points back over the backup link",
+  "fault_params": {
+    "node": "coreb",
+    "prefix": "10.20.0.0/24",
+    "nexthop": "10.0.9.1"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

@@ -1,0 +1,11 @@
+--- golden-t04_star5
++++ I-00040
+@@ -305,6 +305,8 @@
+  ip ospf cost 10
+  ip ospf network point-to-point
+ !
++ip route 10.20.0.10/32 10.14.4.1
++!
+ router ospf
+  ospf router-id 10.255.0.5
+  passive-interface lo

@@ -1,0 +1,185 @@
+# golden property suite -- FROZEN, version 1.1.0
+# in_spec: true  -> asked of Batfish in Phase 2 (the specification)
+# in_spec: false -> measured in Containerlab in Phase 3 only
+#                   (the declared blind spots)
+suite_version: "1.1.0"
+properties:
+  - pid: P01
+    kind: "reachability"
+    in_spec: true
+    src: "10.10.0.10"
+    dst: "10.20.0.10"
+    app: "ICMP"
+    text: "hosta can ping hostb"
+  - pid: P02
+    kind: "reachability"
+    in_spec: true
+    src: "10.10.0.10"
+    dst: "10.20.0.10"
+    app: "HTTPS"
+    text: "hosta can reach hostb on TCP/443"
+  - pid: P05
+    kind: "reachability"
+    in_spec: true
+    src: "10.20.0.10"
+    dst: "10.10.0.10"
+    app: "ICMP"
+    text: "hostb can ping hosta (return path)"
+  - pid: P07
+    kind: "no_loops"
+    in_spec: true
+    text: "no forwarding loops anywhere"
+  - pid: P08
+    kind: "ospf_adjacencies"
+    in_spec: true
+    expected: PER_TOPOLOGY   # resolved below
+    text: "all six OSPF adjacencies are established"
+  - pid: P03
+    kind: "reachability"
+    in_spec: false
+    src: "10.10.0.10"
+    dst: "10.21.0.10"
+    app: "ICMP"
+    text: "hosta can ping hostc (second site-B LAN)"
+  - pid: P04
+    kind: "reachability"
+    in_spec: false
+    src: "10.10.0.10"
+    dst: "10.21.0.10"
+    app: "HTTPS"
+    text: "hosta can reach hostc on TCP/443"
+  - pid: P06
+    kind: "path_contains"
+    in_spec: false
+    src: "10.10.0.10"
+    dst: "10.20.0.10"
+    must_traverse: PER_TOPOLOGY   # resolved below
+    text: "hosta->hostb uses the primary WAN, not the backup"
+  - pid: P09
+    kind: "route_present"
+    in_spec: false
+    prefix: "10.20.0.0/24"
+    nodes: "all_routers"
+    text: "every router has a route to 10.20.0.0/24"
+  - pid: P10
+    kind: "route_present"
+    in_spec: false
+    prefix: "10.21.0.0/24"
+    nodes: "all_routers"
+    text: "every router has a route to 10.21.0.0/24"
+  - pid: P11
+    kind: "reachability"
+    in_spec: false
+    src: PER_TOPOLOGY   # resolved below
+    dst: PER_TOPOLOGY   # resolved below
+    app: "ICMP"
+    text: "edgea loopback can reach edgeb loopback"
+  - pid: P12
+    kind: "no_iface_down"
+    in_spec: false
+    text: "no interface is administratively down"
+
+# Values that depend on the topology. properties_for(spec)
+# fills these in; they are recorded here so the suite that
+# was actually evaluated is fully reconstructable.
+topology_resolved:
+  t01_chain4:
+    P06_must_traverse: ['corea', 'coreb']
+    P08_expected_adjacencies: 4
+    P11_src_edgea_loopback: "10.255.0.1"
+    P11_dst_edgeb_loopback: "10.255.0.4"
+  t02_wan6:
+    P06_must_traverse: ['corea', 'wan1', 'wan2', 'coreb']
+    P08_expected_adjacencies: 6
+    P11_src_edgea_loopback: "10.255.0.1"
+    P11_dst_edgeb_loopback: "10.255.0.6"
+  t03_dual8:
+    P06_must_traverse: ['corea', 'wan1', 'wan2', 'coreb']
+    P08_expected_adjacencies: 9
+    P11_src_edgea_loopback: "10.255.0.1"
+    P11_dst_edgeb_loopback: "10.255.0.8"
+  t04_star5:
+    P06_must_traverse: ['corea', 'hub', 'coreb']
+    P08_expected_adjacencies: 5
+    P11_src_edgea_loopback: "10.255.0.1"
+    P11_dst_edgeb_loopback: "10.255.0.5"
+  t05_ring6:
+    P06_must_traverse: ['corea', 'wan1', 'coreb']
+    P08_expected_adjacencies: 6
+    P11_src_edgea_loopback: "10.255.0.1"
+    P11_dst_edgeb_loopback: "10.255.0.5"
+  t06_mesh6:
+    P06_must_traverse: ['corea', 'wan1', 'coreb']
+    P08_expected_adjacencies: 6
+    P11_src_edgea_loopback: "10.255.0.1"
+    P11_dst_edgeb_loopback: "10.255.0.6"
+  t07_tier7:
+    P06_must_traverse: ['agga', 'corea', 'coreb', 'aggb']
+    P08_expected_adjacencies: 6
+    P11_src_edgea_loopback: "10.255.0.1"
+    P11_dst_edgeb_loopback: "10.255.0.6"
+  t08_chain8:
+    P06_must_traverse: ['corea', 'wan1', 'wan2', 'wan3', 'wan4', 'coreb']
+    P08_expected_adjacencies: 8
+    P11_src_edgea_loopback: "10.255.0.1"
+    P11_dst_edgeb_loopback: "10.255.0.8"
+  t09_twin6:
+    P06_must_traverse: ['corea', 'wan1', 'coreb']
+    P08_expected_adjacencies: 7
+    P11_src_edgea_loopback: "10.255.0.1"
+    P11_dst_edgeb_loopback: "10.255.0.6"
+  t10_deep9:
+    P06_must_traverse: ['agga', 'corea', 'wan1', 'wan2', 'coreb', 'aggb']
+    P08_expected_adjacencies: 8
+    P11_src_edgea_loopback: "10.255.0.1"
+    P11_dst_edgeb_loopback: "10.255.0.8"
+  t11_branch6:
+    P06_must_traverse: ['corea', 'fw1', 'fw2', 'coreb']
+    P08_expected_adjacencies: 6
+    P11_src_edgea_loopback: "10.255.0.1"
+    P11_dst_edgeb_loopback: "10.255.0.6"
+  t12_campus8:
+    P06_must_traverse: ['dista', 'agga', 'corea', 'coreb', 'aggb', 'distb']
+    P08_expected_adjacencies: 8
+    P11_src_edgea_loopback: "10.255.0.1"
+    P11_dst_edgeb_loopback: "10.255.0.8"
+  t13_bowtie7:
+    P06_must_traverse: ['a1', 'mid', 'b1']
+    P08_expected_adjacencies: 8
+    P11_src_edgea_loopback: "10.255.0.1"
+    P11_dst_edgeb_loopback: "10.255.0.7"
+  t14_ladder8:
+    P06_must_traverse: ['l1', 'l2', 'l3']
+    P08_expected_adjacencies: 10
+    P11_src_edgea_loopback: "10.255.0.1"
+    P11_dst_edgeb_loopback: "10.255.0.5"
+  t15_campus12:
+    P06_must_traverse: ['acca1', 'dista1', 'corea', 'coreb', 'distb1', 'accb1']
+    P08_expected_adjacencies: 14
+    P11_src_edgea_loopback: "10.255.0.1"
+    P11_dst_edgeb_loopback: "10.255.0.11"
+  t16_pop14:
+    P06_must_traverse: ['pe1', 'p1', 'p2', 'pe3']
+    P08_expected_adjacencies: 19
+    P11_src_edgea_loopback: "10.255.0.1"
+    P11_dst_edgeb_loopback: "10.255.0.6"
+  t17_metro13:
+    P06_must_traverse: ['agga', 'm1', 'm2', 'm3', 'm4', 'm5', 'aggb']
+    P08_expected_adjacencies: 14
+    P11_src_edgea_loopback: "10.255.0.1"
+    P11_dst_edgeb_loopback: "10.255.0.12"
+  t18_grid12:
+    P06_must_traverse: ['g1', 'g2', 'g3', 'g4', 'g5']
+    P08_expected_adjacencies: 14
+    P11_src_edgea_loopback: "10.255.0.1"
+    P11_dst_edgeb_loopback: "10.255.0.12"
+  t19_dualcore16:
+    P06_must_traverse: ['agga', 'a1', 'a2', 'a3', 'corea', 'coreb', 'b3', 'b2', 'b1', 'aggb']
+    P08_expected_adjacencies: 16
+    P11_src_edgea_loopback: "10.255.0.1"
+    P11_dst_edgeb_loopback: "10.255.0.12"
+  t20_leafspine12:
+    P06_must_traverse: ['l1', 's1', 'l4']
+    P08_expected_adjacencies: 16
+    P11_src_edgea_loopback: "10.255.0.1"
+    P11_dst_edgeb_loopback: "10.255.0.10"

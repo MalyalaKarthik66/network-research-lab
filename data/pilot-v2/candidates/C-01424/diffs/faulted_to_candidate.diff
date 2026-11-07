@@ -1,0 +1,20 @@
+--- I-00192
++++ C-01424
+@@ -196,7 +196,7 @@
+  ip ospf cost 10
+ !
+ interface eth2
+- description link to l1 accA
++ description link to l1 accA (partially reverted)
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+@@ -232,7 +232,7 @@
+ auto eth2
+ iface eth2
+     address 10.200.0.2/30
+-    alias link to l1 accA
++    alias link to l1 accA (partially reverted)
+ 
+ auto eth3
+ iface eth3

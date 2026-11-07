@@ -1,0 +1,15 @@
+{
+  "incident_id": "I-00200",
+  "topology": "t20_leafspine12",
+  "fault_id": "F0010",
+  "fault_family": "static_route_loop",
+  "fault_description": "[t20_leafspine12] edgeb installs 10.20.0.10/32 pointing back upstream at l4",
+  "fault_params": {
+    "node": "edgeb",
+    "prefix": "10.20.0.10/32",
+    "nexthop": "10.30.11.1",
+    "loop_with": "l4",
+    "topology": "t20_leafspine12"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

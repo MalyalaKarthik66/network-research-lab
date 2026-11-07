@@ -1,0 +1,124 @@
+{
+  "edges": [
+    {
+      "node1": {
+        "hostname": "edgea",
+        "interfaceName": "eth2"
+      },
+      "node2": {
+        "hostname": "corea",
+        "interfaceName": "eth1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "corea",
+        "interfaceName": "eth1"
+      },
+      "node2": {
+        "hostname": "edgea",
+        "interfaceName": "eth2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "corea",
+        "interfaceName": "eth2"
+      },
+      "node2": {
+        "hostname": "wan1",
+        "interfaceName": "eth1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "wan1",
+        "interfaceName": "eth1"
+      },
+      "node2": {
+        "hostname": "corea",
+        "interfaceName": "eth2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "corea",
+        "interfaceName": "eth3"
+      },
+      "node2": {
+        "hostname": "wan2",
+        "interfaceName": "eth1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "wan2",
+        "interfaceName": "eth1"
+      },
+      "node2": {
+        "hostname": "corea",
+        "interfaceName": "eth3"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "wan1",
+        "interfaceName": "eth2"
+      },
+      "node2": {
+        "hostname": "coreb",
+        "interfaceName": "eth1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "coreb",
+        "interfaceName": "eth1"
+      },
+      "node2": {
+        "hostname": "wan1",
+        "interfaceName": "eth2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "wan2",
+        "interfaceName": "eth2"
+      },
+      "node2": {
+        "hostname": "coreb",
+        "interfaceName": "eth2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "coreb",
+        "interfaceName": "eth2"
+      },
+      "node2": {
+        "hostname": "wan2",
+        "interfaceName": "eth2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "coreb",
+        "interfaceName": "eth3"
+      },
+      "node2": {
+        "hostname": "edgeb",
+        "interfaceName": "eth3"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "edgeb",
+        "interfaceName": "eth3"
+      },
+      "node2": {
+        "hostname": "coreb",
+        "interfaceName": "eth3"
+      }
+    }
+  ]
+}

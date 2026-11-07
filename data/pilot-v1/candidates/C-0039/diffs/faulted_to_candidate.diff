@@ -1,0 +1,11 @@
+--- I-08
++++ C-0039
+@@ -307,6 +307,8 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+ !
++ip route 10.21.0.0/24 10.0.5.1
++!
+ router ospf
+  ospf router-id 10.255.0.6
+  passive-interface lo

@@ -1,0 +1,19 @@
+--- I-00122
++++ C-00901
+@@ -343,6 +343,7 @@
+ interface lo
+  description router-id and management
+  ip ospf area 0.0.0.0
++ ip ospf cost 2
+ !
+ interface eth1
+  description link to hosta siteA-lan
+@@ -385,7 +386,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.200.0.2/30
++    address 10.23.1.1/30
+     alias link to a1 A1
+ 
+ auto eth3

@@ -1,0 +1,11 @@
+--- I-00073
++++ C-00545
+@@ -45,7 +45,7 @@
+ interface eth2
+  description link to wan1 w1
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ interface eth3

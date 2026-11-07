@@ -1,0 +1,11 @@
+--- golden-t06_mesh6
++++ I-00060
+@@ -305,6 +305,8 @@
+  ip ospf cost 10
+  ip ospf network point-to-point
+ !
++ip route 10.20.0.10/32 10.16.6.1
++!
+ router ospf
+  ospf router-id 10.255.0.6
+  passive-interface lo

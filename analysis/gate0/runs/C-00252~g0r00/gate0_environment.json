@@ -1,0 +1,37 @@
+{
+  "environment": {
+    "kind": "link_churn",
+    "seed": 13728460849409430488,
+    "candidate_id": "C-00252",
+    "replicate": 0,
+    "node": "hub",
+    "iface": "eth2",
+    "delay_s": 6,
+    "down_s": 4,
+    "n_transit_links": 10,
+    "touched_by_repair": false
+  },
+  "events": [
+    {
+      "action": "down",
+      "node": "hub",
+      "iface": "eth2",
+      "at_s": 6.03,
+      "status": "OK",
+      "rc": 0,
+      "stderr": ""
+    },
+    {
+      "action": "up",
+      "node": "hub",
+      "iface": "eth2",
+      "at_s": 10.06,
+      "status": "OK",
+      "rc": 0,
+      "stderr": ""
+    }
+  ],
+  "completed": true,
+  "link_restored": true,
+  "phase": "post_convergence"
+}

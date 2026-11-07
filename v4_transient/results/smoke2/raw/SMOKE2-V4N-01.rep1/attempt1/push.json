@@ -1,0 +1,16 @@
+[
+  {
+    "node": "corea",
+    "commands": [
+      "interface eth1",
+      "ip ospf cost 10",
+      "exit"
+    ],
+    "t_start": 1789467486.9618888,
+    "t_end": 1789467487.4676678,
+    "status": "OK",
+    "rc": 0,
+    "stdout": "",
+    "stderr": "% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.\n"
+  }
+]

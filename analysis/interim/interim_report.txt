@@ -1,0 +1,192 @@
+INTERIM EXPLORATORY DIAGNOSTIC -- NOT THE CONFIRMATORY ANALYSIS
+methodology: docs/ANALYSIS-PLAN.md (frozen 2026-09-02), unmodified
+bootstrap resamples: 2000
+
+==============================================================================
+1. POPULATION
+==============================================================================
+  n_joined               301
+  n_spec_pass            301
+  n_spec_fail            0
+  outcome_counts         {'SAFE': 219, 'HARMFUL': 79, 'EXECUTION_FAILED': 2, 'NO_CONVERGENCE': 1}
+  n_modelling            299
+  n_harmful              80
+  n_safe                 219
+  base_rate              0.2676
+  n_excluded             2
+  excluded_rate          0.0066
+  excluded_by_outcome    {'EXECUTION_FAILED': 2}
+  manski P(harm|PASS)    [0.2658, 0.2724] width 0.66 pts  (stop rule: >10)
+  sensitivity (NO_CONV excluded)  n=298 base=0.2651
+  incidents 173   topologies 20   fault families 10
+
+  P(harm | Batfish SPEC PASS) = 80/299 = 0.2676
+    Wilson 95%                 [0.2206, 0.3205]
+    clustered bootstrap 95%    [0.2159, 0.3225]
+
+  harm rate by topology:
+    t11_branch6              5/  8 = 0.625  [0.3057, 0.8632]
+    t15_campus12             4/  9 = 0.444  [0.1888, 0.7333]
+    t07_tier7                9/ 21 = 0.429  [0.2447, 0.6345]
+    t01_chain4              10/ 24 = 0.417  [0.2447, 0.6117]
+    t09_twin6                9/ 22 = 0.409  [0.2326, 0.6127]
+    t08_chain8               7/ 24 = 0.292  [0.1491, 0.4917]
+    t04_star5                6/ 22 = 0.273  [0.1315, 0.4815]
+    t13_bowtie7              2/  8 = 0.250  [0.0715, 0.5907]
+    t14_ladder8              2/  8 = 0.250  [0.0715, 0.5907]
+    t02_wan6                 6/ 25 = 0.240  [0.115, 0.4343]
+    t03_dual8                5/ 21 = 0.238  [0.1063, 0.4509]
+    t10_deep9                5/ 21 = 0.238  [0.1063, 0.4509]
+    t16_pop14                1/  5 = 0.200  [0.0362, 0.6245]
+    t18_grid12               1/  5 = 0.200  [0.0362, 0.6245]
+    t17_metro13              1/  6 = 0.167  [0.0301, 0.5635]
+    t19_dualcore16           1/  7 = 0.143  [0.0257, 0.5131]
+    t06_mesh6                3/ 23 = 0.130  [0.0454, 0.3213]
+    t12_campus8              1/  9 = 0.111  [0.0199, 0.435]
+    t05_ring6                2/ 23 = 0.087  [0.0242, 0.268]
+    t20_leafspine12          0/  8 = 0.000  [0.0, 0.3244]
+
+  harm rate by fault family:
+    iface_wrong_addr        19/ 32 = 0.594  [0.4226, 0.7448]
+    ospf_cost_inversion     14/ 31 = 0.452  [0.2916, 0.6223]
+    static_blackhole         8/ 27 = 0.296  [0.1585, 0.4848]
+    ospf_cost_excessive     10/ 35 = 0.286  [0.1633, 0.4505]
+    ospf_iface_removed       7/ 26 = 0.269  [0.137, 0.4608]
+    ospf_passive_transit     6/ 30 = 0.200  [0.0951, 0.3731]
+    ospf_area_mismatch       5/ 31 = 0.161  [0.0709, 0.3263]
+    static_wrong_nexthop     4/ 29 = 0.138  [0.055, 0.3056]
+    static_route_loop        4/ 30 = 0.133  [0.0531, 0.2968]
+    iface_down               3/ 28 = 0.107  [0.0371, 0.272]
+
+==============================================================================
+2. SHORTCUT / RECOVERABILITY GATE -- ON THE PASS POPULATION
+==============================================================================
+  ANALYSIS-PLAN 14.2. worst-case one-vs-rest AUC for repair_class,
+  incident-grouped nested CV, measured on the modelling rows only.
+  threshold 0.85: >= means the leak reaches the tier and
+  the learned arm is not reportable as a risk model on this corpus.
+
+  feature set     nfeat  live  worst AUC   per-class
+  A                  24    17      0.961   {'correct': 0.8507, 'incomplete': 0.9612, 'regressive': 0.8055}  <-- GATE FAILS
+  A+                 52    42      0.966   {'correct': 0.9542, 'incomplete': 0.9661, 'regressive': 0.9101}  <-- GATE FAILS
+  B                  68    52      0.977   {'correct': 0.957, 'incomplete': 0.977, 'regressive': 0.9057}  <-- GATE FAILS
+  C                  75    55      0.975   {'correct': 0.9587, 'incomplete': 0.9747, 'regressive': 0.9057}  <-- GATE FAILS
+  chg_only           16    13      0.944   {'correct': 0.8594, 'incomplete': 0.9441, 'regressive': 0.8421}  <-- GATE FAILS
+  cov_only            8     4      0.615   {'correct': 0.6022, 'incomplete': 0.5555, 'regressive': 0.6147}  ok
+  g_only             28    25      0.870   {'correct': 0.8701, 'incomplete': 0.8282, 'regressive': 0.8113}  <-- GATE FAILS
+  B_only             16    10      0.765   {'correct': 0.6704, 'incomplete': 0.7649, 'regressive': 0.4722}  ok
+  C_only              7     3      0.587   {'correct': 0.5527, 'incomplete': 0.5872, 'regressive': 0.4794}  ok
+  B+C_only           23    13      0.779   {'correct': 0.6953, 'incomplete': 0.7787, 'regressive': 0.4694}  ok
+  no_chg             59    42      0.926   {'correct': 0.9038, 'incomplete': 0.9258, 'regressive': 0.8128}  <-- GATE FAILS
+  no_g               47    30      0.982   {'correct': 0.8613, 'incomplete': 0.982, 'regressive': 0.809}  <-- GATE FAILS
+  no_chg_no_g        31    17      0.822   {'correct': 0.7197, 'incomplete': 0.8219, 'regressive': 0.641}  ok
+
+  fault_family recoverability from tier C: worst AUC 0.9975
+
+==============================================================================
+2c. SHORTCUT CEILING -- what repair_class alone buys
+==============================================================================
+  repair_class=correct        0/153 harmful = 0.0000
+  repair_class=incomplete    41/ 73 harmful = 0.5616
+  repair_class=regressive    39/ 73 harmful = 0.5342
+
+  ORACLE repair_class score: AUC-ROC 0.8535   AUC-PR 0.5550
+  Any model at or below this has not been shown to do anything the
+  generator variable does not already do.
+
+==============================================================================
+3. NON-LEARNED BASELINES
+==============================================================================
+  base_rate            AUC-PR 0.2676 (= prevalence)  Brier 0.195971
+  spec_widening_rule   AUC-PR 0.8137 (0.7308, 0.8889)  AUC-ROC 0.8790
+                       TP 61 FP 1 FN 19 TN 218  precision 0.984 recall 0.762 balanced-acc 0.879
+  FINAL-PLAN 9: if this beats every learned model, THAT is the
+  result and the conclusion is 'widen the specification'.
+
+==============================================================================
+4. LEARNED MODELS -- nested grouped 5-fold, grouped by incident
+==============================================================================
+  3 sub-folds fit / 1 fits the calibrator / 1 held out.
+  Platt and beta both fitted; lower inner log loss wins.
+  PER-FOLD mean +- sd is primary; the pooled curve is a visualisation.
+
+  [A] 17 live features (7 zero-variance dropped), effective n = 157 of 299 rows
+  model        AUC-PR fold  pooled AUC-PR             95% CI       p    ECE  AUC-ROC
+  gbt       0.667+-0.049           0.591   [0.4922, 0.7064]  0.0005  0.014    0.858
+  logreg    0.748+-0.068           0.703   [0.6037, 0.7918]  0.0005  0.053    0.871
+  rf        0.678+-0.029           0.607   [0.5157, 0.7102]  0.0005  0.039    0.857
+  stump     0.378+-0.107           0.411   [0.3256, 0.5205]  0.0005  0.059    0.668
+
+  [A+] 42 live features (10 zero-variance dropped), effective n = 279 of 299 rows
+  model        AUC-PR fold  pooled AUC-PR             95% CI       p    ECE  AUC-ROC
+  gbt       0.876+-0.043           0.835   [0.7527, 0.9068]  0.0005  0.045    0.925
+  logreg    0.816+-0.083           0.764   [0.6674, 0.8457]  0.0005  0.044    0.899
+  rf        0.899+-0.032           0.857   [0.7788, 0.9283]  0.0005  0.024    0.941
+  stump     0.392+-0.063           0.438   [0.3395, 0.5437]  0.0005  0.103    0.581
+
+  [B] 52 live features (16 zero-variance dropped), effective n = 279 of 299 rows
+  model        AUC-PR fold  pooled AUC-PR             95% CI       p    ECE  AUC-ROC
+  gbt       0.866+-0.035           0.818   [0.7305, 0.8986]  0.0005  0.027    0.923
+  logreg    0.798+-0.109           0.756   [0.6569, 0.8386]  0.0005  0.050    0.893
+  rf        0.884+-0.045           0.834    [0.7483, 0.917]  0.0005  0.021    0.932
+  stump     0.392+-0.063           0.438   [0.3395, 0.5437]  0.0005  0.103    0.581
+
+  [C] 55 live features (20 zero-variance dropped), effective n = 283 of 299 rows
+  model        AUC-PR fold  pooled AUC-PR             95% CI       p    ECE  AUC-ROC
+  gbt       0.895+-0.052           0.895   [0.8319, 0.9479]  0.0005  0.036    0.933
+  logreg    0.929+-0.084           0.920   [0.8549, 0.9711]  0.0005  0.038    0.950
+  rf        0.954+-0.018           0.941   [0.8993, 0.9738]  0.0005  0.011    0.964
+  stump     0.554+-0.124           0.623   [0.5185, 0.7254]  0.0005  0.064    0.699
+
+==============================================================================
+5. DOES THE SIGNAL SURVIVE SHORTCUT CONTROL? (gbt)
+==============================================================================
+  Same estimator and protocol; only the feature set changes.
+  feature set      AUC-PR             95% CI       p    ECE  repair_class AUC
+  A+                0.835   [0.7527, 0.9068]  0.0005  0.045             0.966
+  C                 0.895   [0.8319, 0.9479]  0.0005  0.036             0.975
+  B_only            0.291   [0.2258, 0.3824] 0.31934  0.059             0.765
+  C_only            0.603   [0.4974, 0.7099]  0.0005  0.057             0.587
+  B+C_only          0.617   [0.5083, 0.7234]  0.0005  0.071             0.779
+  no_chg            0.821   [0.7415, 0.8889]  0.0005  0.024             0.926
+  no_g              0.831   [0.7507, 0.8995]  0.0005  0.020             0.982
+  no_chg_no_g       0.627   [0.5113, 0.7375]  0.0005  0.053             0.822
+
+==============================================================================
+6. SELECTION AND AUTONOMY (primary GBT)
+==============================================================================
+  primary model: C/gbt
+  incidents with >=2 candidates : 95
+  incidents scorable (mixed)    : 45
+  top-1 selected harm rate      : 0.0526
+  random choice harm rate       : 0.2754
+  oracle best harm rate         : 0.0526
+  regret vs oracle              : 0.0
+  improvement vs random         : 0.2228
+  mean within-incident AUC      : 0.9778
+
+   coverage     n  realised harm             95% CI
+      0.020     6         0.0000      [0.0, 0.3903]
+      0.144    43         0.0698    [0.024, 0.1861]
+      0.264    79         0.0380    [0.013, 0.1058]
+      0.388   116         0.0259   [0.0088, 0.0733]
+      0.515   154         0.0325   [0.0139, 0.0737]
+      0.632   189         0.0423   [0.0216, 0.0813]
+      0.752   225         0.0667   [0.0408, 0.1071]
+      0.876   262         0.1718   [0.1309, 0.2221]
+      1.000   299         0.2676   [0.2206, 0.3205]
+
+==============================================================================
+7. CONFORMAL RISK CONTROL -- NOT ATTEMPTED
+==============================================================================
+  incidents available: 173; protocol requires exactly 200 in a 120/40/40 topology-stratified split.
+  ANALYSIS-PLAN 10: alpha is never lowered to make a bound appear,
+  and a split that does not exist is not made to exist by shrinking
+  it. Conformal waits for the full planned dataset.
+
+==============================================================================
+8. LEARNING CURVE (sampled by incident)
+==============================================================================
+  n=  50  AUC-PR 0.247+-0.068  ECE 0.096 (5 reps)
+  n= 100  AUC-PR 0.409+-0.055  ECE 0.123 (5 reps)
+  n= 200  AUC-PR 0.634+-0.078  ECE 0.059 (5 reps)

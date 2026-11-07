@@ -1,0 +1,19 @@
+--- I-00199
++++ C-01464
+@@ -35,6 +35,7 @@
+ interface lo
+  description router-id and management
+  ip ospf area 0.0.0.0
++ ip ospf cost 3
+ !
+ interface eth1
+  description link to edgea aggA
+@@ -47,8 +48,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 50
+  ip ospf network point-to-point
+-!
+-ip route 10.20.0.0/24 10.30.13.1
+ !
+ router ospf
+  ospf router-id 10.255.0.11

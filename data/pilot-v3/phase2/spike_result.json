@@ -1,0 +1,276 @@
+{
+  "verdict": "GO",
+  "gate": "spike_v3.py",
+  "analysis_plan": "docs/ANALYSIS-PLAN-V3.md 12.2",
+  "artifact_digest": "6d1b7348e9ca4c58f5da314f5a9e4a121f3217534bf55662337cb0498e2086e3",
+  "snapshot_digest": "86648b27bf499d2513c33ea78b5fb530b18a354216cbdd0a3e166a62952ab707",
+  "checks": {
+    "parse": true,
+    "format": true,
+    "coverage": true,
+    "ospf_all_topologies": true,
+    "ospf": true,
+    "statics": true
+  },
+  "checks_excluded_or_substituted": {
+    "f10_observable": {
+      "status": "N/A",
+      "reason": "v3 has no fault families, so there is no fault for Batfish to observe. No substitute evidence exists because there is nothing to substitute for. Excluded from the verdict rather than scored either way."
+    },
+    "statics": {
+      "status": "SUBSTITUTED",
+      "passed": true,
+      "reason": "v3 statics live in candidate snapshots, not fault snapshots. Verified directly on candidates by analysis/v3_batfish_precheck.py: route present, next hop `discard`, and `static` the only protocol for the prefix, so it beat OSPF on administrative distance and is installed.",
+      "evidence": "analysis/v3_batfish_precheck.json"
+    }
+  },
+  "underlying_spike": {
+    "checks": {
+      "parse": true,
+      "format": true,
+      "coverage": true,
+      "ospf_all_topologies": true,
+      "ospf": true,
+      "f10_observable": false,
+      "statics": false
+    },
+    "notes": [
+      "total parse warnings across all snapshots: 0",
+      "CHECK 5 skipped: this corpus has no static_route_loop snapshot. Recorded FAILED, never passed -- a check that did not run has not passed. A corpus without fault families needs a documented substitute, not a waiver.",
+      "CHECK 6 skipped: this corpus has no static_blackhole snapshot. Recorded FAILED, never passed."
+    ],
+    "coverage": {
+      "address": {
+        "checked": 868,
+        "mismatches": 0,
+        "unverifiable": 0,
+        "examples": []
+      },
+      "active": {
+        "checked": 868,
+        "mismatches": 0,
+        "unverifiable": 0,
+        "examples": []
+      },
+      "ospf_area": {
+        "checked": 868,
+        "mismatches": 0,
+        "unverifiable": 0,
+        "examples": []
+      },
+      "ospf_cost": {
+        "checked": 628,
+        "mismatches": 0,
+        "unverifiable": 0,
+        "examples": []
+      },
+      "ospf_passive": {
+        "checked": 868,
+        "mismatches": 0,
+        "unverifiable": 0,
+        "examples": []
+      },
+      "ospf_network": {
+        "checked": 556,
+        "mismatches": 0,
+        "unverifiable": 0,
+        "examples": []
+      },
+      "static_route": {
+        "checked": 0,
+        "mismatches": 0,
+        "unverifiable": 0,
+        "examples": []
+      },
+      "named_structure": {
+        "checked": 0,
+        "mismatches": 0,
+        "unverifiable": 0,
+        "examples": []
+      }
+    },
+    "snapshots_checked": [
+      "golden-t03_dual8",
+      "golden-t05_ring6",
+      "golden-t06_mesh6",
+      "golden-t09_twin6",
+      "golden-t13_bowtie7",
+      "golden-t14_ladder8",
+      "golden-t15_campus12",
+      "golden-t16_pop14",
+      "golden-t17_metro13",
+      "golden-t18_grid12",
+      "golden-t19_dualcore16",
+      "golden-t20_leafspine12",
+      "I-00001",
+      "I-00002",
+      "I-00003",
+      "I-00004",
+      "I-00005",
+      "I-00006",
+      "I-00007",
+      "I-00008",
+      "I-00009",
+      "I-00010",
+      "I-00011",
+      "I-00012"
+    ],
+    "total_parse_warnings": 0,
+    "pybatfish_version": "2026.08.19.3660",
+    "verdict_as_written": "STOP"
+  },
+  "substitute_evidence": {
+    "pilot": "/mnt/c/Users/karth/network-research-lab/data/pilot-v3",
+    "n_checked": 8,
+    "n_ok": 8,
+    "verdict": "MODELLED",
+    "results": [
+      {
+        "candidate_id": "C-00007",
+        "topology": "t03_dual8",
+        "node": "corea",
+        "prefix": "10.255.0.5/32",
+        "parse_failures": 0,
+        "init_issues": 0,
+        "protocols_for_prefix": [
+          "static"
+        ],
+        "next_hops": [
+          "discard"
+        ],
+        "static_present": true,
+        "is_discard": true,
+        "static_selected": true,
+        "ok": true
+      },
+      {
+        "candidate_id": "C-00017",
+        "topology": "t05_ring6",
+        "node": "corea",
+        "prefix": "10.255.0.4/32",
+        "parse_failures": 0,
+        "init_issues": 0,
+        "protocols_for_prefix": [
+          "static"
+        ],
+        "next_hops": [
+          "discard"
+        ],
+        "static_present": true,
+        "is_discard": true,
+        "static_selected": true,
+        "ok": true
+      },
+      {
+        "candidate_id": "C-00027",
+        "topology": "t06_mesh6",
+        "node": "corea",
+        "prefix": "10.255.0.5/32",
+        "parse_failures": 0,
+        "init_issues": 0,
+        "protocols_for_prefix": [
+          "static"
+        ],
+        "next_hops": [
+          "discard"
+        ],
+        "static_present": true,
+        "is_discard": true,
+        "static_selected": true,
+        "ok": true
+      },
+      {
+        "candidate_id": "C-00038",
+        "topology": "t09_twin6",
+        "node": "corea",
+        "prefix": "10.255.0.4/32",
+        "parse_failures": 0,
+        "init_issues": 0,
+        "protocols_for_prefix": [
+          "static"
+        ],
+        "next_hops": [
+          "discard"
+        ],
+        "static_present": true,
+        "is_discard": true,
+        "static_selected": true,
+        "ok": true
+      },
+      {
+        "candidate_id": "C-00048",
+        "topology": "t13_bowtie7",
+        "node": "a1",
+        "prefix": "10.255.0.5/32",
+        "parse_failures": 0,
+        "init_issues": 0,
+        "protocols_for_prefix": [
+          "static"
+        ],
+        "next_hops": [
+          "discard"
+        ],
+        "static_present": true,
+        "is_discard": true,
+        "static_selected": true,
+        "ok": true
+      },
+      {
+        "candidate_id": "C-00062",
+        "topology": "t14_ladder8",
+        "node": "edgea",
+        "prefix": "10.255.0.5/32",
+        "parse_failures": 0,
+        "init_issues": 0,
+        "protocols_for_prefix": [
+          "static"
+        ],
+        "next_hops": [
+          "discard"
+        ],
+        "static_present": true,
+        "is_discard": true,
+        "static_selected": true,
+        "ok": true
+      },
+      {
+        "candidate_id": "C-00075",
+        "topology": "t15_campus12",
+        "node": "coreb",
+        "prefix": "10.255.0.9/32",
+        "parse_failures": 0,
+        "init_issues": 0,
+        "protocols_for_prefix": [
+          "static"
+        ],
+        "next_hops": [
+          "discard"
+        ],
+        "static_present": true,
+        "is_discard": true,
+        "static_selected": true,
+        "ok": true
+      },
+      {
+        "candidate_id": "C-00089",
+        "topology": "t16_pop14",
+        "node": "edgea",
+        "prefix": "10.255.0.7/32",
+        "parse_failures": 0,
+        "init_issues": 0,
+        "protocols_for_prefix": [
+          "static"
+        ],
+        "next_hops": [
+          "discard"
+        ],
+        "static_present": true,
+        "is_discard": true,
+        "static_selected": true,
+        "ok": true
+      }
+    ]
+  },
+  "run_utc": "2026-09-12T14:18:46Z",
+  "note": "run_phase2.py reads this and refuses unless verdict == GO. The underlying spike's own verdict is preserved above; it is STOP whenever a fault-dependent check skipped, which is correct for that gate and is why this one exists."
+}

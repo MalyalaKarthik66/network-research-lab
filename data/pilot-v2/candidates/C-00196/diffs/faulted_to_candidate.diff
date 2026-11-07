@@ -1,0 +1,19 @@
+--- I-00027
++++ C-00196
+@@ -41,6 +41,7 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
++ shutdown
+ !
+ interface eth2
+  description link to wan1 wanA1
+@@ -242,7 +243,7 @@
+ interface eth2
+  description link to corea siteA
+  ip ospf area 0.0.0.0
+- ip ospf cost 65535
++ ip ospf cost 10
+  ip ospf network point-to-point
+ !
+ router ospf

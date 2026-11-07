@@ -1,0 +1,20 @@
+--- I-00006
++++ C-00064
+@@ -597,7 +597,7 @@
+ interface eth2
+  description link to r3 R2
+  ip ospf area 0.0.0.0
+- ip ospf cost 30
++ ip ospf cost 600
+  ip ospf network point-to-point
+ !
+ interface eth3
+@@ -679,7 +679,7 @@
+ interface eth1
+  description link to r2 R2
+  ip ospf area 0.0.0.0
+- ip ospf cost 30
++ ip ospf cost 600
+  ip ospf network point-to-point
+ !
+ interface eth2

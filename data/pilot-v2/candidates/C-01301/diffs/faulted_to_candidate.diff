@@ -1,0 +1,11 @@
+--- I-00176
++++ C-01301
+@@ -468,7 +468,7 @@
+ interface eth1
+  description link to g2 r1b
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ interface eth2

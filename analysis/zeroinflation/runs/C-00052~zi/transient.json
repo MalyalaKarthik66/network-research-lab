@@ -1,0 +1,13 @@
+{
+  "harm_definition": "1.2.0-signals",
+  "seconds_to_converge": 45.8,
+  "converged": true,
+  "polls": 9,
+  "rib_changes_total": 8,
+  "rib_changes_max_router": 3,
+  "adjacency_flaps_after_full": 0,
+  "probe_polls": 9,
+  "probe_unreachable_polls": 2,
+  "transient_outage_after_reachable": false,
+  "flapped": false
+}

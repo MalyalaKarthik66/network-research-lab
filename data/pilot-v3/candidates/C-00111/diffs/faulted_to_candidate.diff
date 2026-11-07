@@ -1,0 +1,20 @@
+--- I-00010
++++ C-00111
+@@ -480,7 +480,7 @@
+ interface eth3
+  description link to g8 rung2
+  ip ospf area 0.0.0.0
+- ip ospf cost 30
++ ip ospf cost 600
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -887,7 +887,7 @@
+ interface eth3
+  description link to g3 rung2
+  ip ospf area 0.0.0.0
+- ip ospf cost 30
++ ip ospf cost 600
+  ip ospf network point-to-point
+ !
+ router ospf

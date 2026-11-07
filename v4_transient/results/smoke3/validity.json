@@ -1,0 +1,569 @@
+{
+  "runs": {
+    "SMOKE3-V4P-05.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "SMOKE3-V4P-06.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "SMOKE3-V4P-02.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "SMOKE3-V4P-03.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "SMOKE3-V4P-01.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "SMOKE3-V4P-04.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "SMOKE3-V4N-01.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "SMOKE3-V4N-09.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "SMOKE3-V4C-05.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "SMOKE3-V4C-10.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "SMOKE3-V4C-11.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "SMOKE3-V4C-18.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "SMOKE3-V4C-02.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "SMOKE3-V4C-07.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "SMOKE3-V4C-12.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "SMOKE3-V4C-17.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    }
+  },
+  "summary": {
+    "planned": 16,
+    "with_record": 16,
+    "measurable_and_valid": 16
+  }
+}

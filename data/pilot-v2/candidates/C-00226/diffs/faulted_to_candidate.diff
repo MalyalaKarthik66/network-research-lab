@@ -1,0 +1,19 @@
+--- I-00031
++++ C-00226
+@@ -222,7 +222,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+- shutdown
+ !
+ router ospf
+  ospf router-id 10.255.0.1
+@@ -302,7 +301,7 @@
+ !
+ interface eth3
+  description link to coreb siteB
+- ip ospf area 0.0.0.0
++ ip ospf area 0.0.0.9
+  ip ospf cost 10
+  ip ospf network point-to-point
+ !

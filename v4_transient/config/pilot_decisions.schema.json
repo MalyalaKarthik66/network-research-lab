@@ -1,0 +1,575 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "V4 transient pilot decisions D1-D9",
+  "description": "Receives the approved D1-D9 values. Structural schema only: conditional requirements, the §6 option combinations, the single-host restriction and UNFROZEN-marker rejection are enforced by v4_transient/v4lib/decisions.py validate().",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "status",
+    "decided_by",
+    "decided_utc",
+    "decisions"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "v4-pilot-decisions-1"
+    },
+    "status": {
+      "const": "FROZEN"
+    },
+    "decided_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decided_utc": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decisions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "D1_noise_floor",
+        "D2_G1_measurable",
+        "D3_G3_repeatable",
+        "D4_G4_host_invariance",
+        "D5_G2_analytic_reducibility",
+        "D6_G5_cost",
+        "D7_min_valid_replicates",
+        "D8_validity_guard",
+        "D9_positive_control_sensitivity"
+      ],
+      "properties": {
+        "D1_noise_floor": {
+          "type": "object",
+          "description": "pre-registration §6",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "rationale",
+            "floor_statistic",
+            "k_sd",
+            "per_change_comparator",
+            "metrics",
+            "probe_metric",
+            "probe_combination",
+            "all_noop_zero_handling",
+            "minimum_resolution_floor",
+            "probe_minimum_resolution_floor",
+            "minimum_resolution_floor_scope"
+          ],
+          "properties": {
+            "status": {
+              "const": "FROZEN"
+            },
+            "prereg_section": {
+              "type": "string"
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            },
+            "floor_statistic": {
+              "enum": [
+                "max_all_noop",
+                "max_per_topology_noop",
+                "mean_plus_k_sd_all_noop"
+              ]
+            },
+            "k_sd": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "non-null and required iff floor_statistic == 'mean_plus_k_sd_all_noop'; otherwise must be null"
+            },
+            "per_change_comparator": {
+              "enum": [
+                "replicate_median",
+                "replicate_mean"
+              ]
+            },
+            "metrics": {
+              "enum": [
+                "T1_only",
+                "T1_and_probe_loss"
+              ]
+            },
+            "probe_metric": {
+              "oneOf": [
+                {
+                  "enum": [
+                    "probe_loss_frac_window",
+                    "probe_lost_packet_s_window"
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "non-null and required iff metrics == 'T1_and_probe_loss'; otherwise must be null"
+            },
+            "probe_combination": {
+              "oneOf": [
+                {
+                  "enum": [
+                    "both_above_required",
+                    "either_above_sufficient"
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "non-null and required iff metrics == 'T1_and_probe_loss'; otherwise must be null"
+            },
+            "all_noop_zero_handling": {
+              "enum": [
+                "floor_is_zero",
+                "minimum_resolution_floor"
+              ]
+            },
+            "minimum_resolution_floor": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": 0
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "non-null and required iff all_noop_zero_handling == 'minimum_resolution_floor'; otherwise must be null"
+            },
+            "probe_minimum_resolution_floor": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": 0
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "non-null and required iff all_noop_zero_handling == 'minimum_resolution_floor' and metrics == 'T1_and_probe_loss'; otherwise must be null"
+            },
+            "minimum_resolution_floor_scope": {
+              "oneOf": [
+                {
+                  "enum": [
+                    "only_when_all_noop_zero",
+                    "lower_bound_always"
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "non-null and required iff all_noop_zero_handling == 'minimum_resolution_floor'; otherwise must be null"
+            }
+          }
+        },
+        "D2_G1_measurable": {
+          "type": "object",
+          "description": "pre-registration §7",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "rationale",
+            "kill_if_share_above_floor_below",
+            "denominator"
+          ],
+          "properties": {
+            "status": {
+              "const": "FROZEN"
+            },
+            "prereg_section": {
+              "type": "string"
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            },
+            "kill_if_share_above_floor_below": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 1
+            },
+            "denominator": {
+              "enum": [
+                "all_population_changes",
+                "changes_meeting_D7"
+              ]
+            }
+          }
+        },
+        "D3_G3_repeatable": {
+          "type": "object",
+          "description": "pre-registration §8",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "rationale",
+            "kill_if_within_share_above",
+            "zero_within_share_clause",
+            "zero_total_variance_handling"
+          ],
+          "properties": {
+            "status": {
+              "const": "FROZEN"
+            },
+            "prereg_section": {
+              "type": "string"
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            },
+            "kill_if_within_share_above": {
+              "type": "number",
+              "minimum": 0,
+              "exclusiveMaximum": 1
+            },
+            "zero_within_share_clause": {
+              "enum": [
+                "kills_only_if_G2_kills",
+                "kills_independently",
+                "report_only"
+              ]
+            },
+            "zero_total_variance_handling": {
+              "enum": [
+                "kill",
+                "no_kill_report_undefined",
+                "apply_zero_within_share_clause"
+              ]
+            }
+          }
+        },
+        "D4_G4_host_invariance": {
+          "type": "object",
+          "description": "pre-registration §9",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "rationale",
+            "metric",
+            "tolerance",
+            "n_changes_on_second_host",
+            "second_host_available_for_this_pilot",
+            "untested_handling",
+            "proxy_statistics",
+            "proxy_kill_if_abs_rho_above",
+            "proxy_kill_requires_p_below",
+            "proxy_fail_handling",
+            "proxy_pass_counts_as_tested"
+          ],
+          "properties": {
+            "status": {
+              "const": "FROZEN"
+            },
+            "prereg_section": {
+              "type": "string"
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            },
+            "metric": {
+              "enum": [
+                "median_abs_diff_change_mean_T1",
+                "median_abs_diff_change_mean_T1_over_pooled_within_sd"
+              ]
+            },
+            "tolerance": {
+              "type": "number",
+              "minimum": 0
+            },
+            "n_changes_on_second_host": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 20
+            },
+            "second_host_available_for_this_pilot": {
+              "type": "boolean"
+            },
+            "untested_handling": {
+              "enum": [
+                "cap_at_GO_WITH_FIXES",
+                "NO_GO_until_tested",
+                "single_host_proxy"
+              ]
+            },
+            "proxy_statistics": {
+              "oneOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "enum": [
+                      "resid_vs_order",
+                      "resid_vs_loadavg1",
+                      "resid_vs_wallclock"
+                    ]
+                  },
+                  "minItems": 1,
+                  "uniqueItems": true
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "non-null and required iff untested_handling == 'single_host_proxy'; otherwise must be null"
+            },
+            "proxy_kill_if_abs_rho_above": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": 0,
+                  "exclusiveMaximum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "non-null and required iff untested_handling == 'single_host_proxy'; otherwise must be null"
+            },
+            "proxy_kill_requires_p_below": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "exclusiveMinimum": 0,
+                  "maximum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "non-null and required iff untested_handling == 'single_host_proxy'; otherwise must be null"
+            },
+            "proxy_fail_handling": {
+              "oneOf": [
+                {
+                  "enum": [
+                    "NO_GO",
+                    "GO_WITH_FIXES"
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "non-null and required iff untested_handling == 'single_host_proxy'; otherwise must be null"
+            },
+            "proxy_pass_counts_as_tested": {
+              "oneOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "non-null and required iff untested_handling == 'single_host_proxy'; otherwise must be null"
+            }
+          }
+        },
+        "D5_G2_analytic_reducibility": {
+          "type": "object",
+          "description": "pre-registration §10",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "rationale",
+            "unit",
+            "aggregator",
+            "named_baseline",
+            "cross_validation",
+            "kill_if_r2_at_least",
+            "ci_rule"
+          ],
+          "properties": {
+            "status": {
+              "const": "FROZEN"
+            },
+            "prereg_section": {
+              "type": "string"
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            },
+            "unit": {
+              "enum": [
+                "change_means",
+                "runs"
+              ]
+            },
+            "aggregator": {
+              "enum": [
+                "max_over_B2_B6",
+                "single_named_baseline"
+              ]
+            },
+            "named_baseline": {
+              "oneOf": [
+                {
+                  "enum": [
+                    "B2_r_exact",
+                    "B3_fib_entries_changed",
+                    "B4_microloop_potential",
+                    "B5_combined_analytic",
+                    "B6_graph_analytic"
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "non-null and required iff aggregator == 'single_named_baseline'; otherwise must be null"
+            },
+            "cross_validation": {
+              "enum": [
+                "leave_one_topology_out"
+              ]
+            },
+            "kill_if_r2_at_least": {
+              "type": "number",
+              "maximum": 1
+            },
+            "ci_rule": {
+              "enum": [
+                "point_estimate",
+                "lower_95_bootstrap_bound"
+              ]
+            }
+          }
+        },
+        "D6_G5_cost": {
+          "type": "object",
+          "description": "pre-registration §11",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "rationale",
+            "kill_if_median_wall_s_above"
+          ],
+          "properties": {
+            "status": {
+              "const": "FROZEN"
+            },
+            "prereg_section": {
+              "type": "string"
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            },
+            "kill_if_median_wall_s_above": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          }
+        },
+        "D7_min_valid_replicates": {
+          "type": "object",
+          "description": "pre-registration §12",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "rationale",
+            "min_valid_replicates_per_change"
+          ],
+          "properties": {
+            "status": {
+              "const": "FROZEN"
+            },
+            "prereg_section": {
+              "type": "string"
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            },
+            "min_valid_replicates_per_change": {
+              "type": "integer",
+              "enum": [
+                3,
+                4,
+                5
+              ]
+            }
+          }
+        },
+        "D8_validity_guard": {
+          "type": "object",
+          "description": "pre-registration §12",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "rationale",
+            "min_valid_population_run_share"
+          ],
+          "properties": {
+            "status": {
+              "const": "FROZEN"
+            },
+            "prereg_section": {
+              "type": "string"
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            },
+            "min_valid_population_run_share": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "D9_positive_control_sensitivity": {
+          "type": "object",
+          "description": "pre-registration §16",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "rationale",
+            "min_positive_controls_above_floor",
+            "invalid_positive_control_handling"
+          ],
+          "properties": {
+            "status": {
+              "const": "FROZEN"
+            },
+            "prereg_section": {
+              "type": "string"
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            },
+            "min_positive_controls_above_floor": {
+              "type": "integer",
+              "enum": [
+                3,
+                4
+              ]
+            },
+            "invalid_positive_control_handling": {
+              "enum": [
+                "counts_as_not_above",
+                "excluded_from_count"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

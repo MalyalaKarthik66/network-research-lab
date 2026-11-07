@@ -1,0 +1,10 @@
+--- golden-t18_grid12
++++ I-00174
+@@ -51,6 +51,7 @@
+  ospf router-id 10.255.0.1
+  passive-interface lo
+  passive-interface eth1
++ passive-interface eth2
+ !
+ line vty
+ !

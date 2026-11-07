@@ -1,0 +1,10 @@
+--- golden-t04_star5
++++ I-00034
+@@ -227,6 +227,7 @@
+  ospf router-id 10.255.0.1
+  passive-interface lo
+  passive-interface eth1
++ passive-interface eth2
+ !
+ line vty
+ !

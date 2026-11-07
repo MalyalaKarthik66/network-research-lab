@@ -1,0 +1,19 @@
+{
+  "incident_id": "I-00063",
+  "topology": "t07_tier7",
+  "fault_id": "F0003",
+  "fault_family": "ospf_area_mismatch",
+  "fault_description": "[t07_tier7] edgea eth2 moved to area 0.0.0.1",
+  "fault_params": {
+    "node": "edgea",
+    "iface": "eth2",
+    "bad_area": "0.0.0.1",
+    "good_area": "0.0.0.0",
+    "peer": "agga",
+    "peer_iface": "eth1",
+    "link": "siteA",
+    "good_cost": 10,
+    "topology": "t07_tier7"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

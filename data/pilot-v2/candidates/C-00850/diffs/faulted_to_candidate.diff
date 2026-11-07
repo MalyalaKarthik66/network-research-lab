@@ -1,0 +1,12 @@
+--- I-00115
++++ C-00850
+@@ -527,6 +527,9 @@
+ !
+ interface eth2
+  description link to dista accA
++ ip ospf area 0.0.0.0
++ ip ospf cost 13
++ ip ospf network point-to-point
+ !
+ router ospf
+  ospf router-id 10.255.0.1

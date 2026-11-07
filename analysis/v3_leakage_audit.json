@@ -1,0 +1,46 @@
+{
+  "all20": {
+    "n": 215,
+    "provenance_r2": {
+      "repair_class": 0.0681,
+      "repair_id": 0.6247,
+      "topology": 0.0091,
+      "quantile_idx": 0.1119,
+      "order": 0.0185
+    },
+    "rf_chg_only_loto": 0.373,
+    "rf_chg_plus_size_loto": 0.5898,
+    "rf_all_X_random": 0.9585,
+    "rf_all_X_loto": 0.871,
+    "rf_legit_only_loto": 0.8619,
+    "severity": {
+      "min": 0.0,
+      "max": 0.4476,
+      "mean": 0.15288,
+      "median": 0.0972,
+      "zeros": 14
+    }
+  },
+  "wide12": {
+    "n": 215,
+    "provenance_r2": {
+      "repair_class": 0.0681,
+      "repair_id": 0.6247,
+      "topology": 0.0091,
+      "quantile_idx": 0.1119,
+      "order": 0.0185
+    },
+    "rf_chg_only_loto": 0.373,
+    "rf_chg_plus_size_loto": 0.5898,
+    "rf_all_X_random": 0.9585,
+    "rf_all_X_loto": 0.871,
+    "rf_legit_only_loto": 0.8619,
+    "severity": {
+      "min": 0.0,
+      "max": 0.4476,
+      "mean": 0.15288,
+      "median": 0.0972,
+      "zeros": 14
+    }
+  }
+}

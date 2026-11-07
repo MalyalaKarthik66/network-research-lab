@@ -1,0 +1,61 @@
+{
+  "phase": 2,
+  "run_utc": "2026-09-12T14:40:43Z",
+  "generator_version": "pilot-v1",
+  "suite_version": "1.1.0",
+  "network": "nrl-pilot-v3",
+  "pybatfish_version": "2026.08.19.3660",
+  "python_version": "3.10.12",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "spike_verdict": "GO",
+  "snapshot_digest": "86648b27bf499d2513c33ea78b5fb530b18a354216cbdd0a3e166a62952ab707",
+  "artifact_digest": "6d1b7348e9ca4c58f5da314f5a9e4a121f3217534bf55662337cb0498e2086e3",
+  "spike_overridden": false,
+  "candidates_requested": 151,
+  "candidates_processed": 151,
+  "candidate_filter": null,
+  "limit": null,
+  "batch_size": null,
+  "candidates_errored": [],
+  "differential_flow": {
+    "src": "10.10.0.10",
+    "dst": "10.20.0.0/23"
+  },
+  "spec_property_ids": [
+    "P01",
+    "P02",
+    "P05",
+    "P07",
+    "P08"
+  ],
+  "oracle_only_property_ids": [
+    "P03",
+    "P04",
+    "P06",
+    "P09",
+    "P10",
+    "P11",
+    "P12"
+  ],
+  "raw_questions": [
+    "initIssues",
+    "fileParseStatus",
+    "parseWarning",
+    "undefinedReferences",
+    "unusedStructures",
+    "definedStructures",
+    "nodeProperties",
+    "interfaceProperties",
+    "ipOwners",
+    "layer3Edges",
+    "ospfSessionCompatibility",
+    "ospfInterfaceConfiguration",
+    "ospfProcessConfiguration",
+    "routes",
+    "detectLoops",
+    "multipathConsistency",
+    "subnetMultipathConsistency"
+  ],
+  "wall_seconds": 1239.8,
+  "note": "No label, risk score or research target is computed in Phase 2. See docs/HARM-DEFINITION.md."
+}

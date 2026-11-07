@@ -1,0 +1,17 @@
+{
+  "incident_id": "I-00184",
+  "topology": "t19_dualcore16",
+  "fault_id": "F0004",
+  "fault_family": "ospf_passive_transit",
+  "fault_description": "[t19_dualcore16] edgea eth2 marked passive (accA)",
+  "fault_params": {
+    "node": "edgea",
+    "iface": "eth2",
+    "peer": "agga",
+    "peer_iface": "eth1",
+    "link": "accA",
+    "good_cost": 10,
+    "topology": "t19_dualcore16"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

@@ -1,0 +1,11 @@
+--- golden-t13_bowtie7
++++ I-00123
+@@ -351,7 +351,7 @@
+ !
+ interface eth2
+  description link to a1 A1
+- ip ospf area 0.0.0.0
++ ip ospf area 0.0.0.1
+  ip ospf cost 10
+  ip ospf network point-to-point
+ !

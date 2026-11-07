@@ -1,0 +1,93 @@
+{
+  "status": "OK",
+  "rc": 0,
+  "stdout": "{\n  \"neighbors\":{\n    \"10.255.0.1\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/-\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/-\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":42379,\n        \"deadTimeMsecs\":37619,\n        \"routerDeadIntervalTimerDueMsec\":37619,\n        \"upTime\":\"42.379s\",\n        \"deadTime\":\"37.619s\",\n        \"address\":\"10.29.1.1\",\n        \"ifaceAddress\":\"10.29.1.1\",\n        \"ifaceName\":\"eth1:10.29.1.2\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"10.255.0.3\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/-\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/-\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":42234,\n        \"deadTimeMsecs\":37762,\n        \"routerDeadIntervalTimerDueMsec\":37762,\n        \"upTime\":\"42.234s\",\n        \"deadTime\":\"37.762s\",\n        \"address\":\"10.29.2.2\",\n        \"ifaceAddress\":\"10.29.2.2\",\n        \"ifaceName\":\"eth2:10.29.2.1\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"10.255.0.13\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/-\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/-\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":37173,\n        \"deadTimeMsecs\":37823,\n        \"routerDeadIntervalTimerDueMsec\":37823,\n        \"upTime\":\"37.173s\",\n        \"deadTime\":\"37.823s\",\n        \"address\":\"10.29.12.2\",\n        \"ifaceAddress\":\"10.29.12.2\",\n        \"ifaceName\":\"eth3:10.29.12.1\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ]\n  }\n}\n",
+  "stderr": "% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.\n",
+  "argv": [
+    "docker",
+    "exec",
+    "clab-nrlv2-c-01334-agga",
+    "vtysh",
+    "-c",
+    "show ip ospf neighbor json"
+  ],
+  "seconds": 0.05,
+  "error": null,
+  "command": "show ip ospf neighbor json",
+  "json": {
+    "neighbors": {
+      "10.255.0.1": [
+        {
+          "priority": 1,
+          "state": "Full/-",
+          "nbrPriority": 1,
+          "nbrState": "Full/-",
+          "converged": "Full",
+          "role": "DROther",
+          "upTimeInMsec": 42379,
+          "deadTimeMsecs": 37619,
+          "routerDeadIntervalTimerDueMsec": 37619,
+          "upTime": "42.379s",
+          "deadTime": "37.619s",
+          "address": "10.29.1.1",
+          "ifaceAddress": "10.29.1.1",
+          "ifaceName": "eth1:10.29.1.2",
+          "retransmitCounter": 0,
+          "linkStateRetransmissionListCounter": 0,
+          "requestCounter": 0,
+          "linkStateRequestListCounter": 0,
+          "dbSummaryCounter": 0,
+          "databaseSummaryListCounter": 0
+        }
+      ],
+      "10.255.0.3": [
+        {
+          "priority": 1,
+          "state": "Full/-",
+          "nbrPriority": 1,
+          "nbrState": "Full/-",
+          "converged": "Full",
+          "role": "DROther",
+          "upTimeInMsec": 42234,
+          "deadTimeMsecs": 37762,
+          "routerDeadIntervalTimerDueMsec": 37762,
+          "upTime": "42.234s",
+          "deadTime": "37.762s",
+          "address": "10.29.2.2",
+          "ifaceAddress": "10.29.2.2",
+          "ifaceName": "eth2:10.29.2.1",
+          "retransmitCounter": 0,
+          "linkStateRetransmissionListCounter": 0,
+          "requestCounter": 0,
+          "linkStateRequestListCounter": 0,
+          "dbSummaryCounter": 0,
+          "databaseSummaryListCounter": 0
+        }
+      ],
+      "10.255.0.13": [
+        {
+          "priority": 1,
+          "state": "Full/-",
+          "nbrPriority": 1,
+          "nbrState": "Full/-",
+          "converged": "Full",
+          "role": "DROther",
+          "upTimeInMsec": 37173,
+          "deadTimeMsecs": 37823,
+          "routerDeadIntervalTimerDueMsec": 37823,
+          "upTime": "37.173s",
+          "deadTime": "37.823s",
+          "address": "10.29.12.2",
+          "ifaceAddress": "10.29.12.2",
+          "ifaceName": "eth3:10.29.12.1",
+          "retransmitCounter": 0,
+          "linkStateRetransmissionListCounter": 0,
+          "requestCounter": 0,
+          "linkStateRequestListCounter": 0,
+          "dbSummaryCounter": 0,
+          "databaseSummaryListCounter": 0
+        }
+      ]
+    }
+  }
+}

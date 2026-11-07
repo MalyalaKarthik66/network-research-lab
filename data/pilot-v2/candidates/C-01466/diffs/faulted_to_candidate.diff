@@ -1,0 +1,20 @@
+--- I-00199
++++ C-01466
+@@ -47,8 +47,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 50
+  ip ospf network point-to-point
+-!
+-ip route 10.20.0.0/24 10.30.13.1
+ !
+ router ospf
+  ospf router-id 10.255.0.11
+@@ -747,7 +745,7 @@
+ interface eth1
+  description link to s2 sl2
+  ip ospf area 0.0.0.0
+- ip ospf cost 20
++ ip ospf cost 1
+  ip ospf network point-to-point
+ !
+ interface eth2

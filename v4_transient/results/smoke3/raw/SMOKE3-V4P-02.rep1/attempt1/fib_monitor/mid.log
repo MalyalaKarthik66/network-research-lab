@@ -1,0 +1,11 @@
+[2026-09-15T12:22:35.243672] 597: eth3@if598: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 9500 qdisc noqueue state DOWN group default 
+    link/ether aa:c1:ab:36:a3:8a brd ff:ff:ff:ff:ff:ff link-netnsid 3
+    altname clab-o-5b53c2f2e68283d8
+[2026-09-15T12:22:35.254195] 10.23.5.0/30 nhid 39 via 10.23.6.2 dev eth4 proto ospf metric 20 
+[2026-09-15T12:22:35.254247] 10.20.0.0/24 nhid 39 via 10.23.6.2 dev eth4 proto ospf metric 20 
+[2026-09-15T12:22:35.254260] 10.21.0.0/24 nhid 39 via 10.23.6.2 dev eth4 proto ospf metric 20 
+[2026-09-15T12:22:35.254271] 10.23.7.0/30 nhid 39 via 10.23.6.2 dev eth4 proto ospf metric 20 
+[2026-09-15T12:22:35.254281] 10.23.8.0/30 nhid 39 via 10.23.6.2 dev eth4 proto ospf metric 20 
+[2026-09-15T12:22:35.254291] 10.255.0.5 nhid 39 via 10.23.6.2 dev eth4 proto ospf metric 20 
+[2026-09-15T12:22:35.254300] 10.255.0.7 nhid 39 via 10.23.6.2 dev eth4 proto ospf metric 20 
+[2026-09-15T12:22:35.305208] Deleted 10.23.5.0/30 nhid 39 via 10.23.6.2 dev eth4 proto ospf metric 20 

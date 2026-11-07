@@ -1,0 +1,185 @@
+{
+  "plan": "smoke3",
+  "purpose": "engineering validation of amendments A4 (positive controls) and A5 (runner); not pilot data",
+  "acceptance_criteria": "docs/V4-LAUNCH-AUDIT-2.md \u00a74 (fixed in Git commit b165c23 before smoke 3)",
+  "selection": [
+    [
+      "V4P-05",
+      "t05_ring6",
+      "shutdown"
+    ],
+    [
+      "V4P-06",
+      "t15_campus12",
+      "shutdown"
+    ],
+    [
+      "V4P-02",
+      "t13_bowtie7",
+      "shutdown"
+    ],
+    [
+      "V4P-03",
+      "t14_ladder8",
+      "shutdown"
+    ],
+    [
+      "V4P-01",
+      "t05_ring6",
+      "shutdown"
+    ],
+    [
+      "V4P-04",
+      "t15_campus12",
+      "shutdown"
+    ],
+    [
+      "V4N-01",
+      "t05_ring6",
+      "noop"
+    ],
+    [
+      "V4N-09",
+      "t15_campus12",
+      "noop"
+    ],
+    [
+      "V4C-05",
+      "t05_ring6",
+      "bh"
+    ],
+    [
+      "V4C-10",
+      "t13_bowtie7",
+      "bh"
+    ],
+    [
+      "V4C-11",
+      "t14_ladder8",
+      "cost-hi"
+    ],
+    [
+      "V4C-18",
+      "t15_campus12",
+      "drain-hi"
+    ],
+    [
+      "V4C-02",
+      "t05_ring6",
+      "cost-mid"
+    ],
+    [
+      "V4C-07",
+      "t13_bowtie7",
+      "cost-mid"
+    ],
+    [
+      "V4C-12",
+      "t14_ladder8",
+      "cost-mid"
+    ],
+    [
+      "V4C-17",
+      "t15_campus12",
+      "cost-mid"
+    ]
+  ],
+  "runs": [
+    {
+      "run_id": "SMOKE3-V4P-05.rep1",
+      "change_id": "V4P-05",
+      "replicate": 1,
+      "order": 0
+    },
+    {
+      "run_id": "SMOKE3-V4P-06.rep1",
+      "change_id": "V4P-06",
+      "replicate": 1,
+      "order": 1
+    },
+    {
+      "run_id": "SMOKE3-V4P-02.rep1",
+      "change_id": "V4P-02",
+      "replicate": 1,
+      "order": 2
+    },
+    {
+      "run_id": "SMOKE3-V4P-03.rep1",
+      "change_id": "V4P-03",
+      "replicate": 1,
+      "order": 3
+    },
+    {
+      "run_id": "SMOKE3-V4P-01.rep1",
+      "change_id": "V4P-01",
+      "replicate": 1,
+      "order": 4
+    },
+    {
+      "run_id": "SMOKE3-V4P-04.rep1",
+      "change_id": "V4P-04",
+      "replicate": 1,
+      "order": 5
+    },
+    {
+      "run_id": "SMOKE3-V4N-01.rep1",
+      "change_id": "V4N-01",
+      "replicate": 1,
+      "order": 6
+    },
+    {
+      "run_id": "SMOKE3-V4N-09.rep1",
+      "change_id": "V4N-09",
+      "replicate": 1,
+      "order": 7
+    },
+    {
+      "run_id": "SMOKE3-V4C-05.rep1",
+      "change_id": "V4C-05",
+      "replicate": 1,
+      "order": 8
+    },
+    {
+      "run_id": "SMOKE3-V4C-10.rep1",
+      "change_id": "V4C-10",
+      "replicate": 1,
+      "order": 9
+    },
+    {
+      "run_id": "SMOKE3-V4C-11.rep1",
+      "change_id": "V4C-11",
+      "replicate": 1,
+      "order": 10
+    },
+    {
+      "run_id": "SMOKE3-V4C-18.rep1",
+      "change_id": "V4C-18",
+      "replicate": 1,
+      "order": 11
+    },
+    {
+      "run_id": "SMOKE3-V4C-02.rep1",
+      "change_id": "V4C-02",
+      "replicate": 1,
+      "order": 12
+    },
+    {
+      "run_id": "SMOKE3-V4C-07.rep1",
+      "change_id": "V4C-07",
+      "replicate": 1,
+      "order": 13
+    },
+    {
+      "run_id": "SMOKE3-V4C-12.rep1",
+      "change_id": "V4C-12",
+      "replicate": 1,
+      "order": 14
+    },
+    {
+      "run_id": "SMOKE3-V4C-17.rep1",
+      "change_id": "V4C-17",
+      "replicate": 1,
+      "order": 15
+    }
+  ]
+}

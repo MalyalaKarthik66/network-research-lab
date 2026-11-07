@@ -1,0 +1,179 @@
+{
+  "experiment_id": "v4-transient-pilot",
+  "protocol_version": "transient-1.1.0",
+  "run_id": "SMOKE2-V4C-18.rep1",
+  "change_id": "V4C-18",
+  "replicate": 1,
+  "order": 8,
+  "change_kind": "population",
+  "topology": "t15_campus12",
+  "lab": "nrlv4-t15",
+  "attempt": 1,
+  "status": "OK",
+  "error": null,
+  "started_utc": "2026-09-15T10:51:34Z",
+  "t_wall_start": 1789469494.424583,
+  "code_sha256": {
+    "v4lib/__init__.py": "fb5998d26b6037dbf0ec31b88ebedb48686a4be77c2bd6ebbc62a9a9c07f616f",
+    "v4lib/analytic.py": "94dcd67a7238842dcac3810b9f2713cdf4cb80922be1df1590ccc3b406eea2fb",
+    "v4lib/decisions.py": "f5304d0e7a4da4aa48d10413b2e925cdbb3c3eec8eaf3a23fa2b788c15ad8d19",
+    "v4lib/fib.py": "6c3988b1b8a79b7d5797ae571e0361d7bbf60590121688557eca63408b789ee6",
+    "v4lib/freeze.py": "0aabe2e3bffc55ae65647d3a6f62ecbe7e644e1473f185cfd9581c07901cdc55",
+    "v4lib/gates.py": "588895381e5441d205e2bdc7571c7fae40e283651b1a3c94d125dcaeccca0b16",
+    "v4lib/labops.py": "11709e2aaf3daf082fb54e8f2e89af06fb1ca4678bdf3c458f71d17a909672db",
+    "v4lib/targets.py": "01481550614d29a73fb4ac9604d59bcebbe95f27ef09d06a07f810798eac85e6",
+    "pilot/run_pilot.py": "3ea2a0f18fd41378491e4961ef8c6b482dca9bbbff0c8915c488136b8c3c3858"
+  },
+  "prereg_sha256": "a2d4a8b95dbbba2518b2e333647fe536ed8affed5a93789249096976c8a76e8c",
+  "env_before": {
+    "utc": "2026-09-15T10:51:35Z",
+    "epoch": 1789469495.67164,
+    "loadavg": "2.12 1.72 1.40 1/626 87856",
+    "meminfo": {
+      "MemTotal": "7979188 kB",
+      "MemFree": "4495400 kB",
+      "MemAvailable": "6649668 kB"
+    },
+    "uptime_s": "5010.40 78794.20",
+    "nproc": 16,
+    "kernel": "6.6.87.2-microsoft-standard-WSL2",
+    "python": "3.10.12",
+    "running_containers": 0
+  },
+  "params": {
+    "PRE_CHANGE_BASELINE_S": 10.0,
+    "MIN_OBS_S": 20.0,
+    "QUIET_S": 10.0,
+    "MAX_OBS_S": 90.0,
+    "POLL_S": 2.0,
+    "PROBE_INTERVAL_S": 0.05,
+    "PROBE_COUNT": 2600
+  },
+  "staging": {
+    "status": "OK",
+    "files_verified": 41,
+    "problems": []
+  },
+  "deploy": {
+    "status": "OK",
+    "rc": 0,
+    "seconds": 5.17,
+    "error": null
+  },
+  "containers": {
+    "status": "OK",
+    "missing": [],
+    "expected": 15,
+    "found": 15,
+    "error": null
+  },
+  "convergence": {
+    "status": "OK",
+    "converged": true,
+    "seconds": 120.4,
+    "polls": 4,
+    "min_settle_s": 45,
+    "error": null
+  },
+  "convergence_wall_s": 120.6,
+  "pre_ospf_binding": {
+    "status": "OK",
+    "problems": []
+  },
+  "container_date": "Tue Sep 15 10:54:13 UTC 2026",
+  "fib_monitors": {
+    "acca1": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "acca2": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "accb1": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "accb2": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "corea": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "coreb": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "dista1": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "dista2": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "distb1": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "distb2": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "edgea": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "edgeb": {
+      "status": "OK",
+      "stderr": ""
+    }
+  },
+  "t_baseline_start": 1789469707.3956058,
+  "change_applied": true,
+  "t0": 1789469717.464841,
+  "t_push_end": 1789469719.9337366,
+  "push_status": [
+    "OK",
+    "OK",
+    "OK"
+  ],
+  "t_end": 1789469747.7242973,
+  "settled": true,
+  "observation_s": 30.259456396102905,
+  "post_checks": {
+    "running_config": {
+      "status": "OK",
+      "routers_checked": 12,
+      "problems": []
+    },
+    "addresses": {
+      "status": "OK",
+      "problems": []
+    },
+    "ospf_binding": {
+      "status": "OK",
+      "problems": []
+    }
+  },
+  "teardown_ok": true,
+  "env_after": {
+    "utc": "2026-09-15T10:58:34Z",
+    "epoch": 1789469914.981616,
+    "loadavg": "1.03 1.24 1.27 1/629 101010",
+    "meminfo": {
+      "MemTotal": "7979188 kB",
+      "MemFree": "4467556 kB",
+      "MemAvailable": "6626440 kB"
+    },
+    "uptime_s": "5424.55 85287.43",
+    "nproc": 16,
+    "kernel": "6.6.87.2-microsoft-standard-WSL2",
+    "python": "3.10.12",
+    "running_containers": 0
+  },
+  "finished_utc": "2026-09-15T10:58:34Z",
+  "wall_s": 420.56
+}

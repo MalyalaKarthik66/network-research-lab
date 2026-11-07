@@ -1,0 +1,19 @@
+--- I-00193
++++ C-01429
+@@ -197,7 +197,7 @@
+ !
+ interface eth2
+  description link to l1 accA
+- ip ospf area 0.0.0.1
++ ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+ !
+@@ -206,6 +206,7 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 50
+  ip ospf network point-to-point
++ shutdown
+ !
+ router ospf
+  ospf router-id 10.255.0.1

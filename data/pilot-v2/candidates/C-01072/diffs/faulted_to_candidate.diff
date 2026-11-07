@@ -1,0 +1,20 @@
+--- I-00145
++++ C-01072
+@@ -856,7 +856,7 @@
+  ip ospf cost 10
+ !
+ interface eth2
+- description link to acca1 accA1
++ description link to acca1 accA1 (reviewed NET-1042)
+ !
+ interface eth3
+  description link to acca2 accA2
+@@ -889,7 +889,7 @@
+ auto eth2
+ iface eth2
+     address 10.25.1.1/30
+-    alias link to acca1 accA1
++    alias link to acca1 accA1 (reviewed NET-1042)
+ 
+ auto eth3
+ iface eth3

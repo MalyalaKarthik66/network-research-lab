@@ -1,0 +1,15 @@
+--- I-00131
++++ C-00972
+@@ -46,11 +46,10 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+- shutdown
+ !
+ interface eth3
+  description link to r1 A2
+- ip ospf area 0.0.0.0
++ ip ospf area 0.0.0.9
+  ip ospf cost 30
+  ip ospf network point-to-point
+ !

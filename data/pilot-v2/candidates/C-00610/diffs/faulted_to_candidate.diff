@@ -1,0 +1,19 @@
+--- I-00082
++++ C-00610
+@@ -233,6 +233,7 @@
+  ospf router-id 10.255.0.1
+  passive-interface lo
+  passive-interface eth1
++ passive-interface eth3
+ !
+ line vty
+ !
+@@ -253,7 +254,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.200.0.2/30
++    address 10.19.1.1/30
+     alias link to corea siteA
+ 
+ auto eth3

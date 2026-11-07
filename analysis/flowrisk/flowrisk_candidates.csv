@@ -1,0 +1,13 @@
+candidate_id,topology,repair_class,repair_id,frozen_outcome,frozen_signature,n_runs,risk_values,risk_mean,risk_min,risk_max,broken_mean,degraded_mean,intermediate
+C-00001,t01_chain4,correct,RC-cost_norm_1,SAFE,,2,0.0;0.0,0.0,0.0,0.0,0.0,0.0,False
+C-00002,t01_chain4,correct,RC-peer_cost_norm_3,SAFE,,2,0.0;0.0,0.0,0.0,0.0,0.0,0.0,False
+C-00017,t01_chain4,incomplete,RI-cost_reroute,HARMFUL,P06;P08,2,0.083333;0.083333,0.083333,0.083333,0.083333,0.0,0.083333,True
+C-00022,t01_chain4,regressive,RR-blackhole_same,HARMFUL,P03;P04,2,0.041667;0.041667,0.041667,0.041667,0.041667,0.041667,0.0,True
+C-00039,t01_chain4,incomplete,RI-overbroad_ospf,HARMFUL,P06,2,0.083333;0.083333,0.083333,0.083333,0.083333,0.0,0.083333,True
+C-00042,t01_chain4,incomplete,RI-cost_reroute,HARMFUL,P06,2,0.041667;0.041667,0.041667,0.041667,0.041667,0.0,0.041667,True
+C-00052,t01_chain4,regressive,RR-blackhole_other,HARMFUL,P03;P04,2,0.125;0.125,0.125,0.125,0.125,0.125,0.0,True
+C-00087,t02_wan6,incomplete,RI-cosmetic,HARMFUL,P01;P02;P03;P04;P05;P06;P08;P09;P10;P11,2,0.375;0.375,0.375,0.375,0.375,0.375,0.0,True
+C-00162,t03_dual8,incomplete,RI-static_broad,HARMFUL,P01;P02;P03;P04;P05;P06;P08;P09;P10;P11,2,0.416667;0.416667,0.416667,0.416667,0.416667,0.416667,0.0,True
+C-00259,t04_star5,incomplete,RI-overbroad_ospf,HARMFUL,P01;P02;P03;P04;P05;P06;P09;P10;P11,2,0.416667;0.416667,0.416667,0.416667,0.416667,0.416667,0.0,True
+C-00611,t09_twin6,incomplete,RI-wrong_device,HARMFUL,P06;P08,2,0.125;0.125,0.125,0.125,0.125,0.0,0.125,True
+C-00982,t14_ladder8,incomplete,RI-cosmetic,HARMFUL,P08,2,0.291667,0.291667,0.291667,0.291667,0.0,0.291667,True

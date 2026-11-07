@@ -1,0 +1,66 @@
+{
+  "hostb:80": {
+    "status": "OK",
+    "rc": 0,
+    "stdout": "",
+    "stderr": "",
+    "argv": [
+      "docker",
+      "exec",
+      "clab-nrlv2-c-00162-hostb",
+      "sh",
+      "-c",
+      "(while true; do nc -l -p 80 >/dev/null 2>&1; done) >/dev/null 2>&1 &"
+    ],
+    "seconds": 0.03,
+    "error": null
+  },
+  "hostb:443": {
+    "status": "OK",
+    "rc": 0,
+    "stdout": "",
+    "stderr": "",
+    "argv": [
+      "docker",
+      "exec",
+      "clab-nrlv2-c-00162-hostb",
+      "sh",
+      "-c",
+      "(while true; do nc -l -p 443 >/dev/null 2>&1; done) >/dev/null 2>&1 &"
+    ],
+    "seconds": 0.04,
+    "error": null
+  },
+  "hostc:80": {
+    "status": "OK",
+    "rc": 0,
+    "stdout": "",
+    "stderr": "",
+    "argv": [
+      "docker",
+      "exec",
+      "clab-nrlv2-c-00162-hostc",
+      "sh",
+      "-c",
+      "(while true; do nc -l -p 80 >/dev/null 2>&1; done) >/dev/null 2>&1 &"
+    ],
+    "seconds": 0.03,
+    "error": null
+  },
+  "hostc:443": {
+    "status": "OK",
+    "rc": 0,
+    "stdout": "",
+    "stderr": "",
+    "argv": [
+      "docker",
+      "exec",
+      "clab-nrlv2-c-00162-hostc",
+      "sh",
+      "-c",
+      "(while true; do nc -l -p 443 >/dev/null 2>&1; done) >/dev/null 2>&1 &"
+    ],
+    "seconds": 0.03,
+    "error": null
+  }
+}

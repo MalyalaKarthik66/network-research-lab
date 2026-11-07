@@ -1,0 +1,19 @@
+--- I-00012
++++ C-00084
+@@ -247,7 +247,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.200.0.2/30
++    address 10.12.1.1/30
+     alias link to corea siteA
+ 
+ 
+@@ -412,6 +412,7 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
++ shutdown
+ !
+ router ospf
+  ospf router-id 10.255.0.3

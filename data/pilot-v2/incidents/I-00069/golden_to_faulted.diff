@@ -1,0 +1,11 @@
+--- golden-t07_tier7
++++ I-00069
+@@ -54,6 +54,8 @@
+  ip ospf cost 100
+  ip ospf network point-to-point
+ !
++ip route 10.20.0.0/24 10.17.1.1
++!
+ router ospf
+  ospf router-id 10.255.0.2
+  passive-interface lo

@@ -1,0 +1,13 @@
+[2026-09-15T12:50:58.158824] id 43 via 10.24.9.1 dev eth3 scope link proto zebra 
+[2026-09-15T12:50:58.158941] 10.10.0.0/24 nhid 43 via 10.24.9.1 dev eth3 proto ospf metric 20 
+[2026-09-15T12:50:58.158968] 10.20.0.0/24 nhid 43 via 10.24.9.1 dev eth3 proto ospf metric 20 
+[2026-09-15T12:50:58.158986] 10.21.0.0/24 nhid 43 via 10.24.9.1 dev eth3 proto ospf metric 20 
+[2026-09-15T12:50:58.159002] 10.24.1.0/30 nhid 43 via 10.24.9.1 dev eth3 proto ospf metric 20 
+[2026-09-15T12:50:58.159018] 10.24.2.0/30 nhid 43 via 10.24.9.1 dev eth3 proto ospf metric 20 
+[2026-09-15T12:50:58.159036] 10.24.3.0/30 nhid 43 via 10.24.9.1 dev eth3 proto ospf metric 20 
+[2026-09-15T12:50:58.159104] 10.24.4.0/30 nhid 43 via 10.24.9.1 dev eth3 proto ospf metric 20 
+[2026-09-15T12:50:58.159121] 10.255.0.1 nhid 43 via 10.24.9.1 dev eth3 proto ospf metric 20 
+[2026-09-15T12:50:58.159139] 10.255.0.2 nhid 43 via 10.24.9.1 dev eth3 proto ospf metric 20 
+[2026-09-15T12:50:58.159161] 10.255.0.3 nhid 43 via 10.24.9.1 dev eth3 proto ospf metric 20 
+[2026-09-15T12:50:58.159176] 10.255.0.4 nhid 43 via 10.24.9.1 dev eth3 proto ospf metric 20 
+[2026-09-15T12:50:58.159192] 10.255.0.5 nhid 43 via 10.24.9.1 dev eth3 proto ospf metric 20 

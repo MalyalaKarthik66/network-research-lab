@@ -1,0 +1,19 @@
+--- I-00144
++++ C-01063
+@@ -858,7 +858,7 @@
+ interface eth2
+  description link to acca1 accA1
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 16
+  ip ospf network point-to-point
+ !
+ interface eth3
+@@ -871,7 +871,6 @@
+  ospf router-id 10.255.0.1
+  passive-interface lo
+  passive-interface eth1
+- passive-interface eth2
+ !
+ line vty
+ !

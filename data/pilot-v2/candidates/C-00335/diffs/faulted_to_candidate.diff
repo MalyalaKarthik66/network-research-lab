@@ -1,0 +1,11 @@
+--- I-00045
++++ C-00335
+@@ -484,7 +484,7 @@
+ interface eth2
+  description link to coreb wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 40
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ router ospf

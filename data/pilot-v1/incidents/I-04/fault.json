@@ -1,0 +1,15 @@
+{
+  "incident_id": "I-04",
+  "fault_id": "F04",
+  "fault_family": "ospf_area_mismatch",
+  "fault_description": "corea eth2 moved to area 0.0.0.1; wan1 still in area 0.0.0.0",
+  "fault_params": {
+    "node": "corea",
+    "iface": "eth2",
+    "bad_area": "0.0.0.1",
+    "good_area": "0.0.0.0",
+    "peer": "wan1",
+    "peer_iface": "eth1"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

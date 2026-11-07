@@ -1,0 +1,17 @@
+{
+  "incident_id": "I-00114",
+  "topology": "t12_campus8",
+  "fault_id": "F0004",
+  "fault_family": "ospf_passive_transit",
+  "fault_description": "[t12_campus8] edgea eth2 marked passive (accA)",
+  "fault_params": {
+    "node": "edgea",
+    "iface": "eth2",
+    "peer": "dista",
+    "peer_iface": "eth1",
+    "link": "accA",
+    "good_cost": 10,
+    "topology": "t12_campus8"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

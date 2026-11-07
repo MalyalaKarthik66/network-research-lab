@@ -1,0 +1,284 @@
+{
+  "edges": [
+    {
+      "node1": {
+        "hostname": "edgea",
+        "interfaceName": "eth2"
+      },
+      "node2": {
+        "hostname": "agga",
+        "interfaceName": "eth1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "agga",
+        "interfaceName": "eth1"
+      },
+      "node2": {
+        "hostname": "edgea",
+        "interfaceName": "eth2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "agga",
+        "interfaceName": "eth2"
+      },
+      "node2": {
+        "hostname": "m1",
+        "interfaceName": "eth1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "m1",
+        "interfaceName": "eth1"
+      },
+      "node2": {
+        "hostname": "agga",
+        "interfaceName": "eth2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "m1",
+        "interfaceName": "eth2"
+      },
+      "node2": {
+        "hostname": "m2",
+        "interfaceName": "eth1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "m2",
+        "interfaceName": "eth1"
+      },
+      "node2": {
+        "hostname": "m1",
+        "interfaceName": "eth2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "m2",
+        "interfaceName": "eth2"
+      },
+      "node2": {
+        "hostname": "m3",
+        "interfaceName": "eth1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "m3",
+        "interfaceName": "eth1"
+      },
+      "node2": {
+        "hostname": "m2",
+        "interfaceName": "eth2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "m3",
+        "interfaceName": "eth2"
+      },
+      "node2": {
+        "hostname": "m4",
+        "interfaceName": "eth1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "m4",
+        "interfaceName": "eth1"
+      },
+      "node2": {
+        "hostname": "m3",
+        "interfaceName": "eth2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "m4",
+        "interfaceName": "eth2"
+      },
+      "node2": {
+        "hostname": "m5",
+        "interfaceName": "eth1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "m5",
+        "interfaceName": "eth1"
+      },
+      "node2": {
+        "hostname": "m4",
+        "interfaceName": "eth2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "m5",
+        "interfaceName": "eth2"
+      },
+      "node2": {
+        "hostname": "m6",
+        "interfaceName": "eth1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "m6",
+        "interfaceName": "eth1"
+      },
+      "node2": {
+        "hostname": "m5",
+        "interfaceName": "eth2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "m6",
+        "interfaceName": "eth2"
+      },
+      "node2": {
+        "hostname": "m7",
+        "interfaceName": "eth1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "m7",
+        "interfaceName": "eth1"
+      },
+      "node2": {
+        "hostname": "m6",
+        "interfaceName": "eth2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "m7",
+        "interfaceName": "eth2"
+      },
+      "node2": {
+        "hostname": "m8",
+        "interfaceName": "eth1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "m8",
+        "interfaceName": "eth1"
+      },
+      "node2": {
+        "hostname": "m7",
+        "interfaceName": "eth2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "m8",
+        "interfaceName": "eth2"
+      },
+      "node2": {
+        "hostname": "m1",
+        "interfaceName": "eth3"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "m1",
+        "interfaceName": "eth3"
+      },
+      "node2": {
+        "hostname": "m8",
+        "interfaceName": "eth2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "m5",
+        "interfaceName": "eth3"
+      },
+      "node2": {
+        "hostname": "aggb",
+        "interfaceName": "eth1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "aggb",
+        "interfaceName": "eth1"
+      },
+      "node2": {
+        "hostname": "m5",
+        "interfaceName": "eth3"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "aggb",
+        "interfaceName": "eth2"
+      },
+      "node2": {
+        "hostname": "edgeb",
+        "interfaceName": "eth3"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "edgeb",
+        "interfaceName": "eth3"
+      },
+      "node2": {
+        "hostname": "aggb",
+        "interfaceName": "eth2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "agga",
+        "interfaceName": "eth3"
+      },
+      "node2": {
+        "hostname": "mgmt",
+        "interfaceName": "eth1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "mgmt",
+        "interfaceName": "eth1"
+      },
+      "node2": {
+        "hostname": "agga",
+        "interfaceName": "eth3"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "mgmt",
+        "interfaceName": "eth2"
+      },
+      "node2": {
+        "hostname": "aggb",
+        "interfaceName": "eth3"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "aggb",
+        "interfaceName": "eth3"
+      },
+      "node2": {
+        "hostname": "mgmt",
+        "interfaceName": "eth2"
+      }
+    }
+  ]
+}

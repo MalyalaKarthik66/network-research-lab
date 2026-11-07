@@ -1,0 +1,14 @@
+{
+  "incident_id": "I-00108",
+  "topology": "t11_branch6",
+  "fault_id": "F0008",
+  "fault_family": "static_blackhole",
+  "fault_description": "[t11_branch6] corea blackholes 10.20.0.0/24",
+  "fault_params": {
+    "node": "corea",
+    "prefix": "10.20.0.0/24",
+    "nexthop": "blackhole",
+    "topology": "t11_branch6"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

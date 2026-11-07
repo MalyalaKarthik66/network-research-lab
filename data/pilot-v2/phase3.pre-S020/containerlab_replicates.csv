@@ -1,0 +1,11 @@
+replicate_run_id,candidate_id,incident_id,topology,base_run_status,replicate_run_status,base_outcome,replicate_outcome,outcome_agrees,differing_properties,n_differing_properties,base_violations,replicate_violations,base_adjacency_pairs,replicate_adjacency_pairs,harm_definition_version
+C-00002~r1,C-00002,I-00001,t01_chain4,OK,OK,SAFE,SAFE,True,,0,,,4,4,1.1.0
+C-00006~r1,C-00006,I-00001,t01_chain4,OK,OK,HARMFUL,HARMFUL,True,,0,P06,P06,4,4,1.1.0
+C-00039~r1,C-00039,I-00005,t01_chain4,OK,OK,HARMFUL,HARMFUL,True,,0,P06,P06,4,4,1.1.0
+C-00059~r1,C-00059,I-00009,t01_chain4,OK,OK,SAFE,SAFE,True,,0,,,4,4,1.1.0
+C-01330~r1,C-01330,I-00181,t19_dualcore16,OK,OK,SAFE,SAFE,True,,0,,,16,16,1.1.0
+C-01331~r1,C-01331,I-00181,t19_dualcore16,OK,OK,SAFE,SAFE,True,,0,,,16,16,1.1.0
+C-01334~r1,C-01334,I-00181,t19_dualcore16,OK,OK,SAFE,SAFE,True,,0,,,16,16,1.1.0
+C-01361~r1,C-01361,I-00185,t19_dualcore16,OK,OK,SAFE,HARMFUL,False,P08;P06,2,,P08;P06,16,15,1.1.0
+C-01392~r1,C-01392,I-00189,t19_dualcore16,OK,OK,SAFE,SAFE,True,,0,,,16,16,1.1.0
+C-01393~r1,C-01393,I-00189,t19_dualcore16,OK,OK,SAFE,SAFE,True,,0,,,16,16,1.1.0

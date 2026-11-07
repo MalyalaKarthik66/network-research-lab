@@ -1,0 +1,11 @@
+--- I-00154
++++ C-01141
+@@ -631,7 +631,7 @@
+ interface eth2
+  description link to p4 core2
+  ip ospf area 0.0.0.0
+- ip ospf cost 30
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ interface eth3

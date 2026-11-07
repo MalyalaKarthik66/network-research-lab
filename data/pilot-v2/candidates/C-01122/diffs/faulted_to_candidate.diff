@@ -1,0 +1,19 @@
+--- I-00152
++++ C-01122
+@@ -237,7 +237,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.200.0.2/30
++    address 10.26.1.1/30
+     alias link to pe1 peA1
+ 
+ auto eth3
+@@ -304,6 +304,7 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
++ shutdown
+ !
+ interface eth4
+  description link to pe4 peB2b

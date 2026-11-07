@@ -1,0 +1,20 @@
+--- I-00009
++++ C-00099
+@@ -498,7 +498,7 @@
+ interface eth2
+  description link to m3 ring2
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 200
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -569,7 +569,7 @@
+ interface eth1
+  description link to m2 ring2
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 200
+  ip ospf network point-to-point
+ !
+ interface eth2

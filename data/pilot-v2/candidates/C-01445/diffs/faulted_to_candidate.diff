@@ -1,0 +1,19 @@
+--- I-00196
++++ C-01445
+@@ -51,6 +51,7 @@
+ router ospf
+  ospf router-id 10.255.0.11
+  passive-interface lo
++ passive-interface eth2
+ !
+ line vty
+ !
+@@ -198,7 +199,7 @@
+ interface eth2
+  description link to l1 accA
+  ip ospf area 0.0.0.0
+- ip ospf cost 500
++ ip ospf cost 10
+  ip ospf network point-to-point
+ !
+ interface eth3

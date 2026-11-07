@@ -1,0 +1,153 @@
+{
+  "experiment_id": "v4-transient-pilot",
+  "protocol_version": "transient-1.1.0",
+  "run_id": "SMOKE2-V4C-05.rep1",
+  "change_id": "V4C-05",
+  "replicate": 1,
+  "order": 5,
+  "change_kind": "population",
+  "topology": "t05_ring6",
+  "lab": "nrlv4-t05",
+  "attempt": 1,
+  "status": "OK",
+  "error": null,
+  "started_utc": "2026-09-15T10:19:06Z",
+  "t_wall_start": 1789467546.8086,
+  "code_sha256": {
+    "v4lib/__init__.py": "fb5998d26b6037dbf0ec31b88ebedb48686a4be77c2bd6ebbc62a9a9c07f616f",
+    "v4lib/analytic.py": "94dcd67a7238842dcac3810b9f2713cdf4cb80922be1df1590ccc3b406eea2fb",
+    "v4lib/decisions.py": "f5304d0e7a4da4aa48d10413b2e925cdbb3c3eec8eaf3a23fa2b788c15ad8d19",
+    "v4lib/fib.py": "6c3988b1b8a79b7d5797ae571e0361d7bbf60590121688557eca63408b789ee6",
+    "v4lib/freeze.py": "0aabe2e3bffc55ae65647d3a6f62ecbe7e644e1473f185cfd9581c07901cdc55",
+    "v4lib/gates.py": "588895381e5441d205e2bdc7571c7fae40e283651b1a3c94d125dcaeccca0b16",
+    "v4lib/labops.py": "11709e2aaf3daf082fb54e8f2e89af06fb1ca4678bdf3c458f71d17a909672db",
+    "v4lib/targets.py": "01481550614d29a73fb4ac9604d59bcebbe95f27ef09d06a07f810798eac85e6",
+    "pilot/run_pilot.py": "3ea2a0f18fd41378491e4961ef8c6b482dca9bbbff0c8915c488136b8c3c3858"
+  },
+  "prereg_sha256": "a2d4a8b95dbbba2518b2e333647fe536ed8affed5a93789249096976c8a76e8c",
+  "env_before": {
+    "utc": "2026-09-15T10:19:07Z",
+    "epoch": 1789467547.279363,
+    "loadavg": "1.87 1.60 1.05 1/630 55495",
+    "meminfo": {
+      "MemTotal": "7979188 kB",
+      "MemFree": "4511348 kB",
+      "MemAvailable": "6649056 kB"
+    },
+    "uptime_s": "4375.46 68949.16",
+    "nproc": 16,
+    "kernel": "6.6.87.2-microsoft-standard-WSL2",
+    "python": "3.10.12",
+    "running_containers": 0
+  },
+  "params": {
+    "PRE_CHANGE_BASELINE_S": 10.0,
+    "MIN_OBS_S": 20.0,
+    "QUIET_S": 10.0,
+    "MAX_OBS_S": 90.0,
+    "POLL_S": 2.0,
+    "PROBE_INTERVAL_S": 0.05,
+    "PROBE_COUNT": 2600
+  },
+  "staging": {
+    "status": "OK",
+    "files_verified": 23,
+    "problems": []
+  },
+  "deploy": {
+    "status": "OK",
+    "rc": 0,
+    "seconds": 3.55,
+    "error": null
+  },
+  "containers": {
+    "status": "OK",
+    "missing": [],
+    "expected": 9,
+    "found": 9,
+    "error": null
+  },
+  "convergence": {
+    "status": "OK",
+    "converged": true,
+    "seconds": 54.3,
+    "polls": 5,
+    "min_settle_s": 45,
+    "error": null
+  },
+  "convergence_wall_s": 54.28,
+  "pre_ospf_binding": {
+    "status": "OK",
+    "problems": []
+  },
+  "container_date": "Tue Sep 15 10:20:13 UTC 2026",
+  "fib_monitors": {
+    "corea": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "coreb": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "edgea": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "edgeb": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "wan1": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "wan2": {
+      "status": "OK",
+      "stderr": ""
+    }
+  },
+  "t_baseline_start": 1789467626.7580972,
+  "change_applied": true,
+  "t0": 1789467637.5468626,
+  "t_push_end": 1789467637.9797916,
+  "push_status": [
+    "OK"
+  ],
+  "t_end": 1789467663.0509448,
+  "settled": true,
+  "observation_s": 25.504082202911377,
+  "post_checks": {
+    "running_config": {
+      "status": "OK",
+      "routers_checked": 6,
+      "problems": []
+    },
+    "addresses": {
+      "status": "OK",
+      "problems": []
+    },
+    "ospf_binding": {
+      "status": "OK",
+      "problems": []
+    }
+  },
+  "teardown_ok": true,
+  "env_after": {
+    "utc": "2026-09-15T10:21:37Z",
+    "epoch": 1789467697.823861,
+    "loadavg": "1.87 1.76 1.20 1/627 64894",
+    "meminfo": {
+      "MemTotal": "7979188 kB",
+      "MemFree": "4506552 kB",
+      "MemAvailable": "6646576 kB"
+    },
+    "uptime_s": "4521.30 71195.72",
+    "nproc": 16,
+    "kernel": "6.6.87.2-microsoft-standard-WSL2",
+    "python": "3.10.12",
+    "running_containers": 0
+  },
+  "finished_utc": "2026-09-15T10:21:37Z",
+  "wall_s": 151.02
+}

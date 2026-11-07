@@ -1,0 +1,44 @@
+{
+  "corea": {
+    "t_before": 1789393005.782869,
+    "t_after": 1789393005.8891137,
+    "status": "OK",
+    "text": "default via 172.20.20.1 dev eth0 \n10.10.0.0/24 nhid 37 via 10.15.1.1 dev eth1 proto ospf metric 20 \n10.15.1.0/30 dev eth1 proto kernel scope link src 10.15.1.2 \n10.15.2.0/30 dev eth2 proto kernel scope link src 10.15.2.1 \n10.15.3.0/30 nhid 34 via 10.15.2.2 dev eth2 proto ospf metric 20 \n10.15.4.0/30 nhid 34 via 10.15.2.2 dev eth2 proto ospf metric 20 \n10.15.5.0/30 dev eth3 proto kernel scope link src 10.15.5.1 \n10.15.6.0/30 nhid 34 via 10.15.2.2 dev eth2 proto ospf metric 20 \n10.20.0.0/24 nhid 34 via 10.15.2.2 dev eth2 proto ospf metric 20 \n10.21.0.0/24 nhid 34 via 10.15.2.2 dev eth2 proto ospf metric 20 \n10.255.0.1 nhid 37 via 10.15.1.1 dev eth1 proto ospf metric 20 \n10.255.0.3 nhid 34 via 10.15.2.2 dev eth2 proto ospf metric 20 \n10.255.0.4 nhid 34 via 10.15.2.2 dev eth2 proto ospf metric 20 \n10.255.0.5 nhid 34 via 10.15.2.2 dev eth2 proto ospf metric 20 \n10.255.0.6 nhid 35 via 10.15.5.2 dev eth3 proto ospf metric 20 \n172.20.20.0/24 dev eth0 proto kernel scope link src 172.20.20.2 \n",
+    "error": null
+  },
+  "coreb": {
+    "t_before": 1789393005.8891153,
+    "t_after": 1789393006.0551329,
+    "status": "OK",
+    "text": "default via 172.20.20.1 dev eth0 \n10.10.0.0/24 nhid 37 via 10.15.3.1 dev eth1 proto ospf metric 20 \n10.15.1.0/30 nhid 37 via 10.15.3.1 dev eth1 proto ospf metric 20 \n10.15.2.0/30 nhid 37 via 10.15.3.1 dev eth1 proto ospf metric 20 \n10.15.3.0/30 dev eth1 proto kernel scope link src 10.15.3.2 \n10.15.4.0/30 dev eth2 proto kernel scope link src 10.15.4.1 \n10.15.5.0/30 nhid 37 via 10.15.3.1 dev eth1 proto ospf metric 20 \n10.15.6.0/30 dev eth3 proto kernel scope link src 10.15.6.2 \n10.20.0.0/24 nhid 33 via 10.15.4.2 dev eth2 proto ospf metric 20 \n10.21.0.0/24 nhid 33 via 10.15.4.2 dev eth2 proto ospf metric 20 \n10.255.0.1 nhid 37 via 10.15.3.1 dev eth1 proto ospf metric 20 \n10.255.0.2 nhid 37 via 10.15.3.1 dev eth1 proto ospf metric 20 \n10.255.0.3 nhid 37 via 10.15.3.1 dev eth1 proto ospf metric 20 \n10.255.0.5 nhid 33 via 10.15.4.2 dev eth2 proto ospf metric 20 \n10.255.0.6 nhid 35 via 10.15.6.1 dev eth3 proto ospf metric 20 \n172.20.20.0/24 dev eth0 proto kernel scope link src 172.20.20.7 \n",
+    "error": null
+  },
+  "edgea": {
+    "t_before": 1789393006.0551343,
+    "t_after": 1789393006.4457195,
+    "status": "OK",
+    "text": "default via 172.20.20.1 dev eth0 \n10.10.0.0/24 dev eth1 proto kernel scope link src 10.10.0.1 \n10.15.1.0/30 dev eth2 proto kernel scope link src 10.15.1.1 \n10.15.2.0/30 nhid 27 via 10.15.1.2 dev eth2 proto ospf metric 20 \n10.15.3.0/30 nhid 27 via 10.15.1.2 dev eth2 proto ospf metric 20 \n10.15.4.0/30 nhid 27 via 10.15.1.2 dev eth2 proto ospf metric 20 \n10.15.5.0/30 nhid 27 via 10.15.1.2 dev eth2 proto ospf metric 20 \n10.15.6.0/30 nhid 27 via 10.15.1.2 dev eth2 proto ospf metric 20 \n10.20.0.0/24 nhid 27 via 10.15.1.2 dev eth2 proto ospf metric 20 \n10.21.0.0/24 nhid 27 via 10.15.1.2 dev eth2 proto ospf metric 20 \n10.255.0.2 nhid 27 via 10.15.1.2 dev eth2 proto ospf metric 20 \n10.255.0.3 nhid 27 via 10.15.1.2 dev eth2 proto ospf metric 20 \n10.255.0.4 nhid 27 via 10.15.1.2 dev eth2 proto ospf metric 20 \n10.255.0.5 nhid 27 via 10.15.1.2 dev eth2 proto ospf metric 20 \n10.255.0.6 nhid 27 via 10.15.1.2 dev eth2 proto ospf metric 20 \n172.20.20.0/24 dev eth0 proto kernel scope link src 172.20.20.3 \n",
+    "error": null
+  },
+  "edgeb": {
+    "t_before": 1789393006.4457214,
+    "t_after": 1789393006.5649545,
+    "status": "OK",
+    "text": "default via 172.20.20.1 dev eth0 \n10.10.0.0/24 nhid 33 via 10.15.4.1 dev eth3 proto ospf metric 20 \n10.15.1.0/30 nhid 33 via 10.15.4.1 dev eth3 proto ospf metric 20 \n10.15.2.0/30 nhid 33 via 10.15.4.1 dev eth3 proto ospf metric 20 \n10.15.3.0/30 nhid 33 via 10.15.4.1 dev eth3 proto ospf metric 20 \n10.15.4.0/30 dev eth3 proto kernel scope link src 10.15.4.2 \n10.15.5.0/30 nhid 33 via 10.15.4.1 dev eth3 proto ospf metric 20 \n10.15.6.0/30 nhid 33 via 10.15.4.1 dev eth3 proto ospf metric 20 \n10.20.0.0/24 dev eth1 proto kernel scope link src 10.20.0.1 \n10.21.0.0/24 dev eth2 proto kernel scope link src 10.21.0.1 \n10.255.0.1 nhid 33 via 10.15.4.1 dev eth3 proto ospf metric 20 \n10.255.0.2 nhid 33 via 10.15.4.1 dev eth3 proto ospf metric 20 \n10.255.0.3 nhid 33 via 10.15.4.1 dev eth3 proto ospf metric 20 \n10.255.0.4 nhid 33 via 10.15.4.1 dev eth3 proto ospf metric 20 \n10.255.0.6 nhid 33 via 10.15.4.1 dev eth3 proto ospf metric 20 \n172.20.20.0/24 dev eth0 proto kernel scope link src 172.20.20.6 \n",
+    "error": null
+  },
+  "wan1": {
+    "t_before": 1789393006.5649562,
+    "t_after": 1789393006.799085,
+    "status": "OK",
+    "text": "default via 172.20.20.1 dev eth0 \n10.10.0.0/24 nhid 29 via 10.15.2.1 dev eth1 proto ospf metric 20 \n10.15.1.0/30 nhid 29 via 10.15.2.1 dev eth1 proto ospf metric 20 \n10.15.2.0/30 dev eth1 proto kernel scope link src 10.15.2.2 \n10.15.3.0/30 dev eth2 proto kernel scope link src 10.15.3.1 \n10.15.4.0/30 nhid 27 via 10.15.3.2 dev eth2 proto ospf metric 20 \n10.15.5.0/30 nhid 29 via 10.15.2.1 dev eth1 proto ospf metric 20 \n10.15.6.0/30 nhid 27 via 10.15.3.2 dev eth2 proto ospf metric 20 \n10.20.0.0/24 nhid 27 via 10.15.3.2 dev eth2 proto ospf metric 20 \n10.21.0.0/24 nhid 27 via 10.15.3.2 dev eth2 proto ospf metric 20 \n10.255.0.1 nhid 29 via 10.15.2.1 dev eth1 proto ospf metric 20 \n10.255.0.2 nhid 29 via 10.15.2.1 dev eth1 proto ospf metric 20 \n10.255.0.4 nhid 27 via 10.15.3.2 dev eth2 proto ospf metric 20 \n10.255.0.5 nhid 27 via 10.15.3.2 dev eth2 proto ospf metric 20 \n10.255.0.6 nhid 29 via 10.15.2.1 dev eth1 proto ospf metric 20 \n172.20.20.0/24 dev eth0 proto kernel scope link src 172.20.20.9 \n",
+    "error": null
+  },
+  "wan2": {
+    "t_before": 1789393006.7990866,
+    "t_after": 1789393006.9032023,
+    "status": "OK",
+    "text": "default via 172.20.20.1 dev eth0 \n10.10.0.0/24 nhid 28 via 10.15.5.1 dev eth1 proto ospf metric 20 \n10.15.1.0/30 nhid 28 via 10.15.5.1 dev eth1 proto ospf metric 20 \n10.15.2.0/30 nhid 28 via 10.15.5.1 dev eth1 proto ospf metric 20 \n10.15.3.0/30 nhid 29 via 10.15.6.2 dev eth2 proto ospf metric 20 \n10.15.4.0/30 nhid 29 via 10.15.6.2 dev eth2 proto ospf metric 20 \n10.15.5.0/30 dev eth1 proto kernel scope link src 10.15.5.2 \n10.15.6.0/30 dev eth2 proto kernel scope link src 10.15.6.1 \n10.20.0.0/24 nhid 29 via 10.15.6.2 dev eth2 proto ospf metric 20 \n10.21.0.0/24 nhid 29 via 10.15.6.2 dev eth2 proto ospf metric 20 \n10.255.0.1 nhid 28 via 10.15.5.1 dev eth1 proto ospf metric 20 \n10.255.0.2 nhid 28 via 10.15.5.1 dev eth1 proto ospf metric 20 \n10.255.0.3 nhid 28 via 10.15.5.1 dev eth1 proto ospf metric 20 \n10.255.0.4 nhid 29 via 10.15.6.2 dev eth2 proto ospf metric 20 \n10.255.0.5 nhid 29 via 10.15.6.2 dev eth2 proto ospf metric 20 \n172.20.20.0/24 dev eth0 proto kernel scope link src 172.20.20.4 \n",
+    "error": null
+  }
+}

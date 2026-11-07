@@ -1,0 +1,11 @@
+--- I-00066
++++ C-00486
+@@ -374,7 +374,7 @@
+ interface eth2
+  description link to agga siteA
+  ip ospf area 0.0.0.0
+- ip ospf cost 500
++ ip ospf cost 14
+  ip ospf network point-to-point
+ !
+ router ospf

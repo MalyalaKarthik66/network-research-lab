@@ -1,0 +1,7 @@
+parsed monitor events: 1
+    ADD unicast 10.8.0.0/24 [('10.9.1.2', 'w0')] 196
+SNAPSHOT after blackhole, as the walker sees it:
+    10.255.0.1/32 196 [{'ip': '10.9.0.2', 'interfaceName': 'v0'}] selected
+replayed final == final snapshot: False
+   MISMATCH 10.7.0.0/24 replay: [{'protocol': '196', 'distance': 110, 'metric': 0, 'nexthops': [{'ip': '10.9.0.2', 'interfaceName': 'v0'}], 'selected': True}] | snapshot: None
+   MISMATCH 10.9.1.0/30 replay: None | snapshot: [{'protocol': 'connected', 'distance': 0, 'metric': 0, 'nexthops': [{'directlyConnected': True, 'interfaceName': 'w0'}], 'selected': True}]

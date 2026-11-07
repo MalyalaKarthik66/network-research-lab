@@ -1,0 +1,28 @@
+--- I-00125
++++ C-00929
+@@ -351,6 +351,8 @@
+ !
+ interface eth2
+  description link to a1 A1
++ ip ospf area 0.0.0.0
++ ip ospf cost 10
+ !
+ interface eth3
+  description link to a2 A2
+@@ -361,7 +363,6 @@
+ router ospf
+  ospf router-id 10.255.0.1
+  passive-interface lo
+- passive-interface eth1
+ !
+ line vty
+ !
+@@ -454,8 +455,6 @@
+ router ospf
+  ospf router-id 10.255.0.7
+  passive-interface lo
+- passive-interface eth1
+- passive-interface eth2
+ !
+ line vty
+ !

@@ -1,0 +1,19 @@
+--- I-00050
++++ C-00367
+@@ -305,8 +305,6 @@
+  ip ospf cost 10
+  ip ospf network point-to-point
+ !
+-ip route 10.20.0.10/32 10.15.4.1
+-!
+ router ospf
+  ospf router-id 10.255.0.5
+  passive-interface lo
+@@ -418,6 +416,7 @@
+ router ospf
+  ospf router-id 10.255.0.3
+  passive-interface lo
++ passive-interface eth2
+ !
+ line vty
+ !

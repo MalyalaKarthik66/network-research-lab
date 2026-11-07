@@ -1,0 +1,38 @@
+--- I-00009
++++ C-00060
+@@ -48,8 +48,6 @@
+  ip ospf cost 10
+  ip ospf network point-to-point
+ !
+-ip route 10.20.0.0/24 10.11.1.1
+-!
+ router ospf
+  ospf router-id 10.255.0.2
+  passive-interface lo
+@@ -118,7 +116,7 @@
+ interface eth1
+  description link to corea wan-primary
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 1
+  ip ospf network point-to-point
+ !
+ interface eth2
+@@ -206,7 +204,7 @@
+ interface eth3
+  description link to edgeb wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 100
++ ip ospf cost 2
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -299,7 +297,7 @@
+ interface eth4
+  description link to edgea wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 100
++ ip ospf cost 2
+  ip ospf network point-to-point
+ !
+ router ospf

@@ -1,0 +1,10 @@
+--- golden-t16_pop14
++++ I-00154
+@@ -217,6 +217,7 @@
+  ospf router-id 10.255.0.1
+  passive-interface lo
+  passive-interface eth1
++ passive-interface eth2
+ !
+ line vty
+ !

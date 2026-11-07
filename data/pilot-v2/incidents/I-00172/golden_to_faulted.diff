@@ -1,0 +1,11 @@
+--- golden-t18_grid12
++++ I-00172
+@@ -71,7 +71,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.28.1.1/30
++    address 10.200.0.2/30
+     alias link to g1 accA
+ 
+ 

@@ -1,0 +1,11 @@
+--- I-00125
++++ C-00930
+@@ -45,7 +45,7 @@
+ interface eth2
+  description link to mid M1
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ router ospf

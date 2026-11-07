@@ -1,0 +1,19 @@
+--- I-00066
++++ C-00487
+@@ -135,6 +135,7 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
++ shutdown
+ !
+ interface eth3
+  description link to agga wan-backup
+@@ -374,7 +375,7 @@
+ interface eth2
+  description link to agga siteA
+  ip ospf area 0.0.0.0
+- ip ospf cost 500
++ ip ospf cost 10
+  ip ospf network point-to-point
+ !
+ router ospf

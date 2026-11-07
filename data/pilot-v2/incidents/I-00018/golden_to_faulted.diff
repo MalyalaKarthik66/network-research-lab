@@ -1,0 +1,11 @@
+--- golden-t02_wan6
++++ I-00018
+@@ -54,6 +54,8 @@
+  ip ospf cost 100
+  ip ospf network point-to-point
+ !
++ip route 10.20.0.0/24 blackhole
++!
+ router ospf
+  ospf router-id 10.255.0.2
+  passive-interface lo

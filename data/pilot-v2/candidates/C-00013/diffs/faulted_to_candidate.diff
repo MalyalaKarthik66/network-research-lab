@@ -1,0 +1,20 @@
+--- I-00002
++++ C-00013
+@@ -115,7 +115,7 @@
+ !
+ interface eth1
+  description link to corea wan-primary
+- ip ospf area 0.0.0.0
++ ip ospf area 0.0.0.9
+  ip ospf cost 10
+  ip ospf network point-to-point
+ !
+@@ -231,7 +231,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.200.0.2/30
++    address 10.11.1.1/30
+     alias link to corea siteA
+ 
+ auto eth3

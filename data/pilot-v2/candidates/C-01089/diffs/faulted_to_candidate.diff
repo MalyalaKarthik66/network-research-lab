@@ -1,0 +1,20 @@
+--- I-00148
++++ C-01089
+@@ -53,8 +53,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 30
+  ip ospf network point-to-point
+-!
+-ip route 10.20.0.0/24 blackhole
+ !
+ router ospf
+  ospf router-id 10.255.0.2
+@@ -212,7 +210,7 @@
+ interface eth2
+  description link to edgeb accB1
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 1
+  ip ospf network point-to-point
+ !
+ router ospf

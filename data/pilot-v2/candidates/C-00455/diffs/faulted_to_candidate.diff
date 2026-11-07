@@ -1,0 +1,20 @@
+--- I-00061
++++ C-00455
+@@ -372,7 +372,7 @@
+  ip ospf cost 10
+ !
+ interface eth2
+- description link to agga siteA
++ description link to agga siteA (partially reverted)
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+@@ -403,7 +403,7 @@
+ auto eth2
+ iface eth2
+     address 10.17.1.1/30
+-    alias link to agga siteA
++    alias link to agga siteA (partially reverted)
+ 
+ 
+ ===== edgeb/daemons =====

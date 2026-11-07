@@ -1,0 +1,11 @@
+--- I-00180
++++ C-01324
+@@ -135,7 +135,7 @@
+  ip ospf cost 40
+  ip ospf network point-to-point
+ !
+-ip route 10.20.0.10/32 10.28.13.1
++ip route 10.21.0.10/32 10.28.8.1
+ !
+ router ospf
+  ospf router-id 10.255.0.12

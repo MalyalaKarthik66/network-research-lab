@@ -1,0 +1,39 @@
+== BEFORE
+10.6.0.0/24 via 10.9.1.2 dev w0 proto ospf metric 20 
+10.7.0.0/24 proto ospf metric 20 
+	nexthop via 10.9.0.2 dev v0 weight 1 
+	nexthop via 10.9.1.2 dev w0 weight 1 
+10.8.0.0/24 via 10.9.0.2 dev v0 proto ospf metric 20 
+10.9.0.0/30 dev v0 proto kernel scope link src 10.9.0.1 
+10.9.1.0/30 dev w0 proto kernel scope link src 10.9.1.1 
+== AFTER admin down v0
+10.6.0.0/24 via 10.9.1.2 dev w0 proto ospf metric 20 
+10.7.0.0/24 proto ospf metric 20 
+	nexthop via 10.9.0.2 dev v0 weight 1 dead linkdown 
+	nexthop via 10.9.1.2 dev w0 weight 1 
+10.9.1.0/30 dev w0 proto kernel scope link src 10.9.1.1 
+== AFTER carrier loss on w0 (peer w1 down)
+10.6.0.0/24 via 10.9.1.2 dev w0 proto ospf metric 20 linkdown 
+10.7.0.0/24 proto ospf metric 20 linkdown 
+	nexthop via 10.9.0.2 dev v0 weight 1 dead linkdown 
+	nexthop via 10.9.1.2 dev w0 weight 1 linkdown 
+10.9.1.0/30 dev w0 proto kernel scope link src 10.9.1.1 linkdown 
+== MONITOR OUTPUT
+[2026-09-15T09:21:47.763400] local fe80::8470:21ff:feea:785b dev w1 table local proto kernel metric 0 pref medium
+[2026-09-15T09:21:47.795265] local fe80::4ce0:2fff:fe07:7081 dev v0 table local proto kernel metric 0 pref medium
+[2026-09-15T09:21:48.019253] local fe80::499:d1ff:fe3a:11c9 dev v1 table local proto kernel metric 0 pref medium
+[2026-09-15T09:21:48.147214] local fe80::b415:20ff:febf:41ca dev w0 table local proto kernel metric 0 pref medium
+[2026-09-15T09:21:48.418436] 3: v0@v1: <BROADCAST,MULTICAST> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 4e:e0:2f:07:70:81 brd ff:ff:ff:ff:ff:ff
+[2026-09-15T09:21:48.442005] Deleted fe80::/64 dev v0 proto kernel metric 256 pref medium
+[2026-09-15T09:21:48.442040] Deleted local fe80::4ce0:2fff:fe07:7081 dev v0 table local proto kernel metric 0 pref medium
+[2026-09-15T09:21:48.442058] Deleted multicast ff00::/8 dev v0 table local proto kernel metric 256 pref medium
+[2026-09-15T09:21:48.442076] 2: v1@v0: <NO-CARRIER,BROADCAST,MULTICAST,UP,M-DOWN> mtu 1500 qdisc noqueue state LOWERLAYERDOWN group default 
+    link/ether 06:99:d1:3a:11:c9 brd ff:ff:ff:ff:ff:ff
+[2026-09-15T09:21:49.424308] 4: w1@w0: <BROADCAST,MULTICAST> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 86:70:21:ea:78:5b brd ff:ff:ff:ff:ff:ff
+[2026-09-15T09:21:49.424379] Deleted fe80::/64 dev w1 proto kernel metric 256 pref medium
+[2026-09-15T09:21:49.424403] Deleted local fe80::8470:21ff:feea:785b dev w1 table local proto kernel metric 0 pref medium
+[2026-09-15T09:21:49.424422] Deleted multicast ff00::/8 dev w1 table local proto kernel metric 256 pref medium
+[2026-09-15T09:21:49.424440] 5: w0@w1: <NO-CARRIER,BROADCAST,MULTICAST,UP,M-DOWN> mtu 1500 qdisc noqueue state LOWERLAYERDOWN group default 
+    link/ether b6:15:20:bf:41:ca brd ff:ff:ff:ff:ff:ff

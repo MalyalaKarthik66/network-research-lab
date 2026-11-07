@@ -1,0 +1,18 @@
+{
+  "incident_id": "I-00195",
+  "topology": "t20_leafspine12",
+  "fault_id": "F0005",
+  "fault_family": "ospf_iface_removed",
+  "fault_description": "[t20_leafspine12] edgea eth2 dropped out of OSPF",
+  "fault_params": {
+    "node": "edgea",
+    "iface": "eth2",
+    "peer": "l1",
+    "peer_iface": "eth1",
+    "link": "accA",
+    "good_cost": 10,
+    "good_area": "0.0.0.0",
+    "topology": "t20_leafspine12"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

@@ -1,0 +1,4 @@
+[2026-09-15T12:48:34.890774] 10.23.4.0/30 nhid 33 via 10.23.1.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:48:35.405415] 10.23.4.0/30 nhid 38 proto ospf metric 20 
+	nexthop via 10.23.1.2 dev eth2 weight 1 
+	nexthop via 10.23.2.2 dev eth3 weight 1 

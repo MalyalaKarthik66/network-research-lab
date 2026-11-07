@@ -1,0 +1,11 @@
+--- I-00043
++++ C-00320
+@@ -51,7 +51,7 @@
+ interface eth3
+  description link to wan2 ringB
+  ip ospf area 0.0.0.0
+- ip ospf cost 40
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ router ospf

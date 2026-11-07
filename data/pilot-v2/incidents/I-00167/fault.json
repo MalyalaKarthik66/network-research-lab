@@ -1,0 +1,22 @@
+{
+  "incident_id": "I-00167",
+  "topology": "t17_metro13",
+  "fault_id": "F0007",
+  "fault_family": "ospf_cost_excessive",
+  "fault_description": "[t17_metro13] edgea eth2 cost 10 -> 65535",
+  "fault_params": {
+    "pairs": [
+      [
+        "edgea",
+        "eth2"
+      ]
+    ],
+    "node": "edgea",
+    "iface": "eth2",
+    "bad_cost": 65535,
+    "good_cost": 10,
+    "link": "accA",
+    "topology": "t17_metro13"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

@@ -1,0 +1,23 @@
+--- I-00121
++++ C-00893
+@@ -39,7 +39,7 @@
+ interface eth1
+  description link to edgea A1
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 12
+  ip ospf network point-to-point
+ !
+ interface eth2
+@@ -352,9 +352,8 @@
+ interface eth2
+  description link to a1 A1
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
+- ip ospf network point-to-point
+- shutdown
++ ip ospf cost 12
++ ip ospf network point-to-point
+ !
+ interface eth3
+  description link to a2 A2

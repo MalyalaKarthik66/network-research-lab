@@ -1,0 +1,1453 @@
+{
+  "experiment_id": "v4-transient-pilot",
+  "protocol_version": "transient-1.0.0",
+  "topologies": [
+    "t05_ring6",
+    "t13_bowtie7",
+    "t14_ladder8",
+    "t15_campus12"
+  ],
+  "cost_multiplier": 20,
+  "n_replicates": 5,
+  "order_seed": 20260914,
+  "artifact_lock_digest": "8c21565c84326f5ae187a4dd274649718efca8225801f2676308d5c28192f445",
+  "changes": [
+    {
+      "change_id": "V4C-01",
+      "kind": "population",
+      "topology": "t05_ring6",
+      "role": "cost-hi",
+      "mechanism": "cost",
+      "target": [
+        "corea",
+        "wan1"
+      ],
+      "push_plan": {
+        "corea": [
+          "interface eth2",
+          "ip ospf cost 200",
+          "exit"
+        ],
+        "wan1": [
+          "interface eth1",
+          "ip ospf cost 200",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.444444,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.444444,
+        "n_fib_entries_changed": 9,
+        "n_routers_changed": 4,
+        "pml_flow_frac": 0.2638888888888889,
+        "n_devices_pushed": 2,
+        "n_config_commands": 4,
+        "n_routers": 6,
+        "n_endpoints": 9,
+        "changed_link_betweenness": 0.4444444444444444,
+        "golden_mean_path_len": 2.0,
+        "n_flows_carried_pred": 72
+      },
+      "batfish_snapshot": "V4C-01/batfish-snapshot",
+      "lab_artifact": "golden-t05_ring6",
+      "candidate_scenario": "V4C-01/scenario.json"
+    },
+    {
+      "change_id": "V4C-02",
+      "kind": "population",
+      "topology": "t05_ring6",
+      "role": "cost-mid",
+      "mechanism": "cost",
+      "target": [
+        "corea",
+        "wan2"
+      ],
+      "push_plan": {
+        "corea": [
+          "interface eth3",
+          "ip ospf cost 800",
+          "exit"
+        ],
+        "wan2": [
+          "interface eth1",
+          "ip ospf cost 800",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.111111,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.111111,
+        "n_fib_entries_changed": 5,
+        "n_routers_changed": 3,
+        "pml_flow_frac": 0.05555555555555555,
+        "n_devices_pushed": 2,
+        "n_config_commands": 4,
+        "n_routers": 6,
+        "n_endpoints": 9,
+        "changed_link_betweenness": 0.1111111111111111,
+        "golden_mean_path_len": 2.0,
+        "n_flows_carried_pred": 72
+      },
+      "batfish_snapshot": "V4C-02/batfish-snapshot",
+      "lab_artifact": "golden-t05_ring6",
+      "candidate_scenario": "V4C-02/scenario.json"
+    },
+    {
+      "change_id": "V4C-03",
+      "kind": "population",
+      "topology": "t05_ring6",
+      "role": "drain-hi",
+      "mechanism": "drain",
+      "target": "wan1",
+      "push_plan": {
+        "corea": [
+          "interface eth2",
+          "ip ospf cost 200",
+          "exit"
+        ],
+        "coreb": [
+          "interface eth1",
+          "ip ospf cost 200",
+          "exit"
+        ],
+        "wan1": [
+          "interface eth1",
+          "ip ospf cost 200",
+          "exit",
+          "interface eth2",
+          "ip ospf cost 200",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.333333,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.333333,
+        "n_fib_entries_changed": 4,
+        "n_routers_changed": 2,
+        "pml_flow_frac": 0.0,
+        "n_devices_pushed": 3,
+        "n_config_commands": 8,
+        "n_routers": 6,
+        "n_endpoints": 9,
+        "changed_link_betweenness": 0.8888888888888888,
+        "golden_mean_path_len": 2.0,
+        "n_flows_carried_pred": 72
+      },
+      "batfish_snapshot": "V4C-03/batfish-snapshot",
+      "lab_artifact": "golden-t05_ring6",
+      "candidate_scenario": "V4C-03/scenario.json"
+    },
+    {
+      "change_id": "V4C-04",
+      "kind": "population",
+      "topology": "t05_ring6",
+      "role": "drain-lo",
+      "mechanism": "drain",
+      "target": "corea",
+      "push_plan": {
+        "corea": [
+          "interface eth1",
+          "ip ospf cost 200",
+          "exit",
+          "interface eth2",
+          "ip ospf cost 200",
+          "exit",
+          "interface eth3",
+          "ip ospf cost 800",
+          "exit"
+        ],
+        "edgea": [
+          "interface eth2",
+          "ip ospf cost 200",
+          "exit"
+        ],
+        "wan1": [
+          "interface eth1",
+          "ip ospf cost 200",
+          "exit"
+        ],
+        "wan2": [
+          "interface eth1",
+          "ip ospf cost 800",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.111111,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.111111,
+        "n_fib_entries_changed": 5,
+        "n_routers_changed": 3,
+        "pml_flow_frac": 0.05555555555555555,
+        "n_devices_pushed": 4,
+        "n_config_commands": 12,
+        "n_routers": 6,
+        "n_endpoints": 9,
+        "changed_link_betweenness": 0.9444444444444444,
+        "golden_mean_path_len": 2.0,
+        "n_flows_carried_pred": 72
+      },
+      "batfish_snapshot": "V4C-04/batfish-snapshot",
+      "lab_artifact": "golden-t05_ring6",
+      "candidate_scenario": "V4C-04/scenario.json"
+    },
+    {
+      "change_id": "V4C-05",
+      "kind": "population",
+      "topology": "t05_ring6",
+      "role": "bh",
+      "mechanism": "blackhole",
+      "target": [
+        "corea",
+        "edgea",
+        "10.255.0.1/32"
+      ],
+      "push_plan": {
+        "corea": [
+          "ip route 10.255.0.1/32 blackhole"
+        ]
+      },
+      "features": {
+        "r_exact": 0.097222,
+        "r_broken_exact": 0.097222,
+        "r_rerouted_exact": 0.0,
+        "n_fib_entries_changed": 1,
+        "n_routers_changed": 1,
+        "pml_flow_frac": 0.0,
+        "n_devices_pushed": 1,
+        "n_config_commands": 1,
+        "n_routers": 6,
+        "n_endpoints": 9,
+        "changed_link_betweenness": 0,
+        "golden_mean_path_len": 2.0,
+        "n_flows_carried_pred": 72
+      },
+      "batfish_snapshot": "V4C-05/batfish-snapshot",
+      "lab_artifact": "golden-t05_ring6",
+      "candidate_scenario": "V4C-05/scenario.json"
+    },
+    {
+      "change_id": "V4N-01",
+      "kind": "control_noop",
+      "topology": "t05_ring6",
+      "role": "noop",
+      "mechanism": "noop",
+      "target": [
+        "corea"
+      ],
+      "push_plan": {
+        "corea": [
+          "interface eth1",
+          "ip ospf cost 10",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.0,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.0,
+        "n_fib_entries_changed": 0,
+        "n_routers_changed": 0,
+        "pml_flow_frac": 0.0,
+        "n_devices_pushed": 1,
+        "n_config_commands": 2,
+        "n_routers": 6,
+        "n_endpoints": 9,
+        "changed_link_betweenness": 0,
+        "golden_mean_path_len": 2.0,
+        "n_flows_carried_pred": 72
+      },
+      "batfish_snapshot": "golden-t05_ring6/batfish-snapshot",
+      "lab_artifact": "golden-t05_ring6",
+      "candidate_scenario": "golden-t05_ring6/scenario.json"
+    },
+    {
+      "change_id": "V4N-02",
+      "kind": "control_noop",
+      "topology": "t05_ring6",
+      "role": "noop",
+      "mechanism": "noop",
+      "target": [
+        "corea"
+      ],
+      "push_plan": {
+        "corea": [
+          "interface eth1",
+          "ip ospf cost 10",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.0,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.0,
+        "n_fib_entries_changed": 0,
+        "n_routers_changed": 0,
+        "pml_flow_frac": 0.0,
+        "n_devices_pushed": 1,
+        "n_config_commands": 2,
+        "n_routers": 6,
+        "n_endpoints": 9,
+        "changed_link_betweenness": 0,
+        "golden_mean_path_len": 2.0,
+        "n_flows_carried_pred": 72
+      },
+      "batfish_snapshot": "golden-t05_ring6/batfish-snapshot",
+      "lab_artifact": "golden-t05_ring6",
+      "candidate_scenario": "golden-t05_ring6/scenario.json"
+    },
+    {
+      "change_id": "V4N-03",
+      "kind": "control_noop",
+      "topology": "t05_ring6",
+      "role": "noop",
+      "mechanism": "noop",
+      "target": [
+        "corea"
+      ],
+      "push_plan": {
+        "corea": [
+          "interface eth1",
+          "ip ospf cost 10",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.0,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.0,
+        "n_fib_entries_changed": 0,
+        "n_routers_changed": 0,
+        "pml_flow_frac": 0.0,
+        "n_devices_pushed": 1,
+        "n_config_commands": 2,
+        "n_routers": 6,
+        "n_endpoints": 9,
+        "changed_link_betweenness": 0,
+        "golden_mean_path_len": 2.0,
+        "n_flows_carried_pred": 72
+      },
+      "batfish_snapshot": "golden-t05_ring6/batfish-snapshot",
+      "lab_artifact": "golden-t05_ring6",
+      "candidate_scenario": "golden-t05_ring6/scenario.json"
+    },
+    {
+      "change_id": "V4P-01",
+      "kind": "control_positive_retired",
+      "topology": "t05_ring6",
+      "role": "shutdown",
+      "mechanism": "shutdown",
+      "target": [
+        "coreb",
+        "edgeb"
+      ],
+      "push_plan": {
+        "coreb": [
+          "interface eth2",
+          "shutdown",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.5,
+        "r_broken_exact": 0.5,
+        "r_rerouted_exact": 0.0,
+        "n_fib_entries_changed": 10,
+        "n_routers_changed": 6,
+        "pml_flow_frac": 0.0,
+        "n_devices_pushed": 1,
+        "n_config_commands": 2,
+        "n_routers": 6,
+        "n_endpoints": 9,
+        "changed_link_betweenness": 0.5,
+        "golden_mean_path_len": 2.0,
+        "n_flows_carried_pred": 72
+      },
+      "retired_by": "A4",
+      "replaced_by": "V4P-05",
+      "retired_reason": "cut edge for carried flows: analytic r_rerouted_exact = 0, so T1 = 0 by definition (docs/V4-LAUNCH-AUDIT-2.md \u00a71)",
+      "batfish_snapshot": "V4P-01/batfish-snapshot",
+      "lab_artifact": "golden-t05_ring6",
+      "candidate_scenario": "V4P-01/scenario.json"
+    },
+    {
+      "change_id": "V4P-05",
+      "kind": "control_positive",
+      "topology": "t05_ring6",
+      "role": "shutdown",
+      "mechanism": "shutdown",
+      "target": [
+        "corea",
+        "wan1"
+      ],
+      "push_plan": {
+        "corea": [
+          "interface eth2",
+          "shutdown",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.444444,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.444444,
+        "n_fib_entries_changed": 9,
+        "n_routers_changed": 4,
+        "pml_flow_frac": 0.2638888888888889,
+        "n_devices_pushed": 1,
+        "n_config_commands": 2,
+        "n_routers": 6,
+        "n_endpoints": 9,
+        "changed_link_betweenness": 0.4444444444444444,
+        "golden_mean_path_len": 2.0,
+        "n_flows_carried_pred": 72
+      },
+      "amendment": "A4",
+      "replaces": "V4P-01",
+      "batfish_snapshot": "V4P-05/batfish-snapshot",
+      "lab_artifact": "golden-t05_ring6",
+      "candidate_scenario": "V4P-05/scenario.json"
+    },
+    {
+      "change_id": "V4C-06",
+      "kind": "population",
+      "topology": "t13_bowtie7",
+      "role": "cost-hi",
+      "mechanism": "cost",
+      "target": [
+        "b1",
+        "mid"
+      ],
+      "push_plan": {
+        "b1": [
+          "interface eth1",
+          "ip ospf cost 200",
+          "exit"
+        ],
+        "mid": [
+          "interface eth3",
+          "ip ospf cost 200",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.444444,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.444444,
+        "n_fib_entries_changed": 10,
+        "n_routers_changed": 3,
+        "pml_flow_frac": 0.2222222222222222,
+        "n_devices_pushed": 2,
+        "n_config_commands": 4,
+        "n_routers": 7,
+        "n_endpoints": 10,
+        "changed_link_betweenness": 0.4444444444444444,
+        "golden_mean_path_len": 2.0,
+        "n_flows_carried_pred": 90
+      },
+      "batfish_snapshot": "V4C-06/batfish-snapshot",
+      "lab_artifact": "golden-t13_bowtie7",
+      "candidate_scenario": "V4C-06/scenario.json"
+    },
+    {
+      "change_id": "V4C-07",
+      "kind": "population",
+      "topology": "t13_bowtie7",
+      "role": "cost-mid",
+      "mechanism": "cost",
+      "target": [
+        "a2",
+        "mid"
+      ],
+      "push_plan": {
+        "a2": [
+          "interface eth2",
+          "ip ospf cost 420",
+          "exit"
+        ],
+        "mid": [
+          "interface eth2",
+          "ip ospf cost 420",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.133333,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.133333,
+        "n_fib_entries_changed": 5,
+        "n_routers_changed": 2,
+        "pml_flow_frac": 0.0,
+        "n_devices_pushed": 2,
+        "n_config_commands": 4,
+        "n_routers": 7,
+        "n_endpoints": 10,
+        "changed_link_betweenness": 0.13333333333333333,
+        "golden_mean_path_len": 2.0,
+        "n_flows_carried_pred": 90
+      },
+      "batfish_snapshot": "V4C-07/batfish-snapshot",
+      "lab_artifact": "golden-t13_bowtie7",
+      "candidate_scenario": "V4C-07/scenario.json"
+    },
+    {
+      "change_id": "V4C-08",
+      "kind": "population",
+      "topology": "t13_bowtie7",
+      "role": "drain-hi",
+      "mechanism": "drain",
+      "target": "b1",
+      "push_plan": {
+        "b1": [
+          "interface eth1",
+          "ip ospf cost 200",
+          "exit",
+          "interface eth2",
+          "ip ospf cost 200",
+          "exit"
+        ],
+        "edgeb": [
+          "interface eth3",
+          "ip ospf cost 200",
+          "exit"
+        ],
+        "mid": [
+          "interface eth3",
+          "ip ospf cost 200",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.333333,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.333333,
+        "n_fib_entries_changed": 5,
+        "n_routers_changed": 2,
+        "pml_flow_frac": 0.0,
+        "n_devices_pushed": 3,
+        "n_config_commands": 8,
+        "n_routers": 7,
+        "n_endpoints": 10,
+        "changed_link_betweenness": 0.8666666666666667,
+        "golden_mean_path_len": 2.0,
+        "n_flows_carried_pred": 90
+      },
+      "batfish_snapshot": "V4C-08/batfish-snapshot",
+      "lab_artifact": "golden-t13_bowtie7",
+      "candidate_scenario": "V4C-08/scenario.json"
+    },
+    {
+      "change_id": "V4C-09",
+      "kind": "population",
+      "topology": "t13_bowtie7",
+      "role": "drain-lo",
+      "mechanism": "drain",
+      "target": "b2",
+      "push_plan": {
+        "b2": [
+          "interface eth1",
+          "ip ospf cost 420",
+          "exit",
+          "interface eth2",
+          "ip ospf cost 400",
+          "exit"
+        ],
+        "edgeb": [
+          "interface eth4",
+          "ip ospf cost 400",
+          "exit"
+        ],
+        "mid": [
+          "interface eth4",
+          "ip ospf cost 420",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.055556,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.055556,
+        "n_fib_entries_changed": 5,
+        "n_routers_changed": 2,
+        "pml_flow_frac": 0.0,
+        "n_devices_pushed": 3,
+        "n_config_commands": 8,
+        "n_routers": 7,
+        "n_endpoints": 10,
+        "changed_link_betweenness": 0.2,
+        "golden_mean_path_len": 2.0,
+        "n_flows_carried_pred": 90
+      },
+      "batfish_snapshot": "V4C-09/batfish-snapshot",
+      "lab_artifact": "golden-t13_bowtie7",
+      "candidate_scenario": "V4C-09/scenario.json"
+    },
+    {
+      "change_id": "V4C-10",
+      "kind": "population",
+      "topology": "t13_bowtie7",
+      "role": "bh",
+      "mechanism": "blackhole",
+      "target": [
+        "a1",
+        "edgea",
+        "10.255.0.1/32"
+      ],
+      "push_plan": {
+        "a1": [
+          "ip route 10.255.0.1/32 blackhole"
+        ]
+      },
+      "features": {
+        "r_exact": 0.077778,
+        "r_broken_exact": 0.077778,
+        "r_rerouted_exact": 0.0,
+        "n_fib_entries_changed": 1,
+        "n_routers_changed": 1,
+        "pml_flow_frac": 0.0,
+        "n_devices_pushed": 1,
+        "n_config_commands": 1,
+        "n_routers": 7,
+        "n_endpoints": 10,
+        "changed_link_betweenness": 0,
+        "golden_mean_path_len": 2.0,
+        "n_flows_carried_pred": 90
+      },
+      "batfish_snapshot": "V4C-10/batfish-snapshot",
+      "lab_artifact": "golden-t13_bowtie7",
+      "candidate_scenario": "V4C-10/scenario.json"
+    },
+    {
+      "change_id": "V4N-04",
+      "kind": "control_noop",
+      "topology": "t13_bowtie7",
+      "role": "noop",
+      "mechanism": "noop",
+      "target": [
+        "a1"
+      ],
+      "push_plan": {
+        "a1": [
+          "interface eth1",
+          "ip ospf cost 10",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.0,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.0,
+        "n_fib_entries_changed": 0,
+        "n_routers_changed": 0,
+        "pml_flow_frac": 0.0,
+        "n_devices_pushed": 1,
+        "n_config_commands": 2,
+        "n_routers": 7,
+        "n_endpoints": 10,
+        "changed_link_betweenness": 0,
+        "golden_mean_path_len": 2.0,
+        "n_flows_carried_pred": 90
+      },
+      "batfish_snapshot": "golden-t13_bowtie7/batfish-snapshot",
+      "lab_artifact": "golden-t13_bowtie7",
+      "candidate_scenario": "golden-t13_bowtie7/scenario.json"
+    },
+    {
+      "change_id": "V4N-05",
+      "kind": "control_noop",
+      "topology": "t13_bowtie7",
+      "role": "noop",
+      "mechanism": "noop",
+      "target": [
+        "a1"
+      ],
+      "push_plan": {
+        "a1": [
+          "interface eth1",
+          "ip ospf cost 10",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.0,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.0,
+        "n_fib_entries_changed": 0,
+        "n_routers_changed": 0,
+        "pml_flow_frac": 0.0,
+        "n_devices_pushed": 1,
+        "n_config_commands": 2,
+        "n_routers": 7,
+        "n_endpoints": 10,
+        "changed_link_betweenness": 0,
+        "golden_mean_path_len": 2.0,
+        "n_flows_carried_pred": 90
+      },
+      "batfish_snapshot": "golden-t13_bowtie7/batfish-snapshot",
+      "lab_artifact": "golden-t13_bowtie7",
+      "candidate_scenario": "golden-t13_bowtie7/scenario.json"
+    },
+    {
+      "change_id": "V4N-06",
+      "kind": "control_noop",
+      "topology": "t13_bowtie7",
+      "role": "noop",
+      "mechanism": "noop",
+      "target": [
+        "a1"
+      ],
+      "push_plan": {
+        "a1": [
+          "interface eth1",
+          "ip ospf cost 10",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.0,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.0,
+        "n_fib_entries_changed": 0,
+        "n_routers_changed": 0,
+        "pml_flow_frac": 0.0,
+        "n_devices_pushed": 1,
+        "n_config_commands": 2,
+        "n_routers": 7,
+        "n_endpoints": 10,
+        "changed_link_betweenness": 0,
+        "golden_mean_path_len": 2.0,
+        "n_flows_carried_pred": 90
+      },
+      "batfish_snapshot": "golden-t13_bowtie7/batfish-snapshot",
+      "lab_artifact": "golden-t13_bowtie7",
+      "candidate_scenario": "golden-t13_bowtie7/scenario.json"
+    },
+    {
+      "change_id": "V4P-02",
+      "kind": "control_positive",
+      "topology": "t13_bowtie7",
+      "role": "shutdown",
+      "mechanism": "shutdown",
+      "target": [
+        "b1",
+        "mid"
+      ],
+      "push_plan": {
+        "b1": [
+          "interface eth1",
+          "shutdown",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.444444,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.444444,
+        "n_fib_entries_changed": 10,
+        "n_routers_changed": 3,
+        "pml_flow_frac": 0.2222222222222222,
+        "n_devices_pushed": 1,
+        "n_config_commands": 2,
+        "n_routers": 7,
+        "n_endpoints": 10,
+        "changed_link_betweenness": 0.4444444444444444,
+        "golden_mean_path_len": 2.0,
+        "n_flows_carried_pred": 90
+      },
+      "batfish_snapshot": "V4P-02/batfish-snapshot",
+      "lab_artifact": "golden-t13_bowtie7",
+      "candidate_scenario": "V4P-02/scenario.json"
+    },
+    {
+      "change_id": "V4C-11",
+      "kind": "population",
+      "topology": "t14_ladder8",
+      "role": "cost-hi",
+      "mechanism": "cost",
+      "target": [
+        "l2",
+        "l3"
+      ],
+      "push_plan": {
+        "l2": [
+          "interface eth2",
+          "ip ospf cost 200",
+          "exit"
+        ],
+        "l3": [
+          "interface eth1",
+          "ip ospf cost 200",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.454545,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.454545,
+        "n_fib_entries_changed": 21,
+        "n_routers_changed": 7,
+        "pml_flow_frac": 0.35454545454545455,
+        "n_devices_pushed": 2,
+        "n_config_commands": 4,
+        "n_routers": 8,
+        "n_endpoints": 11,
+        "changed_link_betweenness": 0.45454545454545453,
+        "golden_mean_path_len": 2.272727272727273,
+        "n_flows_carried_pred": 110
+      },
+      "batfish_snapshot": "V4C-11/batfish-snapshot",
+      "lab_artifact": "golden-t14_ladder8",
+      "candidate_scenario": "V4C-11/scenario.json"
+    },
+    {
+      "change_id": "V4C-12",
+      "kind": "population",
+      "topology": "t14_ladder8",
+      "role": "cost-mid",
+      "mechanism": "cost",
+      "target": [
+        "edgea",
+        "r1"
+      ],
+      "push_plan": {
+        "edgea": [
+          "interface eth3",
+          "ip ospf cost 600",
+          "exit"
+        ],
+        "r1": [
+          "interface eth1",
+          "ip ospf cost 600",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.181818,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.181818,
+        "n_fib_entries_changed": 9,
+        "n_routers_changed": 4,
+        "pml_flow_frac": 0.07272727272727272,
+        "n_devices_pushed": 2,
+        "n_config_commands": 4,
+        "n_routers": 8,
+        "n_endpoints": 11,
+        "changed_link_betweenness": 0.18181818181818182,
+        "golden_mean_path_len": 2.272727272727273,
+        "n_flows_carried_pred": 110
+      },
+      "batfish_snapshot": "V4C-12/batfish-snapshot",
+      "lab_artifact": "golden-t14_ladder8",
+      "candidate_scenario": "V4C-12/scenario.json"
+    },
+    {
+      "change_id": "V4C-13",
+      "kind": "population",
+      "topology": "t14_ladder8",
+      "role": "drain-hi",
+      "mechanism": "drain",
+      "target": "l2",
+      "push_plan": {
+        "l1": [
+          "interface eth2",
+          "ip ospf cost 200",
+          "exit"
+        ],
+        "l2": [
+          "interface eth1",
+          "ip ospf cost 200",
+          "exit",
+          "interface eth2",
+          "ip ospf cost 200",
+          "exit",
+          "interface eth3",
+          "ip ospf cost 1000",
+          "exit"
+        ],
+        "l3": [
+          "interface eth1",
+          "ip ospf cost 200",
+          "exit"
+        ],
+        "r2": [
+          "interface eth3",
+          "ip ospf cost 1000",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.4,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.4,
+        "n_fib_entries_changed": 22,
+        "n_routers_changed": 8,
+        "pml_flow_frac": 0.37272727272727274,
+        "n_devices_pushed": 4,
+        "n_config_commands": 12,
+        "n_routers": 8,
+        "n_endpoints": 11,
+        "changed_link_betweenness": 0.9454545454545454,
+        "golden_mean_path_len": 2.272727272727273,
+        "n_flows_carried_pred": 110
+      },
+      "batfish_snapshot": "V4C-13/batfish-snapshot",
+      "lab_artifact": "golden-t14_ladder8",
+      "candidate_scenario": "V4C-13/scenario.json"
+    },
+    {
+      "change_id": "V4C-14",
+      "kind": "population",
+      "topology": "t14_ladder8",
+      "role": "drain-lo",
+      "mechanism": "drain",
+      "target": "r1",
+      "push_plan": {
+        "edgea": [
+          "interface eth3",
+          "ip ospf cost 600",
+          "exit"
+        ],
+        "l1": [
+          "interface eth3",
+          "ip ospf cost 1000",
+          "exit"
+        ],
+        "r1": [
+          "interface eth1",
+          "ip ospf cost 600",
+          "exit",
+          "interface eth2",
+          "ip ospf cost 600",
+          "exit",
+          "interface eth3",
+          "ip ospf cost 1000",
+          "exit"
+        ],
+        "r2": [
+          "interface eth1",
+          "ip ospf cost 600",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.036364,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.036364,
+        "n_fib_entries_changed": 2,
+        "n_routers_changed": 2,
+        "pml_flow_frac": 0.0,
+        "n_devices_pushed": 4,
+        "n_config_commands": 12,
+        "n_routers": 8,
+        "n_endpoints": 11,
+        "changed_link_betweenness": 0.2545454545454545,
+        "golden_mean_path_len": 2.272727272727273,
+        "n_flows_carried_pred": 110
+      },
+      "batfish_snapshot": "V4C-14/batfish-snapshot",
+      "lab_artifact": "golden-t14_ladder8",
+      "candidate_scenario": "V4C-14/scenario.json"
+    },
+    {
+      "change_id": "V4C-15",
+      "kind": "population",
+      "topology": "t14_ladder8",
+      "role": "bh",
+      "mechanism": "blackhole",
+      "target": [
+        "edgea",
+        "r1",
+        "10.255.0.6/32"
+      ],
+      "push_plan": {
+        "edgea": [
+          "ip route 10.255.0.6/32 blackhole"
+        ]
+      },
+      "features": {
+        "r_exact": 0.072727,
+        "r_broken_exact": 0.072727,
+        "r_rerouted_exact": 0.0,
+        "n_fib_entries_changed": 1,
+        "n_routers_changed": 1,
+        "pml_flow_frac": 0.0,
+        "n_devices_pushed": 1,
+        "n_config_commands": 1,
+        "n_routers": 8,
+        "n_endpoints": 11,
+        "changed_link_betweenness": 0,
+        "golden_mean_path_len": 2.272727272727273,
+        "n_flows_carried_pred": 110
+      },
+      "batfish_snapshot": "V4C-15/batfish-snapshot",
+      "lab_artifact": "golden-t14_ladder8",
+      "candidate_scenario": "V4C-15/scenario.json"
+    },
+    {
+      "change_id": "V4N-07",
+      "kind": "control_noop",
+      "topology": "t14_ladder8",
+      "role": "noop",
+      "mechanism": "noop",
+      "target": [
+        "edgea"
+      ],
+      "push_plan": {
+        "edgea": [
+          "interface eth2",
+          "ip ospf cost 10",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.0,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.0,
+        "n_fib_entries_changed": 0,
+        "n_routers_changed": 0,
+        "pml_flow_frac": 0.0,
+        "n_devices_pushed": 1,
+        "n_config_commands": 2,
+        "n_routers": 8,
+        "n_endpoints": 11,
+        "changed_link_betweenness": 0,
+        "golden_mean_path_len": 2.272727272727273,
+        "n_flows_carried_pred": 110
+      },
+      "batfish_snapshot": "golden-t14_ladder8/batfish-snapshot",
+      "lab_artifact": "golden-t14_ladder8",
+      "candidate_scenario": "golden-t14_ladder8/scenario.json"
+    },
+    {
+      "change_id": "V4N-08",
+      "kind": "control_noop",
+      "topology": "t14_ladder8",
+      "role": "noop",
+      "mechanism": "noop",
+      "target": [
+        "edgea"
+      ],
+      "push_plan": {
+        "edgea": [
+          "interface eth2",
+          "ip ospf cost 10",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.0,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.0,
+        "n_fib_entries_changed": 0,
+        "n_routers_changed": 0,
+        "pml_flow_frac": 0.0,
+        "n_devices_pushed": 1,
+        "n_config_commands": 2,
+        "n_routers": 8,
+        "n_endpoints": 11,
+        "changed_link_betweenness": 0,
+        "golden_mean_path_len": 2.272727272727273,
+        "n_flows_carried_pred": 110
+      },
+      "batfish_snapshot": "golden-t14_ladder8/batfish-snapshot",
+      "lab_artifact": "golden-t14_ladder8",
+      "candidate_scenario": "golden-t14_ladder8/scenario.json"
+    },
+    {
+      "change_id": "V4P-03",
+      "kind": "control_positive",
+      "topology": "t14_ladder8",
+      "role": "shutdown",
+      "mechanism": "shutdown",
+      "target": [
+        "l2",
+        "l3"
+      ],
+      "push_plan": {
+        "l2": [
+          "interface eth2",
+          "shutdown",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.454545,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.454545,
+        "n_fib_entries_changed": 21,
+        "n_routers_changed": 7,
+        "pml_flow_frac": 0.35454545454545455,
+        "n_devices_pushed": 1,
+        "n_config_commands": 2,
+        "n_routers": 8,
+        "n_endpoints": 11,
+        "changed_link_betweenness": 0.45454545454545453,
+        "golden_mean_path_len": 2.272727272727273,
+        "n_flows_carried_pred": 110
+      },
+      "batfish_snapshot": "V4P-03/batfish-snapshot",
+      "lab_artifact": "golden-t14_ladder8",
+      "candidate_scenario": "V4P-03/scenario.json"
+    },
+    {
+      "change_id": "V4C-16",
+      "kind": "population",
+      "topology": "t15_campus12",
+      "role": "cost-hi",
+      "mechanism": "cost",
+      "target": [
+        "coreb",
+        "distb1"
+      ],
+      "push_plan": {
+        "coreb": [
+          "interface eth2",
+          "ip ospf cost 200",
+          "exit"
+        ],
+        "distb1": [
+          "interface eth1",
+          "ip ospf cost 200",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.447619,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.447619,
+        "n_fib_entries_changed": 34,
+        "n_routers_changed": 6,
+        "pml_flow_frac": 0.44761904761904764,
+        "n_devices_pushed": 2,
+        "n_config_commands": 4,
+        "n_routers": 12,
+        "n_endpoints": 15,
+        "changed_link_betweenness": 0.44761904761904764,
+        "golden_mean_path_len": 3.276190476190476,
+        "n_flows_carried_pred": 210
+      },
+      "batfish_snapshot": "V4C-16/batfish-snapshot",
+      "lab_artifact": "golden-t15_campus12",
+      "candidate_scenario": "V4C-16/scenario.json"
+    },
+    {
+      "change_id": "V4C-17",
+      "kind": "population",
+      "topology": "t15_campus12",
+      "role": "cost-mid",
+      "mechanism": "cost",
+      "target": [
+        "corea",
+        "dista2"
+      ],
+      "push_plan": {
+        "corea": [
+          "interface eth2",
+          "ip ospf cost 400",
+          "exit"
+        ],
+        "dista2": [
+          "interface eth3",
+          "ip ospf cost 400",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.190476,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.190476,
+        "n_fib_entries_changed": 12,
+        "n_routers_changed": 3,
+        "pml_flow_frac": 0.09523809523809523,
+        "n_devices_pushed": 2,
+        "n_config_commands": 4,
+        "n_routers": 12,
+        "n_endpoints": 15,
+        "changed_link_betweenness": 0.19047619047619047,
+        "golden_mean_path_len": 3.276190476190476,
+        "n_flows_carried_pred": 210
+      },
+      "batfish_snapshot": "V4C-17/batfish-snapshot",
+      "lab_artifact": "golden-t15_campus12",
+      "candidate_scenario": "V4C-17/scenario.json"
+    },
+    {
+      "change_id": "V4C-18",
+      "kind": "population",
+      "topology": "t15_campus12",
+      "role": "drain-hi",
+      "mechanism": "drain",
+      "target": "distb1",
+      "push_plan": {
+        "accb1": [
+          "interface eth1",
+          "ip ospf cost 200",
+          "exit"
+        ],
+        "coreb": [
+          "interface eth2",
+          "ip ospf cost 200",
+          "exit"
+        ],
+        "distb1": [
+          "interface eth1",
+          "ip ospf cost 200",
+          "exit",
+          "interface eth2",
+          "ip ospf cost 200",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.352381,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.352381,
+        "n_fib_entries_changed": 22,
+        "n_routers_changed": 5,
+        "pml_flow_frac": 0.3476190476190476,
+        "n_devices_pushed": 3,
+        "n_config_commands": 8,
+        "n_routers": 12,
+        "n_endpoints": 15,
+        "changed_link_betweenness": 0.8380952380952381,
+        "golden_mean_path_len": 3.276190476190476,
+        "n_flows_carried_pred": 210
+      },
+      "batfish_snapshot": "V4C-18/batfish-snapshot",
+      "lab_artifact": "golden-t15_campus12",
+      "candidate_scenario": "V4C-18/scenario.json"
+    },
+    {
+      "change_id": "V4C-19",
+      "kind": "population",
+      "topology": "t15_campus12",
+      "role": "drain-lo",
+      "mechanism": "drain",
+      "target": "acca2",
+      "push_plan": {
+        "acca2": [
+          "interface eth1",
+          "ip ospf cost 800",
+          "exit",
+          "interface eth2",
+          "ip ospf cost 200",
+          "exit"
+        ],
+        "dista2": [
+          "interface eth2",
+          "ip ospf cost 200",
+          "exit"
+        ],
+        "edgea": [
+          "interface eth3",
+          "ip ospf cost 800",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.019048,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.019048,
+        "n_fib_entries_changed": 2,
+        "n_routers_changed": 2,
+        "pml_flow_frac": 0.0,
+        "n_devices_pushed": 3,
+        "n_config_commands": 8,
+        "n_routers": 12,
+        "n_endpoints": 15,
+        "changed_link_betweenness": 0.13333333333333333,
+        "golden_mean_path_len": 3.276190476190476,
+        "n_flows_carried_pred": 210
+      },
+      "batfish_snapshot": "V4C-19/batfish-snapshot",
+      "lab_artifact": "golden-t15_campus12",
+      "candidate_scenario": "V4C-19/scenario.json"
+    },
+    {
+      "change_id": "V4C-20",
+      "kind": "population",
+      "topology": "t15_campus12",
+      "role": "bh",
+      "mechanism": "blackhole",
+      "target": [
+        "coreb",
+        "distb2",
+        "10.255.0.9/32"
+      ],
+      "push_plan": {
+        "coreb": [
+          "ip route 10.255.0.9/32 blackhole"
+        ]
+      },
+      "features": {
+        "r_exact": 0.061905,
+        "r_broken_exact": 0.061905,
+        "r_rerouted_exact": 0.0,
+        "n_fib_entries_changed": 1,
+        "n_routers_changed": 1,
+        "pml_flow_frac": 0.0,
+        "n_devices_pushed": 1,
+        "n_config_commands": 1,
+        "n_routers": 12,
+        "n_endpoints": 15,
+        "changed_link_betweenness": 0,
+        "golden_mean_path_len": 3.276190476190476,
+        "n_flows_carried_pred": 210
+      },
+      "batfish_snapshot": "V4C-20/batfish-snapshot",
+      "lab_artifact": "golden-t15_campus12",
+      "candidate_scenario": "V4C-20/scenario.json"
+    },
+    {
+      "change_id": "V4N-09",
+      "kind": "control_noop",
+      "topology": "t15_campus12",
+      "role": "noop",
+      "mechanism": "noop",
+      "target": [
+        "acca1"
+      ],
+      "push_plan": {
+        "acca1": [
+          "interface eth2",
+          "ip ospf cost 10",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.0,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.0,
+        "n_fib_entries_changed": 0,
+        "n_routers_changed": 0,
+        "pml_flow_frac": 0.0,
+        "n_devices_pushed": 1,
+        "n_config_commands": 2,
+        "n_routers": 12,
+        "n_endpoints": 15,
+        "changed_link_betweenness": 0,
+        "golden_mean_path_len": 3.276190476190476,
+        "n_flows_carried_pred": 210
+      },
+      "batfish_snapshot": "golden-t15_campus12/batfish-snapshot",
+      "lab_artifact": "golden-t15_campus12",
+      "candidate_scenario": "golden-t15_campus12/scenario.json"
+    },
+    {
+      "change_id": "V4N-10",
+      "kind": "control_noop",
+      "topology": "t15_campus12",
+      "role": "noop",
+      "mechanism": "noop",
+      "target": [
+        "acca1"
+      ],
+      "push_plan": {
+        "acca1": [
+          "interface eth2",
+          "ip ospf cost 10",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.0,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.0,
+        "n_fib_entries_changed": 0,
+        "n_routers_changed": 0,
+        "pml_flow_frac": 0.0,
+        "n_devices_pushed": 1,
+        "n_config_commands": 2,
+        "n_routers": 12,
+        "n_endpoints": 15,
+        "changed_link_betweenness": 0,
+        "golden_mean_path_len": 3.276190476190476,
+        "n_flows_carried_pred": 210
+      },
+      "batfish_snapshot": "golden-t15_campus12/batfish-snapshot",
+      "lab_artifact": "golden-t15_campus12",
+      "candidate_scenario": "golden-t15_campus12/scenario.json"
+    },
+    {
+      "change_id": "V4P-04",
+      "kind": "control_positive_retired",
+      "topology": "t15_campus12",
+      "role": "shutdown",
+      "mechanism": "shutdown",
+      "target": [
+        "corea",
+        "coreb"
+      ],
+      "push_plan": {
+        "corea": [
+          "interface eth3",
+          "shutdown",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.533333,
+        "r_broken_exact": 0.533333,
+        "r_rerouted_exact": 0.0,
+        "n_fib_entries_changed": 72,
+        "n_routers_changed": 12,
+        "pml_flow_frac": 0.0,
+        "n_devices_pushed": 1,
+        "n_config_commands": 2,
+        "n_routers": 12,
+        "n_endpoints": 15,
+        "changed_link_betweenness": 0.5333333333333333,
+        "golden_mean_path_len": 3.276190476190476,
+        "n_flows_carried_pred": 210
+      },
+      "retired_by": "A4",
+      "replaced_by": "V4P-06",
+      "retired_reason": "cut edge for carried flows: analytic r_rerouted_exact = 0, so T1 = 0 by definition (docs/V4-LAUNCH-AUDIT-2.md \u00a71)",
+      "batfish_snapshot": "V4P-04/batfish-snapshot",
+      "lab_artifact": "golden-t15_campus12",
+      "candidate_scenario": "V4P-04/scenario.json"
+    },
+    {
+      "change_id": "V4P-06",
+      "kind": "control_positive",
+      "topology": "t15_campus12",
+      "role": "shutdown",
+      "mechanism": "shutdown",
+      "target": [
+        "coreb",
+        "distb1"
+      ],
+      "push_plan": {
+        "coreb": [
+          "interface eth2",
+          "shutdown",
+          "exit"
+        ]
+      },
+      "features": {
+        "r_exact": 0.447619,
+        "r_broken_exact": 0.0,
+        "r_rerouted_exact": 0.447619,
+        "n_fib_entries_changed": 34,
+        "n_routers_changed": 6,
+        "pml_flow_frac": 0.44761904761904764,
+        "n_devices_pushed": 1,
+        "n_config_commands": 2,
+        "n_routers": 12,
+        "n_endpoints": 15,
+        "changed_link_betweenness": 0.44761904761904764,
+        "golden_mean_path_len": 3.276190476190476,
+        "n_flows_carried_pred": 210
+      },
+      "amendment": "A4",
+      "replaces": "V4P-04",
+      "batfish_snapshot": "V4P-06/batfish-snapshot",
+      "lab_artifact": "golden-t15_campus12",
+      "candidate_scenario": "V4P-06/scenario.json"
+    }
+  ],
+  "frozen_sources": "nrl/topologies_v3.py, nrl/repairs_v3.py, nrl/severity.py (read-only)"
+}

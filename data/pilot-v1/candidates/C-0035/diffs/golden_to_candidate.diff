@@ -1,0 +1,33 @@
+--- golden
++++ C-0035
+@@ -49,9 +49,9 @@
+  ip ospf network point-to-point
+ !
+ interface eth3
+- description link to coreb wan-backup
+- ip ospf area 0.0.0.0
+- ip ospf cost 100
++ description link to coreb wan-backup (reviewed, see ticket NET-1042)
++ ip ospf area 0.0.0.0
++ ip ospf cost 1
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -83,7 +83,7 @@
+ auto eth3
+ iface eth3
+     address 10.0.9.1/30
+-    alias link to coreb wan-backup
++    alias link to coreb wan-backup (reviewed, see ticket NET-1042)
+ 
+ 
+ ===== coreb/daemons =====
+@@ -139,7 +139,7 @@
+ interface eth3
+  description link to corea wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 100
++ ip ospf cost 1
+  ip ospf network point-to-point
+ !
+ router ospf

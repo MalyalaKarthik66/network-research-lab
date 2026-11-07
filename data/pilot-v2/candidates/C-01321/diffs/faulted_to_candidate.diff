@@ -1,0 +1,20 @@
+--- I-00180
++++ C-01321
+@@ -126,7 +126,7 @@
+ interface eth3
+  description link to g5 accB
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 13
+  ip ospf network point-to-point
+ !
+ interface eth4
+@@ -134,8 +134,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 40
+  ip ospf network point-to-point
+-!
+-ip route 10.20.0.10/32 10.28.13.1
+ !
+ router ospf
+  ospf router-id 10.255.0.12

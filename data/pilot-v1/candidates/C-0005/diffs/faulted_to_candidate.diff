@@ -1,0 +1,20 @@
+--- I-01
++++ C-0005
+@@ -408,7 +408,7 @@
+  ip ospf network point-to-point
+ !
+ interface eth2
+- description link to wan2 wan-primary
++ description link to wan2 wan-primary (reviewed, see ticket NET-1042)
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+@@ -438,7 +438,7 @@
+ auto eth2
+ iface eth2
+     address 10.0.3.1/30
+-    alias link to wan2 wan-primary
++    alias link to wan2 wan-primary (reviewed, see ticket NET-1042)
+ 
+ 
+ ===== wan2/daemons =====

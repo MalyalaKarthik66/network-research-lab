@@ -1,0 +1,11 @@
+--- I-08
++++ C-0036
+@@ -54,8 +54,6 @@
+  ip ospf cost 100
+  ip ospf network point-to-point
+ !
+-ip route 10.21.0.0/24 blackhole
+-!
+ router ospf
+  ospf router-id 10.255.0.2
+  passive-interface lo

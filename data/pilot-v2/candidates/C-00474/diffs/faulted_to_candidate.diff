@@ -1,0 +1,18 @@
+--- I-00064
++++ C-00474
+@@ -145,6 +145,7 @@
+ router ospf
+  ospf router-id 10.255.0.5
+  passive-interface lo
++ passive-interface eth2
+ !
+ line vty
+ !
+@@ -381,7 +382,6 @@
+  ospf router-id 10.255.0.1
+  passive-interface lo
+  passive-interface eth1
+- passive-interface eth2
+ !
+ line vty
+ !

@@ -1,0 +1,19 @@
+--- I-00100
++++ C-00736
+@@ -289,6 +289,7 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
++ shutdown
+ !
+ interface eth3
+  description link to corea wan-backup
+@@ -458,8 +459,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+-!
+-ip route 10.20.0.10/32 10.20.7.1
+ !
+ router ospf
+  ospf router-id 10.255.0.8

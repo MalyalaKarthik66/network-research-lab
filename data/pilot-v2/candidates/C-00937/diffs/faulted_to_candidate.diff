@@ -1,0 +1,11 @@
+--- I-00127
++++ C-00937
+@@ -352,7 +352,7 @@
+ interface eth2
+  description link to a1 A1
+  ip ospf area 0.0.0.0
+- ip ospf cost 65535
++ ip ospf cost 12
+  ip ospf network point-to-point
+ !
+ interface eth3

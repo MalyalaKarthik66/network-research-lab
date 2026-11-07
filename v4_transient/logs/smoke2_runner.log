@@ -1,0 +1,21 @@
+[1/9] SMOKE2-V4P-01.rep1 t05_ring6 shutdown attempt 1
+      -> OK wall 204.35s obs 23.927228927612305 
+[2/9] SMOKE2-V4P-02.rep1 t13_bowtie7 shutdown attempt 1
+      -> OK wall 262.47s obs 22.267520904541016 
+[3/9] SMOKE2-V4P-03.rep1 t14_ladder8 shutdown attempt 1
+      -> OK wall 239.54s obs 23.843266010284424 
+[4/9] SMOKE2-V4P-04.rep1 t15_campus12 shutdown attempt 1
+      -> OK wall 219.36s obs 22.912699937820435 
+[5/9] SMOKE2-V4N-01.rep1 t05_ring6 noop attempt 1
+      -> OK wall 141.59s obs 21.794865608215332 
+[6/9] SMOKE2-V4C-05.rep1 t05_ring6 bh attempt 1
+      -> OK wall 151.02s obs 25.504082202911377 
+[7/9] SMOKE2-V4C-10.rep1 t13_bowtie7 bh attempt 1
+      -> OK wall 236.5s obs 27.831968784332275 
+[8/9] SMOKE2-V4C-11.rep1 t14_ladder8 cost-hi attempt 1
+      -> NO_CONVERGENCE wall 1329.29s obs None not converged within 180s: neighbours still transitional: ['edgea:Loading/-', 'l1:Loading/-', 'l2:Loading/-', 'l3:Loading/-']; RIB changed within the last 3 polls
+[8/9] SMOKE2-V4C-11.rep1 t14_ladder8 cost-hi attempt 2
+      -> OK wall 227.51s obs 21.235341787338257 
+[9/9] SMOKE2-V4C-18.rep1 t15_campus12 drain-hi attempt 1
+      -> OK wall 420.56s obs 30.259456396102905 
+runner exit 0

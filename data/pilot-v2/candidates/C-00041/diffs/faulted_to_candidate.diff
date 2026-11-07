@@ -1,0 +1,20 @@
+--- I-00006
++++ C-00041
+@@ -198,7 +198,7 @@
+ interface eth2
+  description link to corea siteA
+  ip ospf area 0.0.0.0
+- ip ospf cost 500
++ ip ospf cost 10
+  ip ospf network point-to-point
+ !
+ interface eth3
+@@ -296,7 +296,7 @@
+ !
+ interface eth4
+  description link to edgea wan-backup
+- ip ospf area 0.0.0.0
++ ip ospf area 0.0.0.9
+  ip ospf cost 100
+  ip ospf network point-to-point
+ !

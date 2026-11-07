@@ -1,0 +1,20 @@
+--- I-00130
++++ C-00963
+@@ -270,7 +270,7 @@
+ interface eth1
+  description link to mid M4
+  ip ospf area 0.0.0.0
+- ip ospf cost 20
++ ip ospf cost 1
+  ip ospf network point-to-point
+ !
+ interface eth2
+@@ -454,8 +454,6 @@
+  ip ospf cost 20
+  ip ospf network point-to-point
+ !
+-ip route 10.20.0.10/32 10.23.7.1
+-!
+ router ospf
+  ospf router-id 10.255.0.7
+  passive-interface lo

@@ -1,0 +1,11 @@
+--- golden
++++ I-03
+@@ -508,7 +508,7 @@
+ 
+ auto eth1
+ iface eth1
+-    address 10.0.3.2/30
++    address 10.0.7.2/30
+     alias link to wan1 wan-primary
+ 
+ auto eth2

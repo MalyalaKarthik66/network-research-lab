@@ -1,0 +1,3 @@
+[2026-09-15T12:17:48.116087] 10.15.2.0/30 nhid 30 via 10.15.6.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:17:48.116172] 10.255.0.3 nhid 30 via 10.15.6.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:17:48.166291] Deleted 10.15.2.0/30 nhid 30 via 10.15.6.2 dev eth2 proto ospf metric 20 

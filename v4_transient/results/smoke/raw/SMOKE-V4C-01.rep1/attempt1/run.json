@@ -1,0 +1,150 @@
+{
+  "experiment_id": "v4-transient-pilot",
+  "protocol_version": "transient-1.0.0",
+  "run_id": "SMOKE-V4C-01.rep1",
+  "change_id": "V4C-01",
+  "replicate": 1,
+  "order": 0,
+  "change_kind": "population",
+  "topology": "t05_ring6",
+  "lab": "nrlv4-t05",
+  "attempt": 1,
+  "status": "OK",
+  "error": null,
+  "started_utc": "2026-09-14T13:31:57Z",
+  "t_wall_start": 1789392717.5360353,
+  "code_sha256": {
+    "v4lib/__init__.py": "82a1046d5fd5afa633a160f050379be71ec747b3c9b93b77282f55099195270f",
+    "v4lib/analytic.py": "94dcd67a7238842dcac3810b9f2713cdf4cb80922be1df1590ccc3b406eea2fb",
+    "v4lib/fib.py": "b873070892b2a669e6d35fc92f40e95e8ef2879a60b7bdff4ce0db0fee5ac6e7",
+    "v4lib/labops.py": "743602f30f6ab7819fe4989c51a45a735a982f561ea16d6449e65551ede4e40b",
+    "v4lib/targets.py": "efdda0547715e4703b034215479f941af37ea94b66ed733ad6c8a0244a7d485d",
+    "pilot/run_pilot.py": "d88165b956ff18be28835555fc8f9da36ccd40e834aac1ae805224e279e9471c"
+  },
+  "prereg_sha256": "2090aa2f758083fe66891245708e4a99d4e8d7015b7053edcbf21a6a1cac1111",
+  "env_before": {
+    "utc": "2026-09-14T13:31:58Z",
+    "epoch": 1789392718.540719,
+    "loadavg": "0.29 0.14 0.15 3/607 700",
+    "meminfo": {
+      "MemTotal": "7979184 kB",
+      "MemFree": "3794964 kB",
+      "MemAvailable": "4549968 kB"
+    },
+    "uptime_s": "2159.74 34242.37",
+    "nproc": 16,
+    "kernel": "6.6.87.2-microsoft-standard-WSL2",
+    "python": "3.10.12",
+    "running_containers": 0
+  },
+  "params": {
+    "PRE_CHANGE_BASELINE_S": 10.0,
+    "MIN_OBS_S": 20.0,
+    "QUIET_S": 10.0,
+    "MAX_OBS_S": 90.0,
+    "POLL_S": 2.0,
+    "PROBE_INTERVAL_S": 0.05,
+    "PROBE_COUNT": 2600
+  },
+  "staging": {
+    "status": "OK",
+    "files_verified": 23,
+    "problems": []
+  },
+  "deploy": {
+    "status": "OK",
+    "rc": 0,
+    "seconds": 2.72,
+    "error": null
+  },
+  "containers": {
+    "status": "OK",
+    "missing": [],
+    "expected": 9,
+    "found": 9,
+    "error": null
+  },
+  "convergence": {
+    "status": "OK",
+    "converged": true,
+    "seconds": 64.6,
+    "polls": 5,
+    "min_settle_s": 45,
+    "error": null
+  },
+  "convergence_wall_s": 64.62,
+  "pre_ospf_binding": {
+    "status": "OK",
+    "problems": []
+  },
+  "container_date": "Mon Sep 14 13:33:11 UTC 2026",
+  "fib_monitors": {
+    "corea": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "coreb": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "edgea": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "edgeb": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "wan1": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "wan2": {
+      "status": "OK",
+      "stderr": ""
+    }
+  },
+  "t_baseline_start": 1789392796.2411535,
+  "t0": 1789392807.6993697,
+  "t_push_end": 1789392808.007809,
+  "push_status": [
+    "OK",
+    "OK"
+  ],
+  "t_end": 1789392829.4825783,
+  "settled": true,
+  "observation_s": 21.78320860862732,
+  "post_checks": {
+    "running_config": {
+      "status": "OK",
+      "routers_checked": 6,
+      "problems": []
+    },
+    "addresses": {
+      "status": "OK",
+      "problems": []
+    },
+    "ospf_binding": {
+      "status": "OK",
+      "problems": []
+    }
+  },
+  "teardown_ok": true,
+  "env_after": {
+    "utc": "2026-09-14T13:34:08Z",
+    "epoch": 1789392848.7086535,
+    "loadavg": "1.89 0.62 0.32 1/630 11395",
+    "meminfo": {
+      "MemTotal": "7979184 kB",
+      "MemFree": "3990132 kB",
+      "MemAvailable": "4528636 kB"
+    },
+    "uptime_s": "2283.45 36172.71",
+    "nproc": 16,
+    "kernel": "6.6.87.2-microsoft-standard-WSL2",
+    "python": "3.10.12",
+    "running_containers": 0
+  },
+  "finished_utc": "2026-09-14T13:34:08Z",
+  "wall_s": 131.17
+}

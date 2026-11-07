@@ -1,0 +1,17 @@
+{
+  "incident_id": "I-00014",
+  "topology": "t02_wan6",
+  "fault_id": "F0004",
+  "fault_family": "ospf_passive_transit",
+  "fault_description": "[t02_wan6] edgea eth2 marked passive (siteA)",
+  "fault_params": {
+    "node": "edgea",
+    "iface": "eth2",
+    "peer": "corea",
+    "peer_iface": "eth1",
+    "link": "siteA",
+    "good_cost": 10,
+    "topology": "t02_wan6"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

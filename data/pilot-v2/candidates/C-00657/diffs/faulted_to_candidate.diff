@@ -1,0 +1,38 @@
+--- I-00089
++++ C-00657
+@@ -54,8 +54,6 @@
+  ip ospf cost 15
+  ip ospf network point-to-point
+ !
+-ip route 10.20.0.0/24 10.19.1.1
+-!
+ router ospf
+  ospf router-id 10.255.0.2
+  passive-interface lo
+@@ -135,7 +133,7 @@
+ interface eth2
+  description link to wan2 wan-secondary
+  ip ospf area 0.0.0.0
+- ip ospf cost 15
++ ip ospf cost 1
+  ip ospf network point-to-point
+ !
+ interface eth3
+@@ -228,7 +226,7 @@
+ interface eth3
+  description link to edgeb wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 200
++ ip ospf cost 2
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -321,7 +319,7 @@
+ interface eth4
+  description link to edgea wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 200
++ ip ospf cost 2
+  ip ospf network point-to-point
+ !
+ router ospf

@@ -1,0 +1,12 @@
+--- I-00111
++++ C-00824
+@@ -530,7 +530,8 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+- shutdown
++!
++ip route 10.21.0.0/24 blackhole
+ !
+ router ospf
+  ospf router-id 10.255.0.1

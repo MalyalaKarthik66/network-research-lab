@@ -1,0 +1,25 @@
+[2026-09-15T12:20:27.799517] 526: eth1@if525: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 9500 qdisc noqueue state DOWN group default 
+    link/ether aa:c1:ab:ce:c5:22 brd ff:ff:ff:ff:ff:ff link-netnsid 1
+    altname clab-o-229407c6fd360e2f
+[2026-09-15T12:20:27.810094] 10.25.9.0/30 nhid 29 via 10.25.11.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810162] 10.10.0.0/24 nhid 29 via 10.25.11.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810216] 10.25.1.0/30 nhid 29 via 10.25.11.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810235] 10.25.2.0/30 nhid 29 via 10.25.11.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810250] 10.25.3.0/30 nhid 29 via 10.25.11.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810270] 10.25.4.0/30 nhid 29 via 10.25.11.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810285] 10.25.5.0/30 nhid 29 via 10.25.11.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810300] 10.25.6.0/30 nhid 29 via 10.25.11.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810315] 10.25.7.0/30 nhid 29 via 10.25.11.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810330] 10.25.8.0/30 nhid 29 via 10.25.11.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810345] 10.25.10.0/30 nhid 29 via 10.25.11.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810360] 10.25.13.0/30 nhid 29 via 10.25.11.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810375] 10.255.0.1 nhid 29 via 10.25.11.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810391] 10.255.0.2 nhid 29 via 10.25.11.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810405] 10.255.0.3 nhid 29 via 10.25.11.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810419] 10.255.0.4 nhid 29 via 10.25.11.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810430] 10.255.0.5 nhid 29 via 10.25.11.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810437] 10.255.0.6 nhid 29 via 10.25.11.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810445] 10.255.0.7 nhid 29 via 10.25.11.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810452] 10.255.0.9 nhid 29 via 10.25.11.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810460] 10.255.0.12 nhid 29 via 10.25.11.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.860838] Deleted 10.25.9.0/30 nhid 29 via 10.25.11.2 dev eth2 proto ospf metric 20 

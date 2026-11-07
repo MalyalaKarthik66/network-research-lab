@@ -1,0 +1,25 @@
+--- I-00025
++++ C-00186
+@@ -241,11 +241,12 @@
+ !
+ interface eth2
+  description link to corea siteA
++ ip ospf area 0.0.0.0
++ ip ospf cost 10
+ !
+ router ospf
+  ospf router-id 10.255.0.1
+  passive-interface lo
+- passive-interface eth1
+ !
+ line vty
+ !
+@@ -327,8 +328,6 @@
+ router ospf
+  ospf router-id 10.255.0.8
+  passive-interface lo
+- passive-interface eth1
+- passive-interface eth2
+ !
+ line vty
+ !

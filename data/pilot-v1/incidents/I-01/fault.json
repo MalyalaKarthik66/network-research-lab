@@ -1,0 +1,13 @@
+{
+  "incident_id": "I-01",
+  "fault_id": "F01",
+  "fault_family": "iface_down",
+  "fault_description": "primary WAN interface administratively shut on wan1",
+  "fault_params": {
+    "node": "wan1",
+    "iface": "eth2",
+    "peer": "wan2",
+    "peer_iface": "eth1"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

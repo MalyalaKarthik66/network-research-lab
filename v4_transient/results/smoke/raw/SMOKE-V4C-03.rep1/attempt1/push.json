@@ -1,0 +1,47 @@
+[
+  {
+    "node": "corea",
+    "commands": [
+      "interface eth2",
+      "ip ospf cost 200",
+      "exit"
+    ],
+    "t_start": 1789393020.0143752,
+    "t_end": 1789393020.1425574,
+    "status": "OK",
+    "rc": 0,
+    "stdout": "",
+    "stderr": "% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.\n"
+  },
+  {
+    "node": "coreb",
+    "commands": [
+      "interface eth1",
+      "ip ospf cost 200",
+      "exit"
+    ],
+    "t_start": 1789393020.1425612,
+    "t_end": 1789393020.2926936,
+    "status": "OK",
+    "rc": 0,
+    "stdout": "",
+    "stderr": "% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.\n"
+  },
+  {
+    "node": "wan1",
+    "commands": [
+      "interface eth1",
+      "ip ospf cost 200",
+      "exit",
+      "interface eth2",
+      "ip ospf cost 200",
+      "exit"
+    ],
+    "t_start": 1789393020.2926974,
+    "t_end": 1789393020.4568284,
+    "status": "OK",
+    "rc": 0,
+    "stdout": "",
+    "stderr": "% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.\n"
+  }
+]

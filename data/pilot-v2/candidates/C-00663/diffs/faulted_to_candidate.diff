@@ -1,0 +1,19 @@
+--- I-00090
++++ C-00663
+@@ -299,6 +299,7 @@
+ interface lo
+  description router-id and management
+  ip ospf area 0.0.0.0
++ ip ospf cost 3
+ !
+ interface eth1
+  description link to hostb siteB-lan1
+@@ -321,8 +322,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 200
+  ip ospf network point-to-point
+-!
+-ip route 10.20.0.10/32 10.19.6.1
+ !
+ router ospf
+  ospf router-id 10.255.0.6

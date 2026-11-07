@@ -1,0 +1,9 @@
+{
+  "approved": true,
+  "approved_by": "Project owner: 2026-09-14 instruction delegating D1-D9 to the implementer, and 2026-09-15 instruction authorizing amendment A3 (instrument and validity fixes), and 2026-09-15 instruction to resolve launch audit 2 (amendments A4 positive controls and A5 runner, D1-D9 unchanged); written by Claude. Previous approvals are in Git history.",
+  "approved_utc": "2026-09-15T12:12:45Z",
+  "prereg_file": "docs/PILOT-PREREGISTRATION.md",
+  "prereg_sha256": "b434c524323df4330ae3194c7c4cda6874f6bb629c8642fb36853f783234eb0a",
+  "decisions_file": "config/pilot_decisions.json",
+  "decisions_sha256": "579b0338f4275abb334b0ad6b2007b57edeb83c54c109619138f54f36f007cba"
+}

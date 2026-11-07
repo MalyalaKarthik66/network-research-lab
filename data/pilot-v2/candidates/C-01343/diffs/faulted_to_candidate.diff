@@ -1,0 +1,20 @@
+--- I-00182
++++ C-01343
+@@ -863,7 +863,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.200.0.2/30
++    address 10.29.1.1/30
+     alias link to agga accA
+ 
+ 
+@@ -918,7 +918,7 @@
+ interface eth3
+  description link to aggb accB
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 1
+  ip ospf network point-to-point
+ !
+ router ospf

@@ -1,0 +1,11 @@
+--- golden
++++ I-04
+@@ -44,7 +44,7 @@
+ !
+ interface eth2
+  description link to wan1 siteA-wan
+- ip ospf area 0.0.0.0
++ ip ospf area 0.0.0.1
+  ip ospf cost 10
+  ip ospf network point-to-point
+ !

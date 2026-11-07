@@ -1,0 +1,30 @@
+[
+  {
+    "node": "a2",
+    "commands": [
+      "interface eth2",
+      "ip ospf cost 420",
+      "exit"
+    ],
+    "t_start": 1789476514.3787212,
+    "t_end": 1789476514.8861105,
+    "status": "OK",
+    "rc": 0,
+    "stdout": "",
+    "stderr": "% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.\n"
+  },
+  {
+    "node": "mid",
+    "commands": [
+      "interface eth2",
+      "ip ospf cost 420",
+      "exit"
+    ],
+    "t_start": 1789476514.8861153,
+    "t_end": 1789476515.400126,
+    "status": "OK",
+    "rc": 0,
+    "stdout": "",
+    "stderr": "% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.\n"
+  }
+]

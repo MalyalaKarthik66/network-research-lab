@@ -1,0 +1,28 @@
+--- I-00005
++++ C-00039
+@@ -197,6 +197,8 @@
+ !
+ interface eth2
+  description link to corea siteA
++ ip ospf area 0.0.0.0
++ ip ospf cost 10
+ !
+ interface eth3
+  description link to edgeb wan-backup
+@@ -207,7 +209,6 @@
+ router ospf
+  ospf router-id 10.255.0.1
+  passive-interface lo
+- passive-interface eth1
+ !
+ line vty
+ !
+@@ -300,8 +301,6 @@
+ router ospf
+  ospf router-id 10.255.0.4
+  passive-interface lo
+- passive-interface eth1
+- passive-interface eth2
+ !
+ line vty
+ !

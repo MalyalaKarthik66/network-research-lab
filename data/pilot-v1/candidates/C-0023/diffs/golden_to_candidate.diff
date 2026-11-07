@@ -1,0 +1,28 @@
+--- golden
++++ C-0023
+@@ -51,7 +51,7 @@
+ interface eth3
+  description link to coreb wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 100
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -139,7 +139,7 @@
+ interface eth3
+  description link to corea wan-backup
+  ip ospf area 0.0.0.0
+- ip ospf cost 100
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -493,6 +493,7 @@
+ router ospf
+  ospf router-id 10.255.0.4
+  passive-interface lo
++ passive-interface eth2
+ !
+ line vty
+ !

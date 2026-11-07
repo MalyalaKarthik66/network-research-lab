@@ -1,0 +1,11 @@
+--- golden-t16_pop14
++++ I-00160
+@@ -316,6 +316,8 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 60
+  ip ospf network point-to-point
++!
++ip route 10.20.0.10/32 10.26.5.1
+ !
+ router ospf
+  ospf router-id 10.255.0.6

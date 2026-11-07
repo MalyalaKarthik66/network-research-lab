@@ -1,0 +1,11 @@
+--- I-00171
++++ C-01264
+@@ -133,7 +133,7 @@
+ interface eth4
+  description link to g10 accB2
+  ip ospf area 0.0.0.0
+- ip ospf cost 40
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ router ospf

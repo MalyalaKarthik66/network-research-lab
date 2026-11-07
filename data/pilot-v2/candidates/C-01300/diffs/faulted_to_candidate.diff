@@ -1,0 +1,20 @@
+--- I-00176
++++ C-01300
+@@ -44,7 +44,7 @@
+ interface eth2
+  description link to g1 accA
+  ip ospf area 0.0.0.0
+- ip ospf cost 500
++ ip ospf cost 10
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -390,7 +390,7 @@
+ !
+ interface eth1
+  description link to g1 r1a
+- ip ospf area 0.0.0.0
++ ip ospf area 0.0.0.9
+  ip ospf cost 10
+  ip ospf network point-to-point
+ !

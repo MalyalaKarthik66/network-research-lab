@@ -1,0 +1,335 @@
+[
+  {
+    "t_before": 1789475928.9777396,
+    "t_after": 1789475934.1872287,
+    "states": {
+      "a1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "a2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-",
+        "Full/-"
+      ],
+      "mid": [
+        "Full/-",
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789475934.1872637,
+    "t_after": 1789475939.516296,
+    "states": {
+      "a1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "a2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-",
+        "Full/-"
+      ],
+      "mid": [
+        "Full/-",
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789475939.516334,
+    "t_after": 1789475942.717832,
+    "states": {
+      "a1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "a2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-",
+        "Full/-"
+      ],
+      "mid": [
+        "Full/-",
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789475942.717853,
+    "t_after": 1789475946.0346668,
+    "states": {
+      "a1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "a2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-",
+        "Full/-"
+      ],
+      "mid": [
+        "Full/-",
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789475946.0346892,
+    "t_after": 1789475949.9611697,
+    "states": {
+      "a1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "a2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-",
+        "Full/-"
+      ],
+      "mid": [
+        "Full/-",
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789475949.9611921,
+    "t_after": 1789475953.7919912,
+    "states": {
+      "a1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "a2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-",
+        "Full/-"
+      ],
+      "mid": [
+        "Full/-",
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789475953.7920163,
+    "t_after": 1789475956.8310397,
+    "states": {
+      "a1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "a2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-",
+        "Full/-"
+      ],
+      "mid": [
+        "Full/-",
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789475956.8310747,
+    "t_after": 1789475960.825218,
+    "states": {
+      "a1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "a2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-",
+        "Full/-"
+      ],
+      "mid": [
+        "Full/-",
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  },
+  {
+    "t_before": 1789475960.825245,
+    "t_after": 1789475965.0410206,
+    "states": {
+      "a1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "a2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b1": [
+        "Full/-",
+        "Full/-"
+      ],
+      "b2": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgea": [
+        "Full/-",
+        "Full/-"
+      ],
+      "edgeb": [
+        "Full/-",
+        "Full/-"
+      ],
+      "mid": [
+        "Full/-",
+        "Full/-",
+        "Full/-",
+        "Full/-"
+      ]
+    },
+    "transitional": []
+  }
+]

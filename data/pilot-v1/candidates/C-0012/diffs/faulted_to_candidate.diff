@@ -1,0 +1,11 @@
+--- I-03
++++ C-0012
+@@ -436,7 +436,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.0.3.1/30
++    address 10.0.7.1/30
+     alias link to wan2 wan-primary
+ 
+ 

@@ -1,0 +1,20 @@
+--- I-00145
++++ C-01070
+@@ -849,6 +849,7 @@
+ interface lo
+  description router-id and management
+  ip ospf area 0.0.0.0
++ ip ospf cost 2
+ !
+ interface eth1
+  description link to hosta siteA-lan
+@@ -857,6 +858,9 @@
+ !
+ interface eth2
+  description link to acca1 accA1
++ ip ospf area 0.0.0.0
++ ip ospf cost 10
++ ip ospf network point-to-point
+ !
+ interface eth3
+  description link to acca2 accA2

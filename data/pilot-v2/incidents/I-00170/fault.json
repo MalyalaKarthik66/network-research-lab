@@ -1,0 +1,15 @@
+{
+  "incident_id": "I-00170",
+  "topology": "t17_metro13",
+  "fault_id": "F0010",
+  "fault_family": "static_route_loop",
+  "fault_description": "[t17_metro13] edgeb installs 10.20.0.10/32 pointing back upstream at aggb",
+  "fault_params": {
+    "node": "edgeb",
+    "prefix": "10.20.0.10/32",
+    "nexthop": "10.27.12.1",
+    "loop_with": "aggb",
+    "topology": "t17_metro13"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

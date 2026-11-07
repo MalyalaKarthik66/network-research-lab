@@ -1,0 +1,20 @@
+--- I-00008
++++ C-00091
+@@ -204,7 +204,7 @@
+ interface eth3
+  description link to pe2 peA2
+  ip ospf area 0.0.0.0
+- ip ospf cost 30
++ ip ospf cost 600
+  ip ospf network point-to-point
+ !
+ interface eth4
+@@ -888,7 +888,7 @@
+ interface eth1
+  description link to edgea peA2
+  ip ospf area 0.0.0.0
+- ip ospf cost 30
++ ip ospf cost 600
+  ip ospf network point-to-point
+ !
+ interface eth2

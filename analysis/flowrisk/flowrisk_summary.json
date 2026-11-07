@@ -1,0 +1,28 @@
+{
+  "generated_utc": "2026-09-12T08:24:58Z",
+  "phase": "2b -- flow-level risk viability",
+  "target": "r_total = (broken + degraded) / golden-carried flows",
+  "candidates": 12,
+  "replicates": 2,
+  "flows_per_topology": 24,
+  "churn": false,
+  "labs": 30,
+  "candidates_scored": 12,
+  "candidates_nondegenerate": 10,
+  "distinct_r_values": [
+    0.0,
+    0.041667,
+    0.083333,
+    0.125,
+    0.291667,
+    0.375,
+    0.416667
+  ],
+  "n_distinct": 7,
+  "gate_min_nondegenerate": 8,
+  "gate_min_distinct": 5,
+  "gate_nondegenerate_pass": true,
+  "gate_distinct_pass": true,
+  "verdict": "PROCEED",
+  "wall_seconds": 3083.3
+}

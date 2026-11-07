@@ -1,0 +1,20 @@
+--- I-00149
++++ C-01097
+@@ -53,8 +53,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 30
+  ip ospf network point-to-point
+-!
+-ip route 10.20.0.0/24 10.25.1.1
+ !
+ router ospf
+  ospf router-id 10.255.0.2
+@@ -961,6 +959,8 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 40
+  ip ospf network point-to-point
++!
++ip route 10.21.0.10/32 10.25.12.1
+ !
+ router ospf
+  ospf router-id 10.255.0.11

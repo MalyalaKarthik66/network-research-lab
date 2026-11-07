@@ -1,0 +1,20 @@
+--- I-00152
++++ C-01121
+@@ -237,7 +237,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.200.0.2/30
++    address 10.26.1.1/30
+     alias link to pe1 peA1
+ 
+ auto eth3
+@@ -316,6 +316,8 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 60
+  ip ospf network point-to-point
++!
++ip route 10.21.0.0/24 blackhole
+ !
+ router ospf
+  ospf router-id 10.255.0.6

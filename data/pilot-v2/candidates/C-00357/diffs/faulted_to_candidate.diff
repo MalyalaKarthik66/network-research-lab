@@ -1,0 +1,19 @@
+--- I-00049
++++ C-00357
+@@ -54,8 +54,6 @@
+  ip ospf cost 40
+  ip ospf network point-to-point
+ !
+-ip route 10.20.0.0/24 10.15.1.1
+-!
+ router ospf
+  ospf router-id 10.255.0.2
+  passive-interface lo
+@@ -491,6 +489,7 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 40
+  ip ospf network point-to-point
++ shutdown
+ !
+ router ospf
+  ospf router-id 10.255.0.6

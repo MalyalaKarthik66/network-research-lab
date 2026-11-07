@@ -1,0 +1,19 @@
+--- I-00125
++++ C-00928
+@@ -351,12 +351,16 @@
+ !
+ interface eth2
+  description link to a1 A1
++ ip ospf area 0.0.0.0
++ ip ospf cost 10
++ ip ospf network point-to-point
+ !
+ interface eth3
+  description link to a2 A2
+  ip ospf area 0.0.0.0
+  ip ospf cost 20
+  ip ospf network point-to-point
++ shutdown
+ !
+ router ospf
+  ospf router-id 10.255.0.1

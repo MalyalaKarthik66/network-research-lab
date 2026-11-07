@@ -1,0 +1,19 @@
+{
+  "incident_id": "I-00173",
+  "topology": "t18_grid12",
+  "fault_id": "F0003",
+  "fault_family": "ospf_area_mismatch",
+  "fault_description": "[t18_grid12] edgea eth2 moved to area 0.0.0.1",
+  "fault_params": {
+    "node": "edgea",
+    "iface": "eth2",
+    "bad_area": "0.0.0.1",
+    "good_area": "0.0.0.0",
+    "peer": "g1",
+    "peer_iface": "eth1",
+    "link": "accA",
+    "good_cost": 10,
+    "topology": "t18_grid12"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

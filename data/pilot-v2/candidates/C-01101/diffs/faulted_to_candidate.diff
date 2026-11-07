@@ -1,0 +1,20 @@
+--- I-00150
++++ C-01101
+@@ -951,7 +951,7 @@
+ interface eth3
+  description link to accb1 accB1
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 14
+  ip ospf network point-to-point
+ !
+ interface eth4
+@@ -959,8 +959,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 40
+  ip ospf network point-to-point
+-!
+-ip route 10.20.0.10/32 10.25.12.1
+ !
+ router ospf
+  ospf router-id 10.255.0.11

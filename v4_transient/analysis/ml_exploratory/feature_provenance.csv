@@ -1,0 +1,20 @@
+feature,predeployment,runtime_leakage,source,keep
+feat_r_exact,yes,no,Batfish analytic predeployment result,yes
+feat_r_broken_exact,yes,no,Batfish analytic predeployment result,yes
+feat_r_rerouted_exact,yes,no,Batfish analytic predeployment result,yes
+feat_n_fib_entries_changed,yes,no,analytic config diff,yes
+feat_n_routers_changed,yes,no,analytic config diff,yes
+feat_pml_flow_frac,yes,no,analytic graph property,yes
+feat_n_devices_pushed,yes,no,push plan,yes
+feat_n_config_commands,yes,no,push plan,yes
+feat_n_routers,yes,no,topology,yes
+feat_n_endpoints,yes,no,topology,yes
+feat_changed_link_betweenness,yes,no,analytic graph property,yes
+feat_golden_mean_path_len,yes,no,golden path analytic graph,yes
+feat_n_flows_carried_pred,yes,no,analytic flow set,yes
+topology,yes,no,manifest/topology,conditional
+mechanism,yes,no,manifest/role,conditional
+T1_disruption_area,no,yes,runtime outcome metric,no
+n_fib_state_changes,no,yes,runtime FIB monitor,no
+fib_settle_s,no,yes,runtime FIB settling,no
+probe_lost_packet_s_window,no,yes,runtime traffic loss,no

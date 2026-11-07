@@ -1,0 +1,11 @@
+{
+  "running_config": {
+    "status": "OK",
+    "routers_checked": 16,
+    "problems": []
+  },
+  "addresses": {
+    "status": "OK",
+    "problems": []
+  }
+}

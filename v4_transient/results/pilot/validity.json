@@ -1,0 +1,4016 @@
+{
+  "runs": {
+    "V4C-01.rep4": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-06.rep4": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-03.rep5": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-15.rep4": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-11.rep5": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-07.rep2": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-14.rep3": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "LAB_INVALID",
+          "error": "l3:eth1 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l3:eth2 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race)",
+          "change_applied": false,
+          "cleanup_errors": null,
+          "injected_failure": null
+        },
+        {
+          "attempt": "attempt2",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt2",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4N-05.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4N-08.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-14.rep5": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-02.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-07.rep5": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-14.rep4": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-01.rep2": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-12.rep3": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-10.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-12.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-06.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-04.rep5": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-04.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-15.rep5": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-03.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-17.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-16.rep5": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-13.rep5": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4N-02.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-18.rep2": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-02.rep4": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-10.rep2": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4N-03.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "LAB_INVALID",
+          "error": "coreb:eth1 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); coreb:eth2 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); coreb:eth3 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race)",
+          "change_applied": false,
+          "cleanup_errors": null,
+          "injected_failure": null
+        },
+        {
+          "attempt": "attempt2",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt2",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-15.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-18.rep3": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-20.rep2": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-07.rep4": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-02.rep5": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-10.rep5": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-08.rep4": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-13.rep4": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-08.rep2": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4P-06.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-04.rep3": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-09.rep4": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-07.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-08.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "LAB_INVALID",
+          "error": "mid:eth1 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); mid:eth2 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); mid:eth3 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); mid:eth4 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race)",
+          "change_applied": false,
+          "cleanup_errors": null,
+          "injected_failure": null
+        },
+        {
+          "attempt": "attempt2",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt2",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-16.rep4": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4P-02.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-18.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-19.rep5": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-01.rep3": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-09.rep2": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-13.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-19.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-06.rep2": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-12.rep4": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "INCOMPLETE_AFTER_CHANGE",
+          "files": [
+            "attempt_started.json",
+            "change_applied.json",
+            "clab_deploy.json",
+            "convergence.json",
+            "fib_initial.json",
+            "probes_meta.json",
+            "push.json"
+          ]
+        }
+      ],
+      "used": null,
+      "measurable": false,
+      "status": "INCOMPLETE_AFTER_CHANGE"
+    },
+    "V4C-18.rep5": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-05.rep3": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-04.rep4": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4N-04.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-16.rep3": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-11.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-05.rep2": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-14.rep2": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-02.rep2": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-16.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4N-09.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-11.rep4": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-13.rep3": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-09.rep5": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-17.rep2": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-17.rep3": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-04.rep2": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-05.rep4": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-10.rep3": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-19.rep2": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-06.rep3": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-08.rep3": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-20.rep4": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4N-01.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-03.rep2": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "NO_CONVERGENCE",
+          "error": "not converged within 180s: RIB changed within the last 3 polls",
+          "change_applied": false,
+          "cleanup_errors": null,
+          "injected_failure": null
+        },
+        {
+          "attempt": "attempt2",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt2",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-20.rep5": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-01.rep5": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4N-06.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-11.rep3": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-06.rep5": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-19.rep3": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-12.rep2": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-03.rep3": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-03.rep4": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4P-05.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-08.rep5": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-05.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-09.rep3": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-02.rep3": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-18.rep4": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4N-07.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-13.rep2": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-05.rep5": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-16.rep2": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-12.rep5": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-07.rep3": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-15.rep3": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-19.rep4": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-20.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-20.rep3": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4N-10.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-01.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-17.rep5": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-14.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-09.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4P-03.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-11.rep2": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-15.rep2": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-17.rep4": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "V4C-10.rep4": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    }
+  },
+  "summary": {
+    "planned": 114,
+    "with_record": 114,
+    "measurable_and_valid": 113
+  }
+}

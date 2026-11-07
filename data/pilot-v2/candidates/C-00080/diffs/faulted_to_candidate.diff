@@ -1,0 +1,11 @@
+--- I-00011
++++ C-00080
+@@ -224,6 +224,8 @@
+  ip ospf network point-to-point
+  shutdown
+ !
++ip route 10.20.0.0/25 10.12.6.2
++!
+ router ospf
+  ospf router-id 10.255.0.1
+  passive-interface lo

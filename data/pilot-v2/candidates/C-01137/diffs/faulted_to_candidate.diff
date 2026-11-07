@@ -1,0 +1,19 @@
+--- I-00154
++++ C-01137
+@@ -217,7 +217,6 @@
+  ospf router-id 10.255.0.1
+  passive-interface lo
+  passive-interface eth1
+- passive-interface eth2
+ !
+ line vty
+ !
+@@ -894,7 +893,7 @@
+ !
+ interface eth2
+  description link to p3 pA2
+- ip ospf area 0.0.0.0
++ ip ospf area 0.0.0.9
+  ip ospf cost 30
+  ip ospf network point-to-point
+ !

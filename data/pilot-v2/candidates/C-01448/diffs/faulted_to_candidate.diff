@@ -1,0 +1,11 @@
+--- I-00196
++++ C-01448
+@@ -515,7 +515,7 @@
+ interface eth3
+  description link to agga aggA2
+  ip ospf area 0.0.0.0
+- ip ospf cost 50
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ router ospf

@@ -1,0 +1,17 @@
+{
+  "incident_id": "I-00021",
+  "topology": "t03_dual8",
+  "fault_id": "F0001",
+  "fault_family": "iface_down",
+  "fault_description": "[t03_dual8] edgea eth2 shut (siteA)",
+  "fault_params": {
+    "node": "edgea",
+    "iface": "eth2",
+    "peer": "corea",
+    "peer_iface": "eth1",
+    "link": "siteA",
+    "good_cost": 10,
+    "topology": "t03_dual8"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

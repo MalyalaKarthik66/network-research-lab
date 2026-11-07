@@ -1,0 +1,10 @@
+--- golden-t09_twin6
++++ I-00084
+@@ -233,6 +233,7 @@
+  ospf router-id 10.255.0.1
+  passive-interface lo
+  passive-interface eth1
++ passive-interface eth2
+ !
+ line vty
+ !

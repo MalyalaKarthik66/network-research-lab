@@ -1,0 +1,20 @@
+--- I-00007
++++ C-00072
+@@ -358,7 +358,7 @@
+ interface eth1
+  description link to dista1 cA1
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 200
+  ip ospf network point-to-point
+ !
+ interface eth2
+@@ -540,7 +540,7 @@
+ interface eth2
+  description link to corea cA1
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 200
+  ip ospf network point-to-point
+ !
+ router ospf

@@ -1,0 +1,11 @@
+--- golden-t09_twin6
++++ I-00090
+@@ -322,6 +322,8 @@
+  ip ospf cost 200
+  ip ospf network point-to-point
+ !
++ip route 10.20.0.10/32 10.19.6.1
++!
+ router ospf
+  ospf router-id 10.255.0.6
+  passive-interface lo

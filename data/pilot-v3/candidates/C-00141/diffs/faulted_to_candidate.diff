@@ -1,0 +1,20 @@
+--- I-00012
++++ C-00141
+@@ -45,7 +45,7 @@
+ interface eth2
+  description link to l2 aggA2
+  ip ospf area 0.0.0.0
+- ip ospf cost 50
++ ip ospf cost 1000
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -515,7 +515,7 @@
+ interface eth3
+  description link to agga aggA2
+  ip ospf area 0.0.0.0
+- ip ospf cost 50
++ ip ospf cost 1000
+  ip ospf network point-to-point
+ !
+ router ospf

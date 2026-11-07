@@ -1,0 +1,11 @@
+--- I-00097
++++ C-00718
+@@ -564,7 +564,7 @@
+ interface eth2
+  description link to wan2 wan-primary
+  ip ospf area 0.0.0.0
+- ip ospf cost 10
++ ip ospf cost 5
+  ip ospf network point-to-point
+ !
+ router ospf

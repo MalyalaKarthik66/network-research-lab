@@ -1,0 +1,23 @@
+{
+  "file": "docs/PILOT-PREREGISTRATION.md",
+  "validated_smoke_first_run_start_utc": "2026-09-14T13:31:57Z",
+  "doc_written_before_validated_smoke": true,
+  "crashed_smoke_run1_first_file_utc": "2026-09-14T13:19:51Z",
+  "note": "Draft status: contains UNFROZEN decisions D1-D9. The crashed smoke run 1 predates this document; only its deploy status field was inspected before the document was written. Smoke numbers are engineering-only.",
+  "original_sha256_before_validated_smoke": "2090aa2f758083fe66891245708e4a99d4e8d7015b7053edcbf21a6a1cac1111",
+  "original_mtime_utc": "2026-09-14T13:24:58Z",
+  "current_sha256": "a07c770a40f507b964c7b9883584570505bc0f426284025a097ff031e58a3179",
+  "current_mtime_utc": "2026-09-14T13:41:44Z",
+  "amendments": [
+    {
+      "section": "\u00a720 population and design (+ \u00a718 log entry)",
+      "when": "after validated smoke runs",
+      "source_evidence": {
+        "manifests/pilot_manifest.json": "2026-09-14T13:27:04Z",
+        "manifests/run_plan_pilot.json": "2026-09-14T13:27:04Z",
+        "artifact_lock_digest": "d84a96295565e645942ceef95c6d99a075ddb76aa5042604a104f223c0905f17"
+      },
+      "changed_targets_thresholds_rules": false
+    }
+  ]
+}

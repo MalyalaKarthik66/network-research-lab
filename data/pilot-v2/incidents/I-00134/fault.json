@@ -1,0 +1,17 @@
+{
+  "incident_id": "I-00134",
+  "topology": "t14_ladder8",
+  "fault_id": "F0004",
+  "fault_family": "ospf_passive_transit",
+  "fault_description": "[t14_ladder8] edgea eth2 marked passive (A1)",
+  "fault_params": {
+    "node": "edgea",
+    "iface": "eth2",
+    "peer": "l1",
+    "peer_iface": "eth1",
+    "link": "A1",
+    "good_cost": 10,
+    "topology": "t14_ladder8"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

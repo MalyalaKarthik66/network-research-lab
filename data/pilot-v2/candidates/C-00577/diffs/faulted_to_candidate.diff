@@ -1,0 +1,11 @@
+--- I-00078
++++ C-00577
+@@ -54,7 +54,7 @@
+  ip ospf cost 100
+  ip ospf network point-to-point
+ !
+-ip route 10.20.0.0/24 blackhole
++ip route 10.20.0.0/24 10.18.8.1
+ !
+ router ospf
+  ospf router-id 10.255.0.2

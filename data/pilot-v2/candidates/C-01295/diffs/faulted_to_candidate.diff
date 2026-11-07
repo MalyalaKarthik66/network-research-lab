@@ -1,0 +1,11 @@
+--- I-00175
++++ C-01295
+@@ -43,6 +43,8 @@
+ !
+ interface eth2
+  description link to g1 accA
++!
++ip route 10.20.0.0/25 10.28.3.1
+ !
+ router ospf
+  ospf router-id 10.255.0.1

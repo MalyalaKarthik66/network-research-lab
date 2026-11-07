@@ -1,0 +1,13 @@
+--- I-00143
++++ C-01056
+@@ -857,8 +857,8 @@
+ !
+ interface eth2
+  description link to acca1 accA1
+- ip ospf area 0.0.0.1
+- ip ospf cost 10
++ ip ospf area 0.0.0.0
++ ip ospf cost 14
+  ip ospf network point-to-point
+ !
+ interface eth3

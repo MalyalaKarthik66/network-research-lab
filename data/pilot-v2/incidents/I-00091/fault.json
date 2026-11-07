@@ -1,0 +1,17 @@
+{
+  "incident_id": "I-00091",
+  "topology": "t10_deep9",
+  "fault_id": "F0001",
+  "fault_family": "iface_down",
+  "fault_description": "[t10_deep9] edgea eth2 shut (siteA)",
+  "fault_params": {
+    "node": "edgea",
+    "iface": "eth2",
+    "peer": "agga",
+    "peer_iface": "eth1",
+    "link": "siteA",
+    "good_cost": 10,
+    "topology": "t10_deep9"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

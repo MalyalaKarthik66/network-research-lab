@@ -1,0 +1,20 @@
+--- I-00150
++++ C-01106
+@@ -949,7 +949,7 @@
+  ip ospf cost 10
+ !
+ interface eth3
+- description link to accb1 accB1
++ description link to accb1 accB1 (reviewed NET-1042)
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+@@ -993,7 +993,7 @@
+ auto eth3
+ iface eth3
+     address 10.25.12.2/30
+-    alias link to accb1 accB1
++    alias link to accb1 accB1 (reviewed NET-1042)
+ 
+ auto eth4
+ iface eth4

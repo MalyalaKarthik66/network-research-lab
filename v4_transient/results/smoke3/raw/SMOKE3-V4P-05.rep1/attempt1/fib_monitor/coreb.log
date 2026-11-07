@@ -1,0 +1,7 @@
+[2026-09-15T12:17:48.116274] 10.10.0.0/24 nhid 37 via 10.15.6.1 dev eth3 proto ospf metric 20 
+[2026-09-15T12:17:48.116340] 10.15.1.0/30 nhid 37 via 10.15.6.1 dev eth3 proto ospf metric 20 
+[2026-09-15T12:17:48.116351] 10.15.2.0/30 nhid 37 via 10.15.6.1 dev eth3 proto ospf metric 20 
+[2026-09-15T12:17:48.116360] 10.15.5.0/30 nhid 37 via 10.15.6.1 dev eth3 proto ospf metric 20 
+[2026-09-15T12:17:48.116368] 10.255.0.1 nhid 37 via 10.15.6.1 dev eth3 proto ospf metric 20 
+[2026-09-15T12:17:48.116376] 10.255.0.2 nhid 37 via 10.15.6.1 dev eth3 proto ospf metric 20 
+[2026-09-15T12:17:48.166272] Deleted 10.15.2.0/30 nhid 37 via 10.15.6.1 dev eth3 proto ospf metric 20 

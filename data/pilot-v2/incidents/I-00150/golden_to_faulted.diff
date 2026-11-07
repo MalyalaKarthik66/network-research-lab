@@ -1,0 +1,11 @@
+--- golden-t15_campus12
++++ I-00150
+@@ -959,6 +959,8 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 40
+  ip ospf network point-to-point
++!
++ip route 10.20.0.10/32 10.25.12.1
+ !
+ router ospf
+  ospf router-id 10.255.0.11

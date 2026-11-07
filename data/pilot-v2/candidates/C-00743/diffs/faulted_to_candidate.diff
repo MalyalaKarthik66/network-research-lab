@@ -1,0 +1,18 @@
+--- I-00101
++++ C-00743
+@@ -211,6 +211,7 @@
+ interface lo
+  description router-id and management
+  ip ospf area 0.0.0.0
++ ip ospf cost 1
+ !
+ interface eth1
+  description link to hosta siteA-lan
+@@ -222,7 +223,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+- shutdown
+ !
+ router ospf
+  ospf router-id 10.255.0.1

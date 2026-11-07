@@ -1,0 +1,65 @@
+{
+  "schema": "v4-launch-audit-register-1",
+  "audit_utc": "2026-09-15",
+  "audit_record": "docs/V4-LAUNCH-AUDIT.md",
+  "rule": "run_pilot.py (via v4lib/freeze.verify) and tools/write_pilot_freeze.py refuse while 'open' is non-empty. An issue may move to 'resolved' only through a logged pre-registration amendment and re-validation.",
+  "open": [],
+  "resolved": [
+    {
+      "id": "B1-positive-control-link-down-invisible-to-FIB-event-instrument",
+      "summary": "The four positive controls shut an interface. On admin-down the Linux kernel flushes the IPv4 routes (including the connected route) through that interface WITHOUT any `ip monitor route` notification; on the peer's carrier loss routes stay installed, flagged linkdown, also without notification. The frozen instrument (FIB snapshot + monitored route events, pre-registration §1 step 2, §3) therefore cannot reconstruct the post-shutdown FIB.",
+      "evidence": [
+        "audit/2026-09-15-instrument-unit-checks/kernel_flush_out.txt",
+        "audit/2026-09-15-instrument-unit-checks/frr_unit_out.txt + frr_unit_out.replay.txt",
+        "audit/2026-09-15-instrument-unit-checks/frr_bh_out.txt + frr_bh_out.replay.txt"
+      ],
+      "consequence": "Every positive-control run would fail validity check 4 and D9 would FAIL for an instrument reason.",
+      "opened_utc": "2026-09-15 (launch audit, Git commit 399b39b)",
+      "resolution": "Amendment A3 (pre-registration §18; Git commit 4056099): the instrument monitors link and nexthop-object events and the replay applies kernel link semantics (admin down flushes everything through the device; carrier loss flushes nexthop-object routes; nexthop-less routes on a carrier-down device stay selected but discard). The audit's first model of carrier loss was wrong; the real-FRR check below exposed it and it was corrected before A3 was committed. Replay is cross-checked against in-transient poll dumps and the final FIB (validity checks 4 and 10); silent nexthop-object changes invalidate a run (check 11). D1-D9 and the positive-control design are unchanged.",
+      "resolution_evidence": [
+        "audit/2026-09-15-instrument-unit-checks/a3_frr_check.sh + a3_frr_out.txt + a3_frr_out.replay.txt (FRR 8.4.1: ECMP group, blackhole, shutdown, carrier loss; production replay == 3 in-transient dumps and final FIB)",
+        "results/smoke2/SMOKE2-VALIDATION.json (engineering smoke 2 on real labs, run on commit 4056099: shutdown positive control on all 4 topologies, no-op, blackhole x2, cost-hi, drain-hi; 9/9 runs valid under all 13 validity checks; admin-down and peer carrier-loss events captured on every positive control; replay consistent with in-transient polls; no-op null; 82/82 checks)",
+        "tests/test_core.py (kernel-output replay, link-state, nexthop-object and window unit tests)",
+        "tests/test_smoke_regression.py (amended extraction reproduces every preserved first-smoke target exactly)"
+      ],
+      "resolved_utc": "2026-09-15",
+      "note_added_by_launch_audit_2": "The 'instrument reason' was incomplete: two of the four original controls (V4P-01, V4P-04) were cut edges, whose T1 is 0 by construction regardless of the instrument. See B2."
+    },
+    {
+      "id": "B2-D9-positive-controls-V4P-01-V4P-04-are-cut-edges",
+      "summary": "The frozen positive-control rule (shutdown of the highest-betweenness link) selects a cut edge for carried flows on t05_ring6 (coreb-edgeb) and t15_campus12 (corea-coreb). Every flow such a shutdown breaks stays broken in the final state and no other route changes, so T1 (which subtracts final-state breakage) is 0 by definition: r_rerouted_exact = 0 in manifests/pilot_manifest.json since commit 399b39b. D9 (4 of 4 above the floor) therefore fails by construction on every pilot run. Not an instrument defect: smoke 2 captured the full disruption (peak broken_total = r_final_broken).",
+      "evidence": [
+        "docs/V4-LAUNCH-AUDIT-2.md §1",
+        "results/smoke2/raw/SMOKE2-V4P-01.rep1/attempt1/fib_monitor/*.log and SMOKE2-V4P-04.rep1 (link events captured; deleted routes never re-added)",
+        "manifests/pilot_manifest.json features r_broken_exact / r_rerouted_exact of V4P-01 and V4P-04"
+      ],
+      "consequence": "D9 FAILS by construction; the pilot outcome is predetermined NO-GO.",
+      "opened_utc": "2026-09-15 (launch audit 2, Git commit b165c23, after smoke 2, before any pilot run)",
+      "resolution": "Amendment A4 (pre-registration §18; rule, hard stop and acceptance criteria committed in b165c23 before implementation; implemented in Git commit cfa0d83). The positive control is the shutdown of the highest-betweenness link whose removal keeps every golden-carried flow deliverable (configuration-only, same tie-break): V4P-05 t05 corea-wan1 and V4P-06 t15 coreb-distb1 replace the retired cut-edge controls V4P-01 and V4P-04 (kept, never run in the pilot); V4P-02/V4P-03 unchanged. Batfish: replacements SPEC-FAIL (P08) with r_match; the 34 pre-A4 verdicts reproduce. Single revalidation (engineering smoke 3, run on cfa0d83): V4P-05 T1 4.931e-3, V4P-06 5.304e-3, V4P-02 4.982e-3, V4P-03 5.237e-3, all valid and strictly above the engineering floor 6.944e-4 (both smoke-3 no-op T1 = 0); retired V4P-01/V4P-04 reproduce T1 = 0 with peak broken_total = r_broken_exact. D9, T1, D1 and the population are unchanged; in the pilot D9 is evaluated as frozen.",
+      "resolution_evidence": [
+        "results/smoke3/SMOKE3-VALIDATION.json (153/153 checks; summary.hard_stop)",
+        "tests/test_controls_a4.py (rule inputs, determinism, cut-edge proof, pre-A4 design digests, Batfish, preserved smoke-2 evidence)",
+        "manifests/batfish_check.json + logs/batfish_check_A4.log",
+        "docs/V4-LAUNCH-AUDIT-2.md §5"
+      ],
+      "resolved_utc": "2026-09-15"
+    },
+    {
+      "id": "B3-G5-runner-exec-overhead-outside-observation-window",
+      "summary": "Smoke-2 population wall times (151.02, 227.51, 236.50, 420.56 s; median 232.0 s) exceed the frozen D6 threshold of 180 s. The excess is serial docker exec overhead outside the observation window (binding check, monitor/probe start, snapshots, instrument reads, per-router state capture), ~60-260 s per run; the frozen protocol time is ~90-160 s. G5 would very likely KILL with the current runner.",
+      "evidence": [
+        "docs/V4-LAUNCH-AUDIT-2.md §2",
+        "results/smoke2/raw/*/attempt*/run.json (t_wall_start, t_baseline_start, t0, t_end, wall_s) and fib_final.json snapshot timestamps"
+      ],
+      "consequence": "G5 KILL very likely under the current implementation; the 180 s threshold is not to be changed.",
+      "opened_utc": "2026-09-15 (launch audit 2, Git commit b165c23, after smoke 2, before any pilot run)",
+      "resolution": "Amendment A5 (pre-registration §18; Git commit cfa0d83): docker exec phases outside [t_baseline_start, t_end] run in parallel across routers/containers, phase by phase, per-container command order unchanged; the observation window, in-window operations, serial instrument stop, convergence, protocol parameters, extraction and nrl/ are pinned to A3. Engineering smoke 3 (run on cfa0d83): population median wall_s 135.51 s over 8 final attempts, two per topology (t05 121.70/117.44, t13 131.03/138.06, t14 132.96/143.21, t15 186.99/159.92), against the unchanged D6 threshold of 180 s. Same scenarios as smoke 2: 151.02->121.70, 236.50->131.03, 227.51->132.96, 420.56->186.99 s. G5 itself is decided only by the pilot.",
+      "resolution_evidence": [
+        "results/smoke3/SMOKE3-VALIDATION.json (runtime check; smoke2_vs_smoke3_same_scenarios phases)",
+        "tests/test_runner_parallel.py (code pins against A3 commit 4056099; behavioural equivalence with the A3 functions)",
+        "docs/V4-LAUNCH-AUDIT-2.md §5"
+      ],
+      "resolved_utc": "2026-09-15"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "rc": 0,
+  "stdout": "1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000\n    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00\n    inet 127.0.0.1/8 scope host lo\n       valid_lft forever preferred_lft forever\n    inet 10.255.0.3/32 scope global lo\n       valid_lft forever preferred_lft forever\n    inet6 ::1/128 scope host \n       valid_lft forever preferred_lft forever\n2: eth0@if960: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default \n    link/ether b2:12:2d:ae:4a:a3 brd ff:ff:ff:ff:ff:ff link-netnsid 0\n    inet 172.20.20.5/24 brd 172.20.20.255 scope global eth0\n       valid_lft forever preferred_lft forever\n    inet6 3fff:172:20:20::5/64 scope global nodad \n       valid_lft forever preferred_lft forever\n    inet6 fe80::b012:2dff:feae:4aa3/64 scope link \n       valid_lft forever preferred_lft forever\n972: eth3@if973: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9500 qdisc noqueue state UP group default \n    link/ether aa:c1:ab:61:c9:89 brd ff:ff:ff:ff:ff:ff link-netnsid 1\n    altname clab-o-dddff6512019ac34\n    inet 10.24.10.1/30 scope global eth3\n       valid_lft forever preferred_lft forever\n    inet6 fe80::a8c1:abff:fe61:c989/64 scope link \n       valid_lft forever preferred_lft forever\n980: eth1@if979: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9500 qdisc noqueue state UP group default \n    link/ether aa:c1:ab:90:b7:34 brd ff:ff:ff:ff:ff:ff link-netnsid 2\n    altname clab-o-967d4161ba02fa68\n    inet 10.24.2.2/30 scope global eth1\n       valid_lft forever preferred_lft forever\n    inet6 fe80::a8c1:abff:fe90:b734/64 scope link \n       valid_lft forever preferred_lft forever\n987: eth2@if986: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9500 qdisc noqueue state UP group default \n    link/ether aa:c1:ab:bc:47:01 brd ff:ff:ff:ff:ff:ff link-netnsid 3\n    altname clab-o-3dc2027f1fccd619\n    inet 10.24.3.1/30 scope global eth2\n       valid_lft forever preferred_lft forever\n    inet6 fe80::a8c1:abff:febc:4701/64 scope link \n       valid_lft forever preferred_lft forever\n",
+  "stderr": "",
+  "argv": [
+    "docker",
+    "exec",
+    "clab-nrlv4-t14-l2",
+    "sh",
+    "-c",
+    "ip addr show"
+  ],
+  "seconds": 0.28,
+  "error": null
+}

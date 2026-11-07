@@ -1,0 +1,12 @@
+[2026-09-15T10:07:10.092877] 10.10.0.0/24 nhid 41 via 10.23.8.1 dev eth4 proto ospf metric 20 
+[2026-09-15T10:07:10.093014] 10.23.1.0/30 nhid 41 via 10.23.8.1 dev eth4 proto ospf metric 20 
+[2026-09-15T10:07:10.093032] 10.23.2.0/30 nhid 41 via 10.23.8.1 dev eth4 proto ospf metric 20 
+[2026-09-15T10:07:10.093041] 10.23.3.0/30 nhid 41 via 10.23.8.1 dev eth4 proto ospf metric 20 
+[2026-09-15T10:07:10.093050] 10.23.4.0/30 nhid 41 via 10.23.8.1 dev eth4 proto ospf metric 20 
+[2026-09-15T10:07:10.093058] 10.23.5.0/30 nhid 41 via 10.23.8.1 dev eth4 proto ospf metric 20 
+[2026-09-15T10:07:10.093066] 10.23.6.0/30 nhid 41 via 10.23.8.1 dev eth4 proto ospf metric 20 
+[2026-09-15T10:07:10.093074] 10.255.0.1 nhid 41 via 10.23.8.1 dev eth4 proto ospf metric 20 
+[2026-09-15T10:07:10.093082] 10.255.0.2 nhid 41 via 10.23.8.1 dev eth4 proto ospf metric 20 
+[2026-09-15T10:07:10.093090] 10.255.0.3 nhid 41 via 10.23.8.1 dev eth4 proto ospf metric 20 
+[2026-09-15T10:07:10.093097] 10.255.0.4 nhid 41 via 10.23.8.1 dev eth4 proto ospf metric 20 
+[2026-09-15T10:07:10.142950] Deleted 10.23.5.0/30 nhid 41 via 10.23.8.1 dev eth4 proto ospf metric 20 

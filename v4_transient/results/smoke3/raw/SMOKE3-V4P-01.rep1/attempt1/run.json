@@ -1,0 +1,154 @@
+{
+  "experiment_id": "v4-transient-pilot",
+  "protocol_version": "transient-1.1.0",
+  "run_id": "SMOKE3-V4P-01.rep1",
+  "change_id": "V4P-01",
+  "replicate": 1,
+  "order": 4,
+  "change_kind": "control_positive_retired",
+  "topology": "t05_ring6",
+  "lab": "nrlv4-t05",
+  "attempt": 1,
+  "status": "OK",
+  "error": null,
+  "started_utc": "2026-09-15T12:25:34Z",
+  "t_wall_start": 1789475134.7803078,
+  "code_sha256": {
+    "v4lib/__init__.py": "fb5998d26b6037dbf0ec31b88ebedb48686a4be77c2bd6ebbc62a9a9c07f616f",
+    "v4lib/analytic.py": "94dcd67a7238842dcac3810b9f2713cdf4cb80922be1df1590ccc3b406eea2fb",
+    "v4lib/decisions.py": "f5304d0e7a4da4aa48d10413b2e925cdbb3c3eec8eaf3a23fa2b788c15ad8d19",
+    "v4lib/fib.py": "6c3988b1b8a79b7d5797ae571e0361d7bbf60590121688557eca63408b789ee6",
+    "v4lib/freeze.py": "ea7f48c98da519530b6d18b9667bcbe8c0e5e4202d30db63235168a043b109b8",
+    "v4lib/gates.py": "588895381e5441d205e2bdc7571c7fae40e283651b1a3c94d125dcaeccca0b16",
+    "v4lib/labops.py": "7c7d01016bc8953cea5a6bdb5a55d758ebef31a0f3d314fd3fcae532abb7ee8b",
+    "v4lib/targets.py": "01481550614d29a73fb4ac9604d59bcebbe95f27ef09d06a07f810798eac85e6",
+    "pilot/run_pilot.py": "f58b4049fd19b7c743896886b49b18ebe4245755d132f302cb3ff86549db9793"
+  },
+  "prereg_sha256": "b434c524323df4330ae3194c7c4cda6874f6bb629c8642fb36853f783234eb0a",
+  "runner_exec_mode": "A5-parallel-docker-exec-outside-observation-window",
+  "env_before": {
+    "utc": "2026-09-15T12:25:35Z",
+    "epoch": 1789475135.3603554,
+    "loadavg": "1.48 1.36 0.78 1/631 47951",
+    "meminfo": {
+      "MemTotal": "7979188 kB",
+      "MemFree": "2186452 kB",
+      "MemAvailable": "4384064 kB"
+    },
+    "uptime_s": "10640.49 167856.44",
+    "nproc": 16,
+    "kernel": "6.6.87.2-microsoft-standard-WSL2",
+    "python": "3.10.12",
+    "running_containers": 0
+  },
+  "params": {
+    "PRE_CHANGE_BASELINE_S": 10.0,
+    "MIN_OBS_S": 20.0,
+    "QUIET_S": 10.0,
+    "MAX_OBS_S": 90.0,
+    "POLL_S": 2.0,
+    "PROBE_INTERVAL_S": 0.05,
+    "PROBE_COUNT": 2600
+  },
+  "staging": {
+    "status": "OK",
+    "files_verified": 23,
+    "problems": []
+  },
+  "deploy": {
+    "status": "OK",
+    "rc": 0,
+    "seconds": 3.93,
+    "error": null
+  },
+  "containers": {
+    "status": "OK",
+    "missing": [],
+    "expected": 9,
+    "found": 9,
+    "error": null
+  },
+  "convergence": {
+    "status": "OK",
+    "converged": true,
+    "seconds": 58.9,
+    "polls": 5,
+    "min_settle_s": 45,
+    "error": null
+  },
+  "convergence_wall_s": 59.01,
+  "pre_ospf_binding": {
+    "status": "OK",
+    "problems": []
+  },
+  "container_date": "Tue Sep 15 12:26:41 UTC 2026",
+  "fib_monitors": {
+    "corea": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "coreb": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "edgea": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "edgeb": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "wan1": {
+      "status": "OK",
+      "stderr": ""
+    },
+    "wan2": {
+      "status": "OK",
+      "stderr": ""
+    }
+  },
+  "t_baseline_start": 1789475204.158877,
+  "change_applied": true,
+  "t0": 1789475214.2119634,
+  "t_push_end": 1789475214.6345072,
+  "push_status": [
+    "OK"
+  ],
+  "t_end": 1789475234.7476919,
+  "settled": true,
+  "observation_s": 20.535728454589844,
+  "post_checks": {
+    "running_config": {
+      "status": "OK",
+      "routers_checked": 6,
+      "problems": []
+    },
+    "addresses": {
+      "status": "OK",
+      "problems": []
+    },
+    "ospf_binding": {
+      "status": "OK",
+      "problems": []
+    }
+  },
+  "teardown_ok": true,
+  "env_after": {
+    "utc": "2026-09-15T12:27:32Z",
+    "epoch": 1789475252.5606177,
+    "loadavg": "1.76 1.45 0.88 1/632 56961",
+    "meminfo": {
+      "MemTotal": "7979188 kB",
+      "MemFree": "2171936 kB",
+      "MemAvailable": "4371604 kB"
+    },
+    "uptime_s": "10757.33 169658.19",
+    "nproc": 16,
+    "kernel": "6.6.87.2-microsoft-standard-WSL2",
+    "python": "3.10.12",
+    "running_containers": 0
+  },
+  "finished_utc": "2026-09-15T12:27:32Z",
+  "wall_s": 117.78
+}

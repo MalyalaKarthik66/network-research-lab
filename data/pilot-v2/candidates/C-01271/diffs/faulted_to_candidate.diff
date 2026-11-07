@@ -1,0 +1,20 @@
+--- I-00172
++++ C-01271
+@@ -46,6 +46,8 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
++!
++ip route 10.21.0.0/24 blackhole
+ !
+ router ospf
+  ospf router-id 10.255.0.1
+@@ -71,7 +73,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.200.0.2/30
++    address 10.28.1.1/30
+     alias link to g1 accA
+ 
+ 

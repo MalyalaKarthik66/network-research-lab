@@ -1,0 +1,9 @@
+[2026-09-15T12:20:27.810760] 10.20.0.0/24 nhid 27 via 10.25.13.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810828] 10.21.0.0/24 nhid 27 via 10.25.13.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810839] 10.25.9.0/30 nhid 27 via 10.25.13.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810848] 10.25.11.0/30 nhid 27 via 10.25.13.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810856] 10.25.12.0/30 nhid 27 via 10.25.13.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810865] 10.255.0.8 nhid 27 via 10.25.13.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810873] 10.255.0.10 nhid 27 via 10.25.13.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.810881] 10.255.0.11 nhid 27 via 10.25.13.2 dev eth2 proto ospf metric 20 
+[2026-09-15T12:20:27.861662] Deleted 10.25.9.0/30 nhid 27 via 10.25.13.2 dev eth2 proto ospf metric 20 

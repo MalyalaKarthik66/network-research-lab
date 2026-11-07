@@ -1,0 +1,551 @@
+{
+  "status": "OK",
+  "converged": true,
+  "seconds": 50.3,
+  "polls": 9,
+  "min_settle_s": 45,
+  "history": [
+    {
+      "t": 0.9,
+      "route_counts": {
+        "corea": 7,
+        "coreb": 7,
+        "edgea": 5,
+        "edgeb": 6,
+        "wan1": 5,
+        "wan2": 5,
+        "wan3": 5,
+        "wan4": 5
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 1,
+      "neighbor_states": {
+        "corea": [
+          "Init/-",
+          "Init/-",
+          "Init/-",
+          "Init/-"
+        ],
+        "coreb": [
+          "Full/-"
+        ],
+        "edgea": [],
+        "edgeb": [
+          "Init/-"
+        ],
+        "wan1": [],
+        "wan2": [
+          "Init/-",
+          "Init/-"
+        ],
+        "wan3": [],
+        "wan4": [
+          "Init/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [
+        "corea:Init/-",
+        "corea:Init/-",
+        "corea:Init/-",
+        "corea:Init/-",
+        "edgeb:Init/-",
+        "wan2:Init/-",
+        "wan2:Init/-",
+        "wan4:Init/-"
+      ],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": false,
+        "loss_pct": 100.0,
+        "rtt_avg_ms": null,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 7.7,
+      "route_counts": {
+        "corea": 7,
+        "coreb": 7,
+        "edgea": 5,
+        "edgeb": 6,
+        "wan1": 5,
+        "wan2": 5,
+        "wan3": 5,
+        "wan4": 5
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 2,
+      "neighbor_states": {
+        "corea": [
+          "Init/-",
+          "Init/-",
+          "Init/-",
+          "Init/-"
+        ],
+        "coreb": [
+          "Full/-"
+        ],
+        "edgea": [],
+        "edgeb": [
+          "Init/-"
+        ],
+        "wan1": [],
+        "wan2": [
+          "Init/-",
+          "Init/-"
+        ],
+        "wan3": [],
+        "wan4": [
+          "Init/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [
+        "corea:Init/-",
+        "corea:Init/-",
+        "corea:Init/-",
+        "corea:Init/-",
+        "edgeb:Init/-",
+        "wan2:Init/-",
+        "wan2:Init/-",
+        "wan4:Init/-"
+      ],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": false,
+        "loss_pct": 100.0,
+        "rtt_avg_ms": null,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 14.5,
+      "route_counts": {
+        "corea": 7,
+        "coreb": 9,
+        "edgea": 5,
+        "edgeb": 6,
+        "wan1": 5,
+        "wan2": 5,
+        "wan3": 5,
+        "wan4": 9
+      },
+      "rib_changed": true,
+      "rib_stable_polls": 1,
+      "neighbor_states": {
+        "corea": [
+          "Full/-",
+          "Full/-",
+          "Full/-",
+          "Loading/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-",
+          "Full/-",
+          "Loading/-"
+        ],
+        "edgea": [
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-"
+        ],
+        "wan1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan3": [
+          "Full/-",
+          "Loading/-"
+        ],
+        "wan4": [
+          "Loading/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [
+        "corea:Loading/-",
+        "coreb:Loading/-",
+        "wan3:Loading/-",
+        "wan4:Loading/-"
+      ],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": false,
+        "loss_pct": 100.0,
+        "rtt_avg_ms": null,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 21.3,
+      "route_counts": {
+        "corea": 22,
+        "coreb": 22,
+        "edgea": 22,
+        "edgeb": 22,
+        "wan1": 22,
+        "wan2": 22,
+        "wan3": 22,
+        "wan4": 22
+      },
+      "rib_changed": true,
+      "rib_stable_polls": 1,
+      "neighbor_states": {
+        "corea": [
+          "Full/-",
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-"
+        ],
+        "wan1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan3": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan4": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.097,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 27.1,
+      "route_counts": {
+        "corea": 22,
+        "coreb": 22,
+        "edgea": 22,
+        "edgeb": 22,
+        "wan1": 22,
+        "wan2": 22,
+        "wan3": 22,
+        "wan4": 22
+      },
+      "rib_changed": true,
+      "rib_stable_polls": 1,
+      "neighbor_states": {
+        "corea": [
+          "Full/-",
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-"
+        ],
+        "wan1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan3": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan4": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.073,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 32.9,
+      "route_counts": {
+        "corea": 22,
+        "coreb": 22,
+        "edgea": 22,
+        "edgeb": 22,
+        "wan1": 22,
+        "wan2": 22,
+        "wan3": 22,
+        "wan4": 22
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 2,
+      "neighbor_states": {
+        "corea": [
+          "Full/-",
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-"
+        ],
+        "wan1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan3": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan4": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.073,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 38.7,
+      "route_counts": {
+        "corea": 22,
+        "coreb": 22,
+        "edgea": 22,
+        "edgeb": 22,
+        "wan1": 22,
+        "wan2": 22,
+        "wan3": 22,
+        "wan4": 22
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 3,
+      "neighbor_states": {
+        "corea": [
+          "Full/-",
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-"
+        ],
+        "wan1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan3": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan4": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.076,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 44.5,
+      "route_counts": {
+        "corea": 22,
+        "coreb": 22,
+        "edgea": 22,
+        "edgeb": 22,
+        "wan1": 22,
+        "wan2": 22,
+        "wan3": 22,
+        "wan4": 22
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 4,
+      "neighbor_states": {
+        "corea": [
+          "Full/-",
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-"
+        ],
+        "wan1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan3": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan4": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.077,
+        "status": "OK"
+      }
+    },
+    {
+      "t": 50.3,
+      "route_counts": {
+        "corea": 22,
+        "coreb": 22,
+        "edgea": 22,
+        "edgeb": 22,
+        "wan1": 22,
+        "wan2": 22,
+        "wan3": 22,
+        "wan4": 22
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 5,
+      "neighbor_states": {
+        "corea": [
+          "Full/-",
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-"
+        ],
+        "wan1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan3": [
+          "Full/-",
+          "Full/-"
+        ],
+        "wan4": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": {
+        "src": "10.10.0.10",
+        "dst": "10.20.0.10",
+        "reachable": true,
+        "loss_pct": 0.0,
+        "rtt_avg_ms": 0.082,
+        "status": "OK"
+      }
+    }
+  ],
+  "error": null
+}

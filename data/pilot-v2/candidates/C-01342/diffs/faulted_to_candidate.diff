@@ -1,0 +1,19 @@
+--- I-00182
++++ C-01342
+@@ -288,6 +288,7 @@
+ router ospf
+  ospf router-id 10.255.0.2
+  passive-interface lo
++ passive-interface eth3
+ !
+ line vty
+ !
+@@ -863,7 +864,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.200.0.2/30
++    address 10.29.1.1/30
+     alias link to agga accA
+ 
+ 

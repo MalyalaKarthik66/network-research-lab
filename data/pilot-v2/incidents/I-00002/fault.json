@@ -1,0 +1,20 @@
+{
+  "incident_id": "I-00002",
+  "topology": "t01_chain4",
+  "fault_id": "F0002",
+  "fault_family": "iface_wrong_addr",
+  "fault_description": "[t01_chain4] edgea eth2 renumbered off the shared /30",
+  "fault_params": {
+    "node": "edgea",
+    "iface": "eth2",
+    "bad": "10.200.0.2/30",
+    "good": "10.11.1.1/30",
+    "peer": "corea",
+    "peer_iface": "eth1",
+    "link": "siteA",
+    "peer_align": "10.200.0.1/30",
+    "good_cost": 10,
+    "topology": "t01_chain4"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

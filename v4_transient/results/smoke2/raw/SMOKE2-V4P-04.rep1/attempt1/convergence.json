@@ -1,0 +1,395 @@
+{
+  "status": "OK",
+  "converged": true,
+  "seconds": 81.3,
+  "polls": 5,
+  "min_settle_s": 45,
+  "history": [
+    {
+      "t": 12.0,
+      "route_counts": {
+        "acca1": 6,
+        "acca2": 5,
+        "accb1": 5,
+        "accb2": 5,
+        "corea": 6,
+        "coreb": 6,
+        "dista1": 5,
+        "dista2": 6,
+        "distb1": 5,
+        "distb2": 5,
+        "edgea": 6,
+        "edgeb": 7
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 1,
+      "neighbor_states": {
+        "acca1": [
+          "Init/-",
+          "Init/-",
+          "Init/-"
+        ],
+        "acca2": [
+          "Init/-",
+          "Full/-"
+        ],
+        "accb1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "accb2": [
+          "Loading/-",
+          "Full/-"
+        ],
+        "corea": [
+          "Loading/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "dista1": [
+          "Full/-",
+          "Loading/-"
+        ],
+        "dista2": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "distb1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "distb2": [
+          "Full/-",
+          "Loading/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Loading/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [
+        "acca1:Init/-",
+        "acca1:Init/-",
+        "acca1:Init/-",
+        "acca2:Init/-",
+        "accb2:Loading/-",
+        "corea:Loading/-",
+        "dista1:Loading/-",
+        "distb2:Loading/-",
+        "edgea:Loading/-"
+      ],
+      "probe": null
+    },
+    {
+      "t": 30.1,
+      "route_counts": {
+        "acca1": 30,
+        "acca2": 31,
+        "accb1": 31,
+        "accb2": 31,
+        "corea": 31,
+        "coreb": 31,
+        "dista1": 31,
+        "dista2": 31,
+        "distb1": 31,
+        "distb2": 31,
+        "edgea": 31,
+        "edgeb": 31
+      },
+      "rib_changed": true,
+      "rib_stable_polls": 1,
+      "neighbor_states": {
+        "acca1": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "acca2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "accb1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "accb2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "corea": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "dista1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "dista2": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "distb1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "distb2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": null
+    },
+    {
+      "t": 46.7,
+      "route_counts": {
+        "acca1": 31,
+        "acca2": 31,
+        "accb1": 31,
+        "accb2": 31,
+        "corea": 31,
+        "coreb": 31,
+        "dista1": 31,
+        "dista2": 31,
+        "distb1": 31,
+        "distb2": 31,
+        "edgea": 31,
+        "edgeb": 31
+      },
+      "rib_changed": true,
+      "rib_stable_polls": 1,
+      "neighbor_states": {
+        "acca1": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "acca2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "accb1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "accb2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "corea": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "dista1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "dista2": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "distb1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "distb2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": null
+    },
+    {
+      "t": 65.2,
+      "route_counts": {
+        "acca1": 31,
+        "acca2": 31,
+        "accb1": 31,
+        "accb2": 31,
+        "corea": 31,
+        "coreb": 31,
+        "dista1": 31,
+        "dista2": 31,
+        "distb1": 31,
+        "distb2": 31,
+        "edgea": 31,
+        "edgeb": 31
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 2,
+      "neighbor_states": {
+        "acca1": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "acca2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "accb1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "accb2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "corea": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "dista1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "dista2": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "distb1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "distb2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": null
+    },
+    {
+      "t": 81.3,
+      "route_counts": {
+        "acca1": 31,
+        "acca2": 31,
+        "accb1": 31,
+        "accb2": 31,
+        "corea": 31,
+        "coreb": 31,
+        "dista1": 31,
+        "dista2": 31,
+        "distb1": 31,
+        "distb2": 31,
+        "edgea": 31,
+        "edgeb": 31
+      },
+      "rib_changed": false,
+      "rib_stable_polls": 3,
+      "neighbor_states": {
+        "acca1": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "acca2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "accb1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "accb2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "corea": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "coreb": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "dista1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "dista2": [
+          "Full/-",
+          "Full/-",
+          "Full/-"
+        ],
+        "distb1": [
+          "Full/-",
+          "Full/-"
+        ],
+        "distb2": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgea": [
+          "Full/-",
+          "Full/-"
+        ],
+        "edgeb": [
+          "Full/-",
+          "Full/-"
+        ]
+      },
+      "transitional": [],
+      "probe": null
+    }
+  ],
+  "error": null
+}

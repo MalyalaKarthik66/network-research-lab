@@ -1,0 +1,14 @@
+{
+  "incident_id": "I-10",
+  "fault_id": "F10",
+  "fault_family": "static_route_loop",
+  "fault_description": "edgeb installs a /32 for hostb pointing back at coreb, looping",
+  "fault_params": {
+    "node": "edgeb",
+    "prefix": "10.20.0.10/32",
+    "nexthop": "10.0.5.1",
+    "loop_with": "coreb",
+    "victim": "10.20.0.10"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

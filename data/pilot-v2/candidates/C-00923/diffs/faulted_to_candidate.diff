@@ -1,0 +1,20 @@
+--- I-00124
++++ C-00923
+@@ -350,7 +350,7 @@
+  ip ospf cost 10
+ !
+ interface eth2
+- description link to a1 A1
++ description link to a1 A1 (partially reverted)
+  ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+@@ -387,7 +387,7 @@
+ auto eth2
+ iface eth2
+     address 10.23.1.1/30
+-    alias link to a1 A1
++    alias link to a1 A1 (partially reverted)
+ 
+ auto eth3
+ iface eth3

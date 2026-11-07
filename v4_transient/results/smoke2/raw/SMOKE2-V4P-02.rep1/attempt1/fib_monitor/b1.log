@@ -1,0 +1,18 @@
+[2026-09-15T10:07:10.081191] 65: eth1@if64: <BROADCAST,MULTICAST> mtu 9500 qdisc noqueue state DOWN group default 
+    link/ether aa:c1:ab:11:c4:1d brd ff:ff:ff:ff:ff:ff link-netnsid 2
+    altname clab-o-61309a114ffed155
+[2026-09-15T10:07:10.081369] Deleted fe80::/64 dev eth1 proto kernel metric 256 pref medium
+[2026-09-15T10:07:10.081386] Deleted local fe80::a8c1:abff:fe11:c41d dev eth1 table local proto kernel metric 0 pref medium
+[2026-09-15T10:07:10.081433] Deleted multicast ff00::/8 dev eth1 table local proto kernel metric 256 pref medium
+[2026-09-15T10:07:10.091779] 10.23.5.0/30 nhid 29 via 10.23.7.2 dev eth2 proto ospf metric 20 
+[2026-09-15T10:07:10.091817] 10.10.0.0/24 nhid 29 via 10.23.7.2 dev eth2 proto ospf metric 20 
+[2026-09-15T10:07:10.091829] 10.23.1.0/30 nhid 29 via 10.23.7.2 dev eth2 proto ospf metric 20 
+[2026-09-15T10:07:10.091839] 10.23.2.0/30 nhid 29 via 10.23.7.2 dev eth2 proto ospf metric 20 
+[2026-09-15T10:07:10.091848] 10.23.3.0/30 nhid 29 via 10.23.7.2 dev eth2 proto ospf metric 20 
+[2026-09-15T10:07:10.091857] 10.23.4.0/30 nhid 29 via 10.23.7.2 dev eth2 proto ospf metric 20 
+[2026-09-15T10:07:10.091866] 10.23.6.0/30 nhid 29 via 10.23.7.2 dev eth2 proto ospf metric 20 
+[2026-09-15T10:07:10.091875] 10.255.0.1 nhid 29 via 10.23.7.2 dev eth2 proto ospf metric 20 
+[2026-09-15T10:07:10.091884] 10.255.0.2 nhid 29 via 10.23.7.2 dev eth2 proto ospf metric 20 
+[2026-09-15T10:07:10.091892] 10.255.0.3 nhid 29 via 10.23.7.2 dev eth2 proto ospf metric 20 
+[2026-09-15T10:07:10.091901] 10.255.0.4 nhid 29 via 10.23.7.2 dev eth2 proto ospf metric 20 
+[2026-09-15T10:07:10.143004] Deleted 10.23.5.0/30 nhid 29 via 10.23.7.2 dev eth2 proto ospf metric 20 

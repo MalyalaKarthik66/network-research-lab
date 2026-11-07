@@ -1,0 +1,20 @@
+--- I-00007
++++ C-00082
+@@ -287,7 +287,7 @@
+ interface eth2
+  description link to edgeb accB2
+  ip ospf area 0.0.0.0
+- ip ospf cost 41
++ ip ospf cost 820
+  ip ospf network point-to-point
+ !
+ router ospf
+@@ -957,7 +957,7 @@
+ interface eth4
+  description link to accb2 accB2
+  ip ospf area 0.0.0.0
+- ip ospf cost 41
++ ip ospf cost 820
+  ip ospf network point-to-point
+ !
+ router ospf

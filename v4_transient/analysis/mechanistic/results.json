@@ -1,0 +1,6374 @@
+[
+  {
+    "candidate_id": "V4C-04",
+    "topology": "t05_ring6",
+    "role": "drain-lo",
+    "mechanism": "drain",
+    "target": "corea",
+    "predeployment_features": {
+      "r_exact": 0.111111,
+      "r_broken_exact": 0.0,
+      "r_rerouted_exact": 0.111111,
+      "n_fib_entries_changed": 5,
+      "n_routers_changed": 3,
+      "pml_flow_frac": 0.05555555555555555,
+      "n_devices_pushed": 4,
+      "n_config_commands": 12,
+      "n_routers": 6,
+      "n_endpoints": 9,
+      "changed_link_betweenness": 0.9444444444444444,
+      "golden_mean_path_len": 2.0,
+      "n_flows_carried_pred": 72
+    },
+    "mechanistic_features": {
+      "operations": [
+        {
+          "node": "corea",
+          "interface": "eth1",
+          "neighbor": "edgea",
+          "new_cost": 200,
+          "command": "ip ospf cost 200"
+        },
+        {
+          "node": "corea",
+          "interface": "eth2",
+          "neighbor": "wan1",
+          "new_cost": 200,
+          "command": "ip ospf cost 200"
+        },
+        {
+          "node": "corea",
+          "interface": "eth3",
+          "neighbor": "wan2",
+          "new_cost": 800,
+          "command": "ip ospf cost 800"
+        },
+        {
+          "node": "edgea",
+          "interface": "eth2",
+          "neighbor": "corea",
+          "new_cost": 200,
+          "command": "ip ospf cost 200"
+        },
+        {
+          "node": "wan1",
+          "interface": "eth1",
+          "neighbor": "corea",
+          "new_cost": 200,
+          "command": "ip ospf cost 200"
+        },
+        {
+          "node": "wan2",
+          "interface": "eth1",
+          "neighbor": "corea",
+          "new_cost": 800,
+          "command": "ip ospf cost 800"
+        }
+      ],
+      "n_operations": 6,
+      "n_intermediate_states": 6,
+      "cycle_state_count": 0,
+      "max_cycle_flow_fraction": 0.0,
+      "max_cycle_flow_count": 0,
+      "max_cycle_length": 0,
+      "total_cycle_flow_state_exposure": 0,
+      "max_no_path_flow_count": 0,
+      "stages": [
+        {
+          "index": 1,
+          "operation": {
+            "node": "corea",
+            "interface": "eth1",
+            "neighbor": "edgea",
+            "new_cost": 200,
+            "command": "ip ospf cost 200"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 2,
+          "operation": {
+            "node": "corea",
+            "interface": "eth2",
+            "neighbor": "wan1",
+            "new_cost": 200,
+            "command": "ip ospf cost 200"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 3,
+          "operation": {
+            "node": "corea",
+            "interface": "eth3",
+            "neighbor": "wan2",
+            "new_cost": 800,
+            "command": "ip ospf cost 800"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 4,
+          "operation": {
+            "node": "edgea",
+            "interface": "eth2",
+            "neighbor": "corea",
+            "new_cost": 200,
+            "command": "ip ospf cost 200"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 5,
+          "operation": {
+            "node": "wan1",
+            "interface": "eth1",
+            "neighbor": "corea",
+            "new_cost": 200,
+            "command": "ip ospf cost 200"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 6,
+          "operation": {
+            "node": "wan2",
+            "interface": "eth1",
+            "neighbor": "corea",
+            "new_cost": 800,
+            "command": "ip ospf cost 800"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        }
+      ]
+    },
+    "hybrid_features": {
+      "hybrid_cycle_state_count": 2,
+      "hybrid_max_cycle_flow_count": 4,
+      "hybrid_max_cycle_flow_fraction": 0.0625,
+      "hybrid_stages": [
+        {
+          "stage": 0,
+          "active_routers": [],
+          "cycle_flows": []
+        },
+        {
+          "stage": 1,
+          "active_routers": [
+            "corea"
+          ],
+          "cycle_flows": [
+            {
+              "flow_id": "corea->wan2",
+              "cycle": [
+                "corea",
+                "wan1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "edgea->wan2",
+              "cycle": [
+                "corea",
+                "wan1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "wan1->wan2",
+              "cycle": [
+                "wan1",
+                "corea",
+                "wan1"
+              ]
+            },
+            {
+              "flow_id": "hosta->wan2",
+              "cycle": [
+                "corea",
+                "wan1",
+                "corea"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": 2,
+          "active_routers": [
+            "corea",
+            "edgea"
+          ],
+          "cycle_flows": [
+            {
+              "flow_id": "corea->wan2",
+              "cycle": [
+                "corea",
+                "wan1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "edgea->wan2",
+              "cycle": [
+                "corea",
+                "wan1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "wan1->wan2",
+              "cycle": [
+                "wan1",
+                "corea",
+                "wan1"
+              ]
+            },
+            {
+              "flow_id": "hosta->wan2",
+              "cycle": [
+                "corea",
+                "wan1",
+                "corea"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": 3,
+          "active_routers": [
+            "corea",
+            "edgea",
+            "wan1"
+          ],
+          "cycle_flows": []
+        },
+        {
+          "stage": 4,
+          "active_routers": [
+            "corea",
+            "edgea",
+            "wan1",
+            "wan2"
+          ],
+          "cycle_flows": []
+        }
+      ]
+    },
+    "model_input_sources": [
+      "C:\\Users\\karth\\network-research-lab\\v4_transient\\manifests\\pilot_manifest.json",
+      "nrl/topologies_v3.py"
+    ],
+    "runtime_artifacts_used_as_model_input": false
+  },
+  {
+    "candidate_id": "EX-V4-01",
+    "topology": "t14_ladder8",
+    "role": "exploratory-drain",
+    "mechanism": "drain",
+    "target": "l1",
+    "predeployment_features": {
+      "r_exact": 0.309091,
+      "r_broken_exact": 0.0,
+      "r_rerouted_exact": 0.309091,
+      "n_fib_entries_changed": 12,
+      "n_routers_changed": 5,
+      "pml_flow_frac": 0.20909090909090908,
+      "n_devices_pushed": 4,
+      "n_config_commands": 12,
+      "n_routers": 8,
+      "n_endpoints": 11,
+      "changed_link_betweenness": 0.8,
+      "golden_mean_path_len": 2.272727272727273,
+      "n_flows_carried_pred": 110
+    },
+    "mechanistic_features": {
+      "operations": [
+        {
+          "node": "edgea",
+          "interface": "eth2",
+          "neighbor": "l1",
+          "new_cost": 200,
+          "command": "ip ospf cost 200"
+        },
+        {
+          "node": "l1",
+          "interface": "eth1",
+          "neighbor": "edgea",
+          "new_cost": 200,
+          "command": "ip ospf cost 200"
+        },
+        {
+          "node": "l1",
+          "interface": "eth2",
+          "neighbor": "l2",
+          "new_cost": 200,
+          "command": "ip ospf cost 200"
+        },
+        {
+          "node": "l1",
+          "interface": "eth3",
+          "neighbor": "r1",
+          "new_cost": 1000,
+          "command": "ip ospf cost 1000"
+        },
+        {
+          "node": "l2",
+          "interface": "eth1",
+          "neighbor": "l1",
+          "new_cost": 200,
+          "command": "ip ospf cost 200"
+        },
+        {
+          "node": "r1",
+          "interface": "eth3",
+          "neighbor": "l1",
+          "new_cost": 1000,
+          "command": "ip ospf cost 1000"
+        }
+      ],
+      "n_operations": 6,
+      "n_intermediate_states": 6,
+      "cycle_state_count": 0,
+      "max_cycle_flow_fraction": 0.0,
+      "max_cycle_flow_count": 0,
+      "max_cycle_length": 0,
+      "total_cycle_flow_state_exposure": 0,
+      "max_no_path_flow_count": 0,
+      "stages": [
+        {
+          "index": 1,
+          "operation": {
+            "node": "edgea",
+            "interface": "eth2",
+            "neighbor": "l1",
+            "new_cost": 200,
+            "command": "ip ospf cost 200"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 2,
+          "operation": {
+            "node": "l1",
+            "interface": "eth1",
+            "neighbor": "edgea",
+            "new_cost": 200,
+            "command": "ip ospf cost 200"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 3,
+          "operation": {
+            "node": "l1",
+            "interface": "eth2",
+            "neighbor": "l2",
+            "new_cost": 200,
+            "command": "ip ospf cost 200"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 4,
+          "operation": {
+            "node": "l1",
+            "interface": "eth3",
+            "neighbor": "r1",
+            "new_cost": 1000,
+            "command": "ip ospf cost 1000"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 5,
+          "operation": {
+            "node": "l2",
+            "interface": "eth1",
+            "neighbor": "l1",
+            "new_cost": 200,
+            "command": "ip ospf cost 200"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 6,
+          "operation": {
+            "node": "r1",
+            "interface": "eth3",
+            "neighbor": "l1",
+            "new_cost": 1000,
+            "command": "ip ospf cost 1000"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        }
+      ]
+    },
+    "hybrid_features": {
+      "hybrid_cycle_state_count": 3,
+      "hybrid_max_cycle_flow_count": 15,
+      "hybrid_max_cycle_flow_fraction": 0.14705882352941177,
+      "hybrid_stages": [
+        {
+          "stage": 0,
+          "active_routers": [],
+          "cycle_flows": []
+        },
+        {
+          "stage": 1,
+          "active_routers": [
+            "edgea"
+          ],
+          "cycle_flows": [
+            {
+              "flow_id": "edgea->edgeb",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->l2",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->l3",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostb",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostc",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "r1->edgeb",
+              "cycle": [
+                "r1",
+                "edgea",
+                "r1"
+              ]
+            },
+            {
+              "flow_id": "r1->l2",
+              "cycle": [
+                "r1",
+                "edgea",
+                "r1"
+              ]
+            },
+            {
+              "flow_id": "r1->l3",
+              "cycle": [
+                "r1",
+                "edgea",
+                "r1"
+              ]
+            },
+            {
+              "flow_id": "r1->hostb",
+              "cycle": [
+                "r1",
+                "edgea",
+                "r1"
+              ]
+            },
+            {
+              "flow_id": "r1->hostc",
+              "cycle": [
+                "r1",
+                "edgea",
+                "r1"
+              ]
+            },
+            {
+              "flow_id": "hosta->edgeb",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->l2",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->l3",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostb",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostc",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": 2,
+          "active_routers": [
+            "edgea",
+            "l1"
+          ],
+          "cycle_flows": [
+            {
+              "flow_id": "edgea->edgeb",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->l2",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->l3",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostb",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostc",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "r1->edgeb",
+              "cycle": [
+                "r1",
+                "edgea",
+                "r1"
+              ]
+            },
+            {
+              "flow_id": "r1->l2",
+              "cycle": [
+                "r1",
+                "edgea",
+                "r1"
+              ]
+            },
+            {
+              "flow_id": "r1->l3",
+              "cycle": [
+                "r1",
+                "edgea",
+                "r1"
+              ]
+            },
+            {
+              "flow_id": "r1->hostb",
+              "cycle": [
+                "r1",
+                "edgea",
+                "r1"
+              ]
+            },
+            {
+              "flow_id": "r1->hostc",
+              "cycle": [
+                "r1",
+                "edgea",
+                "r1"
+              ]
+            },
+            {
+              "flow_id": "hosta->edgeb",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->l2",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->l3",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostb",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostc",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": 3,
+          "active_routers": [
+            "edgea",
+            "l1",
+            "l2"
+          ],
+          "cycle_flows": [
+            {
+              "flow_id": "edgea->edgeb",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->l2",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->l3",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostb",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostc",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "r1->edgeb",
+              "cycle": [
+                "r1",
+                "edgea",
+                "r1"
+              ]
+            },
+            {
+              "flow_id": "r1->l2",
+              "cycle": [
+                "r1",
+                "edgea",
+                "r1"
+              ]
+            },
+            {
+              "flow_id": "r1->l3",
+              "cycle": [
+                "r1",
+                "edgea",
+                "r1"
+              ]
+            },
+            {
+              "flow_id": "r1->hostb",
+              "cycle": [
+                "r1",
+                "edgea",
+                "r1"
+              ]
+            },
+            {
+              "flow_id": "r1->hostc",
+              "cycle": [
+                "r1",
+                "edgea",
+                "r1"
+              ]
+            },
+            {
+              "flow_id": "hosta->edgeb",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->l2",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->l3",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostb",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostc",
+              "cycle": [
+                "edgea",
+                "r1",
+                "edgea"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": 4,
+          "active_routers": [
+            "edgea",
+            "l1",
+            "l2",
+            "r1"
+          ],
+          "cycle_flows": []
+        }
+      ]
+    },
+    "model_input_sources": [
+      "C:\\Users\\karth\\v4_exploratory\\manifest.json",
+      "nrl/topologies_v3.py"
+    ],
+    "runtime_artifacts_used_as_model_input": false
+  },
+  {
+    "candidate_id": "EX-V4-02",
+    "topology": "t15_campus12",
+    "role": "exploratory-drain",
+    "mechanism": "drain",
+    "target": "dista2",
+    "predeployment_features": {
+      "r_exact": 0.228571,
+      "r_broken_exact": 0.0,
+      "r_rerouted_exact": 0.228571,
+      "n_fib_entries_changed": 26,
+      "n_routers_changed": 6,
+      "pml_flow_frac": 0.21428571428571427,
+      "n_devices_pushed": 4,
+      "n_config_commands": 12,
+      "n_routers": 12,
+      "n_endpoints": 15,
+      "changed_link_betweenness": 0.34285714285714286,
+      "golden_mean_path_len": 3.276190476190476,
+      "n_flows_carried_pred": 210
+    },
+    "mechanistic_features": {
+      "operations": [
+        {
+          "node": "acca1",
+          "interface": "eth3",
+          "neighbor": "dista2",
+          "new_cost": 600,
+          "command": "ip ospf cost 600"
+        },
+        {
+          "node": "acca2",
+          "interface": "eth2",
+          "neighbor": "dista2",
+          "new_cost": 200,
+          "command": "ip ospf cost 200"
+        },
+        {
+          "node": "corea",
+          "interface": "eth2",
+          "neighbor": "dista2",
+          "new_cost": 400,
+          "command": "ip ospf cost 400"
+        },
+        {
+          "node": "dista2",
+          "interface": "eth1",
+          "neighbor": "acca1",
+          "new_cost": 600,
+          "command": "ip ospf cost 600"
+        },
+        {
+          "node": "dista2",
+          "interface": "eth2",
+          "neighbor": "acca2",
+          "new_cost": 200,
+          "command": "ip ospf cost 200"
+        },
+        {
+          "node": "dista2",
+          "interface": "eth3",
+          "neighbor": "corea",
+          "new_cost": 400,
+          "command": "ip ospf cost 400"
+        }
+      ],
+      "n_operations": 6,
+      "n_intermediate_states": 6,
+      "cycle_state_count": 0,
+      "max_cycle_flow_fraction": 0.0,
+      "max_cycle_flow_count": 0,
+      "max_cycle_length": 0,
+      "total_cycle_flow_state_exposure": 0,
+      "max_no_path_flow_count": 0,
+      "stages": [
+        {
+          "index": 1,
+          "operation": {
+            "node": "acca1",
+            "interface": "eth3",
+            "neighbor": "dista2",
+            "new_cost": 600,
+            "command": "ip ospf cost 600"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 2,
+          "operation": {
+            "node": "acca2",
+            "interface": "eth2",
+            "neighbor": "dista2",
+            "new_cost": 200,
+            "command": "ip ospf cost 200"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 3,
+          "operation": {
+            "node": "corea",
+            "interface": "eth2",
+            "neighbor": "dista2",
+            "new_cost": 400,
+            "command": "ip ospf cost 400"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 4,
+          "operation": {
+            "node": "dista2",
+            "interface": "eth1",
+            "neighbor": "acca1",
+            "new_cost": 600,
+            "command": "ip ospf cost 600"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 5,
+          "operation": {
+            "node": "dista2",
+            "interface": "eth2",
+            "neighbor": "acca2",
+            "new_cost": 200,
+            "command": "ip ospf cost 200"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 6,
+          "operation": {
+            "node": "dista2",
+            "interface": "eth3",
+            "neighbor": "corea",
+            "new_cost": 400,
+            "command": "ip ospf cost 400"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        }
+      ]
+    },
+    "hybrid_features": {
+      "hybrid_cycle_state_count": 4,
+      "hybrid_max_cycle_flow_count": 23,
+      "hybrid_max_cycle_flow_fraction": 0.11386138613861387,
+      "hybrid_stages": [
+        {
+          "stage": 0,
+          "active_routers": [],
+          "cycle_flows": []
+        },
+        {
+          "stage": 1,
+          "active_routers": [
+            "acca1"
+          ],
+          "cycle_flows": [
+            {
+              "flow_id": "acca1->dista2",
+              "cycle": [
+                "acca1",
+                "edgea",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "edgea->dista2",
+              "cycle": [
+                "edgea",
+                "acca1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->dista2",
+              "cycle": [
+                "edgea",
+                "acca1",
+                "edgea"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": 2,
+          "active_routers": [
+            "acca1",
+            "acca2"
+          ],
+          "cycle_flows": [
+            {
+              "flow_id": "acca1->dista2",
+              "cycle": [
+                "acca1",
+                "edgea",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "edgea->dista2",
+              "cycle": [
+                "edgea",
+                "acca1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->dista2",
+              "cycle": [
+                "edgea",
+                "acca1",
+                "edgea"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": 3,
+          "active_routers": [
+            "acca1",
+            "acca2",
+            "corea"
+          ],
+          "cycle_flows": [
+            {
+              "flow_id": "acca1->dista2",
+              "cycle": [
+                "acca1",
+                "edgea",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "accb1->acca2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "accb1->dista2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "accb2->acca2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "accb2->dista2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "corea->acca2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "corea->dista2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "coreb->acca2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "coreb->dista2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "dista1->acca2",
+              "cycle": [
+                "dista1",
+                "corea",
+                "dista1"
+              ]
+            },
+            {
+              "flow_id": "dista1->dista2",
+              "cycle": [
+                "dista1",
+                "corea",
+                "dista1"
+              ]
+            },
+            {
+              "flow_id": "distb1->acca2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "distb1->dista2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "distb2->acca2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "distb2->dista2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "edgea->dista2",
+              "cycle": [
+                "edgea",
+                "acca1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgeb->acca2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "edgeb->dista2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "hosta->dista2",
+              "cycle": [
+                "edgea",
+                "acca1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hostb->acca2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "hostb->dista2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "hostc->acca2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "hostc->dista2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": 4,
+          "active_routers": [
+            "acca1",
+            "acca2",
+            "corea",
+            "dista2"
+          ],
+          "cycle_flows": [
+            {
+              "flow_id": "acca1->dista2",
+              "cycle": [
+                "acca1",
+                "edgea",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "accb1->acca2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "accb1->dista2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "accb2->acca2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "accb2->dista2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "corea->acca2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "corea->dista2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "coreb->acca2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "coreb->dista2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "dista1->acca2",
+              "cycle": [
+                "dista1",
+                "corea",
+                "dista1"
+              ]
+            },
+            {
+              "flow_id": "dista1->dista2",
+              "cycle": [
+                "dista1",
+                "corea",
+                "dista1"
+              ]
+            },
+            {
+              "flow_id": "distb1->acca2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "distb1->dista2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "distb2->acca2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "distb2->dista2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "edgea->dista2",
+              "cycle": [
+                "edgea",
+                "acca1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgeb->acca2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "edgeb->dista2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "hosta->dista2",
+              "cycle": [
+                "edgea",
+                "acca1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hostb->acca2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "hostb->dista2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "hostc->acca2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "hostc->dista2",
+              "cycle": [
+                "corea",
+                "dista1",
+                "corea"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "model_input_sources": [
+      "C:\\Users\\karth\\v4_exploratory\\manifest.json",
+      "nrl/topologies_v3.py"
+    ],
+    "runtime_artifacts_used_as_model_input": false
+  },
+  {
+    "candidate_id": "EX-V4-03",
+    "topology": "t13_bowtie7",
+    "role": "exploratory-paired-cost",
+    "mechanism": "paired-cost",
+    "target": [
+      [
+        "a1",
+        "edgea"
+      ],
+      [
+        "b1",
+        "edgeb"
+      ]
+    ],
+    "predeployment_features": {
+      "r_exact": 0.622222,
+      "r_broken_exact": 0.0,
+      "r_rerouted_exact": 0.622222,
+      "n_fib_entries_changed": 18,
+      "n_routers_changed": 7,
+      "pml_flow_frac": 0.43333333333333335,
+      "n_devices_pushed": 4,
+      "n_config_commands": 8,
+      "n_routers": 7,
+      "n_endpoints": 10,
+      "changed_link_betweenness": 0.7555555555555555,
+      "golden_mean_path_len": 2.0,
+      "n_flows_carried_pred": 90
+    },
+    "mechanistic_features": {
+      "operations": [
+        {
+          "node": "a1",
+          "interface": "eth1",
+          "neighbor": "edgea",
+          "new_cost": 200,
+          "command": "ip ospf cost 200"
+        },
+        {
+          "node": "b1",
+          "interface": "eth2",
+          "neighbor": "edgeb",
+          "new_cost": 200,
+          "command": "ip ospf cost 200"
+        },
+        {
+          "node": "edgea",
+          "interface": "eth2",
+          "neighbor": "a1",
+          "new_cost": 200,
+          "command": "ip ospf cost 200"
+        },
+        {
+          "node": "edgeb",
+          "interface": "eth3",
+          "neighbor": "b1",
+          "new_cost": 200,
+          "command": "ip ospf cost 200"
+        }
+      ],
+      "n_operations": 4,
+      "n_intermediate_states": 4,
+      "cycle_state_count": 0,
+      "max_cycle_flow_fraction": 0.0,
+      "max_cycle_flow_count": 0,
+      "max_cycle_length": 0,
+      "total_cycle_flow_state_exposure": 0,
+      "max_no_path_flow_count": 0,
+      "stages": [
+        {
+          "index": 1,
+          "operation": {
+            "node": "a1",
+            "interface": "eth1",
+            "neighbor": "edgea",
+            "new_cost": 200,
+            "command": "ip ospf cost 200"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 2,
+          "operation": {
+            "node": "b1",
+            "interface": "eth2",
+            "neighbor": "edgeb",
+            "new_cost": 200,
+            "command": "ip ospf cost 200"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 3,
+          "operation": {
+            "node": "edgea",
+            "interface": "eth2",
+            "neighbor": "a1",
+            "new_cost": 200,
+            "command": "ip ospf cost 200"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 4,
+          "operation": {
+            "node": "edgeb",
+            "interface": "eth3",
+            "neighbor": "b1",
+            "new_cost": 200,
+            "command": "ip ospf cost 200"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        }
+      ]
+    },
+    "hybrid_features": {
+      "hybrid_cycle_state_count": 4,
+      "hybrid_max_cycle_flow_count": 39,
+      "hybrid_max_cycle_flow_fraction": 0.47560975609756095,
+      "hybrid_stages": [
+        {
+          "stage": 0,
+          "active_routers": [],
+          "cycle_flows": []
+        },
+        {
+          "stage": 1,
+          "active_routers": [
+            "a1"
+          ],
+          "cycle_flows": [
+            {
+              "flow_id": "a1->edgea",
+              "cycle": [
+                "a1",
+                "mid",
+                "a1"
+              ]
+            },
+            {
+              "flow_id": "a1->hosta",
+              "cycle": [
+                "a1",
+                "mid",
+                "a1"
+              ]
+            },
+            {
+              "flow_id": "b1->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "b1->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "b2->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "b2->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "edgeb->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "edgeb->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "mid->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "mid->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hostb->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hostb->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hostc->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hostc->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": 2,
+          "active_routers": [
+            "a1",
+            "b1"
+          ],
+          "cycle_flows": [
+            {
+              "flow_id": "a1->edgea",
+              "cycle": [
+                "a1",
+                "mid",
+                "a1"
+              ]
+            },
+            {
+              "flow_id": "a1->edgeb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "a1->hosta",
+              "cycle": [
+                "a1",
+                "mid",
+                "a1"
+              ]
+            },
+            {
+              "flow_id": "a1->hostb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "a1->hostc",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "a2->edgeb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "a2->hostb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "a2->hostc",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "b1->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "b1->edgeb",
+              "cycle": [
+                "b1",
+                "mid",
+                "b1"
+              ]
+            },
+            {
+              "flow_id": "b1->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "b1->hostb",
+              "cycle": [
+                "b1",
+                "mid",
+                "b1"
+              ]
+            },
+            {
+              "flow_id": "b1->hostc",
+              "cycle": [
+                "b1",
+                "mid",
+                "b1"
+              ]
+            },
+            {
+              "flow_id": "b2->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "b2->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "edgea->edgeb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostc",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "edgeb->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "edgeb->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "mid->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "mid->edgeb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "mid->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "mid->hostb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "mid->hostc",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hosta->edgeb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostc",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hostb->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hostb->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hostc->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hostc->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": 3,
+          "active_routers": [
+            "a1",
+            "b1",
+            "edgea"
+          ],
+          "cycle_flows": [
+            {
+              "flow_id": "a1->edgea",
+              "cycle": [
+                "a1",
+                "mid",
+                "a1"
+              ]
+            },
+            {
+              "flow_id": "a1->edgeb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "a1->hosta",
+              "cycle": [
+                "a1",
+                "mid",
+                "a1"
+              ]
+            },
+            {
+              "flow_id": "a1->hostb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "a1->hostc",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "a2->a1",
+              "cycle": [
+                "a2",
+                "edgea",
+                "a2"
+              ]
+            },
+            {
+              "flow_id": "a2->edgeb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "a2->hostb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "a2->hostc",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "b1->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "b1->edgeb",
+              "cycle": [
+                "b1",
+                "mid",
+                "b1"
+              ]
+            },
+            {
+              "flow_id": "b1->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "b1->hostb",
+              "cycle": [
+                "b1",
+                "mid",
+                "b1"
+              ]
+            },
+            {
+              "flow_id": "b1->hostc",
+              "cycle": [
+                "b1",
+                "mid",
+                "b1"
+              ]
+            },
+            {
+              "flow_id": "b2->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "b2->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "edgea->a1",
+              "cycle": [
+                "edgea",
+                "a2",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->edgeb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostc",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "edgeb->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "edgeb->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "mid->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "mid->edgeb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "mid->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "mid->hostb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "mid->hostc",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hosta->a1",
+              "cycle": [
+                "edgea",
+                "a2",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->edgeb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostc",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hostb->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hostb->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hostc->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hostc->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": 4,
+          "active_routers": [
+            "a1",
+            "b1",
+            "edgea",
+            "edgeb"
+          ],
+          "cycle_flows": [
+            {
+              "flow_id": "a1->edgea",
+              "cycle": [
+                "a1",
+                "mid",
+                "a1"
+              ]
+            },
+            {
+              "flow_id": "a1->edgeb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "a1->hosta",
+              "cycle": [
+                "a1",
+                "mid",
+                "a1"
+              ]
+            },
+            {
+              "flow_id": "a1->hostb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "a1->hostc",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "a2->a1",
+              "cycle": [
+                "a2",
+                "edgea",
+                "a2"
+              ]
+            },
+            {
+              "flow_id": "a2->edgeb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "a2->hostb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "a2->hostc",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "b1->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "b1->edgeb",
+              "cycle": [
+                "b1",
+                "mid",
+                "b1"
+              ]
+            },
+            {
+              "flow_id": "b1->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "b1->hostb",
+              "cycle": [
+                "b1",
+                "mid",
+                "b1"
+              ]
+            },
+            {
+              "flow_id": "b1->hostc",
+              "cycle": [
+                "b1",
+                "mid",
+                "b1"
+              ]
+            },
+            {
+              "flow_id": "b2->b1",
+              "cycle": [
+                "b2",
+                "edgeb",
+                "b2"
+              ]
+            },
+            {
+              "flow_id": "b2->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "b2->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "edgea->a1",
+              "cycle": [
+                "edgea",
+                "a2",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->edgeb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostc",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "edgeb->b1",
+              "cycle": [
+                "edgeb",
+                "b2",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "edgeb->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "edgeb->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "mid->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "mid->edgeb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "mid->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "mid->hostb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "mid->hostc",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hosta->a1",
+              "cycle": [
+                "edgea",
+                "a2",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->edgeb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostb",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostc",
+              "cycle": [
+                "mid",
+                "b1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hostb->b1",
+              "cycle": [
+                "edgeb",
+                "b2",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostb->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hostb->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hostc->b1",
+              "cycle": [
+                "edgeb",
+                "b2",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostc->edgea",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            },
+            {
+              "flow_id": "hostc->hosta",
+              "cycle": [
+                "mid",
+                "a1",
+                "mid"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "model_input_sources": [
+      "C:\\Users\\karth\\v4_exploratory2\\manifest.json",
+      "nrl/topologies_v3.py"
+    ],
+    "runtime_artifacts_used_as_model_input": false
+  },
+  {
+    "candidate_id": "EX-V4-04",
+    "topology": "t14_ladder8",
+    "role": "exploratory-paired-cost",
+    "mechanism": "paired-cost",
+    "target": [
+      [
+        "edgeb",
+        "l3"
+      ],
+      [
+        "l1",
+        "l2"
+      ]
+    ],
+    "predeployment_features": {
+      "r_exact": 0.581818,
+      "r_broken_exact": 0.0,
+      "r_rerouted_exact": 0.581818,
+      "n_fib_entries_changed": 29,
+      "n_routers_changed": 8,
+      "pml_flow_frac": 0.4909090909090909,
+      "n_devices_pushed": 4,
+      "n_config_commands": 8,
+      "n_routers": 8,
+      "n_endpoints": 11,
+      "changed_link_betweenness": 0.8545454545454545,
+      "golden_mean_path_len": 2.272727272727273,
+      "n_flows_carried_pred": 110
+    },
+    "mechanistic_features": {
+      "operations": [
+        {
+          "node": "edgeb",
+          "interface": "eth3",
+          "neighbor": "l3",
+          "new_cost": 200,
+          "command": "ip ospf cost 200"
+        },
+        {
+          "node": "l1",
+          "interface": "eth2",
+          "neighbor": "l2",
+          "new_cost": 200,
+          "command": "ip ospf cost 200"
+        },
+        {
+          "node": "l2",
+          "interface": "eth1",
+          "neighbor": "l1",
+          "new_cost": 200,
+          "command": "ip ospf cost 200"
+        },
+        {
+          "node": "l3",
+          "interface": "eth2",
+          "neighbor": "edgeb",
+          "new_cost": 200,
+          "command": "ip ospf cost 200"
+        }
+      ],
+      "n_operations": 4,
+      "n_intermediate_states": 4,
+      "cycle_state_count": 0,
+      "max_cycle_flow_fraction": 0.0,
+      "max_cycle_flow_count": 0,
+      "max_cycle_length": 0,
+      "total_cycle_flow_state_exposure": 0,
+      "max_no_path_flow_count": 0,
+      "stages": [
+        {
+          "index": 1,
+          "operation": {
+            "node": "edgeb",
+            "interface": "eth3",
+            "neighbor": "l3",
+            "new_cost": 200,
+            "command": "ip ospf cost 200"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 2,
+          "operation": {
+            "node": "l1",
+            "interface": "eth2",
+            "neighbor": "l2",
+            "new_cost": 200,
+            "command": "ip ospf cost 200"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 3,
+          "operation": {
+            "node": "l2",
+            "interface": "eth1",
+            "neighbor": "l1",
+            "new_cost": 200,
+            "command": "ip ospf cost 200"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 4,
+          "operation": {
+            "node": "l3",
+            "interface": "eth2",
+            "neighbor": "edgeb",
+            "new_cost": 200,
+            "command": "ip ospf cost 200"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        }
+      ]
+    },
+    "hybrid_features": {
+      "hybrid_cycle_state_count": 4,
+      "hybrid_max_cycle_flow_count": 46,
+      "hybrid_max_cycle_flow_fraction": 0.45098039215686275,
+      "hybrid_stages": [
+        {
+          "stage": 0,
+          "active_routers": [],
+          "cycle_flows": []
+        },
+        {
+          "stage": 1,
+          "active_routers": [
+            "edgeb"
+          ],
+          "cycle_flows": [
+            {
+              "flow_id": "edgeb->edgea",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "edgeb->l1",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "edgeb->l2",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "edgeb->l3",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "edgeb->hosta",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "r3->edgea",
+              "cycle": [
+                "r3",
+                "edgeb",
+                "r3"
+              ]
+            },
+            {
+              "flow_id": "r3->l1",
+              "cycle": [
+                "r3",
+                "edgeb",
+                "r3"
+              ]
+            },
+            {
+              "flow_id": "r3->l2",
+              "cycle": [
+                "r3",
+                "edgeb",
+                "r3"
+              ]
+            },
+            {
+              "flow_id": "r3->l3",
+              "cycle": [
+                "r3",
+                "edgeb",
+                "r3"
+              ]
+            },
+            {
+              "flow_id": "r3->hosta",
+              "cycle": [
+                "r3",
+                "edgeb",
+                "r3"
+              ]
+            },
+            {
+              "flow_id": "hostb->edgea",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostb->l1",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostb->l2",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostb->l3",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostb->hosta",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostc->edgea",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostc->l1",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostc->l2",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostc->l3",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostc->hosta",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": 2,
+          "active_routers": [
+            "edgeb",
+            "l1"
+          ],
+          "cycle_flows": [
+            {
+              "flow_id": "edgea->edgeb",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->l2",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->l3",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->r3",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostb",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostc",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgeb->edgea",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "edgeb->l1",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "edgeb->l2",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "edgeb->l3",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "edgeb->hosta",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "l1->edgeb",
+              "cycle": [
+                "l1",
+                "edgea",
+                "l1"
+              ]
+            },
+            {
+              "flow_id": "l1->l2",
+              "cycle": [
+                "l1",
+                "edgea",
+                "l1"
+              ]
+            },
+            {
+              "flow_id": "l1->l3",
+              "cycle": [
+                "l1",
+                "edgea",
+                "l1"
+              ]
+            },
+            {
+              "flow_id": "l1->r3",
+              "cycle": [
+                "l1",
+                "edgea",
+                "l1"
+              ]
+            },
+            {
+              "flow_id": "l1->hostb",
+              "cycle": [
+                "l1",
+                "edgea",
+                "l1"
+              ]
+            },
+            {
+              "flow_id": "l1->hostc",
+              "cycle": [
+                "l1",
+                "edgea",
+                "l1"
+              ]
+            },
+            {
+              "flow_id": "r1->edgeb",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "r1->l2",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "r1->l3",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "r1->hostb",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "r1->hostc",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "r3->edgea",
+              "cycle": [
+                "r3",
+                "edgeb",
+                "r3"
+              ]
+            },
+            {
+              "flow_id": "r3->l1",
+              "cycle": [
+                "r3",
+                "edgeb",
+                "r3"
+              ]
+            },
+            {
+              "flow_id": "r3->l2",
+              "cycle": [
+                "r3",
+                "edgeb",
+                "r3"
+              ]
+            },
+            {
+              "flow_id": "r3->l3",
+              "cycle": [
+                "r3",
+                "edgeb",
+                "r3"
+              ]
+            },
+            {
+              "flow_id": "r3->hosta",
+              "cycle": [
+                "r3",
+                "edgeb",
+                "r3"
+              ]
+            },
+            {
+              "flow_id": "hosta->edgeb",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->l2",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->l3",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->r3",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostb",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostc",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hostb->edgea",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostb->l1",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostb->l2",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostb->l3",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostb->hosta",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostc->edgea",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostc->l1",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostc->l2",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostc->l3",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostc->hosta",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": 3,
+          "active_routers": [
+            "edgeb",
+            "l1",
+            "l2"
+          ],
+          "cycle_flows": [
+            {
+              "flow_id": "edgea->edgeb",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->l2",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->l3",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->r3",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostb",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostc",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgeb->edgea",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "edgeb->l1",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "edgeb->l2",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "edgeb->l3",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "edgeb->hosta",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "l1->edgeb",
+              "cycle": [
+                "l1",
+                "edgea",
+                "l1"
+              ]
+            },
+            {
+              "flow_id": "l1->l2",
+              "cycle": [
+                "l1",
+                "edgea",
+                "l1"
+              ]
+            },
+            {
+              "flow_id": "l1->l3",
+              "cycle": [
+                "l1",
+                "edgea",
+                "l1"
+              ]
+            },
+            {
+              "flow_id": "l1->r3",
+              "cycle": [
+                "l1",
+                "edgea",
+                "l1"
+              ]
+            },
+            {
+              "flow_id": "l1->hostb",
+              "cycle": [
+                "l1",
+                "edgea",
+                "l1"
+              ]
+            },
+            {
+              "flow_id": "l1->hostc",
+              "cycle": [
+                "l1",
+                "edgea",
+                "l1"
+              ]
+            },
+            {
+              "flow_id": "l2->l1",
+              "cycle": [
+                "l2",
+                "r2",
+                "l2"
+              ]
+            },
+            {
+              "flow_id": "l3->l1",
+              "cycle": [
+                "l2",
+                "r2",
+                "l2"
+              ]
+            },
+            {
+              "flow_id": "r1->edgeb",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "r1->l2",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "r1->l3",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "r1->hostb",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "r1->hostc",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "r2->l1",
+              "cycle": [
+                "r2",
+                "l2",
+                "r2"
+              ]
+            },
+            {
+              "flow_id": "r3->edgea",
+              "cycle": [
+                "r3",
+                "edgeb",
+                "r3"
+              ]
+            },
+            {
+              "flow_id": "r3->l1",
+              "cycle": [
+                "r3",
+                "edgeb",
+                "r3"
+              ]
+            },
+            {
+              "flow_id": "r3->l2",
+              "cycle": [
+                "r3",
+                "edgeb",
+                "r3"
+              ]
+            },
+            {
+              "flow_id": "r3->l3",
+              "cycle": [
+                "r3",
+                "edgeb",
+                "r3"
+              ]
+            },
+            {
+              "flow_id": "r3->hosta",
+              "cycle": [
+                "r3",
+                "edgeb",
+                "r3"
+              ]
+            },
+            {
+              "flow_id": "hosta->edgeb",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->l2",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->l3",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->r3",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostb",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostc",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hostb->edgea",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostb->l1",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostb->l2",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostb->l3",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostb->hosta",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostc->edgea",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostc->l1",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostc->l2",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostc->l3",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostc->hosta",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": 4,
+          "active_routers": [
+            "edgeb",
+            "l1",
+            "l2",
+            "l3"
+          ],
+          "cycle_flows": [
+            {
+              "flow_id": "edgea->edgeb",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->l2",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->l3",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->r3",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostb",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostc",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "edgeb->edgea",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "edgeb->l1",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "edgeb->l2",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "edgeb->l3",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "edgeb->hosta",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "l1->edgeb",
+              "cycle": [
+                "l1",
+                "edgea",
+                "l1"
+              ]
+            },
+            {
+              "flow_id": "l1->l2",
+              "cycle": [
+                "l1",
+                "edgea",
+                "l1"
+              ]
+            },
+            {
+              "flow_id": "l1->l3",
+              "cycle": [
+                "l1",
+                "edgea",
+                "l1"
+              ]
+            },
+            {
+              "flow_id": "l1->r3",
+              "cycle": [
+                "l1",
+                "edgea",
+                "l1"
+              ]
+            },
+            {
+              "flow_id": "l1->hostb",
+              "cycle": [
+                "l1",
+                "edgea",
+                "l1"
+              ]
+            },
+            {
+              "flow_id": "l1->hostc",
+              "cycle": [
+                "l1",
+                "edgea",
+                "l1"
+              ]
+            },
+            {
+              "flow_id": "l2->l1",
+              "cycle": [
+                "l2",
+                "r2",
+                "l2"
+              ]
+            },
+            {
+              "flow_id": "l3->l1",
+              "cycle": [
+                "l2",
+                "r2",
+                "l2"
+              ]
+            },
+            {
+              "flow_id": "r1->edgeb",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "r1->l2",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "r1->l3",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "r1->hostb",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "r1->hostc",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "r2->l1",
+              "cycle": [
+                "r2",
+                "l2",
+                "r2"
+              ]
+            },
+            {
+              "flow_id": "r3->edgea",
+              "cycle": [
+                "r3",
+                "edgeb",
+                "r3"
+              ]
+            },
+            {
+              "flow_id": "r3->l1",
+              "cycle": [
+                "r3",
+                "edgeb",
+                "r3"
+              ]
+            },
+            {
+              "flow_id": "r3->l2",
+              "cycle": [
+                "r3",
+                "edgeb",
+                "r3"
+              ]
+            },
+            {
+              "flow_id": "r3->l3",
+              "cycle": [
+                "r3",
+                "edgeb",
+                "r3"
+              ]
+            },
+            {
+              "flow_id": "r3->hosta",
+              "cycle": [
+                "r3",
+                "edgeb",
+                "r3"
+              ]
+            },
+            {
+              "flow_id": "hosta->edgeb",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->l2",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->l3",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->r3",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostb",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostc",
+              "cycle": [
+                "edgea",
+                "l1",
+                "edgea"
+              ]
+            },
+            {
+              "flow_id": "hostb->edgea",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostb->l1",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostb->l2",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostb->l3",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostb->hosta",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostc->edgea",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostc->l1",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostc->l2",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostc->l3",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            },
+            {
+              "flow_id": "hostc->hosta",
+              "cycle": [
+                "edgeb",
+                "r3",
+                "edgeb"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "model_input_sources": [
+      "C:\\Users\\karth\\v4_exploratory2\\manifest.json",
+      "nrl/topologies_v3.py"
+    ],
+    "runtime_artifacts_used_as_model_input": false
+  },
+  {
+    "candidate_id": "EX-V4-05",
+    "topology": "t15_campus12",
+    "role": "exploratory-paired-cost",
+    "mechanism": "paired-cost",
+    "target": [
+      [
+        "corea",
+        "dista1"
+      ],
+      [
+        "coreb",
+        "distb1"
+      ]
+    ],
+    "predeployment_features": {
+      "r_exact": 0.619048,
+      "r_broken_exact": 0.0,
+      "r_rerouted_exact": 0.619048,
+      "n_fib_entries_changed": 54,
+      "n_routers_changed": 10,
+      "pml_flow_frac": 0.5523809523809524,
+      "n_devices_pushed": 4,
+      "n_config_commands": 8,
+      "n_routers": 12,
+      "n_endpoints": 15,
+      "changed_link_betweenness": 0.8095238095238095,
+      "golden_mean_path_len": 3.276190476190476,
+      "n_flows_carried_pred": 210
+    },
+    "mechanistic_features": {
+      "operations": [
+        {
+          "node": "corea",
+          "interface": "eth1",
+          "neighbor": "dista1",
+          "new_cost": 200,
+          "command": "ip ospf cost 200"
+        },
+        {
+          "node": "coreb",
+          "interface": "eth2",
+          "neighbor": "distb1",
+          "new_cost": 200,
+          "command": "ip ospf cost 200"
+        },
+        {
+          "node": "dista1",
+          "interface": "eth2",
+          "neighbor": "corea",
+          "new_cost": 200,
+          "command": "ip ospf cost 200"
+        },
+        {
+          "node": "distb1",
+          "interface": "eth1",
+          "neighbor": "coreb",
+          "new_cost": 200,
+          "command": "ip ospf cost 200"
+        }
+      ],
+      "n_operations": 4,
+      "n_intermediate_states": 4,
+      "cycle_state_count": 0,
+      "max_cycle_flow_fraction": 0.0,
+      "max_cycle_flow_count": 0,
+      "max_cycle_length": 0,
+      "total_cycle_flow_state_exposure": 0,
+      "max_no_path_flow_count": 0,
+      "stages": [
+        {
+          "index": 1,
+          "operation": {
+            "node": "corea",
+            "interface": "eth1",
+            "neighbor": "dista1",
+            "new_cost": 200,
+            "command": "ip ospf cost 200"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 2,
+          "operation": {
+            "node": "coreb",
+            "interface": "eth2",
+            "neighbor": "distb1",
+            "new_cost": 200,
+            "command": "ip ospf cost 200"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 3,
+          "operation": {
+            "node": "dista1",
+            "interface": "eth2",
+            "neighbor": "corea",
+            "new_cost": 200,
+            "command": "ip ospf cost 200"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        },
+        {
+          "index": 4,
+          "operation": {
+            "node": "distb1",
+            "interface": "eth1",
+            "neighbor": "coreb",
+            "new_cost": 200,
+            "command": "ip ospf cost 200"
+          },
+          "cycle_flow_count": 0,
+          "cycle_flow_fraction": 0.0,
+          "distinct_cycle_lengths": [],
+          "max_cycle_length": 0,
+          "no_path_flow_count": 0,
+          "cycle_flows": []
+        }
+      ]
+    },
+    "hybrid_features": {
+      "hybrid_cycle_state_count": 4,
+      "hybrid_max_cycle_flow_count": 116,
+      "hybrid_max_cycle_flow_fraction": 0.5742574257425742,
+      "hybrid_stages": [
+        {
+          "stage": 0,
+          "active_routers": [],
+          "cycle_flows": []
+        },
+        {
+          "stage": 1,
+          "active_routers": [
+            "corea"
+          ],
+          "cycle_flows": [
+            {
+              "flow_id": "acca2->dista1",
+              "cycle": [
+                "dista2",
+                "corea",
+                "dista2"
+              ]
+            },
+            {
+              "flow_id": "accb1->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "accb2->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "corea->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "coreb->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "dista2->dista1",
+              "cycle": [
+                "dista2",
+                "corea",
+                "dista2"
+              ]
+            },
+            {
+              "flow_id": "distb1->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "distb2->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "edgeb->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "hostb->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "hostc->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": 2,
+          "active_routers": [
+            "corea",
+            "coreb"
+          ],
+          "cycle_flows": [
+            {
+              "flow_id": "acca1->accb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "acca1->distb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "acca1->edgeb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "acca1->hostb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "acca1->hostc",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "acca2->accb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "acca2->dista1",
+              "cycle": [
+                "dista2",
+                "corea",
+                "dista2"
+              ]
+            },
+            {
+              "flow_id": "acca2->distb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "acca2->edgeb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "acca2->hostb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "acca2->hostc",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "accb1->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "accb2->accb1",
+              "cycle": [
+                "distb2",
+                "coreb",
+                "distb2"
+              ]
+            },
+            {
+              "flow_id": "accb2->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "accb2->distb1",
+              "cycle": [
+                "distb2",
+                "coreb",
+                "distb2"
+              ]
+            },
+            {
+              "flow_id": "corea->accb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "corea->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "corea->distb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "corea->edgeb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "corea->hostb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "corea->hostc",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "coreb->accb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "coreb->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "coreb->distb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "coreb->edgeb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "coreb->hostb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "coreb->hostc",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "dista1->accb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "dista1->distb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "dista1->edgeb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "dista1->hostb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "dista1->hostc",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "dista2->accb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "dista2->dista1",
+              "cycle": [
+                "dista2",
+                "corea",
+                "dista2"
+              ]
+            },
+            {
+              "flow_id": "dista2->distb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "dista2->edgeb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "dista2->hostb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "dista2->hostc",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "distb1->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "distb2->accb1",
+              "cycle": [
+                "distb2",
+                "coreb",
+                "distb2"
+              ]
+            },
+            {
+              "flow_id": "distb2->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "distb2->distb1",
+              "cycle": [
+                "distb2",
+                "coreb",
+                "distb2"
+              ]
+            },
+            {
+              "flow_id": "distb2->edgeb",
+              "cycle": [
+                "distb2",
+                "coreb",
+                "distb2"
+              ]
+            },
+            {
+              "flow_id": "distb2->hostb",
+              "cycle": [
+                "distb2",
+                "coreb",
+                "distb2"
+              ]
+            },
+            {
+              "flow_id": "distb2->hostc",
+              "cycle": [
+                "distb2",
+                "coreb",
+                "distb2"
+              ]
+            },
+            {
+              "flow_id": "edgea->accb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "edgea->distb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "edgea->edgeb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostc",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "edgeb->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "hosta->accb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "hosta->distb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "hosta->edgeb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostc",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "hostb->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "hostc->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": 3,
+          "active_routers": [
+            "corea",
+            "coreb",
+            "dista1"
+          ],
+          "cycle_flows": [
+            {
+              "flow_id": "acca1->accb1",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "acca1->accb2",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "acca1->corea",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "acca1->coreb",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "acca1->distb1",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "acca1->distb2",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "acca1->edgeb",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "acca1->hostb",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "acca1->hostc",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "acca2->accb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "acca2->dista1",
+              "cycle": [
+                "dista2",
+                "corea",
+                "dista2"
+              ]
+            },
+            {
+              "flow_id": "acca2->distb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "acca2->edgeb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "acca2->hostb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "acca2->hostc",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "accb1->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "accb2->accb1",
+              "cycle": [
+                "distb2",
+                "coreb",
+                "distb2"
+              ]
+            },
+            {
+              "flow_id": "accb2->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "accb2->distb1",
+              "cycle": [
+                "distb2",
+                "coreb",
+                "distb2"
+              ]
+            },
+            {
+              "flow_id": "corea->accb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "corea->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "corea->distb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "corea->edgeb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "corea->hostb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "corea->hostc",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "coreb->accb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "coreb->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "coreb->distb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "coreb->edgeb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "coreb->hostb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "coreb->hostc",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "dista1->accb1",
+              "cycle": [
+                "dista1",
+                "acca1",
+                "dista1"
+              ]
+            },
+            {
+              "flow_id": "dista1->accb2",
+              "cycle": [
+                "dista1",
+                "acca1",
+                "dista1"
+              ]
+            },
+            {
+              "flow_id": "dista1->corea",
+              "cycle": [
+                "dista1",
+                "acca1",
+                "dista1"
+              ]
+            },
+            {
+              "flow_id": "dista1->coreb",
+              "cycle": [
+                "dista1",
+                "acca1",
+                "dista1"
+              ]
+            },
+            {
+              "flow_id": "dista1->distb1",
+              "cycle": [
+                "dista1",
+                "acca1",
+                "dista1"
+              ]
+            },
+            {
+              "flow_id": "dista1->distb2",
+              "cycle": [
+                "dista1",
+                "acca1",
+                "dista1"
+              ]
+            },
+            {
+              "flow_id": "dista1->edgeb",
+              "cycle": [
+                "dista1",
+                "acca1",
+                "dista1"
+              ]
+            },
+            {
+              "flow_id": "dista1->hostb",
+              "cycle": [
+                "dista1",
+                "acca1",
+                "dista1"
+              ]
+            },
+            {
+              "flow_id": "dista1->hostc",
+              "cycle": [
+                "dista1",
+                "acca1",
+                "dista1"
+              ]
+            },
+            {
+              "flow_id": "dista2->accb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "dista2->dista1",
+              "cycle": [
+                "dista2",
+                "corea",
+                "dista2"
+              ]
+            },
+            {
+              "flow_id": "dista2->distb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "dista2->edgeb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "dista2->hostb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "dista2->hostc",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "distb1->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "distb2->accb1",
+              "cycle": [
+                "distb2",
+                "coreb",
+                "distb2"
+              ]
+            },
+            {
+              "flow_id": "distb2->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "distb2->distb1",
+              "cycle": [
+                "distb2",
+                "coreb",
+                "distb2"
+              ]
+            },
+            {
+              "flow_id": "distb2->edgeb",
+              "cycle": [
+                "distb2",
+                "coreb",
+                "distb2"
+              ]
+            },
+            {
+              "flow_id": "distb2->hostb",
+              "cycle": [
+                "distb2",
+                "coreb",
+                "distb2"
+              ]
+            },
+            {
+              "flow_id": "distb2->hostc",
+              "cycle": [
+                "distb2",
+                "coreb",
+                "distb2"
+              ]
+            },
+            {
+              "flow_id": "edgea->accb1",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "edgea->accb2",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "edgea->corea",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "edgea->coreb",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "edgea->distb1",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "edgea->distb2",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "edgea->edgeb",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostb",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostc",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "edgeb->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "hosta->accb1",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "hosta->accb2",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "hosta->corea",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "hosta->coreb",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "hosta->distb1",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "hosta->distb2",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "hosta->edgeb",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostb",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostc",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "hostb->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "hostc->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": 4,
+          "active_routers": [
+            "corea",
+            "coreb",
+            "dista1",
+            "distb1"
+          ],
+          "cycle_flows": [
+            {
+              "flow_id": "acca1->accb1",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "acca1->accb2",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "acca1->corea",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "acca1->coreb",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "acca1->distb1",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "acca1->distb2",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "acca1->edgeb",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "acca1->hostb",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "acca1->hostc",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "acca2->accb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "acca2->dista1",
+              "cycle": [
+                "dista2",
+                "corea",
+                "dista2"
+              ]
+            },
+            {
+              "flow_id": "acca2->distb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "acca2->edgeb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "acca2->hostb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "acca2->hostc",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "accb1->acca1",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "accb1->acca2",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "accb1->accb2",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "accb1->corea",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "accb1->coreb",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "accb1->dista1",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "accb1->dista2",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "accb1->distb2",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "accb1->edgea",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "accb1->hosta",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "accb2->accb1",
+              "cycle": [
+                "distb2",
+                "coreb",
+                "distb2"
+              ]
+            },
+            {
+              "flow_id": "accb2->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "accb2->distb1",
+              "cycle": [
+                "distb2",
+                "coreb",
+                "distb2"
+              ]
+            },
+            {
+              "flow_id": "corea->accb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "corea->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "corea->distb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "corea->edgeb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "corea->hostb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "corea->hostc",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "coreb->accb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "coreb->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "coreb->distb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "coreb->edgeb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "coreb->hostb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "coreb->hostc",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "dista1->accb1",
+              "cycle": [
+                "dista1",
+                "acca1",
+                "dista1"
+              ]
+            },
+            {
+              "flow_id": "dista1->accb2",
+              "cycle": [
+                "dista1",
+                "acca1",
+                "dista1"
+              ]
+            },
+            {
+              "flow_id": "dista1->corea",
+              "cycle": [
+                "dista1",
+                "acca1",
+                "dista1"
+              ]
+            },
+            {
+              "flow_id": "dista1->coreb",
+              "cycle": [
+                "dista1",
+                "acca1",
+                "dista1"
+              ]
+            },
+            {
+              "flow_id": "dista1->distb1",
+              "cycle": [
+                "dista1",
+                "acca1",
+                "dista1"
+              ]
+            },
+            {
+              "flow_id": "dista1->distb2",
+              "cycle": [
+                "dista1",
+                "acca1",
+                "dista1"
+              ]
+            },
+            {
+              "flow_id": "dista1->edgeb",
+              "cycle": [
+                "dista1",
+                "acca1",
+                "dista1"
+              ]
+            },
+            {
+              "flow_id": "dista1->hostb",
+              "cycle": [
+                "dista1",
+                "acca1",
+                "dista1"
+              ]
+            },
+            {
+              "flow_id": "dista1->hostc",
+              "cycle": [
+                "dista1",
+                "acca1",
+                "dista1"
+              ]
+            },
+            {
+              "flow_id": "dista2->accb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "dista2->dista1",
+              "cycle": [
+                "dista2",
+                "corea",
+                "dista2"
+              ]
+            },
+            {
+              "flow_id": "dista2->distb1",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "dista2->edgeb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "dista2->hostb",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "dista2->hostc",
+              "cycle": [
+                "coreb",
+                "distb2",
+                "coreb"
+              ]
+            },
+            {
+              "flow_id": "distb1->acca1",
+              "cycle": [
+                "distb1",
+                "accb1",
+                "distb1"
+              ]
+            },
+            {
+              "flow_id": "distb1->acca2",
+              "cycle": [
+                "distb1",
+                "accb1",
+                "distb1"
+              ]
+            },
+            {
+              "flow_id": "distb1->accb2",
+              "cycle": [
+                "distb1",
+                "accb1",
+                "distb1"
+              ]
+            },
+            {
+              "flow_id": "distb1->corea",
+              "cycle": [
+                "distb1",
+                "accb1",
+                "distb1"
+              ]
+            },
+            {
+              "flow_id": "distb1->coreb",
+              "cycle": [
+                "distb1",
+                "accb1",
+                "distb1"
+              ]
+            },
+            {
+              "flow_id": "distb1->dista1",
+              "cycle": [
+                "distb1",
+                "accb1",
+                "distb1"
+              ]
+            },
+            {
+              "flow_id": "distb1->dista2",
+              "cycle": [
+                "distb1",
+                "accb1",
+                "distb1"
+              ]
+            },
+            {
+              "flow_id": "distb1->distb2",
+              "cycle": [
+                "distb1",
+                "accb1",
+                "distb1"
+              ]
+            },
+            {
+              "flow_id": "distb1->edgea",
+              "cycle": [
+                "distb1",
+                "accb1",
+                "distb1"
+              ]
+            },
+            {
+              "flow_id": "distb1->hosta",
+              "cycle": [
+                "distb1",
+                "accb1",
+                "distb1"
+              ]
+            },
+            {
+              "flow_id": "distb2->accb1",
+              "cycle": [
+                "distb2",
+                "coreb",
+                "distb2"
+              ]
+            },
+            {
+              "flow_id": "distb2->dista1",
+              "cycle": [
+                "corea",
+                "dista2",
+                "corea"
+              ]
+            },
+            {
+              "flow_id": "distb2->distb1",
+              "cycle": [
+                "distb2",
+                "coreb",
+                "distb2"
+              ]
+            },
+            {
+              "flow_id": "distb2->edgeb",
+              "cycle": [
+                "distb2",
+                "coreb",
+                "distb2"
+              ]
+            },
+            {
+              "flow_id": "distb2->hostb",
+              "cycle": [
+                "distb2",
+                "coreb",
+                "distb2"
+              ]
+            },
+            {
+              "flow_id": "distb2->hostc",
+              "cycle": [
+                "distb2",
+                "coreb",
+                "distb2"
+              ]
+            },
+            {
+              "flow_id": "edgea->accb1",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "edgea->accb2",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "edgea->corea",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "edgea->coreb",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "edgea->distb1",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "edgea->distb2",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "edgea->edgeb",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostb",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "edgea->hostc",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "edgeb->acca1",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "edgeb->acca2",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "edgeb->corea",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "edgeb->coreb",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "edgeb->dista1",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "edgeb->dista2",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "edgeb->distb2",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "edgeb->edgea",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "edgeb->hosta",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "hosta->accb1",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "hosta->accb2",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "hosta->corea",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "hosta->coreb",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "hosta->distb1",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "hosta->distb2",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "hosta->edgeb",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostb",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "hosta->hostc",
+              "cycle": [
+                "acca1",
+                "dista1",
+                "acca1"
+              ]
+            },
+            {
+              "flow_id": "hostb->acca1",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "hostb->acca2",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "hostb->corea",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "hostb->coreb",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "hostb->dista1",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "hostb->dista2",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "hostb->distb2",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "hostb->edgea",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "hostb->hosta",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "hostc->acca1",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "hostc->acca2",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "hostc->corea",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "hostc->coreb",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "hostc->dista1",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "hostc->dista2",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "hostc->distb2",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "hostc->edgea",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            },
+            {
+              "flow_id": "hostc->hosta",
+              "cycle": [
+                "accb1",
+                "distb1",
+                "accb1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "model_input_sources": [
+      "C:\\Users\\karth\\v4_exploratory2\\manifest.json",
+      "nrl/topologies_v3.py"
+    ],
+    "runtime_artifacts_used_as_model_input": false
+  }
+]

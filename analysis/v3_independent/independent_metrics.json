@@ -1,0 +1,53 @@
+{
+  "n": 151,
+  "mae": 1.968211920529911e-05,
+  "rmse": 2.416307730062188e-05,
+  "pearson": 0.9999999838830583,
+  "spearman": 1.0,
+  "max_abs_error": 4.700000000000537e-05,
+  "mae_threshold_0_10_pass": true,
+  "target": {
+    "distinct": 91,
+    "zero_fraction": 0.09271523178807947,
+    "min": 0.0,
+    "max": 0.447619,
+    "mean": 0.11624544370860926,
+    "median": 0.058333,
+    "quantiles": {
+      "0": 0.0,
+      "0.25": 0.025,
+      "0.5": 0.058333,
+      "0.75": 0.158333,
+      "1": 0.447619
+    }
+  },
+  "cross_file_counts": {
+    "summary": 180,
+    "measurements": 2160,
+    "deltas": 1812,
+    "outcomes": 151,
+    "summary_status": {
+      "OK": 180
+    },
+    "summary_kind": {
+      "candidate": 151,
+      "incident": 12,
+      "golden_replicate": 5,
+      "golden": 12
+    },
+    "outcome_status": {
+      "HARMFUL": 48,
+      "SAFE": 101,
+      "UNDETERMINED": 2
+    },
+    "measurement_rows_per_run": {
+      "12": 180
+    },
+    "delta_rows_per_candidate": {
+      "12": 151
+    },
+    "unique_summary_ids": 180,
+    "unique_outcome_ids": 151,
+    "unique_delta_ids": 151
+  }
+}

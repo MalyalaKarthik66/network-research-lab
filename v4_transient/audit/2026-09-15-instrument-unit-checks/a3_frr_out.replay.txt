@@ -1,0 +1,20 @@
+{
+ "monitor_error_lines": [],
+ "n_route_events": 3,
+ "n_link_events": 4,
+ "n_nexthop_events": 1,
+ "intermediate_checks": 3,
+ "intermediate_skipped": 0,
+ "intermediate_mismatches": [],
+ "nhg_silent_changes": [],
+ "final_match": true,
+ "final_view_prefixes": {
+  "10.255.0.1/32": [
+   "blackhole"
+  ],
+  "10.9.1.0/30": [
+   "linkdown"
+  ]
+ }
+}
+A3 INSTRUMENT CHECK: PASS

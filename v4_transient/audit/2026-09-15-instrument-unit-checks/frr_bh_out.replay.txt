@@ -1,0 +1,5 @@
+parsed monitor events: 1
+    ADD blackhole 10.255.0.1/32 [] 196
+SNAPSHOT after blackhole, as the walker sees it:
+    10.255.0.1/32 blackhole [{'blackhole': True}] selected
+replayed final == final snapshot: True

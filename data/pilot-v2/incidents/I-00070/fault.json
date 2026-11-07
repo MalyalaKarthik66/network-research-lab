@@ -1,0 +1,15 @@
+{
+  "incident_id": "I-00070",
+  "topology": "t07_tier7",
+  "fault_id": "F0010",
+  "fault_family": "static_route_loop",
+  "fault_description": "[t07_tier7] edgeb installs 10.20.0.10/32 pointing back upstream at aggb",
+  "fault_params": {
+    "node": "edgeb",
+    "prefix": "10.20.0.10/32",
+    "nexthop": "10.17.5.1",
+    "loop_with": "aggb",
+    "topology": "t07_tier7"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

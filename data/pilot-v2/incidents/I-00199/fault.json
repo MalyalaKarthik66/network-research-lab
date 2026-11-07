@@ -1,0 +1,14 @@
+{
+  "incident_id": "I-00199",
+  "topology": "t20_leafspine12",
+  "fault_id": "F0009",
+  "fault_family": "static_wrong_nexthop",
+  "fault_description": "[t20_leafspine12] agga sends 10.20.0.0/24 to 10.30.13.1, off the shortest path",
+  "fault_params": {
+    "node": "agga",
+    "prefix": "10.20.0.0/24",
+    "nexthop": "10.30.13.1",
+    "topology": "t20_leafspine12"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

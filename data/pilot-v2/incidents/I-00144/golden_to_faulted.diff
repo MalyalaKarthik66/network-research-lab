@@ -1,0 +1,10 @@
+--- golden-t15_campus12
++++ I-00144
+@@ -871,6 +871,7 @@
+  ospf router-id 10.255.0.1
+  passive-interface lo
+  passive-interface eth1
++ passive-interface eth2
+ !
+ line vty
+ !

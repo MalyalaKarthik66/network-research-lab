@@ -1,0 +1,20 @@
+{
+  "incident_id": "I-00112",
+  "topology": "t12_campus8",
+  "fault_id": "F0002",
+  "fault_family": "iface_wrong_addr",
+  "fault_description": "[t12_campus8] edgea eth2 renumbered off the shared /30",
+  "fault_params": {
+    "node": "edgea",
+    "iface": "eth2",
+    "bad": "10.200.0.2/30",
+    "good": "10.22.1.1/30",
+    "peer": "dista",
+    "peer_iface": "eth1",
+    "link": "accA",
+    "peer_align": "10.200.0.1/30",
+    "good_cost": 10,
+    "topology": "t12_campus8"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

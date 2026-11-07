@@ -1,0 +1,11 @@
+[2026-09-14T13:38:46.076736] 10.15.3.0/30 nhid 35 via 10.15.5.2 dev eth3 proto ospf metric 20 
+[2026-09-14T13:38:46.076791] 10.15.4.0/30 nhid 35 via 10.15.5.2 dev eth3 proto ospf metric 20 
+[2026-09-14T13:38:46.076798] 10.15.6.0/30 nhid 35 via 10.15.5.2 dev eth3 proto ospf metric 20 
+[2026-09-14T13:38:46.076804] 10.20.0.0/24 nhid 35 via 10.15.5.2 dev eth3 proto ospf metric 20 
+[2026-09-14T13:38:46.076810] 10.21.0.0/24 nhid 35 via 10.15.5.2 dev eth3 proto ospf metric 20 
+[2026-09-14T13:38:46.076815] 10.255.0.3 nhid 35 via 10.15.5.2 dev eth3 proto ospf metric 20 
+[2026-09-14T13:38:46.076820] 10.255.0.4 nhid 35 via 10.15.5.2 dev eth3 proto ospf metric 20 
+[2026-09-14T13:38:46.076825] 10.255.0.5 nhid 35 via 10.15.5.2 dev eth3 proto ospf metric 20 
+[2026-09-14T13:38:46.241887] 10.15.3.0/30 nhid 34 via 10.15.2.2 dev eth2 proto ospf metric 20 
+[2026-09-14T13:38:46.241903] 10.255.0.3 nhid 34 via 10.15.2.2 dev eth2 proto ospf metric 20 
+[2026-09-14T13:38:54.424800] 10.15.3.0/30 nhid 35 via 10.15.5.2 dev eth3 proto ospf metric 20 

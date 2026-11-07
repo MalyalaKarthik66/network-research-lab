@@ -1,0 +1,16 @@
+--- I-00084
++++ C-00624
+@@ -228,12 +228,12 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 200
+  ip ospf network point-to-point
++ shutdown
+ !
+ router ospf
+  ospf router-id 10.255.0.1
+  passive-interface lo
+  passive-interface eth1
+- passive-interface eth2
+ !
+ line vty
+ !

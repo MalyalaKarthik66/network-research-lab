@@ -1,0 +1,14 @@
+{
+  "incident_id": "I-00189",
+  "topology": "t19_dualcore16",
+  "fault_id": "F0009",
+  "fault_family": "static_wrong_nexthop",
+  "fault_description": "[t19_dualcore16] a1 sends 10.20.0.0/24 to 10.29.2.1, off the shortest path",
+  "fault_params": {
+    "node": "a1",
+    "prefix": "10.20.0.0/24",
+    "nexthop": "10.29.2.1",
+    "topology": "t19_dualcore16"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

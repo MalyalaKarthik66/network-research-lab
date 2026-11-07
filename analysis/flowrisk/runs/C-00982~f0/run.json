@@ -1,0 +1,213 @@
+{
+  "run_id": "C-00982~f0",
+  "lab": "nrlv2-c-00982",
+  "kind": "candidate",
+  "attempt": 1,
+  "started_utc": "2026-09-12T08:22:34Z",
+  "status": "LAB_INVALID",
+  "error": "OSPF binding incomplete: l2:eth1 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth2 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth3 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race)",
+  "staging": {
+    "status": "OK",
+    "files_verified": 29,
+    "problems": [],
+    "staged_to": "/root/nrl-flow/C-00982~f0",
+    "error": null
+  },
+  "containers": {
+    "status": "OK",
+    "missing": [],
+    "expected": 11,
+    "found": 11,
+    "error": null
+  },
+  "convergence": {
+    "status": "OK",
+    "converged": true,
+    "seconds": 50.2,
+    "polls": 9,
+    "min_settle_s": 45,
+    "error": null
+  },
+  "transient": {
+    "harm_definition": "1.2.0-signals",
+    "seconds_to_converge": 50.2,
+    "converged": true,
+    "polls": 9,
+    "rib_changes_total": 7,
+    "rib_changes_max_router": 1,
+    "adjacency_flaps_after_full": 0,
+    "probe_polls": 9,
+    "probe_unreachable_polls": 3,
+    "transient_outage_after_reachable": false,
+    "flapped": false
+  },
+  "artifact_runtime_check": {
+    "running_config": {
+      "status": "OK",
+      "routers_checked": 8,
+      "problems": []
+    },
+    "addresses": {
+      "status": "OK",
+      "problems": []
+    },
+    "ospf_binding": {
+      "status": "MISMATCH",
+      "problems": [
+        "l2:eth1 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race)",
+        "l2:eth2 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race)",
+        "l2:eth3 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race)"
+      ]
+    }
+  },
+  "measurements": [
+    {
+      "property_id": "P01",
+      "kind": "reachability",
+      "in_spec": true,
+      "text": "hosta can ping hostb",
+      "status": "ERROR",
+      "holds": null,
+      "error": "OSPF binding incomplete: l2:eth1 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth2 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth3 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race)",
+      "evidence": {},
+      "extra": {},
+      "seconds": 0.0
+    },
+    {
+      "property_id": "P02",
+      "kind": "reachability",
+      "in_spec": true,
+      "text": "hosta can reach hostb on TCP/443",
+      "status": "ERROR",
+      "holds": null,
+      "error": "OSPF binding incomplete: l2:eth1 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth2 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth3 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race)",
+      "evidence": {},
+      "extra": {},
+      "seconds": 0.0
+    },
+    {
+      "property_id": "P05",
+      "kind": "reachability",
+      "in_spec": true,
+      "text": "hostb can ping hosta (return path)",
+      "status": "ERROR",
+      "holds": null,
+      "error": "OSPF binding incomplete: l2:eth1 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth2 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth3 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race)",
+      "evidence": {},
+      "extra": {},
+      "seconds": 0.0
+    },
+    {
+      "property_id": "P07",
+      "kind": "no_loops",
+      "in_spec": true,
+      "text": "no forwarding loops anywhere",
+      "status": "ERROR",
+      "holds": null,
+      "error": "OSPF binding incomplete: l2:eth1 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth2 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth3 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race)",
+      "evidence": {},
+      "extra": {},
+      "seconds": 0.0
+    },
+    {
+      "property_id": "P08",
+      "kind": "ospf_adjacencies",
+      "in_spec": true,
+      "text": "all six OSPF adjacencies are established",
+      "status": "ERROR",
+      "holds": null,
+      "error": "OSPF binding incomplete: l2:eth1 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth2 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth3 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race)",
+      "evidence": {},
+      "extra": {},
+      "seconds": 0.0
+    },
+    {
+      "property_id": "P03",
+      "kind": "reachability",
+      "in_spec": false,
+      "text": "hosta can ping hostc (second site-B LAN)",
+      "status": "ERROR",
+      "holds": null,
+      "error": "OSPF binding incomplete: l2:eth1 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth2 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth3 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race)",
+      "evidence": {},
+      "extra": {},
+      "seconds": 0.0
+    },
+    {
+      "property_id": "P04",
+      "kind": "reachability",
+      "in_spec": false,
+      "text": "hosta can reach hostc on TCP/443",
+      "status": "ERROR",
+      "holds": null,
+      "error": "OSPF binding incomplete: l2:eth1 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth2 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth3 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race)",
+      "evidence": {},
+      "extra": {},
+      "seconds": 0.0
+    },
+    {
+      "property_id": "P06",
+      "kind": "path_contains",
+      "in_spec": false,
+      "text": "hosta->hostb uses the primary WAN, not the backup",
+      "status": "ERROR",
+      "holds": null,
+      "error": "OSPF binding incomplete: l2:eth1 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth2 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth3 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race)",
+      "evidence": {},
+      "extra": {},
+      "seconds": 0.0
+    },
+    {
+      "property_id": "P09",
+      "kind": "route_present",
+      "in_spec": false,
+      "text": "every router has a route to 10.20.0.0/24",
+      "status": "ERROR",
+      "holds": null,
+      "error": "OSPF binding incomplete: l2:eth1 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth2 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth3 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race)",
+      "evidence": {},
+      "extra": {},
+      "seconds": 0.0
+    },
+    {
+      "property_id": "P10",
+      "kind": "route_present",
+      "in_spec": false,
+      "text": "every router has a route to 10.21.0.0/24",
+      "status": "ERROR",
+      "holds": null,
+      "error": "OSPF binding incomplete: l2:eth1 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth2 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth3 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race)",
+      "evidence": {},
+      "extra": {},
+      "seconds": 0.0
+    },
+    {
+      "property_id": "P11",
+      "kind": "reachability",
+      "in_spec": false,
+      "text": "edgea loopback can reach edgeb loopback",
+      "status": "ERROR",
+      "holds": null,
+      "error": "OSPF binding incomplete: l2:eth1 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth2 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth3 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race)",
+      "evidence": {},
+      "extra": {},
+      "seconds": 0.0
+    },
+    {
+      "property_id": "P12",
+      "kind": "no_iface_down",
+      "in_spec": false,
+      "text": "no interface is administratively down",
+      "status": "ERROR",
+      "holds": null,
+      "error": "OSPF binding incomplete: l2:eth1 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth2 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race); l2:eth3 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race)",
+      "evidence": {},
+      "extra": {},
+      "seconds": 0.0
+    }
+  ],
+  "teardown_ok": true,
+  "wall_seconds": 60.0,
+  "finished_utc": "2026-09-12T08:23:34Z",
+  "flowmatrix": {}
+}

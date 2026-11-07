@@ -1,0 +1,2295 @@
+{
+  "pilot": "pilot-v3",
+  "analysis_plan": "docs/ANALYSIS-PLAN-V3.md (frozen 2026-09-12, tag frozen-v3-plan-20260912)",
+  "frozen_tag": "frozen-v3-plan-20260912",
+  "topologies": [
+    "t03_dual8",
+    "t05_ring6",
+    "t06_mesh6",
+    "t09_twin6",
+    "t13_bowtie7",
+    "t14_ladder8",
+    "t15_campus12",
+    "t16_pop14",
+    "t17_metro13",
+    "t18_grid12",
+    "t19_dualcore16",
+    "t20_leafspine12"
+  ],
+  "primary_mechanisms": [
+    "cost",
+    "blackhole"
+  ],
+  "auxiliary_mechanisms_not_built": [
+    "shutdown",
+    "exact"
+  ],
+  "held_out_topologies": [
+    "t01_chain4",
+    "t02_wan6",
+    "t04_star5",
+    "t07_tier7",
+    "t08_chain8",
+    "t10_deep9",
+    "t11_branch6",
+    "t12_campus8"
+  ],
+  "quantiles": [
+    0.05,
+    0.25,
+    0.5,
+    0.75,
+    0.95
+  ],
+  "cost_multiplier": 20,
+  "ecmp_nudges": {
+    "t05_ring6": [
+      [
+        "wan2",
+        "coreb",
+        "wan-backup",
+        40,
+        41
+      ]
+    ],
+    "t06_mesh6": [
+      [
+        "wan2",
+        "coreb",
+        "wan-backup",
+        30,
+        31
+      ]
+    ],
+    "t09_twin6": [
+      [
+        "wan2",
+        "coreb",
+        "wan-secondary",
+        15,
+        16
+      ]
+    ],
+    "t13_bowtie7": [
+      [
+        "mid",
+        "b2",
+        "M4",
+        20,
+        21
+      ],
+      [
+        "a2",
+        "mid",
+        "M2",
+        20,
+        21
+      ]
+    ],
+    "t15_campus12": [
+      [
+        "accb2",
+        "edgeb",
+        "accB2",
+        40,
+        41
+      ]
+    ],
+    "t16_pop14": [
+      [
+        "p2",
+        "pe3",
+        "peB1",
+        10,
+        11
+      ],
+      [
+        "pe1",
+        "p1",
+        "pA1",
+        10,
+        11
+      ]
+    ],
+    "t17_metro13": [
+      [
+        "mgmt",
+        "aggb",
+        "mgmtB",
+        80,
+        81
+      ],
+      [
+        "m7",
+        "m8",
+        "ring7",
+        20,
+        21
+      ],
+      [
+        "mgmt",
+        "aggb",
+        "mgmtB",
+        81,
+        82
+      ]
+    ],
+    "t18_grid12": [
+      [
+        "g8",
+        "g9",
+        "r2c",
+        20,
+        21
+      ],
+      [
+        "g7",
+        "g8",
+        "r2b",
+        20,
+        21
+      ],
+      [
+        "g5",
+        "g10",
+        "rung3",
+        30,
+        31
+      ],
+      [
+        "g8",
+        "g9",
+        "r2c",
+        21,
+        22
+      ]
+    ],
+    "t20_leafspine12": [
+      [
+        "s2",
+        "l5",
+        "sl2",
+        20,
+        21
+      ],
+      [
+        "l2",
+        "s2",
+        "ls4",
+        20,
+        21
+      ],
+      [
+        "l6",
+        "s2",
+        "ls6",
+        20,
+        21
+      ]
+    ]
+  },
+  "generator_version": "pilot-v1",
+  "suite_version": "1.1.0",
+  "n_incidents": 12,
+  "n_candidates": 151,
+  "dropped": {
+    "duplicate_config": 64
+  },
+  "topology_n_routers": {
+    "t03_dual8": 8,
+    "t05_ring6": 6,
+    "t06_mesh6": 6,
+    "t09_twin6": 6,
+    "t13_bowtie7": 7,
+    "t14_ladder8": 8,
+    "t15_campus12": 12,
+    "t16_pop14": 14,
+    "t17_metro13": 13,
+    "t18_grid12": 12,
+    "t19_dualcore16": 16,
+    "t20_leafspine12": 12
+  },
+  "topology_adjacencies": {
+    "t03_dual8": 9,
+    "t05_ring6": 6,
+    "t06_mesh6": 6,
+    "t09_twin6": 7,
+    "t13_bowtie7": 8,
+    "t14_ladder8": 10,
+    "t15_campus12": 14,
+    "t16_pop14": 19,
+    "t17_metro13": 14,
+    "t18_grid12": 14,
+    "t19_dualcore16": 16,
+    "t20_leafspine12": 16
+  },
+  "topology_primary_path": {
+    "t03_dual8": [
+      "corea",
+      "wan1",
+      "wan2",
+      "coreb"
+    ],
+    "t05_ring6": [
+      "corea",
+      "wan1",
+      "coreb"
+    ],
+    "t06_mesh6": [
+      "corea",
+      "wan1",
+      "coreb"
+    ],
+    "t09_twin6": [
+      "corea",
+      "wan1",
+      "coreb"
+    ],
+    "t13_bowtie7": [
+      "a1",
+      "mid",
+      "b1"
+    ],
+    "t14_ladder8": [
+      "l1",
+      "l2",
+      "l3"
+    ],
+    "t15_campus12": [
+      "acca1",
+      "dista1",
+      "corea",
+      "coreb",
+      "distb1",
+      "accb1"
+    ],
+    "t16_pop14": [
+      "pe1",
+      "p1",
+      "p2",
+      "pe3"
+    ],
+    "t17_metro13": [
+      "agga",
+      "m1",
+      "m2",
+      "m3",
+      "m4",
+      "m5",
+      "aggb"
+    ],
+    "t18_grid12": [
+      "g1",
+      "g2",
+      "g3",
+      "g4",
+      "g5"
+    ],
+    "t19_dualcore16": [
+      "agga",
+      "a1",
+      "a2",
+      "a3",
+      "corea",
+      "coreb",
+      "b3",
+      "b2",
+      "b1",
+      "aggb"
+    ],
+    "t20_leafspine12": [
+      "l1",
+      "s1",
+      "l4"
+    ]
+  },
+  "topology_routers": {
+    "t03_dual8": [
+      "corea",
+      "coreb",
+      "edgea",
+      "edgeb",
+      "wan1",
+      "wan2",
+      "wan3",
+      "wan4"
+    ],
+    "t05_ring6": [
+      "corea",
+      "coreb",
+      "edgea",
+      "edgeb",
+      "wan1",
+      "wan2"
+    ],
+    "t06_mesh6": [
+      "corea",
+      "coreb",
+      "edgea",
+      "edgeb",
+      "wan1",
+      "wan2"
+    ],
+    "t09_twin6": [
+      "corea",
+      "coreb",
+      "edgea",
+      "edgeb",
+      "wan1",
+      "wan2"
+    ],
+    "t13_bowtie7": [
+      "a1",
+      "a2",
+      "b1",
+      "b2",
+      "edgea",
+      "edgeb",
+      "mid"
+    ],
+    "t14_ladder8": [
+      "edgea",
+      "edgeb",
+      "l1",
+      "l2",
+      "l3",
+      "r1",
+      "r2",
+      "r3"
+    ],
+    "t15_campus12": [
+      "acca1",
+      "acca2",
+      "accb1",
+      "accb2",
+      "corea",
+      "coreb",
+      "dista1",
+      "dista2",
+      "distb1",
+      "distb2",
+      "edgea",
+      "edgeb"
+    ],
+    "t16_pop14": [
+      "agga",
+      "aggb",
+      "edgea",
+      "edgeb",
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "pe1",
+      "pe2",
+      "pe3",
+      "pe4",
+      "rr1",
+      "rr2"
+    ],
+    "t17_metro13": [
+      "agga",
+      "aggb",
+      "edgea",
+      "edgeb",
+      "m1",
+      "m2",
+      "m3",
+      "m4",
+      "m5",
+      "m6",
+      "m7",
+      "m8",
+      "mgmt"
+    ],
+    "t18_grid12": [
+      "edgea",
+      "edgeb",
+      "g1",
+      "g10",
+      "g2",
+      "g3",
+      "g4",
+      "g5",
+      "g6",
+      "g7",
+      "g8",
+      "g9"
+    ],
+    "t19_dualcore16": [
+      "a1",
+      "a2",
+      "a3",
+      "agga",
+      "aggb",
+      "b1",
+      "b2",
+      "b3",
+      "corea",
+      "coreb",
+      "edgea",
+      "edgeb",
+      "x1",
+      "x2",
+      "x3",
+      "x4"
+    ],
+    "t20_leafspine12": [
+      "agga",
+      "aggb",
+      "edgea",
+      "edgeb",
+      "l1",
+      "l2",
+      "l3",
+      "l4",
+      "l5",
+      "l6",
+      "s1",
+      "s2"
+    ]
+  },
+  "topology_hosts": {
+    "t03_dual8": [
+      "hosta",
+      "hostb",
+      "hostc"
+    ],
+    "t05_ring6": [
+      "hosta",
+      "hostb",
+      "hostc"
+    ],
+    "t06_mesh6": [
+      "hosta",
+      "hostb",
+      "hostc"
+    ],
+    "t09_twin6": [
+      "hosta",
+      "hostb",
+      "hostc"
+    ],
+    "t13_bowtie7": [
+      "hosta",
+      "hostb",
+      "hostc"
+    ],
+    "t14_ladder8": [
+      "hosta",
+      "hostb",
+      "hostc"
+    ],
+    "t15_campus12": [
+      "hosta",
+      "hostb",
+      "hostc"
+    ],
+    "t16_pop14": [
+      "hosta",
+      "hostb",
+      "hostc"
+    ],
+    "t17_metro13": [
+      "hosta",
+      "hostb",
+      "hostc"
+    ],
+    "t18_grid12": [
+      "hosta",
+      "hostb",
+      "hostc"
+    ],
+    "t19_dualcore16": [
+      "hosta",
+      "hostb",
+      "hostc"
+    ],
+    "t20_leafspine12": [
+      "hosta",
+      "hostb",
+      "hostc"
+    ]
+  },
+  "spec_properties": [
+    "P01",
+    "P02",
+    "P05",
+    "P07",
+    "P08"
+  ],
+  "oracle_only_properties": [
+    "P03",
+    "P04",
+    "P06",
+    "P09",
+    "P10",
+    "P11",
+    "P12"
+  ],
+  "structural_notes": [
+    "No faults: every candidate is golden + one intervention. The incidents/ entries are baselines holding the golden scenario.",
+    "Incident identity equals topology identity, so the secondary incident-grouped split in ANALYSIS-PLAN-V3.md section 5 is degenerate with the primary LOTO split. Needs a dated amendment before any model is fitted."
+  ],
+  "incidents": [
+    {
+      "incident_id": "I-00001",
+      "topology": "t03_dual8",
+      "fault_id": null,
+      "fault_family": null,
+      "n_candidates": 12,
+      "note": "baseline: golden network, no fault"
+    },
+    {
+      "incident_id": "I-00002",
+      "topology": "t05_ring6",
+      "fault_id": null,
+      "fault_family": null,
+      "n_candidates": 10,
+      "note": "baseline: golden network, no fault"
+    },
+    {
+      "incident_id": "I-00003",
+      "topology": "t06_mesh6",
+      "fault_id": null,
+      "fault_family": null,
+      "n_candidates": 10,
+      "note": "baseline: golden network, no fault"
+    },
+    {
+      "incident_id": "I-00004",
+      "topology": "t09_twin6",
+      "fault_id": null,
+      "fault_family": null,
+      "n_candidates": 11,
+      "note": "baseline: golden network, no fault"
+    },
+    {
+      "incident_id": "I-00005",
+      "topology": "t13_bowtie7",
+      "fault_id": null,
+      "fault_family": null,
+      "n_candidates": 12,
+      "note": "baseline: golden network, no fault"
+    },
+    {
+      "incident_id": "I-00006",
+      "topology": "t14_ladder8",
+      "fault_id": null,
+      "fault_family": null,
+      "n_candidates": 13,
+      "note": "baseline: golden network, no fault"
+    },
+    {
+      "incident_id": "I-00007",
+      "topology": "t15_campus12",
+      "fault_id": null,
+      "fault_family": null,
+      "n_candidates": 15,
+      "note": "baseline: golden network, no fault"
+    },
+    {
+      "incident_id": "I-00008",
+      "topology": "t16_pop14",
+      "fault_id": null,
+      "fault_family": null,
+      "n_candidates": 12,
+      "note": "baseline: golden network, no fault"
+    },
+    {
+      "incident_id": "I-00009",
+      "topology": "t17_metro13",
+      "fault_id": null,
+      "fault_family": null,
+      "n_candidates": 13,
+      "note": "baseline: golden network, no fault"
+    },
+    {
+      "incident_id": "I-00010",
+      "topology": "t18_grid12",
+      "fault_id": null,
+      "fault_family": null,
+      "n_candidates": 15,
+      "note": "baseline: golden network, no fault"
+    },
+    {
+      "incident_id": "I-00011",
+      "topology": "t19_dualcore16",
+      "fault_id": null,
+      "fault_family": null,
+      "n_candidates": 16,
+      "note": "baseline: golden network, no fault"
+    },
+    {
+      "incident_id": "I-00012",
+      "topology": "t20_leafspine12",
+      "fault_id": null,
+      "fault_family": null,
+      "n_candidates": 12,
+      "note": "baseline: golden network, no fault"
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "C-00001",
+      "incident_id": "I-00001",
+      "topology": "t03_dual8",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q0",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.3636,
+      "path": "candidates/C-00001"
+    },
+    {
+      "candidate_id": "C-00002",
+      "incident_id": "I-00001",
+      "topology": "t03_dual8",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q1",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.1455,
+      "path": "candidates/C-00002"
+    },
+    {
+      "candidate_id": "C-00003",
+      "incident_id": "I-00001",
+      "topology": "t03_dual8",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q2",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.4,
+      "path": "candidates/C-00003"
+    },
+    {
+      "candidate_id": "C-00004",
+      "incident_id": "I-00001",
+      "topology": "t03_dual8",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q3",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.1818,
+      "path": "candidates/C-00004"
+    },
+    {
+      "candidate_id": "C-00005",
+      "incident_id": "I-00001",
+      "topology": "t03_dual8",
+      "fault_family": null,
+      "repair_id": "RC-noop_q0",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.0,
+      "path": "candidates/C-00005"
+    },
+    {
+      "candidate_id": "C-00006",
+      "incident_id": "I-00001",
+      "topology": "t03_dual8",
+      "fault_family": null,
+      "repair_id": "RC-noop_q1",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.0,
+      "path": "candidates/C-00006"
+    },
+    {
+      "candidate_id": "C-00007",
+      "incident_id": "I-00001",
+      "topology": "t03_dual8",
+      "fault_family": null,
+      "repair_id": "RI-partial_q0",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0273,
+      "path": "candidates/C-00007"
+    },
+    {
+      "candidate_id": "C-00008",
+      "incident_id": "I-00001",
+      "topology": "t03_dual8",
+      "fault_family": null,
+      "repair_id": "RI-partial_q1",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0818,
+      "path": "candidates/C-00008"
+    },
+    {
+      "candidate_id": "C-00009",
+      "incident_id": "I-00001",
+      "topology": "t03_dual8",
+      "fault_family": null,
+      "repair_id": "RR-damage_q0",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0455,
+      "path": "candidates/C-00009"
+    },
+    {
+      "candidate_id": "C-00010",
+      "incident_id": "I-00001",
+      "topology": "t03_dual8",
+      "fault_family": null,
+      "repair_id": "RR-damage_q1",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0727,
+      "path": "candidates/C-00010"
+    },
+    {
+      "candidate_id": "C-00011",
+      "incident_id": "I-00001",
+      "topology": "t03_dual8",
+      "fault_family": null,
+      "repair_id": "RR-damage_q2",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0182,
+      "path": "candidates/C-00011"
+    },
+    {
+      "candidate_id": "C-00012",
+      "incident_id": "I-00001",
+      "topology": "t03_dual8",
+      "fault_family": null,
+      "repair_id": "RR-minor_q1",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0091,
+      "path": "candidates/C-00012"
+    },
+    {
+      "candidate_id": "C-00013",
+      "incident_id": "I-00002",
+      "topology": "t05_ring6",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q0",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.4444,
+      "path": "candidates/C-00013"
+    },
+    {
+      "candidate_id": "C-00014",
+      "incident_id": "I-00002",
+      "topology": "t05_ring6",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q1",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.1111,
+      "path": "candidates/C-00014"
+    },
+    {
+      "candidate_id": "C-00015",
+      "incident_id": "I-00002",
+      "topology": "t05_ring6",
+      "fault_family": null,
+      "repair_id": "RC-noop_q0",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.0,
+      "path": "candidates/C-00015"
+    },
+    {
+      "candidate_id": "C-00016",
+      "incident_id": "I-00002",
+      "topology": "t05_ring6",
+      "fault_family": null,
+      "repair_id": "RC-noop_q1",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.0,
+      "path": "candidates/C-00016"
+    },
+    {
+      "candidate_id": "C-00017",
+      "incident_id": "I-00002",
+      "topology": "t05_ring6",
+      "fault_family": null,
+      "repair_id": "RI-partial_q0",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0417,
+      "path": "candidates/C-00017"
+    },
+    {
+      "candidate_id": "C-00018",
+      "incident_id": "I-00002",
+      "topology": "t05_ring6",
+      "fault_family": null,
+      "repair_id": "RI-partial_q1",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0972,
+      "path": "candidates/C-00018"
+    },
+    {
+      "candidate_id": "C-00019",
+      "incident_id": "I-00002",
+      "topology": "t05_ring6",
+      "fault_family": null,
+      "repair_id": "RR-damage_q0",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0556,
+      "path": "candidates/C-00019"
+    },
+    {
+      "candidate_id": "C-00020",
+      "incident_id": "I-00002",
+      "topology": "t05_ring6",
+      "fault_family": null,
+      "repair_id": "RR-damage_q1",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0833,
+      "path": "candidates/C-00020"
+    },
+    {
+      "candidate_id": "C-00021",
+      "incident_id": "I-00002",
+      "topology": "t05_ring6",
+      "fault_family": null,
+      "repair_id": "RR-damage_q2",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0278,
+      "path": "candidates/C-00021"
+    },
+    {
+      "candidate_id": "C-00022",
+      "incident_id": "I-00002",
+      "topology": "t05_ring6",
+      "fault_family": null,
+      "repair_id": "RR-minor_q1",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0139,
+      "path": "candidates/C-00022"
+    },
+    {
+      "candidate_id": "C-00023",
+      "incident_id": "I-00003",
+      "topology": "t06_mesh6",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q0",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.4444,
+      "path": "candidates/C-00023"
+    },
+    {
+      "candidate_id": "C-00024",
+      "incident_id": "I-00003",
+      "topology": "t06_mesh6",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q1",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.1111,
+      "path": "candidates/C-00024"
+    },
+    {
+      "candidate_id": "C-00025",
+      "incident_id": "I-00003",
+      "topology": "t06_mesh6",
+      "fault_family": null,
+      "repair_id": "RC-noop_q0",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.0,
+      "path": "candidates/C-00025"
+    },
+    {
+      "candidate_id": "C-00026",
+      "incident_id": "I-00003",
+      "topology": "t06_mesh6",
+      "fault_family": null,
+      "repair_id": "RC-noop_q1",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.0,
+      "path": "candidates/C-00026"
+    },
+    {
+      "candidate_id": "C-00027",
+      "incident_id": "I-00003",
+      "topology": "t06_mesh6",
+      "fault_family": null,
+      "repair_id": "RI-partial_q0",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0417,
+      "path": "candidates/C-00027"
+    },
+    {
+      "candidate_id": "C-00028",
+      "incident_id": "I-00003",
+      "topology": "t06_mesh6",
+      "fault_family": null,
+      "repair_id": "RI-partial_q1",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0972,
+      "path": "candidates/C-00028"
+    },
+    {
+      "candidate_id": "C-00029",
+      "incident_id": "I-00003",
+      "topology": "t06_mesh6",
+      "fault_family": null,
+      "repair_id": "RR-damage_q0",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0556,
+      "path": "candidates/C-00029"
+    },
+    {
+      "candidate_id": "C-00030",
+      "incident_id": "I-00003",
+      "topology": "t06_mesh6",
+      "fault_family": null,
+      "repair_id": "RR-damage_q1",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0833,
+      "path": "candidates/C-00030"
+    },
+    {
+      "candidate_id": "C-00031",
+      "incident_id": "I-00003",
+      "topology": "t06_mesh6",
+      "fault_family": null,
+      "repair_id": "RR-damage_q2",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0278,
+      "path": "candidates/C-00031"
+    },
+    {
+      "candidate_id": "C-00032",
+      "incident_id": "I-00003",
+      "topology": "t06_mesh6",
+      "fault_family": null,
+      "repair_id": "RR-minor_q1",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0139,
+      "path": "candidates/C-00032"
+    },
+    {
+      "candidate_id": "C-00033",
+      "incident_id": "I-00004",
+      "topology": "t09_twin6",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q0",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.2222,
+      "path": "candidates/C-00033"
+    },
+    {
+      "candidate_id": "C-00034",
+      "incident_id": "I-00004",
+      "topology": "t09_twin6",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q1",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.4444,
+      "path": "candidates/C-00034"
+    },
+    {
+      "candidate_id": "C-00035",
+      "incident_id": "I-00004",
+      "topology": "t09_twin6",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q2",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.1111,
+      "path": "candidates/C-00035"
+    },
+    {
+      "candidate_id": "C-00036",
+      "incident_id": "I-00004",
+      "topology": "t09_twin6",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q3",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.25,
+      "path": "candidates/C-00036"
+    },
+    {
+      "candidate_id": "C-00037",
+      "incident_id": "I-00004",
+      "topology": "t09_twin6",
+      "fault_family": null,
+      "repair_id": "RC-noop_q0",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.0,
+      "path": "candidates/C-00037"
+    },
+    {
+      "candidate_id": "C-00038",
+      "incident_id": "I-00004",
+      "topology": "t09_twin6",
+      "fault_family": null,
+      "repair_id": "RI-partial_q0",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0417,
+      "path": "candidates/C-00038"
+    },
+    {
+      "candidate_id": "C-00039",
+      "incident_id": "I-00004",
+      "topology": "t09_twin6",
+      "fault_family": null,
+      "repair_id": "RI-partial_q1",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0972,
+      "path": "candidates/C-00039"
+    },
+    {
+      "candidate_id": "C-00040",
+      "incident_id": "I-00004",
+      "topology": "t09_twin6",
+      "fault_family": null,
+      "repair_id": "RR-damage_q0",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0556,
+      "path": "candidates/C-00040"
+    },
+    {
+      "candidate_id": "C-00041",
+      "incident_id": "I-00004",
+      "topology": "t09_twin6",
+      "fault_family": null,
+      "repair_id": "RR-damage_q1",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0833,
+      "path": "candidates/C-00041"
+    },
+    {
+      "candidate_id": "C-00042",
+      "incident_id": "I-00004",
+      "topology": "t09_twin6",
+      "fault_family": null,
+      "repair_id": "RR-damage_q2",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0278,
+      "path": "candidates/C-00042"
+    },
+    {
+      "candidate_id": "C-00043",
+      "incident_id": "I-00004",
+      "topology": "t09_twin6",
+      "fault_family": null,
+      "repair_id": "RR-minor_q1",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0139,
+      "path": "candidates/C-00043"
+    },
+    {
+      "candidate_id": "C-00044",
+      "incident_id": "I-00005",
+      "topology": "t13_bowtie7",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q0",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.3333,
+      "path": "candidates/C-00044"
+    },
+    {
+      "candidate_id": "C-00045",
+      "incident_id": "I-00005",
+      "topology": "t13_bowtie7",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q1",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.1333,
+      "path": "candidates/C-00045"
+    },
+    {
+      "candidate_id": "C-00046",
+      "incident_id": "I-00005",
+      "topology": "t13_bowtie7",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q2",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.4222,
+      "path": "candidates/C-00046"
+    },
+    {
+      "candidate_id": "C-00047",
+      "incident_id": "I-00005",
+      "topology": "t13_bowtie7",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q3",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.0889,
+      "path": "candidates/C-00047"
+    },
+    {
+      "candidate_id": "C-00048",
+      "incident_id": "I-00005",
+      "topology": "t13_bowtie7",
+      "fault_family": null,
+      "repair_id": "RI-partial_q0",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0333,
+      "path": "candidates/C-00048"
+    },
+    {
+      "candidate_id": "C-00049",
+      "incident_id": "I-00005",
+      "topology": "t13_bowtie7",
+      "fault_family": null,
+      "repair_id": "RI-partial_q1",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0778,
+      "path": "candidates/C-00049"
+    },
+    {
+      "candidate_id": "C-00050",
+      "incident_id": "I-00005",
+      "topology": "t13_bowtie7",
+      "fault_family": null,
+      "repair_id": "RI-partial_q4",
+      "repair_class": "incomplete",
+      "mechanism": "cost",
+      "predicted_severity": 0.1111,
+      "path": "candidates/C-00050"
+    },
+    {
+      "candidate_id": "C-00051",
+      "incident_id": "I-00005",
+      "topology": "t13_bowtie7",
+      "fault_family": null,
+      "repair_id": "RR-damage_q0",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0444,
+      "path": "candidates/C-00051"
+    },
+    {
+      "candidate_id": "C-00052",
+      "incident_id": "I-00005",
+      "topology": "t13_bowtie7",
+      "fault_family": null,
+      "repair_id": "RR-damage_q1",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0667,
+      "path": "candidates/C-00052"
+    },
+    {
+      "candidate_id": "C-00053",
+      "incident_id": "I-00005",
+      "topology": "t13_bowtie7",
+      "fault_family": null,
+      "repair_id": "RR-damage_q2",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0222,
+      "path": "candidates/C-00053"
+    },
+    {
+      "candidate_id": "C-00054",
+      "incident_id": "I-00005",
+      "topology": "t13_bowtie7",
+      "fault_family": null,
+      "repair_id": "RR-minor_q0",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0111,
+      "path": "candidates/C-00054"
+    },
+    {
+      "candidate_id": "C-00055",
+      "incident_id": "I-00005",
+      "topology": "t13_bowtie7",
+      "fault_family": null,
+      "repair_id": "RR-shift_q1",
+      "repair_class": "regressive",
+      "mechanism": "cost",
+      "predicted_severity": 0.4,
+      "path": "candidates/C-00055"
+    },
+    {
+      "candidate_id": "C-00056",
+      "incident_id": "I-00006",
+      "topology": "t14_ladder8",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q0",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.3636,
+      "path": "candidates/C-00056"
+    },
+    {
+      "candidate_id": "C-00057",
+      "incident_id": "I-00006",
+      "topology": "t14_ladder8",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q1",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.1818,
+      "path": "candidates/C-00057"
+    },
+    {
+      "candidate_id": "C-00058",
+      "incident_id": "I-00006",
+      "topology": "t14_ladder8",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q2",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.2,
+      "path": "candidates/C-00058"
+    },
+    {
+      "candidate_id": "C-00059",
+      "incident_id": "I-00006",
+      "topology": "t14_ladder8",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q3",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.4364,
+      "path": "candidates/C-00059"
+    },
+    {
+      "candidate_id": "C-00060",
+      "incident_id": "I-00006",
+      "topology": "t14_ladder8",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q4",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.0727,
+      "path": "candidates/C-00060"
+    },
+    {
+      "candidate_id": "C-00061",
+      "incident_id": "I-00006",
+      "topology": "t14_ladder8",
+      "fault_family": null,
+      "repair_id": "RC-noop_q0",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.0,
+      "path": "candidates/C-00061"
+    },
+    {
+      "candidate_id": "C-00062",
+      "incident_id": "I-00006",
+      "topology": "t14_ladder8",
+      "fault_family": null,
+      "repair_id": "RI-partial_q0",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0273,
+      "path": "candidates/C-00062"
+    },
+    {
+      "candidate_id": "C-00063",
+      "incident_id": "I-00006",
+      "topology": "t14_ladder8",
+      "fault_family": null,
+      "repair_id": "RI-partial_q1",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0727,
+      "path": "candidates/C-00063"
+    },
+    {
+      "candidate_id": "C-00064",
+      "incident_id": "I-00006",
+      "topology": "t14_ladder8",
+      "fault_family": null,
+      "repair_id": "RI-partial_q4",
+      "repair_class": "incomplete",
+      "mechanism": "cost",
+      "predicted_severity": 0.0909,
+      "path": "candidates/C-00064"
+    },
+    {
+      "candidate_id": "C-00065",
+      "incident_id": "I-00006",
+      "topology": "t14_ladder8",
+      "fault_family": null,
+      "repair_id": "RR-damage_q0",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0182,
+      "path": "candidates/C-00065"
+    },
+    {
+      "candidate_id": "C-00066",
+      "incident_id": "I-00006",
+      "topology": "t14_ladder8",
+      "fault_family": null,
+      "repair_id": "RR-damage_q1",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0364,
+      "path": "candidates/C-00066"
+    },
+    {
+      "candidate_id": "C-00067",
+      "incident_id": "I-00006",
+      "topology": "t14_ladder8",
+      "fault_family": null,
+      "repair_id": "RR-damage_q2",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0636,
+      "path": "candidates/C-00067"
+    },
+    {
+      "candidate_id": "C-00068",
+      "incident_id": "I-00006",
+      "topology": "t14_ladder8",
+      "fault_family": null,
+      "repair_id": "RR-minor_q1",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0091,
+      "path": "candidates/C-00068"
+    },
+    {
+      "candidate_id": "C-00069",
+      "incident_id": "I-00007",
+      "topology": "t15_campus12",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q0",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.0381,
+      "path": "candidates/C-00069"
+    },
+    {
+      "candidate_id": "C-00070",
+      "incident_id": "I-00007",
+      "topology": "t15_campus12",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q1",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.2286,
+      "path": "candidates/C-00070"
+    },
+    {
+      "candidate_id": "C-00071",
+      "incident_id": "I-00007",
+      "topology": "t15_campus12",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q2",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.1143,
+      "path": "candidates/C-00071"
+    },
+    {
+      "candidate_id": "C-00072",
+      "incident_id": "I-00007",
+      "topology": "t15_campus12",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q3",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.3619,
+      "path": "candidates/C-00072"
+    },
+    {
+      "candidate_id": "C-00073",
+      "incident_id": "I-00007",
+      "topology": "t15_campus12",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q4",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.4476,
+      "path": "candidates/C-00073"
+    },
+    {
+      "candidate_id": "C-00074",
+      "incident_id": "I-00007",
+      "topology": "t15_campus12",
+      "fault_family": null,
+      "repair_id": "RC-noop_q0",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.0,
+      "path": "candidates/C-00074"
+    },
+    {
+      "candidate_id": "C-00075",
+      "incident_id": "I-00007",
+      "topology": "t15_campus12",
+      "fault_family": null,
+      "repair_id": "RI-partial_q0",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0619,
+      "path": "candidates/C-00075"
+    },
+    {
+      "candidate_id": "C-00076",
+      "incident_id": "I-00007",
+      "topology": "t15_campus12",
+      "fault_family": null,
+      "repair_id": "RI-partial_q1",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0238,
+      "path": "candidates/C-00076"
+    },
+    {
+      "candidate_id": "C-00077",
+      "incident_id": "I-00007",
+      "topology": "t15_campus12",
+      "fault_family": null,
+      "repair_id": "RI-partial_q3",
+      "repair_class": "incomplete",
+      "mechanism": "cost",
+      "predicted_severity": 0.3143,
+      "path": "candidates/C-00077"
+    },
+    {
+      "candidate_id": "C-00078",
+      "incident_id": "I-00007",
+      "topology": "t15_campus12",
+      "fault_family": null,
+      "repair_id": "RR-damage_q0",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0143,
+      "path": "candidates/C-00078"
+    },
+    {
+      "candidate_id": "C-00079",
+      "incident_id": "I-00007",
+      "topology": "t15_campus12",
+      "fault_family": null,
+      "repair_id": "RR-damage_q1",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0524,
+      "path": "candidates/C-00079"
+    },
+    {
+      "candidate_id": "C-00080",
+      "incident_id": "I-00007",
+      "topology": "t15_campus12",
+      "fault_family": null,
+      "repair_id": "RR-damage_q2",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0333,
+      "path": "candidates/C-00080"
+    },
+    {
+      "candidate_id": "C-00081",
+      "incident_id": "I-00007",
+      "topology": "t15_campus12",
+      "fault_family": null,
+      "repair_id": "RR-minor_q0",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0095,
+      "path": "candidates/C-00081"
+    },
+    {
+      "candidate_id": "C-00082",
+      "incident_id": "I-00007",
+      "topology": "t15_campus12",
+      "fault_family": null,
+      "repair_id": "RR-minor_q1",
+      "repair_class": "regressive",
+      "mechanism": "cost",
+      "predicted_severity": 0.0286,
+      "path": "candidates/C-00082"
+    },
+    {
+      "candidate_id": "C-00083",
+      "incident_id": "I-00007",
+      "topology": "t15_campus12",
+      "fault_family": null,
+      "repair_id": "RR-shift_q1",
+      "repair_class": "regressive",
+      "mechanism": "cost",
+      "predicted_severity": 0.1048,
+      "path": "candidates/C-00083"
+    },
+    {
+      "candidate_id": "C-00084",
+      "incident_id": "I-00008",
+      "topology": "t16_pop14",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q0",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.0441,
+      "path": "candidates/C-00084"
+    },
+    {
+      "candidate_id": "C-00085",
+      "incident_id": "I-00008",
+      "topology": "t16_pop14",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q1",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.2647,
+      "path": "candidates/C-00085"
+    },
+    {
+      "candidate_id": "C-00086",
+      "incident_id": "I-00008",
+      "topology": "t16_pop14",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q2",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.3235,
+      "path": "candidates/C-00086"
+    },
+    {
+      "candidate_id": "C-00087",
+      "incident_id": "I-00008",
+      "topology": "t16_pop14",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q3",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.1176,
+      "path": "candidates/C-00087"
+    },
+    {
+      "candidate_id": "C-00088",
+      "incident_id": "I-00008",
+      "topology": "t16_pop14",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q4",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.4265,
+      "path": "candidates/C-00088"
+    },
+    {
+      "candidate_id": "C-00089",
+      "incident_id": "I-00008",
+      "topology": "t16_pop14",
+      "fault_family": null,
+      "repair_id": "RI-partial_q0",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0478,
+      "path": "candidates/C-00089"
+    },
+    {
+      "candidate_id": "C-00090",
+      "incident_id": "I-00008",
+      "topology": "t16_pop14",
+      "fault_family": null,
+      "repair_id": "RI-partial_q1",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0257,
+      "path": "candidates/C-00090"
+    },
+    {
+      "candidate_id": "C-00091",
+      "incident_id": "I-00008",
+      "topology": "t16_pop14",
+      "fault_family": null,
+      "repair_id": "RI-partial_q2",
+      "repair_class": "incomplete",
+      "mechanism": "cost",
+      "predicted_severity": 0.1103,
+      "path": "candidates/C-00091"
+    },
+    {
+      "candidate_id": "C-00092",
+      "incident_id": "I-00008",
+      "topology": "t16_pop14",
+      "fault_family": null,
+      "repair_id": "RR-damage_q0",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.011,
+      "path": "candidates/C-00092"
+    },
+    {
+      "candidate_id": "C-00093",
+      "incident_id": "I-00008",
+      "topology": "t16_pop14",
+      "fault_family": null,
+      "repair_id": "RR-damage_q1",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0404,
+      "path": "candidates/C-00093"
+    },
+    {
+      "candidate_id": "C-00094",
+      "incident_id": "I-00008",
+      "topology": "t16_pop14",
+      "fault_family": null,
+      "repair_id": "RR-minor_q0",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0074,
+      "path": "candidates/C-00094"
+    },
+    {
+      "candidate_id": "C-00095",
+      "incident_id": "I-00008",
+      "topology": "t16_pop14",
+      "fault_family": null,
+      "repair_id": "RR-minor_q1",
+      "repair_class": "regressive",
+      "mechanism": "cost",
+      "predicted_severity": 0.0294,
+      "path": "candidates/C-00095"
+    },
+    {
+      "candidate_id": "C-00096",
+      "incident_id": "I-00009",
+      "topology": "t17_metro13",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q0",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.2917,
+      "path": "candidates/C-00096"
+    },
+    {
+      "candidate_id": "C-00097",
+      "incident_id": "I-00009",
+      "topology": "t17_metro13",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q1",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.325,
+      "path": "candidates/C-00097"
+    },
+    {
+      "candidate_id": "C-00098",
+      "incident_id": "I-00009",
+      "topology": "t17_metro13",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q2",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.1583,
+      "path": "candidates/C-00098"
+    },
+    {
+      "candidate_id": "C-00099",
+      "incident_id": "I-00009",
+      "topology": "t17_metro13",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q3",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.4,
+      "path": "candidates/C-00099"
+    },
+    {
+      "candidate_id": "C-00100",
+      "incident_id": "I-00009",
+      "topology": "t17_metro13",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q4",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.075,
+      "path": "candidates/C-00100"
+    },
+    {
+      "candidate_id": "C-00101",
+      "incident_id": "I-00009",
+      "topology": "t17_metro13",
+      "fault_family": null,
+      "repair_id": "RC-noop_q0",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.0,
+      "path": "candidates/C-00101"
+    },
+    {
+      "candidate_id": "C-00102",
+      "incident_id": "I-00009",
+      "topology": "t17_metro13",
+      "fault_family": null,
+      "repair_id": "RC-noop_q1",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.0,
+      "path": "candidates/C-00102"
+    },
+    {
+      "candidate_id": "C-00103",
+      "incident_id": "I-00009",
+      "topology": "t17_metro13",
+      "fault_family": null,
+      "repair_id": "RI-partial_q0",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0583,
+      "path": "candidates/C-00103"
+    },
+    {
+      "candidate_id": "C-00104",
+      "incident_id": "I-00009",
+      "topology": "t17_metro13",
+      "fault_family": null,
+      "repair_id": "RI-partial_q1",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.025,
+      "path": "candidates/C-00104"
+    },
+    {
+      "candidate_id": "C-00105",
+      "incident_id": "I-00009",
+      "topology": "t17_metro13",
+      "fault_family": null,
+      "repair_id": "RR-damage_q0",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0125,
+      "path": "candidates/C-00105"
+    },
+    {
+      "candidate_id": "C-00106",
+      "incident_id": "I-00009",
+      "topology": "t17_metro13",
+      "fault_family": null,
+      "repair_id": "RR-damage_q1",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0333,
+      "path": "candidates/C-00106"
+    },
+    {
+      "candidate_id": "C-00107",
+      "incident_id": "I-00009",
+      "topology": "t17_metro13",
+      "fault_family": null,
+      "repair_id": "RR-damage_q2",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.05,
+      "path": "candidates/C-00107"
+    },
+    {
+      "candidate_id": "C-00108",
+      "incident_id": "I-00009",
+      "topology": "t17_metro13",
+      "fault_family": null,
+      "repair_id": "RR-minor_q1",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0083,
+      "path": "candidates/C-00108"
+    },
+    {
+      "candidate_id": "C-00109",
+      "incident_id": "I-00010",
+      "topology": "t18_grid12",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q0",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.3619,
+      "path": "candidates/C-00109"
+    },
+    {
+      "candidate_id": "C-00110",
+      "incident_id": "I-00010",
+      "topology": "t18_grid12",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q1",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.1333,
+      "path": "candidates/C-00110"
+    },
+    {
+      "candidate_id": "C-00111",
+      "incident_id": "I-00010",
+      "topology": "t18_grid12",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q2",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.2,
+      "path": "candidates/C-00111"
+    },
+    {
+      "candidate_id": "C-00112",
+      "incident_id": "I-00010",
+      "topology": "t18_grid12",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q3",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.4095,
+      "path": "candidates/C-00112"
+    },
+    {
+      "candidate_id": "C-00113",
+      "incident_id": "I-00010",
+      "topology": "t18_grid12",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q4",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.0762,
+      "path": "candidates/C-00113"
+    },
+    {
+      "candidate_id": "C-00114",
+      "incident_id": "I-00010",
+      "topology": "t18_grid12",
+      "fault_family": null,
+      "repair_id": "RC-noop_q0",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.0,
+      "path": "candidates/C-00114"
+    },
+    {
+      "candidate_id": "C-00115",
+      "incident_id": "I-00010",
+      "topology": "t18_grid12",
+      "fault_family": null,
+      "repair_id": "RI-partial_q0",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0619,
+      "path": "candidates/C-00115"
+    },
+    {
+      "candidate_id": "C-00116",
+      "incident_id": "I-00010",
+      "topology": "t18_grid12",
+      "fault_family": null,
+      "repair_id": "RI-partial_q1",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0238,
+      "path": "candidates/C-00116"
+    },
+    {
+      "candidate_id": "C-00117",
+      "incident_id": "I-00010",
+      "topology": "t18_grid12",
+      "fault_family": null,
+      "repair_id": "RI-partial_q2",
+      "repair_class": "incomplete",
+      "mechanism": "cost",
+      "predicted_severity": 0.2857,
+      "path": "candidates/C-00117"
+    },
+    {
+      "candidate_id": "C-00118",
+      "incident_id": "I-00010",
+      "topology": "t18_grid12",
+      "fault_family": null,
+      "repair_id": "RI-partial_q4",
+      "repair_class": "incomplete",
+      "mechanism": "cost",
+      "predicted_severity": 0.1143,
+      "path": "candidates/C-00118"
+    },
+    {
+      "candidate_id": "C-00119",
+      "incident_id": "I-00010",
+      "topology": "t18_grid12",
+      "fault_family": null,
+      "repair_id": "RR-damage_q0",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0143,
+      "path": "candidates/C-00119"
+    },
+    {
+      "candidate_id": "C-00120",
+      "incident_id": "I-00010",
+      "topology": "t18_grid12",
+      "fault_family": null,
+      "repair_id": "RR-damage_q1",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0476,
+      "path": "candidates/C-00120"
+    },
+    {
+      "candidate_id": "C-00121",
+      "incident_id": "I-00010",
+      "topology": "t18_grid12",
+      "fault_family": null,
+      "repair_id": "RR-damage_q2",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0333,
+      "path": "candidates/C-00121"
+    },
+    {
+      "candidate_id": "C-00122",
+      "incident_id": "I-00010",
+      "topology": "t18_grid12",
+      "fault_family": null,
+      "repair_id": "RR-minor_q0",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0095,
+      "path": "candidates/C-00122"
+    },
+    {
+      "candidate_id": "C-00123",
+      "incident_id": "I-00010",
+      "topology": "t18_grid12",
+      "fault_family": null,
+      "repair_id": "RR-minor_q1",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0286,
+      "path": "candidates/C-00123"
+    },
+    {
+      "candidate_id": "C-00124",
+      "incident_id": "I-00011",
+      "topology": "t19_dualcore16",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q0",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.3421,
+      "path": "candidates/C-00124"
+    },
+    {
+      "candidate_id": "C-00125",
+      "incident_id": "I-00011",
+      "topology": "t19_dualcore16",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q1",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.1696,
+      "path": "candidates/C-00125"
+    },
+    {
+      "candidate_id": "C-00126",
+      "incident_id": "I-00011",
+      "topology": "t19_dualcore16",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q2",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.2836,
+      "path": "candidates/C-00126"
+    },
+    {
+      "candidate_id": "C-00127",
+      "incident_id": "I-00011",
+      "topology": "t19_dualcore16",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q3",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.1813,
+      "path": "candidates/C-00127"
+    },
+    {
+      "candidate_id": "C-00128",
+      "incident_id": "I-00011",
+      "topology": "t19_dualcore16",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q4",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.0994,
+      "path": "candidates/C-00128"
+    },
+    {
+      "candidate_id": "C-00129",
+      "incident_id": "I-00011",
+      "topology": "t19_dualcore16",
+      "fault_family": null,
+      "repair_id": "RC-noop_q0",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.0,
+      "path": "candidates/C-00129"
+    },
+    {
+      "candidate_id": "C-00130",
+      "incident_id": "I-00011",
+      "topology": "t19_dualcore16",
+      "fault_family": null,
+      "repair_id": "RC-noop_q1",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.0,
+      "path": "candidates/C-00130"
+    },
+    {
+      "candidate_id": "C-00131",
+      "incident_id": "I-00011",
+      "topology": "t19_dualcore16",
+      "fault_family": null,
+      "repair_id": "RI-partial_q0",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0205,
+      "path": "candidates/C-00131"
+    },
+    {
+      "candidate_id": "C-00132",
+      "incident_id": "I-00011",
+      "topology": "t19_dualcore16",
+      "fault_family": null,
+      "repair_id": "RI-partial_q1",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0497,
+      "path": "candidates/C-00132"
+    },
+    {
+      "candidate_id": "C-00133",
+      "incident_id": "I-00011",
+      "topology": "t19_dualcore16",
+      "fault_family": null,
+      "repair_id": "RI-partial_q2",
+      "repair_class": "incomplete",
+      "mechanism": "cost",
+      "predicted_severity": 0.2602,
+      "path": "candidates/C-00133"
+    },
+    {
+      "candidate_id": "C-00134",
+      "incident_id": "I-00011",
+      "topology": "t19_dualcore16",
+      "fault_family": null,
+      "repair_id": "RI-partial_q4",
+      "repair_class": "incomplete",
+      "mechanism": "cost",
+      "predicted_severity": 0.0877,
+      "path": "candidates/C-00134"
+    },
+    {
+      "candidate_id": "C-00135",
+      "incident_id": "I-00011",
+      "topology": "t19_dualcore16",
+      "fault_family": null,
+      "repair_id": "RR-damage_q0",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0439,
+      "path": "candidates/C-00135"
+    },
+    {
+      "candidate_id": "C-00136",
+      "incident_id": "I-00011",
+      "topology": "t19_dualcore16",
+      "fault_family": null,
+      "repair_id": "RR-damage_q1",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0263,
+      "path": "candidates/C-00136"
+    },
+    {
+      "candidate_id": "C-00137",
+      "incident_id": "I-00011",
+      "topology": "t19_dualcore16",
+      "fault_family": null,
+      "repair_id": "RR-damage_q2",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0088,
+      "path": "candidates/C-00137"
+    },
+    {
+      "candidate_id": "C-00138",
+      "incident_id": "I-00011",
+      "topology": "t19_dualcore16",
+      "fault_family": null,
+      "repair_id": "RR-minor_q0",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0322,
+      "path": "candidates/C-00138"
+    },
+    {
+      "candidate_id": "C-00139",
+      "incident_id": "I-00011",
+      "topology": "t19_dualcore16",
+      "fault_family": null,
+      "repair_id": "RR-shift_q0",
+      "repair_class": "regressive",
+      "mechanism": "cost",
+      "predicted_severity": 0.2924,
+      "path": "candidates/C-00139"
+    },
+    {
+      "candidate_id": "C-00140",
+      "incident_id": "I-00012",
+      "topology": "t20_leafspine12",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q0",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.0286,
+      "path": "candidates/C-00140"
+    },
+    {
+      "candidate_id": "C-00141",
+      "incident_id": "I-00012",
+      "topology": "t20_leafspine12",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q1",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.1048,
+      "path": "candidates/C-00141"
+    },
+    {
+      "candidate_id": "C-00142",
+      "incident_id": "I-00012",
+      "topology": "t20_leafspine12",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q2",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.2381,
+      "path": "candidates/C-00142"
+    },
+    {
+      "candidate_id": "C-00143",
+      "incident_id": "I-00012",
+      "topology": "t20_leafspine12",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q3",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.3905,
+      "path": "candidates/C-00143"
+    },
+    {
+      "candidate_id": "C-00144",
+      "incident_id": "I-00012",
+      "topology": "t20_leafspine12",
+      "fault_family": null,
+      "repair_id": "RC-reroute_q4",
+      "repair_class": "correct",
+      "mechanism": "cost",
+      "predicted_severity": 0.3333,
+      "path": "candidates/C-00144"
+    },
+    {
+      "candidate_id": "C-00145",
+      "incident_id": "I-00012",
+      "topology": "t20_leafspine12",
+      "fault_family": null,
+      "repair_id": "RI-partial_q0",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0238,
+      "path": "candidates/C-00145"
+    },
+    {
+      "candidate_id": "C-00146",
+      "incident_id": "I-00012",
+      "topology": "t20_leafspine12",
+      "fault_family": null,
+      "repair_id": "RI-partial_q1",
+      "repair_class": "incomplete",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0619,
+      "path": "candidates/C-00146"
+    },
+    {
+      "candidate_id": "C-00147",
+      "incident_id": "I-00012",
+      "topology": "t20_leafspine12",
+      "fault_family": null,
+      "repair_id": "RR-damage_q0",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0143,
+      "path": "candidates/C-00147"
+    },
+    {
+      "candidate_id": "C-00148",
+      "incident_id": "I-00012",
+      "topology": "t20_leafspine12",
+      "fault_family": null,
+      "repair_id": "RR-damage_q1",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0524,
+      "path": "candidates/C-00148"
+    },
+    {
+      "candidate_id": "C-00149",
+      "incident_id": "I-00012",
+      "topology": "t20_leafspine12",
+      "fault_family": null,
+      "repair_id": "RR-damage_q2",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0333,
+      "path": "candidates/C-00149"
+    },
+    {
+      "candidate_id": "C-00150",
+      "incident_id": "I-00012",
+      "topology": "t20_leafspine12",
+      "fault_family": null,
+      "repair_id": "RR-minor_q0",
+      "repair_class": "regressive",
+      "mechanism": "blackhole",
+      "predicted_severity": 0.0095,
+      "path": "candidates/C-00150"
+    },
+    {
+      "candidate_id": "C-00151",
+      "incident_id": "I-00012",
+      "topology": "t20_leafspine12",
+      "fault_family": null,
+      "repair_id": "RR-shift_q2",
+      "repair_class": "regressive",
+      "mechanism": "cost",
+      "predicted_severity": 0.0857,
+      "path": "candidates/C-00151"
+    }
+  ]
+}

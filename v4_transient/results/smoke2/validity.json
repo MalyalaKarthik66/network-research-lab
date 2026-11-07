@@ -1,0 +1,332 @@
+{
+  "runs": {
+    "SMOKE2-V4P-01.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "SMOKE2-V4P-02.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "SMOKE2-V4P-03.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "SMOKE2-V4P-04.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "SMOKE2-V4N-01.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "SMOKE2-V4C-05.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "SMOKE2-V4C-10.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "SMOKE2-V4C-11.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "NO_CONVERGENCE",
+          "error": "not converged within 180s: neighbours still transitional: ['edgea:Loading/-', 'l1:Loading/-', 'l2:Loading/-', 'l3:Loading/-']; RIB changed within the last 3 polls",
+          "change_applied": false,
+          "cleanup_errors": null,
+          "injected_failure": null
+        },
+        {
+          "attempt": "attempt2",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt2",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    },
+    "SMOKE2-V4C-18.rep1": {
+      "attempts": [
+        {
+          "attempt": "attempt1",
+          "status": "OK",
+          "error": null,
+          "change_applied": true,
+          "cleanup_errors": null,
+          "injected_failure": null
+        }
+      ],
+      "used": "attempt1",
+      "measurable": true,
+      "status": "OK",
+      "checks": {
+        "snapshots_complete": true,
+        "pre_change_fib_events_zero": true,
+        "post_window_fib_events_zero": true,
+        "final_undetermined_zero": true,
+        "golden_carried_equals_analytic": true,
+        "r_final_equals_r_exact": true,
+        "replay_matches_final_snapshot": true,
+        "intermediate_replay_consistent": true,
+        "no_silent_nexthop_object_change": true,
+        "monitor_errors_zero": true,
+        "container_clock_utc": true,
+        "post_running_config_ok": true,
+        "settled": true
+      },
+      "diagnostics": {
+        "replay_mismatch_routers": [],
+        "intermediate_mismatches": [],
+        "nhg_silent_changes": []
+      }
+    }
+  },
+  "summary": {
+    "planned": 9,
+    "with_record": 9,
+    "measurable_and_valid": 9
+  }
+}

@@ -1,0 +1,11 @@
+--- golden-t06_mesh6
++++ I-00052
+@@ -247,7 +247,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.16.1.1/30
++    address 10.200.0.2/30
+     alias link to corea siteA
+ 
+ 

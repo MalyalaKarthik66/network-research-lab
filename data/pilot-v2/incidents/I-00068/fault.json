@@ -1,0 +1,14 @@
+{
+  "incident_id": "I-00068",
+  "topology": "t07_tier7",
+  "fault_id": "F0008",
+  "fault_family": "static_blackhole",
+  "fault_description": "[t07_tier7] agga blackholes 10.20.0.0/24",
+  "fault_params": {
+    "node": "agga",
+    "prefix": "10.20.0.0/24",
+    "nexthop": "blackhole",
+    "topology": "t07_tier7"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

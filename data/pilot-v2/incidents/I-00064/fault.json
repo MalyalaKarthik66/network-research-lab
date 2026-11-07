@@ -1,0 +1,17 @@
+{
+  "incident_id": "I-00064",
+  "topology": "t07_tier7",
+  "fault_id": "F0004",
+  "fault_family": "ospf_passive_transit",
+  "fault_description": "[t07_tier7] edgea eth2 marked passive (siteA)",
+  "fault_params": {
+    "node": "edgea",
+    "iface": "eth2",
+    "peer": "agga",
+    "peer_iface": "eth1",
+    "link": "siteA",
+    "good_cost": 10,
+    "topology": "t07_tier7"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

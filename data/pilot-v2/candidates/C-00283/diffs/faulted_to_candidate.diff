@@ -1,0 +1,19 @@
+--- I-00039
++++ C-00283
+@@ -35,6 +35,7 @@
+ interface lo
+  description router-id and management
+  ip ospf area 0.0.0.0
++ ip ospf cost 3
+ !
+ interface eth1
+  description link to edgea siteA
+@@ -53,8 +54,6 @@
+  ip ospf area 0.0.0.0
+  ip ospf cost 100
+  ip ospf network point-to-point
+-!
+-ip route 10.20.0.0/24 10.14.1.1
+ !
+ router ospf
+  ospf router-id 10.255.0.2

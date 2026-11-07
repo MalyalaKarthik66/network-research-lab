@@ -1,0 +1,21 @@
+{
+  "incident_id": "I-07",
+  "fault_id": "F07",
+  "fault_family": "ospf_cost_inversion",
+  "fault_description": "backup link cost lowered to 1; all traffic silently uses the backup",
+  "fault_params": {
+    "pairs": [
+      [
+        "corea",
+        "eth3"
+      ],
+      [
+        "coreb",
+        "eth3"
+      ]
+    ],
+    "bad_cost": 1,
+    "good_cost": 100
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

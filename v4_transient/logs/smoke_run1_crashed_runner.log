@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/mnt/c/Users/karth/network-research-lab/v4_transient/pilot/run_pilot.py", line 273, in <module>
+    sys.exit(main())
+  File "/mnt/c/Users/karth/network-research-lab/v4_transient/pilot/run_pilot.py", line 256, in main
+    rec = one_run(run, ch, out_root, workdir, lock, attempt)
+  File "/mnt/c/Users/karth/network-research-lab/v4_transient/pilot/run_pilot.py", line 180, in one_run
+    if poller is not None and poller.is_alive():
+  File "/usr/lib/python3.10/threading.py", line 1180, in is_alive
+    self._wait_for_tstate_lock(False)
+  File "/usr/lib/python3.10/threading.py", line 1118, in _wait_for_tstate_lock
+    self._stop()
+TypeError: 'Event' object is not callable

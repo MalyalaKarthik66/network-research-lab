@@ -1,0 +1,14 @@
+{
+  "incident_id": "I-00128",
+  "topology": "t13_bowtie7",
+  "fault_id": "F0008",
+  "fault_family": "static_blackhole",
+  "fault_description": "[t13_bowtie7] a1 blackholes 10.20.0.0/24",
+  "fault_params": {
+    "node": "a1",
+    "prefix": "10.20.0.0/24",
+    "nexthop": "blackhole",
+    "topology": "t13_bowtie7"
+  },
+  "note": "PROVENANCE ONLY -- see docs/LEAKAGE.md"
+}

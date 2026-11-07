@@ -1,0 +1,3 @@
+[2026-09-15T12:26:54.627985] 686: eth3@if687: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 9500 qdisc noqueue state DOWN group default 
+    link/ether aa:c1:ab:3d:0e:95 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+    altname clab-o-a12e2837beeb9ae6

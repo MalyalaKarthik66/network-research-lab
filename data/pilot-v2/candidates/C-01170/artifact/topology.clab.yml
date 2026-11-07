@@ -1,0 +1,189 @@
+name: nrlv2-c-01170
+
+topology:
+  nodes:
+    agga:
+      kind: linux
+      image: frrouting/frr:v8.4.1
+      binds:
+        - devices/agga/frr.conf:/etc/frr/frr.conf
+        - devices/agga/daemons:/etc/frr/daemons
+        - devices/agga/interfaces:/etc/nrl/interfaces:ro
+        - bin/apply-interfaces.sh:/etc/nrl/apply-interfaces.sh:ro
+      exec:
+        - sh /etc/nrl/apply-interfaces.sh
+    aggb:
+      kind: linux
+      image: frrouting/frr:v8.4.1
+      binds:
+        - devices/aggb/frr.conf:/etc/frr/frr.conf
+        - devices/aggb/daemons:/etc/frr/daemons
+        - devices/aggb/interfaces:/etc/nrl/interfaces:ro
+        - bin/apply-interfaces.sh:/etc/nrl/apply-interfaces.sh:ro
+      exec:
+        - sh /etc/nrl/apply-interfaces.sh
+    edgea:
+      kind: linux
+      image: frrouting/frr:v8.4.1
+      binds:
+        - devices/edgea/frr.conf:/etc/frr/frr.conf
+        - devices/edgea/daemons:/etc/frr/daemons
+        - devices/edgea/interfaces:/etc/nrl/interfaces:ro
+        - bin/apply-interfaces.sh:/etc/nrl/apply-interfaces.sh:ro
+      exec:
+        - sh /etc/nrl/apply-interfaces.sh
+    edgeb:
+      kind: linux
+      image: frrouting/frr:v8.4.1
+      binds:
+        - devices/edgeb/frr.conf:/etc/frr/frr.conf
+        - devices/edgeb/daemons:/etc/frr/daemons
+        - devices/edgeb/interfaces:/etc/nrl/interfaces:ro
+        - bin/apply-interfaces.sh:/etc/nrl/apply-interfaces.sh:ro
+      exec:
+        - sh /etc/nrl/apply-interfaces.sh
+    hosta:
+      kind: linux
+      image: alpine:3.19
+      binds:
+        - devices/hosta/setup.sh:/etc/nrl/setup.sh:ro
+      exec:
+        - sh /etc/nrl/setup.sh
+    hostb:
+      kind: linux
+      image: alpine:3.19
+      binds:
+        - devices/hostb/setup.sh:/etc/nrl/setup.sh:ro
+      exec:
+        - sh /etc/nrl/setup.sh
+    hostc:
+      kind: linux
+      image: alpine:3.19
+      binds:
+        - devices/hostc/setup.sh:/etc/nrl/setup.sh:ro
+      exec:
+        - sh /etc/nrl/setup.sh
+    p1:
+      kind: linux
+      image: frrouting/frr:v8.4.1
+      binds:
+        - devices/p1/frr.conf:/etc/frr/frr.conf
+        - devices/p1/daemons:/etc/frr/daemons
+        - devices/p1/interfaces:/etc/nrl/interfaces:ro
+        - bin/apply-interfaces.sh:/etc/nrl/apply-interfaces.sh:ro
+      exec:
+        - sh /etc/nrl/apply-interfaces.sh
+    p2:
+      kind: linux
+      image: frrouting/frr:v8.4.1
+      binds:
+        - devices/p2/frr.conf:/etc/frr/frr.conf
+        - devices/p2/daemons:/etc/frr/daemons
+        - devices/p2/interfaces:/etc/nrl/interfaces:ro
+        - bin/apply-interfaces.sh:/etc/nrl/apply-interfaces.sh:ro
+      exec:
+        - sh /etc/nrl/apply-interfaces.sh
+    p3:
+      kind: linux
+      image: frrouting/frr:v8.4.1
+      binds:
+        - devices/p3/frr.conf:/etc/frr/frr.conf
+        - devices/p3/daemons:/etc/frr/daemons
+        - devices/p3/interfaces:/etc/nrl/interfaces:ro
+        - bin/apply-interfaces.sh:/etc/nrl/apply-interfaces.sh:ro
+      exec:
+        - sh /etc/nrl/apply-interfaces.sh
+    p4:
+      kind: linux
+      image: frrouting/frr:v8.4.1
+      binds:
+        - devices/p4/frr.conf:/etc/frr/frr.conf
+        - devices/p4/daemons:/etc/frr/daemons
+        - devices/p4/interfaces:/etc/nrl/interfaces:ro
+        - bin/apply-interfaces.sh:/etc/nrl/apply-interfaces.sh:ro
+      exec:
+        - sh /etc/nrl/apply-interfaces.sh
+    pe1:
+      kind: linux
+      image: frrouting/frr:v8.4.1
+      binds:
+        - devices/pe1/frr.conf:/etc/frr/frr.conf
+        - devices/pe1/daemons:/etc/frr/daemons
+        - devices/pe1/interfaces:/etc/nrl/interfaces:ro
+        - bin/apply-interfaces.sh:/etc/nrl/apply-interfaces.sh:ro
+      exec:
+        - sh /etc/nrl/apply-interfaces.sh
+    pe2:
+      kind: linux
+      image: frrouting/frr:v8.4.1
+      binds:
+        - devices/pe2/frr.conf:/etc/frr/frr.conf
+        - devices/pe2/daemons:/etc/frr/daemons
+        - devices/pe2/interfaces:/etc/nrl/interfaces:ro
+        - bin/apply-interfaces.sh:/etc/nrl/apply-interfaces.sh:ro
+      exec:
+        - sh /etc/nrl/apply-interfaces.sh
+    pe3:
+      kind: linux
+      image: frrouting/frr:v8.4.1
+      binds:
+        - devices/pe3/frr.conf:/etc/frr/frr.conf
+        - devices/pe3/daemons:/etc/frr/daemons
+        - devices/pe3/interfaces:/etc/nrl/interfaces:ro
+        - bin/apply-interfaces.sh:/etc/nrl/apply-interfaces.sh:ro
+      exec:
+        - sh /etc/nrl/apply-interfaces.sh
+    pe4:
+      kind: linux
+      image: frrouting/frr:v8.4.1
+      binds:
+        - devices/pe4/frr.conf:/etc/frr/frr.conf
+        - devices/pe4/daemons:/etc/frr/daemons
+        - devices/pe4/interfaces:/etc/nrl/interfaces:ro
+        - bin/apply-interfaces.sh:/etc/nrl/apply-interfaces.sh:ro
+      exec:
+        - sh /etc/nrl/apply-interfaces.sh
+    rr1:
+      kind: linux
+      image: frrouting/frr:v8.4.1
+      binds:
+        - devices/rr1/frr.conf:/etc/frr/frr.conf
+        - devices/rr1/daemons:/etc/frr/daemons
+        - devices/rr1/interfaces:/etc/nrl/interfaces:ro
+        - bin/apply-interfaces.sh:/etc/nrl/apply-interfaces.sh:ro
+      exec:
+        - sh /etc/nrl/apply-interfaces.sh
+    rr2:
+      kind: linux
+      image: frrouting/frr:v8.4.1
+      binds:
+        - devices/rr2/frr.conf:/etc/frr/frr.conf
+        - devices/rr2/daemons:/etc/frr/daemons
+        - devices/rr2/interfaces:/etc/nrl/interfaces:ro
+        - bin/apply-interfaces.sh:/etc/nrl/apply-interfaces.sh:ro
+      exec:
+        - sh /etc/nrl/apply-interfaces.sh
+
+  links:
+    - endpoints: ["hosta:eth1", "edgea:eth1"]
+    - endpoints: ["edgeb:eth1", "hostb:eth1"]
+    - endpoints: ["edgeb:eth2", "hostc:eth1"]
+    - endpoints: ["edgea:eth2", "pe1:eth1"]
+    - endpoints: ["pe1:eth2", "p1:eth1"]
+    - endpoints: ["p1:eth2", "p2:eth1"]
+    - endpoints: ["p2:eth2", "pe3:eth1"]
+    - endpoints: ["pe3:eth2", "edgeb:eth3"]
+    - endpoints: ["edgea:eth3", "pe2:eth1"]
+    - endpoints: ["pe2:eth2", "p3:eth1"]
+    - endpoints: ["p3:eth2", "p4:eth1"]
+    - endpoints: ["p4:eth2", "pe4:eth1"]
+    - endpoints: ["pe4:eth2", "edgeb:eth4"]
+    - endpoints: ["p1:eth3", "p3:eth3"]
+    - endpoints: ["p2:eth3", "p4:eth3"]
+    - endpoints: ["pe1:eth3", "rr1:eth1"]
+    - endpoints: ["rr1:eth2", "rr2:eth1"]
+    - endpoints: ["rr2:eth2", "pe3:eth3"]
+    - endpoints: ["edgea:eth4", "agga:eth1"]
+    - endpoints: ["agga:eth2", "p1:eth4"]
+    - endpoints: ["edgeb:eth5", "aggb:eth1"]
+    - endpoints: ["aggb:eth2", "p2:eth4"]

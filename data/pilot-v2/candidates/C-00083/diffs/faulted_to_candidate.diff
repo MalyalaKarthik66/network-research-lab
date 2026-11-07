@@ -1,0 +1,20 @@
+--- I-00012
++++ C-00083
+@@ -72,7 +72,7 @@
+ 
+ auto eth1
+ iface eth1
+-    address 10.12.1.2/30
++    address 10.200.8.1/30
+     alias link to edgea siteA
+ 
+ auto eth2
+@@ -247,7 +247,7 @@
+ 
+ auto eth2
+ iface eth2
+-    address 10.200.0.2/30
++    address 10.200.8.2/30
+     alias link to corea siteA
+ 
+ 

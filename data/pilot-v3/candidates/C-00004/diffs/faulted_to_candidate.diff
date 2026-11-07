@@ -1,0 +1,20 @@
+--- I-00001
++++ C-00004
+@@ -144,7 +144,7 @@
+ interface eth2
+  description link to wan4 wanB2
+  ip ospf area 0.0.0.0
+- ip ospf cost 20
++ ip ospf cost 400
+  ip ospf network point-to-point
+ !
+ interface eth3
+@@ -663,7 +663,7 @@
+ interface eth2
+  description link to coreb wanB2
+  ip ospf area 0.0.0.0
+- ip ospf cost 20
++ ip ospf cost 400
+  ip ospf network point-to-point
+ !
+ router ospf

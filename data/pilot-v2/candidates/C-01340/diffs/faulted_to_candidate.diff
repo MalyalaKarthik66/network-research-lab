@@ -1,0 +1,11 @@
+--- I-00182
++++ C-01340
+@@ -303,7 +303,7 @@
+ 
+ auto eth1
+ iface eth1
+-    address 10.29.1.2/30
++    address 10.200.0.1/30
+     alias link to edgea accA
+ 
+ auto eth2

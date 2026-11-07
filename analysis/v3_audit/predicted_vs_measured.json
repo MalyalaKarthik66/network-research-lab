@@ -1,0 +1,142 @@
+{
+  "n": 151,
+  "mae": 1.968211920529911e-05,
+  "rmse": 2.416307730062188e-05,
+  "r2": 0.9999999660773892,
+  "pearson": 0.9999999838830583,
+  "spearman": 1.0,
+  "stop_fix_mae_gt_0_10": false,
+  "largest_errors": [
+    {
+      "candidate_id": "C-00087",
+      "mechanism": "cost",
+      "predicted": 0.1176,
+      "measured": 0.117647,
+      "absolute_error": 4.700000000000537e-05
+    },
+    {
+      "candidate_id": "C-00094",
+      "mechanism": "blackhole",
+      "predicted": 0.0074,
+      "measured": 0.007353,
+      "absolute_error": 4.700000000000017e-05
+    },
+    {
+      "candidate_id": "C-00009",
+      "mechanism": "blackhole",
+      "predicted": 0.0455,
+      "measured": 0.045455,
+      "absolute_error": 4.499999999999643e-05
+    },
+    {
+      "candidate_id": "C-00002",
+      "mechanism": "cost",
+      "predicted": 0.1455,
+      "measured": 0.145455,
+      "absolute_error": 4.499999999998949e-05
+    },
+    {
+      "candidate_id": "C-00019",
+      "mechanism": "blackhole",
+      "predicted": 0.0556,
+      "measured": 0.055556,
+      "absolute_error": 4.399999999999543e-05
+    },
+    {
+      "candidate_id": "C-00029",
+      "mechanism": "blackhole",
+      "predicted": 0.0556,
+      "measured": 0.055556,
+      "absolute_error": 4.399999999999543e-05
+    },
+    {
+      "candidate_id": "C-00040",
+      "mechanism": "blackhole",
+      "predicted": 0.0556,
+      "measured": 0.055556,
+      "absolute_error": 4.399999999999543e-05
+    },
+    {
+      "candidate_id": "C-00051",
+      "mechanism": "blackhole",
+      "predicted": 0.0444,
+      "measured": 0.044444,
+      "absolute_error": 4.399999999999543e-05
+    },
+    {
+      "candidate_id": "C-00013",
+      "mechanism": "cost",
+      "predicted": 0.4444,
+      "measured": 0.444444,
+      "absolute_error": 4.399999999998849e-05
+    },
+    {
+      "candidate_id": "C-00023",
+      "mechanism": "cost",
+      "predicted": 0.4444,
+      "measured": 0.444444,
+      "absolute_error": 4.399999999998849e-05
+    },
+    {
+      "candidate_id": "C-00034",
+      "mechanism": "cost",
+      "predicted": 0.4444,
+      "measured": 0.444444,
+      "absolute_error": 4.399999999998849e-05
+    },
+    {
+      "candidate_id": "C-00093",
+      "mechanism": "blackhole",
+      "predicted": 0.0404,
+      "measured": 0.040441,
+      "absolute_error": 4.099999999999937e-05
+    },
+    {
+      "candidate_id": "C-00135",
+      "mechanism": "blackhole",
+      "predicted": 0.0439,
+      "measured": 0.04386,
+      "absolute_error": 3.999999999999837e-05
+    },
+    {
+      "candidate_id": "C-00083",
+      "mechanism": "cost",
+      "predicted": 0.1048,
+      "measured": 0.104762,
+      "absolute_error": 3.800000000001025e-05
+    },
+    {
+      "candidate_id": "C-00141",
+      "mechanism": "cost",
+      "predicted": 0.1048,
+      "measured": 0.104762,
+      "absolute_error": 3.800000000001025e-05
+    }
+  ],
+  "by_mechanism": {
+    "blackhole": {
+      "n": 72,
+      "mae": 2.3861111111111266e-05,
+      "rmse": 2.6782042076319786e-05,
+      "pearson": 0.9999994310206304,
+      "spearman": 1.0,
+      "distinct_measured": 43,
+      "zero_fraction": 0.0
+    },
+    "cost": {
+      "n": 79,
+      "mae": 1.587341772152094e-05,
+      "rmse": 2.1500073594225255e-05,
+      "pearson": 0.9999999905576836,
+      "spearman": 1.0,
+      "distinct_measured": 50,
+      "zero_fraction": 0.17721518987341772
+    }
+  },
+  "target_degeneracy": {
+    "distinct_r": 91,
+    "distinct_passes": true,
+    "max_value_fraction": 0.09271523178807947,
+    "one_value_passes": true
+  }
+}

@@ -1,0 +1,19 @@
+--- I-00153
++++ C-01128
+@@ -189,6 +189,7 @@
+ interface lo
+  description router-id and management
+  ip ospf area 0.0.0.0
++ ip ospf cost 2
+ !
+ interface eth1
+  description link to hosta siteA-lan
+@@ -197,7 +198,7 @@
+ !
+ interface eth2
+  description link to pe1 peA1
+- ip ospf area 0.0.0.1
++ ip ospf area 0.0.0.0
+  ip ospf cost 10
+  ip ospf network point-to-point
+ !

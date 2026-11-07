@@ -1,0 +1,209 @@
+{
+  "summary": {
+    "checks": 32,
+    "passed": 32,
+    "failed": [],
+    "environment": {
+      "utc": "2026-09-15T14:22:17Z",
+      "head": "723f23070bbac7c0cfe517c4398ded69d254d17f",
+      "python": "3.10.12",
+      "loadavg": "2.84 3.65 3.80 1/575 709",
+      "meminfo": [
+        "MemTotal:        7979188 kB",
+        "MemFree:         2761664 kB",
+        "MemAvailable:    4450480 kB"
+      ],
+      "nproc": 16
+    },
+    "exact_command": "./.venv-wsl/bin/python v4_transient/pilot/run_pilot.py --plan pilot --resume --confirm-pilot START-20x5-PILOT",
+    "note": "preflight only; the pilot was not started"
+  },
+  "results": [
+    {
+      "check": "running inside WSL (Linux kernel with microsoft in release)",
+      "pass": true,
+      "detail": "6.6.87.2-microsoft-standard-WSL2"
+    },
+    {
+      "check": "interpreter is the pilot venv .venv-wsl",
+      "pass": true,
+      "detail": "/mnt/c/Users/karth/network-research-lab/.venv-wsl"
+    },
+    {
+      "check": "not root (non-root containerlab as the protocol requires)",
+      "pass": true,
+      "detail": 1000
+    },
+    {
+      "check": "user in clab_admins and docker groups",
+      "pass": true,
+      "detail": "karth adm cdrom sudo dip plugdev clab_admins docker"
+    },
+    {
+      "check": "python module pandas importable",
+      "pass": true,
+      "detail": "2.3.3"
+    },
+    {
+      "check": "python module numpy importable",
+      "pass": true,
+      "detail": "2.2.6"
+    },
+    {
+      "check": "python module pybatfish importable",
+      "pass": true,
+      "detail": "2026.08.19.3660"
+    },
+    {
+      "check": "containerlab available",
+      "pass": true,
+      "detail": "version: 0.79.0"
+    },
+    {
+      "check": "docker daemon reachable",
+      "pass": true,
+      "detail": "29.7.2"
+    },
+    {
+      "check": "image frrouting/frr:v8.4.1 present",
+      "pass": true,
+      "detail": "frrouting/frr@sha256:0f8c174d95add7916101077d4716822552c758b8ff3d2dcb55104f6534202e3e"
+    },
+    {
+      "check": "image alpine:3.19 present",
+      "pass": true,
+      "detail": "alpine@sha256:6baf43584bcb78f2e5847d1de515f23499913ac9f12bdf834811a3145eb11ca1"
+    },
+    {
+      "check": "Batfish service reachable on localhost:9996 (used for batfish_check.json; not used by the runner)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "runner workdir writable",
+      "pass": true,
+      "detail": "/home/karth/nrl-v4"
+    },
+    {
+      "check": "WSL git reads HEAD (tree-level, no working-tree scan)",
+      "pass": true,
+      "detail": "723f23070bbac7c0cfe517c4398ded69d254d17f"
+    },
+    {
+      "check": "Windows-native git record of this checkout has the same HEAD as WSL git",
+      "pass": true,
+      "detail": {
+        "wsl": "723f23070bbac7c0cfe517c4398ded69d254d17f",
+        "windows_record": {
+          "head": "723f23070bbac7c0cfe517c4398ded69d254d17f",
+          "porcelain": "",
+          "taken_by": "Windows-native git (C:\\Program Files\\Git), same checkout",
+          "utc": "2026-09-15T14:19:29Z"
+        }
+      }
+    },
+    {
+      "check": "Git tree has no modified tracked file (Windows-native `git status --porcelain --untracked-files=no`)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "freeze commit is an ancestor of HEAD",
+      "pass": true,
+      "detail": {
+        "freeze_commit": "7f85d70936ec8e4315a45ea61af40fb012ee5795",
+        "head": "723f23070bbac7c0cfe517c4398ded69d254d17f"
+      }
+    },
+    {
+      "check": "commits after the freeze touch only the freeze file, audit docs, logs or preflight tooling",
+      "pass": true,
+      "detail": [
+        "v4_transient/manifests/PILOT-FREEZE.json",
+        "v4_transient/tools/pilot_preflight_check.py"
+      ]
+    },
+    {
+      "check": "the command's token equals the runner's PILOT_CONFIRM_TOKEN",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "D1-D9 approval (pre-registration and decisions hashes)",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "check": "launch-audit register has no open issue",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "pilot_preflight: approval + execution freeze + artifact digest + register",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "check": "clean host: no containerlab container present",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "check": "artifact lock digest equals the manifest",
+      "pass": true,
+      "detail": "8c21565c84326f5ae187a4dd274649718efca8225801f2676308d5c28192f445"
+    },
+    {
+      "check": "artifact tree digest equals the freeze",
+      "pass": true,
+      "detail": {
+        "digest": "78a6e858c4ae713070dedf36a27212fdca4aaf0095f5af3f6464f49be9f1e64d",
+        "n": 1206
+      }
+    },
+    {
+      "check": "Batfish gate admits every planned pilot run",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "pilot plan: 114 runs = 100 population + 10 no-op + 4 positive; no injection, no retired control",
+      "pass": true,
+      "detail": {
+        "population": 100,
+        "control_noop": 10,
+        "control_positive": 4
+      }
+    },
+    {
+      "check": "no pilot state: results/pilot, logs/pilot_ledger.jsonl, plots/pilot absent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "engineering smoke 3 validated with no failed check",
+      "pass": true,
+      "detail": {
+        "checks": 153,
+        "passed": 153,
+        "failed": [],
+        "population_median_wall_s": 135.51
+      }
+    },
+    {
+      "check": "run_pilot.py --plan pilot  (no valid token) refuses with exit 2 and starts nothing",
+      "pass": true,
+      "detail": "REFUSED (pilot): explicit start confirmation missing. The 100-run pilot starts only with --confirm-pilot START-20x5-PILOT"
+    },
+    {
+      "check": "run_pilot.py --plan pilot --resume (no valid token) refuses with exit 2 and starts nothing",
+      "pass": true,
+      "detail": "REFUSED (pilot): explicit start confirmation missing. The 100-run pilot starts only with --confirm-pilot START-20x5-PILOT"
+    },
+    {
+      "check": "run_pilot.py --plan pilot --resume --confirm-pilot WRONG (no valid token) refuses with exit 2 and starts nothing",
+      "pass": true,
+      "detail": "REFUSED (pilot): explicit start confirmation missing. The 100-run pilot starts only with --confirm-pilot START-20x5-PILOT"
+    }
+  ]
+}

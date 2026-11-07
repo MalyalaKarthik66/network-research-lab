@@ -1,0 +1,30 @@
+[
+  {
+    "node": "edgea",
+    "commands": [
+      "interface eth3",
+      "ip ospf cost 600",
+      "exit"
+    ],
+    "t_start": 1789476657.320235,
+    "t_end": 1789476657.7722986,
+    "status": "OK",
+    "rc": 0,
+    "stdout": "",
+    "stderr": "% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.\n"
+  },
+  {
+    "node": "r1",
+    "commands": [
+      "interface eth1",
+      "ip ospf cost 600",
+      "exit"
+    ],
+    "t_start": 1789476657.7723029,
+    "t_end": 1789476658.154953,
+    "status": "OK",
+    "rc": 0,
+    "stdout": "",
+    "stderr": "% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.\n"
+  }
+]

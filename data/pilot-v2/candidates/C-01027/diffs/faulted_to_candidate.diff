@@ -1,0 +1,11 @@
+--- I-00139
++++ C-01027
+@@ -267,6 +267,8 @@
+  ip ospf cost 50
+  ip ospf network point-to-point
+ !
++ip route 10.20.0.10/32 10.24.9.2
++!
+ router ospf
+  ospf router-id 10.255.0.2
+  passive-interface lo

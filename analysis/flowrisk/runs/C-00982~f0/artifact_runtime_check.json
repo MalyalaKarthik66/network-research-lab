@@ -1,0 +1,19 @@
+{
+  "running_config": {
+    "status": "OK",
+    "routers_checked": 8,
+    "problems": []
+  },
+  "addresses": {
+    "status": "OK",
+    "problems": []
+  },
+  "ospf_binding": {
+    "status": "MISMATCH",
+    "problems": [
+      "l2:eth1 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race)",
+      "l2:eth2 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race)",
+      "l2:eth3 is in area 0.0.0.0 in the artifact but ospfd does not have it at all (containerlab rename race)"
+    ]
+  }
+}
